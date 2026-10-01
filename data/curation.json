@@ -1,0 +1,33 @@
+{
+  "//": "Hand edits applied every time the catalogue is built from the POS (live, every 10 minutes). Matching is on brand slug + a case-insensitive regex against the product title. Edit, save, and the site picks it up on the next refresh (restart `npm run dev` locally).",
+
+  "hide": [
+    { "brand": "side-quest", "match": "cocaine|idgaf|stfu|bi-?polar", "why": "Drug reference, profanity, or mocks a mental illness. Not for a workplace gift." },
+    { "brand": "dad-of-bags", "match": "absolut|marlboro", "why": "Alcohol and tobacco branding." },
+    { "brand": "klayzy-ceramics", "match": "ashtray", "why": "Smoking accessory." },
+    { "brand": "the-drunken-mugs", "match": "absolut|bailey|bombay sapphire|corona|grey ?goose|kingfisher|old monk", "why": "Liquor-brand glassware." },
+    { "brand": "*", "match": "^test$", "why": "Test product." },
+    { "brand": "*", "match": "mesa discount", "why": "Internal student-discount duplicate." }
+  ],
+  "hideSkus": [],
+  "hideBrands": [],
+
+  "collectionRules": [
+    { "brand": "mello", "match": "dragee|bark", "collection": "sweets" },
+    { "brand": "mugshot", "match": "cookie|biscuit", "collection": "sweets" },
+    { "brand": "krackle-co", "match": "brittle|praline", "collection": "sweets" },
+    { "brand": "nutflix", "match": "chocolate raisins|nutella|coffee caramel", "collection": "sweets" },
+    { "brand": "haulties", "match": "choco fills|cream fills", "collection": "sweets" },
+    { "brand": "nekt", "match": "honey", "collection": "sweets" },
+    { "brand": "side-quest", "match": "t-?shirt|\\btee\\b", "collection": "apparel" },
+    { "brand": "lumi", "match": "charm|brooch", "collection": "accessories" },
+    {
+      "brand": "*",
+      "onlyIn": ["snacks", "sweets", "beverages", "fragrance", "home"],
+      "match": "hamper|gift ?box|gift ?set|combo|\\bpack of\\b|\\bset of\\b|\\btrio\\b|\\bduo\\b|big three|double trouble|sampler|assorted|ritual pack|family pack|\\bcollection\\b|\\bstack\\b|bonanza|crunch box",
+      "collection": "hampers"
+    }
+  ],
+
+  "featured": []
+}

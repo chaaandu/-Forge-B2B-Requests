@@ -1,0 +1,353 @@
+[
+  {
+    "teamCode": "C101",
+    "slug": "aks-perfumes",
+    "name": "AKS Perfumes",
+    "tagline": "Luxury perfumes",
+    "collection": "fragrance",
+    "website": "https://aksperfumes.in",
+    "instagram": "https://www.instagram.com/aks.perfumes_"
+  },
+  {
+    "teamCode": "C102",
+    "slug": "lumi",
+    "name": "LUMI",
+    "tagline": "Beaded tops & statement wear",
+    "collection": "apparel",
+    "website": "https://getlumi.in",
+    "instagram": "https://www.instagram.com/shop_lumii"
+  },
+  {
+    "teamCode": "C103",
+    "slug": "house-of-pravaah",
+    "name": "House of Pravaah",
+    "tagline": "Scarves, bandanas & flowy pieces",
+    "collection": "accessories",
+    "website": "https://houseofpravaah.com",
+    "instagram": "https://www.instagram.com/houseofpravaah"
+  },
+  {
+    "teamCode": "C104",
+    "slug": "trigo",
+    "name": "Trigo",
+    "tagline": "Nachos",
+    "collection": "snacks",
+    "website": "https://thetrigo.in",
+    "instagram": null
+  },
+  {
+    "teamCode": "C105",
+    "slug": "chakle-bro",
+    "name": "Chakle Bro",
+    "tagline": "Flavoured edamame seeds",
+    "collection": "snacks",
+    "website": "https://chaklebro.myshopify.com",
+    "instagram": null
+  },
+  {
+    "teamCode": "C106",
+    "slug": "dad-of-bags",
+    "name": "Dad Of Bags",
+    "tagline": "Juco embroidered tote bags",
+    "collection": "accessories",
+    "website": "https://dadofbags.in",
+    "instagram": "https://www.instagram.com/dadofbags1947"
+  },
+  {
+    "teamCode": "C107",
+    "slug": "madhosh",
+    "name": "Madhosh",
+    "tagline": "Perfumes",
+    "collection": "fragrance",
+    "website": "https://madhosh.co.in",
+    "instagram": "https://www.instagram.com/madhosh.co.in"
+  },
+  {
+    "teamCode": "C108",
+    "slug": "the-drunken-mugs",
+    "name": "The Drunken Mugs",
+    "tagline": "Luxury glassware",
+    "collection": "home",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C109",
+    "slug": "wekravehealthy",
+    "name": "WeKravehealthy",
+    "tagline": "Healthy snacking",
+    "collection": "snacks",
+    "website": "https://www.wekrave.in",
+    "instagram": "https://www.instagram.com/wekravehealthy"
+  },
+  {
+    "teamCode": "C110",
+    "slug": "nutflix",
+    "name": "NUTflix",
+    "tagline": "Flavoured dry fruits",
+    "collection": "snacks",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C111",
+    "slug": "bizfits",
+    "name": "BizFits",
+    "tagline": "Smart casuals",
+    "collection": "apparel",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C112",
+    "slug": "fake-society-studio",
+    "name": "Fake Society Studio",
+    "tagline": "Athleisure — tees, tracks & shorts",
+    "collection": "apparel",
+    "website": "https://fakesocietystudio.com",
+    "instagram": "https://www.instagram.com/fakesocietystudio"
+  },
+  {
+    "teamCode": "C113",
+    "slug": "munchandco",
+    "name": "Munch&co",
+    "tagline": "Coin cookies",
+    "collection": "sweets",
+    "website": "https://munchco.in",
+    "instagram": "https://www.instagram.com/shopmunchandco"
+  },
+  {
+    "teamCode": "C114",
+    "slug": "tea-riffic",
+    "name": "Tea-riffic",
+    "tagline": "Flavoured teas",
+    "collection": "beverages",
+    "website": "https://tea-riffic.in",
+    "instagram": "https://www.instagram.com/tea.riffic__"
+  },
+  {
+    "teamCode": "C115",
+    "slug": "chipmonk",
+    "name": "ChipMonk",
+    "tagline": "Vacuum-fried chips",
+    "collection": "snacks",
+    "website": "https://chipmonk.co.in",
+    "instagram": "https://www.instagram.com/chip.monk.snacks"
+  },
+  {
+    "teamCode": "C116",
+    "slug": "nasha",
+    "name": "Nasha",
+    "tagline": "Perfumes",
+    "collection": "fragrance",
+    "website": "https://caughtinnasha.store",
+    "instagram": "https://www.instagram.com/caughtinnasha"
+  },
+  {
+    "teamCode": "C117",
+    "slug": "juzzle",
+    "name": "Juzzle",
+    "tagline": "Iced tea premixes",
+    "collection": "beverages",
+    "website": "https://juzzle-store.myshopify.com",
+    "instagram": "https://www.instagram.com/just.juzzle"
+  },
+  {
+    "teamCode": "C118",
+    "slug": "mello",
+    "name": "Mello",
+    "tagline": "Hot chocolate premixes & coffee dragées",
+    "collection": "beverages",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C119",
+    "slug": "nekt",
+    "name": "NEKT",
+    "tagline": "Honey sachets",
+    "collection": "snacks",
+    "website": "https://getnekt.in",
+    "instagram": "https://www.instagram.com/getnekt.in"
+  },
+  {
+    "teamCode": "C120",
+    "slug": "no-biggie",
+    "name": "No Biggie",
+    "tagline": "Mini cookies with dips",
+    "collection": "sweets",
+    "website": "https://nobiggie.shop",
+    "instagram": "https://www.instagram.com/nobiggie.crumbs"
+  },
+  {
+    "teamCode": "C121",
+    "slug": "kirdaaar",
+    "name": "Kirdaaar",
+    "tagline": "Hand block-printed apparel",
+    "collection": "apparel",
+    "website": "https://kirdaaar.com",
+    "instagram": null
+  },
+  {
+    "teamCode": "C122",
+    "slug": "meltyk",
+    "name": "MELTYK",
+    "tagline": "Chocolates",
+    "collection": "sweets",
+    "website": "https://meltyk.in",
+    "instagram": "https://www.instagram.com/meltyk.in"
+  },
+  {
+    "teamCode": "C123",
+    "slug": "haulties",
+    "name": "HAULTIES",
+    "tagline": "Healthy snacks",
+    "collection": "snacks",
+    "website": null,
+    "instagram": "https://www.instagram.com/haulties_s"
+  },
+  {
+    "teamCode": "C124",
+    "slug": "bean-and-beyond",
+    "name": "Bean & Beyond",
+    "tagline": "Black, cold & Vietnamese coffee",
+    "collection": "beverages",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C125",
+    "slug": "ember-and-oak",
+    "name": "Ember & Oak",
+    "tagline": "Scented candles",
+    "collection": "home",
+    "website": "https://emberandoak.online",
+    "instagram": null
+  },
+  {
+    "teamCode": "C126",
+    "slug": "choco-and-co",
+    "name": "Choco & Co",
+    "tagline": "Hot chocolate premix",
+    "collection": "beverages",
+    "website": "https://chocoandcoo.myshopify.com",
+    "instagram": "https://www.instagram.com/chocoandcoo"
+  },
+  {
+    "teamCode": "C127",
+    "slug": "lantern-candles",
+    "name": "Lantern Candles",
+    "tagline": "Scented & artisanal candles",
+    "collection": "home",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C128",
+    "slug": "the-usual",
+    "name": "The Usual",
+    "tagline": "Instant coffee",
+    "collection": "beverages",
+    "website": "https://theusualcoffee.in",
+    "instagram": "https://www.instagram.com/theusualindia"
+  },
+  {
+    "teamCode": "C129",
+    "slug": "klayzy-ceramics",
+    "name": "Klayzy Ceramics",
+    "tagline": "Ceramic mugs, ashtrays & tumblers",
+    "collection": "home",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C130",
+    "slug": "side-quest",
+    "name": "Side Quest",
+    "tagline": "Socks, wall flags & embroidered patches",
+    "collection": "accessories",
+    "website": "https://sidequestco.in",
+    "instagram": null
+  },
+  {
+    "teamCode": "C131",
+    "slug": "notty-crunch",
+    "name": "Notty Crunch",
+    "tagline": "Healthy snacking",
+    "collection": "snacks",
+    "website": "https://nottycrunch.in",
+    "instagram": "https://www.instagram.com/nottycrunch"
+  },
+  {
+    "teamCode": "C132",
+    "slug": "mugshot",
+    "name": "Mugshot",
+    "tagline": "Hot chocolate & cookies",
+    "collection": "beverages",
+    "website": "https://www.mugshot.in",
+    "instagram": "https://www.instagram.com/mugshott.co"
+  },
+  {
+    "teamCode": "C133",
+    "slug": "crunchd",
+    "name": "Crunchd",
+    "tagline": "Fox nuts & chips",
+    "collection": "snacks",
+    "website": "https://crunchdco.myshopify.com",
+    "instagram": null
+  },
+  {
+    "teamCode": "C134",
+    "slug": "linore",
+    "name": "LINORE",
+    "tagline": "Pure linen wear",
+    "collection": "apparel",
+    "website": null,
+    "instagram": null
+  },
+  {
+    "teamCode": "C135",
+    "slug": "krackle-co",
+    "name": "Krackle Co",
+    "tagline": "Flavoured dry fruits & almond brittles",
+    "collection": "snacks",
+    "website": "https://krackleco.myshopify.com",
+    "instagram": null
+  },
+  {
+    "teamCode": "C136",
+    "slug": "kuki",
+    "name": "KUKI",
+    "tagline": "Cookies",
+    "collection": "sweets",
+    "website": "https://thekuki.in",
+    "instagram": "https://www.instagram.com/getkuki"
+  },
+  {
+    "teamCode": "C137",
+    "slug": "zaaree",
+    "name": "ZAAREE",
+    "tagline": "Sarees",
+    "collection": "apparel",
+    "website": null,
+    "instagram": "https://www.instagram.com/zaaree.co"
+  },
+  {
+    "teamCode": "C138",
+    "slug": "saaj",
+    "name": "SAAJ",
+    "tagline": "Traditional jewellery",
+    "collection": "accessories",
+    "website": "https://saajshop.online",
+    "instagram": "https://www.instagram.com/saaj_shop"
+  },
+  {
+    "teamCode": "C139",
+    "slug": "atmiva",
+    "name": "Atmiva",
+    "tagline": "Electric aroma diffusers & oils",
+    "collection": "home",
+    "website": "https://www.atmiva.in",
+    "instagram": "https://www.instagram.com/atmiva.in"
+  }
+]

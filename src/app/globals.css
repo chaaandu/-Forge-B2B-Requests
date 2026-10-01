@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Mesa Forge palette — see the Forge design system (design_system.md).
+   Deep Aubergine + Lavender Mist carry ~60% of every page, Royal Purple /
+   Amethyst the type and surfaces, Orchid the motifs, and Vivid Violet is
+   reserved for calls to action. No green: Forge re-skins Mesa's green system.
+   ────────────────────────────────────────────────────────────────────────── */
+@theme {
+  --color-aubergine: #2a1849;
+  --color-aubergine-2: #1f1136;
+  --color-royal: #452a74;
+  --color-amethyst: #5a3a8e;
+  --color-violet: #7c4dcc;
+  --color-violet-deep: #6a3cb8;
+  --color-orchid: #e4a7f3;
+  --color-orchid-soft: #f3d9fa;
+  --color-mist: #f5edfb;
+  --color-mist-2: #ece0f6;
+  --color-ink: #1d1c1d;
+  --color-ink-soft: #4f4658;
+  --color-line: #e2d5ee;
+  /* Neutral surfaces: most of the page is white, product photos sit on this. */
+  --color-canvas: #faf8fc;
+  --color-tile: #f3eff7;
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  /* Headlines are Manrope too, set heavy and tight — the way Apple sets SF Pro Display. */
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-marquee: marquee 60s linear infinite;
+  --animate-rise: rise 0.7s var(--ease-out-soft) both;
+  --animate-bump: bump 0.45s var(--ease-out-soft);
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) rotate(var(--tilt, 0deg));
+    }
+    50% {
+      transform: translateY(-12px) rotate(var(--tilt, 0deg));
+    }
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@layer base {
+  html {
+    @apply font-sans text-ink antialiased;
+    background: #ffffff;
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: var(--color-orchid);
+    color: var(--color-aubergine);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-violet);
+    outline-offset: 2px;
+  }
+}
+
+/* The Forge ring motif: soft orchid rings radiating from a corner. */
+.rings-dark {
+  background:
+    repeating-radial-gradient(circle at 100% 100%, transparent 0 58px, rgb(228 167 243 / 0.09) 58px 60px),
+    radial-gradient(circle at 85% 90%, rgb(124 77 204 / 0.45), transparent 55%),
+    radial-gradient(circle at 10% 0%, rgb(90 58 142 / 0.6), transparent 50%), var(--color-aubergine);
+}
+.rings-light {
+  background: repeating-radial-gradient(circle at 100% 100%, transparent 0 58px, rgb(124 77 204 / 0.06) 58px 60px), var(--color-mist);
+}
+
+/* Hide the native number spinners; quantity has its own stepper. */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
