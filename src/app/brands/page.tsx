@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/link";
 import { FitImage } from "@/components/fit-image";
 import { getCatalog, getCollection } from "@/lib/catalog";
 

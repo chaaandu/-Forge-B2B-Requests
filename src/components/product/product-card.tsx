@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/link";
 import { Check, Plus } from "lucide-react";
 import type { Brand, Listing } from "@/lib/catalog-types";
 import { useRequestList } from "@/lib/request-list";

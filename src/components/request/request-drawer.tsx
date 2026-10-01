@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/link";
 import { useCallback, useRef } from "react";
 import { useDialog } from "@/hooks/use-dialog";
 import { ArrowRight, Trash2, X } from "lucide-react";

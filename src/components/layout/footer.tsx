@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/link";
 import { getCatalog } from "@/lib/catalog";
 import { COLLECTIONS } from "@/lib/catalog-types";
 import { Lockup } from "./lockup";

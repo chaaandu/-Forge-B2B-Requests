@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/link";
 import { COLLECTIONS } from "@/lib/catalog-types";
 import { cn } from "@/lib/cn";
 import { Icon3D } from "@/components/icon3d";

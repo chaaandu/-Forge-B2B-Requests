@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/link";
 import { useEffect, useState } from "react";
 import { Check, ChevronRight, Link2, Loader2, Trash2 } from "lucide-react";
 import { useRequestList, type ListItem } from "@/lib/request-list";

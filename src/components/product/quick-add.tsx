@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/link";
 import { useRef, useState } from "react";
 import { ArrowUpRight, X } from "lucide-react";
 import type { Brand, Listing } from "@/lib/catalog-types";
