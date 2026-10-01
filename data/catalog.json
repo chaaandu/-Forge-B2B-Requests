@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-01T05:51:17.916Z",
+ "generatedAt": "2026-10-01T09:19:37.649Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -10320,7 +10320,7 @@
    "slug": "zaaree-the-aaradhya",
    "brand": "zaaree",
    "title": "The Aaradhya",
-   "description": null,
+   "description": "Semi Satin — A dusky lavender silk bordered in gold, its pallu woven with peacocks and trailing florals in a classic Banarasi style. Semi satin gives the surface a gentle glow rather than a hard shine — evening-ready without trying too hard.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/faa31bfa-a99d-44c7-ae19-d5dd36af37dd.jpg"
@@ -10344,7 +10344,7 @@
    "slug": "zaaree-the-avni",
    "brand": "zaaree",
    "title": "The Avni",
-   "description": null,
+   "description": "Linen Silk — The same floral bel reimagined in a warm blush pink, with the identical rose-and-vine embroidery running the length of the drape. Linen silk keeps it light and matte, so the colour reads soft rather than sweet.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75fd60a3-4a47-40c5-90bd-20b502cd2ee1.jpg"
@@ -10368,7 +10368,7 @@
    "slug": "zaaree-the-bhoomi",
    "brand": "zaaree",
    "title": "The Bhoomi",
-   "description": null,
+   "description": "Semi Satin — The same peacock-and-floral Banarasi border in a vivid turquoise, the gold brocade standing out crisply against the cool base. Semi satin keeps the shine soft and wearable.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ab3f675a-d49f-491e-879b-509eef207d6c.jpg"
@@ -10392,7 +10392,7 @@
    "slug": "zaaree-the-chandni",
    "brand": "zaaree",
    "title": "The Chandni",
-   "description": null,
+   "description": "Semi Silk — Teal silk meets a bold rani-pink border in this zari brocade, its pallu patterned with leaf motifs picked out in gold thread. Semi silk gives it body and structure while still falling with ease.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7249f8f9-5f0e-4ffd-9418-d25e4d2b10a3.jpg"
@@ -10416,7 +10416,7 @@
    "slug": "zaaree-the-esha",
    "brand": "zaaree",
    "title": "The Esha",
-   "description": null,
+   "description": "Semi Silk — The same zari brocade rendered in a lively mehendi green against a deep magenta border — a saree built for celebration. Semi silk holds its pleats beautifully through a long evening.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6baf8413-ba71-46fb-a3d7-f0b4dbacd323.jpg"
@@ -10440,7 +10440,7 @@
    "slug": "zaaree-the-falak",
    "brand": "zaaree",
    "title": "The Falak",
-   "description": null,
+   "description": "Feather Silk — A soft cream silk finished with a graphic magenta-and-teal temple border and a woven peacock pallu. Feather silk keeps it light enough to wear through a full day of festivities.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/264c2dd1-df04-43d5-83d0-cc3459b0ddcc.jpg"
@@ -10464,7 +10464,7 @@
    "slug": "zaaree-the-gauri",
    "brand": "zaaree",
    "title": "The Gauri",
-   "description": null,
+   "description": "Feather Silk — The same temple-bordered design in a bright turquoise, with the pink-and-gold border and peacock pallu carrying it into the evening. Feather silk means it never feels heavy, however ornate the border.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/114a193c-7762-4d17-85aa-7de4c55d3657.jpg"
@@ -10488,7 +10488,7 @@
    "slug": "zaaree-the-heer",
    "brand": "zaaree",
    "title": "The Heer",
-   "description": null,
+   "description": "Tissue Satin — A deep maroon silk wrapped almost entirely in gold — a heavy zari paisley border and pallu that reads as pure heirloom Banarasi. Tissue satin adds a fine metallic glow beneath the weave, built for the biggest occasions on the calendar.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/47fd601e-f460-4ede-9d28-f2e4f11942ae.jpg"
@@ -10512,7 +10512,7 @@
    "slug": "zaaree-the-ishita",
    "brand": "zaaree",
    "title": "The Ishita",
-   "description": null,
+   "description": "Tissue Satin — A cool steel-blue silk shot through with olive, finished in the same heavy gold zari paisley border as its maroon counterpart — quietly regal rather than loud.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0918ca67-13c4-4564-96c8-29193d087d91.jpg"
@@ -10536,7 +10536,7 @@
    "slug": "zaaree-the-jiya",
    "brand": "zaaree",
    "title": "The Jiya",
-   "description": null,
+   "description": "Tissue Satin — A dual-tone silk that shifts between teal and olive depending on the light, bordered in gold florals. Tissue satin gives the shift-weave its subtle sheen, so the colour-play never feels flat.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ec09ea5-8070-481b-b108-19881f062059.jpg"
@@ -10560,7 +10560,7 @@
    "slug": "zaaree-the-kavya",
    "brand": "zaaree",
    "title": "The Kavya",
-   "description": null,
+   "description": "Tissue Satin — A warm rust-copper silk laid with small gold florals and a wide gold-medallion border — a Banarasi built for warmth over shine. Tissue satin keeps its glow soft and even.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4c018a6-308d-4e6c-b0bc-78cfae4d242c.jpg"
@@ -10584,7 +10584,7 @@
    "slug": "zaaree-the-kimaya",
    "brand": "zaaree",
    "title": "The Kimaya",
-   "description": null,
+   "description": "Muga Silk — Deep teal meets antique gold in a Patola-inspired diamond weave, opening into a pallu alive with woven peacocks and trailing florals. Muga silk gives it a natural burnished sheen that catches the light with every fold.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1c2d995c-3f31-40e0-811a-994e9017167a.jpg"
@@ -10608,7 +10608,7 @@
    "slug": "zaaree-the-lavanya",
    "brand": "zaaree",
    "title": "The Lavanya",
-   "description": null,
+   "description": "Muga Silk — The same Patola diamond weave in a warmer register — dusty rose against gold, with the peacock-and-floral pallu rendered in deeper pinks. Muga silk's natural sheen makes the gold threadwork glow rather than gleam.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/366568f4-b3e3-4932-b960-8ba4c3e30e5f.jpg"
@@ -10632,7 +10632,7 @@
    "slug": "zaaree-the-leela",
    "brand": "zaaree",
    "title": "The Leela",
-   "description": null,
+   "description": "Semi Satin — A rich gold silk edged in flame-red, its pallu given over to a dense weave of cranes, florals and temple motifs — bridal-weight Banarasi at its most traditional. Semi satin gives it a soft, festive glow rather than a hard shine.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fc574302-4398-4cf7-b94e-47c3559cb659.jpg"
@@ -10656,7 +10656,7 @@
    "slug": "zaaree-the-manasvi",
    "brand": "zaaree",
    "title": "The Manasvi",
-   "description": null,
+   "description": "Feather Silk — A sage-green silk carried by a pallu drawn straight from Warli folk art — stick-figure dancers, birds and huts rendered in warm terracotta and rose. Feather silk keeps the whole saree impossibly light, so the pallu drapes rather than sits.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c3197e4-eb51-4142-8c86-57b316d414a3.jpg"
@@ -10680,7 +10680,7 @@
    "slug": "zaaree-the-naina",
    "brand": "zaaree",
    "title": "The Naina",
-   "description": null,
+   "description": "Semi Satin — The same bridal border reworked in magenta and purple against warm gold, the pallu carrying the same procession of cranes and florals. Semi satin keeps the drape soft enough for a full day of ceremony.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/837dc21b-ca4f-454f-a50c-f1bae66acd2d.jpg"
@@ -10704,7 +10704,7 @@
    "slug": "zaaree-the-nandini",
    "brand": "zaaree",
    "title": "The Nandini",
-   "description": null,
+   "description": "Feather Silk — The same Warli storytelling pallu in a cooler dusty blue — folk dancers and birds picked out against a soft grey-blue field. Feather silk drops clean and light, letting the pallu's detail take center stage.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/915cc706-ed7d-4200-b33a-cd49d55cb6c1.jpg"
@@ -10728,7 +10728,7 @@
    "slug": "zaaree-the-oorja",
    "brand": "zaaree",
    "title": "The Oorja",
-   "description": null,
+   "description": "Feather Silk — An ivory silk edged in a bold pink flame border, the pallu opening into a Kalamkari-style scene of peacocks, temple houses and vines in teal, pink and gold. Feather silk keeps the whole piece light enough for a full evening's wear.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5bc06612-f93d-410f-a32d-9b04c2160b6d.jpg"
@@ -10752,7 +10752,7 @@
    "slug": "zaaree-the-pari",
    "brand": "zaaree",
    "title": "The Pari",
-   "description": null,
+   "description": "Semi Satin — Steel-blue and mauve run in bold diagonal stripes across this silk, bordered in gold-flecked brocade. Semi satin gives the sharp geometry a gentle, wearable sheen.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b9cdf5-18e9-4aa0-9fb9-f6a0fb8fccba.jpg"
@@ -10776,7 +10776,7 @@
    "slug": "zaaree-the-pihu",
    "brand": "zaaree",
    "title": "The Pihu",
-   "description": null,
+   "description": "Feather Silk — Rose pink meets emerald green in a Paithani-inspired weave, its pallu given over entirely to a procession of woven peacocks. Feather silk lets the colour-blocking read crisp and architectural rather than heavy.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e61a6fd9-1087-4be5-bd28-21144639a920.jpg"
@@ -10800,7 +10800,7 @@
    "slug": "zaaree-the-radhika",
    "brand": "zaaree",
    "title": "The Radhika",
-   "description": null,
+   "description": "Linen Silk — A soft blush pink Banarasi, paisleys and floral medallions woven in muted rose and sage across the body and border. Linen silk gives it a matte, understated finish — quiet luxury rather than shine.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a55718ba-bbca-4f76-8e5b-09d6a0392a0e.jpg"
@@ -10824,7 +10824,7 @@
    "slug": "zaaree-the-riya",
    "brand": "zaaree",
    "title": "The Riya",
-   "description": null,
+   "description": "Semi Satin — The same diagonal chevron weave in a softer rose pink, the gold border catching the light at every turn. Semi satin keeps it light and easy to wear well past the occasion that called for it.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/321f61f6-7844-446b-a83b-beb27aebf1ec.jpg"
@@ -10848,7 +10848,7 @@
    "slug": "zaaree-the-sanaya",
    "brand": "zaaree",
    "title": "The Sanaya",
-   "description": null,
+   "description": "Linen Silk — The same paisley Banarasi reworked in a fresh mint green, the florals picked out in coral and gold for warmth. Linen silk keeps the drape light and matte, easy to wear from morning through evening.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/85e0e6a7-dcb7-44f9-a6c6-6bbadf665dbb.jpg"
@@ -10872,7 +10872,7 @@
    "slug": "zaaree-the-trisha",
    "brand": "zaaree",
    "title": "The Trisha",
-   "description": null,
+   "description": "Linen Silk — A cool silver-grey Banarasi with the identical paisley brocade, its rose-and-teal florals reading almost jewel-like against the pale base. Linen silk's soft hand keeps the overall look restrained and elegant.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bdd258df-04d1-4df0-91e7-5ab2dd47080d.jpg"
@@ -10896,7 +10896,7 @@
    "slug": "zaaree-the-urvi",
    "brand": "zaaree",
    "title": "The Urvi",
-   "description": null,
+   "description": "Feather Silk — A gold silk striped through with bold lavender-and-olive chevrons, woven in an ikat technique that blurs each edge softly. Feather silk keeps the geometry light rather than stiff, so the saree moves rather than stands still.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5a4e7aeb-cdc4-4460-ba41-6f743940181f.jpg"
@@ -10920,7 +10920,7 @@
    "slug": "zaaree-the-vidhi",
    "brand": "zaaree",
    "title": "The Vidhi",
-   "description": null,
+   "description": "Feather Silk — The same chevron ikat in a cooler palette — dusty blue and mauve zigzagging across warm gold. Feather silk's lightness lets the pattern ripple naturally with every step.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c30f2880-1581-405b-907a-a85733842917.jpg"
@@ -10944,7 +10944,7 @@
    "slug": "zaaree-the-yamini",
    "brand": "zaaree",
    "title": "The Yamini",
-   "description": null,
+   "description": "Semi Satin — A warm rust-orange silk scattered with small gold motifs, finished in a deep border of woven peacocks, florals and vines. Semi satin gives it a gentle, low-key sheen — festive without being loud.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b17e8f49-7a47-4d01-9e42-bc1002fab4a1.jpg"
@@ -10968,7 +10968,7 @@
    "slug": "zaaree-the-zoya",
    "brand": "zaaree",
    "title": "The Zoya",
-   "description": null,
+   "description": "Semi Satin — The same peacock-bordered design in a rich sea green, gold accents picked out across the body like scattered light. Semi satin lends it a soft glow that reads well both indoors and out.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/06568277-2b84-4d88-9da6-eabf94d1b765.jpg"

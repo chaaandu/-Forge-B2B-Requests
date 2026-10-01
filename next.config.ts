@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
-// First token only: a multi-line paste in the hosting dashboard must not break the allow-list.
-const mediaRaw = process.env.POS_MEDIA_BASE_URL?.trim().split(/\s+/)[0];
-const media = mediaRaw ? new URL(mediaRaw) : null;
+// The POS's public storage bucket. Written here as well as read from
+// POS_MEDIA_BASE_URL, because this allow-list is fixed when the site is built,
+// and a setting the build can't see would turn every photo into a 400.
+const MEDIA_HOSTS = ["bumrsxkpzrbjfdhquemp.supabase.co"];
+const fromEnv = process.env.POS_MEDIA_BASE_URL?.trim().split(/\s+/)[0];
+if (fromEnv) MEDIA_HOSTS.push(new URL(fromEnv).hostname);
 
 const nextConfig: NextConfig = {
   images: {
@@ -10,7 +13,7 @@ const nextConfig: NextConfig = {
     // POS_MEDIA_BASE_URL is set, otherwise through the POS API (`/files/...`).
     remotePatterns: [
       { protocol: "https", hostname: "mesa-pos-api-tqiiw3ddga-el.a.run.app", pathname: "/files/**" },
-      ...(media ? [{ protocol: "https" as const, hostname: media.hostname, pathname: `${media.pathname.replace(/\/$/, "")}/**` }] : []),
+      ...[...new Set(MEDIA_HOSTS)].map((hostname) => ({ protocol: "https" as const, hostname, pathname: "/storage/v1/object/public/**" })),
     ],
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60 * 60 * 24 * 30,

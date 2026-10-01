@@ -15,29 +15,53 @@ export const REFRESH_SECONDS = 600;
 /**
  * The live catalogue: read from the POS, cached for REFRESH_SECONDS, and
  * rebuilt in the background once stale (visitors never wait on the database).
- * Falls back to the committed data/catalog.json snapshot when there's no
- * database configured or it can't be reached, so a POS outage never takes the
- * shop down with it.
+ *
+ * A failed read throws out of the cache rather than being cached, so the
+ * snapshot that stands in for it lasts one request, not ten minutes.
  */
-const loadCatalog = unstable_cache(
-  async (): Promise<Catalog> => {
-    const dbUrl = urlEnv("POS_DATABASE_URL");
-    const imageBase = urlEnv("POS_PUBLIC_BASE_URL");
-    if (!dbUrl || !imageBase) return snapshot as Catalog;
-    try {
-      const { catalog } = await buildCatalog(dbUrl, imageBase, urlEnv("POS_MEDIA_BASE_URL"));
-      return catalog;
-    } catch (err) {
-      console.error("[catalog] POS unreachable, serving the snapshot instead:", err);
-      return snapshot as Catalog;
-    }
-  },
-  ["catalog-v7"],
+const loadLive = unstable_cache(
+  async (dbUrl: string, imageBase: string, mediaBase: string | undefined): Promise<Catalog> =>
+    (await buildCatalog(dbUrl, imageBase, mediaBase)).catalog,
+  ["catalog-v8"],
   { revalidate: REFRESH_SECONDS, tags: ["catalog"] },
 );
 
+export type CatalogSource = "live" | "snapshot";
+
+/** Where the last catalogue came from, and why not live if it didn't. For /api/catalog-status. */
+export const health: { source: CatalogSource; reason: string | null } = { source: "snapshot", reason: "not loaded yet" };
+
+/**
+ * The catalogue, falling back to the committed data/catalog.json snapshot when
+ * there's no database configured, when the POS can't be reached (so a POS
+ * outage never takes the shop down), and during `next build`.
+ *
+ * Why not at build: the build renders every page across several workers at
+ * once, each with its own cache, and every one of them would open a database
+ * connection in the same second — past the read-only login's connection
+ * limit. Pages are built from the snapshot and pick up live data on their
+ * first revalidation, within REFRESH_SECONDS of the deploy.
+ */
 export async function getCatalog(): Promise<CatalogView> {
-  return view(await loadCatalog());
+  const dbUrl = urlEnv("POS_DATABASE_URL");
+  const imageBase = urlEnv("POS_PUBLIC_BASE_URL");
+  const fallback = (reason: string) => {
+    health.source = "snapshot";
+    health.reason = reason;
+    return view(snapshot as Catalog);
+  };
+  if (process.env.NEXT_PHASE === "phase-production-build") return fallback("building");
+  if (!dbUrl || !imageBase) return fallback("POS_DATABASE_URL or POS_PUBLIC_BASE_URL is not set");
+  try {
+    const live = await loadLive(dbUrl, imageBase, urlEnv("POS_MEDIA_BASE_URL"));
+    health.source = "live";
+    health.reason = null;
+    return view(live);
+  } catch (err) {
+    console.error("[catalog] POS unreachable, serving the snapshot instead:", err);
+    // Never echo a connection string back out.
+    return fallback(String((err as Error)?.message ?? err).replace(/\w+:\/\/[^\s@]+@/g, "…@"));
+  }
 }
 
 export interface CatalogView extends Catalog {
