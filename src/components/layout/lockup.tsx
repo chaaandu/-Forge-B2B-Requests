@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/cn";
+import { withBase } from "@/lib/base-path";
 
 /**
  * Mesa × Forge. The official Mesa lockup is placed untouched (the brand book
@@ -10,7 +11,7 @@ export function Lockup({ tone = "light", className }: { tone?: "light" | "dark";
   return (
     <span className={cn("flex items-center gap-3", className)}>
       <Image
-        src={tone === "light" ? "/brand/mesa_logo_on_light.png" : "/brand/mesa_logo_on_dark.png"}
+        src={tone === "light" ? withBase("/brand/mesa_logo_on_light.png") : withBase("/brand/mesa_logo_on_dark.png")}
         alt="Mesa School of Business"
         width={1245}
         height={435}

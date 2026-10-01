@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { BASE_PATH } from "./src/lib/base-path";
 
 // The POS's public storage bucket. Written here as well as read from
 // POS_MEDIA_BASE_URL, because this allow-list is fixed when the site is built,
@@ -8,6 +9,12 @@ const fromEnv = process.env.POS_MEDIA_BASE_URL?.trim().split(/\s+/)[0];
 if (fromEnv) MEDIA_HOSTS.push(new URL(fromEnv).hostname);
 
 const nextConfig: NextConfig = {
+  // Served at fb.mesaschool.co.in/b2b through the leaderboard project's rewrites.
+  basePath: BASE_PATH,
+  // This project's own *.vercel.app root has nothing at `/` any more.
+  async redirects() {
+    return [{ source: "/", destination: BASE_PATH, basePath: false, permanent: false }];
+  },
   images: {
     // Product photos: straight from the POS's public storage bucket when
     // POS_MEDIA_BASE_URL is set, otherwise through the POS API (`/files/...`).

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/cn";
+import { withBase } from "@/lib/base-path";
 
 /**
  * A Fluent 3D emoji from public/icons3d — Microsoft's open-source set (MIT,
@@ -8,7 +9,7 @@ import { cn } from "@/lib/cn";
 export function Icon3D({ name, size = 64, className, priority }: { name: string; size?: number; className?: string; priority?: boolean }) {
   return (
     <Image
-      src={`/icons3d/${name}.png`}
+      src={withBase(`/icons3d/${name}.png`)}
       alt=""
       aria-hidden
       width={size}

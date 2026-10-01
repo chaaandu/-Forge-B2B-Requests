@@ -3,6 +3,8 @@ import { NextResponse, type NextRequest } from "next/server";
 import { getCatalog } from "@/lib/catalog";
 import { PERSONAL_DOMAINS, requestSchema } from "@/lib/request-schema";
 import { deliver, type SheetRequest } from "@/lib/sheets";
+import { BASE_PATH } from "@/lib/base-path";
+import { urlEnv } from "@/lib/env";
 
 // A small per-instance limiter. It won't stop a determined flood across
 // serverless instances, but it does stop a stuck button or a naive bot.
@@ -45,7 +47,9 @@ export async function POST(req: NextRequest) {
   if (r.website) return NextResponse.json({ ref });
 
   const catalog = await getCatalog();
-  const origin = req.nextUrl.origin;
+  // Links in the sheet use the public address (fb.mesaschool.co.in/b2b), not
+  // whichever host the request was forwarded to.
+  const site = urlEnv("SITE_URL") ?? `${req.nextUrl.origin}${BASE_PATH}`;
   // Names and prices come from the catalogue, never from the browser. A SKU
   // archived since it was added is still passed on, flagged, so the ask isn't lost.
   const items: SheetRequest["items"] = r.items.map((i) => {
@@ -73,7 +77,7 @@ export async function POST(req: NextRequest) {
       qty: i.qty,
       unitPrice: unit,
       lineValue: Math.round(unit * i.qty * 100) / 100,
-      url: `${origin}/products/${hit.listing.slug}`,
+      url: `${site}/products/${hit.listing.slug}`,
     };
   });
 

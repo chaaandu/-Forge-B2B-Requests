@@ -11,6 +11,7 @@ import { cn } from "@/lib/cn";
 import { QtyStepper } from "./qty-stepper";
 import { Icon3D } from "@/components/icon3d";
 import { FitImage } from "@/components/fit-image";
+import { withBase } from "@/lib/base-path";
 
 interface Fields {
   name: string;
@@ -66,7 +67,7 @@ export function RequestForm({ shared }: { shared: ListItem[] }) {
   const value = list.items.reduce((n, i) => n + i.qty * i.priceMinor, 0);
 
   const share = async () => {
-    const url = `${window.location.origin}/request?list=${encodeList(list.items)}`;
+    const url = `${window.location.origin}${withBase("/request")}?list=${encodeList(list.items)}`;
     try {
       if (navigator.share && window.matchMedia("(pointer: coarse)").matches) {
         await navigator.share({ title: "Our Mesa Forge shortlist", url });
@@ -96,7 +97,7 @@ export function RequestForm({ shared }: { shared: ListItem[] }) {
     setSending(true);
     setErrors({});
     try {
-      const res = await fetch("/api/request", {
+      const res = await fetch(withBase("/api/request"), {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(payload),

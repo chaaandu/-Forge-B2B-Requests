@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
 import { urlEnv } from "@/lib/env";
+import { BASE_PATH } from "@/lib/base-path";
 import { getCatalog } from "@/lib/catalog";
 import { COLLECTIONS } from "@/lib/catalog-types";
 
 export const revalidate = 600;
 
-const site = () => (urlEnv("SITE_URL") ?? "http://localhost:3000").replace(/\/$/, "");
+const site = () => (urlEnv("SITE_URL") ?? `http://localhost:3000${BASE_PATH}`).replace(/\/$/, "");
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const catalog = await getCatalog();
