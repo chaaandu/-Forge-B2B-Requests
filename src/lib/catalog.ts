@@ -2,6 +2,7 @@ import "server-only";
 import { unstable_cache } from "next/cache";
 import snapshot from "../../data/catalog.json";
 import { buildCatalog } from "./catalog-build";
+import { urlEnv } from "./env";
 import { COLLECTIONS, type Brand, type Catalog, type CollectionId, type Listing } from "./catalog-types";
 
 /**
@@ -20,18 +21,18 @@ export const REFRESH_SECONDS = 600;
  */
 const loadCatalog = unstable_cache(
   async (): Promise<Catalog> => {
-    const dbUrl = process.env.POS_DATABASE_URL;
-    const imageBase = process.env.POS_PUBLIC_BASE_URL;
+    const dbUrl = urlEnv("POS_DATABASE_URL");
+    const imageBase = urlEnv("POS_PUBLIC_BASE_URL");
     if (!dbUrl || !imageBase) return snapshot as Catalog;
     try {
-      const { catalog } = await buildCatalog(dbUrl, imageBase, process.env.POS_MEDIA_BASE_URL);
+      const { catalog } = await buildCatalog(dbUrl, imageBase, urlEnv("POS_MEDIA_BASE_URL"));
       return catalog;
     } catch (err) {
       console.error("[catalog] POS unreachable, serving the snapshot instead:", err);
       return snapshot as Catalog;
     }
   },
-  ["catalog-v6"],
+  ["catalog-v7"],
   { revalidate: REFRESH_SECONDS, tags: ["catalog"] },
 );
 

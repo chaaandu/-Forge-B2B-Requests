@@ -1,6 +1,7 @@
 import "server-only";
 import { appendFile, mkdir } from "node:fs/promises";
 import { resolve } from "node:path";
+import { urlEnv } from "./env";
 
 /**
  * One request as it lands in the Google Sheet: a row on `Requests`, plus a
@@ -39,7 +40,7 @@ export class DeliveryError extends Error {}
  * `.data/requests.jsonl` instead, so the whole flow can be tried offline.
  */
 export async function deliver(request: SheetRequest): Promise<void> {
-  const url = process.env.SHEETS_WEBHOOK_URL;
+  const url = urlEnv("SHEETS_WEBHOOK_URL");
   if (!url) {
     if (process.env.NODE_ENV === "production") throw new DeliveryError("SHEETS_WEBHOOK_URL is not set");
     const dir = resolve(process.cwd(), ".data");
@@ -54,7 +55,7 @@ export async function deliver(request: SheetRequest): Promise<void> {
   const res = await fetch(url, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ secret: process.env.SHEETS_WEBHOOK_SECRET ?? "", request }),
+    body: JSON.stringify({ secret: urlEnv("SHEETS_WEBHOOK_SECRET") ?? "", request }),
     redirect: "follow",
     signal: AbortSignal.timeout(20_000),
   });

@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
-const media = process.env.POS_MEDIA_BASE_URL ? new URL(process.env.POS_MEDIA_BASE_URL) : null;
+// First token only: a multi-line paste in the hosting dashboard must not break the allow-list.
+const mediaRaw = process.env.POS_MEDIA_BASE_URL?.trim().split(/\s+/)[0];
+const media = mediaRaw ? new URL(mediaRaw) : null;
 
 const nextConfig: NextConfig = {
   images: {
