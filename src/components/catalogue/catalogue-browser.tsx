@@ -180,7 +180,9 @@ export function CatalogueBrowser({
           />
         </div>
       )}
-      <div className="sticky top-16 z-30 -mx-5 border-b border-ink/10 bg-paper/90 px-5 py-3 backdrop-blur-md sm:-mx-8 sm:px-8">
+      {/* Above the grid, below the phone menu (which is z-30): at the same layer
+          this bar came later in the page and showed through it. */}
+      <div className="sticky top-16 z-20 -mx-5 border-b border-ink/10 bg-paper/90 px-5 py-3 backdrop-blur-md sm:-mx-8 sm:px-8">
         <div className="flex items-center gap-2">
           <label className={cn("relative min-w-0 flex-1", room.search)}>
             <Search className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink/40" />
