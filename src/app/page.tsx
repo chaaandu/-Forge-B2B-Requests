@@ -5,6 +5,7 @@ import { allFounders, foundersOf } from "@/lib/founders";
 import { getImpact } from "@/lib/impact";
 import { getReels } from "@/lib/reels";
 import { Hero } from "@/components/home/hero";
+import { MobileHero, type MobileHeroVariant } from "@/components/home/mobile-hero";
 import { Manifesto } from "@/components/home/manifesto";
 import { FounderWall } from "@/components/home/founder-wall";
 import { Journey } from "@/components/home/journey";
@@ -25,7 +26,13 @@ export const revalidate = 600;
  * argues first (who made these, why it matters, what your budget does) and
  * sells second, and every product it shows carries the faces of its makers.
  */
-export default async function Home() {
+type Search = Promise<Record<string, string | string[] | undefined>>;
+const VARIANTS: MobileHeroVariant[] = ["cover", "deck", "type"];
+
+export default async function Home({ searchParams }: { searchParams: Search }) {
+  // While Mesa picks a phone hero: ?hero=cover|deck|type (cover by default).
+  const asked = (await searchParams).hero;
+  const heroVariant = VARIANTS.find((v) => v === asked) ?? "cover";
   const catalog = await getCatalog();
   const brandByCode = new Map(catalog.brands.map((b) => [b.teamCode, b]));
   const [impact, reels] = await Promise.all([getImpact(catalog.brands.map((b) => b.teamCode)), getReels()]);
@@ -49,12 +56,14 @@ export default async function Home() {
     )
     .slice(0, 10);
 
-  // Phones: one founder from each of the four best-selling teams, standing
-  // together; the two in the middle stand in front.
-  const heroSquad = byRevenue
-    .flatMap((b) => foundersOf(b.teamCode).slice(0, 1))
-    .slice(0, 4)
-    .map((f, i) => ({ ...f, z: [1, 3, 4, 2][i] }));
+  // Phones: one founder from each of the eight best-selling teams.
+  const heroPeople = byRevenue
+    .flatMap((b) =>
+      foundersOf(b.teamCode)
+        .slice(0, 1)
+        .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug, tagline: b.tagline })),
+    )
+    .slice(0, 8);
 
   const hampers = catalog
     .listingsIn("hampers")
@@ -127,7 +136,14 @@ export default async function Home() {
 
   return (
     <>
-      <Hero faces={heroFaces} squad={heroSquad} founders={wall.length} brands={catalog.totals.brands} />
+      <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
+      <MobileHero
+        variant={heroVariant}
+        people={heroPeople}
+        products={hampers.slice(0, 6).map((l) => l.images[0])}
+        founders={wall.length}
+        brands={catalog.totals.brands}
+      />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (

@@ -10,8 +10,6 @@ import { INTRO_DONE } from "@/components/motion/preloader";
 import { useTransitionNav } from "@/components/motion/transition";
 import { getLenis } from "@/components/motion/smooth-scroll";
 import { Roll } from "@/components/layout/header";
-import { TeamLineup } from "@/components/team-lineup";
-import type { Founder } from "@/lib/founders";
 
 export interface HeroFace {
   name: string;
@@ -97,190 +95,195 @@ function arrange(width: number, title: Box, foot: Box): Slot[] {
   return slots;
 }
 
-export function Hero({ faces, squad, founders, brands }: { faces: HeroFace[]; squad: Founder[]; founders: number; brands: number }) {
+export function Hero({ faces, founders, brands }: { faces: HeroFace[]; founders: number; brands: number }) {
   const root = useRef<HTMLElement>(null);
   const go = useTransitionNav();
 
   useGSAP(
     () => {
-      const el = root.current!;
-      const title = el.querySelector<HTMLElement>("[data-title]")!;
-      const stickers = gsap.utils.toArray<HTMLElement>("[data-sticker]");
+      // Phones get MobileHero (this section is display:none there), so all of
+      // this runs from md up, and is undone if the screen drops below it.
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 768px)", () => {
+        const el = root.current!;
+        const title = el.querySelector<HTMLElement>("[data-title]")!;
+        const stickers = gsap.utils.toArray<HTMLElement>("[data-sticker]");
 
-      // Measure the headline and the buttons, then put the stickers in the
-      // space that's left. Re-run when the screen changes.
-      const place = () => {
-        const host = el.getBoundingClientRect();
-        const box = (els: Element[]): Box => {
-          const rs = els.map((e) => e.getBoundingClientRect());
-          return {
-            l: Math.min(...rs.map((r) => r.left)) - host.left,
-            t: Math.min(...rs.map((r) => r.top)) - host.top,
-            r: Math.max(...rs.map((r) => r.right)) - host.left,
-            b: Math.max(...rs.map((r) => r.bottom)) - host.top,
+        // Measure the headline and the buttons, then put the stickers in the
+        // space that's left. Re-run when the screen changes.
+        const place = () => {
+          const host = el.getBoundingClientRect();
+          const box = (els: Element[]): Box => {
+            const rs = els.map((e) => e.getBoundingClientRect());
+            return {
+              l: Math.min(...rs.map((r) => r.left)) - host.left,
+              t: Math.min(...rs.map((r) => r.top)) - host.top,
+              r: Math.max(...rs.map((r) => r.right)) - host.left,
+              b: Math.max(...rs.map((r) => r.bottom)) - host.top,
+            };
           };
+          const underline = el.querySelector("[data-underline]");
+          const slots = arrange(
+            host.width,
+            box([title, ...(underline ? [underline] : [])]),
+            box([...el.querySelectorAll("[data-hero-foot] > *")]),
+          );
+          stickers.forEach((s, i) => {
+            const slot = slots[i];
+            if (!slot) return void (s.style.display = "none");
+            Object.assign(s.style, { display: "", left: `${slot.x}px`, top: `${slot.y}px`, width: `${slot.size}px` });
+          });
         };
-        const underline = el.querySelector("[data-underline]");
-        const slots = arrange(
-          host.width,
-          box([title, ...(underline ? [underline] : [])]),
-          box([...el.querySelectorAll("[data-hero-foot] > *")]),
-        );
-        stickers.forEach((s, i) => {
-          const slot = slots[i];
-          if (!slot) return void (s.style.display = "none");
-          Object.assign(s.style, { display: "", left: `${slot.x}px`, top: `${slot.y}px`, width: `${slot.size}px` });
-        });
-      };
-      let resizeTimer = 0;
-      const onResize = () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = window.setTimeout(() => {
-          placeUnderline();
-          place();
-        }, 150);
-      };
-      window.addEventListener("resize", onResize);
-      const line = el.querySelector<SVGPathElement>("[data-underline] path");
-      // The underline is redrawn in real pixels for the width it has to span:
-      // a stretched SVG would thicken the stroke, and a non-scaling stroke
-      // would make the draw-on animation stop partway along.
-      const placeUnderline = () => {
-        const svg = el.querySelector<SVGSVGElement>("[data-underline]");
-        // SplitText clones the italic phrase once per word, so measure every
-        // piece, and only those on its last line if it ever wraps.
-        const rects = [...el.querySelectorAll("[data-underline-target]")].map((t) => t.getBoundingClientRect()).filter((r) => r.width > 0);
-        if (!svg || !line || !rects.length) return;
-        const lastBottom = Math.max(...rects.map((r) => r.bottom));
-        const last = rects.filter((r) => r.bottom > lastBottom - r.height / 2);
-        const left = Math.min(...last.map((r) => r.left));
-        const right = Math.max(...last.map((r) => r.right));
-        const a = { left, width: right - left, bottom: lastBottom, height: Math.max(...last.map((r) => r.height)) };
-        const b = el.getBoundingClientRect();
-        const w = Math.round(a.width);
-        const h = Math.max(14, Math.round(a.height * 0.2));
-        Object.assign(svg.style, {
-          left: `${a.left - b.left}px`,
-          top: `${a.bottom - b.top - a.height * 0.12}px`,
-          width: `${w}px`,
-          height: `${h}px`,
-        });
-        svg.classList.remove("invisible");
-        svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
-        line.setAttribute(
-          "d",
-          `M4 ${h * 0.62} C ${w * 0.18} ${h * 0.12}, ${w * 0.32} ${h * 0.95}, ${w * 0.5} ${h * 0.55} S ${w * 0.82} ${h * 0.2}, ${w - 4} ${h * 0.58}`,
-        );
-        line.setAttribute("stroke-width", String(Math.max(4, h * 0.32)));
-      };
-      placeUnderline();
-      place();
+        let resizeTimer = 0;
+        const onResize = () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = window.setTimeout(() => {
+            placeUnderline();
+            place();
+          }, 150);
+        };
+        window.addEventListener("resize", onResize);
+        const line = el.querySelector<SVGPathElement>("[data-underline] path");
+        // The underline is redrawn in real pixels for the width it has to span:
+        // a stretched SVG would thicken the stroke, and a non-scaling stroke
+        // would make the draw-on animation stop partway along.
+        const placeUnderline = () => {
+          const svg = el.querySelector<SVGSVGElement>("[data-underline]");
+          // SplitText clones the italic phrase once per word, so measure every
+          // piece, and only those on its last line if it ever wraps.
+          const rects = [...el.querySelectorAll("[data-underline-target]")]
+            .map((t) => t.getBoundingClientRect())
+            .filter((r) => r.width > 0);
+          if (!svg || !line || !rects.length) return;
+          const lastBottom = Math.max(...rects.map((r) => r.bottom));
+          const last = rects.filter((r) => r.bottom > lastBottom - r.height / 2);
+          const left = Math.min(...last.map((r) => r.left));
+          const right = Math.max(...last.map((r) => r.right));
+          const a = { left, width: right - left, bottom: lastBottom, height: Math.max(...last.map((r) => r.height)) };
+          const b = el.getBoundingClientRect();
+          const w = Math.round(a.width);
+          const h = Math.max(14, Math.round(a.height * 0.2));
+          Object.assign(svg.style, {
+            left: `${a.left - b.left}px`,
+            top: `${a.bottom - b.top - a.height * 0.12}px`,
+            width: `${w}px`,
+            height: `${h}px`,
+          });
+          svg.classList.remove("invisible");
+          svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+          line.setAttribute(
+            "d",
+            `M4 ${h * 0.62} C ${w * 0.18} ${h * 0.12}, ${w * 0.32} ${h * 0.95}, ${w * 0.5} ${h * 0.55} S ${w * 0.82} ${h * 0.2}, ${w - 4} ${h * 0.58}`,
+          );
+          line.setAttribute("stroke-width", String(Math.max(4, h * 0.32)));
+        };
+        placeUnderline();
+        place();
 
-      title.classList.remove("js-reveal");
-      if (reducedMotion()) return () => window.removeEventListener("resize", onResize);
+        title.classList.remove("js-reveal");
+        if (reducedMotion()) return () => window.removeEventListener("resize", onResize);
 
-      const split = SplitText.create(title, {
-        type: "lines,words,chars",
-        mask: "lines",
-        // Masks get .line-mask's room (globals.css), so descenders and the
-        // italic's swashes aren't shaved off.
-        linesClass: "line",
-        autoSplit: true,
-        onSplit: () => {
-          placeUnderline();
-          place();
-        },
-      });
-
-      const tl = gsap
-        .timeline({ paused: true, defaults: { ease: "expo.out" } })
-        .from(split.chars, { yPercent: 160, rotate: 12, duration: 1.3, stagger: 0.022 })
-        .fromTo(line, { drawSVG: "0%" }, { drawSVG: "100%", duration: 1.1, ease: "power2.inOut" }, 0.75)
-        // Drawn: hand the stroke back, so a resize that lengthens it never shows a gap.
-        .set(line, { clearProps: "strokeDasharray,strokeDashoffset" })
-        // Phones: the arch grows up from the ground, then the founders rise into it, middle first.
-        .from("[data-arch-bg]", { scaleY: 0, transformOrigin: "50% 100%", duration: 1.2 }, 0.1)
-        .from("[data-arch] figure", { yPercent: 35, opacity: 0, duration: 1.2, stagger: { each: 0.09, from: "center" } }, 0.25)
-        .from(
-          stickers,
-          {
-            scale: 0,
-            rotate: () => gsap.utils.random(-50, 50),
-            opacity: 0,
-            duration: 1.3,
-            stagger: { each: 0.06, from: "random" },
-            ease: "back.out(1.7)",
+        const split = SplitText.create(title, {
+          type: "lines,words,chars",
+          mask: "lines",
+          // Masks get .line-mask's room (globals.css), so descenders and the
+          // italic's swashes aren't shaved off.
+          linesClass: "line",
+          autoSplit: true,
+          onSplit: () => {
+            placeUnderline();
+            place();
           },
-          0.3,
-        )
-        .from("[data-hero-foot] > *", { y: 40, opacity: 0, duration: 1, stagger: 0.08 }, 0.6);
-
-      const play = () => tl.play();
-      if (document.documentElement.classList.contains("intro")) window.addEventListener(INTRO_DONE, play, { once: true });
-      else play();
-
-      if (finePointer()) {
-        // Stickers: lean toward the pointer (outer), drift up on scroll (outer),
-        // can be thrown (drag), and bob while left alone (float).
-        const movers = stickers.map((s) => ({
-          x: gsap.quickTo(s.querySelector("[data-lean]"), "x", { duration: 1.2, ease: "power3" }),
-          y: gsap.quickTo(s.querySelector("[data-lean]"), "y", { duration: 1.2, ease: "power3" }),
-          d: Number(s.dataset.depth),
-        }));
-        const lean = (e: PointerEvent) => {
-          const nx = e.clientX / window.innerWidth - 0.5;
-          const ny = e.clientY / window.innerHeight - 0.5;
-          movers.forEach((m) => (m.x(nx * 60 * m.d), m.y(ny * 40 * m.d)));
-        };
-        window.addEventListener("pointermove", lean);
-        stickers.forEach((s) => {
-          gsap.to(s, {
-            yPercent: -110 * Number(s.dataset.depth),
-            ease: "none",
-            scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: true },
-          });
-          gsap.to(s.querySelector("[data-float]"), {
-            y: gsap.utils.random(-14, 14),
-            rotate: gsap.utils.random(-4, 4),
-            duration: gsap.utils.random(2.4, 3.8),
-            ease: "sine.inOut",
-            yoyo: true,
-            repeat: -1,
-          });
         });
-        const drags = stickers.map(
-          (s) =>
-            Draggable.create(s.querySelector("[data-drag]"), {
-              type: "x,y",
-              bounds: el,
-              inertia: true,
-              edgeResistance: 0.7,
-              zIndexBoost: true,
-              onPress() {
-                gsap.to(this.target, { scale: 1.08, duration: 0.25 });
-              },
-              onRelease() {
-                gsap.to(this.target, { scale: 1, duration: 0.5, ease: "elastic.out(1, 0.5)" });
-              },
-              onClick() {
-                const slug = (this.target as HTMLElement).dataset.slug;
-                if (slug) go?.(`/brands/${slug}`);
-              },
-            })[0],
-        );
-        return () => {
-          window.removeEventListener("pointermove", lean);
-          window.removeEventListener("resize", onResize);
-          drags.forEach((d) => d.kill());
-        };
-      }
-      return () => window.removeEventListener("resize", onResize);
+
+        const tl = gsap
+          .timeline({ paused: true, defaults: { ease: "expo.out" } })
+          .from(split.chars, { yPercent: 160, rotate: 12, duration: 1.3, stagger: 0.022 })
+          .fromTo(line, { drawSVG: "0%" }, { drawSVG: "100%", duration: 1.1, ease: "power2.inOut" }, 0.75)
+          // Drawn: hand the stroke back, so a resize that lengthens it never shows a gap.
+          .set(line, { clearProps: "strokeDasharray,strokeDashoffset" })
+          .from(
+            stickers,
+            {
+              scale: 0,
+              rotate: () => gsap.utils.random(-50, 50),
+              opacity: 0,
+              duration: 1.3,
+              stagger: { each: 0.06, from: "random" },
+              ease: "back.out(1.7)",
+            },
+            0.3,
+          )
+          .from("[data-hero-foot] > *", { y: 40, opacity: 0, duration: 1, stagger: 0.08 }, 0.6);
+
+        const play = () => tl.play();
+        if (document.documentElement.classList.contains("intro")) window.addEventListener(INTRO_DONE, play, { once: true });
+        else play();
+
+        if (finePointer()) {
+          // Stickers: lean toward the pointer (outer), drift up on scroll (outer),
+          // can be thrown (drag), and bob while left alone (float).
+          const movers = stickers.map((s) => ({
+            x: gsap.quickTo(s.querySelector("[data-lean]"), "x", { duration: 1.2, ease: "power3" }),
+            y: gsap.quickTo(s.querySelector("[data-lean]"), "y", { duration: 1.2, ease: "power3" }),
+            d: Number(s.dataset.depth),
+          }));
+          const lean = (e: PointerEvent) => {
+            const nx = e.clientX / window.innerWidth - 0.5;
+            const ny = e.clientY / window.innerHeight - 0.5;
+            movers.forEach((m) => (m.x(nx * 60 * m.d), m.y(ny * 40 * m.d)));
+          };
+          window.addEventListener("pointermove", lean);
+          stickers.forEach((s) => {
+            gsap.to(s, {
+              yPercent: -110 * Number(s.dataset.depth),
+              ease: "none",
+              scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: true },
+            });
+            gsap.to(s.querySelector("[data-float]"), {
+              y: gsap.utils.random(-14, 14),
+              rotate: gsap.utils.random(-4, 4),
+              duration: gsap.utils.random(2.4, 3.8),
+              ease: "sine.inOut",
+              yoyo: true,
+              repeat: -1,
+            });
+          });
+          const drags = stickers.map(
+            (s) =>
+              Draggable.create(s.querySelector("[data-drag]"), {
+                type: "x,y",
+                bounds: el,
+                inertia: true,
+                edgeResistance: 0.7,
+                zIndexBoost: true,
+                onPress() {
+                  gsap.to(this.target, { scale: 1.08, duration: 0.25 });
+                },
+                onRelease() {
+                  gsap.to(this.target, { scale: 1, duration: 0.5, ease: "elastic.out(1, 0.5)" });
+                },
+                onClick() {
+                  const slug = (this.target as HTMLElement).dataset.slug;
+                  if (slug) go?.(`/brands/${slug}`);
+                },
+              })[0],
+          );
+          return () => {
+            window.removeEventListener("pointermove", lean);
+            window.removeEventListener("resize", onResize);
+            drags.forEach((d) => d.kill());
+          };
+        }
+        return () => window.removeEventListener("resize", onResize);
+      });
+      return () => mm.revert();
     },
     { scope: root },
   );
 
   return (
-    <section ref={root} className="relative isolate min-h-[calc(100svh-4rem)] overflow-hidden">
+    <section ref={root} className="relative isolate hidden min-h-[calc(100svh-4rem)] overflow-hidden md:block">
       <div aria-hidden className="absolute inset-0 -z-10 hidden md:block">
         {faces.slice(0, STICKERS.length).map((f, i) => {
           const s = STICKERS[i];
@@ -319,15 +322,6 @@ export function Hero({ faces, squad, founders, brands }: { faces: HeroFace[]; sq
       </svg>
 
       <div className="mx-auto flex min-h-[calc(100svh-4rem)] max-w-[1500px] flex-col justify-center gap-8 px-5 pb-10 pt-4 sm:px-8 md:justify-between md:gap-0 md:pt-6">
-        {/* Phones: real founders stand together under an arch, the way each squad
-            does on its own page, and the line below says who they are. */}
-        {squad.length > 0 && (
-          <div data-arch aria-hidden className="@container relative -mx-5 sm:-mx-8 md:hidden">
-            <div data-arch-bg className="absolute inset-x-[7%] bottom-0 top-[14%] rounded-t-full bg-orchid-soft" />
-            <TeamLineup people={squad} sizes="38vw" fit="128px" className="relative" />
-          </div>
-        )}
-
         <h1
           data-title
           className="js-reveal font-display mx-auto max-w-[15ch] text-center text-[clamp(2.9rem,min(12vw,15.5vh),10.5rem)] leading-[0.88] text-ink md:my-auto md:py-0"
