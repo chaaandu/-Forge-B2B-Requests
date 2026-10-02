@@ -27,12 +27,12 @@ export const revalidate = 600;
  * sells second, and every product it shows carries the faces of its makers.
  */
 type Search = Promise<Record<string, string | string[] | undefined>>;
-const VARIANTS: MobileHeroVariant[] = ["cover", "deck", "type"];
+const VARIANTS: MobileHeroVariant[] = ["stickers", "orbit", "pile", "drift"];
 
 export default async function Home({ searchParams }: { searchParams: Search }) {
-  // While Mesa picks a phone hero: ?hero=cover|deck|type (cover by default).
+  // While Mesa picks a phone hero: ?hero=stickers|orbit|pile|drift (stickers by default).
   const asked = (await searchParams).hero;
-  const heroVariant = VARIANTS.find((v) => v === asked) ?? "cover";
+  const heroVariant = VARIANTS.find((v) => v === asked) ?? "stickers";
   const catalog = await getCatalog();
   const brandByCode = new Map(catalog.brands.map((b) => [b.teamCode, b]));
   const [impact, reels] = await Promise.all([getImpact(catalog.brands.map((b) => b.teamCode)), getReels()]);
@@ -56,14 +56,14 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
     )
     .slice(0, 10);
 
-  // Phones: one founder from each of the eight best-selling teams.
+  // Phones: one founder from each of the twelve best-selling teams.
   const heroPeople = byRevenue
     .flatMap((b) =>
       foundersOf(b.teamCode)
         .slice(0, 1)
-        .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug, tagline: b.tagline })),
+        .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug })),
     )
-    .slice(0, 8);
+    .slice(0, 12);
 
   const hampers = catalog
     .listingsIn("hampers")
@@ -137,13 +137,7 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
   return (
     <>
       <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
-      <MobileHero
-        variant={heroVariant}
-        people={heroPeople}
-        products={hampers.slice(0, 6).map((l) => l.images[0])}
-        founders={wall.length}
-        brands={catalog.totals.brands}
-      />
+      <MobileHero variant={heroVariant} people={heroPeople} founders={wall.length} brands={catalog.totals.brands} />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (
