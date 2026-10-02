@@ -34,12 +34,24 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
   const [sheet, setSheet] = useState<number | null>(null);
   const go = useTransitionNav();
 
-  // Escape closes the phone card too (a tap outside it does, below).
+  // With the card up, a tap on another face swaps to that founder (their own
+  // handler does it), a tap on the card is left alone, and a tap on anything
+  // else shuts it. Listening for a click, not a press, so scrolling the wall
+  // never closes it.
   useEffect(() => {
     if (sheet === null) return;
+    const away = (e: MouseEvent) => {
+      const t = e.target as Element | null;
+      if (t?.closest("[data-wall-face]") || t?.closest("[data-wall-card]")) return;
+      setSheet(null);
+    };
     const esc = (e: KeyboardEvent) => e.key === "Escape" && setSheet(null);
+    document.addEventListener("click", away);
     document.addEventListener("keydown", esc);
-    return () => document.removeEventListener("keydown", esc);
+    return () => {
+      document.removeEventListener("click", away);
+      document.removeEventListener("keydown", esc);
+    };
   }, [sheet]);
 
   useGSAP(
@@ -102,6 +114,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
                 else setSheet(i);
               }}
               data-cursor="Meet"
+              data-wall-face
               className="relative aspect-square"
             >
               <span data-face-in className="absolute inset-0 block">
@@ -150,10 +163,9 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
         )}
       </div>
 
-      {/* Phone sheet. Behind it, an invisible layer takes the next tap anywhere
-          else (faces included) and just closes it; scrolling still scrolls. */}
-      {sheet !== null && <div aria-hidden onClick={() => setSheet(null)} className="fixed inset-0 z-40" />}
+      {/* Phone sheet */}
       <div
+        data-wall-card
         className={cn(
           "fixed inset-x-3 bottom-3 z-50 mx-auto max-w-md rounded-3xl bg-ink p-5 text-paper shadow-2xl transition duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
           sheet !== null ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-[120%] opacity-0",
