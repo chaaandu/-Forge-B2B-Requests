@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { getCatalog } from "@/lib/catalog";
 import type { ListItem } from "@/lib/request-list";
 import { decodeList } from "@/lib/share";
-import { RequestForm } from "@/components/request/request-form";
+import { GiftListFlow } from "@/components/request/gift-list-flow";
 
-export const metadata: Metadata = { title: "Send your request" };
+export const metadata: Metadata = { title: "Your gift list" };
 
 type Search = Promise<Record<string, string | string[] | undefined>>;
 
@@ -35,8 +35,9 @@ export default async function RequestPage({ searchParams }: { searchParams: Sear
       : [];
 
   return (
-    <div className="mx-auto max-w-[1500px] px-5 pt-12 sm:px-8">
-      <RequestForm shared={shared} teamCodes={Object.fromEntries(catalog.brands.map((b) => [b.slug, b.teamCode]))} />
+    // The same flow as the sheet, given the page: a list someone shared lands here.
+    <div className="mx-auto max-w-xl px-5 pb-16 pt-10 sm:px-8 sm:pt-14">
+      <GiftListFlow variant="page" shared={shared} />
     </div>
   );
 }

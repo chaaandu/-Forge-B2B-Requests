@@ -134,7 +134,7 @@ export async function Footer() {
       </div>
 
       <div className="relative border-t border-paper/10">
-        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-4 px-5 py-6 text-xs text-paper/45 sm:px-8">
+        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-4 px-5 pb-[calc(1.5rem+var(--dock,0px))] pt-6 text-xs text-paper/45 sm:px-8 sm:pb-6">
           <p>© {new Date().getFullYear()} Mesa School of Business</p>
           <p>Retail prices shown. Bulk pricing on the call.</p>
           <BackToTop />

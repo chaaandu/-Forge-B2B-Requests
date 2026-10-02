@@ -9,6 +9,7 @@ import { PRICE_BANDS, inBand } from "@/lib/price-bands";
 import { cn } from "@/lib/cn";
 import { ProductCard } from "@/components/product/product-card";
 import { QuickAdd } from "@/components/product/quick-add";
+import { CategoryStrip } from "./category-strip";
 
 const SORTS = [
   { id: "", label: "Recommended" },
@@ -56,23 +57,37 @@ export function CatalogueBrowser({
     [listings, brandBySlug],
   );
 
+  // Everything but the shelf: brand, budget and search. The category strip
+  // counts against this, so each window says what you'd get by choosing it.
+  const matching = useMemo(() => {
+    const terms = f.q.toLowerCase().split(/\s+/).filter(Boolean);
+    return listings.filter(
+      (l) =>
+        (!f.brand || l.brand === f.brand) && inBand(l.priceFromMinor, f.price) && terms.every((t) => haystacks.get(l.slug)!.includes(t)),
+    );
+  }, [listings, f.brand, f.price, f.q, haystacks]);
+
+  const counts = useMemo(() => {
+    const occasion = getOccasion(f.occasion);
+    const out: Record<string, number> = { all: 0 };
+    for (const l of matching) {
+      out[l.collection] = (out[l.collection] ?? 0) + 1;
+      if (!occasion || occasion.collections.includes(l.collection)) out.all++;
+    }
+    return out;
+  }, [matching, f.occasion]);
+
   const results = useMemo(() => {
     const terms = f.q.toLowerCase().split(/\s+/).filter(Boolean);
     const occasion = !f.collection ? getOccasion(f.occasion) : undefined;
     const inCollection = (id: CollectionId) => (f.collection ? f.collection === id : !occasion || occasion.collections.includes(id));
-    const out = listings.filter(
-      (l) =>
-        inCollection(l.collection) &&
-        (!f.brand || l.brand === f.brand) &&
-        inBand(l.priceFromMinor, f.price) &&
-        terms.every((t) => haystacks.get(l.slug)!.includes(t)),
-    );
+    const out = matching.filter((l) => inCollection(l.collection));
     if (f.sort === "price-asc") out.sort((a, b) => a.priceFromMinor - b.priceFromMinor);
     else if (f.sort === "price-desc") out.sort((a, b) => b.priceFromMinor - a.priceFromMinor);
     else if (f.sort === "name") out.sort((a, b) => a.title.localeCompare(b.title));
     else if (!f.brand && !terms.length) out.sort(interleaveByBrand(out));
     return out;
-  }, [listings, f, haystacks]);
+  }, [matching, f.collection, f.occasion, f.sort, f.brand, f.q]);
 
   // Mirror filters into the URL so a filtered view can be linked and survives
   // a refresh. history.replaceState, not router.replace: no server round-trip,
@@ -116,6 +131,12 @@ export function CatalogueBrowser({
   const occasion = getOccasion(f.occasion);
   const activeCount = [scope === "all" ? f.brand : "", f.price, f.sort].filter(Boolean).length;
   const countLabel = `${results.length} ${results.length === 1 ? "product" : "products"}`;
+  // Where the bar has room to lay the selects out: the store has three of
+  // them, so a tablet gets the phone's single Filters button instead.
+  const room =
+    scope === "all"
+      ? { search: "lg:max-w-xs", toggle: "lg:hidden", selects: "hidden lg:flex", count: "hidden lg:inline", narrow: "lg:hidden" }
+      : { search: "sm:max-w-xs", toggle: "sm:hidden", selects: "hidden sm:flex", count: "hidden sm:inline", narrow: "sm:hidden" };
   const selects = (
     <>
       {scope === "all" && (
@@ -148,28 +169,20 @@ export function CatalogueBrowser({
 
   return (
     <>
+      {scope === "all" && (
+        <div className="mb-6">
+          <CategoryStrip
+            active={f.collection}
+            counts={counts}
+            only={occasion?.collections}
+            occasion={occasion?.id}
+            onSelect={(id) => set({ collection: id })}
+          />
+        </div>
+      )}
       <div className="sticky top-16 z-30 -mx-5 border-b border-ink/10 bg-paper/85 px-5 py-3 backdrop-blur-xl backdrop-saturate-150 sm:-mx-8 sm:px-8">
-        {scope === "all" && (
-          <div className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-            <Chip on={!f.collection && !f.occasion} onClick={() => set({ collection: "", occasion: "" })}>
-              All
-            </Chip>
-            {occasion && (
-              <Chip on={!f.collection} onClick={() => set({ collection: "", occasion: f.collection ? f.occasion : "" })}>
-                {occasion.title}
-                {!f.collection && <X className="ml-1 inline size-3.5" />}
-              </Chip>
-            )}
-            {COLLECTIONS.filter((c) => !occasion || occasion.collections.includes(c.id)).map((c) => (
-              <Chip key={c.id} on={f.collection === c.id} onClick={() => set({ collection: f.collection === c.id ? "" : c.id })}>
-                {c.name}
-              </Chip>
-            ))}
-          </div>
-        )}
-
-        <div className={cn("flex items-center gap-2", scope === "all" && "mt-3")}>
-          <label className="relative min-w-0 flex-1 sm:max-w-xs">
+        <div className="flex items-center gap-2">
+          <label className={cn("relative min-w-0 flex-1", room.search)}>
             <Search className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink/40" />
             <input
               ref={searchRef}
@@ -191,14 +204,15 @@ export function CatalogueBrowser({
               </button>
             )}
           </label>
-          {/* Phones: one button holds the rest, so the bar stays two slim rows. */}
+          {/* Phones (and tablets, in the store): one button holds the rest, so the bar stays slim. */}
           <button
             type="button"
             onClick={() => setPanel((v) => !v)}
             aria-expanded={panel}
             aria-controls="catalogue-filters"
             className={cn(
-              "flex h-9 shrink-0 items-center gap-1.5 rounded-full px-3.5 text-[13px] font-medium transition sm:hidden",
+              "flex h-9 shrink-0 items-center gap-1.5 rounded-full px-3.5 text-[13px] font-medium transition",
+              room.toggle,
               panel || activeCount ? "bg-ink text-paper" : "bg-tile text-ink/70",
             )}
           >
@@ -210,16 +224,19 @@ export function CatalogueBrowser({
               </span>
             )}
           </button>
-          <div className="hidden items-center gap-2 sm:flex">{selects}</div>
-          <span className="ml-auto hidden shrink-0 text-xs tabular-nums text-ink/50 sm:inline">{countLabel}</span>
+          <div className={cn("items-center gap-2", room.selects)}>{selects}</div>
+          <span className={cn("ml-auto shrink-0 text-xs tabular-nums text-ink/50", room.count)}>{countLabel}</span>
         </div>
         {panel && (
-          <div id="catalogue-filters" className="mt-3 grid grid-cols-2 gap-2 sm:hidden [&>label:last-child]:col-span-2 [&_select]:w-full">
+          <div
+            id="catalogue-filters"
+            className={cn("mt-3 grid grid-cols-2 gap-2 [&>label:last-child]:col-span-2 [&_select]:w-full", room.narrow)}
+          >
             {selects}
           </div>
         )}
       </div>
-      <p className="mt-5 text-xs tabular-nums text-ink/50 sm:hidden">{countLabel}</p>
+      <p className={cn("mt-5 text-xs tabular-nums text-ink/50", room.narrow)}>{countLabel}</p>
 
       {results.length === 0 ? (
         <div className="mx-auto max-w-md py-28 text-center">
@@ -270,22 +287,6 @@ function interleaveByBrand(listings: Listing[]) {
     rank.set(l.slug, n);
   }
   return (a: Listing, b: Listing) => rank.get(a.slug)! - rank.get(b.slug)! || Number(b.featured) - Number(a.featured);
-}
-
-function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; children: React.ReactNode }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={on}
-      className={cn(
-        "shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-[13px] font-medium transition",
-        on ? "bg-ink text-paper" : "bg-ink/[0.05] text-ink/70 hover:bg-ink/10 hover:text-ink",
-      )}
-    >
-      {children}
-    </button>
-  );
 }
 
 function Select({

@@ -14,12 +14,11 @@ export interface JourneyData {
   /** Portraits from across the cohort, for the scenes that are about everyone. */
   cohort: string[];
   cohortCount: number;
-  /** The live leaderboard's top five. */
-  board: { brand: string; revenue: number }[];
+  /** Where the example order's money lands: each team on the list, with its founders. */
+  payout: { brand: string; photos: string[]; amount: number }[];
 }
 
 const inr = (n: number) => `₹${new Intl.NumberFormat("en-IN").format(Math.round(n))}`;
-const lakh = (n: number) => (n >= 100000 ? `₹${(n / 100000).toFixed(1).replace(/\.0$/, "")}L` : inr(n));
 
 const CHAPTERS = [
   { label: "List", title: "Make a list.", body: "Hampers, snacks, candles, tees. Add rough quantities. No login, no card, no drama." },
@@ -34,9 +33,9 @@ const CHAPTERS = [
     body: "The people who made it pack it. Want your brand on it? Sleeves, cards, ribbons. Just ask.",
   },
   {
-    label: "Leaderboard",
-    title: "It hits the leaderboard.",
-    body: "Every rupee is real revenue for the founders on your list, and the whole cohort sees it land.",
+    label: "Impact",
+    title: "It becomes their revenue.",
+    body: "Real money for the founders on your list. For a company this young, one bulk order can be its best week yet.",
   },
   {
     label: "Unwrap",
@@ -56,15 +55,6 @@ const PATH = XS.slice(0, -1)
     return `${i === 0 ? `M${x} ${Y} ` : ""}C${x + 75} ${Y + dy} ${nx - 75} ${Y + dy} ${nx} ${Y}`;
   })
   .join(" ");
-
-const orderOf = (d: JourneyData) => d.list.reduce((n, i) => n + (i.qty * i.priceMinor) / 100, 0);
-
-/** Where the example order would sit on the real leaderboard: rows best first, "you" as -1. */
-function ranking(d: JourneyData) {
-  const order = orderOf(d);
-  const rows = [...d.board.map((b, i) => ({ i, v: b.revenue })), { i: -1, v: order }].sort((a, b) => b.v - a.v);
-  return { order, after: rows.map((r) => r.i), rank: rows.findIndex((r) => r.i === -1) + 1 };
-}
 
 /* ─────────────────────────────── scenes ─────────────────────────────── */
 
@@ -178,54 +168,37 @@ function ScenePack({ d }: { d: JourneyData }) {
   );
 }
 
-function SceneBoard({ d }: { d: JourneyData }) {
-  const { order, after, rank } = ranking(d);
-  const rows = [...d.board, { brand: "Your list", revenue: order }];
-  const max = Math.max(...rows.map((r) => r.revenue));
-  const you = rows.length - 1;
+/** The moment it lands: one "new order" ping per team on the list, like the ones on their phones. */
+function SceneImpact({ d }: { d: JourneyData }) {
+  const total = d.payout.reduce((n, p) => n + p.amount, 0);
   return (
-    <div className="mx-auto w-full max-w-[520px] rounded-[30px] bg-ink p-5 text-paper shadow-[0_40px_80px_-30px_rgb(42_24_73/0.6)] sm:p-6">
-      <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-        <p className="font-display text-3xl">Forge leaderboard</p>
-        <span className="text-xs text-paper/45">Live revenue, top five</span>
-      </div>
-      <div className="relative mt-5" style={{ height: rows.length * 52 }}>
-        {rows.map((row, i) => {
-          const isYou = i === you;
-          const finalIndex = after.indexOf(isYou ? -1 : i);
-          return (
-            <div
-              key={row.brand}
-              data-board-row={i}
-              data-final={finalIndex}
-              className="absolute inset-x-0 flex h-11 items-center gap-2 rounded-2xl px-2 sm:gap-3 sm:px-3"
-              style={{ top: i * 52, background: isYou ? "rgb(228 167 243 / 0.16)" : "transparent" }}
-            >
-              <span className="relative w-5 text-sm font-bold tabular-nums text-paper/40">
-                <span data-rank-before>{isYou ? "" : i + 1}</span>
-                <span data-rank-after className={`absolute inset-0 opacity-0 ${isYou ? "text-orchid" : ""}`}>
-                  {finalIndex + 1}
-                </span>
+    <div className="@container mx-auto w-full max-w-[460px] rounded-[30px] bg-ink p-4 text-paper shadow-[0_40px_80px_-30px_rgb(42_24_73/0.6)]">
+      <p className="px-1 pb-2.5 text-xs font-semibold text-paper/50">Meanwhile, on their phones</p>
+      <ul className="space-y-1.5">
+        {d.payout.map((p) => (
+          <li key={p.brand} data-ping className="flex items-center gap-3 rounded-[18px] bg-paper/95 p-2.5 pr-3 text-ink shadow-lg">
+            <FacePile photos={p.photos} max={3} total={Math.min(p.photos.length, 3)} size={30} ring="ring-paper" />
+            <span className="min-w-0 flex-1">
+              <span className="flex items-baseline justify-between gap-2">
+                <span className="truncate text-sm font-semibold">{p.brand}</span>
+                <span className="shrink-0 text-[11px] text-ink/40">now</span>
               </span>
-              <span className={`w-[5.5rem] truncate text-[13px] font-semibold sm:w-28 sm:text-sm ${isYou ? "text-orchid" : ""}`}>
-                {row.brand}
+              <span className="block truncate text-xs text-ink/55">
+                <span data-amount className="inline-block font-bold tabular-nums text-royal">
+                  +{inr(p.amount)}
+                </span>{" "}
+                · bulk order
               </span>
-              <span className="relative flex h-2.5 flex-1 overflow-hidden rounded-full bg-paper/10">
-                <span
-                  data-bar
-                  className={`h-full origin-left rounded-full ${isYou ? "bg-orchid" : "bg-paper"}`}
-                  style={{ width: `${(row.revenue / max) * 100}%` }}
-                />
-              </span>
-              <span className={`w-14 text-right text-xs font-bold tabular-nums sm:w-16 ${isYou ? "text-orchid" : "text-paper/70"}`}>
-                {lakh(row.revenue)}
-              </span>
-            </div>
-          );
-        })}
-      </div>
-      <p data-verdict className="mt-3 rounded-2xl bg-orchid px-4 py-3 text-sm font-bold text-aubergine">
-        {rank === 1 ? "Your list alone would top the whole leaderboard." : `Your list alone would rank #${rank} in the cohort.`}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <p
+        data-total
+        className="mt-2.5 flex flex-col gap-1 rounded-[18px] bg-orchid px-4 py-3 text-aubergine @[360px]:flex-row @[360px]:items-center @[360px]:justify-between"
+      >
+        <span className="text-sm font-semibold">Straight to founders</span>
+        <span className="font-display text-2xl leading-none tabular-nums">{inr(total)}</span>
       </p>
     </div>
   );
@@ -281,21 +254,10 @@ function sceneTimeline(n: number, root: Element): gsap.core.Timeline {
       .to(q("[data-box]"), { y: 6, duration: 0.08, yoyo: true, repeat: 1, ease: "power1.inOut" }, 0.8)
       .from(q("[data-packers]"), { y: 30, opacity: 0, duration: 0.35 }, 0.85);
   } else if (n === 3) {
-    const rows = q("[data-board-row]") as HTMLElement[];
-    tl.from(q("[data-bar]"), { scaleX: 0, stagger: 0.06, duration: 0.45, ease: "power3.out" })
-      .to(
-        rows,
-        {
-          y: (_i: number, el: HTMLElement) => (Number(el.dataset.final) - Number(el.dataset.boardRow)) * 52,
-          duration: 0.5,
-          ease: "power3.inOut",
-        },
-        0.75,
-      )
-      // Both rank numbers are in the markup and cross-fade, so scrubbing back undoes it.
-      .to(q("[data-rank-before]"), { opacity: 0, duration: 0.15 }, 0.95)
-      .to(q("[data-rank-after]"), { opacity: 1, duration: 0.15 }, 1.0)
-      .from(q("[data-verdict]"), { y: 20, opacity: 0, duration: 0.3 }, 1.05);
+    // Each ping drops in from the top like a notification, then its amount lands.
+    tl.from(q("[data-ping]"), { y: -36, scale: 0.92, opacity: 0, stagger: 0.18, duration: 0.4, ease: "back.out(1.8)" })
+      .from(q("[data-amount]"), { scale: 0.4, opacity: 0, stagger: 0.18, duration: 0.3, ease: "back.out(3)" }, 0.2)
+      .from(q("[data-total]"), { y: 24, opacity: 0, duration: 0.35 }, 0.85);
   } else {
     const bits = q("[data-confetti]") as HTMLElement[];
     tl.from(q("[data-gift]"), { scale: 0.6, opacity: 0, duration: 0.35, ease: "back.out(2)" })
@@ -329,7 +291,7 @@ export function Journey({ data }: { data: JourneyData }) {
     <SceneList key="l" d={data} />,
     <SceneCall key="c" />,
     <ScenePack key="p" d={data} />,
-    <SceneBoard key="b" d={data} />,
+    <SceneImpact key="i" d={data} />,
     <SceneUnwrap key="u" d={data} />,
   ];
 
@@ -425,7 +387,7 @@ export function Journey({ data }: { data: JourneyData }) {
       <div data-desk className="relative hidden h-[100svh] overflow-hidden min-[900px]:block">
         <div className="absolute inset-x-0 top-0 mx-auto flex max-w-[1500px] items-start justify-between px-8 pt-24">
           <h2 className="font-display max-w-[20ch] text-[clamp(1.8rem,2.6vw,2.6rem)] leading-tight text-ink/85">
-            From your list to their leaderboard.
+            From your list to their first company.
           </h2>
           <p className="font-display flex items-baseline text-[clamp(1.6rem,2.4vw,2.4rem)] text-ink/40" aria-hidden>
             <span className="inline-block h-[1.1em] overflow-hidden leading-[1.1em] text-royal">
@@ -487,7 +449,7 @@ export function Journey({ data }: { data: JourneyData }) {
 
       {/* ── phones and tablets ── */}
       <div data-stack className="relative overflow-x-clip px-5 pb-24 pt-20 sm:px-8 min-[900px]:hidden">
-        <h2 className="font-display text-[2.6rem] leading-[0.95] text-ink sm:text-6xl">From your list to their leaderboard.</h2>
+        <h2 className="font-display text-[2.6rem] leading-[0.95] text-ink sm:text-6xl">From your list to their first company.</h2>
         <div className="relative mt-12">
           <span aria-hidden className="absolute bottom-0 left-[15px] top-0 w-0.5 bg-ink/10" />
           <span data-line aria-hidden className="absolute bottom-0 left-[15px] top-0 w-0.5 origin-top bg-violet" />

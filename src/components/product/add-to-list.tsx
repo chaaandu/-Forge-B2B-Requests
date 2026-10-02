@@ -75,7 +75,7 @@ export function AddToList({
       priceMinor: variant.priceMinor,
       image: variant.image ?? listing.images[0] ?? null,
     });
-    flyToList(e.currentTarget, variant.image ?? listing.images[0] ?? null);
+    flyToList(e.currentTarget, [variant.image, ...listing.images]);
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1600);
     onAdded?.();

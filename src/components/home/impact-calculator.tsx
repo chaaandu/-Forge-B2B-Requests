@@ -127,7 +127,6 @@ export function ImpactCalculator({ cohortLast7, cohortTotal, founders }: { cohor
                 Or <span className="font-semibold text-paper">{pct(lifeShare)}%</span> of everything they&apos;ve sold, ever.
               </p>
             )}
-            <p className="text-sm text-paper/45">Bulk pricing lands below retail. Exact numbers on the call.</p>
           </div>
           <div className="mt-9">
             <Magnetic>

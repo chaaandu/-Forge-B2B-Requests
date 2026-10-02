@@ -2,11 +2,15 @@
 
 import Link from "@/components/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { ShoppingBag } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronRight, ShoppingBag } from "lucide-react";
 import { useRequestList } from "@/lib/request-list";
 import { cn } from "@/lib/cn";
+import { foundersOf } from "@/lib/founders";
+import { TEAM_OF } from "@/lib/brand-teams";
 import { getLenis } from "@/components/motion/smooth-scroll";
+import { LANDED } from "@/components/motion/fly";
+import { FacePile } from "@/components/face-pile";
 import { Lockup } from "./lockup";
 
 const NAV = [
@@ -34,13 +38,22 @@ export function Header() {
   const [bump, setBump] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // The pill (or the phone's bottom bar) gives a little bump as each added
+  // product lands in it. fly.ts says when.
+  const bumpTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
   useEffect(() => {
-    if (!list.pulse) return;
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- replay a CSS animation on each add
-    setBump(true);
-    const t = setTimeout(() => setBump(false), 600);
-    return () => clearTimeout(t);
-  }, [list.pulse]);
+    const land = () => {
+      setBump(false);
+      requestAnimationFrame(() => setBump(true));
+      clearTimeout(bumpTimer.current);
+      bumpTimer.current = setTimeout(() => setBump(false), 600);
+    };
+    window.addEventListener(LANDED, land);
+    return () => {
+      window.removeEventListener(LANDED, land);
+      clearTimeout(bumpTimer.current);
+    };
+  }, []);
 
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 24);
@@ -93,13 +106,13 @@ export function Header() {
               onClick={() => list.setOpen(true)}
               data-cursor="Open"
               className={cn(
-                "group flex items-center gap-2 whitespace-nowrap rounded-full py-2 pl-3.5 pr-2 text-[13px] font-semibold transition-colors duration-300 sm:gap-2.5 sm:pl-4",
+                // Phones have the bottom bar instead.
+                "group hidden items-center gap-2.5 whitespace-nowrap rounded-full py-2 pl-4 pr-2 text-[13px] font-semibold transition-colors duration-300 sm:flex",
                 menu ? "bg-paper text-ink" : "bg-aubergine text-paper hover:bg-violet",
                 bump && "animate-bump",
               )}
             >
-              <ShoppingBag className="size-4 sm:hidden" strokeWidth={2.2} />
-              <span className="hidden whitespace-nowrap sm:inline">
+              <span className="whitespace-nowrap">
                 <Roll>Gift list</Roll>
               </span>
               <span
@@ -135,7 +148,7 @@ export function Header() {
           "fixed inset-0 z-30 flex flex-col justify-between bg-aubergine-2 px-5 pb-10 pt-28 text-paper transition-[clip-path] duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] md:hidden",
           menu ? "[clip-path:inset(0_0_0_0)]" : "pointer-events-none [clip-path:inset(0_0_100%_0)]",
         )}
-        aria-hidden={!menu}
+        inert={!menu}
       >
         <nav className="flex flex-col">
           {NAV.map((n, i) => (
@@ -155,8 +168,89 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <p className="text-sm text-paper/50">Gifts made by 117 student founders at Mesa School of Business.</p>
+        <div
+          className="space-y-6 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+          style={{ opacity: menu ? 1 : 0, transform: menu ? "none" : "translateY(24px)", transitionDelay: menu ? "380ms" : "0ms" }}
+        >
+          <button
+            type="button"
+            onClick={() => {
+              setMenu(false);
+              list.setOpen(true);
+            }}
+            className="flex w-full items-center gap-3 rounded-full bg-paper/10 py-2 pl-2 pr-5 text-left"
+          >
+            <span className="grid size-10 place-items-center rounded-full bg-orchid text-aubergine">
+              <ShoppingBag className="size-5" strokeWidth={2.2} />
+            </span>
+            <span className="flex-1 font-semibold">Your gift list</span>
+            <span className="text-sm tabular-nums text-paper/60">
+              {list.count} {list.count === 1 ? "product" : "products"}
+            </span>
+          </button>
+          <p className="text-sm text-paper/50">Gifts made by 117 student founders at Mesa School of Business.</p>
+        </div>
       </div>
+
+      <Dock hidden={menu || list.open || pathname.startsWith("/request")} bump={bump} />
     </>
+  );
+}
+
+/**
+ * Phones: the gift list lives in a bar at the bottom, quick-commerce style.
+ * It rises into view with the first product, added photos fly into it, and
+ * tapping it opens the list as a sheet from the same spot. The anchor div
+ * never moves, so fly.ts can aim at where the bar comes to rest.
+ */
+function Dock({ hidden, bump }: { hidden: boolean; bump: boolean }) {
+  const list = useRequestList();
+  const show = list.ready && list.count > 0 && !hidden;
+  const faces = [...new Set(list.items.map((i) => TEAM_OF[i.brand]).filter(Boolean))].flatMap((t) => foundersOf(t));
+
+  // Keeps the end of the page clear of the bar (the footer reads --dock).
+  useEffect(() => {
+    document.documentElement.style.setProperty("--dock", list.ready && list.count > 0 ? "5.5rem" : "0px");
+  }, [list.ready, list.count]);
+
+  return (
+    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:hidden">
+      <div id="gift-list-dock" className="mx-auto max-w-md">
+        <button
+          type="button"
+          onClick={() => list.setOpen(true)}
+          tabIndex={show ? undefined : -1}
+          aria-hidden={show ? undefined : true}
+          aria-label={`View gift list, ${list.count} ${list.count === 1 ? "product" : "products"}`}
+          className={cn(
+            "flex w-full items-center gap-3 rounded-full bg-aubergine py-2 pl-2 pr-3 text-paper shadow-[0_16px_40px_-10px_rgb(29_16_51/0.65)] transition-[translate,opacity,scale] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.98] motion-reduce:transition-none",
+            show ? "pointer-events-auto translate-y-0 opacity-100" : "translate-y-[calc(100%+1.5rem)] opacity-0",
+          )}
+        >
+          <span
+            data-fly-target
+            className={cn(
+              "relative grid size-11 shrink-0 place-items-center rounded-full bg-orchid text-aubergine",
+              bump && "animate-bump",
+            )}
+          >
+            <ShoppingBag className="size-5" strokeWidth={2.2} />
+            <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-paper px-1 text-[11px] font-bold tabular-nums text-aubergine ring-2 ring-aubergine">
+              {list.count}
+            </span>
+          </span>
+          <span className="min-w-0 flex-1 text-left leading-tight">
+            <span className="block text-[15px] font-semibold">View gift list</span>
+            <span className="block truncate text-xs text-paper/60">
+              {list.units.toLocaleString("en-IN")} units{faces.length > 0 ? ` · ${faces.length} founders` : ""}
+            </span>
+          </span>
+          {faces.length > 0 && (
+            <FacePile photos={faces.map((f) => f.photo)} max={3} size={28} ring="ring-aubergine" className="max-[359px]:hidden" />
+          )}
+          <ChevronRight className="size-5 shrink-0 text-paper/50" />
+        </button>
+      </div>
+    </div>
   );
 }

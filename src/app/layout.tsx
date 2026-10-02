@@ -5,7 +5,7 @@ import { RequestListProvider } from "@/lib/request-list";
 import { allFounders } from "@/lib/founders";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { RequestDrawer } from "@/components/request/request-drawer";
+import { GiftListSheet } from "@/components/request/gift-list-sheet";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
 import { Cursor } from "@/components/motion/cursor";
 import { Preloader } from "@/components/motion/preloader";
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <Header />
             <main>{children}</main>
             <Footer />
-            <RequestDrawer />
+            <GiftListSheet />
             <Cursor />
           </TransitionProvider>
         </RequestListProvider>

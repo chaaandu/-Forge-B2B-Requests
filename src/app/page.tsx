@@ -55,25 +55,33 @@ export default async function Home() {
     .sort((a, b) => Number(/hamper|gift box/i.test(b.title)) - Number(/hamper|gift box/i.test(a.title)));
 
   // The journey's example: a real list of real hampers (150 gifts in all),
-  // real faces from across the cohort, and the live top five.
-  const listItems = hampers.slice(0, 4);
-  const listTeams = [...new Set(listItems.map((l) => catalog.brand(l.brand)!.teamCode))];
+  // real faces from across the cohort, and what the order pays each team.
+  // One hamper from each of four teams, so the list visibly backs four companies.
+  const oneEach = hampers.filter((l, i) => hampers.findIndex((h) => h.brand === l.brand) === i);
+  const listItems = [...oneEach, ...hampers.filter((l) => !oneEach.includes(l))]
+    .slice(0, 4)
+    .map((l, i) => ({ listing: l, brand: catalog.brand(l.brand)!, qty: [80, 40, 20, 10][i] ?? 10 }));
+  const listBrands = [...new Set(listItems.map((l) => l.brand))];
   const journey = {
-    list: listItems.map((l, i) => ({
-      title: l.title,
-      brand: catalog.brand(l.brand)!.name,
-      image: l.images[0],
-      qty: [80, 40, 20, 10][i] ?? 10,
-      priceMinor: l.priceFromMinor,
+    list: listItems.map(({ listing, brand, qty }) => ({
+      title: listing.title,
+      brand: brand.name,
+      image: listing.images[0],
+      qty,
+      priceMinor: listing.priceFromMinor,
     })),
-    backing: listTeams.flatMap((t) => foundersOf(t).map((f) => f.photo)),
+    backing: listBrands.flatMap((b) => foundersOf(b.teamCode).map((f) => f.photo)),
+    payout: listBrands.map((b) => ({
+      brand: b.name,
+      photos: foundersOf(b.teamCode).map((f) => f.photo),
+      amount: listItems.filter((l) => l.brand === b).reduce((n, l) => n + (l.qty * l.listing.priceFromMinor) / 100, 0),
+    })),
     cohort: byRevenue.slice(0, 10).flatMap((b) =>
       foundersOf(b.teamCode)
         .slice(0, 1)
         .map((f) => f.photo),
     ),
     cohortCount: wall.length,
-    board: byRevenue.slice(0, 5).map((b) => ({ brand: b.name, revenue: sold(b.teamCode) })),
   };
 
   const rows = COLLECTIONS.map((c) => {

@@ -40,6 +40,10 @@
   --animate-bump: bump 0.45s var(--ease-out-soft);
   --animate-marquee: marquee 40s linear infinite;
   --animate-spin-slow: spin 18s linear infinite;
+  --animate-step-in: step-in 0.5s var(--ease-expo) both;
+  --animate-step-back: step-back 0.5s var(--ease-expo) both;
+  --animate-sheet-up: sheet-up 0.5s cubic-bezier(0.32, 0.72, 0, 1) both;
+  --animate-fade-in: fade-in 0.3s ease both;
 
   @keyframes rise {
     from {
@@ -59,6 +63,29 @@
   @keyframes marquee {
     to {
       transform: translateX(-50%);
+    }
+  }
+  /* The gift list's steps slide: forward from the right, back from the left. */
+  @keyframes step-in {
+    from {
+      opacity: 0;
+      transform: translateX(32px);
+    }
+  }
+  @keyframes step-back {
+    from {
+      opacity: 0;
+      transform: translateX(-32px);
+    }
+  }
+  @keyframes sheet-up {
+    from {
+      transform: translateY(100%);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
     }
   }
 }

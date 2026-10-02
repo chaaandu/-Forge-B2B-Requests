@@ -136,6 +136,13 @@ smooth scrolling. Everything stands down for `prefers-reduced-motion`, touch scr
 native scrolling, and anything hidden until animated shows itself after 2.5s if scripts
 never run (`.js-reveal` in `globals.css`).
 
+**Gift list.** One flow in one place (`src/components/request/gift-list-flow.tsx`): the
+list, then "Who's gifting?", then sent, sliding in place with nothing shown twice. Phones
+get a quick-commerce bar at the bottom that added photos fly into and that opens the list
+as a bottom sheet (drag it down to close); wider screens get the header pill and a panel
+from the right (`gift-list-sheet.tsx`). `/request` renders the same flow as a page, which
+is where shared list links land.
+
 **Copy.** Quick-commerce voice: short, warm, a bit cheeky. No em dashes anywhere,
 including product titles from the POS, which the catalogue build rewrites
 ("Aroma Oil · Cinnamon"). No small all-caps labels above headings.

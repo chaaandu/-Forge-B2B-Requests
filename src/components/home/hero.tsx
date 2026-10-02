@@ -355,7 +355,7 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
 
         <div data-hero-foot className="grid items-end gap-8 md:grid-cols-[1fr_auto_1fr]">
           <p className="max-w-sm text-lg leading-snug text-ink/70">
-            {founders} student founders. {brands} brands. <span className="font-semibold text-ink">Zero boring hampers.</span>
+            {founders} student founders. {brands} brands.
           </p>
           <div className="flex justify-center">
             <Magnetic>
