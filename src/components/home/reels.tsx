@@ -91,7 +91,10 @@ export function Reels({ reels }: { reels: ReelCard[] }) {
         <SplitReveal className="font-display text-[clamp(3rem,8vw,8rem)] leading-[0.88] text-ink">
           Straight from their <em className="text-royal">stalls.</em>
         </SplitReveal>
-        <p className="max-w-sm text-lg leading-snug text-ink/65">Shot, edited and posted by the founders. Zero agencies were involved.</p>
+        <p className="max-w-sm text-lg leading-snug text-ink/65">
+          <span className="block">Shot, edited and posted by the founders.</span>
+          <span className="block">Zero agencies were involved.</span>
+        </p>
       </div>
       <DragRail>
         <div ref={row} className="flex w-max gap-4 px-5 pb-6 pt-2 sm:px-8">

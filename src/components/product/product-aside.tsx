@@ -45,8 +45,9 @@ export function ProductAside({ brand, sold }: { brand: Brand; sold: number }) {
         ].map((c) => (
           <div key={c.lead} className="group flex items-start gap-3 rounded-[22px] bg-paper-2 p-4">
             <Doodle name={c.icon} hover="group" className="size-10 shrink-0 text-aubergine" />
-            <p className="text-sm leading-snug text-ink/60">
-              <span className="font-semibold text-ink">{c.lead}</span> {c.body}
+            <p className="text-pretty text-sm leading-snug text-ink/60">
+              <span className="block font-semibold text-ink">{c.lead}</span>
+              {c.body}
             </p>
           </div>
         ))}

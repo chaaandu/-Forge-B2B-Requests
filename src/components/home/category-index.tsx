@@ -79,7 +79,7 @@ export function CategoryIndex({ rows }: { rows: IndexRow[] }) {
                 <span className="font-display block text-[clamp(1.6rem,4.6vw,4.2rem)] leading-[0.95] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] pointer-fine:group-hover:translate-x-4">
                   {unbroken(row.name)}
                 </span>
-                <span className="mt-1.5 block text-sm leading-snug text-ink/50 transition pointer-fine:group-hover:translate-x-4 pointer-fine:group-hover:text-paper/60">
+                <span className="mt-1.5 block text-pretty text-sm leading-snug text-ink/50 transition pointer-fine:group-hover:translate-x-4 pointer-fine:group-hover:text-paper/60">
                   {row.blurb}
                 </span>
                 <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-violet pointer-fine:hidden">

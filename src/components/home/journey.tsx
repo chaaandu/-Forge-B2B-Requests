@@ -24,8 +24,8 @@ const CHAPTERS = [
   { label: "List", title: "Make a list.", body: "Hampers, snacks, candles, tees. Add rough quantities. No login, no card, no drama." },
   {
     label: "Call",
-    title: "We call you. Within a working\u00a0day.",
-    body: "A real human from Mesa, with bulk prices, samples and dates. Not a bot. Pinky promise.",
+    title: "We call you.",
+    body: "Within one working day, a real human from Mesa, with bulk prices, samples and dates. Not a bot. Pinky promise.",
   },
   {
     label: "Pack",
@@ -55,6 +55,15 @@ const PATH = XS.slice(0, -1)
     return `${i === 0 ? `M${x} ${Y} ` : ""}C${x + 75} ${Y + dy} ${nx - 75} ${Y + dy} ${nx} ${Y}`;
   })
   .join(" ");
+
+/** Each sentence of a title on its own line, rather than wherever the column ends. */
+function sentences(title: string) {
+  return title.split(/(?<=\.)\s+/).map((line) => (
+    <span key={line} className="block">
+      {line}
+    </span>
+  ));
+}
 
 /* ─────────────────────────────── scenes ─────────────────────────────── */
 
@@ -407,7 +416,7 @@ export function Journey({ data }: { data: JourneyData }) {
           <div className="relative h-full">
             {CHAPTERS.map((c) => (
               <div key={c.title} data-chapter className="absolute inset-0 flex flex-col justify-center">
-                <h3 className="font-display max-w-[12ch] text-[clamp(2.6rem,4.6vw,5rem)] leading-[0.92] text-ink">{c.title}</h3>
+                <h3 className="font-display max-w-[14ch] text-[clamp(2.6rem,4.6vw,5rem)] leading-[0.92] text-ink">{sentences(c.title)}</h3>
                 <p className="mt-6 max-w-md text-lg leading-snug text-ink/65">{c.body}</p>
               </div>
             ))}
@@ -464,7 +473,7 @@ export function Journey({ data }: { data: JourneyData }) {
             {CHAPTERS.map((c, i) => (
               <li key={c.title}>
                 <p className="font-display text-5xl text-orchid">0{i + 1}</p>
-                <h3 className="font-display mt-1 text-[2.4rem] leading-[0.95] text-ink">{c.title}</h3>
+                <h3 className="font-display mt-1 text-[2.4rem] leading-[0.95] text-ink">{sentences(c.title)}</h3>
                 <p className="mt-3 max-w-md text-base leading-snug text-ink/65">{c.body}</p>
                 <div data-mscene className="mt-8">
                   {scenes[i]}

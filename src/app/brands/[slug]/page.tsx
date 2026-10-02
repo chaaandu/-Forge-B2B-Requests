@@ -54,7 +54,10 @@ export default async function BrandPage({ params }: { params: Params }) {
             <p className="font-display-straight mt-6 max-w-xl text-[clamp(1.4rem,2.2vw,2rem)] leading-snug text-ink/75">
               {people.length ? (
                 <>
-                  Started by <span className="text-ink">{firstNames(people)}</span>. {brand.tagline.replace(/\.$/, "")}.
+                  <span className="block">
+                    Started by <span className="text-ink">{firstNames(people)}</span>.
+                  </span>
+                  <span className="block">{brand.tagline.replace(/\.$/, "")}.</span>
                 </>
               ) : (
                 brand.tagline

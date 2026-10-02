@@ -96,6 +96,16 @@
 }
 
 @layer base {
+  /* No last line left holding a single word. Headings keep their own
+     deliberate breaks, so this is body copy only. */
+  p,
+  li,
+  dd,
+  dt,
+  figcaption {
+    text-wrap: pretty;
+  }
+
   html {
     @apply bg-paper font-sans text-ink antialiased;
     font-feature-settings: "ss01", "cv11";
