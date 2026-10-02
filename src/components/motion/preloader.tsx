@@ -8,7 +8,8 @@ export const INTRO_DONE = "forge:intro-done";
 
 /**
  * The first second of the first visit: faces arrive around a counter that
- * rolls to the size of the cohort, then the page is let in. Only when the
+ * rolls to the size of the cohort, then the page is let in. Phones get the
+ * count alone. Only when the
  * inline script in <head> has marked the page (`html.intro`): once per
  * session, never with reduced motion. Anything waiting on it listens for
  * INTRO_DONE.
@@ -63,7 +64,7 @@ export function Preloader({ faces, total }: { faces: string[]; total: number }) 
           <span
             key={src}
             data-pface
-            className="absolute size-16 overflow-hidden rounded-full bg-orchid-soft ring-4 ring-aubergine-2 sm:size-24"
+            className="absolute hidden size-24 overflow-hidden rounded-full bg-orchid-soft ring-4 ring-aubergine-2 md:block"
             style={{ left: `calc(50% + ${Math.cos(a) * 34}vmin - 3rem)`, top: `calc(50% + ${Math.sin(a) * 30}vmin - 3rem)` }}
           >
             <Image src={src} alt="" fill sizes="96px" className="object-cover object-top" priority />

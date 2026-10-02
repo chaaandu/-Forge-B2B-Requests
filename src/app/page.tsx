@@ -27,12 +27,12 @@ export const revalidate = 600;
  * sells second, and every product it shows carries the faces of its makers.
  */
 type Search = Promise<Record<string, string | string[] | undefined>>;
-const VARIANTS: MobileHeroVariant[] = ["stickers", "orbit", "pile", "drift"];
+const VARIANTS: MobileHeroVariant[] = ["doodles", "gift", "type"];
 
 export default async function Home({ searchParams }: { searchParams: Search }) {
-  // While Mesa picks a phone hero: ?hero=stickers|orbit|pile|drift (stickers by default).
+  // While Mesa picks a phone hero: ?hero=doodles|gift|type (doodles by default).
   const asked = (await searchParams).hero;
-  const heroVariant = VARIANTS.find((v) => v === asked) ?? "stickers";
+  const heroVariant = VARIANTS.find((v) => v === asked) ?? "doodles";
   const catalog = await getCatalog();
   const brandByCode = new Map(catalog.brands.map((b) => [b.teamCode, b]));
   const [impact, reels] = await Promise.all([getImpact(catalog.brands.map((b) => b.teamCode)), getReels()]);
@@ -55,15 +55,6 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
         .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug })),
     )
     .slice(0, 10);
-
-  // Phones: one founder from each of the twelve best-selling teams.
-  const heroPeople = byRevenue
-    .flatMap((b) =>
-      foundersOf(b.teamCode)
-        .slice(0, 1)
-        .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug })),
-    )
-    .slice(0, 12);
 
   const hampers = catalog
     .listingsIn("hampers")
@@ -137,7 +128,7 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
   return (
     <>
       <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
-      <MobileHero variant={heroVariant} people={heroPeople} founders={wall.length} brands={catalog.totals.brands} />
+      <MobileHero variant={heroVariant} founders={wall.length} brands={catalog.totals.brands} />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (
