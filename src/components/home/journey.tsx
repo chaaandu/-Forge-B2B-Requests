@@ -387,7 +387,7 @@ export function Journey({ data }: { data: JourneyData }) {
       <div data-desk className="relative hidden h-[100svh] overflow-hidden min-[900px]:block">
         <div className="absolute inset-x-0 top-0 mx-auto flex max-w-[1500px] items-start justify-between px-8 pt-24">
           <h2 className="font-display max-w-[20ch] text-[clamp(1.8rem,2.6vw,2.6rem)] leading-tight text-ink/85">
-            From your list to their first company.
+            From your list to a founder’s first company.
           </h2>
           <p className="font-display flex items-baseline text-[clamp(1.6rem,2.4vw,2.4rem)] text-ink/40" aria-hidden>
             <span className="inline-block h-[1.1em] overflow-hidden leading-[1.1em] text-royal">
@@ -449,7 +449,7 @@ export function Journey({ data }: { data: JourneyData }) {
 
       {/* ── phones and tablets ── */}
       <div data-stack className="relative overflow-x-clip px-5 pb-24 pt-20 sm:px-8 min-[900px]:hidden">
-        <h2 className="font-display text-[2.6rem] leading-[0.95] text-ink sm:text-6xl">From your list to their first company.</h2>
+        <h2 className="font-display text-[2.6rem] leading-[0.95] text-ink sm:text-6xl">From your list to a founder’s first company.</h2>
         <div className="relative mt-12">
           <span aria-hidden className="absolute bottom-0 left-[15px] top-0 w-0.5 bg-ink/10" />
           <span data-line aria-hidden className="absolute bottom-0 left-[15px] top-0 w-0.5 origin-top bg-violet" />

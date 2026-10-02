@@ -130,7 +130,7 @@ export function GiftListFlow({
   const teams = [...new Set(list.items.map((i) => TEAM_OF[i.brand]).filter(Boolean))];
   const backing = teams.flatMap((t) => foundersOf(t));
   const value = list.items.reduce((n, i) => n + i.qty * i.priceMinor, 0);
-  const summary = `${list.count} ${list.count === 1 ? "product" : "products"} · ${list.units.toLocaleString("en-IN")} units`;
+  const summary = `${list.count} ${list.count === 1 ? "gift" : "gifts"} · ${list.units.toLocaleString("en-IN")} units`;
 
   const share = async () => {
     const url = `${window.location.origin}${withBase("/request")}?list=${encodeList(list.items)}`;
@@ -274,7 +274,7 @@ export function GiftListFlow({
         >
           {offerShared && list.count > 0 && step === "list" && (
             <div className="mb-4 rounded-2xl bg-orchid-soft p-4 text-sm">
-              <p className="font-semibold text-aubergine">Someone shared {shared.length} products with you.</p>
+              <p className="font-semibold text-aubergine">Someone shared {shared.length} gifts with you.</p>
               <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-semibold">
                 <button
                   type="button"

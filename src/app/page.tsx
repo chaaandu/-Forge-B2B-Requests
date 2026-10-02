@@ -154,7 +154,7 @@ export default async function Home() {
             Hampers, <em className="text-royal">sorted.</em>
           </SplitReveal>
           <div className="max-w-sm">
-            <p className="text-lg leading-snug text-ink/65">Ready-made boxes. Zero effort, full credit.</p>
+            <p className="text-lg leading-snug text-ink/65">Pick a box, we’ll do the rest.</p>
             <Link
               href="/catalogue?collection=hampers"
               className="group mt-3 inline-flex whitespace-nowrap text-sm font-semibold text-violet"

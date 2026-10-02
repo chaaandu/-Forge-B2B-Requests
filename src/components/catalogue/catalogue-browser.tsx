@@ -130,7 +130,7 @@ export function CatalogueBrowser({
   const brandOptions = useMemo(() => [...brands].sort((a, b) => a.name.localeCompare(b.name)), [brands]);
   const occasion = getOccasion(f.occasion);
   const activeCount = [scope === "all" ? f.brand : "", f.price, f.sort].filter(Boolean).length;
-  const countLabel = `${results.length} ${results.length === 1 ? "product" : "products"}`;
+  const countLabel = `${results.length} ${results.length === 1 ? "gift" : "gifts"}`;
   // Where the bar has room to lay the selects out: the store has three of
   // them, so a tablet gets the phone's single Filters button instead.
   const room =
@@ -264,7 +264,7 @@ export function CatalogueBrowser({
         <p className="mt-16 text-center text-sm text-ink/50">
           That’s the lot.{" "}
           <button type="button" onClick={() => set({ ...NO_FILTERS, sort: f.sort })} className="font-semibold text-violet hover:underline">
-            Show all products
+            Show all gifts
           </button>
         </p>
       )}

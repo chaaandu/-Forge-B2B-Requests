@@ -212,7 +212,7 @@ function Dock({ hidden, bump }: { hidden: boolean; bump: boolean }) {
           onClick={() => list.setOpen(true)}
           tabIndex={show ? undefined : -1}
           aria-hidden={show ? undefined : true}
-          aria-label={`View gift list, ${list.count} ${list.count === 1 ? "product" : "products"}`}
+          aria-label={`View gift list, ${list.count} ${list.count === 1 ? "gift" : "gifts"}`}
           className={cn(
             "flex w-full items-center gap-3 rounded-full bg-aubergine py-2 pl-2 pr-3 text-paper shadow-[0_16px_40px_-10px_rgb(29_16_51/0.65)] transition-[translate,opacity,scale] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.98] motion-reduce:transition-none",
             show ? "pointer-events-auto translate-y-0 opacity-100" : "translate-y-[calc(100%+1.5rem)] opacity-0",
