@@ -49,6 +49,13 @@ export default async function Home() {
     )
     .slice(0, 10);
 
+  // Phones: one founder from each of the four best-selling teams, standing
+  // together; the two in the middle stand in front.
+  const heroSquad = byRevenue
+    .flatMap((b) => foundersOf(b.teamCode).slice(0, 1))
+    .slice(0, 4)
+    .map((f, i) => ({ ...f, z: [1, 3, 4, 2][i] }));
+
   const hampers = catalog
     .listingsIn("hampers")
     .filter((l) => l.images.length)
@@ -120,7 +127,7 @@ export default async function Home() {
 
   return (
     <>
-      <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
+      <Hero faces={heroFaces} squad={heroSquad} founders={wall.length} brands={catalog.totals.brands} />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (

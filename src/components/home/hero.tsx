@@ -10,6 +10,8 @@ import { INTRO_DONE } from "@/components/motion/preloader";
 import { useTransitionNav } from "@/components/motion/transition";
 import { getLenis } from "@/components/motion/smooth-scroll";
 import { Roll } from "@/components/layout/header";
+import { TeamLineup } from "@/components/team-lineup";
+import type { Founder } from "@/lib/founders";
 
 export interface HeroFace {
   name: string;
@@ -95,7 +97,7 @@ function arrange(width: number, title: Box, foot: Box): Slot[] {
   return slots;
 }
 
-export function Hero({ faces, founders, brands }: { faces: HeroFace[]; founders: number; brands: number }) {
+export function Hero({ faces, squad, founders, brands }: { faces: HeroFace[]; squad: Founder[]; founders: number; brands: number }) {
   const root = useRef<HTMLElement>(null);
   const go = useTransitionNav();
 
@@ -196,8 +198,11 @@ export function Hero({ faces, founders, brands }: { faces: HeroFace[]; founders:
         .fromTo(line, { drawSVG: "0%" }, { drawSVG: "100%", duration: 1.1, ease: "power2.inOut" }, 0.75)
         // Drawn: hand the stroke back, so a resize that lengthens it never shows a gap.
         .set(line, { clearProps: "strokeDasharray,strokeDashoffset" })
+        // Phones: the arch grows up from the ground, then the founders rise into it, middle first.
+        .from("[data-arch-bg]", { scaleY: 0, transformOrigin: "50% 100%", duration: 1.2 }, 0.1)
+        .from("[data-arch] figure", { yPercent: 35, opacity: 0, duration: 1.2, stagger: { each: 0.09, from: "center" } }, 0.25)
         .from(
-          [...stickers, ...gsap.utils.toArray<HTMLElement>("[data-mface]")],
+          stickers,
           {
             scale: 0,
             rotate: () => gsap.utils.random(-50, 50),
@@ -313,17 +318,15 @@ export function Hero({ faces, founders, brands }: { faces: HeroFace[]; founders:
         <path fill="none" stroke="#e4a7f3" strokeLinecap="round" />
       </svg>
 
-      <div className="mx-auto flex min-h-[calc(100svh-4rem)] max-w-[1500px] flex-col justify-center gap-10 px-5 pb-10 pt-6 sm:px-8 md:justify-between md:gap-0">
-        <div className="flex flex-col items-center gap-3 md:hidden">
-          <div className="flex -space-x-3">
-            {faces.slice(0, 7).map((f) => (
-              <span key={f.photo} data-mface className="relative size-12 overflow-hidden rounded-full bg-orchid-soft ring-[3px] ring-paper">
-                <Image src={f.photo} alt="" fill sizes="96px" className="object-cover object-top" />
-              </span>
-            ))}
+      <div className="mx-auto flex min-h-[calc(100svh-4rem)] max-w-[1500px] flex-col justify-center gap-8 px-5 pb-10 pt-4 sm:px-8 md:justify-between md:gap-0 md:pt-6">
+        {/* Phones: real founders stand together under an arch, the way each squad
+            does on its own page, and the line below says who they are. */}
+        {squad.length > 0 && (
+          <div data-arch aria-hidden className="@container relative -mx-5 sm:-mx-8 md:hidden">
+            <div data-arch-bg className="absolute inset-x-[7%] bottom-0 top-[14%] rounded-t-full bg-orchid-soft" />
+            <TeamLineup people={squad} sizes="38vw" fit="128px" className="relative" />
           </div>
-          <span className="text-xs font-semibold text-ink/55">The founders behind this page</span>
-        </div>
+        )}
 
         <h1
           data-title
@@ -335,8 +338,8 @@ export function Hero({ faces, founders, brands }: { faces: HeroFace[]; founders:
           </em>
         </h1>
 
-        <div data-hero-foot className="grid items-end gap-8 md:grid-cols-[1fr_auto_1fr]">
-          <p className="max-w-sm text-lg leading-snug text-ink/70">
+        <div data-hero-foot className="grid items-end gap-6 md:grid-cols-[1fr_auto_1fr] md:gap-8">
+          <p className="mx-auto max-w-sm text-center text-lg leading-snug text-ink/70 md:mx-0 md:text-left">
             {/* A number never ends a line apart from its noun. */}
             {founders}&nbsp;student founders. {brands}&nbsp;brands.
           </p>
