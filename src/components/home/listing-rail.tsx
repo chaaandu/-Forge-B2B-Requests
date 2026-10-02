@@ -12,9 +12,9 @@ export function ListingRail({ listings, brands }: { listings: Listing[]; brands:
 
   return (
     <>
-      <div className="no-scrollbar -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:-mx-6 sm:px-6">
+      <div className="no-scrollbar -mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 sm:-mx-8 sm:px-8">
         {listings.map((l) => (
-          <div key={l.slug} className="w-[62vw] shrink-0 snap-start sm:w-64">
+          <div key={l.slug} className="w-[70vw] shrink-0 snap-start sm:w-[300px]">
             <ProductCard listing={l} brand={brandBySlug.get(l.brand)!} onQuickAdd={() => setQuick(l)} />
           </div>
         ))}

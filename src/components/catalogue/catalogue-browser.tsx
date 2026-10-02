@@ -116,9 +116,9 @@ export function CatalogueBrowser({
 
   return (
     <>
-      <div className="sticky top-16 z-30 -mx-4 border-b border-black/5 bg-white/85 px-4 py-3 backdrop-blur-xl backdrop-saturate-150 sm:-mx-6 sm:px-6">
+      <div className="sticky top-16 z-30 -mx-5 border-b border-ink/10 bg-paper/85 px-5 py-3 backdrop-blur-xl backdrop-saturate-150 sm:-mx-8 sm:px-8">
         {scope === "all" && (
-          <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 sm:mx-0 sm:px-0">
+          <div className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:px-0">
             <Chip on={!f.collection && !f.occasion} onClick={() => set({ collection: "", occasion: "" })}>
               All
             </Chip>
@@ -249,7 +249,7 @@ function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; chi
       aria-pressed={on}
       className={cn(
         "shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-[13px] font-medium transition",
-        on ? "bg-ink text-white" : "bg-tile text-ink/70 hover:bg-mist-2 hover:text-ink",
+        on ? "bg-ink text-paper" : "bg-ink/[0.05] text-ink/70 hover:bg-ink/10 hover:text-ink",
       )}
     >
       {children}

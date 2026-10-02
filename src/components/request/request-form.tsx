@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "@/components/link";
 import { useEffect, useState } from "react";
 import { Check, ChevronRight, Link2, Loader2, Trash2 } from "lucide-react";
@@ -9,6 +10,7 @@ import { encodeList } from "@/lib/share";
 import { formatINR } from "@/lib/money";
 import { cn } from "@/lib/cn";
 import { QtyStepper } from "./qty-stepper";
+import { foundersOf } from "@/lib/founders";
 import { Icon3D } from "@/components/icon3d";
 import { FitImage } from "@/components/fit-image";
 import { withBase } from "@/lib/base-path";
@@ -25,12 +27,12 @@ type Errors = Partial<Record<keyof Fields | "items" | "form", string>>;
 
 const DRAFT_KEY = "mesa-b2b:contact:v3";
 
-export function RequestForm({ shared }: { shared: ListItem[] }) {
+export function RequestForm({ shared, teamCodes }: { shared: ListItem[]; teamCodes: Record<string, string> }) {
   const list = useRequestList();
   const [fields, setFields] = useState<Fields>({ name: "", company: "", email: "", phone: "", website: "" });
   const [errors, setErrors] = useState<Errors>({});
   const [sending, setSending] = useState(false);
-  const [done, setDone] = useState<{ ref: string; email: string } | null>(null);
+  const [done, setDone] = useState<{ ref: string; email: string; teams: string[] } | null>(null);
   const [copied, setCopied] = useState(false);
   const [sharedHandled, setSharedHandled] = useState(false);
 
@@ -104,7 +106,9 @@ export function RequestForm({ shared }: { shared: ListItem[] }) {
       });
       const body = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(body.error ?? "Something went wrong. Please try again.");
-      setDone({ ref: body.ref, email: fields.email });
+      // Whose products were on the list, captured before the list is cleared.
+      const teams = [...new Set(list.items.map((i) => teamCodes[i.brand]).filter(Boolean))];
+      setDone({ ref: body.ref, email: fields.email, teams });
       list.clear();
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (err) {
@@ -114,11 +118,13 @@ export function RequestForm({ shared }: { shared: ListItem[] }) {
     }
   };
 
-  if (done) return <Success refId={done.ref} email={done.email} />;
+  if (done) return <Success refId={done.ref} email={done.email} teams={done.teams} />;
 
   return (
     <>
-      <h1 className="text-5xl font-semibold tracking-tight text-ink sm:text-6xl">Your request.</h1>
+      <h1 className="font-display text-[clamp(3.2rem,8vw,7.5rem)] leading-[0.88] text-ink">
+        Your gift <em className="text-royal">list.</em>
+      </h1>
       <p className="mt-3 max-w-xl text-lg text-ink/55">
         Check your list, tell us how to reach you, and we&apos;ll call within a working day.
       </p>
@@ -299,16 +305,39 @@ export function RequestForm({ shared }: { shared: ListItem[] }) {
   );
 }
 
-function Success({ refId, email }: { refId: string; email: string }) {
+/**
+ * The payoff: not "order received" but the people it reached — every founder
+ * whose product was on the list, face by face.
+ */
+function Success({ refId, email, teams }: { refId: string; email: string; teams: string[] }) {
+  const people = teams.flatMap((t) => foundersOf(t));
   return (
-    <div className="mx-auto max-w-xl animate-rise py-10 text-center">
-      <div className="mx-auto grid size-16 place-items-center rounded-full bg-royal text-white">
-        <Check className="size-8" strokeWidth={2.5} />
-      </div>
-      <h1 className="mt-6 text-5xl font-semibold tracking-tight text-ink">Thank you.</h1>
-      <p className="mt-4 text-lg text-ink/60">
-        We&apos;ve got your request. Someone from the Mesa team will be in touch at <span className="font-semibold text-ink">{email}</span>{" "}
-        within one working day.
+    <div className="mx-auto max-w-4xl animate-rise py-10 text-center">
+      {people.length > 0 && (
+        <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-2">
+          {people.map((p, i) => (
+            <span
+              key={p.photo}
+              className="relative size-16 overflow-hidden rounded-full bg-orchid-soft ring-4 ring-paper sm:size-20"
+              style={{ animation: `rise .9s cubic-bezier(0.16,1,0.3,1) ${i * 60}ms both` }}
+              title={p.name}
+            >
+              <Image src={p.photo} alt={p.name} fill sizes="80px" className="object-cover object-top" />
+            </span>
+          ))}
+        </div>
+      )}
+      <h1 className="font-display mt-10 text-[clamp(3rem,7vw,6.5rem)] leading-[0.9] text-ink">
+        {people.length > 0 ? (
+          <>
+            You just backed <em className="scribble text-royal">{people.length} founders.</em>
+          </>
+        ) : (
+          <>Thank you.</>
+        )}
+      </h1>
+      <p className="mx-auto mt-6 max-w-xl text-lg text-ink/65">
+        Someone from the Mesa team will be in touch at <span className="font-semibold text-ink">{email}</span> within one working day.
       </p>
       <p className="mt-6 text-sm text-ink/45">
         Reference <span className="font-mono font-semibold tracking-wide text-ink">{refId}</span>

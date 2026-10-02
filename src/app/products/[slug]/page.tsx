@@ -5,6 +5,8 @@ import { ChevronRight } from "lucide-react";
 import { getCatalog, getCollection } from "@/lib/catalog";
 import { ProductView } from "@/components/product/product-view";
 import { ProductAside } from "@/components/product/product-aside";
+import { FounderStack } from "@/components/founder-stack";
+import { getImpact } from "@/lib/impact";
 import { ListingRail } from "@/components/home/listing-rail";
 
 // Must be a literal for Next to read it; matches REFRESH_SECONDS in lib/catalog.
@@ -35,13 +37,14 @@ export default async function ProductPage({ params }: { params: Params }) {
   if (!listing) notFound();
   const brand = catalog.brand(listing.brand)!;
   const collection = getCollection(listing.collection)!;
+  const impact = await getImpact([brand.teamCode]);
   const more = catalog
     .listingsOf(brand.slug)
     .filter((l) => l.slug !== listing.slug)
     .slice(0, 12);
 
   return (
-    <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
+    <div className="mx-auto max-w-[1500px] px-5 pt-6 sm:px-8">
       <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-xs text-ink/50">
         <Link href="/catalogue" className="hover:text-ink">
           Catalogue
@@ -57,12 +60,19 @@ export default async function ProductPage({ params }: { params: Params }) {
       </nav>
 
       <div className="mt-6">
-        <ProductView listing={listing} brand={brand} after={<ProductAside brand={brand} />}>
+        <ProductView
+          listing={listing}
+          brand={brand}
+          after={<ProductAside brand={brand} sold={impact.byTeam[brand.teamCode]?.revenue ?? 0} />}
+        >
           <div>
-            <Link href={`/brands/${brand.slug}`} className="text-sm font-semibold text-violet hover:underline">
-              {brand.name}
+            <Link href={`/brands/${brand.slug}`} data-cursor="Meet" className="inline-flex">
+              <FounderStack teamCode={brand.teamCode} size={34} className="[&>span:last-child]:text-sm [&>span:last-child]:text-ink/70" />
             </Link>
-            <h1 className="mt-2 text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">{listing.title}</h1>
+            <h1 className="font-display mt-5 text-[clamp(2.6rem,5vw,4.6rem)] leading-[0.92] text-ink">{listing.title}</h1>
+            <p className="mt-3 text-sm font-semibold text-ink/50">
+              {brand.name} · {collection.name}
+            </p>
             {listing.description && <p className="mt-4 leading-relaxed text-ink/60">{listing.description}</p>}
           </div>
         </ProductView>
@@ -71,7 +81,7 @@ export default async function ProductPage({ params }: { params: Params }) {
       {more.length > 0 && (
         <section className="mt-24">
           <div className="mb-8 flex items-end justify-between">
-            <h2 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">More from {brand.name}.</h2>
+            <h2 className="font-display text-[clamp(2.4rem,5vw,4.5rem)] leading-[0.9] text-ink">More from {brand.name}.</h2>
             <Link href={`/brands/${brand.slug}`} className="text-sm font-semibold text-violet hover:underline">
               See all
             </Link>

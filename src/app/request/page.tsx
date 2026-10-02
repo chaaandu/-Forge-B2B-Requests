@@ -35,8 +35,8 @@ export default async function RequestPage({ searchParams }: { searchParams: Sear
       : [];
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
-      <RequestForm shared={shared} />
+    <div className="mx-auto max-w-[1300px] px-5 pt-12 sm:px-8">
+      <RequestForm shared={shared} teamCodes={Object.fromEntries(catalog.brands.map((b) => [b.slug, b.teamCode]))} />
     </div>
   );
 }

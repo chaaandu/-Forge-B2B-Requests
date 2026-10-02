@@ -20,7 +20,7 @@ export function Lockup({ tone = "light", className }: { tone?: "light" | "dark";
       />
       <span aria-hidden className={cn("h-7 w-px", tone === "light" ? "bg-royal/25" : "bg-white/25")} />
       <span className="flex flex-col leading-none">
-        <span className={cn("text-lg font-extrabold tracking-tight", tone === "light" ? "text-royal" : "text-white")}>Forge</span>
+        <span className={cn("font-display text-[22px] italic leading-none", tone === "light" ? "text-royal" : "text-white")}>Forge</span>
         <span className={cn("mt-0.5 text-[9px] font-bold uppercase tracking-[0.2em]", tone === "light" ? "text-amethyst" : "text-orchid")}>
           for Business
         </span>

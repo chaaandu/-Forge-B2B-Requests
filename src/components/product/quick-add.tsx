@@ -22,7 +22,7 @@ export function QuickAdd({ listing, brand, onClose }: { listing: Listing; brand:
         role="dialog"
         aria-modal="true"
         aria-label={listing.title}
-        className="relative max-h-[92dvh] w-full max-w-3xl animate-rise overflow-y-auto rounded-t-3xl bg-white shadow-2xl sm:rounded-3xl"
+        className="relative max-h-[92dvh] w-full max-w-3xl animate-rise overflow-y-auto rounded-t-3xl bg-paper shadow-2xl sm:rounded-3xl"
       >
         <button
           type="button"

@@ -9,7 +9,7 @@ import { Icon3D } from "@/components/icon3d";
  */
 export function CategoryStrip({ active, counts, priority }: { active?: string; counts?: Record<string, number>; priority?: boolean }) {
   return (
-    <nav aria-label="Categories" className="no-scrollbar -mx-4 overflow-x-auto px-4 sm:-mx-6 sm:px-6">
+    <nav aria-label="Categories" className="no-scrollbar -mx-5 overflow-x-auto px-5 sm:-mx-8 sm:px-8">
       <ul className="flex min-w-max gap-2 lg:min-w-0 lg:justify-between">
         {COLLECTIONS.map((c) => (
           <li key={c.id}>

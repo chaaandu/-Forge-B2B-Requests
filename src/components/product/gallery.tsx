@@ -36,7 +36,7 @@ export function Gallery({
           ))}
         </div>
       )}
-      <div className="relative aspect-square w-full min-w-0 flex-1 overflow-hidden rounded-3xl bg-tile">
+      <div className="relative aspect-square w-full min-w-0 flex-1 overflow-hidden rounded-[32px] bg-paper-2">
         {images.map((src, i) => (
           <div key={src} className={cn("absolute inset-0 transition duration-500", i === active ? "opacity-100" : "opacity-0")}>
             <FitImage src={src} alt={i === 0 ? title : ""} priority={i === 0} sizes="(min-width: 1024px) 640px, 100vw" />

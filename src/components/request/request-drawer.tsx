@@ -35,7 +35,7 @@ export function RequestDrawer() {
         aria-modal="true"
         aria-label="Your request list"
         className={cn(
-          "absolute inset-y-0 right-0 flex w-full max-w-md flex-col bg-white shadow-2xl transition-transform duration-500 ease-out-soft",
+          "absolute inset-y-0 right-0 flex w-full max-w-md flex-col bg-paper shadow-2xl transition-transform duration-500 ease-out-soft",
           open ? "translate-x-0" : "translate-x-full",
         )}
       >

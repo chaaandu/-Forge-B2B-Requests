@@ -1,85 +1,75 @@
 @import "tailwindcss";
 
 /* ──────────────────────────────────────────────────────────────────────────
-   Mesa Forge palette — see the Forge design system (design_system.md).
-   Deep Aubergine + Lavender Mist carry ~60% of every page, Royal Purple /
-   Amethyst the type and surfaces, Orchid the motifs, and Vivid Violet is
-   reserved for calls to action. No green: Forge re-skins Mesa's green system.
+   Forge for Business — "every gift is someone's first company".
+
+   Warm paper and aubergine ink: an editorial, human register (a cause, not a
+   catalogue), still inside the Forge palette — Deep Aubergine and Royal
+   Purple for type, Orchid for the marks a hand would make, Vivid Violet only
+   where you act. Fraunces for the voice, Manrope for the interface.
    ────────────────────────────────────────────────────────────────────────── */
 @theme {
+  --color-paper: #f3ede3;
+  --color-paper-2: #eae2d4;
+  --color-paper-3: #ddd2c0;
+  --color-ink: #1b1421;
   --color-aubergine: #2a1849;
-  --color-aubergine-2: #1f1136;
+  --color-aubergine-2: #1d1033;
   --color-royal: #452a74;
   --color-amethyst: #5a3a8e;
   --color-violet: #7c4dcc;
   --color-violet-deep: #6a3cb8;
   --color-orchid: #e4a7f3;
   --color-orchid-soft: #f3d9fa;
+  --color-marigold: #f0a43a;
+  /* Kept for components that still read them. */
+  --color-canvas: #f7f2ea;
+  --color-tile: #e9e1d3;
   --color-mist: #f5edfb;
   --color-mist-2: #ece0f6;
-  --color-ink: #1d1c1d;
-  --color-ink-soft: #4f4658;
-  --color-line: #e2d5ee;
-  /* Neutral surfaces: most of the page is white, product photos sit on this. */
-  --color-canvas: #faf8fc;
-  --color-tile: #f3eff7;
+  --color-line: #d9cfbf;
+  --color-ink-soft: #5a4f5f;
 
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, sans-serif;
-  /* Headlines are Manrope too, set heavy and tight — the way Apple sets SF Pro Display. */
-  --font-display: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-fraunces), "Iowan Old Style", Georgia, serif;
 
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --animate-float: float 7s ease-in-out infinite;
-  --animate-marquee: marquee 60s linear infinite;
-  --animate-rise: rise 0.7s var(--ease-out-soft) both;
+  --animate-rise: rise 0.9s var(--ease-expo) both;
   --animate-bump: bump 0.45s var(--ease-out-soft);
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-spin-slow: spin 18s linear infinite;
 
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0) rotate(var(--tilt, 0deg));
-    }
-    50% {
-      transform: translateY(-12px) rotate(var(--tilt, 0deg));
-    }
-  }
-  @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
   @keyframes rise {
     from {
       opacity: 0;
-      transform: translateY(14px);
+      transform: translateY(24px);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
   }
   @keyframes bump {
-    0% {
-      transform: scale(1);
-    }
     40% {
       transform: scale(1.25);
     }
-    100% {
-      transform: scale(1);
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
     }
   }
 }
 
 @layer base {
   html {
-    @apply font-sans text-ink antialiased;
-    background: #ffffff;
-    scroll-behavior: smooth;
+    @apply bg-paper font-sans text-ink antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  body {
+    @apply bg-paper;
   }
   ::selection {
     background: var(--color-orchid);
@@ -87,22 +77,88 @@
   }
   :focus-visible {
     outline: 2px solid var(--color-violet);
-    outline-offset: 2px;
+    outline-offset: 3px;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
   }
 }
 
-/* The Forge ring motif: soft orchid rings radiating from a corner. */
-.rings-dark {
-  background:
-    repeating-radial-gradient(circle at 100% 100%, transparent 0 58px, rgb(228 167 243 / 0.09) 58px 60px),
-    radial-gradient(circle at 85% 90%, rgb(124 77 204 / 0.45), transparent 55%),
-    radial-gradient(circle at 10% 0%, rgb(90 58 142 / 0.6), transparent 50%), var(--color-aubergine);
+/* Display voice. Fraunces's SOFT and WONK axes are what make it feel written
+   by a person rather than set by a machine. */
+.font-display {
+  font-family: var(--font-display);
+  font-variation-settings:
+    "SOFT" 100,
+    "WONK" 1;
+  letter-spacing: -0.035em;
 }
-.rings-light {
-  background: repeating-radial-gradient(circle at 100% 100%, transparent 0 58px, rgb(124 77 204 / 0.06) 58px 60px), var(--color-mist);
+.font-display-straight {
+  font-family: var(--font-display);
+  font-variation-settings:
+    "SOFT" 50,
+    "WONK" 0;
+  letter-spacing: -0.03em;
 }
 
-/* Hide the native number spinners; quantity has its own stepper. */
+/* Film grain over everything: paper, not pixels. */
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: -50%;
+  z-index: 60;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  animation: grain 1.2s steps(6) infinite;
+}
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-3%, 2%);
+  }
+  40% {
+    transform: translate(2%, -4%);
+  }
+  60% {
+    transform: translate(-4%, -1%);
+  }
+  80% {
+    transform: translate(3%, 3%);
+  }
+}
+
+/* SplitText line masks. */
+.line-mask {
+  overflow: clip;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+/* Hand-drawn orchid underline, for the words that matter. */
+.scribble {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'><path d='M2 8 C 40 2, 80 11, 120 5 S 180 3, 198 7' stroke='%23e4a7f3' stroke-width='5' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 100% 0.32em;
+  background-position: 0 92%;
+}
+
+/* Lenis. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -111,12 +167,40 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   scrollbar-width: none;
+}
+
+/* Range inputs for the impact calculator. */
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--color-orchid) var(--fill, 50%), rgb(255 255 255 / 0.15) var(--fill, 50%));
+  outline: none;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--color-paper);
+  border: 6px solid var(--color-orchid);
+  cursor: grab;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.35);
+}
+.range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--color-paper);
+  border: 6px solid var(--color-orchid);
+  cursor: grab;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -126,6 +210,8 @@ input[type="number"] {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+  }
+  .grain {
+    animation: none;
   }
 }

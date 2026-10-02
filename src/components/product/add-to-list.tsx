@@ -40,7 +40,10 @@ export function AddToList({
 
   // An option whose every value has its own photo is shown as photo swatches.
   const swatchFor = (optionIndex: number, value: string) => listing.variants.find((v) => v.options[optionIndex] === value)?.image ?? null;
+  // Only for options you choose by looking — a design, a colour, a print. A
+  // size picked from four product photos is a guessing game.
   const isVisual = (optionIndex: number) => {
+    if (!/design|style|colou?r|print|pattern|shade/i.test(listing.options[optionIndex].name)) return false;
     const imgs = listing.options[optionIndex].values.map((v) => swatchFor(optionIndex, v));
     return imgs.every(Boolean) && new Set(imgs).size === imgs.length && listing.options[optionIndex].values.length > 1;
   };

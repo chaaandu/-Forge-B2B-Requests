@@ -21,10 +21,10 @@ export default async function CataloguePage({ searchParams }: { searchParams: Se
       : ["Catalogue", `${catalog.totals.listings} products from ${catalog.totals.brands} founder brands`];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 pb-10 sm:px-6">
+    <div className="mx-auto max-w-[1500px] px-5 pb-10 sm:px-8">
       <div className="pb-8 pt-12">
-        <h1 className="text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-          {title}. <span className="text-ink/45">{tail.replace(/\.$/, "")}.</span>
+        <h1 className="font-display max-w-5xl text-[clamp(3rem,7.5vw,7rem)] leading-[0.88] text-ink">
+          {title}. <em className="text-ink/35">{tail.replace(/\.$/, "")}.</em>
         </h1>
         <p className="mt-3 text-sm text-ink/50">Prices are retail, per unit. Bulk pricing comes with our reply.</p>
       </div>

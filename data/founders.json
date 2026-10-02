@@ -1,0 +1,544 @@
+{
+ "C101": [
+  {
+   "slug": "nirmalya-sah",
+   "name": "Nirmalya Sah"
+  },
+  {
+   "slug": "sachidananda-dehury",
+   "name": "Sachidananda Dehury"
+  },
+  {
+   "slug": "tanishque-jain",
+   "name": "Tanishque Jain"
+  }
+ ],
+ "C102": [
+  {
+   "slug": "diya-agarwal",
+   "name": "Diya Agarwal"
+  },
+  {
+   "slug": "simran-kalra",
+   "name": "Simran Kalra"
+  }
+ ],
+ "C103": [
+  {
+   "slug": "annashri-mahato",
+   "name": "Annashri Mahato"
+  },
+  {
+   "slug": "kavya-zala",
+   "name": "Kavya Zala"
+  },
+  {
+   "slug": "pragati-singh",
+   "name": "Pragati Singh"
+  }
+ ],
+ "C105": [
+  {
+   "slug": "harsh-malani",
+   "name": "Harsh Malani"
+  },
+  {
+   "slug": "meith-jain",
+   "name": "Meith Jain"
+  },
+  {
+   "slug": "ritesh-oswal",
+   "name": "Ritesh Oswal"
+  }
+ ],
+ "C106": [
+  {
+   "slug": "aarav",
+   "name": "Aarav"
+  },
+  {
+   "slug": "divy-hardenia",
+   "name": "Divy Hardenia"
+  },
+  {
+   "slug": "tushar",
+   "name": "Tushar"
+  }
+ ],
+ "C107": [
+  {
+   "slug": "anubhav",
+   "name": "Anubhav"
+  },
+  {
+   "slug": "satvik",
+   "name": "Satvik"
+  },
+  {
+   "slug": "soumanshu",
+   "name": "Soumanshu"
+  }
+ ],
+ "C108": [
+  {
+   "slug": "akassh",
+   "name": "Akassh"
+  },
+  {
+   "slug": "divyam",
+   "name": "Divyam"
+  },
+  {
+   "slug": "vatsal",
+   "name": "Vatsal"
+  }
+ ],
+ "C109": [
+  {
+   "slug": "shweta-singh",
+   "name": "Shweta Singh"
+  },
+  {
+   "slug": "ajitwsh-s",
+   "name": "Ajitwsh S"
+  },
+  {
+   "slug": "ridhima-gupta",
+   "name": "Ridhima Gupta"
+  },
+  {
+   "slug": "sahil-agrawal",
+   "name": "Sahil Agrawal"
+  }
+ ],
+ "C110": [
+  {
+   "slug": "diya-harish",
+   "name": "Diya Harish"
+  },
+  {
+   "slug": "happy-panjwani",
+   "name": "Happy Panjwani"
+  },
+  {
+   "slug": "rishika-choudhary",
+   "name": "Rishika Choudhary"
+  },
+  {
+   "slug": "zuha-fathima",
+   "name": "Zuha Fathima"
+  }
+ ],
+ "C111": [
+  {
+   "slug": "arpita-mahata",
+   "name": "Arpita Mahata"
+  },
+  {
+   "slug": "jenessa-bhathena",
+   "name": "Jenessa Bhathena"
+  },
+  {
+   "slug": "tanishq-lomte",
+   "name": "Tanishq Lomte"
+  },
+  {
+   "slug": "zalak-gogri",
+   "name": "Zalak Gogri"
+  }
+ ],
+ "C112": [
+  {
+   "slug": "naveen-kumar",
+   "name": "Naveen Kumar"
+  },
+  {
+   "slug": "parin-kumat",
+   "name": "Parin Kumat"
+  },
+  {
+   "slug": "praval-goud-madduri",
+   "name": "Praval Goud Madduri"
+  }
+ ],
+ "C113": [
+  {
+   "slug": "archit-pathak",
+   "name": "Archit Pathak"
+  },
+  {
+   "slug": "diya-ispahani",
+   "name": "Diya Ispahani"
+  },
+  {
+   "slug": "riya-kothavade",
+   "name": "Riya Kothavade"
+  }
+ ],
+ "C114": [
+  {
+   "slug": "abhishek-kamblath",
+   "name": "Abhishek Kamblath"
+  },
+  {
+   "slug": "kalika-srivastava",
+   "name": "Kalika Srivastava"
+  },
+  {
+   "slug": "aditi-roy",
+   "name": "Aditi Roy"
+  },
+  {
+   "slug": "udhav-kothari",
+   "name": "Udhav Kothari"
+  }
+ ],
+ "C115": [
+  {
+   "slug": "dev-mehra",
+   "name": "Dev Mehra"
+  },
+  {
+   "slug": "maitree-shah",
+   "name": "Maitree Shah"
+  },
+  {
+   "slug": "risheet-gangar",
+   "name": "Risheet Gangar"
+  }
+ ],
+ "C116": [
+  {
+   "slug": "ananta-tantia",
+   "name": "Ananta Tantia"
+  },
+  {
+   "slug": "rydham-jain",
+   "name": "Rydham Jain"
+  },
+  {
+   "slug": "vidhi-agarwal",
+   "name": "Vidhi Agarwal"
+  }
+ ],
+ "C117": [
+  {
+   "slug": "harsh-dubey",
+   "name": "Harsh Dubey"
+  },
+  {
+   "slug": "pratiksha-bengani",
+   "name": "Pratiksha Bengani"
+  },
+  {
+   "slug": "rishika-uppalapati",
+   "name": "Rishika Uppalapati"
+  }
+ ],
+ "C118": [
+  {
+   "slug": "adithya-rajagopalan",
+   "name": "Adithya Rajagopalan"
+  },
+  {
+   "slug": "radha-hutkey",
+   "name": "Radha Hutkey"
+  },
+  {
+   "slug": "rahul-m",
+   "name": "Rahul M"
+  },
+  {
+   "slug": "sairaj-g",
+   "name": "Sairaj G"
+  }
+ ],
+ "C119": [
+  {
+   "slug": "abeer-bhati",
+   "name": "Abeer Bhati"
+  },
+  {
+   "slug": "bhadar-singh",
+   "name": "Bhadar Singh"
+  },
+  {
+   "slug": "utkarsh-kapoor",
+   "name": "Utkarsh Kapoor"
+  }
+ ],
+ "C120": [
+  {
+   "slug": "anushka-ghogre",
+   "name": "Anushka Ghogre"
+  },
+  {
+   "slug": "dhruvi-lohiya",
+   "name": "Dhruvi Lohiya"
+  },
+  {
+   "slug": "mayank-agrawal",
+   "name": "Mayank Agrawal"
+  }
+ ],
+ "C121": [
+  {
+   "slug": "ashutosh-saxena",
+   "name": "Ashutosh Saxena"
+  },
+  {
+   "slug": "preethi-s",
+   "name": "Preethi S"
+  },
+  {
+   "slug": "sohum-shikhare",
+   "name": "Sohum Shikhare"
+  },
+  {
+   "slug": "tejas-joshi",
+   "name": "Tejas Joshi"
+  }
+ ],
+ "C122": [
+  {
+   "slug": "akristi-mohta",
+   "name": "Akristi Mohta"
+  },
+  {
+   "slug": "itish-pande",
+   "name": "Itish Pande"
+  },
+  {
+   "slug": "shashank-pandey",
+   "name": "Shashank Pandey"
+  }
+ ],
+ "C123": [
+  {
+   "slug": "akhilesh",
+   "name": "Akhilesh"
+  },
+  {
+   "slug": "hritik",
+   "name": "Hritik"
+  },
+  {
+   "slug": "yashwi",
+   "name": "Yashwi"
+  }
+ ],
+ "C124": [
+  {
+   "slug": "aditya-peter",
+   "name": "Aditya Peter"
+  },
+  {
+   "slug": "naveen-kolla",
+   "name": "Naveen Kolla"
+  },
+  {
+   "slug": "tanishkha",
+   "name": "Tanishkha"
+  }
+ ],
+ "C125": [
+  {
+   "slug": "anuj-bajaj",
+   "name": "Anuj Bajaj"
+  },
+  {
+   "slug": "darshan-chopda",
+   "name": "Darshan Chopda"
+  }
+ ],
+ "C126": [
+  {
+   "slug": "sarth",
+   "name": "Sarth"
+  },
+  {
+   "slug": "ujjwal-sitlani",
+   "name": "Ujjwal Sitlani"
+  },
+  {
+   "slug": "vikram",
+   "name": "Vikram"
+  }
+ ],
+ "C127": [
+  {
+   "slug": "akshat",
+   "name": "Akshat"
+  },
+  {
+   "slug": "lipika",
+   "name": "Lipika"
+  },
+  {
+   "slug": "param",
+   "name": "Param"
+  }
+ ],
+ "C128": [
+  {
+   "slug": "adnaan-r",
+   "name": "Adnaan R"
+  },
+  {
+   "slug": "akash-ghorpade",
+   "name": "Akash Ghorpade"
+  },
+  {
+   "slug": "vion-d-souza",
+   "name": "Vion D'Souza"
+  }
+ ],
+ "C129": [
+  {
+   "slug": "bhavya",
+   "name": "Bhavya"
+  },
+  {
+   "slug": "haider",
+   "name": "Haider"
+  },
+  {
+   "slug": "yogita",
+   "name": "Yogita"
+  }
+ ],
+ "C130": [
+  {
+   "slug": "anshul-dhapte",
+   "name": "Anshul Dhapte"
+  },
+  {
+   "slug": "devansh-mehta",
+   "name": "Devansh Mehta"
+  },
+  {
+   "slug": "nikhil-kanjolia",
+   "name": "Nikhil Kanjolia"
+  }
+ ],
+ "C131": [
+  {
+   "slug": "rushabh-shah",
+   "name": "Rushabh Shah"
+  },
+  {
+   "slug": "abhishek-hosmani",
+   "name": "Abhishek Hosmani"
+  },
+  {
+   "slug": "brijesh-attal",
+   "name": "Brijesh Attal"
+  }
+ ],
+ "C132": [
+  {
+   "slug": "aditi",
+   "name": "Aditi"
+  },
+  {
+   "slug": "darsh-shah",
+   "name": "Darsh Shah"
+  },
+  {
+   "slug": "rohan-vivek",
+   "name": "Rohan Vivek"
+  },
+  {
+   "slug": "sinchan-rai",
+   "name": "Sinchan Rai"
+  }
+ ],
+ "C133": [
+  {
+   "slug": "aditya-agarwal",
+   "name": "Aditya Agarwal"
+  },
+  {
+   "slug": "ansh-loya",
+   "name": "Ansh Loya"
+  },
+  {
+   "slug": "yaswanth-krishna",
+   "name": "Yaswanth Krishna"
+  }
+ ],
+ "C134": [
+  {
+   "slug": "dhyay",
+   "name": "Dhyay"
+  },
+  {
+   "slug": "preet",
+   "name": "Preet"
+  },
+  {
+   "slug": "yashansh",
+   "name": "Yashansh"
+  }
+ ],
+ "C135": [
+  {
+   "slug": "devansh-vora",
+   "name": "Devansh Vora"
+  },
+  {
+   "slug": "madhuresh-binzani",
+   "name": "Madhuresh Binzani"
+  },
+  {
+   "slug": "sakshi-awasthi",
+   "name": "Sakshi Awasthi"
+  }
+ ],
+ "C136": [
+  {
+   "slug": "aadishwar-r",
+   "name": "Aadishwar R"
+  },
+  {
+   "slug": "pratiksha-bihani",
+   "name": "Pratiksha Bihani"
+  },
+  {
+   "slug": "shivansh-sarraf",
+   "name": "Shivansh Sarraf"
+  }
+ ],
+ "C137": [
+  {
+   "slug": "abhishek-gaur",
+   "name": "Abhishek Gaur"
+  },
+  {
+   "slug": "atharva-agrawal",
+   "name": "Atharva Agrawal"
+  },
+  {
+   "slug": "kaavya-goenka",
+   "name": "Kaavya Goenka"
+  },
+  {
+   "slug": "riya-khurana",
+   "name": "Riya Khurana"
+  }
+ ],
+ "C139": [
+  {
+   "slug": "aditya-singhal",
+   "name": "Aditya Singhal"
+  },
+  {
+   "slug": "bhavit-gupta",
+   "name": "Bhavit Gupta"
+  },
+  {
+   "slug": "harsh-nain",
+   "name": "Harsh Nain"
+  }
+ ]
+}

@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "@/components/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, ChevronLeft } from "lucide-react";
 import { getCatalog, getCollection } from "@/lib/catalog";
-import { CatalogueBrowser } from "@/components/catalogue/catalogue-browser";
 import { NO_FILTERS } from "@/lib/filters";
+import { firstNames, foundersOf } from "@/lib/founders";
+import { getImpact } from "@/lib/impact";
+import { getReels } from "@/lib/reels";
+import { CatalogueBrowser } from "@/components/catalogue/catalogue-browser";
+import { TeamLineup } from "@/components/team-lineup";
+import { CountUp } from "@/components/motion/count-up";
+import { SplitReveal } from "@/components/motion/reveal";
+import { Reels } from "@/components/home/reels";
 
 export const revalidate = 600;
 
@@ -17,7 +23,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const b = (await getCatalog()).brand((await params).slug);
-  return b ? { title: b.name, description: `${b.name}: ${b.tagline}. A Mesa Forge founder brand.` } : {};
+  if (!b) return {};
+  const people = foundersOf(b.teamCode);
+  return { title: b.name, description: `${b.name}: ${b.tagline}. Started by ${firstNames(people)} in Forge at Mesa School of Business.` };
 }
 
 export default async function BrandPage({ params }: { params: Params }) {
@@ -25,52 +33,99 @@ export default async function BrandPage({ params }: { params: Params }) {
   const brand = catalog.brand((await params).slug);
   if (!brand) notFound();
   const items = catalog.listingsOf(brand.slug);
-  const skus = items.reduce((n, l) => n + l.variants.length, 0);
+  const people = foundersOf(brand.teamCode);
+  const [impact, reels] = await Promise.all([getImpact([brand.teamCode]), getReels()]);
+  const sold = impact.byTeam[brand.teamCode];
+  const theirReels = reels
+    .filter((r) => r.teamCode === brand.teamCode)
+    .map((r) => ({ video: r.video, poster: r.poster, brand: brand.name, brandSlug: brand.slug }));
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6">
-      <Link href="/brands" className="mt-6 inline-flex items-center gap-0.5 text-xs text-ink/50 hover:text-ink">
-        <ChevronLeft className="size-3.5" /> All brands
-      </Link>
-      <div className="flex flex-col gap-4 pb-10 pt-6 sm:flex-row sm:items-center sm:gap-6">
-        {brand.logo && (
-          <div className="relative size-20 shrink-0 overflow-hidden rounded-2xl bg-white ring-1 ring-black/5">
-            <Image src={brand.logo} alt={`${brand.name} logo`} fill sizes="80px" className="object-contain p-2" />
+    <>
+      <section className="relative overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-[10vw] top-10 -z-0 size-[60vw] max-w-[820px] rounded-full bg-orchid-soft/70 blur-0"
+        />
+        <div className="relative mx-auto grid max-w-[1500px] gap-10 px-5 pb-10 pt-6 sm:px-8 lg:grid-cols-[1fr_1.05fr] lg:items-end">
+          <div className="pb-6 lg:pb-20">
+            <Link href="/brands" className="inline-flex items-center gap-1 text-xs font-semibold text-ink/50 hover:text-ink">
+              <ChevronLeft className="size-3.5" /> All founders
+            </Link>
+            <p className="mt-10 text-xs font-bold uppercase tracking-[0.25em] text-violet">
+              A Forge founder brand · {getCollection(brand.collection)?.name}
+            </p>
+            <SplitReveal as="h1" immediate className="font-display mt-4 text-[clamp(3.5rem,9vw,9rem)] leading-[0.86] text-ink">
+              {brand.name}
+            </SplitReveal>
+            <p className="font-display-straight mt-6 max-w-xl text-[clamp(1.4rem,2.2vw,2rem)] leading-snug text-ink/75">
+              {people.length ? (
+                <>
+                  Started by <span className="text-ink">{firstNames(people)}</span> — {brand.tagline.toLowerCase()}.
+                </>
+              ) : (
+                brand.tagline
+              )}
+            </p>
+            <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:flex sm:flex-wrap">
+              {sold && sold.revenue > 0 && (
+                <div>
+                  <dd className="font-display text-5xl text-royal">
+                    <CountUp value={sold.revenue} prefix="₹" />
+                  </dd>
+                  <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">sold so far</dt>
+                </div>
+              )}
+              {sold && sold.units > 0 && (
+                <div>
+                  <dd className="font-display text-5xl text-ink">
+                    <CountUp value={sold.units} />
+                  </dd>
+                  <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">products in people&apos;s hands</dt>
+                </div>
+              )}
+              <div>
+                <dd className="font-display text-5xl text-ink">{items.length}</dd>
+                <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">to gift, below</dt>
+              </div>
+            </dl>
+            {(brand.website || brand.instagram) && (
+              <p className="mt-8 flex flex-wrap gap-3 text-sm font-semibold">
+                {brand.website && (
+                  <a
+                    href={brand.website}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 rounded-full border border-ink/15 px-4 py-2 hover:border-ink"
+                  >
+                    Website <ArrowUpRight className="size-3.5" />
+                  </a>
+                )}
+                {brand.instagram && (
+                  <a
+                    href={brand.instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 rounded-full border border-ink/15 px-4 py-2 hover:border-ink"
+                  >
+                    Instagram <ArrowUpRight className="size-3.5" />
+                  </a>
+                )}
+              </p>
+            )}
           </div>
-        )}
-        <div>
-          <h1 className="text-5xl font-semibold tracking-tight text-ink sm:text-6xl">{brand.name}</h1>
-          <p className="mt-2 text-lg text-ink/55">
-            {brand.tagline} · {getCollection(brand.collection)?.name}
-          </p>
-          <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm">
-            <span className="text-ink/45">
-              {items.length} products · {skus} SKUs
-            </span>
-            {brand.website && (
-              <a
-                href={brand.website}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-0.5 font-semibold text-violet hover:underline"
-              >
-                Website <ArrowUpRight className="size-3.5" />
-              </a>
-            )}
-            {brand.instagram && (
-              <a
-                href={brand.instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-0.5 font-semibold text-violet hover:underline"
-              >
-                Instagram <ArrowUpRight className="size-3.5" />
-              </a>
-            )}
-          </p>
+          {people.length > 0 && <TeamLineup people={people} sizes="(min-width: 1024px) 340px, 45vw" className="pt-4" />}
         </div>
-      </div>
-      <CatalogueBrowser scope="brand" listings={items} brands={[brand]} initial={NO_FILTERS} />
-    </div>
+      </section>
+
+      {theirReels.length > 0 && <Reels reels={theirReels} />}
+
+      <section className="mx-auto max-w-[1500px] px-5 pt-16 sm:px-8">
+        <SplitReveal className="font-display mb-8 text-[clamp(2.6rem,6vw,6rem)] leading-[0.9] text-ink">
+          What they <em className="text-royal">make.</em>
+        </SplitReveal>
+        <CatalogueBrowser scope="brand" listings={items} brands={[brand]} initial={NO_FILTERS} />
+      </section>
+    </>
   );
 }

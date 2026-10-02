@@ -7,6 +7,7 @@ import { useRequestList } from "@/lib/request-list";
 import { formatINR } from "@/lib/money";
 import { cn } from "@/lib/cn";
 import { FitImage } from "@/components/fit-image";
+import { FounderStack } from "@/components/founder-stack";
 
 const SIZES = "(min-width: 1280px) 300px, (min-width: 768px) 30vw, 50vw";
 
@@ -30,11 +31,15 @@ export function ProductCard({
   return (
     <article className="group flex flex-col">
       <div className="relative">
-        <Link href={`/products/${listing.slug}`} className="relative block aspect-square overflow-hidden rounded-2xl bg-tile">
+        <Link
+          href={`/products/${listing.slug}`}
+          data-cursor="View"
+          className="relative block aspect-[4/5] overflow-hidden rounded-[28px] bg-paper-2"
+        >
           {front && (
             <div
               className={cn(
-                "absolute inset-0 transition duration-700 ease-out-soft group-hover:scale-[1.03]",
+                "absolute inset-0 transition duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]",
                 back && "group-hover:opacity-0",
               )}
             >
@@ -42,7 +47,7 @@ export function ProductCard({
             </div>
           )}
           {back && (
-            <div className="absolute inset-0 opacity-0 transition duration-700 ease-out-soft group-hover:scale-[1.03] group-hover:opacity-100">
+            <div className="absolute inset-0 opacity-0 transition duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04] group-hover:opacity-100">
               <FitImage src={back} alt="" sizes={SIZES} />
             </div>
           )}
@@ -50,26 +55,30 @@ export function ProductCard({
         <button
           type="button"
           onClick={onQuickAdd}
-          aria-label={inList ? `${listing.title} is on your list — change quantity` : `Add ${listing.title} to your request list`}
+          aria-label={inList ? `${listing.title} is on your list — change quantity` : `Add ${listing.title} to your gift list`}
           className={cn(
-            "absolute bottom-3 right-3 grid size-10 place-items-center rounded-full shadow-lg shadow-black/10 transition active:scale-95",
-            inList ? "bg-royal text-white" : "bg-white/95 text-royal backdrop-blur hover:bg-royal hover:text-white",
+            "absolute bottom-3 right-3 grid size-11 place-items-center rounded-full shadow-lg shadow-black/10 transition duration-300 active:scale-90",
+            inList ? "bg-aubergine text-orchid" : "bg-paper text-ink hover:rotate-90 hover:bg-orchid",
           )}
         >
           {inList ? <Check className="size-4" strokeWidth={2.5} /> : <Plus className="size-5" strokeWidth={2.2} />}
         </button>
       </div>
 
-      <div className="mt-3.5 space-y-0.5">
-        <p className="text-xs font-medium text-ink/50">{brand.name}</p>
+      <div className="mt-4 space-y-1.5 px-1">
+        <FounderStack teamCode={brand.teamCode} />
         <Link href={`/products/${listing.slug}`}>
-          <h3 className="line-clamp-2 text-[15px] font-semibold leading-snug text-ink">{listing.title}</h3>
+          <h3 className="font-display-straight line-clamp-2 text-[1.35rem] leading-[1.1] text-ink">{listing.title}</h3>
         </Link>
-        {choices && <p className="text-xs text-ink/50">{choices}</p>}
-        <p className="pt-1 text-sm tabular-nums text-ink">
-          {listing.variants.length > 1 && listing.priceFromMinor !== listing.priceToMinor && <span className="text-ink/50">From </span>}
-          <span className="font-semibold">{formatINR(listing.priceFromMinor)}</span>
-          {cheapest.compareAtMinor && <span className="ml-1.5 text-xs text-ink/40 line-through">{formatINR(cheapest.compareAtMinor)}</span>}
+        <p className="flex items-baseline gap-2 text-sm text-ink/60">
+          <span className="font-semibold text-ink">{brand.name}</span>
+          <span aria-hidden>·</span>
+          <span className="tabular-nums">
+            {listing.variants.length > 1 && listing.priceFromMinor !== listing.priceToMinor && "from "}
+            {formatINR(listing.priceFromMinor)}
+          </span>
+          {cheapest.compareAtMinor && <span className="text-xs text-ink/35 line-through">{formatINR(cheapest.compareAtMinor)}</span>}
+          {choices && <span className="ml-auto hidden text-xs text-ink/45 sm:inline">{choices}</span>}
         </p>
       </div>
     </article>
