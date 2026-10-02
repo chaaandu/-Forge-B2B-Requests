@@ -20,7 +20,7 @@ export const OCCASIONS: { id: string; title: string; blurb: string; collections:
   {
     id: "clients",
     title: "Clients & partners",
-    blurb: "Premium picks that don't look like every other hamper.",
+    blurb: "Premium picks that don’t look like every other hamper.",
     collections: ["hampers", "fragrance", "home", "apparel"],
   },
   {

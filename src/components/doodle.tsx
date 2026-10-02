@@ -45,7 +45,7 @@ export function Doodle({
 
       if (draw)
         gsap
-          .timeline({ delay, scrollTrigger: { trigger: svg, start: "top 92%", once: true } })
+          .timeline({ delay, scrollTrigger: { trigger: svg, start: "top 92%" } })
           .fromTo(ink, { drawSVG: "0%" }, { drawSVG: "100%", duration: 0.9, stagger: 0.07, ease: "power2.inOut" })
           .from(fill, { opacity: 0, scale: 0.7, transformOrigin: "50% 50%", duration: 0.6, ease: "back.out(2)" }, 0.35)
           .from(dots, { scale: 0, transformOrigin: "50% 50%", duration: 0.4, stagger: 0.04, ease: "back.out(3)" }, 0.55);

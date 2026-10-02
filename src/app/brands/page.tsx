@@ -19,13 +19,22 @@ export default async function BrandsPage() {
 
   return (
     <div className="mx-auto max-w-[1500px] px-5 sm:px-8">
-      <div className="grid gap-8 pb-16 pt-12 lg:grid-cols-[1.4fr_1fr] lg:items-end">
-        <SplitReveal as="h1" immediate className="font-display text-[clamp(3.5rem,9vw,9rem)] leading-[0.86] text-ink">
-          {founders} founders. <em className="text-royal">{brands.length} first companies.</em>
+      {/* Two lines, each its own claim. The size is set so "37 first companies."
+          always fits on one line, from a small phone up. On a wide screen the
+          paragraph sits beside the shorter first line. */}
+      <div className="grid gap-8 pb-16 pt-12 xl:grid-cols-[1fr_26rem]">
+        <SplitReveal
+          as="h1"
+          immediate
+          className="font-display text-[clamp(2.4rem,11.2vw,9rem)] leading-[0.86] text-ink xl:col-[1/-1] xl:row-start-1"
+        >
+          {founders} founders.
+          <br />
+          <em className="text-royal">{brands.length}&nbsp;first companies.</em>
         </SplitReveal>
-        <p className="max-w-md text-lg leading-snug text-ink/65 lg:justify-self-end">
-          Each squad started a company this year in Forge, Mesa&apos;s venture-building year. They source it, make it, price it and sell it.
-          Your order is real revenue.
+        <p className="max-w-md text-lg leading-snug text-ink/65 xl:col-start-2 xl:row-start-1 xl:pt-4">
+          Each squad started a company this year in Forge, Mesa’s venture-building year. They source it, make it, price it and sell it. Your
+          order is real revenue.
         </p>
       </div>
 
@@ -39,9 +48,10 @@ export default async function BrandsPage() {
                   head is the same size whether the squad is two or four. */}
               <div className="@container relative overflow-hidden rounded-[32px] bg-orchid-soft transition-colors duration-500 group-hover:bg-orchid">
                 <div className="flex aspect-[1.9] items-end justify-center pt-[6%]">
-                  <TeamLineup people={people} hop sizes="200px" className="[--person:31cqw]" />
+                  <TeamLineup people={people} sizes="200px" className="squad-tint [--person:31cqw]" />
                 </div>
-                {/* On hover the squad hops, and a ticker slides up under their feet. */}
+                {/* On hover the squad stays put and comes up in colour (see .squad-tint),
+                    while their names run past behind them. */}
                 <div
                   aria-hidden
                   className="absolute inset-x-0 bottom-0 translate-y-full overflow-hidden bg-ink py-2.5 text-paper transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-y-0"

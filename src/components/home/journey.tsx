@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
+import { gsap, reducedMotion, ScrollTrigger, useGSAP } from "@/components/motion/gsap";
 import { Doodle } from "@/components/doodle";
 import { DoodleArtwork } from "@/components/doodles";
 import { FacePile } from "@/components/face-pile";
@@ -161,7 +161,7 @@ function ScenePack({ d }: { d: JourneyData }) {
         </span>
       </div>
       <div data-packers className="mt-6 flex items-center gap-3 rounded-full bg-paper py-2 pl-2 pr-5 shadow-xl">
-        <FacePile photos={d.cohort} size={30} total={d.cohortCount} />
+        <FacePile photos={d.cohort} max={3} size={30} total={d.cohortCount} />
         <span className="whitespace-nowrap text-sm font-semibold text-ink">Packed by its makers</span>
       </div>
     </div>
@@ -222,7 +222,7 @@ function SceneUnwrap({ d }: { d: JourneyData }) {
         <Doodle name="gift" hover="none" draw={false} className="w-full" />
       </div>
       <div data-tag className="mt-6 flex items-center gap-3 rounded-full bg-paper py-2 pl-2 pr-5 shadow-xl">
-        <FacePile photos={d.cohort} size={30} total={d.cohortCount} />
+        <FacePile photos={d.cohort} max={3} size={30} total={d.cohortCount} />
         <span className="whitespace-nowrap text-sm font-semibold text-ink">Made by founders at Mesa</span>
       </div>
     </div>
@@ -326,7 +326,7 @@ export function Journey({ data }: { data: JourneyData }) {
         // The first scene is already on screen before the pin starts, so it
         // plays as the section arrives instead of waiting for the scrub.
         const first = sceneTimeline(0, scs[0]).pause();
-        gsap.timeline({ scrollTrigger: { trigger: el, start: "top 55%", once: true, onEnter: () => void first.play() } });
+        ScrollTrigger.create({ trigger: el, start: "top 55%", onEnter: () => void first.play() });
 
         const tl = gsap.timeline({
           defaults: { ease: "none" },
@@ -367,7 +367,7 @@ export function Journey({ data }: { data: JourneyData }) {
         if (reducedMotion()) return;
         gsap.utils.toArray<HTMLElement>("[data-mscene]", stack).forEach((s, i) => {
           const tl = sceneTimeline(i, s).pause();
-          gsap.timeline({ scrollTrigger: { trigger: s, start: "top 75%", once: true, onEnter: () => void tl.play() } });
+          ScrollTrigger.create({ trigger: s, start: "top 75%", onEnter: () => void tl.play() });
         });
         gsap.fromTo(
           stack.querySelector("[data-line]"),

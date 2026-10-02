@@ -84,15 +84,21 @@ export default async function Home() {
     cohortCount: wall.length,
   };
 
+  // Each shelf's photo: a proper hamper for hampers, otherwise a product from
+  // the team selling the most on that shelf.
   const rows = COLLECTIONS.map((c) => {
-    const items = catalog.listingsIn(c.id);
+    const items = catalog.listingsIn(c.id).filter((l) => l.images[0]);
+    const face =
+      c.id === "hampers"
+        ? hampers[0]
+        : [...items].sort((a, b) => sold(catalog.brand(b.brand)!.teamCode) - sold(catalog.brand(a.brand)!.teamCode))[0];
     return {
       id: c.id,
       name: c.name,
       blurb: c.blurb,
       icon: c.icon,
-      count: items.length,
-      image: items.find((l) => l.images[0])?.images[0] ?? null,
+      count: catalog.listingsIn(c.id).length,
+      image: face?.images[0] ?? null,
     };
   });
 

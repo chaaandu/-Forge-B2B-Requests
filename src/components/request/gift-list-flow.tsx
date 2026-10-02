@@ -228,10 +228,10 @@ export function GiftListFlow({
                   </>
                 )
               ) : sheet ? (
-                "Who's gifting?"
+                "Who’s gifting?"
               ) : (
                 <>
-                  Who&apos;s <em className="text-royal">gifting?</em>
+                  Who’s <em className="text-royal">gifting?</em>
                 </>
               )}
             </H>
@@ -311,9 +311,7 @@ export function GiftListFlow({
             <div className="flex flex-col items-center py-10 text-center">
               <Doodle name="bag" className="size-24 text-aubergine" />
               <p className="font-display mt-6 text-3xl text-ink">Your list is feeling light.</p>
-              <p className="mt-2 max-w-xs text-sm text-ink/60">
-                Add a few things and we&apos;ll handle the rest. It&apos;s a list, not an order.
-              </p>
+              <p className="mt-2 max-w-xs text-sm text-ink/60">Add a few things and we’ll handle the rest. It’s a list, not an order.</p>
               <Link
                 href="/catalogue"
                 onClick={onClose}
@@ -328,7 +326,7 @@ export function GiftListFlow({
                 <div className="mb-4 flex items-center gap-3 rounded-2xl bg-orchid-soft px-4 py-3">
                   <FacePile photos={backing.map((p) => p.photo)} size={30} ring="ring-orchid-soft" />
                   <span className="whitespace-nowrap text-sm font-semibold text-aubergine">
-                    <span className="max-[380px]:hidden">You&apos;re backing </span>
+                    <span className="max-[380px]:hidden">You’re backing </span>
                     <span className="min-[381px]:hidden">Backing </span>
                     {backing.length} founders
                   </span>

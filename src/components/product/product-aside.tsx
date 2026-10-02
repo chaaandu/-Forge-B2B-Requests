@@ -22,7 +22,7 @@ export function ProductAside({ brand, sold }: { brand: Brand; sold: number }) {
             <div className="p-6 pb-2 xl:pb-6">
               <p className="font-display text-[1.7rem] leading-tight text-ink">Made by {firstNames(people)}</p>
               <p className="mt-2 text-sm leading-snug text-ink/65">
-                Your order is {brand.name}&apos;s revenue{sold > 0 ? <>. They&apos;ve sold {inr(sold)} so far.</> : "."}
+                Your order is {brand.name}’s revenue{sold > 0 ? <>. They’ve sold {inr(sold)} so far.</> : "."}
               </p>
               <p className="mt-4 inline-flex items-center gap-1 whitespace-nowrap text-sm font-semibold text-royal">
                 Meet the squad <ArrowUpRight className="size-3.5 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -41,7 +41,7 @@ export function ProductAside({ brand, sold }: { brand: Brand; sold: number }) {
       <div className="grid gap-3 sm:grid-cols-2">
         {[
           { icon: "phone" as const, lead: "Bulk pricing by phone.", body: "We call within a working day with a quote." },
-          { icon: "sparkle" as const, lead: "Your logo, on request.", body: `We check with ${brand.name} what's possible.` },
+          { icon: "sparkle" as const, lead: "Your logo, on request.", body: `We check with ${brand.name} what’s possible.` },
         ].map((c) => (
           <div key={c.lead} className="group flex items-start gap-3 rounded-[22px] bg-paper-2 p-4">
             <Doodle name={c.icon} hover="group" className="size-10 shrink-0 text-aubergine" />

@@ -60,30 +60,32 @@ export default async function BrandPage({ params }: { params: Params }) {
                 brand.tagline
               )}
             </p>
-            <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:flex sm:flex-wrap">
+            {/* Their numbers as one strip, not three posters: they read at a glance
+                and leave the squad above the fold on a phone. */}
+            <dl className="mt-8 flex max-w-xl divide-x divide-ink/10 rounded-[24px] bg-paper-2/80 py-4 sm:mt-10 sm:py-5">
               {sold && sold.revenue > 0 && (
-                <div>
-                  <dd className="font-display text-5xl text-royal">
+                <div className="flex min-w-0 flex-[1.35] flex-col px-4 first:pl-5 sm:px-6 sm:first:pl-7">
+                  <dt className="order-2 mt-1.5 text-xs leading-snug text-ink/55 sm:text-sm">earned so far</dt>
+                  <dd className="font-display order-1 text-[clamp(1.4rem,6vw,2.6rem)] leading-none text-royal">
                     <CountUp value={sold.revenue} prefix="₹" />
                   </dd>
-                  <dt className="mt-1 text-sm text-ink/55">sold so far</dt>
                 </div>
               )}
               {sold && sold.units > 0 && (
-                <div>
-                  <dd className="font-display text-5xl text-ink">
+                <div className="flex min-w-0 flex-1 flex-col px-4 first:pl-5 sm:px-6 sm:first:pl-7">
+                  <dt className="order-2 mt-1.5 text-xs leading-snug text-ink/55 sm:text-sm">products sold</dt>
+                  <dd className="font-display order-1 text-[clamp(1.4rem,6vw,2.6rem)] leading-none text-ink">
                     <CountUp value={sold.units} />
                   </dd>
-                  <dt className="mt-1 text-sm text-ink/55">products out in the world</dt>
                 </div>
               )}
-              <div>
-                <dd className="font-display text-5xl text-ink">{items.length}</dd>
-                <dt className="mt-1 text-sm text-ink/55">ready to gift</dt>
+              <div className="flex min-w-0 flex-1 flex-col px-4 first:pl-5 sm:px-6 sm:first:pl-7">
+                <dt className="order-2 mt-1.5 text-xs leading-snug text-ink/55 sm:text-sm">ready to gift</dt>
+                <dd className="font-display order-1 text-[clamp(1.4rem,6vw,2.6rem)] leading-none text-ink">{items.length}</dd>
               </div>
             </dl>
             {(brand.website || brand.instagram) && (
-              <p className="mt-8 flex flex-wrap gap-3 text-sm font-semibold">
+              <p className="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
                 {brand.website && (
                   <a
                     href={brand.website}

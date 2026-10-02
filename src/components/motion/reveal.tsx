@@ -38,7 +38,7 @@ export function SplitReveal({
         ease: "expo.out",
         stagger: 0.09,
         delay,
-        scrollTrigger: immediate ? undefined : { trigger: el, start: "top 88%", once: true },
+        scrollTrigger: immediate ? undefined : { trigger: el, start: "top 88%" },
       });
     },
     { scope: ref },
@@ -63,7 +63,7 @@ export function Stagger({ children, className, selector = ":scope > *" }: { chil
         duration: 1,
         ease: "expo.out",
         stagger: 0.07,
-        scrollTrigger: { trigger: ref.current, start: "top 85%", once: true },
+        scrollTrigger: { trigger: ref.current, start: "top 85%" },
       });
     },
     { scope: ref },

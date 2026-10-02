@@ -1,37 +1,44 @@
 import Image from "next/image";
 import Link from "@/components/link";
 import { getCatalog } from "@/lib/catalog";
-import { COLLECTIONS } from "@/lib/catalog-types";
 import { allFounders } from "@/lib/founders";
-import { getImpact } from "@/lib/impact";
 import { SplitReveal } from "@/components/motion/reveal";
 import { Magnetic } from "@/components/motion/magnetic";
 import { VelocityMarquee } from "@/components/motion/velocity-marquee";
 import { Roll } from "./header";
 import { KineticWord } from "./kinetic-word";
 import { BackToTop } from "./back-to-top";
-import { Lockup } from "./lockup";
 
-const inr = (n: number) => `₹${new Intl.NumberFormat("en-IN").format(Math.round(n))}`;
+const PAGES = [
+  { href: "/catalogue", label: "Store" },
+  { href: "/brands", label: "Founders" },
+  { href: "/request", label: "Gift list" },
+];
 
+const MESA = [
+  { href: "https://fb.mesaschool.co.in/live", label: "Live leaderboard" },
+  { href: "https://mesaschool.co", label: "mesaschool.co" },
+];
+
+/**
+ * Four beats and nothing else: the ask, the people, where to go next, and
+ * the sign-off. The faces run past at the pace you scroll; the sign-off
+ * leans toward your pointer.
+ */
 export async function Footer() {
   const catalog = await getCatalog();
-  const impact = await getImpact(catalog.brands.map((b) => b.teamCode));
   const codes = new Set(catalog.brands.map((b) => b.teamCode));
   const faces = allFounders().filter((f) => codes.has(f.teamCode));
-  const topBrands = [...catalog.brands]
-    .sort((a, b) => (impact.byTeam[b.teamCode]?.revenue ?? 0) - (impact.byTeam[a.teamCode]?.revenue ?? 0))
-    .slice(0, 6);
 
   return (
     <footer className="relative mt-32 overflow-hidden rounded-t-[40px] bg-aubergine-2 text-paper sm:rounded-t-[64px]">
       <div aria-hidden className="pointer-events-none absolute -left-40 top-0 size-[620px] rounded-full bg-violet/25 blur-[140px]" />
 
-      <div className="relative mx-auto max-w-[1500px] px-5 pt-24 sm:px-8 sm:pt-32">
+      <div className="relative mx-auto flex max-w-[1500px] flex-col gap-10 px-5 pt-24 sm:px-8 sm:pt-32 lg:flex-row lg:items-end lg:justify-between">
         <SplitReveal className="font-display max-w-5xl text-[clamp(3.2rem,9vw,9rem)] leading-[0.9]">
           Gift like it <em className="text-orchid">matters.</em>
         </SplitReveal>
-        <div className="mt-10 flex items-center gap-2.5 sm:gap-4">
+        <div className="flex shrink-0 items-center gap-2.5 sm:gap-4 lg:pb-5">
           <Magnetic>
             <Link
               href="/catalogue"
@@ -58,85 +65,40 @@ export async function Footer() {
         ))}
       </VelocityMarquee>
 
-      <div className="relative mx-auto grid max-w-[1500px] grid-cols-2 gap-x-6 gap-y-12 px-5 py-16 text-sm sm:px-8 sm:grid-cols-3 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
-        <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-          <Lockup tone="dark" />
-          <p className="mt-6 max-w-sm leading-relaxed text-paper/60">
-            {faces.length} founders, {catalog.totals.brands} first companies, all started in Forge, the venture-building year at Mesa School
-            of Business. Every order is real revenue.
-          </p>
-          {impact.revenue > 0 && (
-            <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-5">
-              <div>
-                <dd className="font-display text-3xl text-orchid">{inr(impact.revenue)}</dd>
-                <dt className="mt-1 text-sm text-paper/50">earned so far</dt>
-              </div>
-              <div>
-                <dd className="font-display text-3xl text-paper">{impact.units.toLocaleString("en-IN")}</dd>
-                <dt className="mt-1 text-sm text-paper/50">products sold</dt>
-              </div>
-            </dl>
-          )}
-        </div>
-        <div>
-          <h3 className="font-semibold text-paper">Shop</h3>
-          <ul className="mt-4 space-y-2.5 text-paper/60">
-            {COLLECTIONS.map((c) => (
-              <li key={c.id}>
-                <Link href={`/catalogue?collection=${c.id}`} className="hover:text-orchid">
-                  {c.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold text-paper">Top sellers</h3>
-          <ul className="mt-4 space-y-2.5 text-paper/60">
-            {topBrands.map((b) => (
-              <li key={b.slug}>
-                <Link href={`/brands/${b.slug}`} className="hover:text-orchid">
-                  {b.name}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <Link href="/brands" className="font-semibold text-paper hover:text-orchid">
-                All {catalog.totals.brands} founders
+      <nav
+        aria-label="Footer"
+        className="relative mx-auto flex max-w-[1500px] items-end justify-between gap-8 px-5 pb-4 pt-14 sm:px-8 sm:pt-20"
+      >
+        <ul>
+          {PAGES.map((p) => (
+            <li key={p.href}>
+              <Link
+                href={p.href}
+                className="group font-display inline-flex text-[clamp(2.2rem,5vw,4rem)] leading-[1.08] transition-colors hover:text-orchid"
+              >
+                <Roll>{p.label}</Roll>
               </Link>
             </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold text-paper">Mesa</h3>
-          <ul className="mt-4 space-y-2.5 text-paper/60">
-            <li>
-              <a href="https://fb.mesaschool.co.in/live" target="_blank" rel="noreferrer" className="hover:text-orchid">
-                Live leaderboard ↗
+          ))}
+        </ul>
+        <ul className="space-y-2.5 pb-2 text-right text-sm font-semibold text-paper/60">
+          {MESA.map((m) => (
+            <li key={m.href}>
+              <a href={m.href} target="_blank" rel="noreferrer" className="whitespace-nowrap transition-colors hover:text-orchid">
+                {m.label} ↗
               </a>
             </li>
-            <li>
-              <a href="https://mesaschool.co" target="_blank" rel="noreferrer" className="hover:text-orchid">
-                mesaschool.co ↗
-              </a>
-            </li>
-            <li>
-              <Link href="/request" className="hover:text-orchid">
-                Your gift list
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+          ))}
+        </ul>
+      </nav>
 
-      <div className="relative px-2 pb-6">
+      <div className="relative px-2 pb-4 pt-6">
         <KineticWord text="made by founders" className="text-center text-[13.4vw] leading-[1.05] text-paper/90" />
       </div>
 
       <div className="relative border-t border-paper/10">
-        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-4 px-5 pb-[calc(1.5rem+var(--dock,0px))] pt-6 text-xs text-paper/45 sm:px-8 sm:pb-6">
+        <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-4 px-5 pb-[calc(1.5rem+var(--dock,0px))] pt-6 text-xs text-paper/45 sm:px-8 sm:pb-6">
           <p>© {new Date().getFullYear()} Mesa School of Business</p>
-          <p>Retail prices shown. Bulk pricing on the call.</p>
           <BackToTop />
         </div>
       </div>

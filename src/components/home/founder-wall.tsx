@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "@/components/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, X } from "lucide-react";
 import { finePointer, gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { SplitReveal } from "@/components/motion/reveal";
 import { useTransitionNav } from "@/components/motion/transition";
 import { cn } from "@/lib/cn";
+import { firstNames } from "@/lib/founders";
 
 export interface WallFace {
   name: string;
@@ -33,6 +34,14 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
   const [sheet, setSheet] = useState<number | null>(null);
   const go = useTransitionNav();
 
+  // Escape closes the phone card too (a tap outside it does, below).
+  useEffect(() => {
+    if (sheet === null) return;
+    const esc = (e: KeyboardEvent) => e.key === "Escape" && setSheet(null);
+    document.addEventListener("keydown", esc);
+    return () => document.removeEventListener("keydown", esc);
+  }, [sheet]);
+
   useGSAP(
     () => {
       if (!ref.current) return;
@@ -43,7 +52,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
           duration: 1.1,
           ease: "expo.out",
           stagger: { each: 0.012, from: "random" },
-          scrollTrigger: { trigger: ref.current, start: "top 80%", once: true },
+          scrollTrigger: { trigger: ref.current, start: "top 80%" },
         });
       if (!finePointer() || !card.current) return;
       const x = gsap.quickTo(card.current, "x", { duration: 0.5, ease: "power3" });
@@ -64,7 +73,8 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
   const lit = team(active ?? sheet);
   const info = (i: number) => {
     const f = faces[i];
-    const mates = faces.filter((m) => m.teamCode === f.teamCode && m.photo !== f.photo).map((m) => m.name.split(" ")[0]);
+    // "Parin & Praval", "Arpita, Jenessa & Zalak"
+    const mates = firstNames(faces.filter((m) => m.teamCode === f.teamCode && m.photo !== f.photo));
     return { f, mates };
   };
 
@@ -136,7 +146,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
           <>
             <p className="font-display text-3xl leading-[0.95]">{detail.f.name}</p>
             <p className="mt-2 text-sm font-semibold text-orchid">Co-founder, {detail.f.brand}</p>
-            {detail.mates.length > 0 && <p className="mt-1 text-sm text-paper/60">with {detail.mates.join(" & ")}</p>}
+            {detail.mates && <p className="mt-1 text-sm text-paper/60">with {detail.mates}</p>}
             {detail.f.sold > 0 && (
               <p className="mt-4 border-t border-paper/10 pt-3 text-sm text-paper/70">
                 <span className="font-display text-2xl text-paper">{inr(detail.f.sold)}</span> sold so far, as a squad
@@ -147,7 +157,9 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
         )}
       </div>
 
-      {/* Phone sheet */}
+      {/* Phone sheet. Behind it, an invisible layer takes the next tap anywhere
+          else (faces included) and just closes it; scrolling still scrolls. */}
+      {sheet !== null && <div aria-hidden onClick={() => setSheet(null)} className="fixed inset-0 z-40" />}
       <div
         className={cn(
           "fixed inset-x-3 bottom-3 z-50 mx-auto max-w-md rounded-3xl bg-ink p-5 text-paper shadow-2xl transition duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
@@ -162,7 +174,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
             <div className="min-w-0 flex-1">
               <p className="font-display text-2xl leading-none">{detail.f.name}</p>
               <p className="mt-1.5 text-sm font-semibold text-orchid">Co-founder, {detail.f.brand}</p>
-              {detail.mates.length > 0 && <p className="text-sm text-paper/60">with {detail.mates.join(" & ")}</p>}
+              {detail.mates && <p className="text-sm text-paper/60">with {detail.mates}</p>}
               <Link
                 href={`/brands/${detail.f.brandSlug}`}
                 className="mt-4 inline-flex items-center gap-1 rounded-full bg-orchid px-4 py-2 text-sm font-semibold text-aubergine"

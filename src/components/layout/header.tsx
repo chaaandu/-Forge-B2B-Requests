@@ -124,19 +124,32 @@ export function Header() {
                 {list.ready ? list.count : "·"}
               </span>
             </button>
+            {/* Says what it does: "Menu", then "Close" on a light pill over the dark menu. */}
             <button
               type="button"
               aria-label={menu ? "Close menu" : "Open menu"}
               aria-expanded={menu}
               onClick={() => setMenu((m) => !m)}
-              className={cn("relative grid size-10 place-items-center rounded-full md:hidden", menu ? "text-paper" : "text-ink")}
+              className={cn(
+                "flex h-10 items-center gap-2.5 rounded-full pl-4 pr-3.5 text-[13px] font-semibold transition-colors duration-500 md:hidden",
+                menu ? "bg-paper text-aubergine" : "bg-ink/[0.06] text-ink",
+              )}
             >
-              <span
-                className={cn("absolute h-0.5 w-5 rounded bg-current transition duration-500", menu ? "rotate-45" : "-translate-y-1")}
-              />
-              <span
-                className={cn("absolute h-0.5 w-5 rounded bg-current transition duration-500", menu ? "-rotate-45" : "translate-y-1")}
-              />
+              {menu ? "Close" : "Menu"}
+              <span aria-hidden className="relative grid size-4 place-items-center">
+                <span
+                  className={cn(
+                    "absolute h-[1.5px] w-4 rounded bg-current transition duration-500",
+                    menu ? "rotate-45" : "-translate-y-[3px]",
+                  )}
+                />
+                <span
+                  className={cn(
+                    "absolute h-[1.5px] w-4 rounded bg-current transition duration-500",
+                    menu ? "-rotate-45" : "translate-y-[3px]",
+                  )}
+                />
+              </span>
             </button>
           </div>
         </div>
@@ -145,7 +158,7 @@ export function Header() {
       {/* Phones: the menu is the whole screen, in the display face. */}
       <div
         className={cn(
-          "fixed inset-0 z-30 flex flex-col justify-between bg-aubergine-2 px-5 pb-10 pt-28 text-paper transition-[clip-path] duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] md:hidden",
+          "fixed inset-0 z-30 flex flex-col bg-aubergine-2 px-5 pb-10 pt-28 text-paper transition-[clip-path] duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] md:hidden",
           menu ? "[clip-path:inset(0_0_0_0)]" : "pointer-events-none [clip-path:inset(0_0_100%_0)]",
         )}
         inert={!menu}
@@ -168,28 +181,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div
-          className="space-y-6 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
-          style={{ opacity: menu ? 1 : 0, transform: menu ? "none" : "translateY(24px)", transitionDelay: menu ? "380ms" : "0ms" }}
-        >
-          <button
-            type="button"
-            onClick={() => {
-              setMenu(false);
-              list.setOpen(true);
-            }}
-            className="flex w-full items-center gap-3 rounded-full bg-paper/10 py-2 pl-2 pr-5 text-left"
-          >
-            <span className="grid size-10 place-items-center rounded-full bg-orchid text-aubergine">
-              <ShoppingBag className="size-5" strokeWidth={2.2} />
-            </span>
-            <span className="flex-1 font-semibold">Your gift list</span>
-            <span className="text-sm tabular-nums text-paper/60">
-              {list.count} {list.count === 1 ? "product" : "products"}
-            </span>
-          </button>
-          <p className="text-sm text-paper/50">Gifts made by 117 student founders at Mesa School of Business.</p>
-        </div>
       </div>
 
       <Dock hidden={menu || list.open || pathname.startsWith("/request")} bump={bump} />

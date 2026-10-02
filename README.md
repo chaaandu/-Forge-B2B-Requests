@@ -134,7 +134,8 @@ in `src/lib/catalog-types.ts`.
 **Motion.** GSAP (ScrollTrigger, SplitText, Draggable, MotionPath, DrawSVG) with Lenis for
 smooth scrolling. Everything stands down for `prefers-reduced-motion`, touch screens keep
 native scrolling, and anything hidden until animated shows itself after 2.5s if scripts
-never run (`.js-reveal` in `globals.css`).
+never run (`.js-reveal` in `globals.css`). Scroll triggers never use `once: true`: it broke the
+home page in Safari on phones (why, in `src/components/motion/gsap.ts`).
 
 **Gift list.** One flow in one place (`src/components/request/gift-list-flow.tsx`): the
 list, then "Who's gifting?", then sent, sliding in place with nothing shown twice. Phones
@@ -145,7 +146,8 @@ is where shared list links land.
 
 **Copy.** Quick-commerce voice: short, warm, a bit cheeky. No em dashes anywhere,
 including product titles from the POS, which the catalogue build rewrites
-("Aroma Oil · Cinnamon"). No small all-caps labels above headings.
+("Aroma Oil · Cinnamon"). No small all-caps labels above headings. Curly apostrophes (’), and
+a number never ends a line apart from its noun (a non-breaking space: `37&nbsp;brands`).
 
 ## Brand names
 

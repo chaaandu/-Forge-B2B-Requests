@@ -182,6 +182,9 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
       const split = SplitText.create(title, {
         type: "lines,words,chars",
         mask: "lines",
+        // Masks get .line-mask's room (globals.css), so descenders and the
+        // italic's swashes aren't shaved off.
+        linesClass: "line",
         autoSplit: true,
         onSplit: () => {
           placeUnderline();
@@ -347,7 +350,7 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
           data-title
           className="js-reveal font-display mx-auto max-w-[15ch] text-center text-[clamp(2.9rem,min(12vw,15.5vh),10.5rem)] leading-[0.88] text-ink md:py-0"
         >
-          Every gift here is someone&apos;s{" "}
+          Every gift here is someone’s{" "}
           <em data-underline-target className="text-royal">
             first company.
           </em>
@@ -355,7 +358,8 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
 
         <div data-hero-foot className="grid items-end gap-8 md:grid-cols-[1fr_auto_1fr]">
           <p className="max-w-sm text-lg leading-snug text-ink/70">
-            {founders} student founders. {brands} brands.
+            {/* A number never ends a line apart from its noun. */}
+            {founders}&nbsp;student founders. {brands}&nbsp;brands.
           </p>
           <div className="flex justify-center">
             <Magnetic>

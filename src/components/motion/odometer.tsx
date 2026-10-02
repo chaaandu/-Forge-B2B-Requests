@@ -43,7 +43,7 @@ export function Odometer({
             duration: 1.6 + i * 0.08,
             ease: "expo.out",
             delay,
-            scrollTrigger: { trigger: ref.current, start: "top 95%", once: true },
+            scrollTrigger: { trigger: ref.current, start: "top 95%" },
           },
         );
       });

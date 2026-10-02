@@ -18,7 +18,7 @@ export function CountUp({ value, prefix = "", className }: { value: number; pref
         duration: 2.4,
         ease: "expo.out",
         onUpdate: () => (el.textContent = prefix + inr.format(n.v)),
-        scrollTrigger: { trigger: el, start: "top 92%", once: true },
+        scrollTrigger: { trigger: el, start: "top 92%" },
       });
     },
     { scope: ref, dependencies: [value] },

@@ -18,7 +18,7 @@ const manrope = localFont({ src: "../fonts/manrope-latin-var.woff2", variable: "
 const fraunces = Fraunces({ subsets: ["latin"], axes: ["SOFT", "WONK", "opsz"], variable: "--font-fraunces", display: "swap" });
 
 export const metadata: Metadata = {
-  title: { default: "Forge for Business · every gift here is someone's first company", template: "%s · Forge for Business" },
+  title: { default: "Forge for Business · every gift here is someone’s first company", template: "%s · Forge for Business" },
   description:
     "Corporate gifts made by 117 student founders at Mesa School of Business. Hampers, snacks, candles, apparel. Your gifting budget becomes their revenue.",
 };

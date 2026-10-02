@@ -262,7 +262,7 @@ export function CatalogueBrowser({
       {shown < results.length && <div ref={sentinel} className="h-10" />}
       {narrowed && results.length > 0 && shown >= results.length && (
         <p className="mt-16 text-center text-sm text-ink/50">
-          That&apos;s the lot.{" "}
+          That’s the lot.{" "}
           <button type="button" onClick={() => set({ ...NO_FILTERS, sort: f.sort })} className="font-semibold text-violet hover:underline">
             Show all products
           </button>

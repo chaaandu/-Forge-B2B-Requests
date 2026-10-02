@@ -164,14 +164,38 @@
    display face set at 0.86 line-height, and Fraunces italics leaning past
    their advance width, that box shaves off descenders, ascenders and the
    swash of an italic f or y. The mask gets room on every side, and the same
-   room is taken back with negative margins, so nothing moves. */
+   room is taken back with negative margins, so nothing moves.
+   Stacked masks' margins collapse (to the larger of the two, not their sum),
+   so each mask takes its whole top and bottom room back from above: a line
+   then sits exactly where it sat before the split, and lines keep their
+   designed leading. */
 .line-mask {
   padding: 0.22em 0.3em 0.26em;
-  margin: -0.22em -0.3em -0.26em;
+  margin: -0.48em -0.3em 0;
+}
+.line-mask:first-child {
+  margin-top: -0.22em;
+}
+.line-mask:last-child {
+  margin-bottom: -0.26em;
 }
 .line {
   /* Italic overhang, kept inside the padded mask rather than clipped. */
   padding-right: 0.06em;
+}
+
+/* Founders page: each squad is printed in the house purple until you reach
+   for it, then comes up in full colour while the ticker runs behind them.
+   Screens without a hover show the colour. */
+@media (hover: hover) and (pointer: fine) {
+  .squad-tint img {
+    filter: grayscale(1) sepia(0.45) hue-rotate(228deg) saturate(1.5) contrast(1.04);
+    transition: filter 0.8s var(--ease-expo);
+  }
+  .group:hover .squad-tint img,
+  .group:focus-visible .squad-tint img {
+    filter: grayscale(0) sepia(0) hue-rotate(0deg) saturate(1) contrast(1);
+  }
 }
 
 /* Hidden until the script that animates it takes over (it removes the class).

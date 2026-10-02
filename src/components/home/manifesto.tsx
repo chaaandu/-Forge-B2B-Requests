@@ -13,16 +13,20 @@ type Piece = string | { img: string; alt: string; round?: boolean };
 
 export function Manifesto({ faces, products }: { faces: string[]; products: string[] }) {
   const ref = useRef<HTMLDivElement>(null);
+  // Problem, people, payoff: a faceless gift, the student who made this one,
+  // and what one order gives each side.
   const text: Piece[] = [
-    "Most corporate gifts are bought in bulk, opened on a Friday and forgotten by Monday.",
-    "Nobody you'll ever meet made them.",
+    "Most corporate gifts are made by nobody in particular.",
+    "Opened on a Friday, forgotten by Monday.",
     "Everything here was made by a student",
     { img: faces[0], alt: "", round: true },
-    "who bet their savings, their weekends and their mom's patience on a first company.",
+    "who bet their savings, their weekends and their mom’s patience on a first company.",
     { img: products[0], alt: "" },
-    "So when your team unwraps one, that order is",
+    "Your team gets a gift with a story.",
+    "A founder gets",
     { img: faces[1], alt: "", round: true },
-    "their proof that it works.",
+    // Kept together, so the last line is never one word.
+    "proof\u00a0it\u00a0works.",
   ];
 
   useGSAP(
@@ -52,7 +56,7 @@ export function Manifesto({ faces, products }: { faces: string[]; products: stri
 
   return (
     <section className="mx-auto max-w-[1500px] px-5 py-32 sm:px-8 md:py-44">
-      <div ref={ref} className="font-display-straight text-[clamp(2rem,4.6vw,4.6rem)] leading-[1.08] text-ink">
+      <div ref={ref} className="font-display-straight text-pretty text-[clamp(2rem,4.6vw,4.6rem)] leading-[1.08] text-ink">
         {text.map((piece, i) =>
           typeof piece === "string" ? (
             <Fragment key={i}>

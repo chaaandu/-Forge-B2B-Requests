@@ -118,13 +118,13 @@ export function ImpactCalculator({ cohortLast7, cohortTotal, founders }: { cohor
           <div className="mt-8 space-y-3 border-t border-paper/10 pt-7 text-lg leading-snug text-paper/75">
             {weekShare > 0 && (
               <p>
-                That&apos;s <span className="font-semibold text-paper">{pct(weekShare)}%</span> of what all {founders} founders sold last
+                That’s <span className="font-semibold text-paper">{pct(weekShare)}%</span> of what all {founders}&nbsp;founders sold last
                 week, combined.
               </p>
             )}
             {lifeShare > 0 && (
               <p>
-                Or <span className="font-semibold text-paper">{pct(lifeShare)}%</span> of everything they&apos;ve sold, ever.
+                Or <span className="font-semibold text-paper">{pct(lifeShare)}%</span> of everything they’ve sold, ever.
               </p>
             )}
           </div>
