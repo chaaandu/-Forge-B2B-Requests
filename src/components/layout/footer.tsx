@@ -67,7 +67,7 @@ export async function Footer() {
             href={m.href}
             target="_blank"
             rel="noreferrer"
-            className="group flex items-end justify-between gap-6 border-t border-paper/15 py-7 sm:py-9"
+            className="group flex items-end justify-between gap-6 py-6 sm:py-8"
           >
             <span className="min-w-0">
               <span className="font-display block text-[clamp(1.9rem,3.6vw,3.2rem)] leading-[1.05] transition-colors duration-300 group-hover:text-orchid">

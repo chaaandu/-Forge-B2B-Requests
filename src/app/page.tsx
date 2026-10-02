@@ -102,10 +102,16 @@ export default async function Home() {
     };
   });
 
-  const reelCards = reels
-    .filter((r) => brandByCode.has(r.teamCode))
+  // Newest first, but every team gets a reel in before any team gets a
+  // second, so the row shows as many squads as it can.
+  const reelsByTeam = new Map<string, typeof reels>();
+  for (const r of reels.filter((r) => brandByCode.has(r.teamCode)))
+    reelsByTeam.set(r.teamCode, [...(reelsByTeam.get(r.teamCode) ?? []), r]);
+  const mixed = [...reelsByTeam.values()].flatMap((list, team) => list.map((r, round) => ({ r, round, team })));
+  const reelCards = mixed
+    .sort((a, b) => a.round - b.round || a.team - b.team)
     .slice(0, 14)
-    .map((r) => ({
+    .map(({ r }) => ({
       video: r.video,
       poster: r.poster,
       brand: brandByCode.get(r.teamCode)!.name,
@@ -114,7 +120,7 @@ export default async function Home() {
 
   return (
     <>
-      <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} earned={impact.revenue} />
+      <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (
@@ -169,7 +175,7 @@ export default async function Home() {
           <SplitReveal className="font-display text-[clamp(2.6rem,6vw,5.5rem)] leading-[0.9] text-ink">
             Shop by <em className="text-royal">budget.</em>
           </SplitReveal>
-          <p className="max-w-xs text-ink/60">Retail price per gift. Bulk orders land lower.</p>
+          <p className="max-w-xs text-ink/60">Retail price per gift. Bulk pricing lands lower.</p>
         </div>
         <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
           {PRICE_BANDS.map((b) => (

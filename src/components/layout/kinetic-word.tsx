@@ -1,12 +1,13 @@
 "use client";
 
 import { useRef } from "react";
-import { finePointer, gsap, reducedMotion, ScrollTrigger, useGSAP } from "@/components/motion/gsap";
+import { finePointer, gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 
 /**
  * Fraunces is a variable font; this spends that. Each letter's weight and
  * softness follow the pointer: heavy and sharp close by, light and soft far
- * away. On touch screens a slow wave runs through the word instead.
+ * away. Touch screens have no pointer to follow, so there the word simply
+ * sits still, set in one light weight.
  */
 export function KineticWord({ text, className }: { text: string; className?: string }) {
   const ref = useRef<HTMLParagraphElement>(null);
@@ -15,28 +16,8 @@ export function KineticWord({ text, className }: { text: string; className?: str
     () => {
       const el = ref.current;
       if (!el || reducedMotion()) return;
+      if (!finePointer()) return;
       const letters = gsap.utils.toArray<HTMLElement>("span", el);
-      if (!finePointer()) {
-        // A slow wave, and only while the word is on screen.
-        const wave = gsap.to(letters, {
-          "--w": 900,
-          "--s": 0,
-          duration: 0.8,
-          ease: "sine.inOut",
-          stagger: { each: 0.08, yoyo: true, repeat: -1 },
-          paused: true,
-        });
-        const st = ScrollTrigger.create({
-          trigger: el,
-          start: "top bottom",
-          end: "bottom top",
-          onToggle: (self) => void (self.isActive ? wave.play() : wave.pause()),
-        });
-        return () => {
-          st.kill();
-          wave.kill();
-        };
-      }
       let frame = 0;
       const move = (e: PointerEvent) => {
         cancelAnimationFrame(frame);

@@ -238,7 +238,7 @@ export function GiftListFlow({
           )}
           {step !== "sent" && !empty && list.ready && (
             <p className={cn("text-ink/55", sheet ? "mt-1.5 text-sm" : "mt-3 text-lg")}>
-              {step === "list" ? summary : "Four details. We call within a day."}
+              {step === "list" ? summary : "We call within a working day."}
             </p>
           )}
         </div>
@@ -577,7 +577,8 @@ function SentNote({
         )}
       </H>
       <p className={cn("mx-auto mt-4 max-w-sm text-ink/65", !sheet && "text-lg")}>
-        Someone from Mesa will reach <span className="font-semibold text-ink">{sent.email}</span> within a day. Keep your phone close.
+        Someone from Mesa will reach <span className="font-semibold text-ink">{sent.email}</span> within a working day. Keep your phone
+        close.
       </p>
       <p className="mt-5 text-sm text-ink/45">
         Reference <span className="font-mono font-semibold tracking-wide text-ink">{sent.ref}</span>

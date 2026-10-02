@@ -24,7 +24,7 @@ const CHAPTERS = [
   { label: "List", title: "Make a list.", body: "Hampers, snacks, candles, tees. Add rough quantities. No login, no card, no drama." },
   {
     label: "Call",
-    title: "We call you. Within a day.",
+    title: "We call you. Within a working\u00a0day.",
     body: "A real human from Mesa, with bulk prices, samples and dates. Not a bot. Pinky promise.",
   },
   {

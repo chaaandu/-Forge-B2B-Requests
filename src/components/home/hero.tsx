@@ -6,7 +6,6 @@ import { useRef } from "react";
 import { ArrowDown } from "lucide-react";
 import { Draggable, finePointer, gsap, reducedMotion, SplitText, useGSAP } from "@/components/motion/gsap";
 import { Magnetic } from "@/components/motion/magnetic";
-import { Odometer } from "@/components/motion/odometer";
 import { INTRO_DONE } from "@/components/motion/preloader";
 import { useTransitionNav } from "@/components/motion/transition";
 import { getLenis } from "@/components/motion/smooth-scroll";
@@ -53,14 +52,14 @@ interface Slot {
 }
 
 const TAG = 20; // the name tag hanging under each sticker
-const GAP = 18; // breathing room from the headline, the pill and the buttons
+const GAP = 18; // breathing room from the edges, the headline and the buttons
 
 /**
  * Lay the stickers out in the free space around the headline: a band above it,
  * the gutters beside it and a band below it. Each band takes as many stickers
  * as fit at a size that fits; leftovers simply aren't shown.
  */
-function arrange(width: number, title: Box, pill: Box, foot: Box): Slot[] {
+function arrange(width: number, title: Box, foot: Box): Slot[] {
   const slots: Slot[] = [];
   const band = (top: number, bottom: number, left: number, right: number, max: number, perRow: number, salt: number) => {
     const h = bottom - top;
@@ -89,14 +88,14 @@ function arrange(width: number, title: Box, pill: Box, foot: Box): Slot[] {
       slots.push({ x: left + (w - size) / 2, y: top + i * cell + (cell - size - TAG) * jitter(i, salt), size });
     }
   };
-  band(pill.b + GAP, title.t - GAP, GAP, width - GAP, 140, 5, 1);
+  band(GAP, title.t - GAP, GAP, width - GAP, 140, 5, 1);
   gutter(GAP, title.l - GAP, title.t, title.b, 7);
   gutter(title.r + GAP, width - GAP, title.t, title.b, 11);
   band(title.b + GAP, foot.t - GAP, GAP, width - GAP, 116, 4, 3);
   return slots;
 }
 
-export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; founders: number; brands: number; earned: number }) {
+export function Hero({ faces, founders, brands }: { faces: HeroFace[]; founders: number; brands: number }) {
   const root = useRef<HTMLElement>(null);
   const go = useTransitionNav();
 
@@ -106,8 +105,8 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
       const title = el.querySelector<HTMLElement>("[data-title]")!;
       const stickers = gsap.utils.toArray<HTMLElement>("[data-sticker]");
 
-      // Measure the headline, the live pill and the buttons, then put the
-      // stickers in the space that's left. Re-run when the screen changes.
+      // Measure the headline and the buttons, then put the stickers in the
+      // space that's left. Re-run when the screen changes.
       const place = () => {
         const host = el.getBoundingClientRect();
         const box = (els: Element[]): Box => {
@@ -123,7 +122,6 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
         const slots = arrange(
           host.width,
           box([title, ...(underline ? [underline] : [])]),
-          box([el.querySelector("[data-live]")!]),
           box([...el.querySelectorAll("[data-hero-foot] > *")]),
         );
         stickers.forEach((s, i) => {
@@ -316,25 +314,6 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
       </svg>
 
       <div className="mx-auto flex min-h-[calc(100svh-4rem)] max-w-[1500px] flex-col justify-center gap-10 px-5 pb-10 pt-6 sm:px-8 md:justify-between md:gap-0">
-        <p
-          data-live
-          className="inline-flex w-fit items-center gap-3 rounded-full bg-ink/[0.05] py-1.5 pl-3 pr-4 text-[13px] font-semibold text-ink/65"
-        >
-          <span className="relative flex size-2">
-            <span className="absolute inline-flex size-full animate-ping rounded-full bg-violet opacity-60" />
-            <span className="relative inline-flex size-2 rounded-full bg-violet" />
-          </span>
-          {earned > 0 ? (
-            <span className="flex flex-wrap items-center gap-x-1.5">
-              <span className="font-bold text-violet">LIVE</span>
-              <Odometer value={earned} prefix="₹" delay={0.4} className="font-bold text-ink" />
-              <span>earned by student founders. And counting.</span>
-            </span>
-          ) : (
-            <span>Forge · Mesa School of Business</span>
-          )}
-        </p>
-
         <div className="flex flex-col items-center gap-3 md:hidden">
           <div className="flex -space-x-3">
             {faces.slice(0, 7).map((f) => (
@@ -348,7 +327,7 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
 
         <h1
           data-title
-          className="js-reveal font-display mx-auto max-w-[15ch] text-center text-[clamp(2.9rem,min(12vw,15.5vh),10.5rem)] leading-[0.88] text-ink md:py-0"
+          className="js-reveal font-display mx-auto max-w-[15ch] text-center text-[clamp(2.9rem,min(12vw,15.5vh),10.5rem)] leading-[0.88] text-ink md:my-auto md:py-0"
         >
           Every gift here is someone’s{" "}
           <em data-underline-target className="text-royal">

@@ -83,16 +83,9 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
 
   return (
     <section id="founders" className="mx-auto max-w-[1500px] scroll-mt-16 px-5 py-24 sm:px-8">
-      <div className="mb-14 grid items-end gap-6 md:grid-cols-[1.3fr_1fr]">
-        <SplitReveal className="font-display text-[clamp(3rem,8vw,8rem)] leading-[0.88] text-ink">
-          Meet the <em className="text-royal">{faces.length}.</em>
-        </SplitReveal>
-        <p className="max-w-md text-lg leading-snug text-ink/65 md:justify-self-end">
-          Real founders. Real hustle.{" "}
-          <span className="hidden pointer-fine:inline">Hover a face to meet the squad, click to see what they make.</span>
-          <span className="pointer-fine:hidden">Tap a face to meet the squad.</span>
-        </p>
-      </div>
+      <SplitReveal className="font-display mb-14 text-[clamp(3rem,8vw,8rem)] leading-[0.88] text-ink">
+        Meet the <em className="text-royal">{faces.length}.</em>
+      </SplitReveal>
 
       <div ref={ref} className="grid grid-cols-6 gap-1.5 sm:grid-cols-9 sm:gap-2 lg:grid-cols-13" onPointerLeave={() => setActive(null)}>
         {faces.map((f, i) => {

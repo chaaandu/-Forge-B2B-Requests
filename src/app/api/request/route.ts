@@ -31,7 +31,7 @@ function newRef(now: Date): string {
 export async function POST(req: NextRequest) {
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "local";
   if (limited(ip)) {
-    return NextResponse.json({ error: "That's a lot of requests in a short time. Please try again in a few minutes." }, { status: 429 });
+    return NextResponse.json({ error: "That’s a lot of requests in a short time. Please try again in a few minutes." }, { status: 429 });
   }
 
   const json = await req.json().catch(() => null);
@@ -100,10 +100,7 @@ export async function POST(req: NextRequest) {
     await deliver(record);
   } catch (err) {
     console.error(`[request] ${ref} could not be delivered`, err, JSON.stringify(record));
-    return NextResponse.json(
-      { error: "We couldn't send that just now. Please try again in a minute, and if it keeps happening, email us." },
-      { status: 502 },
-    );
+    return NextResponse.json({ error: "We couldn’t send that just now. Please try again in a minute." }, { status: 502 });
   }
 
   return NextResponse.json({ ref });

@@ -4,9 +4,10 @@ import { useRef, type ReactNode } from "react";
 import { gsap, reducedMotion, ScrollTrigger, useGSAP } from "./gsap";
 
 /**
- * A marquee that answers the scroll: it drifts on its own, speeds up and
- * leans with how fast the page is moving, and turns round when you scroll
- * back up. The children are rendered twice so the loop never shows a seam.
+ * A marquee that answers the scroll: it drifts on its own, speeds up with
+ * how fast the page is moving, and turns round when you scroll back up. It
+ * never leans: faces and names stay upright. The children are rendered
+ * twice so the loop never shows a seam.
  */
 export function VelocityMarquee({ children, speed = 40, className }: { children: ReactNode; speed?: number; className?: string }) {
   const track = useRef<HTMLDivElement>(null);
@@ -18,12 +19,10 @@ export function VelocityMarquee({ children, speed = 40, className }: { children:
       let x = 0;
       let dir = 1;
       let boost = 0;
-      const skew = gsap.quickTo(el, "skewX", { duration: 0.5, ease: "power3" });
       const st = ScrollTrigger.create({
         onUpdate: (self) => {
           dir = self.direction;
           boost = gsap.utils.clamp(0, 14, Math.abs(self.getVelocity()) / 300);
-          skew(gsap.utils.clamp(-8, 8, self.getVelocity() / -400));
         },
       });
       const tick = (_t: number, dt: number) => {

@@ -48,7 +48,7 @@ export default async function ProductPage({ params }: { params: Params }) {
     <div className="mx-auto max-w-[1500px] px-5 pt-6 sm:px-8">
       <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-xs text-ink/50">
         <Link href="/catalogue" className="hover:text-ink">
-          Catalogue
+          Store
         </Link>
         <ChevronRight className="size-3" />
         <Link href={`/catalogue?collection=${collection.id}`} className="hover:text-ink">

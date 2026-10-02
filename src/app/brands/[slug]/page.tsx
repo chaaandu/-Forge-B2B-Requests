@@ -65,7 +65,7 @@ export default async function BrandPage({ params }: { params: Params }) {
             <dl className="mt-8 flex max-w-xl divide-x divide-ink/10 rounded-[24px] bg-paper-2/80 py-4 sm:mt-10 sm:py-5">
               {sold && sold.revenue > 0 && (
                 <div className="flex min-w-0 flex-[1.35] flex-col px-4 first:pl-5 sm:px-6 sm:first:pl-7">
-                  <dt className="order-2 mt-1.5 text-xs leading-snug text-ink/55 sm:text-sm">earned so far</dt>
+                  <dt className="order-2 mt-1.5 text-xs leading-snug text-ink/55 sm:text-sm">sold so far</dt>
                   <dd className="font-display order-1 text-[clamp(1.4rem,6vw,2.6rem)] leading-none text-royal">
                     <CountUp value={sold.revenue} prefix="₹" />
                   </dd>
@@ -73,7 +73,7 @@ export default async function BrandPage({ params }: { params: Params }) {
               )}
               {sold && sold.units > 0 && (
                 <div className="flex min-w-0 flex-1 flex-col px-4 first:pl-5 sm:px-6 sm:first:pl-7">
-                  <dt className="order-2 mt-1.5 text-xs leading-snug text-ink/55 sm:text-sm">products sold</dt>
+                  <dt className="order-2 mt-1.5 text-xs leading-snug text-ink/55 sm:text-sm">products out in the world</dt>
                   <dd className="font-display order-1 text-[clamp(1.4rem,6vw,2.6rem)] leading-none text-ink">
                     <CountUp value={sold.units} />
                   </dd>

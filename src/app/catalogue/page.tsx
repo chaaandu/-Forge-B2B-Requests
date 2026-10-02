@@ -19,7 +19,7 @@ export default async function CataloguePage({ searchParams }: { searchParams: Se
   // occasion (a curated set of shelves) gets its own.
   const [title, tail] = occasion
     ? [occasion.title, occasion.blurb]
-    : ["The store", `${catalog.totals.listings} things, made by ${foundersCount} student founders`];
+    : ["The store", `${catalog.totals.listings}\u00a0things, made by ${foundersCount}\u00a0student founders`];
 
   return (
     <div className="mx-auto max-w-[1500px] px-5 pb-10 sm:px-8">
