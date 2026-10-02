@@ -5,7 +5,7 @@ import { allFounders, foundersOf } from "@/lib/founders";
 import { getImpact } from "@/lib/impact";
 import { getReels } from "@/lib/reels";
 import { Hero } from "@/components/home/hero";
-import { MobileHero, type MobileHeroVariant } from "@/components/home/mobile-hero";
+import { MobileHero } from "@/components/home/mobile-hero";
 import { Manifesto } from "@/components/home/manifesto";
 import { FounderWall } from "@/components/home/founder-wall";
 import { Journey } from "@/components/home/journey";
@@ -26,13 +26,7 @@ export const revalidate = 600;
  * argues first (who made these, why it matters, what your budget does) and
  * sells second, and every product it shows carries the faces of its makers.
  */
-type Search = Promise<Record<string, string | string[] | undefined>>;
-const VARIANTS: MobileHeroVariant[] = ["line", "pill"];
-
-export default async function Home({ searchParams }: { searchParams: Search }) {
-  // While Mesa picks a phone hero: ?hero=line|pill (line by default).
-  const asked = (await searchParams).hero;
-  const heroVariant = VARIANTS.find((v) => v === asked) ?? "line";
+export default async function Home() {
   const catalog = await getCatalog();
   const brandByCode = new Map(catalog.brands.map((b) => [b.teamCode, b]));
   const [impact, reels] = await Promise.all([getImpact(catalog.brands.map((b) => b.teamCode)), getReels()]);
@@ -128,7 +122,7 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
   return (
     <>
       <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
-      <MobileHero variant={heroVariant} faces={heroFaces.map((f) => f.photo)} founders={wall.length} brands={catalog.totals.brands} />
+      <MobileHero founders={wall.length} brands={catalog.totals.brands} />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (
