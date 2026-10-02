@@ -7,6 +7,7 @@ import { useRequestList } from "@/lib/request-list";
 import { formatINR } from "@/lib/money";
 import { cn } from "@/lib/cn";
 import { QtyStepper } from "@/components/request/qty-stepper";
+import { flyToList } from "@/components/motion/fly";
 import { FitImage } from "@/components/fit-image";
 
 const PRESETS = [10, 25, 50, 100, 250];
@@ -61,7 +62,7 @@ export function AddToList({
     if (already) setQty(already);
   };
 
-  const add = () => {
+  const add = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!variant) return;
     list.add({
       brand: brand.slug,
@@ -74,6 +75,7 @@ export function AddToList({
       priceMinor: variant.priceMinor,
       image: variant.image ?? listing.images[0] ?? null,
     });
+    flyToList(e.currentTarget, variant.image ?? listing.images[0] ?? null);
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1600);
     onAdded?.();
@@ -136,7 +138,7 @@ export function AddToList({
 
       <div>
         <p className="flex items-baseline gap-2">
-          <span className="text-3xl font-semibold tracking-tight text-ink">{variant ? formatINR(variant.priceMinor) : "—"}</span>
+          <span className="text-3xl font-semibold tracking-tight text-ink">{variant ? formatINR(variant.priceMinor) : "Pick one"}</span>
           {variant?.compareAtMinor && <span className="text-sm text-ink/40 line-through">{formatINR(variant.compareAtMinor)}</span>}
           <span className="text-sm text-ink/50">retail, per unit</span>
         </p>
@@ -145,7 +147,7 @@ export function AddToList({
 
       <div>
         <p className="mb-3 text-sm font-semibold text-ink">
-          Quantity. <span className="font-normal text-ink/50">A rough number is fine.</span>
+          How many? <span className="font-normal text-ink/50">A rough number is fine.</span>
         </p>
         <div className="flex flex-wrap items-center gap-2">
           <QtyStepper value={qty} onChange={setQty} />
@@ -177,10 +179,10 @@ export function AddToList({
       >
         {justAdded ? <Check className="size-5" /> : <Plus className="size-5" />}
         {justAdded
-          ? "Added to your list"
+          ? "Added. Nice pick."
           : inList
-            ? `Update to ${qty.toLocaleString("en-IN")} units`
-            : `Add ${qty.toLocaleString("en-IN")} to request list`}
+            ? `Update to ${qty.toLocaleString("en-IN")}`
+            : `Add ${qty.toLocaleString("en-IN")} to gift list`}
       </button>
     </div>
   );

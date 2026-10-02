@@ -7,5 +7,5 @@ export function formatINR(minor: number): string {
 }
 
 export function priceRange(fromMinor: number, toMinor: number): string {
-  return fromMinor === toMinor ? formatINR(fromMinor) : `${formatINR(fromMinor)} – ${formatINR(toMinor)}`;
+  return fromMinor === toMinor ? formatINR(fromMinor) : `${formatINR(fromMinor)} to ${formatINR(toMinor)}`;
 }

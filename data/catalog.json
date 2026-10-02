@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-01T09:19:37.649Z",
+ "generatedAt": "2026-10-02T04:05:01.740Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -376,7 +376,7 @@
   {
    "slug": "aks-perfumes-after-hours-50ml-eau-de-parfum-for-her",
    "brand": "aks-perfumes",
-   "title": "After Hours 50ml Eau De Parfum | For Her",
+   "title": "After Hours 50ml Eau De Parfum · For Her",
    "description": "Warm, sensual and irresistible. After Hours combines sweet gourmand notes with a deep, seductive finish, made for evenings that leave an impression.",
    "collection": "fragrance",
    "images": [
@@ -386,7 +386,7 @@
    "variants": [
     {
      "sku": "AFTER-HOURS-50ML-EAU-DE-PARFUM-FOR-H",
-     "label": "After Hours 50ml Eau De Parfum | For Her",
+     "label": "After Hours 50ml Eau De Parfum · For Her",
      "options": [],
      "priceMinor": 69900,
      "compareAtMinor": 199900,
@@ -400,7 +400,7 @@
   {
    "slug": "aks-perfumes-black-blaze-50ml-eau-de-parfum-for-him",
    "brand": "aks-perfumes",
-   "title": "Black Blaze 50ml Eau De Parfum | For Him",
+   "title": "Black Blaze 50ml Eau De Parfum · For Him",
    "description": "Bold, smoky and effortlessly confident. Black Blaze blends a powerful fruity freshness with rich woody depth for a statement scent that stays with you.",
    "collection": "fragrance",
    "images": [
@@ -410,7 +410,7 @@
    "variants": [
     {
      "sku": "BLACK-BLAZE-50ML-EAU-DE-PARFUM-FOR-H",
-     "label": "Black Blaze 50ml Eau De Parfum | For Him",
+     "label": "Black Blaze 50ml Eau De Parfum · For Him",
      "options": [],
      "priceMinor": 69900,
      "compareAtMinor": 199900,
@@ -424,7 +424,7 @@
   {
    "slug": "aks-perfumes-lucid-dreaming-50ml-eau-de-parfum-for-him",
    "brand": "aks-perfumes",
-   "title": "Lucid Dreaming 50ml Eau De Parfum | For Him",
+   "title": "Lucid Dreaming 50ml Eau De Parfum · For Him",
    "description": "Fresh, clean and captivating. Lucid Dreaming brings together bright citrus freshness and smooth aromatic woods for an elevated everyday fragrance.",
    "collection": "fragrance",
    "images": [
@@ -434,7 +434,7 @@
    "variants": [
     {
      "sku": "LUCID-DREAMING-50ML-EAU-DE-PARFUM-FO",
-     "label": "Lucid Dreaming 50ml Eau De Parfum | For Him",
+     "label": "Lucid Dreaming 50ml Eau De Parfum · For Him",
      "options": [],
      "priceMinor": 69900,
      "compareAtMinor": 199900,
@@ -448,7 +448,7 @@
   {
    "slug": "aks-perfumes-ruby-tuesday-50ml-eau-de-parfum-for-her",
    "brand": "aks-perfumes",
-   "title": "Ruby Tuesday 50ml Eau De Parfum | For Her",
+   "title": "Ruby Tuesday 50ml Eau De Parfum · For Her",
    "description": "Elegant, feminine and unforgettable. Ruby Tuesday balances rich floral sweetness with a warm, sophisticated character for a fragrance that feels effortlessly luxurious.",
    "collection": "fragrance",
    "images": [
@@ -458,7 +458,7 @@
    "variants": [
     {
      "sku": "RUBY-TUESDAY-50ML-EAU-DE-PARFUM-FOR",
-     "label": "Ruby Tuesday 50ml Eau De Parfum | For Her",
+     "label": "Ruby Tuesday 50ml Eau De Parfum · For Her",
      "options": [],
      "priceMinor": 69900,
      "compareAtMinor": 199900,
@@ -472,7 +472,7 @@
   {
    "slug": "atmiva-aroma-oil-cinnamon",
    "brand": "atmiva",
-   "title": "Aroma Oil — Cinnamon",
+   "title": "Aroma Oil · Cinnamon",
    "description": null,
    "collection": "home",
    "images": [
@@ -482,7 +482,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-CINNAMON",
-     "label": "Aroma Oil — Cinnamon",
+     "label": "Aroma Oil · Cinnamon",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -496,7 +496,7 @@
   {
    "slug": "atmiva-aroma-oil-citronella",
    "brand": "atmiva",
-   "title": "Aroma Oil — Citronella",
+   "title": "Aroma Oil · Citronella",
    "description": null,
    "collection": "home",
    "images": [
@@ -506,7 +506,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-CITRONELLA",
-     "label": "Aroma Oil — Citronella",
+     "label": "Aroma Oil · Citronella",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -520,7 +520,7 @@
   {
    "slug": "atmiva-aroma-oil-clary-sage",
    "brand": "atmiva",
-   "title": "Aroma Oil — Clary Sage",
+   "title": "Aroma Oil · Clary Sage",
    "description": null,
    "collection": "home",
    "images": [
@@ -530,7 +530,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-CLARY-SAGE",
-     "label": "Aroma Oil — Clary Sage",
+     "label": "Aroma Oil · Clary Sage",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -544,7 +544,7 @@
   {
    "slug": "atmiva-aroma-oil-frankincense",
    "brand": "atmiva",
-   "title": "Aroma Oil — Frankincense",
+   "title": "Aroma Oil · Frankincense",
    "description": null,
    "collection": "home",
    "images": [
@@ -554,7 +554,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-FRANKINCENSE",
-     "label": "Aroma Oil — Frankincense",
+     "label": "Aroma Oil · Frankincense",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -568,7 +568,7 @@
   {
    "slug": "atmiva-aroma-oil-freesia",
    "brand": "atmiva",
-   "title": "Aroma Oil — Freesia",
+   "title": "Aroma Oil · Freesia",
    "description": null,
    "collection": "home",
    "images": [
@@ -578,7 +578,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-FREESIA",
-     "label": "Aroma Oil — Freesia",
+     "label": "Aroma Oil · Freesia",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -592,7 +592,7 @@
   {
    "slug": "atmiva-aroma-oil-hyacinth",
    "brand": "atmiva",
-   "title": "Aroma Oil — Hyacinth",
+   "title": "Aroma Oil · Hyacinth",
    "description": null,
    "collection": "home",
    "images": [
@@ -602,7 +602,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-HYACINTH",
-     "label": "Aroma Oil — Hyacinth",
+     "label": "Aroma Oil · Hyacinth",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -616,7 +616,7 @@
   {
    "slug": "atmiva-aroma-oil-lavender",
    "brand": "atmiva",
-   "title": "Aroma Oil — Lavender",
+   "title": "Aroma Oil · Lavender",
    "description": null,
    "collection": "home",
    "images": [
@@ -626,7 +626,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-LAVENDER",
-     "label": "Aroma Oil — Lavender",
+     "label": "Aroma Oil · Lavender",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -640,7 +640,7 @@
   {
    "slug": "atmiva-aroma-oil-melissa",
    "brand": "atmiva",
-   "title": "Aroma Oil — Melissa",
+   "title": "Aroma Oil · Melissa",
    "description": null,
    "collection": "home",
    "images": [
@@ -650,7 +650,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-MELISSA",
-     "label": "Aroma Oil — Melissa",
+     "label": "Aroma Oil · Melissa",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -664,7 +664,7 @@
   {
    "slug": "atmiva-aroma-oil-neroli",
    "brand": "atmiva",
-   "title": "Aroma Oil — Neroli",
+   "title": "Aroma Oil · Neroli",
    "description": null,
    "collection": "home",
    "images": [
@@ -674,7 +674,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-NEROLI",
-     "label": "Aroma Oil — Neroli",
+     "label": "Aroma Oil · Neroli",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -688,7 +688,7 @@
   {
    "slug": "atmiva-aroma-oil-patchouli",
    "brand": "atmiva",
-   "title": "Aroma Oil — Patchouli",
+   "title": "Aroma Oil · Patchouli",
    "description": null,
    "collection": "home",
    "images": [
@@ -698,7 +698,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-PATCHOULI",
-     "label": "Aroma Oil — Patchouli",
+     "label": "Aroma Oil · Patchouli",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -712,7 +712,7 @@
   {
    "slug": "atmiva-aroma-oil-sea-breeze",
    "brand": "atmiva",
-   "title": "Aroma Oil — Sea Breeze",
+   "title": "Aroma Oil · Sea Breeze",
    "description": null,
    "collection": "home",
    "images": [
@@ -722,7 +722,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-SEA-BREEZE",
-     "label": "Aroma Oil — Sea Breeze",
+     "label": "Aroma Oil · Sea Breeze",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -736,7 +736,7 @@
   {
    "slug": "atmiva-aroma-oil-thyme",
    "brand": "atmiva",
-   "title": "Aroma Oil — Thyme",
+   "title": "Aroma Oil · Thyme",
    "description": null,
    "collection": "home",
    "images": [
@@ -746,7 +746,7 @@
    "variants": [
     {
      "sku": "AROMA-OIL-THYME",
-     "label": "Aroma Oil — Thyme",
+     "label": "Aroma Oil · Thyme",
      "options": [],
      "priceMinor": 5900,
      "compareAtMinor": null,
@@ -784,7 +784,7 @@
   {
    "slug": "atmiva-breathe-6-aroma-oil-collection",
    "brand": "atmiva",
-   "title": "Breathe — 6 Aroma Oil Collection",
+   "title": "Breathe · 6 Aroma Oil Collection",
    "description": null,
    "collection": "hampers",
    "images": [
@@ -794,7 +794,7 @@
    "variants": [
     {
      "sku": "BREATHE-6-AROMA-OIL-COLLECTION",
-     "label": "Breathe — 6 Aroma Oil Collection",
+     "label": "Breathe · 6 Aroma Oil Collection",
      "options": [],
      "priceMinor": 29900,
      "compareAtMinor": 35900,
@@ -856,7 +856,7 @@
   {
    "slug": "atmiva-glow-6-aroma-oil-collection",
    "brand": "atmiva",
-   "title": "Glow — 6 Aroma Oil Collection",
+   "title": "Glow · 6 Aroma Oil Collection",
    "description": null,
    "collection": "hampers",
    "images": [
@@ -866,7 +866,7 @@
    "variants": [
     {
      "sku": "GLOW-6-AROMA-OIL-COLLECTION",
-     "label": "Glow — 6 Aroma Oil Collection",
+     "label": "Glow · 6 Aroma Oil Collection",
      "options": [],
      "priceMinor": 29900,
      "compareAtMinor": 35900,
@@ -950,10 +950,10 @@
    "featured": false
   },
   {
-   "slug": "bizfits-ajrakh-satin",
+   "slug": "bizfits-ajrak-print-satin-saree",
    "brand": "bizfits",
-   "title": "Ajrakh Satin",
-   "description": null,
+   "title": "Ajrak Print Satin Saree",
+   "description": "Ajrakh is a block-printing craft from Sindh (Pakistan) and Kutch in Gujarat, especially the village of Ajrakhpur. Carved wooden blocks and resist-dyeing are used, traditionally with natural dyes, mainly indigo. The typical colours are deep indigo and crimson, with black and white geometric patterns, star-like shapes and dots between lines. The name likely comes from the Persian word for \"brick,\" possibly a reference to its grid-like layouts. Traditionally it's printed on cotton. A satin base gives the prints a smoother, shinier finish.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
@@ -962,7 +962,7 @@
    "variants": [
     {
      "sku": "AJRAKH-SATIN",
-     "label": "Ajrakh Satin",
+     "label": "Ajrak Print Satin Saree",
      "options": [],
      "priceMinor": 168000,
      "compareAtMinor": null,
@@ -977,7 +977,7 @@
    "slug": "bizfits-batik-silk",
    "brand": "bizfits",
    "title": "Batik Silk",
-   "description": null,
+   "description": "Batik is a wax-resist technique: wax is drawn or stamped onto the fabric, the fabric is dyed, and then the wax is removed. Repeating this builds up layered patterns. In India, Shantiniketan batik from West Bengal has GI recognition.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg",
@@ -1028,40 +1028,13 @@
    ],
    "priceFromMinor": 148000,
    "priceToMinor": 148000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-green-stripped-shirt",
-   "brand": "bizfits",
-   "title": "Green Stripped Shirt",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e7f52205-0335-46c0-ade1-8925ff8fd0fd.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/71803d46-3564-4bc3-8dfb-d39ee258d4af.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/97f4866f-af4a-4f38-953b-51eaa1d5e7bb.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e06d1060-c7e7-4a33-a6e5-417652077f38.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "GREEN-STRIPPED-SHIRT",
-     "label": "Green Stripped Shirt",
-     "options": [],
-     "priceMinor": 50000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e7f52205-0335-46c0-ade1-8925ff8fd0fd.jpg"
-    }
-   ],
-   "priceFromMinor": 50000,
-   "priceToMinor": 50000,
    "featured": true
   },
   {
    "slug": "bizfits-kalamkari-border-pallu-mul-cotton",
    "brand": "bizfits",
    "title": "Kalamkari Border Pallu Mul Cotton",
-   "description": null,
+   "description": "The name means \"pen-craft.\" It comes from Andhra Pradesh and has two protected regional (GI) styles. Srikalahasti: painted freehand with a pen, showing scenes from the Ramayana, the Mahabharata and Hindu gods. Machilipatnam: block-printed with vegetable dyes, with Persian-influenced motifs like vines, peacocks and the tree of life. The process can take up to 23 steps and uses natural dyes, with myrobalan and alum to set the colours. In the \"Border Pallu\" version, the Kalamkari work is probably only on the border and pallu, with a plainer body.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64d5ae02-25c7-4ad9-bf12-b1c3dd7a51a7.png"
@@ -1085,7 +1058,7 @@
    "slug": "bizfits-khadi",
    "brand": "bizfits",
    "title": "Khadi",
-   "description": null,
+   "description": "Khadi is natural-fibre cloth that's spun and woven by hand. It's usually cotton, sometimes silk or wool. Gandhi promoted it during the Swadeshi movement, and it's a symbol of self-reliance and support for artisans. The texture is slightly coarse and uneven because it's handmade. It stays cool in summer and warm in winter.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f7d7bc47-ac0a-4456-81e7-a80c2b93d141.png",
@@ -1142,7 +1115,7 @@
    "slug": "bizfits-madras-checks",
    "brand": "bizfits",
    "title": "Madras Checks",
-   "description": null,
+   "description": "Madras cloth is named after Chennai. It's a light cotton with plaid-style checks, and authentic madras shows the same pattern on both sides. Short-staple cotton gives it small, uneven bumps called slubs. Colours can \"bleed,\" which is a well-known feature of the fabric. I couldn't find out what \"Gajraj\" means here. It's probably a design or colour name used by Pehchaan.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2c7e6e3-0c13-4dd4-97f5-9940d975cf43.png"
@@ -1166,7 +1139,7 @@
    "slug": "bizfits-madras-checks-gajraj",
    "brand": "bizfits",
    "title": "Madras Checks Gajraj",
-   "description": null,
+   "description": "Madras cloth is named after Chennai. It's a light cotton with plaid-style checks, and authentic madras shows the same pattern on both sides. Short-staple cotton gives it small, uneven bumps called slubs. Colours can \"bleed,\" which is a well-known feature of the fabric. I couldn't find out what \"Gajraj\" means here. It's probably a design or colour name used by Pehchaan.'",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df4d9064-8400-4fb4-a4bc-f6bfde1eb805.png"
@@ -1190,7 +1163,7 @@
    "slug": "bizfits-mul-cotton-kalamkari",
    "brand": "bizfits",
    "title": "Mul Cotton Kalamkari",
-   "description": null,
+   "description": "The name means \"pen-craft.\" It comes from Andhra Pradesh and has two protected regional (GI) styles. Srikalahasti: painted freehand with a pen, showing scenes from the Ramayana, the Mahabharata and Hindu gods. Machilipatnam: block-printed with vegetable dyes, with Persian-influenced motifs like vines, peacocks and the tree of life. The process can take up to 23 steps and uses natural dyes, with myrobalan and alum to set the colours. In the \"Border Pallu\" version, the Kalamkari work is probably only on the border and pallu, with a plainer body.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6adbaab-b627-4133-95e5-7c49a0de5c6f.jpg",
@@ -1235,7 +1208,7 @@
    "slug": "bizfits-printed-mul-cotton",
    "brand": "bizfits",
    "title": "Printed Mul Cotton",
-   "description": null,
+   "description": "Mulmul is a fine, plain-weave cotton muslin with Bengal roots, especially around Dhaka. It's soft, thin, slightly see-through, very light and breathable, which makes it a good everyday summer saree.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/512cd284-ccf3-4d69-9a7e-0d104c6fd543.jpg",
@@ -1280,7 +1253,7 @@
    "slug": "bizfits-raw-silk",
    "brand": "bizfits",
    "title": "Raw Silk",
-   "description": null,
+   "description": "In Indian saree shopping, \"raw silk\" usually means silk that has a slightly rough, slubby texture, a crisp drape and a softer, less glossy sheen than finished silk. Wikipedia's closest page, on \"silk noil,\" describes a similar low-sheen, slightly rough silk that's gaining popularity for sarees in India. That page isn't exactly about raw silk, though.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/17e45bab-7989-49ae-a24f-4f2468620bb9.jpg",
@@ -1362,7 +1335,7 @@
    "slug": "bizfits-tissue-saree",
    "brand": "bizfits",
    "title": "Tissue Saree",
-   "description": null,
+   "description": "Light-catching and effortlessly elegant, this tissue saree brings a subtle sheen to a timeless Indian silhouette. Crafted in a delicate tissue fabric, it drapes with a soft, fluid fall while adding just the right amount of luminosity to your look. Designed for moments that call for understated elegance, it pairs traditional character with a contemporary sensibility, easy to style for festive gatherings, intimate celebrations, and evening occasions.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
@@ -3670,7 +3643,7 @@
   {
    "slug": "juzzle-assorted-collection-no-sugar-90g-pack-of-5-sachets",
    "brand": "juzzle",
-   "title": "Assorted Collection | No Sugar | 90g - Pack of 5 Sachets",
+   "title": "Assorted Collection · No Sugar · 90g · Pack of 5 Sachets",
    "description": null,
    "collection": "hampers",
    "images": [
@@ -3727,7 +3700,7 @@
   {
    "slug": "juzzle-berry-collection-no-sugar-90g-pack-of-6-sachets",
    "brand": "juzzle",
-   "title": "Berry Collection | No Sugar | 90g - Pack of 6 Sachets",
+   "title": "Berry Collection · No Sugar · 90g · Pack of 6 Sachets",
    "description": "Craving rich berry flavour without the sugar spike? Meet the Juzzle Berry Collection a bold, guilt-free iced tea pack designed for your daily routine. Inside every pack, you'll find 6 quick-mix sachets (3 Strawberry and 3 Blueberry) that deliver a refreshing, clean finish in just 10 seconds. Why You’ll Love It Zero Guilt: 100% sugar-free and low calorie. Bold Taste: Real, fruity payoff from sweet strawberry and tart blueberry. Instant Refreshment: Just tear, mix with 180ml water, and stir! Ready to upgrade your water? Toss a sachet in your bag for work or college and sip smarter.",
    "collection": "hampers",
    "images": [
@@ -3782,7 +3755,7 @@
   {
    "slug": "juzzle-citrus-collection-no-sugar-90g-pack-of-6-sachets",
    "brand": "juzzle",
-   "title": "Citrus Collection | No Sugar | 90g - Pack of 6 Sachets",
+   "title": "Citrus Collection · No Sugar · 90g · Pack of 6 Sachets",
    "description": "What flavors come in the box? You get 6 quick-mix sachets in total, split evenly with 3 strawberry and 3 blueberry flavours. Is it high in calories or sugar? Not at all, it is completely sugar-free and low calorie so you can enjoy it without any guilt. How long does it take to make? Just about 10 seconds, you simply tear the sachet, mix it with 180 ml of water, and give it a quick stir. Can I carry it around easily? Yes, the individual sachets are compact enough to toss right into your bag for work or college.",
    "collection": "hampers",
    "images": [
@@ -3835,9 +3808,33 @@
    "featured": false
   },
   {
+   "slug": "juzzle-drink",
+   "brand": "juzzle",
+   "title": "Drink",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f75042c5-6584-4a43-8789-4d13c6d672f9.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DRINK",
+     "label": "Drink",
+     "options": [],
+     "priceMinor": 6000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f75042c5-6584-4a43-8789-4d13c6d672f9.png"
+    }
+   ],
+   "priceFromMinor": 6000,
+   "priceToMinor": 6000,
+   "featured": false
+  },
+  {
    "slug": "juzzle-fruity-collection-no-sugar-90g-pack-of-6-sachets",
    "brand": "juzzle",
-   "title": "Fruity Collection | No Sugar | 90g - Pack of 6 Sachets",
+   "title": "Fruity Collection · No Sugar · 90g · Pack of 6 Sachets",
    "description": "What tropical flavors are included in the box? You get 6 sachets featuring three exciting combinations: two Mango Peach, two Pineapple Ginger, and two Peach & Passion. Does this contain any sugar? No, it is a completely sugar-free iced tea that delivers rich fruit sweetness with zero sugar and a clean finish. How do I prepare it? Just tear open a sachet, pour it into 180 ml of water, stir, and it's ready in 10 seconds. How does the Pineapple Ginger taste? It provides a bold, spicy tropical kick that stands out from regular fruit drinks",
    "collection": "hampers",
    "images": [
@@ -3897,7 +3894,6 @@
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/caf223c4-ef44-4ea0-9017-57fab5b52509.webp",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/856fe70b-0247-4ce2-b5f8-00591b055e53.webp",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5e36e037-81f2-4e4d-abe3-ec98bdd9c34c.webp"
    ],
@@ -3918,7 +3914,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp"
     },
@@ -3928,7 +3924,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp"
     },
@@ -3938,13 +3934,13 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -3976,7 +3972,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff0a1282-da0c-4d1b-b86f-68d27d5630fa.webp"
     },
@@ -3986,7 +3982,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff0a1282-da0c-4d1b-b86f-68d27d5630fa.webp"
     },
@@ -3996,13 +3992,13 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff0a1282-da0c-4d1b-b86f-68d27d5630fa.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4033,7 +4029,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c8f8df4-8386-4cbf-9516-dc4f853e6695.webp"
     },
@@ -4043,13 +4039,13 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c8f8df4-8386-4cbf-9516-dc4f853e6695.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4080,7 +4076,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04e4d660-a54c-4ccc-8213-00a1a205aed9.webp"
     },
@@ -4090,7 +4086,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04e4d660-a54c-4ccc-8213-00a1a205aed9.webp"
     },
@@ -4100,13 +4096,13 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04e4d660-a54c-4ccc-8213-00a1a205aed9.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4139,7 +4135,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
     },
@@ -4149,7 +4145,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
     },
@@ -4159,7 +4155,7 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
     },
@@ -4169,13 +4165,13 @@
      "options": [
       "3XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4210,7 +4206,7 @@
      "options": [
       "S"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b11c71-9810-43c9-a4a8-68058737ac6a.webp"
     },
@@ -4220,7 +4216,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b11c71-9810-43c9-a4a8-68058737ac6a.webp"
     },
@@ -4230,7 +4226,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b11c71-9810-43c9-a4a8-68058737ac6a.webp"
     },
@@ -4240,7 +4236,7 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b11c71-9810-43c9-a4a8-68058737ac6a.webp"
     },
@@ -4250,7 +4246,7 @@
      "options": [
       "XXL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b11c71-9810-43c9-a4a8-68058737ac6a.webp"
     },
@@ -4260,13 +4256,13 @@
      "options": [
       "XXXL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b11c71-9810-43c9-a4a8-68058737ac6a.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": true
   },
   {
@@ -4300,7 +4296,7 @@
      "options": [
       "S"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5624cd2c-fdb2-4ad9-9671-2d76f14c4921.webp"
     },
@@ -4310,7 +4306,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5624cd2c-fdb2-4ad9-9671-2d76f14c4921.webp"
     },
@@ -4320,7 +4316,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5624cd2c-fdb2-4ad9-9671-2d76f14c4921.webp"
     },
@@ -4330,7 +4326,7 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5624cd2c-fdb2-4ad9-9671-2d76f14c4921.webp"
     },
@@ -4340,13 +4336,13 @@
      "options": [
       "3XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5624cd2c-fdb2-4ad9-9671-2d76f14c4921.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4381,7 +4377,7 @@
      "options": [
       "S"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
     },
@@ -4391,7 +4387,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
     },
@@ -4401,7 +4397,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
     },
@@ -4411,7 +4407,7 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
     },
@@ -4421,7 +4417,7 @@
      "options": [
       "2XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
     },
@@ -4431,13 +4427,13 @@
      "options": [
       "3XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4468,7 +4464,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e2f661f-9b3f-4f10-acf9-c4d6363419d8.webp"
     },
@@ -4478,7 +4474,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e2f661f-9b3f-4f10-acf9-c4d6363419d8.webp"
     },
@@ -4488,13 +4484,13 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e2f661f-9b3f-4f10-acf9-c4d6363419d8.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4525,7 +4521,7 @@
      "options": [
       "S"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4fcdf05-3724-4537-8236-3a79fcddfe50.webp"
     },
@@ -4535,7 +4531,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4fcdf05-3724-4537-8236-3a79fcddfe50.webp"
     },
@@ -4545,13 +4541,13 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4fcdf05-3724-4537-8236-3a79fcddfe50.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4585,7 +4581,7 @@
      "options": [
       "S"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0651500-3c12-4e0e-92f4-ecffc136f1d7.webp"
     },
@@ -4595,7 +4591,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0651500-3c12-4e0e-92f4-ecffc136f1d7.webp"
     },
@@ -4605,7 +4601,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0651500-3c12-4e0e-92f4-ecffc136f1d7.webp"
     },
@@ -4615,7 +4611,7 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0651500-3c12-4e0e-92f4-ecffc136f1d7.webp"
     },
@@ -4625,13 +4621,13 @@
      "options": [
       "2XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0651500-3c12-4e0e-92f4-ecffc136f1d7.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4665,7 +4661,7 @@
      "options": [
       "S"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/aa0f857e-4af7-48a8-be5b-8f305be4a4be.webp"
     },
@@ -4675,7 +4671,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/aa0f857e-4af7-48a8-be5b-8f305be4a4be.webp"
     },
@@ -4685,7 +4681,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/aa0f857e-4af7-48a8-be5b-8f305be4a4be.webp"
     },
@@ -4695,7 +4691,7 @@
      "options": [
       "2XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/aa0f857e-4af7-48a8-be5b-8f305be4a4be.webp"
     },
@@ -4705,13 +4701,13 @@
      "options": [
       "3XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/aa0f857e-4af7-48a8-be5b-8f305be4a4be.webp"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -4744,7 +4740,7 @@
      "options": [
       "S"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ae1ba7a-1fd3-414e-b5e6-7df15b5016c3.webp"
     },
@@ -4754,7 +4750,7 @@
      "options": [
       "M"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ae1ba7a-1fd3-414e-b5e6-7df15b5016c3.webp"
     },
@@ -4764,7 +4760,7 @@
      "options": [
       "L"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ae1ba7a-1fd3-414e-b5e6-7df15b5016c3.webp"
     },
@@ -4774,57 +4770,9 @@
      "options": [
       "XL"
      ],
-     "priceMinor": 149900,
+     "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ae1ba7a-1fd3-414e-b5e6-7df15b5016c3.webp"
-    }
-   ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
-   "featured": false
-  },
-  {
-   "slug": "kirdaaar-kurta-k98",
-   "brand": "kirdaaar",
-   "title": "Kurta-K98",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/974810b6-ce85-4462-9ada-ae3b1bf97c29.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "KURTA-K98",
-     "label": "Kurta-K98",
-     "options": [],
-     "priceMinor": 119900,
-     "compareAtMinor": 150000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/974810b6-ce85-4462-9ada-ae3b1bf97c29.png"
-    }
-   ],
-   "priceFromMinor": 119900,
-   "priceToMinor": 119900,
-   "featured": false
-  },
-  {
-   "slug": "kirdaaar-shirts-k99",
-   "brand": "kirdaaar",
-   "title": "Shirts-K99",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cdf1d906-4413-41f5-93ef-1670a738916b.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "SHIRTS-K99",
-     "label": "Shirts-K99",
-     "options": [],
-     "priceMinor": 119900,
-     "compareAtMinor": 150000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cdf1d906-4413-41f5-93ef-1670a738916b.jpg"
     }
    ],
    "priceFromMinor": 119900,
@@ -6455,10 +6403,10 @@
    "slug": "linore-shirt",
    "brand": "linore",
    "title": "Shirt",
-   "description": null,
+   "description": "100% Pure 44Lea Linen Shirt , Mandarin Collar",
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4985db0d-7621-442e-a746-f12925e39327.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09fd57eb-fa1b-45fb-a62e-9964b7e47960.jpg"
    ],
    "options": [],
    "variants": [
@@ -6468,7 +6416,7 @@
      "options": [],
      "priceMinor": 299500,
      "compareAtMinor": 320000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4985db0d-7621-442e-a746-f12925e39327.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09fd57eb-fa1b-45fb-a62e-9964b7e47960.jpg"
     }
    ],
    "priceFromMinor": 299500,
@@ -6476,9 +6424,9 @@
    "featured": false
   },
   {
-   "slug": "linore-sk1",
+   "slug": "linore-short-kurta",
    "brand": "linore",
-   "title": "SK1",
+   "title": "Short Kurta",
    "description": null,
    "collection": "apparel",
    "images": [
@@ -6488,7 +6436,7 @@
    "variants": [
     {
      "sku": "SK1",
-     "label": "SK1",
+     "label": "Short Kurta",
      "options": [],
      "priceMinor": 299500,
      "compareAtMinor": 329500,
@@ -6500,9 +6448,9 @@
    "featured": false
   },
   {
-   "slug": "linore-vl101",
+   "slug": "linore-short-kurta-embroidery",
    "brand": "linore",
-   "title": "VL101",
+   "title": "Short Kurta Embroidery",
    "description": null,
    "collection": "apparel",
    "images": [
@@ -6512,7 +6460,7 @@
    "variants": [
     {
      "sku": "VL101",
-     "label": "VL101",
+     "label": "Short Kurta Embroidery",
      "options": [],
      "priceMinor": 329500,
      "compareAtMinor": 359500,
@@ -7022,7 +6970,7 @@
    "slug": "madhosh-swedish-flora",
    "brand": "madhosh",
    "title": "Swedish Flora",
-   "description": "A luxurious, long-lasting floral fragrance made with 40% pure perfume oil. Gentle and suitable for all skin types, with no harsh alcohol smell—just a smooth, elegant fragrance that lasts all day. 40% Pure Oil •50ml Bottle • All Skin Types • No Alcohol Smell • Long-Lasting Perfect for: Those who want a sophisticated floral fragrance that leaves a memorable, elegant trail.",
+   "description": "A luxurious, long-lasting floral fragrance made with 40% pure perfume oil. Gentle and suitable for all skin types, with no harsh alcohol smell, just a smooth, elegant fragrance that lasts all day. 40% Pure Oil •50ml Bottle • All Skin Types • No Alcohol Smell • Long-Lasting Perfect for: Those who want a sophisticated floral fragrance that leaves a memorable, elegant trail.",
    "collection": "fragrance",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1908437e-3241-4940-8eaf-b24fd7a1d4aa.jpg",
@@ -7743,7 +7691,7 @@
    "slug": "mugshot-the-big-three",
    "brand": "mugshot",
    "title": "The Big Three",
-   "description": "The Big Three Go all in with all three of Mugshot’s signature hot chocolate flavours. Get Classic, Cinnamon and Whey Hot Chocolate in 250g packs, plus 5 Chocolate Biscuits FREE. Inside the combo: * 1 × Classic Hot Chocolate — 250g * 1 × Cinnamon Hot Chocolate — 250g * 1 × Whey Hot Chocolate — 250g * 5 × Chocolate Biscuits FREE Three flavours. More to share (or not).",
+   "description": "The Big Three Go all in with all three of Mugshot’s signature hot chocolate flavours. Get Classic, Cinnamon and Whey Hot Chocolate in 250g packs, plus 5 Chocolate Biscuits FREE. Inside the combo: * 1 × Classic Hot Chocolate, 250g * 1 × Cinnamon Hot Chocolate, 250g * 1 × Whey Hot Chocolate, 250g * 5 × Chocolate Biscuits FREE Three flavours. More to share (or not).",
    "collection": "hampers",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/45ad6911-92cb-42d4-8447-565ac64f2fdd.jpg"
@@ -7767,7 +7715,7 @@
    "slug": "mugshot-the-classic-duo",
    "brand": "mugshot",
    "title": "The Classic Duo",
-   "description": "Mugshot Classic Duo — ₹149 A comforting little combo for chocolate lovers. Get 1 × Classic Hot Chocolate (40g) paired with 1 × Mugshot Chocolate Biscuit, bringing together rich, creamy hot chocolate and a delicious chocolatey bite. What’s inside: * 1 × Classic Hot Chocolate — 40g * 1 × Chocolate Biscuit",
+   "description": "Mugshot Classic Duo, ₹149 A comforting little combo for chocolate lovers. Get 1 × Classic Hot Chocolate (40g) paired with 1 × Mugshot Chocolate Biscuit, bringing together rich, creamy hot chocolate and a delicious chocolatey bite. What’s inside: * 1 × Classic Hot Chocolate, 40g * 1 × Chocolate Biscuit",
    "collection": "hampers",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/00400ad4-53fc-4d4e-8427-60f396eb35cf.jpg"
@@ -7791,7 +7739,7 @@
    "slug": "mugshot-the-double-trouble",
    "brand": "mugshot",
    "title": "The Double Trouble",
-   "description": "Why settle for one when you can pick any two? Choose any 2 of Mugshot’s 40g hot chocolate flavours and enjoy a Chocolate Biscuit FREE. Inside the combo: * 1 × Hot Chocolate Sachets — 40g * 1 × Cinnamon 40g * 1 × Chocolate Biscuit FREE Same comfort. More mischief.",
+   "description": "Why settle for one when you can pick any two? Choose any 2 of Mugshot’s 40g hot chocolate flavours and enjoy a Chocolate Biscuit FREE. Inside the combo: * 1 × Hot Chocolate Sachets, 40g * 1 × Cinnamon 40g * 1 × Chocolate Biscuit FREE Same comfort. More mischief.",
    "collection": "hampers",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a8018e08-8a67-42c1-847f-f12d73dec69d.jpg"
@@ -7815,7 +7763,7 @@
    "slug": "mugshot-the-trio",
    "brand": "mugshot",
    "title": "The Trio",
-   "description": "The Trio Three Mugshot favourites, one box of trouble. Get all three 40g hot chocolate flavours together — Classic, Cinnamon, and Whey — plus 2 Chocolate Biscuits FREE. Inside the combo: * 1 × Classic Hot Chocolate — 40g * 1 × Cinnamon Hot Chocolate — 40g * 1 × Whey Hot Chocolate — 40g * 2 × Chocolate Biscuits FREE Three flavors. One perfect kind of trouble.",
+   "description": "The Trio Three Mugshot favourites, one box of trouble. Get all three 40g hot chocolate flavours together, Classic, Cinnamon, and Whey, plus 2 Chocolate Biscuits FREE. Inside the combo: * 1 × Classic Hot Chocolate, 40g * 1 × Cinnamon Hot Chocolate, 40g * 1 × Whey Hot Chocolate, 40g * 2 × Chocolate Biscuits FREE Three flavors. One perfect kind of trouble.",
    "collection": "hampers",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/08b0acae-1926-4917-b034-c8c0f088d656.jpg"
@@ -8151,7 +8099,7 @@
    "slug": "nekt-ashwagandha-kesar-honey",
    "brand": "nekt",
    "title": "Ashwagandha Kesar Honey",
-   "description": "Ashwagandha Honey — a convenient 8g single-serve blend of natural honey and ashwagandha, inspired by the traditional use of ashwagandha in Indian wellness. A simple, portable option for incorporating a familiar herbal ingredient into your daily routine.",
+   "description": "Ashwagandha Honey, a convenient 8g single-serve blend of natural honey and ashwagandha, inspired by the traditional use of ashwagandha in Indian wellness. A simple, portable option for incorporating a familiar herbal ingredient into your daily routine.",
    "collection": "sweets",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eb2df399-71ad-4a90-a471-5aec3a5cfbc9.jpg"
@@ -8239,7 +8187,7 @@
    "slug": "nekt-moringa-honey",
    "brand": "nekt",
    "title": "Moringa Honey",
-   "description": "Moringa Honey — convenient 8g single-serve sachets combining natural honey with moringa, an Indian superfood traditionally valued for its nutritional properties. A simple, portable wellness option for everyday routines—at home, work, gym, or on the go.",
+   "description": "Moringa Honey, convenient 8g single-serve sachets combining natural honey with moringa, an Indian superfood traditionally valued for its nutritional properties. A simple, portable wellness option for everyday routines, at home, work, gym, or on the go.",
    "collection": "sweets",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74d335eb-1cc2-471f-b4f4-fe100f826bd6.jpg"
@@ -8471,7 +8419,7 @@
   {
    "slug": "nutflix-aadya-gift-hamper",
    "brand": "nutflix",
-   "title": "Aadya - Gift Hamper",
+   "title": "Aadya · Gift Hamper",
    "description": "Handcrafted chocolate bites and moti diyas woven through with Lucknow's intricate artistry and the spirit of women who carry grace and hospitality in every gesture, however small.",
    "collection": "hampers",
    "images": [
@@ -8481,7 +8429,7 @@
    "variants": [
     {
      "sku": "AADYA-GIFT-HAMPER",
-     "label": "Aadya - Gift Hamper",
+     "label": "Aadya · Gift Hamper",
      "options": [],
      "priceMinor": 184900,
      "compareAtMinor": null,
@@ -8496,7 +8444,7 @@
    "slug": "nutflix-chatpata-raisins",
    "brand": "nutflix",
    "title": "Chatpata Raisins",
-   "description": "Juicy raisins coated in a bold, tangy-spicy chatpata masala for that perfect burst of flavor in every bite. Naturally gluten-free and free from artificial flavors — a deliciously addictive snack for any time of day.",
+   "description": "Juicy raisins coated in a bold, tangy-spicy chatpata masala for that perfect burst of flavor in every bite. Naturally gluten-free and free from artificial flavors, a deliciously addictive snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09da4070-047d-43f9-b45a-e00078ad82ec.jpg"
@@ -8584,7 +8532,7 @@
    "slug": "nutflix-coffee-caramel-almonds",
    "brand": "nutflix",
    "title": "Coffee Caramel Almonds",
-   "description": "Crunchy roasted almonds coated in a rich blend of coffee and caramel for that perfect sweet-bitter bite. High in protein and healthy fats, gluten-free, and free from artificial flavors — a satisfying snack for any time of day.",
+   "description": "Crunchy roasted almonds coated in a rich blend of coffee and caramel for that perfect sweet-bitter bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "sweets",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8eb396c2-4e84-4176-a46c-d2168ed26a47.png"
@@ -8628,7 +8576,7 @@
    "slug": "nutflix-cream-and-onion-almonds",
    "brand": "nutflix",
    "title": "Cream & Onion Almonds",
-   "description": "Crunchy roasted almonds coated in a rich, savory cream and onion seasoning for that irresistible tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors — a deliciously satisfying snack for any time of day.",
+   "description": "Crunchy roasted almonds coated in a rich, savory cream and onion seasoning for that irresistible tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a deliciously satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ac63cf61-d62e-4951-8254-48586bafc5ae.png"
@@ -8671,7 +8619,7 @@
   {
    "slug": "nutflix-dhyanam-gift-hamper",
    "brand": "nutflix",
-   "title": "Dhyanam - Gift Hamper",
+   "title": "Dhyanam · Gift Hamper",
    "description": "A white lotus aromatherapy set of candle, incense, room spray and ceramic holder rising from Rishikesh's contemplative riverbanks and women who embody the art of turning inward.",
    "collection": "hampers",
    "images": [
@@ -8681,7 +8629,7 @@
    "variants": [
     {
      "sku": "DHYANAM-GIFT-HAMPER",
-     "label": "Dhyanam - Gift Hamper",
+     "label": "Dhyanam · Gift Hamper",
      "options": [],
      "priceMinor": 224900,
      "compareAtMinor": null,
@@ -8696,7 +8644,7 @@
    "slug": "nutflix-guava-chilli-raisins",
    "brand": "nutflix",
    "title": "Guava Chilli Raisins",
-   "description": "Juicy raisins coated in a bold blend of guava and chilli for that perfect sweet-tangy-spicy bite. Naturally gluten-free and free from artificial flavors — a deliciously addictive snack for any time of day.",
+   "description": "Juicy raisins coated in a bold blend of guava and chilli for that perfect sweet-tangy-spicy bite. Naturally gluten-free and free from artificial flavors, a deliciously addictive snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4be4308a-db7e-489b-8a8b-097a70d9ec42.png"
@@ -8739,8 +8687,8 @@
   {
    "slug": "nutflix-ira-gift-hamper",
    "brand": "nutflix",
-   "title": "Ira - Gift Hamper",
-   "description": "Four delicately fragranced wax tablets tied with ribbon — everyday luxury woven with the warmth of Indian tradition and the devotion in every handcrafted offering.",
+   "title": "Ira · Gift Hamper",
+   "description": "Four delicately fragranced wax tablets tied with ribbon, everyday luxury woven with the warmth of Indian tradition and the devotion in every handcrafted offering.",
    "collection": "hampers",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5c964504-903b-4d73-bb21-e71e1713b085.jpg"
@@ -8749,7 +8697,7 @@
    "variants": [
     {
      "sku": "IRA-GIFT-HAMPER",
-     "label": "Ira - Gift Hamper",
+     "label": "Ira · Gift Hamper",
      "options": [],
      "priceMinor": 64900,
      "compareAtMinor": null,
@@ -8764,7 +8712,7 @@
    "slug": "nutflix-italian-herb-cashews",
    "brand": "nutflix",
    "title": "Italian Herb Cashews",
-   "description": "Crunchy roasted cashews coated in a savory blend of Italian herbs for that perfect herby, buttery bite. High in protein and healthy fats, gluten-free, and free from artificial flavors — a satisfying snack for any time of day.",
+   "description": "Crunchy roasted cashews coated in a savory blend of Italian herbs for that perfect herby, buttery bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b843354-e5e3-4199-91d1-d660063fa937.jpg"
@@ -8808,7 +8756,7 @@
    "slug": "nutflix-manchurian-cashews",
    "brand": "nutflix",
    "title": "Manchurian Cashews",
-   "description": "Crunchy roasted cashews coated in a bold, tangy-spicy Manchurian seasoning for that perfect savory kick. High in protein and healthy fats, gluten-free, and free from artificial flavors — a satisfying snack for any time of day.",
+   "description": "Crunchy roasted cashews coated in a bold, tangy-spicy Manchurian seasoning for that perfect savory kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dc71257-453b-4b6d-a643-ec1ed4b1f8c7.jpg"
@@ -8852,7 +8800,7 @@
    "slug": "nutflix-mexican-salsa-almonds",
    "brand": "nutflix",
    "title": "Mexican Salsa Almonds",
-   "description": "Crunchy roasted almonds coated in a bold blend of chili, lime, and paprika for that perfect smoky-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors — a satisfying snack for any time of day.",
+   "description": "Crunchy roasted almonds coated in a bold blend of chili, lime, and paprika for that perfect smoky-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/21f03f2c-e041-40fb-965c-8a668966a3f8.jpg"
@@ -8896,7 +8844,7 @@
    "slug": "nutflix-nacho-cheese-cashews",
    "brand": "nutflix",
    "title": "Nacho Cheese Cashews",
-   "description": "Crunchy roasted cashews coated in a bold, cheesy nacho seasoning for that perfect tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors — a satisfying snack for any time of day.",
+   "description": "Crunchy roasted cashews coated in a bold, cheesy nacho seasoning for that perfect tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc647df8-f3b4-4fea-bd70-06deb98c5f30.png"
@@ -8940,7 +8888,7 @@
    "slug": "nutflix-nutella-cashews",
    "brand": "nutflix",
    "title": "Nutella Cashews",
-   "description": "Crunchy roasted cashews coated in a rich, chocolatey-hazelnut Nutella flavor for that perfect sweet, nutty bite. High in protein and healthy fats, gluten-free, and free from artificial flavors — a deliciously satisfying snack for any time of day.",
+   "description": "Crunchy roasted cashews coated in a rich, chocolatey-hazelnut Nutella flavor for that perfect sweet, nutty bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a deliciously satisfying snack for any time of day.",
    "collection": "sweets",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/158a42be-452d-4556-94d2-e5836f302048.jpg"
@@ -8983,7 +8931,7 @@
   {
    "slug": "nutflix-parampara-gift-hamper",
    "brand": "nutflix",
-   "title": "Parampara - Gift Hamper",
+   "title": "Parampara · Gift Hamper",
    "description": "Auric candlelight, earthy fragrances and dhoop rituals that carry the soul of Dharampur's temples and the women who are themselves the living continuity of tradition.",
    "collection": "hampers",
    "images": [
@@ -8993,7 +8941,7 @@
    "variants": [
     {
      "sku": "PARAMPARA-GIFT-HAMPER",
-     "label": "Parampara - Gift Hamper",
+     "label": "Parampara · Gift Hamper",
      "options": [],
      "priceMinor": 599900,
      "compareAtMinor": null,
@@ -9008,7 +8956,7 @@
    "slug": "nutflix-peri-peri-almonds",
    "brand": "nutflix",
    "title": "Peri Peri Almonds",
-   "description": "Crunchy roasted almonds coated in a bold, fiery peri peri seasoning for that perfect spicy-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors — a satisfying snack for any time of day.",
+   "description": "Crunchy roasted almonds coated in a bold, fiery peri peri seasoning for that perfect spicy-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52e6b988-7457-45d3-ab4b-65875def94af.png"
@@ -9051,7 +8999,7 @@
   {
    "slug": "nutflix-prerna-gift-hamper",
    "brand": "nutflix",
-   "title": "Prerna - Gift Hamper",
+   "title": "Prerna · Gift Hamper",
    "description": "Gourmet chocolate bites and lotus diyas from Varanasi's glowing riverfronts, carrying the spirit of women whose quiet resilience, like the lotus, blooms beautifully from stillness.",
    "collection": "hampers",
    "images": [
@@ -9061,7 +9009,7 @@
    "variants": [
     {
      "sku": "PRERNA-GIFT-HAMPER",
-     "label": "Prerna - Gift Hamper",
+     "label": "Prerna · Gift Hamper",
      "options": [],
      "priceMinor": 134900,
      "compareAtMinor": null,
@@ -9075,7 +9023,7 @@
   {
    "slug": "nutflix-sampada-gift-hamper",
    "brand": "nutflix",
-   "title": "Sampada - Gift Hamper",
+   "title": "Sampada · Gift Hamper",
    "description": "Festive dry fruits, besan chocolate and handcrafted sliders alive with Ahmedabad's celebratory warmth and the spirit of women whose generosity is the truest form of abundance.",
    "collection": "hampers",
    "images": [
@@ -9085,7 +9033,7 @@
    "variants": [
     {
      "sku": "SAMPADA-GIFT-HAMPER",
-     "label": "Sampada - Gift Hamper",
+     "label": "Sampada · Gift Hamper",
      "options": [],
      "priceMinor": 419900,
      "compareAtMinor": null,
@@ -9099,7 +9047,7 @@
   {
    "slug": "nutflix-sfurti-gift-hamper",
    "brand": "nutflix",
-   "title": "Sfurti - Gift Hamper",
+   "title": "Sfurti · Gift Hamper",
    "description": "A citrus and musky aromatherapy set of candle, incense, room spray and ceramic holder capturing the first light of dawn over the Ganga and women who awaken possibility in everything they do.",
    "collection": "hampers",
    "images": [
@@ -9109,7 +9057,7 @@
    "variants": [
     {
      "sku": "SFURTI-GIFT-HAMPER",
-     "label": "Sfurti - Gift Hamper",
+     "label": "Sfurti · Gift Hamper",
      "options": [],
      "priceMinor": 224900,
      "compareAtMinor": null,
@@ -9123,7 +9071,7 @@
   {
    "slug": "nutflix-shaurya-gift-hamper",
    "brand": "nutflix",
-   "title": "Shaurya - Gift Hamper",
+   "title": "Shaurya · Gift Hamper",
    "description": "Sacred dhoop aromas rooted in Kolkata's spirit of Shakti, where courage is not just a feeling but a living force that fills every space it enters.",
    "collection": "hampers",
    "images": [
@@ -9133,7 +9081,7 @@
    "variants": [
     {
      "sku": "SHAURYA-GIFT-HAMPER",
-     "label": "Shaurya - Gift Hamper",
+     "label": "Shaurya · Gift Hamper",
      "options": [],
      "priceMinor": 269900,
      "compareAtMinor": null,
@@ -9147,7 +9095,7 @@
   {
    "slug": "nutflix-shraddha-gift-hamper",
    "brand": "nutflix",
-   "title": "Shraddha - Gift Hamper",
+   "title": "Shraddha · Gift Hamper",
    "description": "Puja essentials of ghee melts, mishri, kumkum and dhoop, steeped in South Indian devotion and the spirit of women whose surrender makes every ritual sacred.",
    "collection": "hampers",
    "images": [
@@ -9157,7 +9105,7 @@
    "variants": [
     {
      "sku": "SHRADDHA-GIFT-HAMPER",
-     "label": "Shraddha - Gift Hamper",
+     "label": "Shraddha · Gift Hamper",
      "options": [],
      "priceMinor": 269900,
      "compareAtMinor": null,
@@ -9171,7 +9119,7 @@
   {
    "slug": "nutflix-tej-gift-hamper",
    "brand": "nutflix",
-   "title": "Tej - Gift Hamper",
+   "title": "Tej · Gift Hamper",
    "description": "Nourishing dry fruits and glowing moti diyas, lit by the festive spirit of Mysuru and women whose inner radiance and quiet confidence are the light they carry within.",
    "collection": "hampers",
    "images": [
@@ -9181,7 +9129,7 @@
    "variants": [
     {
      "sku": "TEJ-GIFT-HAMPER",
-     "label": "Tej - Gift Hamper",
+     "label": "Tej · Gift Hamper",
      "options": [],
      "priceMinor": 334900,
      "compareAtMinor": null,
@@ -9196,7 +9144,7 @@
    "slug": "nutflix-thai-sweet-chilli-cashews",
    "brand": "nutflix",
    "title": "Thai Sweet Chilli Cashews",
-   "description": "Crunchy roasted cashews coated in a bold, spicy-tangy Thai chilli seasoning for that perfect fiery kick. High in protein and healthy fats, gluten-free, and free from artificial flavors — a satisfying snack for any time of day",
+   "description": "Crunchy roasted cashews coated in a bold, spicy-tangy Thai chilli seasoning for that perfect fiery kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b2630ee5-6d32-41df-9075-a42148e93905.jpg"
@@ -9239,7 +9187,7 @@
   {
    "slug": "nutflix-umang-gift-hamper",
    "brand": "nutflix",
-   "title": "Umang - Gift Hamper",
+   "title": "Umang · Gift Hamper",
    "description": "Savoury snacks, chocolates, cookies and moti diyas pulsing with Mumbai's lively festive energy and the spirit of women whose warmth naturally fills every space with joy.",
    "collection": "hampers",
    "images": [
@@ -9249,7 +9197,7 @@
    "variants": [
     {
      "sku": "UMANG-GIFT-HAMPER",
-     "label": "Umang - Gift Hamper",
+     "label": "Umang · Gift Hamper",
      "options": [],
      "priceMinor": 364900,
      "compareAtMinor": null,
@@ -10296,7 +10244,7 @@
    "slug": "zaaree-the-aadhya",
    "brand": "zaaree",
    "title": "The Aadhya",
-   "description": "Linen Silk — A quiet ivory canvas scattered with hand-drawn pink roses and soft sage vines, bordered in a fine floral bel. Woven in linen silk for a matte, breathable fall — the kind of saree that photographs beautifully in low light and wears just as well through a long afternoon.",
+   "description": "Linen Silk, A quiet ivory canvas scattered with hand-drawn pink roses and soft sage vines, bordered in a fine floral bel. Woven in linen silk for a matte, breathable fall, the kind of saree that photographs beautifully in low light and wears just as well through a long afternoon.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ea8ec036-2d8f-49eb-939f-4af5e945a7bf.jpg"
@@ -10320,7 +10268,7 @@
    "slug": "zaaree-the-aaradhya",
    "brand": "zaaree",
    "title": "The Aaradhya",
-   "description": "Semi Satin — A dusky lavender silk bordered in gold, its pallu woven with peacocks and trailing florals in a classic Banarasi style. Semi satin gives the surface a gentle glow rather than a hard shine — evening-ready without trying too hard.",
+   "description": "Semi Satin, A dusky lavender silk bordered in gold, its pallu woven with peacocks and trailing florals in a classic Banarasi style. Semi satin gives the surface a gentle glow rather than a hard shine, evening-ready without trying too hard.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/faa31bfa-a99d-44c7-ae19-d5dd36af37dd.jpg"
@@ -10344,7 +10292,7 @@
    "slug": "zaaree-the-avni",
    "brand": "zaaree",
    "title": "The Avni",
-   "description": "Linen Silk — The same floral bel reimagined in a warm blush pink, with the identical rose-and-vine embroidery running the length of the drape. Linen silk keeps it light and matte, so the colour reads soft rather than sweet.",
+   "description": "Linen Silk, The same floral bel reimagined in a warm blush pink, with the identical rose-and-vine embroidery running the length of the drape. Linen silk keeps it light and matte, so the colour reads soft rather than sweet.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75fd60a3-4a47-40c5-90bd-20b502cd2ee1.jpg"
@@ -10368,7 +10316,7 @@
    "slug": "zaaree-the-bhoomi",
    "brand": "zaaree",
    "title": "The Bhoomi",
-   "description": "Semi Satin — The same peacock-and-floral Banarasi border in a vivid turquoise, the gold brocade standing out crisply against the cool base. Semi satin keeps the shine soft and wearable.",
+   "description": "Semi Satin, The same peacock-and-floral Banarasi border in a vivid turquoise, the gold brocade standing out crisply against the cool base. Semi satin keeps the shine soft and wearable.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ab3f675a-d49f-491e-879b-509eef207d6c.jpg"
@@ -10392,7 +10340,7 @@
    "slug": "zaaree-the-chandni",
    "brand": "zaaree",
    "title": "The Chandni",
-   "description": "Semi Silk — Teal silk meets a bold rani-pink border in this zari brocade, its pallu patterned with leaf motifs picked out in gold thread. Semi silk gives it body and structure while still falling with ease.",
+   "description": "Semi Silk, Teal silk meets a bold rani-pink border in this zari brocade, its pallu patterned with leaf motifs picked out in gold thread. Semi silk gives it body and structure while still falling with ease.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7249f8f9-5f0e-4ffd-9418-d25e4d2b10a3.jpg"
@@ -10416,7 +10364,7 @@
    "slug": "zaaree-the-esha",
    "brand": "zaaree",
    "title": "The Esha",
-   "description": "Semi Silk — The same zari brocade rendered in a lively mehendi green against a deep magenta border — a saree built for celebration. Semi silk holds its pleats beautifully through a long evening.",
+   "description": "Semi Silk, The same zari brocade rendered in a lively mehendi green against a deep magenta border, a saree built for celebration. Semi silk holds its pleats beautifully through a long evening.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6baf8413-ba71-46fb-a3d7-f0b4dbacd323.jpg"
@@ -10440,7 +10388,7 @@
    "slug": "zaaree-the-falak",
    "brand": "zaaree",
    "title": "The Falak",
-   "description": "Feather Silk — A soft cream silk finished with a graphic magenta-and-teal temple border and a woven peacock pallu. Feather silk keeps it light enough to wear through a full day of festivities.",
+   "description": "Feather Silk, A soft cream silk finished with a graphic magenta-and-teal temple border and a woven peacock pallu. Feather silk keeps it light enough to wear through a full day of festivities.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/264c2dd1-df04-43d5-83d0-cc3459b0ddcc.jpg"
@@ -10464,7 +10412,7 @@
    "slug": "zaaree-the-gauri",
    "brand": "zaaree",
    "title": "The Gauri",
-   "description": "Feather Silk — The same temple-bordered design in a bright turquoise, with the pink-and-gold border and peacock pallu carrying it into the evening. Feather silk means it never feels heavy, however ornate the border.",
+   "description": "Feather Silk, The same temple-bordered design in a bright turquoise, with the pink-and-gold border and peacock pallu carrying it into the evening. Feather silk means it never feels heavy, however ornate the border.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/114a193c-7762-4d17-85aa-7de4c55d3657.jpg"
@@ -10488,7 +10436,7 @@
    "slug": "zaaree-the-heer",
    "brand": "zaaree",
    "title": "The Heer",
-   "description": "Tissue Satin — A deep maroon silk wrapped almost entirely in gold — a heavy zari paisley border and pallu that reads as pure heirloom Banarasi. Tissue satin adds a fine metallic glow beneath the weave, built for the biggest occasions on the calendar.",
+   "description": "Tissue Satin, A deep maroon silk wrapped almost entirely in gold, a heavy zari paisley border and pallu that reads as pure heirloom Banarasi. Tissue satin adds a fine metallic glow beneath the weave, built for the biggest occasions on the calendar.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/47fd601e-f460-4ede-9d28-f2e4f11942ae.jpg"
@@ -10512,7 +10460,7 @@
    "slug": "zaaree-the-ishita",
    "brand": "zaaree",
    "title": "The Ishita",
-   "description": "Tissue Satin — A cool steel-blue silk shot through with olive, finished in the same heavy gold zari paisley border as its maroon counterpart — quietly regal rather than loud.",
+   "description": "Tissue Satin, A cool steel-blue silk shot through with olive, finished in the same heavy gold zari paisley border as its maroon counterpart, quietly regal rather than loud.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0918ca67-13c4-4564-96c8-29193d087d91.jpg"
@@ -10536,7 +10484,7 @@
    "slug": "zaaree-the-jiya",
    "brand": "zaaree",
    "title": "The Jiya",
-   "description": "Tissue Satin — A dual-tone silk that shifts between teal and olive depending on the light, bordered in gold florals. Tissue satin gives the shift-weave its subtle sheen, so the colour-play never feels flat.",
+   "description": "Tissue Satin, A dual-tone silk that shifts between teal and olive depending on the light, bordered in gold florals. Tissue satin gives the shift-weave its subtle sheen, so the colour-play never feels flat.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ec09ea5-8070-481b-b108-19881f062059.jpg"
@@ -10560,7 +10508,7 @@
    "slug": "zaaree-the-kavya",
    "brand": "zaaree",
    "title": "The Kavya",
-   "description": "Tissue Satin — A warm rust-copper silk laid with small gold florals and a wide gold-medallion border — a Banarasi built for warmth over shine. Tissue satin keeps its glow soft and even.",
+   "description": "Tissue Satin, A warm rust-copper silk laid with small gold florals and a wide gold-medallion border, a Banarasi built for warmth over shine. Tissue satin keeps its glow soft and even.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4c018a6-308d-4e6c-b0bc-78cfae4d242c.jpg"
@@ -10584,7 +10532,7 @@
    "slug": "zaaree-the-kimaya",
    "brand": "zaaree",
    "title": "The Kimaya",
-   "description": "Muga Silk — Deep teal meets antique gold in a Patola-inspired diamond weave, opening into a pallu alive with woven peacocks and trailing florals. Muga silk gives it a natural burnished sheen that catches the light with every fold.",
+   "description": "Muga Silk, Deep teal meets antique gold in a Patola-inspired diamond weave, opening into a pallu alive with woven peacocks and trailing florals. Muga silk gives it a natural burnished sheen that catches the light with every fold.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1c2d995c-3f31-40e0-811a-994e9017167a.jpg"
@@ -10608,7 +10556,7 @@
    "slug": "zaaree-the-lavanya",
    "brand": "zaaree",
    "title": "The Lavanya",
-   "description": "Muga Silk — The same Patola diamond weave in a warmer register — dusty rose against gold, with the peacock-and-floral pallu rendered in deeper pinks. Muga silk's natural sheen makes the gold threadwork glow rather than gleam.",
+   "description": "Muga Silk, The same Patola diamond weave in a warmer register, dusty rose against gold, with the peacock-and-floral pallu rendered in deeper pinks. Muga silk's natural sheen makes the gold threadwork glow rather than gleam.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/366568f4-b3e3-4932-b960-8ba4c3e30e5f.jpg"
@@ -10632,7 +10580,7 @@
    "slug": "zaaree-the-leela",
    "brand": "zaaree",
    "title": "The Leela",
-   "description": "Semi Satin — A rich gold silk edged in flame-red, its pallu given over to a dense weave of cranes, florals and temple motifs — bridal-weight Banarasi at its most traditional. Semi satin gives it a soft, festive glow rather than a hard shine.",
+   "description": "Semi Satin, A rich gold silk edged in flame-red, its pallu given over to a dense weave of cranes, florals and temple motifs, bridal-weight Banarasi at its most traditional. Semi satin gives it a soft, festive glow rather than a hard shine.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fc574302-4398-4cf7-b94e-47c3559cb659.jpg"
@@ -10656,7 +10604,7 @@
    "slug": "zaaree-the-manasvi",
    "brand": "zaaree",
    "title": "The Manasvi",
-   "description": "Feather Silk — A sage-green silk carried by a pallu drawn straight from Warli folk art — stick-figure dancers, birds and huts rendered in warm terracotta and rose. Feather silk keeps the whole saree impossibly light, so the pallu drapes rather than sits.",
+   "description": "Feather Silk, A sage-green silk carried by a pallu drawn straight from Warli folk art, stick-figure dancers, birds and huts rendered in warm terracotta and rose. Feather silk keeps the whole saree impossibly light, so the pallu drapes rather than sits.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c3197e4-eb51-4142-8c86-57b316d414a3.jpg"
@@ -10680,7 +10628,7 @@
    "slug": "zaaree-the-naina",
    "brand": "zaaree",
    "title": "The Naina",
-   "description": "Semi Satin — The same bridal border reworked in magenta and purple against warm gold, the pallu carrying the same procession of cranes and florals. Semi satin keeps the drape soft enough for a full day of ceremony.",
+   "description": "Semi Satin, The same bridal border reworked in magenta and purple against warm gold, the pallu carrying the same procession of cranes and florals. Semi satin keeps the drape soft enough for a full day of ceremony.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/837dc21b-ca4f-454f-a50c-f1bae66acd2d.jpg"
@@ -10704,7 +10652,7 @@
    "slug": "zaaree-the-nandini",
    "brand": "zaaree",
    "title": "The Nandini",
-   "description": "Feather Silk — The same Warli storytelling pallu in a cooler dusty blue — folk dancers and birds picked out against a soft grey-blue field. Feather silk drops clean and light, letting the pallu's detail take center stage.",
+   "description": "Feather Silk, The same Warli storytelling pallu in a cooler dusty blue, folk dancers and birds picked out against a soft grey-blue field. Feather silk drops clean and light, letting the pallu's detail take center stage.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/915cc706-ed7d-4200-b33a-cd49d55cb6c1.jpg"
@@ -10728,7 +10676,7 @@
    "slug": "zaaree-the-oorja",
    "brand": "zaaree",
    "title": "The Oorja",
-   "description": "Feather Silk — An ivory silk edged in a bold pink flame border, the pallu opening into a Kalamkari-style scene of peacocks, temple houses and vines in teal, pink and gold. Feather silk keeps the whole piece light enough for a full evening's wear.",
+   "description": "Feather Silk, An ivory silk edged in a bold pink flame border, the pallu opening into a Kalamkari-style scene of peacocks, temple houses and vines in teal, pink and gold. Feather silk keeps the whole piece light enough for a full evening's wear.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5bc06612-f93d-410f-a32d-9b04c2160b6d.jpg"
@@ -10752,7 +10700,7 @@
    "slug": "zaaree-the-pari",
    "brand": "zaaree",
    "title": "The Pari",
-   "description": "Semi Satin — Steel-blue and mauve run in bold diagonal stripes across this silk, bordered in gold-flecked brocade. Semi satin gives the sharp geometry a gentle, wearable sheen.",
+   "description": "Semi Satin, Steel-blue and mauve run in bold diagonal stripes across this silk, bordered in gold-flecked brocade. Semi satin gives the sharp geometry a gentle, wearable sheen.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3b9cdf5-18e9-4aa0-9fb9-f6a0fb8fccba.jpg"
@@ -10776,7 +10724,7 @@
    "slug": "zaaree-the-pihu",
    "brand": "zaaree",
    "title": "The Pihu",
-   "description": "Feather Silk — Rose pink meets emerald green in a Paithani-inspired weave, its pallu given over entirely to a procession of woven peacocks. Feather silk lets the colour-blocking read crisp and architectural rather than heavy.",
+   "description": "Feather Silk, Rose pink meets emerald green in a Paithani-inspired weave, its pallu given over entirely to a procession of woven peacocks. Feather silk lets the colour-blocking read crisp and architectural rather than heavy.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e61a6fd9-1087-4be5-bd28-21144639a920.jpg"
@@ -10800,7 +10748,7 @@
    "slug": "zaaree-the-radhika",
    "brand": "zaaree",
    "title": "The Radhika",
-   "description": "Linen Silk — A soft blush pink Banarasi, paisleys and floral medallions woven in muted rose and sage across the body and border. Linen silk gives it a matte, understated finish — quiet luxury rather than shine.",
+   "description": "Linen Silk, A soft blush pink Banarasi, paisleys and floral medallions woven in muted rose and sage across the body and border. Linen silk gives it a matte, understated finish, quiet luxury rather than shine.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a55718ba-bbca-4f76-8e5b-09d6a0392a0e.jpg"
@@ -10824,7 +10772,7 @@
    "slug": "zaaree-the-riya",
    "brand": "zaaree",
    "title": "The Riya",
-   "description": "Semi Satin — The same diagonal chevron weave in a softer rose pink, the gold border catching the light at every turn. Semi satin keeps it light and easy to wear well past the occasion that called for it.",
+   "description": "Semi Satin, The same diagonal chevron weave in a softer rose pink, the gold border catching the light at every turn. Semi satin keeps it light and easy to wear well past the occasion that called for it.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/321f61f6-7844-446b-a83b-beb27aebf1ec.jpg"
@@ -10848,7 +10796,7 @@
    "slug": "zaaree-the-sanaya",
    "brand": "zaaree",
    "title": "The Sanaya",
-   "description": "Linen Silk — The same paisley Banarasi reworked in a fresh mint green, the florals picked out in coral and gold for warmth. Linen silk keeps the drape light and matte, easy to wear from morning through evening.",
+   "description": "Linen Silk, The same paisley Banarasi reworked in a fresh mint green, the florals picked out in coral and gold for warmth. Linen silk keeps the drape light and matte, easy to wear from morning through evening.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/85e0e6a7-dcb7-44f9-a6c6-6bbadf665dbb.jpg"
@@ -10872,7 +10820,7 @@
    "slug": "zaaree-the-trisha",
    "brand": "zaaree",
    "title": "The Trisha",
-   "description": "Linen Silk — A cool silver-grey Banarasi with the identical paisley brocade, its rose-and-teal florals reading almost jewel-like against the pale base. Linen silk's soft hand keeps the overall look restrained and elegant.",
+   "description": "Linen Silk, A cool silver-grey Banarasi with the identical paisley brocade, its rose-and-teal florals reading almost jewel-like against the pale base. Linen silk's soft hand keeps the overall look restrained and elegant.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bdd258df-04d1-4df0-91e7-5ab2dd47080d.jpg"
@@ -10896,7 +10844,7 @@
    "slug": "zaaree-the-urvi",
    "brand": "zaaree",
    "title": "The Urvi",
-   "description": "Feather Silk — A gold silk striped through with bold lavender-and-olive chevrons, woven in an ikat technique that blurs each edge softly. Feather silk keeps the geometry light rather than stiff, so the saree moves rather than stands still.",
+   "description": "Feather Silk, A gold silk striped through with bold lavender-and-olive chevrons, woven in an ikat technique that blurs each edge softly. Feather silk keeps the geometry light rather than stiff, so the saree moves rather than stands still.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5a4e7aeb-cdc4-4460-ba41-6f743940181f.jpg"
@@ -10920,7 +10868,7 @@
    "slug": "zaaree-the-vidhi",
    "brand": "zaaree",
    "title": "The Vidhi",
-   "description": "Feather Silk — The same chevron ikat in a cooler palette — dusty blue and mauve zigzagging across warm gold. Feather silk's lightness lets the pattern ripple naturally with every step.",
+   "description": "Feather Silk, The same chevron ikat in a cooler palette, dusty blue and mauve zigzagging across warm gold. Feather silk's lightness lets the pattern ripple naturally with every step.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c30f2880-1581-405b-907a-a85733842917.jpg"
@@ -10944,7 +10892,7 @@
    "slug": "zaaree-the-yamini",
    "brand": "zaaree",
    "title": "The Yamini",
-   "description": "Semi Satin — A warm rust-orange silk scattered with small gold motifs, finished in a deep border of woven peacocks, florals and vines. Semi satin gives it a gentle, low-key sheen — festive without being loud.",
+   "description": "Semi Satin, A warm rust-orange silk scattered with small gold motifs, finished in a deep border of woven peacocks, florals and vines. Semi satin gives it a gentle, low-key sheen, festive without being loud.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b17e8f49-7a47-4d01-9e42-bc1002fab4a1.jpg"
@@ -10968,7 +10916,7 @@
    "slug": "zaaree-the-zoya",
    "brand": "zaaree",
    "title": "The Zoya",
-   "description": "Semi Satin — The same peacock-bordered design in a rich sea green, gold accents picked out across the body like scattered light. Semi satin lends it a soft glow that reads well both indoors and out.",
+   "description": "Semi Satin, The same peacock-bordered design in a rich sea green, gold accents picked out across the body like scattered light. Semi satin lends it a soft glow that reads well both indoors and out.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/06568277-2b84-4d88-9da6-eabf94d1b765.jpg"

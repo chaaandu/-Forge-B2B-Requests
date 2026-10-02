@@ -10,7 +10,7 @@ import { getReels } from "@/lib/reels";
 import { CatalogueBrowser } from "@/components/catalogue/catalogue-browser";
 import { TeamLineup } from "@/components/team-lineup";
 import { CountUp } from "@/components/motion/count-up";
-import { SplitReveal } from "@/components/motion/reveal";
+import { SplitReveal, Stagger } from "@/components/motion/reveal";
 import { Reels } from "@/components/home/reels";
 
 export const revalidate = 600;
@@ -43,17 +43,13 @@ export default async function BrandPage({ params }: { params: Params }) {
   return (
     <>
       <section className="relative overflow-hidden">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -right-[10vw] top-10 -z-0 size-[60vw] max-w-[820px] rounded-full bg-orchid-soft/70 blur-0"
-        />
         <div className="relative mx-auto grid max-w-[1500px] gap-10 px-5 pb-10 pt-6 sm:px-8 lg:grid-cols-[1fr_1.05fr] lg:items-end">
           <div className="pb-6 lg:pb-20">
             <Link href="/brands" className="inline-flex items-center gap-1 text-xs font-semibold text-ink/50 hover:text-ink">
               <ChevronLeft className="size-3.5" /> All founders
             </Link>
             <p className="mt-10 text-xs font-bold uppercase tracking-[0.25em] text-violet">
-              A Forge founder brand · {getCollection(brand.collection)?.name}
+              {getCollection(brand.collection)?.name} · Forge founders
             </p>
             <SplitReveal as="h1" immediate className="font-display mt-4 text-[clamp(3.5rem,9vw,9rem)] leading-[0.86] text-ink">
               {brand.name}
@@ -61,7 +57,7 @@ export default async function BrandPage({ params }: { params: Params }) {
             <p className="font-display-straight mt-6 max-w-xl text-[clamp(1.4rem,2.2vw,2rem)] leading-snug text-ink/75">
               {people.length ? (
                 <>
-                  Started by <span className="text-ink">{firstNames(people)}</span> — {brand.tagline.toLowerCase()}.
+                  Started by <span className="text-ink">{firstNames(people)}</span>. {brand.tagline.replace(/\.$/, "")}.
                 </>
               ) : (
                 brand.tagline
@@ -81,12 +77,12 @@ export default async function BrandPage({ params }: { params: Params }) {
                   <dd className="font-display text-5xl text-ink">
                     <CountUp value={sold.units} />
                   </dd>
-                  <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">products in people&apos;s hands</dt>
+                  <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">products out in the world</dt>
                 </div>
               )}
               <div>
                 <dd className="font-display text-5xl text-ink">{items.length}</dd>
-                <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">to gift, below</dt>
+                <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">ready to gift</dt>
               </div>
             </dl>
             {(brand.website || brand.instagram) && (
@@ -114,11 +110,19 @@ export default async function BrandPage({ params }: { params: Params }) {
               </p>
             )}
           </div>
-          {people.length > 0 && <TeamLineup people={people} sizes="(min-width: 1024px) 340px, 45vw" className="pt-4" />}
+          {people.length > 0 && (
+            <Stagger selector="figure" className="relative pb-12">
+              <div aria-hidden className="absolute inset-x-[6%] bottom-12 top-[16%] rounded-t-full bg-orchid-soft" />
+              <TeamLineup
+                people={people}
+                names
+                sizes="(min-width: 1024px) 320px, 40vw"
+                className="relative pt-6 [--person:clamp(104px,24vw,250px)]"
+              />
+            </Stagger>
+          )}
         </div>
       </section>
-
-      {theirReels.length > 0 && <Reels reels={theirReels} />}
 
       <section className="mx-auto max-w-[1500px] px-5 pt-16 sm:px-8">
         <SplitReveal className="font-display mb-8 text-[clamp(2.6rem,6vw,6rem)] leading-[0.9] text-ink">
@@ -126,6 +130,7 @@ export default async function BrandPage({ params }: { params: Params }) {
         </SplitReveal>
         <CatalogueBrowser scope="brand" listings={items} brands={[brand]} initial={NO_FILTERS} />
       </section>
+      {theirReels.length > 0 && <Reels reels={theirReels} />}
     </>
   );
 }

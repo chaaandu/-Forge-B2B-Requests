@@ -144,7 +144,7 @@ export function CatalogueBrowser({
               type="search"
               value={f.q}
               onChange={(e) => set({ q: e.target.value })}
-              placeholder="Search"
+              placeholder="Search candles, makhana, totes…"
               aria-label="Search the catalogue"
               className="h-9 w-full rounded-full bg-tile pl-10 pr-10 text-sm outline-none transition placeholder:text-ink/40 focus:bg-white focus:ring-2 focus:ring-violet/40"
             />
@@ -193,7 +193,7 @@ export function CatalogueBrowser({
       {results.length === 0 ? (
         <div className="mx-auto max-w-md py-28 text-center">
           <p className="text-3xl text-ink">No matches.</p>
-          <p className="mt-2 text-sm text-ink/60">Try a different word, or clear the filters.</p>
+          <p className="mt-2 text-sm text-ink/60">Try another word, or clear the filters.</p>
           <button
             type="button"
             onClick={() => set({ ...NO_FILTERS, sort: f.sort })}
@@ -214,7 +214,7 @@ export function CatalogueBrowser({
       {shown < results.length && <div ref={sentinel} className="h-10" />}
       {narrowed && results.length > 0 && shown >= results.length && (
         <p className="mt-16 text-center text-sm text-ink/50">
-          That&apos;s everything that matches.{" "}
+          That&apos;s the lot.{" "}
           <button type="button" onClick={() => set({ ...NO_FILTERS, sort: f.sort })} className="font-semibold text-violet hover:underline">
             Show all products
           </button>

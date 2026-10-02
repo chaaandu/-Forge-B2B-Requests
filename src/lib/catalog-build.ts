@@ -447,7 +447,12 @@ const ACRONYMS = new Set(["RCB", "FSS", "USA", "UK", "DIY", "XS", "XL", "XXL", "
  * Short capitals (`FSS`, `RCB`) are left as acronyms; units stay lower-case.
  */
 const tidyTitle = (s: string) => {
-  const clean = stripInvisible(s).trim().replace(/\s+/g, " ");
+  // Separators the way the site writes them: "Aroma Oil · Cinnamon", never
+  // an em dash, a lone hyphen between words, or a row of pipes.
+  const clean = stripInvisible(s)
+    .trim()
+    .replace(/\s+/g, " ")
+    .replace(/\s+[—–|]\s+|\s+-\s+/g, " · ");
   // Typed with caps lock on: every word gets title-cased, not just the long ones.
   const letters = clean.replace(/[^a-z]/gi, "");
   const shouting = letters.length > 3 && letters.replace(/[^A-Z]/g, "").length / letters.length > 0.8;
@@ -468,6 +473,11 @@ const tidyTitle = (s: string) => {
 const stripInvisible = (s: string) => s.replace(new RegExp("[\\u200B-\\u200D\\uFEFF]", "g"), "");
 
 const tidyText = (s: string | null) => {
-  const t = s ? stripInvisible(s).trim().replace(/\s+/g, " ") : "";
+  const t = s
+    ? stripInvisible(s)
+        .trim()
+        .replace(/\s+/g, " ")
+        .replace(/\s*[—–]\s*/g, ", ")
+    : "";
   return t ? t[0].toUpperCase() + t.slice(1) : null;
 };

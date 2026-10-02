@@ -52,24 +52,22 @@ export function CategoryIndex({ rows }: { rows: IndexRow[] }) {
     <section ref={root} className="mx-auto max-w-[1500px] px-5 py-28 sm:px-8">
       <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
         <SplitReveal className="font-display text-[clamp(3rem,8vw,8rem)] leading-[0.88] text-ink">
-          What they <em className="text-royal">make.</em>
+          What&apos;s in <em className="text-royal">store.</em>
         </SplitReveal>
         <Link href="/catalogue" className="text-sm font-semibold text-violet underline-offset-4 hover:underline">
-          The whole catalogue →
+          Browse everything
         </Link>
       </div>
 
       <ul onPointerLeave={() => setActive(null)} className="border-t border-ink/15">
-        {rows.map((row, i) => (
+        {rows.map((row) => (
           <li key={row.id} onPointerEnter={() => setActive(row.id)}>
             <Link
               href={`/catalogue?collection=${row.id}`}
               data-cursor="Shop"
               className="group grid grid-cols-[auto_1fr_auto] items-center gap-4 border-b border-ink/15 py-5 transition-colors duration-500 hover:bg-ink hover:text-paper sm:gap-8 sm:py-7"
             >
-              <span className="w-10 pl-2 text-xs font-semibold tabular-nums text-ink/40 transition group-hover:text-orchid sm:w-16 sm:pl-4">
-                {String(i + 1).padStart(2, "0")}
-              </span>
+              <span aria-hidden className="w-2 sm:w-4" />
               <span className="flex min-w-0 items-center gap-4">
                 <span className="relative size-14 shrink-0 overflow-hidden rounded-2xl bg-paper-2 md:hidden">
                   {row.image && <Image src={row.image} alt="" fill sizes="56px" className="object-cover" />}

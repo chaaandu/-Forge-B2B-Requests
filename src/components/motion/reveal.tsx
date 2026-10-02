@@ -30,7 +30,8 @@ export function SplitReveal({
       const split = SplitText.create(el, { type: "lines", mask: "lines", linesClass: "line", autoSplit: true });
       gsap.set(el, { visibility: "visible" });
       return gsap.from(split.lines, {
-        yPercent: 110,
+        // Past the padded mask (see .line-mask), so the line starts fully hidden.
+        yPercent: 150,
         rotate: 2,
         duration: 1.1,
         ease: "expo.out",

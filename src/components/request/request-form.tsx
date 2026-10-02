@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "@/components/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Check, ChevronRight, Link2, Loader2, Trash2 } from "lucide-react";
 import { useRequestList, type ListItem } from "@/lib/request-list";
 import { requestSchema } from "@/lib/request-schema";
@@ -10,6 +10,7 @@ import { encodeList } from "@/lib/share";
 import { formatINR } from "@/lib/money";
 import { cn } from "@/lib/cn";
 import { QtyStepper } from "./qty-stepper";
+import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { foundersOf } from "@/lib/founders";
 import { Icon3D } from "@/components/icon3d";
 import { FitImage } from "@/components/fit-image";
@@ -125,9 +126,7 @@ export function RequestForm({ shared, teamCodes }: { shared: ListItem[]; teamCod
       <h1 className="font-display text-[clamp(3.2rem,8vw,7.5rem)] leading-[0.88] text-ink">
         Your gift <em className="text-royal">list.</em>
       </h1>
-      <p className="mt-3 max-w-xl text-lg text-ink/55">
-        Check your list, tell us how to reach you, and we&apos;ll call within a working day.
-      </p>
+      <p className="mt-3 max-w-xl text-lg text-ink/55">Check it, tell us who you are, and we&apos;ll call within a day. That&apos;s it.</p>
 
       <form onSubmit={submit} noValidate className="mt-10 grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:items-start lg:gap-16">
         {/* ── the list ─────────────────────────────────────────────────── */}
@@ -184,12 +183,13 @@ export function RequestForm({ shared, teamCodes }: { shared: ListItem[]; teamCod
           ) : list.count === 0 ? (
             <div className="flex flex-col items-center py-16 text-center">
               <Icon3D name="shopping-bags" size={96} className="size-20" />
-              <p className="mt-4 text-ink/55">Your list is empty.</p>
+              <p className="font-display mt-5 text-3xl text-ink">Your list is feeling light.</p>
+              <p className="mt-1 text-ink/55">Add a few things first. We&apos;ll handle the rest.</p>
               <Link
                 href="/catalogue"
                 className="mt-4 inline-flex rounded-full bg-royal px-6 py-3 text-sm font-semibold text-white hover:bg-aubergine"
               >
-                Browse the catalogue
+                Start shopping
               </Link>
               {errors.items && <p className="mt-4 text-sm font-medium text-red-700">{errors.items}</p>}
             </div>
@@ -229,17 +229,17 @@ export function RequestForm({ shared, teamCodes }: { shared: ListItem[]; teamCod
                 ))}
               </ul>
               <div className="flex items-baseline justify-between border-t border-black/5 pt-5">
-                <span className="text-sm text-ink/55">{list.units.toLocaleString("en-IN")} units · at retail</span>
+                <span className="text-sm text-ink/55">{list.units.toLocaleString("en-IN")} units · retail value</span>
                 <span className="text-xl font-semibold tabular-nums text-ink">{formatINR(value)}</span>
               </div>
-              <p className="mt-1 text-right text-xs text-ink/45">Bulk orders are priced lower. Your quote comes with our call.</p>
+              <p className="mt-1 text-right text-xs text-ink/45">Bulk pricing lands lower. Exact quote on the call.</p>
             </>
           )}
         </section>
 
         {/* ── contact ──────────────────────────────────────────────────── */}
         <section className="rounded-3xl bg-canvas p-6 ring-1 ring-black/5 sm:p-8 lg:sticky lg:top-24">
-          <h2 className="text-lg font-semibold text-ink">How do we reach you?</h2>
+          <h2 className="font-display text-3xl text-ink">Who&apos;s gifting?</h2>
           <div className="mt-6 space-y-4">
             <Field label="Name" error={errors.name}>
               <input value={fields.name} onChange={(e) => set("name", e.target.value)} autoComplete="name" className={input(errors.name)} />
@@ -296,9 +296,9 @@ export function RequestForm({ shared, teamCodes }: { shared: ListItem[]; teamCod
             className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-royal px-6 py-3.5 font-semibold text-white transition hover:bg-aubergine disabled:opacity-40"
           >
             {sending && <Loader2 className="size-5 animate-spin" />}
-            {sending ? "Sending…" : "Send request"}
+            {sending ? "Sending…" : "Send my list"}
           </button>
-          <p className="mt-3 text-center text-xs text-ink/45">No account, no payment. We only use this to reply.</p>
+          <p className="mt-3 text-center text-xs text-ink/45">No account. No payment. We only use this to call you back.</p>
         </section>
       </form>
     </>
@@ -311,8 +311,39 @@ export function RequestForm({ shared, teamCodes }: { shared: ListItem[]; teamCod
  */
 function Success({ refId, email, teams }: { refId: string; email: string; teams: string[] }) {
   const people = teams.flatMap((t) => foundersOf(t));
+  const burst = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      if (!burst.current || reducedMotion()) return;
+      const colours = ["#e4a7f3", "#7c4dcc", "#f0a43a", "#452a74", "#f3d9fa"];
+      const bits = Array.from({ length: 90 }, (_, i) => {
+        const b = document.createElement("span");
+        Object.assign(b.style, {
+          position: "absolute",
+          left: "50%",
+          top: "35%",
+          width: `${i % 3 ? 8 : 12}px`,
+          height: `${i % 3 ? 14 : 12}px`,
+          borderRadius: i % 3 ? "2px" : "999px",
+          background: colours[i % colours.length],
+        });
+        burst.current!.appendChild(b);
+        return b;
+      });
+      gsap.to(bits, {
+        duration: 2.6,
+        physics2D: { velocity: () => gsap.utils.random(380, 820), angle: () => gsap.utils.random(200, 340), gravity: 900 },
+        rotation: () => gsap.utils.random(-720, 720),
+        opacity: 0,
+        ease: "none",
+        onComplete: () => bits.forEach((b) => b.remove()),
+      });
+    },
+    { scope: burst },
+  );
   return (
-    <div className="mx-auto max-w-4xl animate-rise py-10 text-center">
+    <div className="relative mx-auto max-w-4xl animate-rise py-10 text-center">
+      <div ref={burst} aria-hidden className="pointer-events-none absolute inset-x-0 -top-20 h-[140%] overflow-visible" />
       {people.length > 0 && (
         <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-2">
           {people.map((p, i) => (
@@ -333,11 +364,11 @@ function Success({ refId, email, teams }: { refId: string; email: string; teams:
             You just backed <em className="scribble text-royal">{people.length} founders.</em>
           </>
         ) : (
-          <>Thank you.</>
+          <>List sent. Nice.</>
         )}
       </h1>
       <p className="mx-auto mt-6 max-w-xl text-lg text-ink/65">
-        Someone from the Mesa team will be in touch at <span className="font-semibold text-ink">{email}</span> within one working day.
+        List sent. Someone from Mesa will reach <span className="font-semibold text-ink">{email}</span> within a day. Keep your phone close.
       </p>
       <p className="mt-6 text-sm text-ink/45">
         Reference <span className="font-mono font-semibold tracking-wide text-ink">{refId}</span>

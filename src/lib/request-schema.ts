@@ -15,12 +15,12 @@ export const requestItemSchema = z.object({
 export const requestSchema = z.object({
   name: z.string().trim().min(2, "Tell us your name").max(120),
   company: z.string().trim().min(2, "Which company is this for?").max(160),
-  email: z.email("That doesn't look like an email address").max(200),
+  email: z.email("That email looks a bit off").max(200),
   phone: z
     .string()
     .trim()
-    .regex(/^[+\d][\d\s-]{8,17}$/, "Add a phone number we can call"),
-  items: z.array(requestItemSchema).min(1, "Add at least one product to your list").max(200),
+    .regex(/^[+\d][\d\s-]{8,17}$/, "We need a number to call"),
+  items: z.array(requestItemSchema).min(1, "Add at least one thing to your list").max(200),
   /** Honeypot — a real person never sees or fills it. Checked by the route, not here. */
   website: z.string().max(500).optional().default(""),
 });

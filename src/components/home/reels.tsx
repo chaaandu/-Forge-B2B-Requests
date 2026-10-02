@@ -3,6 +3,7 @@
 import Link from "@/components/link";
 import { useEffect, useRef } from "react";
 import { SplitReveal } from "@/components/motion/reveal";
+import { DragRail } from "@/components/motion/drag-rail";
 
 export interface ReelCard {
   video: string;
@@ -45,31 +46,33 @@ export function Reels({ reels }: { reels: ReelCard[] }) {
           Shot, edited and posted by the founders themselves. Sound off; it&apos;s their pitch, not ours.
         </p>
       </div>
-      <div ref={row} className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 sm:px-8">
-        {reels.map((r, i) => (
-          <Link
-            key={r.video}
-            href={`/brands/${r.brandSlug}`}
-            data-cursor="Meet"
-            className="group relative aspect-[9/16] w-[62vw] shrink-0 snap-start overflow-hidden rounded-[28px] bg-ink sm:w-[260px]"
-            style={{ transform: `rotate(${i % 2 ? 1.5 : -1.5}deg)` }}
-          >
-            <video
-              src={r.video}
-              poster={r.poster}
-              muted
-              loop
-              playsInline
-              preload="none"
-              className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105"
-            />
-            <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-4 pt-16">
-              <span className="font-display block text-2xl leading-none text-paper">{r.brand}</span>
-              <span className="mt-1 block text-xs font-semibold text-orchid">Meet the team →</span>
-            </span>
-          </Link>
-        ))}
-      </div>
+      <DragRail>
+        <div ref={row} className="flex w-max gap-4 px-5 pb-6 pt-2 sm:px-8">
+          {reels.map((r, i) => (
+            <Link
+              key={r.video}
+              href={`/brands/${r.brandSlug}`}
+              data-cursor="Meet"
+              className="group relative aspect-[9/16] w-[62vw] shrink-0 overflow-hidden rounded-[28px] bg-ink sm:w-[260px]"
+              style={{ transform: `rotate(${i % 2 ? 1.5 : -1.5}deg)` }}
+            >
+              <video
+                src={r.video}
+                poster={r.poster}
+                muted
+                loop
+                playsInline
+                preload="none"
+                className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105"
+              />
+              <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-4 pt-16">
+                <span className="font-display block text-2xl leading-none text-paper">{r.brand}</span>
+                <span className="mt-1 block text-xs font-semibold text-orchid">Meet the squad</span>
+              </span>
+            </Link>
+          ))}
+        </div>
+      </DragRail>
     </section>
   );
 }

@@ -22,7 +22,7 @@ export const REFRESH_SECONDS = 600;
 const loadLive = unstable_cache(
   async (dbUrl: string, imageBase: string, mediaBase: string | undefined): Promise<Catalog> =>
     (await buildCatalog(dbUrl, imageBase, mediaBase)).catalog,
-  ["catalog-v8"],
+  ["catalog-v9"],
   { revalidate: REFRESH_SECONDS, tags: ["catalog"] },
 );
 

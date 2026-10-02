@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getCatalog, getCollection } from "@/lib/catalog";
 import { filtersFrom } from "@/lib/filters";
 import { getOccasion } from "@/lib/occasions";
+import { allFounders } from "@/lib/founders";
 import { CatalogueBrowser } from "@/components/catalogue/catalogue-browser";
 import { CategoryStrip } from "@/components/catalogue/category-strip";
 
@@ -14,19 +15,22 @@ export default async function CataloguePage({ searchParams }: { searchParams: Se
   const initial = filtersFrom(sp);
   const collection = getCollection(initial.collection);
   const occasion = getOccasion(initial.occasion);
+  const codes = new Set(catalog.brands.map((b) => b.teamCode));
+  const foundersCount = allFounders().filter((f) => codes.has(f.teamCode)).length;
   const [title, tail] = collection
     ? [collection.name, collection.blurb]
     : occasion
       ? [occasion.title, occasion.blurb]
-      : ["Catalogue", `${catalog.totals.listings} products from ${catalog.totals.brands} founder brands`];
+      : ["The store", `${catalog.totals.listings} things, made by ${foundersCount} student founders`];
 
   return (
     <div className="mx-auto max-w-[1500px] px-5 pb-10 sm:px-8">
       <div className="pb-8 pt-12">
-        <h1 className="font-display max-w-5xl text-[clamp(3rem,7.5vw,7rem)] leading-[0.88] text-ink">
-          {title}. <em className="text-ink/35">{tail.replace(/\.$/, "")}.</em>
-        </h1>
-        <p className="mt-3 text-sm text-ink/50">Prices are retail, per unit. Bulk pricing comes with our reply.</p>
+        <h1 className="font-display text-[clamp(3.4rem,9vw,8rem)] leading-[0.88] text-ink">{title}.</h1>
+        <p className="font-display-straight mt-4 max-w-2xl text-[clamp(1.3rem,2.2vw,1.9rem)] leading-snug text-ink/60">
+          {tail.replace(/\.$/, "")}.
+        </p>
+        <p className="mt-3 text-sm text-ink/45">Retail prices, per gift. Bulk pricing lands lower, on the call.</p>
       </div>
       {!collection && !occasion && (
         <div className="mb-8">

@@ -132,11 +132,74 @@
   }
 }
 
-/* SplitText line masks. */
+/* SplitText line masks.
+   SplitText clips each line to exactly its own box (overflow: clip). With a
+   display face set at 0.86 line-height, and Fraunces italics leaning past
+   their advance width, that box shaves off descenders, ascenders and the
+   swash of an italic f or y. The mask gets room on every side, and the same
+   room is taken back with negative margins, so nothing moves. */
 .line-mask {
+  padding: 0.22em 0.3em 0.26em;
+  margin: -0.22em -0.3em -0.26em;
+}
+.line {
+  /* Italic overhang, kept inside the padded mask rather than clipped. */
+  padding-right: 0.06em;
+}
+
+/* Text that rolls up to a copy of itself on hover (nav, buttons). */
+.roll {
+  display: inline-grid;
   overflow: clip;
-  padding-bottom: 0.08em;
-  margin-bottom: -0.08em;
+  overflow-clip-margin: 0.2em;
+  vertical-align: top;
+}
+.roll > span {
+  grid-area: 1 / 1;
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.roll > span + span {
+  transform: translateY(105%);
+}
+:is(a, button):hover > .roll > span:first-child,
+:is(a, button):focus-visible > .roll > span:first-child,
+.group:hover .roll > span:first-child {
+  transform: translateY(-105%);
+}
+:is(a, button):hover > .roll > span + span,
+:is(a, button):focus-visible > .roll > span + span,
+.group:hover .roll > span + span {
+  transform: translateY(0);
+}
+
+/* First-visit intro: shown only when an inline script in <head> marks the
+   page (first load of the session, motion allowed). If the script that plays
+   it never runs, it gets out of the way by itself after four seconds. */
+.preloader {
+  display: none;
+}
+html.intro .preloader {
+  display: flex;
+  animation: preloader-failsafe 0.01s 4s forwards;
+}
+@keyframes preloader-failsafe {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+html.intro body {
+  overflow: hidden;
+}
+
+/* Variable-font letters for the footer wordmark: the pointer sets the axes. */
+.kinetic > span {
+  display: inline-block;
+  font-variation-settings:
+    "wght" var(--w, 380),
+    "SOFT" var(--s, 100),
+    "WONK" 1,
+    "opsz" 144;
 }
 
 /* Hand-drawn orchid underline, for the words that matter. */

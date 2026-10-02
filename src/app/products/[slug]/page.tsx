@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const b = catalog.brand(l.brand)!;
   return {
     title: `${l.title} by ${b.name}`,
-    description: l.description ?? `${l.title} from ${b.name} — ${b.tagline}.`,
+    description: l.description ?? `${l.title} by ${b.name}. ${b.tagline}.`,
     openGraph: { images: l.images.slice(0, 1) },
   };
 }

@@ -58,7 +58,7 @@ export function QuickAdd({ listing, brand, onClose }: { listing: Listing; brand:
               href={`/products/${listing.slug}`}
               className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-royal hover:text-violet"
             >
-              See full details <ArrowUpRight className="size-4" />
+              Full details <ArrowUpRight className="size-4" />
             </Link>
           </div>
         </div>

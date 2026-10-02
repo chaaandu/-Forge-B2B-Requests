@@ -9,7 +9,6 @@ import { SplitReveal, Stagger } from "@/components/motion/reveal";
 export const metadata: Metadata = { title: "The founders" };
 export const revalidate = 600;
 
-const TINTS = ["bg-orchid-soft", "bg-paper-2", "bg-mist-2", "bg-paper-3"];
 const inr = (n: number) => `₹${new Intl.NumberFormat("en-IN").format(Math.round(n))}`;
 
 export default async function BrandsPage() {
@@ -25,26 +24,23 @@ export default async function BrandsPage() {
           {founders} founders. <em className="text-royal">{brands.length} first companies.</em>
         </SplitReveal>
         <p className="max-w-md text-lg leading-snug text-ink/65 lg:justify-self-end">
-          Every team here started a company this year in Forge, Mesa&apos;s venture-building programme. They source, make, price and sell
-          everything themselves. A bulk order from you is real revenue for one of them.
+          Each squad started a company this year in Forge, Mesa&apos;s venture-building year. They source it, make it, price it and sell it.
+          Your order is real revenue.
         </p>
       </div>
 
       <Stagger className="grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-        {brands.map((b, i) => {
+        {brands.map((b) => {
           const people = foundersOf(b.teamCode);
           const sold = impact.byTeam[b.teamCode]?.revenue ?? 0;
           return (
             <Link key={b.slug} href={`/brands/${b.slug}`} data-cursor="Meet" className="group block">
-              <div
-                className={`relative overflow-hidden rounded-[32px] ${TINTS[i % TINTS.length]} px-6 pt-10 transition duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:rounded-[48px]`}
-              >
-                <TeamLineup
-                  people={people}
-                  names={false}
-                  sizes="220px"
-                  className="transition duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
-                />
+              {/* One person width for every card (a share of the card's own width), so every
+                  head is the same size whether the squad is two or four. */}
+              <div className="@container relative overflow-hidden rounded-[32px] bg-orchid-soft transition-colors duration-500 group-hover:bg-orchid">
+                <div className="flex aspect-[1.9] items-end justify-center pt-[6%]">
+                  <TeamLineup people={people} hop sizes="200px" className="[--person:31cqw]" />
+                </div>
               </div>
               <div className="mt-5 flex items-start justify-between gap-4">
                 <div className="min-w-0">

@@ -2,49 +2,74 @@
 
 import Image from "next/image";
 import Link from "@/components/link";
-import { useRef } from "react";
-import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
+import { useRef, useState } from "react";
+import { ArrowUpRight, X } from "lucide-react";
+import { finePointer, gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { SplitReveal } from "@/components/motion/reveal";
+import { useTransitionNav } from "@/components/motion/transition";
+import { cn } from "@/lib/cn";
 
 export interface WallFace {
   name: string;
   photo: string;
   brand: string;
   brandSlug: string;
+  teamCode: string;
+  sold: number;
 }
 
-const TINTS = ["bg-orchid-soft", "bg-paper-2", "bg-mist-2", "bg-paper-3"];
+const inr = (n: number) => `₹${new Intl.NumberFormat("en-IN").format(Math.round(n))}`;
 
 /**
- * Every founder in the cohort, on one wall. Faces sit in black and white
- * until you reach for one — then that person comes into colour with their
- * name and company, and everyone else steps back.
+ * Every founder in the cohort, on one wall, all in the same black and white
+ * on the same ground. Reach for one and their whole squad comes into colour
+ * while everyone else steps back, with a card that follows the pointer.
+ * On a phone, a tap opens that card at the bottom of the screen instead.
  */
 export function FounderWall({ faces }: { faces: WallFace[] }) {
   const ref = useRef<HTMLDivElement>(null);
+  const card = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState<number | null>(null);
+  const [sheet, setSheet] = useState<number | null>(null);
+  const go = useTransitionNav();
+
   useGSAP(
     () => {
-      if (!ref.current || reducedMotion()) return;
-      // The inner wrapper, never the link: the link has a CSS opacity
-      // transition for the hover-dim, and GSAP reading a property mid-transition
-      // captures the wrong end value (the faces "animated" to invisible).
-      gsap.from(ref.current.querySelectorAll("[data-face-in]"), {
-        scale: 0.2,
-        opacity: 0,
-        duration: 1.1,
-        ease: "expo.out",
-        stagger: { each: 0.012, from: "random" },
-        scrollTrigger: { trigger: ref.current, start: "top 80%", once: true },
-      });
+      if (!ref.current) return;
+      if (!reducedMotion())
+        gsap.from(ref.current.querySelectorAll("[data-face-in]"), {
+          scale: 0.2,
+          opacity: 0,
+          duration: 1.1,
+          ease: "expo.out",
+          stagger: { each: 0.012, from: "random" },
+          scrollTrigger: { trigger: ref.current, start: "top 80%", once: true },
+        });
+      if (!finePointer() || !card.current) return;
+      const x = gsap.quickTo(card.current, "x", { duration: 0.5, ease: "power3" });
+      const y = gsap.quickTo(card.current, "y", { duration: 0.5, ease: "power3" });
+      const move = (e: PointerEvent) => {
+        // Keep the card on screen: flip to the left of the pointer near the right edge.
+        const flip = e.clientX > window.innerWidth - 340;
+        x(e.clientX + (flip ? -300 : 28));
+        y(e.clientY + 24);
+      };
+      window.addEventListener("pointermove", move);
+      return () => window.removeEventListener("pointermove", move);
     },
     { scope: ref },
   );
 
-  // One tint per team, so teammates read as a group on the wall.
-  const tints = faces.reduce<number[]>(
-    (out, f, i) => [...out, i === 0 ? 0 : f.brand === faces[i - 1].brand ? out[i - 1] : (out[i - 1] + 1) % TINTS.length],
-    [],
-  );
+  const team = (i: number | null) => (i === null ? null : faces[i].teamCode);
+  const lit = team(active ?? sheet);
+  const info = (i: number) => {
+    const f = faces[i];
+    const mates = faces.filter((m) => m.teamCode === f.teamCode && m.photo !== f.photo).map((m) => m.name.split(" ")[0]);
+    return { f, mates };
+  };
+
+  const shown = active ?? sheet;
+  const detail = shown !== null ? info(shown) : null;
 
   return (
     <section id="founders" className="mx-auto max-w-[1500px] scroll-mt-16 px-5 py-24 sm:px-8">
@@ -53,42 +78,107 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
           Meet the <em className="text-royal">{faces.length}.</em>
         </SplitReveal>
         <p className="max-w-md text-lg leading-snug text-ink/65 md:justify-self-end">
-          Every face here is a founder in Forge, Mesa&apos;s venture-building year. Reach for one to meet them; click to see what they make.
+          Real founders. Real hustle. <span className="hidden md:inline">Hover a face to meet the squad, click to see what they make.</span>
+          <span className="md:hidden">Tap a face to meet the squad.</span>
         </p>
       </div>
 
-      <div ref={ref} className="group/wall grid grid-cols-6 gap-1.5 sm:grid-cols-9 sm:gap-2 lg:grid-cols-13">
+      <div ref={ref} className="grid grid-cols-6 gap-1.5 sm:grid-cols-9 sm:gap-2 lg:grid-cols-13" onPointerLeave={() => setActive(null)}>
         {faces.map((f, i) => {
-          const tint = tints[i];
+          const on = lit === f.teamCode;
+          const dim = lit !== null && !on;
           return (
-            <Link
+            <button
               key={f.photo}
-              href={`/brands/${f.brandSlug}`}
-              data-face
-              data-cursor="Meet"
+              type="button"
               aria-label={`${f.name}, ${f.brand}`}
-              className="group/face relative aspect-square transition-opacity duration-500 group-hover/wall:opacity-40 hover:!opacity-100"
+              onPointerEnter={(e) => e.pointerType === "mouse" && setActive(i)}
+              onClick={(e) => {
+                if (finePointer() && (e.nativeEvent as PointerEvent).pointerType !== "touch") go?.(`/brands/${f.brandSlug}`);
+                else setSheet(i);
+              }}
+              data-cursor="Meet"
+              className="relative aspect-square"
             >
               <span data-face-in className="absolute inset-0 block">
                 <span
-                  className={`absolute inset-0 overflow-hidden rounded-full ${TINTS[tint]} transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/face:scale-[1.18] group-hover/face:z-10`}
+                  className={cn(
+                    "absolute inset-0 overflow-hidden rounded-full transition-[transform,opacity,background-color] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
+                    on ? "z-10 scale-[1.12] bg-orchid-soft" : "bg-paper-2",
+                    dim && "opacity-30",
+                  )}
                 >
                   <Image
                     src={f.photo}
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 110px, (min-width: 640px) 11vw, 16vw"
-                    className="object-cover object-top grayscale transition duration-500 group-hover/face:grayscale-0"
+                    className={cn("object-cover object-top transition duration-500", on ? "grayscale-0" : "grayscale")}
                   />
                 </span>
-                <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-2 -translate-x-1/2 whitespace-nowrap rounded-full bg-ink px-3 py-1.5 text-center text-[11px] font-semibold text-paper opacity-0 shadow-xl transition duration-300 group-hover/face:opacity-100">
-                  {f.name}
-                  <span className="block text-[10px] font-normal text-orchid">{f.brand}</span>
-                </span>
               </span>
-            </Link>
+            </button>
           );
         })}
+      </div>
+
+      {/* Pointer card */}
+      <div
+        ref={card}
+        aria-hidden
+        className={cn(
+          "pointer-events-none fixed left-0 top-0 z-50 hidden w-[280px] rounded-3xl bg-ink p-5 text-paper shadow-2xl transition-opacity duration-300 md:block",
+          active !== null ? "opacity-100" : "opacity-0",
+        )}
+      >
+        {active !== null && detail && (
+          <>
+            <p className="font-display text-3xl leading-[0.95]">{detail.f.name}</p>
+            <p className="mt-2 text-sm font-semibold text-orchid">Co-founder, {detail.f.brand}</p>
+            {detail.mates.length > 0 && <p className="mt-1 text-sm text-paper/60">with {detail.mates.join(" & ")}</p>}
+            {detail.f.sold > 0 && (
+              <p className="mt-4 border-t border-paper/10 pt-3 text-sm text-paper/70">
+                <span className="font-display text-2xl text-paper">{inr(detail.f.sold)}</span> sold so far, as a squad
+              </p>
+            )}
+            <p className="mt-3 text-xs font-bold uppercase tracking-[0.2em] text-paper/40">Click to meet the squad</p>
+          </>
+        )}
+      </div>
+
+      {/* Phone sheet */}
+      <div
+        className={cn(
+          "fixed inset-x-3 bottom-3 z-50 rounded-3xl bg-ink p-5 text-paper shadow-2xl transition duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden",
+          sheet !== null ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-[120%] opacity-0",
+        )}
+      >
+        {sheet !== null && detail && (
+          <div className="flex items-start gap-4">
+            <span className="relative size-16 shrink-0 overflow-hidden rounded-full bg-orchid-soft">
+              <Image src={detail.f.photo} alt="" fill sizes="64px" className="object-cover object-top" />
+            </span>
+            <div className="min-w-0 flex-1">
+              <p className="font-display text-2xl leading-none">{detail.f.name}</p>
+              <p className="mt-1.5 text-sm font-semibold text-orchid">Co-founder, {detail.f.brand}</p>
+              {detail.mates.length > 0 && <p className="text-sm text-paper/60">with {detail.mates.join(" & ")}</p>}
+              <Link
+                href={`/brands/${detail.f.brandSlug}`}
+                className="mt-4 inline-flex items-center gap-1 rounded-full bg-orchid px-4 py-2 text-sm font-semibold text-aubergine"
+              >
+                Meet the squad <ArrowUpRight className="size-4" />
+              </Link>
+            </div>
+            <button
+              type="button"
+              aria-label="Close"
+              onClick={() => setSheet(null)}
+              className="grid size-9 place-items-center rounded-full bg-paper/10"
+            >
+              <X className="size-4" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

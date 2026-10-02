@@ -55,7 +55,7 @@ export function ProductCard({
         <button
           type="button"
           onClick={onQuickAdd}
-          aria-label={inList ? `${listing.title} is on your list — change quantity` : `Add ${listing.title} to your gift list`}
+          aria-label={inList ? `${listing.title} is on your list. Change quantity` : `Add ${listing.title} to your gift list`}
           className={cn(
             "absolute bottom-3 right-3 grid size-11 place-items-center rounded-full shadow-lg shadow-black/10 transition duration-300 active:scale-90",
             inList ? "bg-aubergine text-orchid" : "bg-paper text-ink hover:rotate-90 hover:bg-orchid",
