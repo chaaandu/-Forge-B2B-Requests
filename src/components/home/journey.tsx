@@ -319,7 +319,12 @@ export function Journey({ data }: { data: JourneyData }) {
         });
 
         gsap.set(chaps.slice(1), { opacity: 0, yPercent: 40 });
-        gsap.set(scs.slice(1), { clipPath: "inset(100% 0% 0% 0% round 32px)", y: 60 });
+        // Scenes travel and fade (no clipping wipe), so each card keeps its
+        // whole shadow the entire way, and only transform and opacity move.
+        gsap.set(scs.slice(1), { autoAlpha: 0, y: 90, scale: 0.94 });
+        // Stations ahead wait at 60%, shrunk about their own centre so they
+        // sit exactly on the line.
+        gsap.set(dots.slice(1), { scale: 0.6, transformOrigin: "50% 50%" });
         gsap.set(path, { drawSVG: "0%" });
         gsap.set(rider, { motionPath: ride(0, 0) });
 
@@ -346,17 +351,12 @@ export function Journey({ data }: { data: JourneyData }) {
           const t = at + 1.1;
           tl.to(chaps[i], { opacity: 0, yPercent: -40, duration: 0.45, ease: "power2.in" }, t)
             .to(chaps[i + 1], { opacity: 1, yPercent: 0, duration: 0.55, ease: "power3.out" }, t + 0.45)
-            .to(scs[i], { clipPath: "inset(0% 0% 100% 0% round 32px)", y: -60, duration: 0.55, ease: "power3.inOut" }, t)
-            .to(scs[i + 1], { clipPath: "inset(0% 0% 0% 0% round 32px)", y: 0, duration: 0.6, ease: "power3.inOut" }, t + 0.2)
+            .to(scs[i], { autoAlpha: 0, y: -70, scale: 0.96, duration: 0.5, ease: "power2.in" }, t)
+            .to(scs[i + 1], { autoAlpha: 1, y: 0, scale: 1, duration: 0.7, ease: "power3.out" }, t + 0.42)
             .to(reel, { yPercent: -((i + 1) * 20), duration: 0.6, ease: "power3.inOut" }, t + 0.1)
             .to(path, { drawSVG: `${(i + 1) * 25}%`, duration: 0.9, ease: "power1.inOut" }, t)
             .to(rider, { motionPath: ride(i * 0.25, (i + 1) * 0.25), duration: 0.9, ease: "power1.inOut" }, t)
-            .fromTo(
-              dots[i + 1],
-              { scale: 0.6 },
-              { scale: 1, fill: "#452a74", transformOrigin: "50% 50%", duration: 0.25, ease: "back.out(3)" },
-              t + 0.75,
-            );
+            .to(dots[i + 1], { scale: 1, fill: "#452a74", duration: 0.25, ease: "back.out(3)" }, t + 0.75);
         }
       });
 

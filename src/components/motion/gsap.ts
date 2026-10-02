@@ -12,6 +12,10 @@ import { useGSAP } from "@gsap/react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, SplitText, Draggable, InertiaPlugin, MotionPathPlugin, DrawSVGPlugin, Physics2DPlugin, useGSAP);
+  // A phone's address bar sliding in and out resizes the viewport on every
+  // scroll direction change; re-measuring every trigger each time is what
+  // makes scroll-driven pieces jump on iOS. Real resizes still refresh.
+  ScrollTrigger.config({ ignoreMobileResize: true });
 }
 
 /*

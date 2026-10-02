@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "@/components/link";
+import { ArrowUpRight } from "lucide-react";
 import { getCatalog } from "@/lib/catalog";
 import { allFounders } from "@/lib/founders";
 import { SplitReveal } from "@/components/motion/reveal";
@@ -9,21 +10,15 @@ import { Roll } from "./header";
 import { KineticWord } from "./kinetic-word";
 import { BackToTop } from "./back-to-top";
 
-const PAGES = [
-  { href: "/catalogue", label: "Store" },
-  { href: "/brands", label: "Founders" },
-  { href: "/request", label: "Gift list" },
-];
-
 const MESA = [
-  { href: "https://fb.mesaschool.co.in/live", label: "Live leaderboard" },
-  { href: "https://mesaschool.co", label: "mesaschool.co" },
+  { href: "https://fb.mesaschool.co.in/live", label: "Live leaderboard", note: "What every team has sold, updated live." },
+  { href: "https://mesaschool.co", label: "Mesa School of Business", note: "The school behind Forge." },
 ];
 
 /**
- * Four beats and nothing else: the ask, the people, where to go next, and
- * the sign-off. The faces run past at the pace you scroll; the sign-off
- * leans toward your pointer.
+ * Four beats and nothing else: the ask, the people, Mesa's two doors (the
+ * live leaderboard and the school), and the sign-off. The faces run past at
+ * the pace you scroll; the sign-off leans toward your pointer.
  */
 export async function Footer() {
   const catalog = await getCatalog();
@@ -65,31 +60,28 @@ export async function Footer() {
         ))}
       </VelocityMarquee>
 
-      <nav
-        aria-label="Footer"
-        className="relative mx-auto flex max-w-[1500px] items-end justify-between gap-8 px-5 pb-4 pt-14 sm:px-8 sm:pt-20"
-      >
-        <ul>
-          {PAGES.map((p) => (
-            <li key={p.href}>
-              <Link
-                href={p.href}
-                className="group font-display inline-flex text-[clamp(2.2rem,5vw,4rem)] leading-[1.08] transition-colors hover:text-orchid"
-              >
-                <Roll>{p.label}</Roll>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <ul className="space-y-2.5 pb-2 text-right text-sm font-semibold text-paper/60">
-          {MESA.map((m) => (
-            <li key={m.href}>
-              <a href={m.href} target="_blank" rel="noreferrer" className="whitespace-nowrap transition-colors hover:text-orchid">
-                {m.label} ↗
-              </a>
-            </li>
-          ))}
-        </ul>
+      <nav aria-label="Mesa" className="relative mx-auto grid max-w-[1500px] px-5 pt-10 sm:grid-cols-2 sm:gap-x-10 sm:px-8 sm:pt-16">
+        {MESA.map((m) => (
+          <a
+            key={m.href}
+            href={m.href}
+            target="_blank"
+            rel="noreferrer"
+            className="group flex items-end justify-between gap-6 border-t border-paper/15 py-7 sm:py-9"
+          >
+            <span className="min-w-0">
+              <span className="font-display block text-[clamp(1.9rem,3.6vw,3.2rem)] leading-[1.05] transition-colors duration-300 group-hover:text-orchid">
+                {m.label}
+              </span>
+              <span className="mt-2.5 block text-sm text-paper/55">{m.note}</span>
+            </span>
+            <ArrowUpRight
+              aria-hidden
+              strokeWidth={1.5}
+              className="size-9 shrink-0 text-paper/45 transition duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-1.5 group-hover:translate-x-1.5 group-hover:text-orchid sm:size-11"
+            />
+          </a>
+        ))}
       </nav>
 
       <div className="relative px-2 pb-4 pt-6">

@@ -19,7 +19,9 @@ export function SmoothScroll() {
 
   useEffect(() => {
     if (reducedMotion() || window.matchMedia("(pointer: coarse)").matches) return;
-    lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 0.9 });
+    // A touch more glide than Lenis's default (0.1), the long-tail ease of
+    // most Awwwards sites, without feeling floaty.
+    lenis = new Lenis({ lerp: 0.08, wheelMultiplier: 0.9 });
     lenis.on("scroll", ScrollTrigger.update);
     const tick = (time: number) => lenis?.raf(time * 1000);
     gsap.ticker.add(tick);

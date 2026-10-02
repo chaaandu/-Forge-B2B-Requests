@@ -75,7 +75,7 @@ export function Header() {
       <header
         className={cn(
           "sticky top-0 z-40 transition-[background,box-shadow] duration-500",
-          scrolled && !menu ? "bg-paper/80 shadow-[0_1px_0_rgb(27_20_33/0.08)] backdrop-blur-xl" : "bg-transparent",
+          scrolled && !menu ? "bg-paper/85 shadow-[0_1px_0_rgb(27_20_33/0.08)] backdrop-blur-md" : "bg-transparent",
         )}
       >
         <div className="mx-auto flex h-16 max-w-[1500px] items-center justify-between gap-4 px-5 sm:px-8">
