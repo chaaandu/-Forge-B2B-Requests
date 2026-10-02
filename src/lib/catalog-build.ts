@@ -31,6 +31,7 @@ import pg from "pg";
 import brandsFile from "../../data/brands.json";
 import curationFile from "../../data/curation.json";
 import type { Brand, Catalog, CollectionId, Listing, Variant } from "./catalog-types";
+import { ventureName } from "./venture-name";
 
 type BrandEntry = Omit<Brand, "logo">;
 const brandEntries = brandsFile as BrandEntry[];
@@ -262,7 +263,7 @@ export async function buildCatalog(dbUrl: string, imageBase: string, mediaBase?:
 
   const brands: Brand[] = brandEntries
     .filter((b) => listings.some((l) => l.brand === b.slug))
-    .map((b) => ({ ...b, logo: logos.get(b.teamCode) ?? null }));
+    .map((b) => ({ ...b, name: ventureName(b.name), logo: logos.get(b.teamCode) ?? null }));
 
   return {
     catalog: { generatedAt: new Date().toISOString(), brands, listings },

@@ -1,3 +1,5 @@
+import { canonicalBrand } from "./brand-teams";
+
 /**
  * A request list as a URL-safe string: `brand~sku~qty` joined by `|`, then
  * base64url. Only identities and quantities travel — names and prices are
@@ -21,7 +23,7 @@ export function decodeList(encoded: string): SharedLine[] {
       .split("|")
       .map((part) => part.split("~"))
       .filter((p) => p.length === 3)
-      .map(([brand, sku, qty]) => ({ brand, sku, qty: Math.max(1, Math.round(Number(qty)) || 1) }))
+      .map(([brand, sku, qty]) => ({ brand: canonicalBrand(brand), sku, qty: Math.max(1, Math.round(Number(qty)) || 1) }))
       .slice(0, 200);
   } catch {
     return [];

@@ -9,6 +9,7 @@
  */
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { MAX_QTY } from "./request-schema";
+import { canonicalBrand } from "./brand-teams";
 
 export interface ListItem {
   brand: string;
@@ -59,8 +60,9 @@ export function RequestListProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       const raw = localStorage.getItem(KEY);
+      // A list saved before a brand was renamed still points at its old slug.
       // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time hydration from storage
-      if (raw) setItems(JSON.parse(raw));
+      if (raw) setItems((JSON.parse(raw) as ListItem[]).map((i) => ({ ...i, brand: canonicalBrand(i.brand) })));
     } catch {
       /* a corrupt entry is simply ignored */
     }

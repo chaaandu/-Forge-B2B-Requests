@@ -3,6 +3,7 @@ import { unstable_cache } from "next/cache";
 import snapshot from "../../data/catalog.json";
 import { buildCatalog } from "./catalog-build";
 import { urlEnv } from "./env";
+import { canonicalBrand } from "./brand-teams";
 import { COLLECTIONS, type Brand, type Catalog, type CollectionId, type Listing } from "./catalog-types";
 
 /**
@@ -22,7 +23,7 @@ export const REFRESH_SECONDS = 600;
 const loadLive = unstable_cache(
   async (dbUrl: string, imageBase: string, mediaBase: string | undefined): Promise<Catalog> =>
     (await buildCatalog(dbUrl, imageBase, mediaBase)).catalog,
-  ["catalog-v9"],
+  ["catalog-v10"],
   { revalidate: REFRESH_SECONDS, tags: ["catalog"] },
 );
 
@@ -87,13 +88,14 @@ function view(c: Catalog): CatalogView {
 
   const v: CatalogView = {
     ...c,
-    brand: (slug) => brands.get(slug),
+    brand: (slug) => brands.get(canonicalBrand(slug)),
     listing: (slug) => listings.get(slug),
     listingsOf: (slug) => c.listings.filter((l) => l.brand === slug),
     listingsIn: (id) => c.listings.filter((l) => l.collection === id),
     findVariant: (brandSlug, sku) => {
-      const hit = skus.get(`${brandSlug}:${sku}`);
-      return hit && { ...hit, brand: brands.get(brandSlug)! };
+      const slug = canonicalBrand(brandSlug);
+      const hit = skus.get(`${slug}:${sku}`);
+      return hit && { ...hit, brand: brands.get(slug)! };
     },
     totals: { brands: c.brands.length, listings: c.listings.length, skus: skus.size },
   };

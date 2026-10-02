@@ -67,7 +67,7 @@ export function Header() {
       >
         <div className="mx-auto flex h-16 max-w-[1500px] items-center justify-between gap-4 px-5 sm:px-8">
           <Link href="/" aria-label="Forge for Business, home" onClick={() => setMenu(false)} className="relative z-50">
-            <Lockup tone={menu ? "dark" : "light"} />
+            <Lockup compact tone={menu ? "dark" : "light"} />
           </Link>
 
           <nav className="hidden items-center gap-1 rounded-full bg-ink/[0.05] p-1 md:flex">

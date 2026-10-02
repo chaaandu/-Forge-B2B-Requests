@@ -5,6 +5,7 @@ import { ChevronRight } from "lucide-react";
 import { getCatalog, getCollection } from "@/lib/catalog";
 import { ProductView } from "@/components/product/product-view";
 import { ProductAside } from "@/components/product/product-aside";
+import { Roll } from "@/components/layout/header";
 import { FounderStack } from "@/components/founder-stack";
 import { getImpact } from "@/lib/impact";
 import { ListingRail } from "@/components/home/listing-rail";
@@ -80,10 +81,10 @@ export default async function ProductPage({ params }: { params: Params }) {
 
       {more.length > 0 && (
         <section className="mt-24">
-          <div className="mb-8 flex items-end justify-between">
-            <h2 className="font-display text-[clamp(2.4rem,5vw,4.5rem)] leading-[0.9] text-ink">More from {brand.name}.</h2>
-            <Link href={`/brands/${brand.slug}`} className="text-sm font-semibold text-violet hover:underline">
-              See all
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
+            <h2 className="font-display min-w-0 text-[clamp(2.4rem,5vw,4.5rem)] leading-[0.9] text-ink">More from {brand.name}.</h2>
+            <Link href={`/brands/${brand.slug}`} className="group shrink-0 whitespace-nowrap text-sm font-semibold text-violet">
+              <Roll>See all</Roll>
             </Link>
           </div>
           <ListingRail listings={more} brands={[brand]} />

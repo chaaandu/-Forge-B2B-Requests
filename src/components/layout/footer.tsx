@@ -28,23 +28,22 @@ export async function Footer() {
       <div aria-hidden className="pointer-events-none absolute -left-40 top-0 size-[620px] rounded-full bg-violet/25 blur-[140px]" />
 
       <div className="relative mx-auto max-w-[1500px] px-5 pt-24 sm:px-8 sm:pt-32">
-        <p className="text-xs font-bold uppercase tracking-[0.25em] text-orchid">Ready when you are</p>
-        <SplitReveal className="font-display mt-6 max-w-5xl text-[clamp(3.2rem,9vw,9rem)] leading-[0.9]">
+        <SplitReveal className="font-display max-w-5xl text-[clamp(3.2rem,9vw,9rem)] leading-[0.9]">
           Gift like it <em className="text-orchid">matters.</em>
         </SplitReveal>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-10 flex items-center gap-2.5 sm:gap-4">
           <Magnetic>
             <Link
               href="/catalogue"
               data-cursor="Go"
-              className="group inline-flex rounded-full bg-orchid px-8 py-5 font-semibold text-aubergine transition-colors hover:bg-paper"
+              className="group inline-flex whitespace-nowrap rounded-full bg-orchid px-5 py-3.5 text-[15px] font-semibold text-aubergine transition-colors hover:bg-paper sm:px-8 sm:py-5 sm:text-base"
             >
               <Roll>Start gifting</Roll>
             </Link>
           </Magnetic>
           <Link
             href="/brands"
-            className="group inline-flex rounded-full border border-paper/25 px-8 py-5 font-semibold transition hover:border-paper"
+            className="group inline-flex whitespace-nowrap rounded-full border border-paper/25 px-5 py-3.5 text-[15px] font-semibold transition hover:border-paper sm:px-8 sm:py-5 sm:text-base"
           >
             <Roll>Meet the founders</Roll>
           </Link>
@@ -59,22 +58,22 @@ export async function Footer() {
         ))}
       </VelocityMarquee>
 
-      <div className="relative mx-auto grid max-w-[1500px] gap-12 px-5 py-16 text-sm sm:px-8 md:grid-cols-[1.6fr_1fr_1fr_1fr]">
-        <div>
+      <div className="relative mx-auto grid max-w-[1500px] grid-cols-2 gap-x-6 gap-y-12 px-5 py-16 text-sm sm:px-8 sm:grid-cols-3 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+        <div className="col-span-2 sm:col-span-3 lg:col-span-1">
           <Lockup tone="dark" />
           <p className="mt-6 max-w-sm leading-relaxed text-paper/60">
             {faces.length} founders, {catalog.totals.brands} first companies, all started in Forge, the venture-building year at Mesa School
             of Business. Every order is real revenue.
           </p>
           {impact.revenue > 0 && (
-            <dl className="mt-8 grid max-w-sm grid-cols-2 gap-6">
+            <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-5">
               <div>
                 <dd className="font-display text-3xl text-orchid">{inr(impact.revenue)}</dd>
-                <dt className="mt-1 text-[11px] uppercase tracking-[0.18em] text-paper/45">earned so far</dt>
+                <dt className="mt-1 text-sm text-paper/50">earned so far</dt>
               </div>
               <div>
                 <dd className="font-display text-3xl text-paper">{impact.units.toLocaleString("en-IN")}</dd>
-                <dt className="mt-1 text-[11px] uppercase tracking-[0.18em] text-paper/45">products sold</dt>
+                <dt className="mt-1 text-sm text-paper/50">products sold</dt>
               </div>
             </dl>
           )}

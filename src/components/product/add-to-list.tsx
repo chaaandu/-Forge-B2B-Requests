@@ -151,27 +151,31 @@ export function AddToList({
         </p>
         <div className="flex flex-wrap items-center gap-2">
           <QtyStepper value={qty} onChange={setQty} />
-          {PRESETS.map((p) => (
-            <button
-              key={p}
-              type="button"
-              onClick={() => setQty(p)}
-              aria-pressed={qty === p}
-              className={cn(
-                "rounded-full px-3 py-2 text-xs font-semibold tabular-nums transition",
-                qty === p ? "bg-royal text-white" : "bg-tile text-ink/60 hover:text-ink",
-              )}
-            >
-              {p}
-            </button>
-          ))}
+          {/* The presets wrap as one group, never one stray number on its own line. */}
+          <div className="flex gap-1.5">
+            {PRESETS.map((p) => (
+              <button
+                key={p}
+                type="button"
+                onClick={() => setQty(p)}
+                aria-pressed={qty === p}
+                className={cn(
+                  "rounded-full px-3 py-2 text-xs font-semibold tabular-nums transition",
+                  qty === p ? "bg-royal text-white" : "bg-tile text-ink/60 hover:text-ink",
+                )}
+              >
+                {p}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       <button
         type="button"
         onClick={add}
-        disabled={!variant}
+        // Until the page is interactive a click would be lost, so the button says so.
+        disabled={!variant || !list.ready}
         className={cn(
           "flex w-full items-center justify-center gap-2 rounded-full px-6 py-4 font-semibold text-white transition disabled:opacity-40",
           justAdded ? "bg-aubergine" : "bg-royal hover:bg-aubergine",

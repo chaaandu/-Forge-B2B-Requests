@@ -50,8 +50,7 @@ export function ImpactCalculator({ cohortLast7, cohortTotal, founders }: { cohor
       <div aria-hidden className="pointer-events-none absolute -bottom-60 -left-40 size-[520px] rounded-full bg-orchid/10 blur-[120px]" />
       <div className="relative mx-auto grid max-w-[1500px] gap-14 px-5 py-24 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:py-36">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-orchid">Do the maths</p>
-          <SplitReveal className="font-display mt-6 text-[clamp(2.8rem,6vw,6rem)] leading-[0.92]">
+          <SplitReveal className="font-display text-[clamp(2.8rem,6vw,6rem)] leading-[0.92]">
             Same budget. <em className="text-orchid">Way more impact.</em>
           </SplitReveal>
           <div className="mt-14 space-y-12">

@@ -52,7 +52,6 @@ export function Manifesto({ faces, products }: { faces: string[]; products: stri
 
   return (
     <section className="mx-auto max-w-[1500px] px-5 py-32 sm:px-8 md:py-44">
-      <p className="mb-10 text-xs font-bold uppercase tracking-[0.25em] text-violet">The pitch, in one breath</p>
       <div ref={ref} className="font-display-straight text-[clamp(2rem,4.6vw,4.6rem)] leading-[1.08] text-ink">
         {text.map((piece, i) =>
           typeof piece === "string" ? (

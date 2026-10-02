@@ -47,32 +47,33 @@ export default async function Home() {
         .slice(0, 1)
         .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug })),
     )
-    .slice(0, 8);
+    .slice(0, 10);
 
   const hampers = catalog
     .listingsIn("hampers")
     .filter((l) => l.images.length)
     .sort((a, b) => Number(/hamper|gift box/i.test(b.title)) - Number(/hamper|gift box/i.test(a.title)));
 
-  // The journey's example: a real list of real hampers, a real squad, the real top five.
-  const star = byRevenue.find((b) => foundersOf(b.teamCode).length === 3) ?? byRevenue[0];
+  // The journey's example: a real list of real hampers (150 gifts in all),
+  // real faces from across the cohort, and the live top five.
   const listItems = hampers.slice(0, 4);
   const listTeams = [...new Set(listItems.map((l) => catalog.brand(l.brand)!.teamCode))];
-  const board = byRevenue.slice(0, 5).map((b) => ({ brand: b.name, revenue: sold(b.teamCode) }));
   const journey = {
     list: listItems.map((l, i) => ({
       title: l.title,
       brand: catalog.brand(l.brand)!.name,
       image: l.images[0],
-      qty: [150, 150, 60, 25][i] ?? 50,
+      qty: [80, 40, 20, 10][i] ?? 10,
+      priceMinor: l.priceFromMinor,
     })),
-    backing: listTeams.flatMap((t) => foundersOf(t).map((f) => f.photo)).slice(0, 7),
-    backingCount: listTeams.reduce((n, t) => n + foundersOf(t).length, 0),
-    team: foundersOf(star.teamCode),
-    teamBrand: star.name,
-    board,
-    boosted: board.length - 1,
-    order: 150000,
+    backing: listTeams.flatMap((t) => foundersOf(t).map((f) => f.photo)),
+    cohort: byRevenue.slice(0, 10).flatMap((b) =>
+      foundersOf(b.teamCode)
+        .slice(0, 1)
+        .map((f) => f.photo),
+    ),
+    cohortCount: wall.length,
+    board: byRevenue.slice(0, 5).map((b) => ({ brand: b.name, revenue: sold(b.teamCode) })),
   };
 
   const rows = COLLECTIONS.map((c) => {
@@ -132,7 +133,10 @@ export default async function Home() {
           </SplitReveal>
           <div className="max-w-sm">
             <p className="text-lg leading-snug text-ink/65">Ready-made boxes. Zero effort, full credit.</p>
-            <Link href="/catalogue?collection=hampers" className="group mt-3 inline-flex text-sm font-semibold text-violet">
+            <Link
+              href="/catalogue?collection=hampers"
+              className="group mt-3 inline-flex whitespace-nowrap text-sm font-semibold text-violet"
+            >
               <Roll>{`See all ${hampers.length}`}</Roll>
             </Link>
           </div>
@@ -161,10 +165,12 @@ export default async function Home() {
               data-cursor="Shop"
               className="group relative flex aspect-[1.5] flex-col justify-between overflow-hidden rounded-[28px] bg-paper-2 p-5 transition-colors duration-500 hover:bg-ink hover:text-paper sm:p-7"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-ink/45 transition-colors group-hover:text-orchid">
+              <span className="text-sm text-ink/50 transition-colors group-hover:text-orchid">
                 {catalog.listings.filter((l) => inBand(l.priceFromMinor, b.id)).length} gifts
               </span>
-              <span className="font-display text-[clamp(1.7rem,3vw,3rem)] leading-none">{b.short}</span>
+              <span className="font-display whitespace-nowrap text-[clamp(1.25rem,5.2vw,3rem)] leading-none lg:text-[clamp(1.7rem,3vw,3rem)]">
+                {b.short}
+              </span>
             </Link>
           ))}
         </div>

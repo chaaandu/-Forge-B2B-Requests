@@ -89,9 +89,6 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
         <div className="overflow-hidden px-8 py-4">
           <p ref={text} className="font-display text-[clamp(3rem,9vw,8rem)] italic leading-none text-orchid" />
         </div>
-        <span className="absolute bottom-8 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-[0.3em] text-paper/40">
-          Forge for Business
-        </span>
       </div>
     </Ctx.Provider>
   );

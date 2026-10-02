@@ -75,7 +75,7 @@ export function Preloader({ faces, total }: { faces: string[]; total: number }) 
           000
         </p>
         <div className="overflow-hidden">
-          <p data-pline className="text-sm font-bold uppercase tracking-[0.35em] text-paper/70">
+          <p data-pline className="font-display text-2xl italic text-paper/75 sm:text-3xl">
             founders, one store
           </p>
         </div>

@@ -41,6 +41,27 @@ export default async function BrandsPage() {
                 <div className="flex aspect-[1.9] items-end justify-center pt-[6%]">
                   <TeamLineup people={people} hop sizes="200px" className="[--person:31cqw]" />
                 </div>
+                {/* On hover the squad hops, and a ticker slides up under their feet. */}
+                <div
+                  aria-hidden
+                  className="absolute inset-x-0 bottom-0 translate-y-full overflow-hidden bg-ink py-2.5 text-paper transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-y-0"
+                >
+                  <div className="flex w-max animate-marquee whitespace-nowrap text-sm font-semibold [animation-duration:14s] [animation-play-state:paused] group-hover:[animation-play-state:running]">
+                    {[0, 1].map((k) => (
+                      <span key={k} className="flex shrink-0 items-center">
+                        {/* Twice per half, so the loop is always wider than the card. */}
+                        {[0, 1]
+                          .flatMap(() => [...people.map((p) => p.name.split(" ")[0]), `Meet ${b.name}`])
+                          .map((t, i) => (
+                            <span key={i} className="flex items-center">
+                              <span className="px-4">{t}</span>
+                              <span className="text-orchid">✦</span>
+                            </span>
+                          ))}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
               <div className="mt-5 flex items-start justify-between gap-4">
                 <div className="min-w-0">
@@ -50,7 +71,7 @@ export default async function BrandsPage() {
                 {sold > 0 && (
                   <p className="shrink-0 text-right">
                     <span className="font-display block text-xl text-royal">{inr(sold)}</span>
-                    <span className="text-[11px] uppercase tracking-[0.15em] text-ink/45">sold so far</span>
+                    <span className="text-xs text-ink/50">sold so far</span>
                   </p>
                 )}
               </div>

@@ -12,7 +12,7 @@ import { cn } from "@/lib/cn";
 import { QtyStepper } from "./qty-stepper";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { foundersOf } from "@/lib/founders";
-import { Icon3D } from "@/components/icon3d";
+import { Doodle } from "@/components/doodle";
 import { FitImage } from "@/components/fit-image";
 import { withBase } from "@/lib/base-path";
 
@@ -182,7 +182,7 @@ export function RequestForm({ shared, teamCodes }: { shared: ListItem[]; teamCod
             <div className="mt-6 h-40 animate-pulse rounded-2xl bg-tile" />
           ) : list.count === 0 ? (
             <div className="flex flex-col items-center py-16 text-center">
-              <Icon3D name="shopping-bags" size={96} className="size-20" />
+              <Doodle name="bag" className="size-24 text-aubergine" />
               <p className="font-display mt-5 text-3xl text-ink">Your list is feeling light.</p>
               <p className="mt-1 text-ink/55">Add a few things first. We&apos;ll handle the rest.</p>
               <Link

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "@/components/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, ChevronLeft } from "lucide-react";
-import { getCatalog, getCollection } from "@/lib/catalog";
+import { getCatalog } from "@/lib/catalog";
 import { NO_FILTERS } from "@/lib/filters";
 import { firstNames, foundersOf } from "@/lib/founders";
 import { getImpact } from "@/lib/impact";
@@ -48,9 +48,6 @@ export default async function BrandPage({ params }: { params: Params }) {
             <Link href="/brands" className="inline-flex items-center gap-1 text-xs font-semibold text-ink/50 hover:text-ink">
               <ChevronLeft className="size-3.5" /> All founders
             </Link>
-            <p className="mt-10 text-xs font-bold uppercase tracking-[0.25em] text-violet">
-              {getCollection(brand.collection)?.name} · Forge founders
-            </p>
             <SplitReveal as="h1" immediate className="font-display mt-4 text-[clamp(3.5rem,9vw,9rem)] leading-[0.86] text-ink">
               {brand.name}
             </SplitReveal>
@@ -69,7 +66,7 @@ export default async function BrandPage({ params }: { params: Params }) {
                   <dd className="font-display text-5xl text-royal">
                     <CountUp value={sold.revenue} prefix="₹" />
                   </dd>
-                  <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">sold so far</dt>
+                  <dt className="mt-1 text-sm text-ink/55">sold so far</dt>
                 </div>
               )}
               {sold && sold.units > 0 && (
@@ -77,12 +74,12 @@ export default async function BrandPage({ params }: { params: Params }) {
                   <dd className="font-display text-5xl text-ink">
                     <CountUp value={sold.units} />
                   </dd>
-                  <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">products out in the world</dt>
+                  <dt className="mt-1 text-sm text-ink/55">products out in the world</dt>
                 </div>
               )}
               <div>
                 <dd className="font-display text-5xl text-ink">{items.length}</dd>
-                <dt className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">ready to gift</dt>
+                <dt className="mt-1 text-sm text-ink/55">ready to gift</dt>
               </div>
             </dl>
             {(brand.website || brand.instagram) && (
@@ -111,14 +108,9 @@ export default async function BrandPage({ params }: { params: Params }) {
             )}
           </div>
           {people.length > 0 && (
-            <Stagger selector="figure" className="relative pb-12">
-              <div aria-hidden className="absolute inset-x-[6%] bottom-12 top-[16%] rounded-t-full bg-orchid-soft" />
-              <TeamLineup
-                people={people}
-                names
-                sizes="(min-width: 1024px) 320px, 40vw"
-                className="relative pt-6 [--person:clamp(104px,24vw,250px)]"
-              />
+            <Stagger selector="figure" className="@container relative sm:pb-12">
+              <div aria-hidden className="absolute inset-x-[6%] bottom-8 top-[16%] rounded-t-full bg-orchid-soft sm:bottom-12" />
+              <TeamLineup people={people} names sizes="(min-width: 1024px) 320px, 40vw" fit="250px" className="relative pt-6" />
             </Stagger>
           )}
         </div>

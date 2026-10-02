@@ -19,17 +19,82 @@ export interface HeroFace {
   photo: string;
 }
 
-// Where each sticker sits, how big, how far it tilts, and how deep it floats.
-const SPOTS = [
-  { l: "3%", t: "16%", s: 150, r: -8, d: 1.4 },
-  { l: "17%", t: "60%", s: 118, r: 6, d: 0.8 },
-  { l: "73%", t: "10%", s: 132, r: 7, d: 1.1 },
-  { l: "85%", t: "42%", s: 168, r: -5, d: 1.6 },
-  { l: "63%", t: "68%", s: 104, r: -9, d: 0.7 },
-  { l: "40%", t: "5%", s: 92, r: 4, d: 0.5 },
-  { l: "-1%", t: "74%", s: 96, r: 10, d: 0.9 },
-  { l: "92%", t: "78%", s: 88, r: -3, d: 0.6 },
+// Each sticker's tilt and how deep it floats. Where it sits is worked out on
+// the screen it's on (see `arrange`), because no fixed spot fits every screen.
+const STICKERS = [
+  { r: -8, d: 1.4 },
+  { r: 6, d: 0.8 },
+  { r: 7, d: 1.1 },
+  { r: -5, d: 1.6 },
+  { r: -9, d: 0.7 },
+  { r: 4, d: 0.5 },
+  { r: 10, d: 0.9 },
+  { r: -3, d: 0.6 },
+  { r: 5, d: 1.2 },
+  { r: -6, d: 1.0 },
 ];
+
+/** Repeatable "random": the same screen always gets the same arrangement. */
+const jitter = (i: number, salt: number) => {
+  const x = Math.sin(i * 12.9898 + salt * 78.233) * 43758.5453;
+  return x - Math.floor(x);
+};
+
+interface Box {
+  l: number;
+  t: number;
+  r: number;
+  b: number;
+}
+interface Slot {
+  x: number;
+  y: number;
+  size: number;
+}
+
+const TAG = 20; // the name tag hanging under each sticker
+const GAP = 18; // breathing room from the headline, the pill and the buttons
+
+/**
+ * Lay the stickers out in the free space around the headline: a band above it,
+ * the gutters beside it and a band below it. Each band takes as many stickers
+ * as fit at a size that fits; leftovers simply aren't shown.
+ */
+function arrange(width: number, title: Box, pill: Box, foot: Box): Slot[] {
+  const slots: Slot[] = [];
+  const band = (top: number, bottom: number, left: number, right: number, max: number, perRow: number, salt: number) => {
+    const h = bottom - top;
+    const w = right - left;
+    const size = Math.min(max, h - TAG);
+    if (size < 64 || w < size) return;
+    const n = Math.max(1, Math.min(perRow, Math.floor(w / (size * 1.9))));
+    const cell = w / n;
+    for (let i = 0; i < n; i++) {
+      const spare = cell - size;
+      slots.push({
+        x: left + i * cell + spare * (0.15 + 0.7 * jitter(i, salt)),
+        y: top + (h - size - TAG) * jitter(i, salt + 1),
+        size: size * (0.82 + 0.18 * jitter(i, salt + 2)),
+      });
+    }
+  };
+  const gutter = (left: number, right: number, top: number, bottom: number, salt: number) => {
+    const w = right - left;
+    const size = Math.min(130, w);
+    if (size < 70) return;
+    const h = bottom - top;
+    const n = Math.max(1, Math.min(2, Math.floor(h / (size * 1.6))));
+    for (let i = 0; i < n; i++) {
+      const cell = h / n;
+      slots.push({ x: left + (w - size) / 2, y: top + i * cell + (cell - size - TAG) * jitter(i, salt), size });
+    }
+  };
+  band(pill.b + GAP, title.t - GAP, GAP, width - GAP, 140, 5, 1);
+  gutter(GAP, title.l - GAP, title.t, title.b, 7);
+  gutter(title.r + GAP, width - GAP, title.t, title.b, 11);
+  band(title.b + GAP, foot.t - GAP, GAP, width - GAP, 116, 4, 3);
+  return slots;
+}
 
 export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; founders: number; brands: number; earned: number }) {
   const root = useRef<HTMLElement>(null);
@@ -39,31 +104,97 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
     () => {
       const el = root.current!;
       const title = el.querySelector<HTMLElement>("[data-title]")!;
+      const stickers = gsap.utils.toArray<HTMLElement>("[data-sticker]");
+
+      // Measure the headline, the live pill and the buttons, then put the
+      // stickers in the space that's left. Re-run when the screen changes.
+      const place = () => {
+        const host = el.getBoundingClientRect();
+        const box = (els: Element[]): Box => {
+          const rs = els.map((e) => e.getBoundingClientRect());
+          return {
+            l: Math.min(...rs.map((r) => r.left)) - host.left,
+            t: Math.min(...rs.map((r) => r.top)) - host.top,
+            r: Math.max(...rs.map((r) => r.right)) - host.left,
+            b: Math.max(...rs.map((r) => r.bottom)) - host.top,
+          };
+        };
+        const underline = el.querySelector("[data-underline]");
+        const slots = arrange(
+          host.width,
+          box([title, ...(underline ? [underline] : [])]),
+          box([el.querySelector("[data-live]")!]),
+          box([...el.querySelectorAll("[data-hero-foot] > *")]),
+        );
+        stickers.forEach((s, i) => {
+          const slot = slots[i];
+          if (!slot) return void (s.style.display = "none");
+          Object.assign(s.style, { display: "", left: `${slot.x}px`, top: `${slot.y}px`, width: `${slot.size}px` });
+        });
+      };
+      let resizeTimer = 0;
+      const onResize = () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(() => {
+          placeUnderline();
+          place();
+        }, 150);
+      };
+      window.addEventListener("resize", onResize);
       const line = el.querySelector<SVGPathElement>("[data-underline] path");
+      // The underline is redrawn in real pixels for the width it has to span:
+      // a stretched SVG would thicken the stroke, and a non-scaling stroke
+      // would make the draw-on animation stop partway along.
       const placeUnderline = () => {
-        const target = el.querySelector<HTMLElement>("[data-underline-target]");
         const svg = el.querySelector<SVGSVGElement>("[data-underline]");
-        if (!target || !svg) return;
-        const a = target.getBoundingClientRect();
+        // SplitText clones the italic phrase once per word, so measure every
+        // piece, and only those on its last line if it ever wraps.
+        const rects = [...el.querySelectorAll("[data-underline-target]")].map((t) => t.getBoundingClientRect()).filter((r) => r.width > 0);
+        if (!svg || !line || !rects.length) return;
+        const lastBottom = Math.max(...rects.map((r) => r.bottom));
+        const last = rects.filter((r) => r.bottom > lastBottom - r.height / 2);
+        const left = Math.min(...last.map((r) => r.left));
+        const right = Math.max(...last.map((r) => r.right));
+        const a = { left, width: right - left, bottom: lastBottom, height: Math.max(...last.map((r) => r.height)) };
         const b = el.getBoundingClientRect();
-        Object.assign(svg.style, { left: `${a.left - b.left}px`, top: `${a.bottom - b.top - a.height * 0.16}px`, width: `${a.width}px` });
+        const w = Math.round(a.width);
+        const h = Math.max(14, Math.round(a.height * 0.2));
+        Object.assign(svg.style, {
+          left: `${a.left - b.left}px`,
+          top: `${a.bottom - b.top - a.height * 0.12}px`,
+          width: `${w}px`,
+          height: `${h}px`,
+        });
+        svg.classList.remove("invisible");
+        svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+        line.setAttribute(
+          "d",
+          `M4 ${h * 0.62} C ${w * 0.18} ${h * 0.12}, ${w * 0.32} ${h * 0.95}, ${w * 0.5} ${h * 0.55} S ${w * 0.82} ${h * 0.2}, ${w - 4} ${h * 0.58}`,
+        );
+        line.setAttribute("stroke-width", String(Math.max(4, h * 0.32)));
       };
       placeUnderline();
-      window.addEventListener("resize", placeUnderline);
+      place();
 
-      if (reducedMotion()) {
-        gsap.set(title, { visibility: "visible" });
-        return () => window.removeEventListener("resize", placeUnderline);
-      }
+      title.classList.remove("js-reveal");
+      if (reducedMotion()) return () => window.removeEventListener("resize", onResize);
 
-      const split = SplitText.create(title, { type: "lines,words,chars", mask: "lines", autoSplit: true, onSplit: placeUnderline });
-      gsap.set(title, { visibility: "visible" });
-      const stickers = gsap.utils.toArray<HTMLElement>("[data-sticker]");
+      const split = SplitText.create(title, {
+        type: "lines,words,chars",
+        mask: "lines",
+        autoSplit: true,
+        onSplit: () => {
+          placeUnderline();
+          place();
+        },
+      });
 
       const tl = gsap
         .timeline({ paused: true, defaults: { ease: "expo.out" } })
         .from(split.chars, { yPercent: 160, rotate: 12, duration: 1.3, stagger: 0.022 })
         .fromTo(line, { drawSVG: "0%" }, { drawSVG: "100%", duration: 1.1, ease: "power2.inOut" }, 0.75)
+        // Drawn: hand the stroke back, so a resize that lengthens it never shows a gap.
+        .set(line, { clearProps: "strokeDasharray,strokeDashoffset" })
         .from(
           [...stickers, ...gsap.utils.toArray<HTMLElement>("[data-mface]")],
           {
@@ -133,22 +264,22 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
         );
         return () => {
           window.removeEventListener("pointermove", lean);
-          window.removeEventListener("resize", placeUnderline);
+          window.removeEventListener("resize", onResize);
           drags.forEach((d) => d.kill());
         };
       }
-      return () => window.removeEventListener("resize", placeUnderline);
+      return () => window.removeEventListener("resize", onResize);
     },
     { scope: root },
   );
 
   return (
-    <section ref={root} className="relative isolate min-h-[100svh] overflow-hidden">
+    <section ref={root} className="relative isolate min-h-[calc(100svh-4rem)] overflow-hidden">
       <div aria-hidden className="absolute inset-0 -z-10 hidden md:block">
-        {faces.slice(0, SPOTS.length).map((f, i) => {
-          const s = SPOTS[i];
+        {faces.slice(0, STICKERS.length).map((f, i) => {
+          const s = STICKERS[i];
           return (
-            <div key={f.photo} data-sticker data-depth={s.d} className="absolute" style={{ left: s.l, top: s.t, width: s.s }}>
+            <div key={f.photo} data-sticker data-depth={s.d} className="absolute" style={{ display: "none" }}>
               <div data-lean>
                 <div data-drag data-slug={f.brandSlug} data-cursor="Drag" className="cursor-grab active:cursor-grabbing">
                   <div data-float>
@@ -158,7 +289,7 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
                           src={f.photo}
                           alt=""
                           fill
-                          sizes="170px"
+                          sizes="(min-width: 1440px) 150px, 11vw"
                           className="pointer-events-none object-cover object-top"
                           priority={i < 4}
                           draggable={false}
@@ -176,25 +307,16 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
         })}
       </div>
 
-      <svg
-        data-underline
-        aria-hidden
-        viewBox="0 0 400 24"
-        preserveAspectRatio="none"
-        className="pointer-events-none absolute h-[0.5em] text-[clamp(2.9rem,12vw,10.5rem)]"
-      >
-        <path
-          d="M4 15 C 70 4, 130 22, 200 12 S 330 6, 396 14"
-          fill="none"
-          stroke="#e4a7f3"
-          strokeWidth="7"
-          strokeLinecap="round"
-          vectorEffect="non-scaling-stroke"
-        />
+      {/* Sized, shaped and shown by placeUnderline once the headline is laid out. */}
+      <svg data-underline aria-hidden className="pointer-events-none invisible absolute overflow-visible">
+        <path fill="none" stroke="#e4a7f3" strokeLinecap="round" />
       </svg>
 
-      <div className="mx-auto flex min-h-[100svh] max-w-[1500px] flex-col justify-center gap-10 px-5 pb-10 pt-6 sm:px-8 md:justify-between md:gap-0">
-        <p className="inline-flex w-fit items-center gap-3 rounded-full bg-ink/[0.05] py-1.5 pl-3 pr-4 text-[13px] font-semibold text-ink/65">
+      <div className="mx-auto flex min-h-[calc(100svh-4rem)] max-w-[1500px] flex-col justify-center gap-10 px-5 pb-10 pt-6 sm:px-8 md:justify-between md:gap-0">
+        <p
+          data-live
+          className="inline-flex w-fit items-center gap-3 rounded-full bg-ink/[0.05] py-1.5 pl-3 pr-4 text-[13px] font-semibold text-ink/65"
+        >
           <span className="relative flex size-2">
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-violet opacity-60" />
             <span className="relative inline-flex size-2 rounded-full bg-violet" />
@@ -223,11 +345,11 @@ export function Hero({ faces, founders, brands, earned }: { faces: HeroFace[]; f
 
         <h1
           data-title
-          className="font-display mx-auto max-w-[15ch] text-center text-[clamp(2.9rem,12vw,10.5rem)] leading-[0.88] text-ink [visibility:hidden] motion-reduce:[visibility:visible] md:py-0"
+          className="js-reveal font-display mx-auto max-w-[15ch] text-center text-[clamp(2.9rem,min(12vw,15.5vh),10.5rem)] leading-[0.88] text-ink md:py-0"
         >
           Every gift here is someone&apos;s{" "}
-          <em data-underline-target className="inline-block whitespace-nowrap text-royal">
-            first company.
+          <em data-underline-target className="text-royal">
+            first company.
           </em>
         </h1>
 

@@ -26,9 +26,10 @@ export function SplitReveal({
   useGSAP(
     () => {
       const el = ref.current;
-      if (!el || reducedMotion()) return;
+      if (!el) return;
+      if (reducedMotion()) return void el.classList.remove("js-reveal");
+      el.classList.remove("js-reveal");
       const split = SplitText.create(el, { type: "lines", mask: "lines", linesClass: "line", autoSplit: true });
-      gsap.set(el, { visibility: "visible" });
       return gsap.from(split.lines, {
         // Past the padded mask (see .line-mask), so the line starts fully hidden.
         yPercent: 150,
@@ -43,7 +44,7 @@ export function SplitReveal({
     { scope: ref },
   );
   return (
-    <Tag ref={ref} className={cn("[visibility:hidden] motion-reduce:[visibility:visible]", className)}>
+    <Tag ref={ref} className={cn("js-reveal", className)}>
       {children}
     </Tag>
   );

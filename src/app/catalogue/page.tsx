@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getCatalog, getCollection } from "@/lib/catalog";
+import { COLLECTIONS } from "@/lib/catalog-types";
 import { filtersFrom } from "@/lib/filters";
 import { getOccasion } from "@/lib/occasions";
 import { allFounders } from "@/lib/founders";
@@ -34,7 +35,7 @@ export default async function CataloguePage({ searchParams }: { searchParams: Se
       </div>
       {!collection && !occasion && (
         <div className="mb-8">
-          <CategoryStrip />
+          <CategoryStrip counts={Object.fromEntries(COLLECTIONS.map((c) => [c.id, catalog.listingsIn(c.id).length]))} />
         </div>
       )}
       <CatalogueBrowser key={JSON.stringify(initial)} listings={catalog.listings} brands={catalog.brands} initial={initial} />

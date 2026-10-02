@@ -147,6 +147,24 @@
   padding-right: 0.06em;
 }
 
+/* Hidden until the script that animates it takes over (it removes the class).
+   If that script never runs, the element shows itself after 2.5s anyway. */
+.js-reveal {
+  visibility: hidden;
+  animation: js-reveal-failsafe 0s 2.5s forwards;
+}
+@keyframes js-reveal-failsafe {
+  to {
+    visibility: visible;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal {
+    visibility: visible;
+    animation: none;
+  }
+}
+
 /* Text that rolls up to a copy of itself on hover (nav, buttons). */
 .roll {
   display: inline-grid;

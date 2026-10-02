@@ -3,27 +3,25 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
-import { Icon3D } from "@/components/icon3d";
-import { TeamLineup } from "@/components/team-lineup";
-import type { Founder } from "@/lib/founders";
-import { withBase } from "@/lib/base-path";
+import { Doodle } from "@/components/doodle";
+import { DoodleArtwork } from "@/components/doodles";
+import { FacePile } from "@/components/face-pile";
 
 export interface JourneyData {
-  list: { title: string; brand: string; image: string; qty: number }[];
+  list: { title: string; brand: string; image: string; qty: number; priceMinor: number }[];
+  /** Portraits of the founders behind the example list. */
   backing: string[];
-  backingCount: number;
-  team: Founder[];
-  teamBrand: string;
+  /** Portraits from across the cohort, for the scenes that are about everyone. */
+  cohort: string[];
+  cohortCount: number;
+  /** The live leaderboard's top five. */
   board: { brand: string; revenue: number }[];
-  /** Index in `board` of the venture the example order lands on. */
-  boosted: number;
-  order: number;
 }
 
 const inr = (n: number) => `₹${new Intl.NumberFormat("en-IN").format(Math.round(n))}`;
-const lakh = (n: number) => (n >= 100000 ? `₹${(n / 100000).toFixed(n >= 1000000 ? 1 : 2).replace(/\.?0+$/, "")}L` : inr(n));
+const lakh = (n: number) => (n >= 100000 ? `₹${(n / 100000).toFixed(1).replace(/\.0$/, "")}L` : inr(n));
 
-const CHAPTERS = (d: JourneyData) => [
+const CHAPTERS = [
   { label: "List", title: "Make a list.", body: "Hampers, snacks, candles, tees. Add rough quantities. No login, no card, no drama." },
   {
     label: "Call",
@@ -32,13 +30,13 @@ const CHAPTERS = (d: JourneyData) => [
   },
   {
     label: "Pack",
-    title: "Founders pack it.",
-    body: `${d.team.map((t) => t.name.split(" ")[0]).join(", ")} pack every box like it's going to their toughest investor. Honestly, it is.`,
+    title: "Packed by founders. Logo optional.",
+    body: "The people who made it pack it. Want your brand on it? Sleeves, cards, ribbons. Just ask.",
   },
   {
     label: "Leaderboard",
     title: "It hits the leaderboard.",
-    body: "Your order is their revenue, and all 117 founders can see it. Bragging rights: unlocked.",
+    body: "Every rupee is real revenue for the founders on your list, and the whole cohort sees it land.",
   },
   {
     label: "Unwrap",
@@ -59,14 +57,23 @@ const PATH = XS.slice(0, -1)
   })
   .join(" ");
 
+const orderOf = (d: JourneyData) => d.list.reduce((n, i) => n + (i.qty * i.priceMinor) / 100, 0);
+
+/** Where the example order would sit on the real leaderboard: rows best first, "you" as -1. */
+function ranking(d: JourneyData) {
+  const order = orderOf(d);
+  const rows = [...d.board.map((b, i) => ({ i, v: b.revenue })), { i: -1, v: order }].sort((a, b) => b.v - a.v);
+  return { order, after: rows.map((r) => r.i), rank: rows.findIndex((r) => r.i === -1) + 1 };
+}
+
 /* ─────────────────────────────── scenes ─────────────────────────────── */
 
 function SceneList({ d }: { d: JourneyData }) {
   return (
     <div className="mx-auto w-full max-w-[460px] rounded-[30px] bg-paper p-5 shadow-[0_40px_80px_-30px_rgb(42_24_73/0.45)] sm:p-6">
-      <div className="flex items-baseline justify-between">
+      <div className="flex items-baseline justify-between gap-3">
         <p className="font-display text-3xl text-ink">Gift list</p>
-        <span className="text-xs font-semibold text-ink/45">Your team · Diwali</span>
+        <span className="text-xs text-ink/45">Your team, Diwali</span>
       </div>
       <ul className="mt-4 space-y-2.5">
         {d.list.map((item) => (
@@ -78,11 +85,11 @@ function SceneList({ d }: { d: JourneyData }) {
               <span className="block truncate text-sm font-semibold text-ink">{item.title}</span>
               <span className="block text-xs text-ink/50">{item.brand}</span>
             </span>
-            <span data-qty className="rounded-full bg-ink px-2.5 py-1 text-xs font-bold tabular-nums text-paper">
+            <span data-qty className="shrink-0 rounded-full bg-ink px-2.5 py-1 text-xs font-bold tabular-nums text-paper">
               ×{item.qty}
             </span>
-            <svg viewBox="0 0 24 24" className="size-6 shrink-0">
-              <circle cx="12" cy="12" r="11" className="fill-orchid-soft" />
+            <svg viewBox="0 0 24 24" className="size-6 shrink-0" aria-hidden>
+              <circle cx="12" cy="12" r="11" fill="#f3d9fa" />
               <path
                 data-tick
                 d="M7 12.5 L10.5 16 L17 8.5"
@@ -97,48 +104,53 @@ function SceneList({ d }: { d: JourneyData }) {
         ))}
       </ul>
       <div data-backing className="mt-4 flex items-center gap-3 border-t border-ink/10 pt-4">
-        <span className="flex -space-x-2">
-          {d.backing.map((src) => (
-            <span key={src} className="relative size-8 overflow-hidden rounded-full bg-orchid-soft ring-2 ring-paper">
-              <Image src={src} alt="" fill sizes="64px" className="object-cover object-top" />
-            </span>
-          ))}
-        </span>
-        <span className="text-sm font-semibold text-ink">You&apos;re backing {d.backingCount} founders</span>
+        <FacePile photos={d.backing} size={30} />
+        <span className="whitespace-nowrap text-sm font-semibold text-ink">Backing {d.backing.length} founders</span>
       </div>
     </div>
   );
 }
 
+const STAMP_R = 46;
+const STAMP_LEN = 2 * Math.PI * STAMP_R;
+
 function SceneCall() {
   return (
-    <div className="relative mx-auto aspect-[1.15] w-full max-w-[520px]">
-      <div data-phone className="absolute left-[2%] top-[18%] w-[44%]">
-        <Icon3D name="telephone-receiver" size={256} className="h-auto w-full -rotate-12" />
+    <div className="relative mx-auto grid w-full max-w-[520px] grid-cols-[0.75fr_1.25fr] items-center gap-5">
+      <div data-phone className="text-aubergine">
+        <Doodle name="phone" hover="none" draw={false} className="w-full -rotate-6" />
       </div>
-      <p
-        data-bubble
-        className="absolute right-[2%] top-[8%] max-w-[62%] rounded-3xl rounded-bl-md bg-paper px-5 py-3.5 text-[15px] font-medium leading-snug text-ink shadow-xl"
-      >
-        Hi! Need 150 hampers by the 20th. Doable?
-      </p>
-      <p
-        data-bubble
-        className="absolute right-[8%] top-[40%] max-w-[62%] rounded-3xl rounded-br-md bg-royal px-5 py-3.5 text-[15px] font-medium leading-snug text-paper shadow-xl"
-      >
-        Totally. Bulk price and samples, coming right up.
-      </p>
-      <div data-stamp className="absolute bottom-[2%] right-[24%] grid size-32 place-items-center">
-        <svg viewBox="0 0 120 120" className="absolute inset-0 size-full animate-spin-slow">
-          <defs>
-            <path id="stamp-circle" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0" />
-          </defs>
-          <circle cx="60" cy="60" r="58" className="fill-orchid" />
-          <text className="fill-aubergine text-[11.5px] font-bold uppercase tracking-[0.2em]">
-            <textPath href="#stamp-circle">Within 1 working day · Within 1 working day ·</textPath>
-          </text>
-        </svg>
-        <span className="font-display relative text-3xl text-aubergine">24h</span>
+      <div className="flex flex-col gap-3">
+        <p
+          data-bubble
+          className="w-fit max-w-full rounded-3xl rounded-bl-md bg-paper px-5 py-3.5 text-[15px] font-medium leading-snug text-ink shadow-xl"
+        >
+          Hi! Need 150 hampers by the 20th. Doable?
+        </p>
+        <p
+          data-bubble
+          className="ml-auto w-fit max-w-full rounded-3xl rounded-br-md bg-royal px-5 py-3.5 text-[15px] font-medium leading-snug text-paper shadow-xl"
+        >
+          Totally. Bulk price and samples, coming right up.
+        </p>
+        <div data-stamp className="relative grid size-24 shrink-0 place-items-center self-end sm:size-28">
+          <svg viewBox="0 0 120 120" className="absolute inset-0 size-full animate-spin-slow" aria-hidden>
+            <defs>
+              <path
+                id="stamp-ring"
+                d={`M60 60 m-${STAMP_R} 0 a${STAMP_R} ${STAMP_R} 0 1 1 ${STAMP_R * 2} 0 a${STAMP_R} ${STAMP_R} 0 1 1 -${STAMP_R * 2} 0`}
+              />
+            </defs>
+            <circle cx="60" cy="60" r="58" fill="#e4a7f3" />
+            <text fill="#2a1849" fontSize="10.5" fontWeight="700">
+              {/* Exactly one lap: textLength spreads the words over the whole ring, so it never runs into itself. */}
+              <textPath href="#stamp-ring" textLength={STAMP_LEN} lengthAdjust="spacing">
+                WITHIN ONE WORKING DAY ✦ WITHIN ONE WORKING DAY ✦
+              </textPath>
+            </text>
+          </svg>
+          <span className="font-display relative text-[1.7rem] text-aubergine sm:text-3xl">24h</span>
+        </div>
       </div>
     </div>
   );
@@ -146,76 +158,74 @@ function SceneCall() {
 
 function ScenePack({ d }: { d: JourneyData }) {
   return (
-    <div className="relative mx-auto flex aspect-[1.15] w-full max-w-[540px] items-end justify-center">
-      <div data-squad className="absolute inset-x-[6%] bottom-[10%] top-[16%] overflow-hidden rounded-t-[999px] bg-orchid-soft">
-        <TeamLineup people={d.team} sizes="200px" className="absolute inset-x-0 bottom-0 [--person:clamp(84px,10.5vw,150px)]" />
+    <div className="relative mx-auto flex w-full max-w-[480px] flex-col items-center">
+      <div className="relative w-[64%] text-aubergine">
+        <div data-box>
+          <Doodle name="gift" hover="none" draw={false} className="w-full" />
+        </div>
+        <span
+          data-sticker
+          className="font-display absolute left-[18%] top-[56%] -rotate-[8deg] rounded-xl border-2 border-dashed border-aubergine bg-paper px-3 py-1.5 text-lg leading-none text-aubergine shadow-lg sm:text-xl"
+        >
+          your logo
+        </span>
       </div>
-      <div data-box className="absolute -bottom-[3%] left-1/2 w-[27%] -translate-x-1/2">
-        <Icon3D name="wrapped-gift" size={256} className="h-auto w-full rotate-6" />
+      <div data-packers className="mt-6 flex items-center gap-3 rounded-full bg-paper py-2 pl-2 pr-5 shadow-xl">
+        <FacePile photos={d.cohort} size={30} total={d.cohortCount} />
+        <span className="whitespace-nowrap text-sm font-semibold text-ink">Packed by its makers</span>
       </div>
-      <p data-chip className="absolute left-[4%] top-[6%] rounded-full bg-ink px-4 py-2 text-sm font-semibold text-paper shadow-xl">
-        Packed by {d.team.map((t) => t.name.split(" ")[0]).join(", ")} ✺
-      </p>
     </div>
   );
 }
 
-/** The leaderboard order once the example order is added: row indexes, best first. */
-const rankAfter = (d: JourneyData) =>
-  d.board
-    .map((b, i) => ({ i, v: b.revenue + (i === d.boosted ? d.order : 0) }))
-    .sort((a, b) => b.v - a.v)
-    .map((r) => r.i);
-
 function SceneBoard({ d }: { d: JourneyData }) {
-  const max = Math.max(...d.board.map((b, i) => b.revenue + (i === d.boosted ? d.order : 0)));
-  const after = rankAfter(d);
-  const climbed = d.boosted - after.indexOf(d.boosted);
+  const { order, after, rank } = ranking(d);
+  const rows = [...d.board, { brand: "Your list", revenue: order }];
+  const max = Math.max(...rows.map((r) => r.revenue));
+  const you = rows.length - 1;
   return (
     <div className="mx-auto w-full max-w-[520px] rounded-[30px] bg-ink p-5 text-paper shadow-[0_40px_80px_-30px_rgb(42_24_73/0.6)] sm:p-6">
       <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
         <p className="font-display text-3xl">Forge leaderboard</p>
-        <span className="text-xs font-semibold text-paper/45">Revenue so far</span>
+        <span className="text-xs text-paper/45">Live revenue, top five</span>
       </div>
-      <div className="relative mt-5" style={{ height: d.board.length * 56 }}>
-        {d.board.map((row, i) => (
-          <div
-            key={row.brand}
-            data-board-row={i}
-            className="absolute inset-x-0 flex h-12 items-center gap-2 rounded-2xl px-2 sm:gap-3 sm:px-3"
-            style={{ top: i * 56, background: i === d.boosted ? "rgb(228 167 243 / 0.12)" : "transparent" }}
-          >
-            <span className="relative w-5 text-sm font-bold tabular-nums text-paper/40">
-              <span data-rank-before>{i + 1}</span>
-              <span data-rank-after className="absolute inset-0 text-orchid opacity-0">
-                {after.indexOf(i) + 1}
-              </span>
-            </span>
-            <span className="w-[5.5rem] truncate text-[13px] font-semibold sm:w-28 sm:text-sm">{row.brand}</span>
-            <span className="relative flex h-3 flex-1 overflow-hidden rounded-full bg-paper/10">
-              <span data-bar className="h-full origin-left rounded-full bg-paper" style={{ width: `${(row.revenue / max) * 100}%` }} />
-              {i === d.boosted && (
-                <span data-plus className="h-full origin-left bg-orchid" style={{ width: `${(d.order / max) * 100}%` }} />
-              )}
-            </span>
-            <span className="relative w-14 text-right text-xs font-bold tabular-nums text-paper/70 sm:w-16">
-              <span data-value-before>{lakh(row.revenue)}</span>
-              {i === d.boosted && (
-                <span data-value-after className="absolute inset-0 text-orchid opacity-0">
-                  {lakh(row.revenue + d.order)}
+      <div className="relative mt-5" style={{ height: rows.length * 52 }}>
+        {rows.map((row, i) => {
+          const isYou = i === you;
+          const finalIndex = after.indexOf(isYou ? -1 : i);
+          return (
+            <div
+              key={row.brand}
+              data-board-row={i}
+              data-final={finalIndex}
+              className="absolute inset-x-0 flex h-11 items-center gap-2 rounded-2xl px-2 sm:gap-3 sm:px-3"
+              style={{ top: i * 52, background: isYou ? "rgb(228 167 243 / 0.16)" : "transparent" }}
+            >
+              <span className="relative w-5 text-sm font-bold tabular-nums text-paper/40">
+                <span data-rank-before>{isYou ? "" : i + 1}</span>
+                <span data-rank-after className={`absolute inset-0 opacity-0 ${isYou ? "text-orchid" : ""}`}>
+                  {finalIndex + 1}
                 </span>
-              )}
-            </span>
-          </div>
-        ))}
+              </span>
+              <span className={`w-[5.5rem] truncate text-[13px] font-semibold sm:w-28 sm:text-sm ${isYou ? "text-orchid" : ""}`}>
+                {row.brand}
+              </span>
+              <span className="relative flex h-2.5 flex-1 overflow-hidden rounded-full bg-paper/10">
+                <span
+                  data-bar
+                  className={`h-full origin-left rounded-full ${isYou ? "bg-orchid" : "bg-paper"}`}
+                  style={{ width: `${(row.revenue / max) * 100}%` }}
+                />
+              </span>
+              <span className={`w-14 text-right text-xs font-bold tabular-nums sm:w-16 ${isYou ? "text-orchid" : "text-paper/70"}`}>
+                {lakh(row.revenue)}
+              </span>
+            </div>
+          );
+        })}
       </div>
       <p data-verdict className="mt-3 rounded-2xl bg-orchid px-4 py-3 text-sm font-bold text-aubergine">
-        + your {lakh(d.order)} order.{" "}
-        {after.indexOf(d.boosted) === 0
-          ? "Straight to #1."
-          : climbed > 0
-            ? `Up ${climbed} place${climbed > 1 ? "s" : ""}.`
-            : "Even further ahead."}
+        {rank === 1 ? "Your list alone would top the whole leaderboard." : `Your list alone would rank #${rank} in the cohort.`}
       </p>
     </div>
   );
@@ -223,36 +233,24 @@ function SceneBoard({ d }: { d: JourneyData }) {
 
 function SceneUnwrap({ d }: { d: JourneyData }) {
   const bits = Array.from({ length: 26 }, (_, i) => i);
-  const colours = ["var(--color-orchid)", "var(--color-violet)", "var(--color-marigold)", "var(--color-royal)", "var(--color-paper)"];
+  const colours = ["#e4a7f3", "#7c4dcc", "#f3b14e", "#452a74", "#f3ede3"];
   return (
-    <div className="relative mx-auto grid aspect-[1.15] w-full max-w-[520px] place-items-center">
+    <div className="relative mx-auto flex w-full max-w-[480px] flex-col items-center">
       {bits.map((i) => (
         <span
           key={i}
           data-confetti
-          className="absolute left-1/2 top-[45%] block"
-          style={{
-            width: i % 3 ? 10 : 14,
-            height: i % 3 ? 16 : 14,
-            borderRadius: i % 3 ? 3 : 999,
-            background: colours[i % colours.length],
-          }}
+          aria-hidden
+          className="absolute left-1/2 top-[38%] block opacity-0"
+          style={{ width: i % 3 ? 9 : 13, height: i % 3 ? 15 : 13, borderRadius: i % 3 ? 3 : 999, background: colours[i % colours.length] }}
         />
       ))}
-      <div data-gift className="relative w-[44%]">
-        <Icon3D name="wrapped-gift" size={256} className="h-auto w-full" />
+      <div data-gift className="relative w-[52%] text-aubergine">
+        <Doodle name="gift" hover="none" draw={false} className="w-full" />
       </div>
-      <div data-tag className="absolute bottom-[4%] flex items-center gap-3 rounded-full bg-paper py-2 pl-2 pr-5 shadow-xl">
-        <span className="flex -space-x-2">
-          {d.team.map((p) => (
-            <span key={p.photo} className="relative size-9 overflow-hidden rounded-full bg-orchid-soft ring-2 ring-paper">
-              <Image src={p.photo} alt="" fill sizes="72px" className="object-cover object-top" />
-            </span>
-          ))}
-        </span>
-        <span className="text-sm font-semibold text-ink">
-          Made by {d.team.map((t) => t.name.split(" ")[0]).join(", ")} <span className="text-ink/45">· {d.teamBrand}</span>
-        </span>
+      <div data-tag className="mt-6 flex items-center gap-3 rounded-full bg-paper py-2 pl-2 pr-5 shadow-xl">
+        <FacePile photos={d.cohort} size={30} total={d.cohortCount} />
+        <span className="whitespace-nowrap text-sm font-semibold text-ink">Made by founders at Mesa</span>
       </div>
     </div>
   );
@@ -260,7 +258,7 @@ function SceneUnwrap({ d }: { d: JourneyData }) {
 
 /* ─────────────────── scene animations (shared by both layouts) ─────────────────── */
 
-function sceneTimeline(n: number, root: Element, d: JourneyData): gsap.core.Timeline {
+function sceneTimeline(n: number, root: Element): gsap.core.Timeline {
   const q = gsap.utils.selector(root);
   const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
   if (n === 0) {
@@ -269,8 +267,8 @@ function sceneTimeline(n: number, root: Element, d: JourneyData): gsap.core.Time
       .from(q("[data-qty]"), { scale: 0, stagger: 0.12, duration: 0.3, ease: "back.out(3)" }, 0.2)
       .from(q("[data-backing]"), { y: 20, opacity: 0, duration: 0.35 }, 0.7);
   } else if (n === 1) {
-    tl.from(q("[data-phone]"), { y: 60, opacity: 0, rotate: -30, duration: 0.4 })
-      .to(q("[data-phone]"), { rotate: 8, duration: 0.06, yoyo: true, repeat: 7, ease: "none" }, 0.35)
+    tl.from(q("[data-phone]"), { y: 50, opacity: 0, rotate: -20, duration: 0.4 })
+      .to(q("[data-phone] > svg"), { rotate: 4, duration: 0.06, yoyo: true, repeat: 7, ease: "none" }, 0.35)
       .from(
         q("[data-bubble]"),
         { scale: 0.6, opacity: 0, y: 20, transformOrigin: "left bottom", stagger: 0.25, duration: 0.35, ease: "back.out(2)" },
@@ -278,38 +276,38 @@ function sceneTimeline(n: number, root: Element, d: JourneyData): gsap.core.Time
       )
       .from(q("[data-stamp]"), { scale: 2.2, opacity: 0, rotate: -40, duration: 0.35, ease: "back.out(1.6)" }, 0.95);
   } else if (n === 2) {
-    tl.from(q("[data-squad]"), { yPercent: 40, opacity: 0, duration: 0.5 })
-      .from(q("[data-squad] figure"), { y: 30, stagger: 0.08, duration: 0.4, ease: "back.out(2)" }, 0.1)
-      .from(q("[data-box]"), { y: 120, rotate: 30, opacity: 0, duration: 0.5, ease: "back.out(1.6)" }, 0.35)
-      .from(q("[data-chip]"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2.5)" }, 0.7);
+    tl.from(q("[data-box]"), { y: 60, opacity: 0, rotate: 8, duration: 0.45, ease: "back.out(1.6)" })
+      .from(q("[data-sticker]"), { scale: 2.4, opacity: 0, rotate: -40, y: -60, duration: 0.4, ease: "back.out(1.4)" }, 0.45)
+      .to(q("[data-box]"), { y: 6, duration: 0.08, yoyo: true, repeat: 1, ease: "power1.inOut" }, 0.8)
+      .from(q("[data-packers]"), { y: 30, opacity: 0, duration: 0.35 }, 0.85);
   } else if (n === 3) {
     const rows = q("[data-board-row]") as HTMLElement[];
-    const after = rankAfter(d);
     tl.from(q("[data-bar]"), { scaleX: 0, stagger: 0.06, duration: 0.45, ease: "power3.out" })
-      .from(q("[data-plus]"), { scaleX: 0, duration: 0.35, ease: "power3.out" }, 0.55)
-      .to(rows, { y: (i: number) => (after.indexOf(i) - i) * 56, duration: 0.45, ease: "power3.inOut" }, 0.95)
-      // Both rank numbers are in the markup and cross-fade, so scrubbing back undoes it.
-      .to(q("[data-rank-before]"), { opacity: 0, duration: 0.15 }, 1.15)
-      .to(q("[data-rank-after]"), { opacity: 1, duration: 0.15 }, 1.2)
       .to(
-        q("[data-board-row] [data-value-before]").filter((_, i) => i === d.boosted),
-        { opacity: 0, duration: 0.15 },
-        0.6,
+        rows,
+        {
+          y: (_i: number, el: HTMLElement) => (Number(el.dataset.final) - Number(el.dataset.boardRow)) * 52,
+          duration: 0.5,
+          ease: "power3.inOut",
+        },
+        0.75,
       )
-      .to(q("[data-value-after]"), { opacity: 1, duration: 0.15 }, 0.65)
-      .from(q("[data-verdict]"), { y: 20, opacity: 0, duration: 0.3 }, 1.1);
+      // Both rank numbers are in the markup and cross-fade, so scrubbing back undoes it.
+      .to(q("[data-rank-before]"), { opacity: 0, duration: 0.15 }, 0.95)
+      .to(q("[data-rank-after]"), { opacity: 1, duration: 0.15 }, 1.0)
+      .from(q("[data-verdict]"), { y: 20, opacity: 0, duration: 0.3 }, 1.05);
   } else {
     const bits = q("[data-confetti]") as HTMLElement[];
     tl.from(q("[data-gift]"), { scale: 0.6, opacity: 0, duration: 0.35, ease: "back.out(2)" })
       .to(q("[data-gift]"), { rotate: 6, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, 0.35)
-      .to(q("[data-gift]"), { y: -40, scale: 1.12, duration: 0.25, ease: "power2.out" }, 0.65)
+      .to(q("[data-gift]"), { y: -36, scale: 1.1, duration: 0.25, ease: "power2.out" }, 0.65)
       .to(q("[data-gift]"), { y: 0, scale: 1, duration: 0.35, ease: "bounce.out" }, 0.9)
       .fromTo(
         bits,
         { x: 0, y: 0, opacity: 0, rotate: 0 },
         {
-          x: () => gsap.utils.random(-260, 260),
-          y: () => gsap.utils.random(-240, 120),
+          x: () => gsap.utils.random(-240, 240),
+          y: () => gsap.utils.random(-220, 110),
           rotate: () => gsap.utils.random(-540, 540),
           opacity: 1,
           duration: 0.6,
@@ -327,7 +325,6 @@ function sceneTimeline(n: number, root: Element, d: JourneyData): gsap.core.Time
 
 export function Journey({ data }: { data: JourneyData }) {
   const root = useRef<HTMLElement>(null);
-  const chapters = CHAPTERS(data);
   const scenes = [
     <SceneList key="l" d={data} />,
     <SceneCall key="c" />,
@@ -349,13 +346,25 @@ export function Journey({ data }: { data: JourneyData }) {
         const scs = q("[data-scene]");
         const dots = q("[data-dot]");
         const path = stage.querySelector<SVGPathElement>("[data-drawn]")!;
-        const gift = stage.querySelector("[data-rider]")!;
+        const rider = stage.querySelector("[data-rider]")!;
         const reel = stage.querySelector("[data-reel]")!;
+        const ride = (start: number, end: number) => ({
+          path: "[data-track]",
+          align: "[data-track]",
+          alignOrigin: [0.5, 0.5] as [number, number],
+          start,
+          end,
+        });
 
         gsap.set(chaps.slice(1), { opacity: 0, yPercent: 40 });
         gsap.set(scs.slice(1), { clipPath: "inset(100% 0% 0% 0% round 32px)", y: 60 });
         gsap.set(path, { drawSVG: "0%" });
-        gsap.set(gift, { motionPath: { path: "[data-track]", align: "[data-track]", alignOrigin: [0.5, 0.5], start: 0, end: 0 } });
+        gsap.set(rider, { motionPath: ride(0, 0) });
+
+        // The first scene is already on screen before the pin starts, so it
+        // plays as the section arrives instead of waiting for the scrub.
+        const first = sceneTimeline(0, scs[0]).pause();
+        gsap.timeline({ scrollTrigger: { trigger: el, start: "top 55%", once: true, onEnter: () => void first.play() } });
 
         const tl = gsap.timeline({
           defaults: { ease: "none" },
@@ -368,13 +377,9 @@ export function Journey({ data }: { data: JourneyData }) {
             invalidateOnRefresh: true,
           },
         });
-        // The first scene is already on screen before the pin starts, so it
-        // plays as the section arrives instead of waiting for the scrub.
-        const first = sceneTimeline(0, scs[0], data).pause();
-        ScrollTriggerOnce(el, () => first.play(), "top 55%");
         for (let i = 0; i < 5; i++) {
           const at = i * 2;
-          if (i > 0) tl.add(sceneTimeline(i, scs[i], data), at - 0.6);
+          if (i > 0) tl.add(sceneTimeline(i, scs[i]), at - 0.6);
           if (i === 4) break;
           const t = at + 1.1;
           tl.to(chaps[i], { opacity: 0, yPercent: -40, duration: 0.45, ease: "power2.in" }, t)
@@ -383,15 +388,7 @@ export function Journey({ data }: { data: JourneyData }) {
             .to(scs[i + 1], { clipPath: "inset(0% 0% 0% 0% round 32px)", y: 0, duration: 0.6, ease: "power3.inOut" }, t + 0.2)
             .to(reel, { yPercent: -((i + 1) * 20), duration: 0.6, ease: "power3.inOut" }, t + 0.1)
             .to(path, { drawSVG: `${(i + 1) * 25}%`, duration: 0.9, ease: "power1.inOut" }, t)
-            .to(
-              gift,
-              {
-                motionPath: { path: "[data-track]", align: "[data-track]", alignOrigin: [0.5, 0.5], start: i * 0.25, end: (i + 1) * 0.25 },
-                duration: 0.9,
-                ease: "power1.inOut",
-              },
-              t,
-            )
+            .to(rider, { motionPath: ride(i * 0.25, (i + 1) * 0.25), duration: 0.9, ease: "power1.inOut" }, t)
             .fromTo(
               dots[i + 1],
               { scale: 0.6 },
@@ -401,15 +398,14 @@ export function Journey({ data }: { data: JourneyData }) {
         }
       });
 
-      // Phones and reduced motion: stacked chapters, each scene plays once as it arrives,
-      // and the gift rides down a line drawn by the scroll.
+      // Phones, tablets and reduced motion: stacked chapters, each scene plays
+      // once as it arrives, and the gift rides down a line drawn by the scroll.
       mm.add("(max-width: 899px), (prefers-reduced-motion: reduce)", () => {
         const stack = el.querySelector<HTMLElement>("[data-stack]")!;
         if (reducedMotion()) return;
         gsap.utils.toArray<HTMLElement>("[data-mscene]", stack).forEach((s, i) => {
-          const tl = sceneTimeline(i, s, data).pause();
-          gsap.set(s, { opacity: 1 });
-          ScrollTriggerOnce(s, () => tl.play());
+          const tl = sceneTimeline(i, s).pause();
+          gsap.timeline({ scrollTrigger: { trigger: s, start: "top 75%", once: true, onEnter: () => void tl.play() } });
         });
         gsap.fromTo(
           stack.querySelector("[data-line]"),
@@ -428,16 +424,13 @@ export function Journey({ data }: { data: JourneyData }) {
       {/* ── desktop stage ── */}
       <div data-desk className="relative hidden h-[100svh] overflow-hidden min-[900px]:block">
         <div className="absolute inset-x-0 top-0 mx-auto flex max-w-[1500px] items-start justify-between px-8 pt-24">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-violet">How it works</p>
-            <p className="font-display mt-2 max-w-[18ch] text-[clamp(1.6rem,2.4vw,2.4rem)] leading-tight text-ink/80">
-              From your list to their leaderboard.
-            </p>
-          </div>
-          <p className="font-display flex items-baseline text-[clamp(1.6rem,2.4vw,2.4rem)] text-ink/40">
+          <h2 className="font-display max-w-[20ch] text-[clamp(1.8rem,2.6vw,2.6rem)] leading-tight text-ink/85">
+            From your list to their leaderboard.
+          </h2>
+          <p className="font-display flex items-baseline text-[clamp(1.6rem,2.4vw,2.4rem)] text-ink/40" aria-hidden>
             <span className="inline-block h-[1.1em] overflow-hidden leading-[1.1em] text-royal">
               <span data-reel className="block">
-                {chapters.map((_, i) => (
+                {CHAPTERS.map((_, i) => (
                   <span key={i} className="block h-[1.1em]">
                     0{i + 1}
                   </span>
@@ -450,7 +443,7 @@ export function Journey({ data }: { data: JourneyData }) {
 
         <div className="absolute inset-x-0 top-[24%] mx-auto grid h-[52%] max-w-[1500px] grid-cols-[0.9fr_1.1fr] items-center gap-10 px-8">
           <div className="relative h-full">
-            {chapters.map((c) => (
+            {CHAPTERS.map((c) => (
               <div key={c.title} data-chapter className="absolute inset-0 flex flex-col justify-center">
                 <h3 className="font-display max-w-[12ch] text-[clamp(2.6rem,4.6vw,5rem)] leading-[0.92] text-ink">{c.title}</h3>
                 <p className="mt-6 max-w-md text-lg leading-snug text-ink/65">{c.body}</p>
@@ -466,41 +459,51 @@ export function Journey({ data }: { data: JourneyData }) {
           </div>
         </div>
 
-        <svg viewBox="0 0 1000 140" className="absolute inset-x-0 bottom-[2%] mx-auto w-full max-w-[1400px] overflow-visible px-8">
+        <svg
+          viewBox="0 0 1000 150"
+          className="absolute inset-x-0 bottom-[1%] mx-auto w-full max-w-[1400px] overflow-visible px-8"
+          aria-hidden
+        >
           <path data-track d={PATH} fill="none" stroke="rgb(27 20 33 / 0.15)" strokeWidth="2" strokeDasharray="2 8" strokeLinecap="round" />
           <path data-drawn d={PATH} fill="none" stroke="#7c4dcc" strokeWidth="3" strokeLinecap="round" />
           {XS.map((x, i) => (
             <g key={x}>
               <circle data-dot cx={x} cy={Y} r="9" fill={i === 0 ? "#452a74" : "#f3ede3"} stroke="#452a74" strokeWidth="2.5" />
-              <text x={x} y={Y + 42} textAnchor="middle" className="fill-ink/55 text-[13px] font-semibold uppercase tracking-[0.15em]">
-                {chapters[i].label}
+              <text x={x} y={Y + 44} textAnchor="middle" fill="rgb(27 20 33 / 0.55)" fontSize="15" fontWeight="600">
+                {CHAPTERS[i].label}
               </text>
             </g>
           ))}
+          {/* The gift rides above the line, so it never sits on a label. */}
           <g data-rider>
-            <image href={withBase("/icons3d/wrapped-gift.png")} x="-30" y="-36" width="60" height="60" />
+            <g transform="translate(-30 -78)" color="#2a1849">
+              <svg width="60" height="60" viewBox="0 0 96 96" overflow="visible">
+                <DoodleArtwork name="gift" />
+              </svg>
+            </g>
           </g>
         </svg>
       </div>
 
-      {/* ── phones ── */}
-      <div data-stack className="relative overflow-x-clip px-5 pb-24 pt-20 min-[900px]:hidden">
-        <p className="text-xs font-bold uppercase tracking-[0.25em] text-violet">How it works</p>
-        <p className="font-display mt-2 text-4xl leading-tight text-ink">From your list to their leaderboard.</p>
+      {/* ── phones and tablets ── */}
+      <div data-stack className="relative overflow-x-clip px-5 pb-24 pt-20 sm:px-8 min-[900px]:hidden">
+        <h2 className="font-display text-[2.6rem] leading-[0.95] text-ink sm:text-6xl">From your list to their leaderboard.</h2>
         <div className="relative mt-12">
           <span aria-hidden className="absolute bottom-0 left-[15px] top-0 w-0.5 bg-ink/10" />
           <span data-line aria-hidden className="absolute bottom-0 left-[15px] top-0 w-0.5 origin-top bg-violet" />
           <div aria-hidden className="pointer-events-none absolute inset-y-0 left-0 w-8">
-            <div className="sticky top-[45vh]">
-              <Image src={withBase("/icons3d/wrapped-gift.png")} alt="" width={64} height={64} className="-ml-1 size-10 drop-shadow-lg" />
+            <div className="sticky top-[45vh] -ml-2 w-12 text-aubergine">
+              <svg viewBox="0 0 96 96" className="w-full overflow-visible">
+                <DoodleArtwork name="gift" />
+              </svg>
             </div>
           </div>
-          <ol className="space-y-20 pl-12">
-            {chapters.map((c, i) => (
+          <ol className="space-y-20 pl-12 sm:pl-16">
+            {CHAPTERS.map((c, i) => (
               <li key={c.title}>
                 <p className="font-display text-5xl text-orchid">0{i + 1}</p>
                 <h3 className="font-display mt-1 text-[2.4rem] leading-[0.95] text-ink">{c.title}</h3>
-                <p className="mt-3 text-base leading-snug text-ink/65">{c.body}</p>
+                <p className="mt-3 max-w-md text-base leading-snug text-ink/65">{c.body}</p>
                 <div data-mscene className="mt-8">
                   {scenes[i]}
                 </div>
@@ -511,8 +514,4 @@ export function Journey({ data }: { data: JourneyData }) {
       </div>
     </section>
   );
-}
-
-function ScrollTriggerOnce(trigger: Element, onEnter: () => void, start = "top 75%") {
-  gsap.timeline({ scrollTrigger: { trigger, start, once: true, onEnter } });
 }

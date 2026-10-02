@@ -10,7 +10,8 @@ import { cn } from "@/lib/cn";
 import { foundersOf } from "@/lib/founders";
 import { TEAM_OF } from "@/lib/brand-teams";
 import { useDialog } from "@/hooks/use-dialog";
-import { Icon3D } from "@/components/icon3d";
+import { Doodle } from "@/components/doodle";
+import { FacePile } from "@/components/face-pile";
 import { FitImage } from "@/components/fit-image";
 import { Roll } from "@/components/layout/header";
 import { QtyStepper } from "./qty-stepper";
@@ -65,20 +66,17 @@ export function RequestDrawer() {
 
         {backing.length > 0 && (
           <div className="mx-6 flex items-center gap-3 rounded-2xl bg-orchid-soft px-4 py-3">
-            <span className="flex -space-x-2">
-              {backing.slice(0, 8).map((p) => (
-                <span key={p.photo} className="relative size-8 overflow-hidden rounded-full bg-paper ring-2 ring-orchid-soft">
-                  <Image src={p.photo} alt="" fill sizes="64px" className="object-cover object-top" />
-                </span>
-              ))}
+            <FacePile photos={backing.map((p) => p.photo)} size={30} ring="ring-orchid-soft" />
+            <span className="whitespace-nowrap text-sm font-semibold text-aubergine">
+              <span className="hidden sm:inline">You&apos;re backing</span>
+              <span className="sm:hidden">Backing</span> {backing.length} founders
             </span>
-            <span className="text-sm font-semibold text-aubergine">You&apos;re backing {backing.length} founders</span>
           </div>
         )}
 
         {list.count === 0 ? (
           <div className="flex flex-1 flex-col items-center justify-center px-10 text-center">
-            <Icon3D name="shopping-bags" size={128} className="size-24" />
+            <Doodle name="bag" className="size-24 text-aubergine" />
             <p className="font-display mt-6 text-3xl text-ink">Your list is feeling light.</p>
             <p className="mt-2 text-sm text-ink/60">Add a few things and we&apos;ll handle the rest. It&apos;s a list, not an order.</p>
             <Link

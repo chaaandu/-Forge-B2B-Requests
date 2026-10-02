@@ -65,20 +65,21 @@ export function ProductCard({
         </button>
       </div>
 
-      <div className="mt-4 space-y-1.5 px-1">
+      {/* Makers, name, brand, price: each on its own line, so a long brand name
+          never pushes the price into the middle of it on a narrow card. */}
+      <div className="mt-4 min-w-0 space-y-1 px-1">
         <FounderStack teamCode={brand.teamCode} />
-        <Link href={`/products/${listing.slug}`}>
-          <h3 className="font-display-straight line-clamp-2 text-[1.35rem] leading-[1.1] text-ink">{listing.title}</h3>
+        <Link href={`/products/${listing.slug}`} className="block pt-0.5">
+          <h3 className="font-display-straight line-clamp-2 text-[1.15rem] leading-[1.12] text-ink sm:text-[1.35rem]">{listing.title}</h3>
         </Link>
-        <p className="flex items-baseline gap-2 text-sm text-ink/60">
-          <span className="font-semibold text-ink">{brand.name}</span>
-          <span aria-hidden>·</span>
-          <span className="tabular-nums">
-            {listing.variants.length > 1 && listing.priceFromMinor !== listing.priceToMinor && "from "}
-            {formatINR(listing.priceFromMinor)}
+        <p className="truncate text-[13px] font-semibold text-ink/75 sm:text-sm">{brand.name}</p>
+        <p className="flex flex-wrap items-baseline gap-x-2 text-sm tabular-nums text-ink">
+          <span>
+            {listing.variants.length > 1 && listing.priceFromMinor !== listing.priceToMinor && <span className="text-ink/55">from </span>}
+            <span className="font-semibold">{formatINR(listing.priceFromMinor)}</span>
           </span>
           {cheapest.compareAtMinor && <span className="text-xs text-ink/35 line-through">{formatINR(cheapest.compareAtMinor)}</span>}
-          {choices && <span className="ml-auto hidden text-xs text-ink/45 sm:inline">{choices}</span>}
+          {choices && <span className="hidden text-xs text-ink/45 sm:inline">· {choices}</span>}
         </p>
       </div>
     </article>

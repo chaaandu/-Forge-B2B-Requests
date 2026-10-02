@@ -78,8 +78,9 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
           Meet the <em className="text-royal">{faces.length}.</em>
         </SplitReveal>
         <p className="max-w-md text-lg leading-snug text-ink/65 md:justify-self-end">
-          Real founders. Real hustle. <span className="hidden md:inline">Hover a face to meet the squad, click to see what they make.</span>
-          <span className="md:hidden">Tap a face to meet the squad.</span>
+          Real founders. Real hustle.{" "}
+          <span className="hidden pointer-fine:inline">Hover a face to meet the squad, click to see what they make.</span>
+          <span className="pointer-fine:hidden">Tap a face to meet the squad.</span>
         </p>
       </div>
 
@@ -127,7 +128,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
         ref={card}
         aria-hidden
         className={cn(
-          "pointer-events-none fixed left-0 top-0 z-50 hidden w-[280px] rounded-3xl bg-ink p-5 text-paper shadow-2xl transition-opacity duration-300 md:block",
+          "pointer-events-none fixed left-0 top-0 z-50 hidden w-[280px] rounded-3xl bg-ink p-5 text-paper shadow-2xl transition-opacity duration-300 pointer-fine:block",
           active !== null ? "opacity-100" : "opacity-0",
         )}
       >
@@ -141,7 +142,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
                 <span className="font-display text-2xl text-paper">{inr(detail.f.sold)}</span> sold so far, as a squad
               </p>
             )}
-            <p className="mt-3 text-xs font-bold uppercase tracking-[0.2em] text-paper/40">Click to meet the squad</p>
+            <p className="mt-3 text-sm font-semibold text-orchid">Click to meet the squad →</p>
           </>
         )}
       </div>
@@ -149,7 +150,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
       {/* Phone sheet */}
       <div
         className={cn(
-          "fixed inset-x-3 bottom-3 z-50 rounded-3xl bg-ink p-5 text-paper shadow-2xl transition duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden",
+          "fixed inset-x-3 bottom-3 z-50 mx-auto max-w-md rounded-3xl bg-ink p-5 text-paper shadow-2xl transition duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
           sheet !== null ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-[120%] opacity-0",
         )}
       >

@@ -11,7 +11,7 @@
   {
     "teamCode": "C102",
     "slug": "lumi",
-    "name": "LUMI",
+    "name": "Lumi",
     "tagline": "Beaded tops & statement wear",
     "collection": "apparel",
     "website": "https://getlumi.in",
@@ -20,7 +20,7 @@
   {
     "teamCode": "C103",
     "slug": "house-of-pravaah",
-    "name": "House of Pravaah",
+    "name": "House Of Pravaah",
     "tagline": "Scarves, bandanas & flowy pieces",
     "collection": "accessories",
     "website": "https://houseofpravaah.com",
@@ -68,41 +68,50 @@
     "name": "The Drunken Mugs",
     "tagline": "Luxury glassware",
     "collection": "home",
-    "website": null,
+    "website": "https://thedrunkenmug.in",
     "instagram": null
   },
   {
     "teamCode": "C109",
-    "slug": "wekravehealthy",
-    "name": "WeKravehealthy",
+    "slug": "wekrave",
+    "name": "WeKrave",
     "tagline": "Healthy snacking",
     "collection": "snacks",
     "website": "https://www.wekrave.in",
-    "instagram": "https://www.instagram.com/wekravehealthy"
+    "instagram": "https://www.instagram.com/wekravehealthy",
+    "aliases": [
+      "wekravehealthy"
+    ]
   },
   {
     "teamCode": "C110",
-    "slug": "nutflix",
-    "name": "NUTflix",
-    "tagline": "Flavoured dry fruits",
+    "slug": "savore",
+    "name": "Savore",
+    "tagline": "Flavoured dry fruits & gift hampers",
     "collection": "snacks",
-    "website": null,
-    "instagram": null
+    "website": "https://savore.online",
+    "instagram": null,
+    "aliases": [
+      "nutflix"
+    ]
   },
   {
     "teamCode": "C111",
-    "slug": "bizfits",
-    "name": "BizFits",
-    "tagline": "Smart casuals",
+    "slug": "pehchaan",
+    "name": "Pehchaan",
+    "tagline": "Sarees & ethnic wear",
     "collection": "apparel",
-    "website": null,
-    "instagram": null
+    "website": "https://www.pehchaann.in",
+    "instagram": null,
+    "aliases": [
+      "bizfits"
+    ]
   },
   {
     "teamCode": "C112",
     "slug": "fake-society-studio",
     "name": "Fake Society Studio",
-    "tagline": "Athleisure — tees, tracks & shorts",
+    "tagline": "Athleisure: tees, tracks & shorts",
     "collection": "apparel",
     "website": "https://fakesocietystudio.com",
     "instagram": "https://www.instagram.com/fakesocietystudio"
@@ -110,7 +119,7 @@
   {
     "teamCode": "C113",
     "slug": "munchandco",
-    "name": "Munch&co",
+    "name": "Munch & Co",
     "tagline": "Coin cookies",
     "collection": "sweets",
     "website": "https://munchco.in",
@@ -149,7 +158,7 @@
     "name": "Juzzle",
     "tagline": "Iced tea premixes",
     "collection": "beverages",
-    "website": "https://juzzle-store.myshopify.com",
+    "website": "https://juzzle.in",
     "instagram": "https://www.instagram.com/just.juzzle"
   },
   {
@@ -158,13 +167,13 @@
     "name": "Mello",
     "tagline": "Hot chocolate premixes & coffee dragées",
     "collection": "beverages",
-    "website": null,
+    "website": "https://mellooo.co.in",
     "instagram": null
   },
   {
     "teamCode": "C119",
     "slug": "nekt",
-    "name": "NEKT",
+    "name": "Nekt",
     "tagline": "Honey sachets",
     "collection": "snacks",
     "website": "https://getnekt.in",
@@ -191,7 +200,7 @@
   {
     "teamCode": "C122",
     "slug": "meltyk",
-    "name": "MELTYK",
+    "name": "Meltyk",
     "tagline": "Chocolates",
     "collection": "sweets",
     "website": "https://meltyk.in",
@@ -200,10 +209,10 @@
   {
     "teamCode": "C123",
     "slug": "haulties",
-    "name": "HAULTIES",
+    "name": "Haulties",
     "tagline": "Healthy snacks",
     "collection": "snacks",
-    "website": null,
+    "website": "https://haulties.in",
     "instagram": "https://www.instagram.com/haulties_s"
   },
   {
@@ -212,7 +221,7 @@
     "name": "Bean & Beyond",
     "tagline": "Black, cold & Vietnamese coffee",
     "collection": "beverages",
-    "website": null,
+    "website": "https://bean-beyond-store.myshopify.com",
     "instagram": null
   },
   {
@@ -239,7 +248,7 @@
     "name": "Lantern Candles",
     "tagline": "Scented & artisanal candles",
     "collection": "home",
-    "website": null,
+    "website": "https://lantern-candle.myshopify.com",
     "instagram": null
   },
   {
@@ -257,7 +266,7 @@
     "name": "Klayzy Ceramics",
     "tagline": "Ceramic mugs, ashtrays & tumblers",
     "collection": "home",
-    "website": null,
+    "website": "https://www.klayzy.shop",
     "instagram": null
   },
   {
@@ -299,10 +308,10 @@
   {
     "teamCode": "C134",
     "slug": "linore",
-    "name": "LINORE",
+    "name": "Linore",
     "tagline": "Pure linen wear",
     "collection": "apparel",
-    "website": null,
+    "website": "https://linore.in",
     "instagram": null
   },
   {
@@ -317,7 +326,7 @@
   {
     "teamCode": "C136",
     "slug": "kuki",
-    "name": "KUKI",
+    "name": "Kuki",
     "tagline": "Cookies",
     "collection": "sweets",
     "website": "https://thekuki.in",
@@ -326,10 +335,10 @@
   {
     "teamCode": "C137",
     "slug": "zaaree",
-    "name": "ZAAREE",
+    "name": "Zaaree",
     "tagline": "Sarees",
     "collection": "apparel",
-    "website": null,
+    "website": "https://zaaree.co",
     "instagram": "https://www.instagram.com/zaaree.co"
   },
   {

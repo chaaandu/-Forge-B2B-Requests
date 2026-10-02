@@ -40,11 +40,9 @@ export function Reels({ reels }: { reels: ReelCard[] }) {
     <section className="py-28">
       <div className="mx-auto mb-12 flex max-w-[1500px] flex-wrap items-end justify-between gap-6 px-5 sm:px-8">
         <SplitReveal className="font-display text-[clamp(3rem,8vw,8rem)] leading-[0.88] text-ink">
-          From their <em className="text-royal">stalls.</em>
+          Straight from their <em className="text-royal">stalls.</em>
         </SplitReveal>
-        <p className="max-w-sm text-lg leading-snug text-ink/65">
-          Shot, edited and posted by the founders themselves. Sound off; it&apos;s their pitch, not ours.
-        </p>
+        <p className="max-w-sm text-lg leading-snug text-ink/65">Shot, edited and posted by the founders. Zero agencies were involved.</p>
       </div>
       <DragRail>
         <div ref={row} className="flex w-max gap-4 px-5 pb-6 pt-2 sm:px-8">

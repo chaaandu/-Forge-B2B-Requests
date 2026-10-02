@@ -112,16 +112,38 @@ old code keeps running.
 | `npm run format` | Prettier |
 | `npm run catalog:sync` | Refresh the fallback snapshot from the POS |
 
-## Brand
+## Brand and voice
 
-The layout follows the Apple Store: a one-line headline, every category directly under it as
-an object with a name, then rails, then reasons to buy. The colours are the Mesa Forge palette
-kept quiet: mostly white, Royal Purple for actions, Vivid Violet for links, and one Deep
-Aubergine band. Everything is set in Manrope, Mesa's typeface.
+**The pitch comes first.** The site argues before it sells: every gift here is someone's
+first company. Founders' faces and names are everywhere a product is (portraits are the
+cohort's own cut-outs, copied from the leaderboard into `public/founders/`, with
+`data/founders.json` holding names and the leaderboard's line-up order). Live revenue and
+reels come from the BYOB master's published feeds (`src/lib/impact.ts`, `src/lib/reels.ts`).
 
-The 3D icons in `public/icons3d/` are [Microsoft Fluent Emoji](https://github.com/microsoft/fluentui-emoji)
-(MIT licence, included alongside them), which is free for commercial use. To swap one, drop a 256×256
-PNG in that folder and point `icon` in `src/lib/catalog-types.ts` (categories) or
-`src/lib/occasions.ts` at it. Headings are set in
-Newsreader (the free stand-in for New York) and UI text in Manrope. The Mesa lockup in
-`public/brand/` is the official artwork, unmodified.
+**Look.** Warm paper and aubergine ink, inside the Mesa Forge palette: Royal Purple for
+type, Orchid for marks, Vivid Violet only where you act. Fraunces (with its SOFT and WONK
+axes) is the voice; Manrope (Mesa's typeface) is the interface. The Mesa lockup in
+`public/brand/` is the official artwork, unmodified; phones show only the "m" tile.
+
+**Drawings.** Every icon is from one hand-drawn set in `src/components/doodles.tsx`: ink
+outlines over an off-register colour shape, on one 96-unit grid with one stroke weight.
+`<Doodle>` (`src/components/doodle.tsx`) draws them in on first view and redraws on hover.
+To add one, add an entry to `DOODLES`; to change a category's drawing, change its `icon`
+in `src/lib/catalog-types.ts`.
+
+**Motion.** GSAP (ScrollTrigger, SplitText, Draggable, MotionPath, DrawSVG) with Lenis for
+smooth scrolling. Everything stands down for `prefers-reduced-motion`, touch screens keep
+native scrolling, and anything hidden until animated shows itself after 2.5s if scripts
+never run (`.js-reveal` in `globals.css`).
+
+**Copy.** Quick-commerce voice: short, warm, a bit cheeky. No em dashes anywhere,
+including product titles from the POS, which the catalogue build rewrites
+("Aroma Oil · Cinnamon"). No small all-caps labels above headings.
+
+## Brand names
+
+Names come from the BYOB master (Team Links / the leaderboard feed), written with every
+word capitalised (`src/lib/venture-name.ts`). When a team renames its brand, change `name`
+and `slug` in `data/brands.json` and keep the old slug in `aliases`: old links redirect,
+and gift lists saved or shared under the old name keep working. Renamed so far: BizFits →
+Pehchaan, NUTflix → Savore, WeKrave Healthy → WeKrave.

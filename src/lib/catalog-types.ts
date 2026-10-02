@@ -6,17 +6,17 @@
 
 /**
  * The shelves, in the order a corporate buyer reaches for them: ready-made
- * hampers first. `icon` is a Fluent 3D emoji in public/icons3d (MIT, Microsoft).
+ * hampers first. `icon` names a drawing in components/doodles.tsx.
  */
 export const COLLECTIONS = [
-  { id: "hampers", name: "Gift Hampers", short: "Hampers", icon: "wrapped-gift", blurb: "Ready-made boxes. Zero effort, full credit" },
-  { id: "snacks", name: "Savoury Snacks", short: "Savoury", icon: "peanuts", blurb: "Chips, makhana, nuts. The good crunch" },
+  { id: "hampers", name: "Gift Hampers", short: "Hampers", icon: "gift", blurb: "Ready-made boxes. Zero effort, full credit" },
+  { id: "snacks", name: "Savoury Snacks", short: "Savoury", icon: "chips", blurb: "Chips, makhana, nuts. The good crunch" },
   { id: "sweets", name: "Sweet Treats", short: "Sweet", icon: "cookie", blurb: "Cookies, chocolates, brittles. Kuch meetha?" },
-  { id: "beverages", name: "Tea, Coffee & Cocoa", short: "Tea & Coffee", icon: "hot-beverage", blurb: "For every 4pm slump" },
-  { id: "fragrance", name: "Fragrance & Self-care", short: "Fragrance", icon: "lotion-bottle", blurb: "Perfumes that start conversations" },
+  { id: "beverages", name: "Tea, Coffee & Cocoa", short: "Tea & Coffee", icon: "mug", blurb: "For every 4pm slump" },
+  { id: "fragrance", name: "Fragrance & Self-care", short: "Fragrance", icon: "perfume", blurb: "Perfumes that start conversations" },
   { id: "home", name: "Home & Candles", short: "Home", icon: "candle", blurb: "Candles, diffusers, mugs, ceramics" },
-  { id: "apparel", name: "Apparel", short: "Apparel", icon: "t-shirt", blurb: "Shirts, kurtas, linen, sarees, tees" },
-  { id: "accessories", name: "Bags & Accessories", short: "Accessories", icon: "handbag", blurb: "Totes, jewellery, socks, patches" },
+  { id: "apparel", name: "Apparel", short: "Apparel", icon: "tee", blurb: "Shirts, kurtas, linen, sarees, tees" },
+  { id: "accessories", name: "Bags & Accessories", short: "Accessories", icon: "tote", blurb: "Totes, jewellery, socks, patches" },
 ] as const;
 
 export type CollectionId = (typeof COLLECTIONS)[number]["id"];

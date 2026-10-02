@@ -6,7 +6,9 @@ import { useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { SplitReveal } from "@/components/motion/reveal";
-import { Icon3D } from "@/components/icon3d";
+import { Doodle } from "@/components/doodle";
+import { Roll } from "@/components/layout/header";
+import type { DoodleName } from "@/components/doodles";
 
 export interface IndexRow {
   id: string;
@@ -54,8 +56,8 @@ export function CategoryIndex({ rows }: { rows: IndexRow[] }) {
         <SplitReveal className="font-display text-[clamp(3rem,8vw,8rem)] leading-[0.88] text-ink">
           What&apos;s in <em className="text-royal">store.</em>
         </SplitReveal>
-        <Link href="/catalogue" className="text-sm font-semibold text-violet underline-offset-4 hover:underline">
-          Browse everything
+        <Link href="/catalogue" className="group shrink-0 whitespace-nowrap text-sm font-semibold text-violet">
+          <Roll>Browse everything</Roll>
         </Link>
       </div>
 
@@ -69,7 +71,7 @@ export function CategoryIndex({ rows }: { rows: IndexRow[] }) {
             >
               <span aria-hidden className="w-2 sm:w-4" />
               <span className="flex min-w-0 items-center gap-4">
-                <span className="relative size-14 shrink-0 overflow-hidden rounded-2xl bg-paper-2 md:hidden">
+                <span className="relative size-14 shrink-0 overflow-hidden rounded-2xl bg-paper-2 pointer-fine:hidden">
                   {row.image && <Image src={row.image} alt="" fill sizes="56px" className="object-cover" />}
                 </span>
                 <span className="min-w-0">
@@ -82,10 +84,10 @@ export function CategoryIndex({ rows }: { rows: IndexRow[] }) {
                 </span>
               </span>
               <span className="flex items-center gap-3 pr-2 sm:pr-4">
-                <Icon3D
-                  name={row.icon}
-                  size={64}
-                  className="hidden size-12 transition duration-500 group-hover:-rotate-12 group-hover:scale-110 sm:block"
+                <Doodle
+                  name={row.icon as DoodleName}
+                  hover="group"
+                  className="hidden size-14 text-aubergine transition-colors duration-500 group-hover:text-paper sm:block"
                 />
                 <span className="text-sm font-semibold tabular-nums text-ink/50 group-hover:text-paper/70">{row.count}</span>
                 <ArrowUpRight className="size-6 -rotate-45 opacity-0 transition duration-500 group-hover:rotate-0 group-hover:opacity-100" />
@@ -98,7 +100,7 @@ export function CategoryIndex({ rows }: { rows: IndexRow[] }) {
       <div
         ref={float}
         aria-hidden
-        className="pointer-events-none fixed left-0 top-0 z-30 hidden md:block"
+        className="pointer-events-none fixed left-0 top-0 z-30 hidden pointer-fine:block"
         style={{ opacity: current?.image ? 1 : 0, transition: "opacity .35s" }}
       >
         <div className="relative -ml-[140px] -mt-[180px] h-[360px] w-[280px] overflow-hidden rounded-[32px] bg-paper-2 shadow-2xl">

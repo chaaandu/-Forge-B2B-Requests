@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-02T04:05:01.740Z",
+ "generatedAt": "2026-10-02T08:16:00.159Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -14,7 +14,7 @@
   {
    "teamCode": "C102",
    "slug": "lumi",
-   "name": "LUMI",
+   "name": "Lumi",
    "tagline": "Beaded tops & statement wear",
    "collection": "apparel",
    "website": "https://getlumi.in",
@@ -24,7 +24,7 @@
   {
    "teamCode": "C103",
    "slug": "house-of-pravaah",
-   "name": "House of Pravaah",
+   "name": "House Of Pravaah",
    "tagline": "Scarves, bandanas & flowy pieces",
    "collection": "accessories",
    "website": "https://houseofpravaah.com",
@@ -67,45 +67,54 @@
    "name": "The Drunken Mugs",
    "tagline": "Luxury glassware",
    "collection": "home",
-   "website": null,
+   "website": "https://thedrunkenmug.in",
    "instagram": null,
    "logo": null
   },
   {
    "teamCode": "C109",
-   "slug": "wekravehealthy",
-   "name": "WeKravehealthy",
+   "slug": "wekrave",
+   "name": "WeKrave",
    "tagline": "Healthy snacking",
    "collection": "snacks",
    "website": "https://www.wekrave.in",
    "instagram": "https://www.instagram.com/wekravehealthy",
+   "aliases": [
+    "wekravehealthy"
+   ],
    "logo": null
   },
   {
    "teamCode": "C110",
-   "slug": "nutflix",
-   "name": "NUTflix",
-   "tagline": "Flavoured dry fruits",
+   "slug": "savore",
+   "name": "Savore",
+   "tagline": "Flavoured dry fruits & gift hampers",
    "collection": "snacks",
-   "website": null,
+   "website": "https://savore.online",
    "instagram": null,
+   "aliases": [
+    "nutflix"
+   ],
    "logo": null
   },
   {
    "teamCode": "C111",
-   "slug": "bizfits",
-   "name": "BizFits",
-   "tagline": "Smart casuals",
+   "slug": "pehchaan",
+   "name": "Pehchaan",
+   "tagline": "Sarees & ethnic wear",
    "collection": "apparel",
-   "website": null,
+   "website": "https://www.pehchaann.in",
    "instagram": null,
+   "aliases": [
+    "bizfits"
+   ],
    "logo": null
   },
   {
    "teamCode": "C112",
    "slug": "fake-society-studio",
    "name": "Fake Society Studio",
-   "tagline": "Athleisure — tees, tracks & shorts",
+   "tagline": "Athleisure: tees, tracks & shorts",
    "collection": "apparel",
    "website": "https://fakesocietystudio.com",
    "instagram": "https://www.instagram.com/fakesocietystudio",
@@ -114,7 +123,7 @@
   {
    "teamCode": "C113",
    "slug": "munchandco",
-   "name": "Munch&co",
+   "name": "Munch & Co",
    "tagline": "Coin cookies",
    "collection": "sweets",
    "website": "https://munchco.in",
@@ -157,7 +166,7 @@
    "name": "Juzzle",
    "tagline": "Iced tea premixes",
    "collection": "beverages",
-   "website": "https://juzzle-store.myshopify.com",
+   "website": "https://juzzle.in",
    "instagram": "https://www.instagram.com/just.juzzle",
    "logo": null
   },
@@ -167,14 +176,14 @@
    "name": "Mello",
    "tagline": "Hot chocolate premixes & coffee dragées",
    "collection": "beverages",
-   "website": null,
+   "website": "https://mellooo.co.in",
    "instagram": null,
    "logo": null
   },
   {
    "teamCode": "C119",
    "slug": "nekt",
-   "name": "NEKT",
+   "name": "Nekt",
    "tagline": "Honey sachets",
    "collection": "snacks",
    "website": "https://getnekt.in",
@@ -204,7 +213,7 @@
   {
    "teamCode": "C122",
    "slug": "meltyk",
-   "name": "MELTYK",
+   "name": "Meltyk",
    "tagline": "Chocolates",
    "collection": "sweets",
    "website": "https://meltyk.in",
@@ -214,10 +223,10 @@
   {
    "teamCode": "C123",
    "slug": "haulties",
-   "name": "HAULTIES",
+   "name": "Haulties",
    "tagline": "Healthy snacks",
    "collection": "snacks",
-   "website": null,
+   "website": "https://haulties.in",
    "instagram": "https://www.instagram.com/haulties_s",
    "logo": null
   },
@@ -227,7 +236,7 @@
    "name": "Bean & Beyond",
    "tagline": "Black, cold & Vietnamese coffee",
    "collection": "beverages",
-   "website": null,
+   "website": "https://bean-beyond-store.myshopify.com",
    "instagram": null,
    "logo": null
   },
@@ -257,7 +266,7 @@
    "name": "Lantern Candles",
    "tagline": "Scented & artisanal candles",
    "collection": "home",
-   "website": null,
+   "website": "https://lantern-candle.myshopify.com",
    "instagram": null,
    "logo": null
   },
@@ -277,7 +286,7 @@
    "name": "Klayzy Ceramics",
    "tagline": "Ceramic mugs, ashtrays & tumblers",
    "collection": "home",
-   "website": null,
+   "website": "https://www.klayzy.shop",
    "instagram": null,
    "logo": null
   },
@@ -324,10 +333,10 @@
   {
    "teamCode": "C134",
    "slug": "linore",
-   "name": "LINORE",
+   "name": "Linore",
    "tagline": "Pure linen wear",
    "collection": "apparel",
-   "website": null,
+   "website": "https://linore.in",
    "instagram": null,
    "logo": null
   },
@@ -344,7 +353,7 @@
   {
    "teamCode": "C136",
    "slug": "kuki",
-   "name": "KUKI",
+   "name": "Kuki",
    "tagline": "Cookies",
    "collection": "sweets",
    "website": "https://thekuki.in",
@@ -354,10 +363,10 @@
   {
    "teamCode": "C137",
    "slug": "zaaree",
-   "name": "ZAAREE",
+   "name": "Zaaree",
    "tagline": "Sarees",
    "collection": "apparel",
-   "website": null,
+   "website": "https://zaaree.co",
    "instagram": "https://www.instagram.com/zaaree.co",
    "logo": null
   },
@@ -947,412 +956,6 @@
    ],
    "priceFromMinor": 19900,
    "priceToMinor": 19900,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-ajrak-print-satin-saree",
-   "brand": "bizfits",
-   "title": "Ajrak Print Satin Saree",
-   "description": "Ajrakh is a block-printing craft from Sindh (Pakistan) and Kutch in Gujarat, especially the village of Ajrakhpur. Carved wooden blocks and resist-dyeing are used, traditionally with natural dyes, mainly indigo. The typical colours are deep indigo and crimson, with black and white geometric patterns, star-like shapes and dots between lines. The name likely comes from the Persian word for \"brick,\" possibly a reference to its grid-like layouts. Traditionally it's printed on cotton. A satin base gives the prints a smoother, shinier finish.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "AJRAKH-SATIN",
-     "label": "Ajrak Print Satin Saree",
-     "options": [],
-     "priceMinor": 168000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
-    }
-   ],
-   "priceFromMinor": 168000,
-   "priceToMinor": 168000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-batik-silk",
-   "brand": "bizfits",
-   "title": "Batik Silk",
-   "description": "Batik is a wax-resist technique: wax is drawn or stamped onto the fabric, the fabric is dyed, and then the wax is removed. Repeating this builds up layered patterns. In India, Shantiniketan batik from West Bengal has GI recognition.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/92130ad3-cb9e-4a82-b7fa-6a9f05a4e065.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/32291d32-e15a-4491-b6a3-9f9049f547de.jpg"
-   ],
-   "options": [
-    {
-     "name": "Colors",
-     "values": [
-      "Teal",
-      "Rust",
-      "Purple"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "BATIK-SILK-TEAL",
-     "label": "Teal",
-     "options": [
-      "Teal"
-     ],
-     "priceMinor": 148000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
-    },
-    {
-     "sku": "BATIK-SILK-RUST",
-     "label": "Rust",
-     "options": [
-      "Rust"
-     ],
-     "priceMinor": 148000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
-    },
-    {
-     "sku": "BATIK-SILK-PURPLE",
-     "label": "Purple",
-     "options": [
-      "Purple"
-     ],
-     "priceMinor": 148000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
-    }
-   ],
-   "priceFromMinor": 148000,
-   "priceToMinor": 148000,
-   "featured": true
-  },
-  {
-   "slug": "bizfits-kalamkari-border-pallu-mul-cotton",
-   "brand": "bizfits",
-   "title": "Kalamkari Border Pallu Mul Cotton",
-   "description": "The name means \"pen-craft.\" It comes from Andhra Pradesh and has two protected regional (GI) styles. Srikalahasti: painted freehand with a pen, showing scenes from the Ramayana, the Mahabharata and Hindu gods. Machilipatnam: block-printed with vegetable dyes, with Persian-influenced motifs like vines, peacocks and the tree of life. The process can take up to 23 steps and uses natural dyes, with myrobalan and alum to set the colours. In the \"Border Pallu\" version, the Kalamkari work is probably only on the border and pallu, with a plainer body.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64d5ae02-25c7-4ad9-bf12-b1c3dd7a51a7.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "KALAMKARI-BORDER-PALLU-MUL-COTTON",
-     "label": "Kalamkari Border Pallu Mul Cotton",
-     "options": [],
-     "priceMinor": 209000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64d5ae02-25c7-4ad9-bf12-b1c3dd7a51a7.png"
-    }
-   ],
-   "priceFromMinor": 209000,
-   "priceToMinor": 209000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-khadi",
-   "brand": "bizfits",
-   "title": "Khadi",
-   "description": "Khadi is natural-fibre cloth that's spun and woven by hand. It's usually cotton, sometimes silk or wool. Gandhi promoted it during the Swadeshi movement, and it's a symbol of self-reliance and support for artisans. The texture is slightly coarse and uneven because it's handmade. It stays cool in summer and warm in winter.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f7d7bc47-ac0a-4456-81e7-a80c2b93d141.png",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9fdc865f-0f6a-47e0-922f-e9124681cce8.png",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/885cec16-da7e-4972-8a94-cf4595067db6.png"
-   ],
-   "options": [
-    {
-     "name": "Design",
-     "values": [
-      "Design 1",
-      "Design 2",
-      "Design 3"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "KHADI",
-     "label": "Design 1",
-     "options": [
-      "Design 1"
-     ],
-     "priceMinor": 348000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f7d7bc47-ac0a-4456-81e7-a80c2b93d141.png"
-    },
-    {
-     "sku": "KHADI-2",
-     "label": "Design 2",
-     "options": [
-      "Design 2"
-     ],
-     "priceMinor": 348000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9fdc865f-0f6a-47e0-922f-e9124681cce8.png"
-    },
-    {
-     "sku": "KHADI-3",
-     "label": "Design 3",
-     "options": [
-      "Design 3"
-     ],
-     "priceMinor": 348000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/885cec16-da7e-4972-8a94-cf4595067db6.png"
-    }
-   ],
-   "priceFromMinor": 348000,
-   "priceToMinor": 348000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-madras-checks",
-   "brand": "bizfits",
-   "title": "Madras Checks",
-   "description": "Madras cloth is named after Chennai. It's a light cotton with plaid-style checks, and authentic madras shows the same pattern on both sides. Short-staple cotton gives it small, uneven bumps called slubs. Colours can \"bleed,\" which is a well-known feature of the fabric. I couldn't find out what \"Gajraj\" means here. It's probably a design or colour name used by Pehchaan.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2c7e6e3-0c13-4dd4-97f5-9940d975cf43.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "MADRAS-CHECKS",
-     "label": "Madras Checks",
-     "options": [],
-     "priceMinor": 299000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2c7e6e3-0c13-4dd4-97f5-9940d975cf43.png"
-    }
-   ],
-   "priceFromMinor": 299000,
-   "priceToMinor": 299000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-madras-checks-gajraj",
-   "brand": "bizfits",
-   "title": "Madras Checks Gajraj",
-   "description": "Madras cloth is named after Chennai. It's a light cotton with plaid-style checks, and authentic madras shows the same pattern on both sides. Short-staple cotton gives it small, uneven bumps called slubs. Colours can \"bleed,\" which is a well-known feature of the fabric. I couldn't find out what \"Gajraj\" means here. It's probably a design or colour name used by Pehchaan.'",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df4d9064-8400-4fb4-a4bc-f6bfde1eb805.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "MADRAS-CHECKS-GAJRAJ",
-     "label": "Madras Checks Gajraj",
-     "options": [],
-     "priceMinor": 328000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df4d9064-8400-4fb4-a4bc-f6bfde1eb805.png"
-    }
-   ],
-   "priceFromMinor": 328000,
-   "priceToMinor": 328000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-mul-cotton-kalamkari",
-   "brand": "bizfits",
-   "title": "Mul Cotton Kalamkari",
-   "description": "The name means \"pen-craft.\" It comes from Andhra Pradesh and has two protected regional (GI) styles. Srikalahasti: painted freehand with a pen, showing scenes from the Ramayana, the Mahabharata and Hindu gods. Machilipatnam: block-printed with vegetable dyes, with Persian-influenced motifs like vines, peacocks and the tree of life. The process can take up to 23 steps and uses natural dyes, with myrobalan and alum to set the colours. In the \"Border Pallu\" version, the Kalamkari work is probably only on the border and pallu, with a plainer body.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6adbaab-b627-4133-95e5-7c49a0de5c6f.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7705242c-db37-4921-a03a-a534db3e552d.png"
-   ],
-   "options": [
-    {
-     "name": "Design",
-     "values": [
-      "Design 1",
-      "Design 2"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "MUL-COTTON-KALAMKARI",
-     "label": "Design 1",
-     "options": [
-      "Design 1"
-     ],
-     "priceMinor": 209000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6adbaab-b627-4133-95e5-7c49a0de5c6f.jpg"
-    },
-    {
-     "sku": "MUL-COTTON-KALAMKARI-3",
-     "label": "Design 2",
-     "options": [
-      "Design 2"
-     ],
-     "priceMinor": 209000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7705242c-db37-4921-a03a-a534db3e552d.png"
-    }
-   ],
-   "priceFromMinor": 209000,
-   "priceToMinor": 209000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-printed-mul-cotton",
-   "brand": "bizfits",
-   "title": "Printed Mul Cotton",
-   "description": "Mulmul is a fine, plain-weave cotton muslin with Bengal roots, especially around Dhaka. It's soft, thin, slightly see-through, very light and breathable, which makes it a good everyday summer saree.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/512cd284-ccf3-4d69-9a7e-0d104c6fd543.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d46deb19-3045-46ec-998a-695f7ca17fd4.jpg"
-   ],
-   "options": [
-    {
-     "name": "Design",
-     "values": [
-      "Design 1",
-      "Design 2"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "PRINTED-MUL-COTTON-2",
-     "label": "Design 1",
-     "options": [
-      "Design 1"
-     ],
-     "priceMinor": 228000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/512cd284-ccf3-4d69-9a7e-0d104c6fd543.jpg"
-    },
-    {
-     "sku": "PRINTED-MUL-COTTON-5",
-     "label": "Design 2",
-     "options": [
-      "Design 2"
-     ],
-     "priceMinor": 228000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d46deb19-3045-46ec-998a-695f7ca17fd4.jpg"
-    }
-   ],
-   "priceFromMinor": 228000,
-   "priceToMinor": 228000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-raw-silk",
-   "brand": "bizfits",
-   "title": "Raw Silk",
-   "description": "In Indian saree shopping, \"raw silk\" usually means silk that has a slightly rough, slubby texture, a crisp drape and a softer, less glossy sheen than finished silk. Wikipedia's closest page, on \"silk noil,\" describes a similar low-sheen, slightly rough silk that's gaining popularity for sarees in India. That page isn't exactly about raw silk, though.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/17e45bab-7989-49ae-a24f-4f2468620bb9.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9038fea7-c35a-442a-8cdc-c974ce9d34e5.png",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/37f124b3-51b7-4357-9d5e-ee2d68a51dba.png"
-   ],
-   "options": [
-    {
-     "name": "Design",
-     "values": [
-      "Design 1",
-      "Design 2",
-      "Design 3"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "RAW-SILK",
-     "label": "Design 1",
-     "options": [
-      "Design 1"
-     ],
-     "priceMinor": 278000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/17e45bab-7989-49ae-a24f-4f2468620bb9.jpg"
-    },
-    {
-     "sku": "RAW-SILK-3",
-     "label": "Design 2",
-     "options": [
-      "Design 2"
-     ],
-     "priceMinor": 278000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9038fea7-c35a-442a-8cdc-c974ce9d34e5.png"
-    },
-    {
-     "sku": "RAW-SILK-RED",
-     "label": "Design 3",
-     "options": [
-      "Design 3"
-     ],
-     "priceMinor": 278000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/37f124b3-51b7-4357-9d5e-ee2d68a51dba.png"
-    }
-   ],
-   "priceFromMinor": 278000,
-   "priceToMinor": 278000,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-red-snatched-kurti",
-   "brand": "bizfits",
-   "title": "Red Snatched Kurti",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/436bdfdc-9e2e-4c1c-9d01-8dcfc52412b8.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a24764e-0689-48ec-9d47-08228c5fad2c.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "RED-SNATCHED-KURTI",
-     "label": "Red Snatched Kurti",
-     "options": [],
-     "priceMinor": 60500,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/436bdfdc-9e2e-4c1c-9d01-8dcfc52412b8.jpg"
-    }
-   ],
-   "priceFromMinor": 60500,
-   "priceToMinor": 60500,
-   "featured": false
-  },
-  {
-   "slug": "bizfits-tissue-saree",
-   "brand": "bizfits",
-   "title": "Tissue Saree",
-   "description": "Light-catching and effortlessly elegant, this tissue saree brings a subtle sheen to a timeless Indian silhouette. Crafted in a delicate tissue fabric, it drapes with a soft, fluid fall while adding just the right amount of luminosity to your look. Designed for moments that call for understated elegance, it pairs traditional character with a contemporary sensibility, easy to style for festive gatherings, intimate celebrations, and evening occasions.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "TISSUE-SAREE",
-     "label": "Tissue Saree",
-     "options": [],
-     "priceMinor": 360000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
-    }
-   ],
-   "priceFromMinor": 360000,
-   "priceToMinor": 360000,
    "featured": false
   },
   {
@@ -8417,8 +8020,414 @@
    "featured": true
   },
   {
-   "slug": "nutflix-aadya-gift-hamper",
-   "brand": "nutflix",
+   "slug": "pehchaan-ajrak-print-satin-saree",
+   "brand": "pehchaan",
+   "title": "Ajrak Print Satin Saree",
+   "description": "Ajrakh is a block-printing craft from Sindh (Pakistan) and Kutch in Gujarat, especially the village of Ajrakhpur. Carved wooden blocks and resist-dyeing are used, traditionally with natural dyes, mainly indigo. The typical colours are deep indigo and crimson, with black and white geometric patterns, star-like shapes and dots between lines. The name likely comes from the Persian word for \"brick,\" possibly a reference to its grid-like layouts. Traditionally it's printed on cotton. A satin base gives the prints a smoother, shinier finish.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "AJRAKH-SATIN",
+     "label": "Ajrak Print Satin Saree",
+     "options": [],
+     "priceMinor": 168000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
+    }
+   ],
+   "priceFromMinor": 168000,
+   "priceToMinor": 168000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-batik-silk",
+   "brand": "pehchaan",
+   "title": "Batik Silk",
+   "description": "Batik is a wax-resist technique: wax is drawn or stamped onto the fabric, the fabric is dyed, and then the wax is removed. Repeating this builds up layered patterns. In India, Shantiniketan batik from West Bengal has GI recognition.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/92130ad3-cb9e-4a82-b7fa-6a9f05a4e065.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/32291d32-e15a-4491-b6a3-9f9049f547de.jpg"
+   ],
+   "options": [
+    {
+     "name": "Colors",
+     "values": [
+      "Teal",
+      "Rust",
+      "Purple"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "BATIK-SILK-TEAL",
+     "label": "Teal",
+     "options": [
+      "Teal"
+     ],
+     "priceMinor": 148000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
+    },
+    {
+     "sku": "BATIK-SILK-RUST",
+     "label": "Rust",
+     "options": [
+      "Rust"
+     ],
+     "priceMinor": 148000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
+    },
+    {
+     "sku": "BATIK-SILK-PURPLE",
+     "label": "Purple",
+     "options": [
+      "Purple"
+     ],
+     "priceMinor": 148000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
+    }
+   ],
+   "priceFromMinor": 148000,
+   "priceToMinor": 148000,
+   "featured": true
+  },
+  {
+   "slug": "pehchaan-kalamkari-border-pallu-mul-cotton",
+   "brand": "pehchaan",
+   "title": "Kalamkari Border Pallu Mul Cotton",
+   "description": "The name means \"pen-craft.\" It comes from Andhra Pradesh and has two protected regional (GI) styles. Srikalahasti: painted freehand with a pen, showing scenes from the Ramayana, the Mahabharata and Hindu gods. Machilipatnam: block-printed with vegetable dyes, with Persian-influenced motifs like vines, peacocks and the tree of life. The process can take up to 23 steps and uses natural dyes, with myrobalan and alum to set the colours. In the \"Border Pallu\" version, the Kalamkari work is probably only on the border and pallu, with a plainer body.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64d5ae02-25c7-4ad9-bf12-b1c3dd7a51a7.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "KALAMKARI-BORDER-PALLU-MUL-COTTON",
+     "label": "Kalamkari Border Pallu Mul Cotton",
+     "options": [],
+     "priceMinor": 209000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64d5ae02-25c7-4ad9-bf12-b1c3dd7a51a7.png"
+    }
+   ],
+   "priceFromMinor": 209000,
+   "priceToMinor": 209000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-khadi",
+   "brand": "pehchaan",
+   "title": "Khadi",
+   "description": "Khadi is natural-fibre cloth that's spun and woven by hand. It's usually cotton, sometimes silk or wool. Gandhi promoted it during the Swadeshi movement, and it's a symbol of self-reliance and support for artisans. The texture is slightly coarse and uneven because it's handmade. It stays cool in summer and warm in winter.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f7d7bc47-ac0a-4456-81e7-a80c2b93d141.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9fdc865f-0f6a-47e0-922f-e9124681cce8.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/885cec16-da7e-4972-8a94-cf4595067db6.png"
+   ],
+   "options": [
+    {
+     "name": "Design",
+     "values": [
+      "Design 1",
+      "Design 2",
+      "Design 3"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "KHADI",
+     "label": "Design 1",
+     "options": [
+      "Design 1"
+     ],
+     "priceMinor": 348000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f7d7bc47-ac0a-4456-81e7-a80c2b93d141.png"
+    },
+    {
+     "sku": "KHADI-2",
+     "label": "Design 2",
+     "options": [
+      "Design 2"
+     ],
+     "priceMinor": 348000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9fdc865f-0f6a-47e0-922f-e9124681cce8.png"
+    },
+    {
+     "sku": "KHADI-3",
+     "label": "Design 3",
+     "options": [
+      "Design 3"
+     ],
+     "priceMinor": 348000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/885cec16-da7e-4972-8a94-cf4595067db6.png"
+    }
+   ],
+   "priceFromMinor": 348000,
+   "priceToMinor": 348000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-madras-checks",
+   "brand": "pehchaan",
+   "title": "Madras Checks",
+   "description": "Madras cloth is named after Chennai. It's a light cotton with plaid-style checks, and authentic madras shows the same pattern on both sides. Short-staple cotton gives it small, uneven bumps called slubs. Colours can \"bleed,\" which is a well-known feature of the fabric. I couldn't find out what \"Gajraj\" means here. It's probably a design or colour name used by Pehchaan.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2c7e6e3-0c13-4dd4-97f5-9940d975cf43.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MADRAS-CHECKS",
+     "label": "Madras Checks",
+     "options": [],
+     "priceMinor": 299000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2c7e6e3-0c13-4dd4-97f5-9940d975cf43.png"
+    }
+   ],
+   "priceFromMinor": 299000,
+   "priceToMinor": 299000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-madras-checks-gajraj",
+   "brand": "pehchaan",
+   "title": "Madras Checks Gajraj",
+   "description": "Madras cloth is named after Chennai. It's a light cotton with plaid-style checks, and authentic madras shows the same pattern on both sides. Short-staple cotton gives it small, uneven bumps called slubs. Colours can \"bleed,\" which is a well-known feature of the fabric. I couldn't find out what \"Gajraj\" means here. It's probably a design or colour name used by Pehchaan.'",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df4d9064-8400-4fb4-a4bc-f6bfde1eb805.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MADRAS-CHECKS-GAJRAJ",
+     "label": "Madras Checks Gajraj",
+     "options": [],
+     "priceMinor": 328000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df4d9064-8400-4fb4-a4bc-f6bfde1eb805.png"
+    }
+   ],
+   "priceFromMinor": 328000,
+   "priceToMinor": 328000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-mul-cotton-kalamkari",
+   "brand": "pehchaan",
+   "title": "Mul Cotton Kalamkari",
+   "description": "The name means \"pen-craft.\" It comes from Andhra Pradesh and has two protected regional (GI) styles. Srikalahasti: painted freehand with a pen, showing scenes from the Ramayana, the Mahabharata and Hindu gods. Machilipatnam: block-printed with vegetable dyes, with Persian-influenced motifs like vines, peacocks and the tree of life. The process can take up to 23 steps and uses natural dyes, with myrobalan and alum to set the colours. In the \"Border Pallu\" version, the Kalamkari work is probably only on the border and pallu, with a plainer body.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6adbaab-b627-4133-95e5-7c49a0de5c6f.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7705242c-db37-4921-a03a-a534db3e552d.png"
+   ],
+   "options": [
+    {
+     "name": "Design",
+     "values": [
+      "Design 1",
+      "Design 2"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "MUL-COTTON-KALAMKARI",
+     "label": "Design 1",
+     "options": [
+      "Design 1"
+     ],
+     "priceMinor": 209000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6adbaab-b627-4133-95e5-7c49a0de5c6f.jpg"
+    },
+    {
+     "sku": "MUL-COTTON-KALAMKARI-3",
+     "label": "Design 2",
+     "options": [
+      "Design 2"
+     ],
+     "priceMinor": 209000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7705242c-db37-4921-a03a-a534db3e552d.png"
+    }
+   ],
+   "priceFromMinor": 209000,
+   "priceToMinor": 209000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-printed-mul-cotton",
+   "brand": "pehchaan",
+   "title": "Printed Mul Cotton",
+   "description": "Mulmul is a fine, plain-weave cotton muslin with Bengal roots, especially around Dhaka. It's soft, thin, slightly see-through, very light and breathable, which makes it a good everyday summer saree.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/512cd284-ccf3-4d69-9a7e-0d104c6fd543.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d46deb19-3045-46ec-998a-695f7ca17fd4.jpg"
+   ],
+   "options": [
+    {
+     "name": "Design",
+     "values": [
+      "Design 1",
+      "Design 2"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PRINTED-MUL-COTTON-2",
+     "label": "Design 1",
+     "options": [
+      "Design 1"
+     ],
+     "priceMinor": 228000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/512cd284-ccf3-4d69-9a7e-0d104c6fd543.jpg"
+    },
+    {
+     "sku": "PRINTED-MUL-COTTON-5",
+     "label": "Design 2",
+     "options": [
+      "Design 2"
+     ],
+     "priceMinor": 228000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d46deb19-3045-46ec-998a-695f7ca17fd4.jpg"
+    }
+   ],
+   "priceFromMinor": 228000,
+   "priceToMinor": 228000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-raw-silk",
+   "brand": "pehchaan",
+   "title": "Raw Silk",
+   "description": "In Indian saree shopping, \"raw silk\" usually means silk that has a slightly rough, slubby texture, a crisp drape and a softer, less glossy sheen than finished silk. Wikipedia's closest page, on \"silk noil,\" describes a similar low-sheen, slightly rough silk that's gaining popularity for sarees in India. That page isn't exactly about raw silk, though.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/17e45bab-7989-49ae-a24f-4f2468620bb9.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9038fea7-c35a-442a-8cdc-c974ce9d34e5.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/37f124b3-51b7-4357-9d5e-ee2d68a51dba.png"
+   ],
+   "options": [
+    {
+     "name": "Design",
+     "values": [
+      "Design 1",
+      "Design 2",
+      "Design 3"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "RAW-SILK",
+     "label": "Design 1",
+     "options": [
+      "Design 1"
+     ],
+     "priceMinor": 278000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/17e45bab-7989-49ae-a24f-4f2468620bb9.jpg"
+    },
+    {
+     "sku": "RAW-SILK-3",
+     "label": "Design 2",
+     "options": [
+      "Design 2"
+     ],
+     "priceMinor": 278000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9038fea7-c35a-442a-8cdc-c974ce9d34e5.png"
+    },
+    {
+     "sku": "RAW-SILK-RED",
+     "label": "Design 3",
+     "options": [
+      "Design 3"
+     ],
+     "priceMinor": 278000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/37f124b3-51b7-4357-9d5e-ee2d68a51dba.png"
+    }
+   ],
+   "priceFromMinor": 278000,
+   "priceToMinor": 278000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-red-snatched-kurti",
+   "brand": "pehchaan",
+   "title": "Red Snatched Kurti",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/436bdfdc-9e2e-4c1c-9d01-8dcfc52412b8.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a24764e-0689-48ec-9d47-08228c5fad2c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "RED-SNATCHED-KURTI",
+     "label": "Red Snatched Kurti",
+     "options": [],
+     "priceMinor": 60500,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/436bdfdc-9e2e-4c1c-9d01-8dcfc52412b8.jpg"
+    }
+   ],
+   "priceFromMinor": 60500,
+   "priceToMinor": 60500,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-tissue-saree",
+   "brand": "pehchaan",
+   "title": "Tissue Saree",
+   "description": "Light-catching and effortlessly elegant, this tissue saree brings a subtle sheen to a timeless Indian silhouette. Crafted in a delicate tissue fabric, it drapes with a soft, fluid fall while adding just the right amount of luminosity to your look. Designed for moments that call for understated elegance, it pairs traditional character with a contemporary sensibility, easy to style for festive gatherings, intimate celebrations, and evening occasions.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TISSUE-SAREE",
+     "label": "Tissue Saree",
+     "options": [],
+     "priceMinor": 360000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
+    }
+   ],
+   "priceFromMinor": 360000,
+   "priceToMinor": 360000,
+   "featured": false
+  },
+  {
+   "slug": "savore-aadya-gift-hamper",
+   "brand": "savore",
    "title": "Aadya · Gift Hamper",
    "description": "Handcrafted chocolate bites and moti diyas woven through with Lucknow's intricate artistry and the spirit of women who carry grace and hospitality in every gesture, however small.",
    "collection": "hampers",
@@ -8441,8 +8450,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-chatpata-raisins",
-   "brand": "nutflix",
+   "slug": "savore-chatpata-raisins",
+   "brand": "savore",
    "title": "Chatpata Raisins",
    "description": "Juicy raisins coated in a bold, tangy-spicy chatpata masala for that perfect burst of flavor in every bite. Naturally gluten-free and free from artificial flavors, a deliciously addictive snack for any time of day.",
    "collection": "snacks",
@@ -8485,11 +8494,11 @@
    "featured": false
   },
   {
-   "slug": "nutflix-chocolate-raisins",
-   "brand": "nutflix",
+   "slug": "savore-chocolate-raisins",
+   "brand": "savore",
    "title": "Chocolate Raisins",
    "description": "Juicy raisins coated in smooth, rich chocolate for that perfect sweet and chewy bite. A deliciously satisfying snack for any time of day, made with no artificial flavors.",
-   "collection": "sweets",
+   "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ccfa09f-681d-4a24-9e72-b73ce1fd250f.jpg"
    ],
@@ -8529,11 +8538,11 @@
    "featured": false
   },
   {
-   "slug": "nutflix-coffee-caramel-almonds",
-   "brand": "nutflix",
+   "slug": "savore-coffee-caramel-almonds",
+   "brand": "savore",
    "title": "Coffee Caramel Almonds",
    "description": "Crunchy roasted almonds coated in a rich blend of coffee and caramel for that perfect sweet-bitter bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
-   "collection": "sweets",
+   "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8eb396c2-4e84-4176-a46c-d2168ed26a47.png"
    ],
@@ -8573,8 +8582,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-cream-and-onion-almonds",
-   "brand": "nutflix",
+   "slug": "savore-cream-and-onion-almonds",
+   "brand": "savore",
    "title": "Cream & Onion Almonds",
    "description": "Crunchy roasted almonds coated in a rich, savory cream and onion seasoning for that irresistible tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a deliciously satisfying snack for any time of day.",
    "collection": "snacks",
@@ -8617,8 +8626,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-dhyanam-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-dhyanam-gift-hamper",
+   "brand": "savore",
    "title": "Dhyanam · Gift Hamper",
    "description": "A white lotus aromatherapy set of candle, incense, room spray and ceramic holder rising from Rishikesh's contemplative riverbanks and women who embody the art of turning inward.",
    "collection": "hampers",
@@ -8641,8 +8650,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-guava-chilli-raisins",
-   "brand": "nutflix",
+   "slug": "savore-guava-chilli-raisins",
+   "brand": "savore",
    "title": "Guava Chilli Raisins",
    "description": "Juicy raisins coated in a bold blend of guava and chilli for that perfect sweet-tangy-spicy bite. Naturally gluten-free and free from artificial flavors, a deliciously addictive snack for any time of day.",
    "collection": "snacks",
@@ -8685,8 +8694,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-ira-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-ira-gift-hamper",
+   "brand": "savore",
    "title": "Ira · Gift Hamper",
    "description": "Four delicately fragranced wax tablets tied with ribbon, everyday luxury woven with the warmth of Indian tradition and the devotion in every handcrafted offering.",
    "collection": "hampers",
@@ -8709,8 +8718,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-italian-herb-cashews",
-   "brand": "nutflix",
+   "slug": "savore-italian-herb-cashews",
+   "brand": "savore",
    "title": "Italian Herb Cashews",
    "description": "Crunchy roasted cashews coated in a savory blend of Italian herbs for that perfect herby, buttery bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
@@ -8753,8 +8762,8 @@
    "featured": true
   },
   {
-   "slug": "nutflix-manchurian-cashews",
-   "brand": "nutflix",
+   "slug": "savore-manchurian-cashews",
+   "brand": "savore",
    "title": "Manchurian Cashews",
    "description": "Crunchy roasted cashews coated in a bold, tangy-spicy Manchurian seasoning for that perfect savory kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
@@ -8797,8 +8806,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-mexican-salsa-almonds",
-   "brand": "nutflix",
+   "slug": "savore-mexican-salsa-almonds",
+   "brand": "savore",
    "title": "Mexican Salsa Almonds",
    "description": "Crunchy roasted almonds coated in a bold blend of chili, lime, and paprika for that perfect smoky-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
@@ -8841,8 +8850,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-nacho-cheese-cashews",
-   "brand": "nutflix",
+   "slug": "savore-nacho-cheese-cashews",
+   "brand": "savore",
    "title": "Nacho Cheese Cashews",
    "description": "Crunchy roasted cashews coated in a bold, cheesy nacho seasoning for that perfect tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
@@ -8885,11 +8894,11 @@
    "featured": false
   },
   {
-   "slug": "nutflix-nutella-cashews",
-   "brand": "nutflix",
+   "slug": "savore-nutella-cashews",
+   "brand": "savore",
    "title": "Nutella Cashews",
    "description": "Crunchy roasted cashews coated in a rich, chocolatey-hazelnut Nutella flavor for that perfect sweet, nutty bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a deliciously satisfying snack for any time of day.",
-   "collection": "sweets",
+   "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/158a42be-452d-4556-94d2-e5836f302048.jpg"
    ],
@@ -8929,8 +8938,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-parampara-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-parampara-gift-hamper",
+   "brand": "savore",
    "title": "Parampara · Gift Hamper",
    "description": "Auric candlelight, earthy fragrances and dhoop rituals that carry the soul of Dharampur's temples and the women who are themselves the living continuity of tradition.",
    "collection": "hampers",
@@ -8953,8 +8962,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-peri-peri-almonds",
-   "brand": "nutflix",
+   "slug": "savore-peri-peri-almonds",
+   "brand": "savore",
    "title": "Peri Peri Almonds",
    "description": "Crunchy roasted almonds coated in a bold, fiery peri peri seasoning for that perfect spicy-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
@@ -8997,8 +9006,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-prerna-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-prerna-gift-hamper",
+   "brand": "savore",
    "title": "Prerna · Gift Hamper",
    "description": "Gourmet chocolate bites and lotus diyas from Varanasi's glowing riverfronts, carrying the spirit of women whose quiet resilience, like the lotus, blooms beautifully from stillness.",
    "collection": "hampers",
@@ -9021,8 +9030,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-sampada-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-sampada-gift-hamper",
+   "brand": "savore",
    "title": "Sampada · Gift Hamper",
    "description": "Festive dry fruits, besan chocolate and handcrafted sliders alive with Ahmedabad's celebratory warmth and the spirit of women whose generosity is the truest form of abundance.",
    "collection": "hampers",
@@ -9045,8 +9054,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-sfurti-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-sfurti-gift-hamper",
+   "brand": "savore",
    "title": "Sfurti · Gift Hamper",
    "description": "A citrus and musky aromatherapy set of candle, incense, room spray and ceramic holder capturing the first light of dawn over the Ganga and women who awaken possibility in everything they do.",
    "collection": "hampers",
@@ -9069,8 +9078,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-shaurya-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-shaurya-gift-hamper",
+   "brand": "savore",
    "title": "Shaurya · Gift Hamper",
    "description": "Sacred dhoop aromas rooted in Kolkata's spirit of Shakti, where courage is not just a feeling but a living force that fills every space it enters.",
    "collection": "hampers",
@@ -9093,8 +9102,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-shraddha-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-shraddha-gift-hamper",
+   "brand": "savore",
    "title": "Shraddha · Gift Hamper",
    "description": "Puja essentials of ghee melts, mishri, kumkum and dhoop, steeped in South Indian devotion and the spirit of women whose surrender makes every ritual sacred.",
    "collection": "hampers",
@@ -9117,8 +9126,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-tej-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-tej-gift-hamper",
+   "brand": "savore",
    "title": "Tej · Gift Hamper",
    "description": "Nourishing dry fruits and glowing moti diyas, lit by the festive spirit of Mysuru and women whose inner radiance and quiet confidence are the light they carry within.",
    "collection": "hampers",
@@ -9141,8 +9150,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-thai-sweet-chilli-cashews",
-   "brand": "nutflix",
+   "slug": "savore-thai-sweet-chilli-cashews",
+   "brand": "savore",
    "title": "Thai Sweet Chilli Cashews",
    "description": "Crunchy roasted cashews coated in a bold, spicy-tangy Thai chilli seasoning for that perfect fiery kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day",
    "collection": "snacks",
@@ -9185,8 +9194,8 @@
    "featured": false
   },
   {
-   "slug": "nutflix-umang-gift-hamper",
-   "brand": "nutflix",
+   "slug": "savore-umang-gift-hamper",
+   "brand": "savore",
    "title": "Umang · Gift Hamper",
    "description": "Savoury snacks, chocolates, cookies and moti diyas pulsing with Mumbai's lively festive energy and the spirit of women whose warmth naturally fills every space with joy.",
    "collection": "hampers",
@@ -10057,8 +10066,8 @@
    "featured": false
   },
   {
-   "slug": "wekravehealthy-creamandonion-makhana-chips",
-   "brand": "wekravehealthy",
+   "slug": "wekrave-creamandonion-makhana-chips",
+   "brand": "wekrave",
    "title": "Cream&Onion Makhana Chips",
    "description": null,
    "collection": "snacks",
@@ -10103,8 +10112,8 @@
    "featured": true
   },
   {
-   "slug": "wekravehealthy-jain-masala-makhana-chips",
-   "brand": "wekravehealthy",
+   "slug": "wekrave-jain-masala-makhana-chips",
+   "brand": "wekrave",
    "title": "Jain Masala Makhana Chips",
    "description": null,
    "collection": "snacks",
@@ -10149,8 +10158,8 @@
    "featured": false
   },
   {
-   "slug": "wekravehealthy-masala-makhana-chips",
-   "brand": "wekravehealthy",
+   "slug": "wekrave-masala-makhana-chips",
+   "brand": "wekrave",
    "title": "Masala Makhana Chips",
    "description": null,
    "collection": "snacks",
@@ -10195,8 +10204,8 @@
    "featured": false
   },
   {
-   "slug": "wekravehealthy-periperi-makhana-chips",
-   "brand": "wekravehealthy",
+   "slug": "wekrave-periperi-makhana-chips",
+   "brand": "wekrave",
    "title": "PeriPeri Makhana Chips",
    "description": null,
    "collection": "snacks",

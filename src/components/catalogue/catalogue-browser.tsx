@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Search, X } from "lucide-react";
+import { Search, SlidersHorizontal, X } from "lucide-react";
 import { COLLECTIONS, type Brand, type CollectionId, type Listing } from "@/lib/catalog-types";
 import { getOccasion } from "@/lib/occasions";
 import { NO_FILTERS, type Filters } from "@/lib/filters";
@@ -34,6 +34,7 @@ export function CatalogueBrowser({
   const [f, setF] = useState<Filters>(initial);
   const [shown, setShown] = useState(PAGE);
   const [quick, setQuick] = useState<Listing | null>(null);
+  const [panel, setPanel] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
   const sentinel = useRef<HTMLDivElement>(null);
 
@@ -113,6 +114,37 @@ export function CatalogueBrowser({
   const narrowed = Boolean(f.q || f.brand || f.price || (scope === "all" && (f.collection || f.occasion)));
   const brandOptions = useMemo(() => [...brands].sort((a, b) => a.name.localeCompare(b.name)), [brands]);
   const occasion = getOccasion(f.occasion);
+  const activeCount = [scope === "all" ? f.brand : "", f.price, f.sort].filter(Boolean).length;
+  const countLabel = `${results.length} ${results.length === 1 ? "product" : "products"}`;
+  const selects = (
+    <>
+      {scope === "all" && (
+        <Select value={f.brand} onChange={(v) => set({ brand: v })} label="Brand">
+          <option value="">All brands</option>
+          {brandOptions.map((b) => (
+            <option key={b.slug} value={b.slug}>
+              {b.name}
+            </option>
+          ))}
+        </Select>
+      )}
+      <Select value={f.price} onChange={(v) => set({ price: v })} label="Budget per unit">
+        <option value="">Any budget</option>
+        {PRICE_BANDS.map((p) => (
+          <option key={p.id} value={p.id}>
+            {p.label}
+          </option>
+        ))}
+      </Select>
+      <Select value={f.sort} onChange={(v) => set({ sort: v })} label="Sort" quiet>
+        {SORTS.map((s) => (
+          <option key={s.id} value={s.id}>
+            {s.label}
+          </option>
+        ))}
+      </Select>
+    </>
+  );
 
   return (
     <>
@@ -136,8 +168,8 @@ export function CatalogueBrowser({
           </div>
         )}
 
-        <div className={cn("flex flex-wrap items-center gap-2", scope === "all" && "mt-3")}>
-          <label className="relative min-w-0 flex-1 basis-full sm:max-w-xs sm:basis-auto">
+        <div className={cn("flex items-center gap-2", scope === "all" && "mt-3")}>
+          <label className="relative min-w-0 flex-1 sm:max-w-xs">
             <Search className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink/40" />
             <input
               ref={searchRef}
@@ -159,36 +191,35 @@ export function CatalogueBrowser({
               </button>
             )}
           </label>
-          {scope === "all" && (
-            <Select value={f.brand} onChange={(v) => set({ brand: v })} label="Brand">
-              <option value="">All brands</option>
-              {brandOptions.map((b) => (
-                <option key={b.slug} value={b.slug}>
-                  {b.name}
-                </option>
-              ))}
-            </Select>
-          )}
-          <Select value={f.price} onChange={(v) => set({ price: v })} label="Budget per unit">
-            <option value="">Any budget</option>
-            {PRICE_BANDS.map((p) => (
-              <option key={p.id} value={p.id}>
-                {p.label}
-              </option>
-            ))}
-          </Select>
-          <Select value={f.sort} onChange={(v) => set({ sort: v })} label="Sort" quiet>
-            {SORTS.map((s) => (
-              <option key={s.id} value={s.id}>
-                {s.label}
-              </option>
-            ))}
-          </Select>
-          <span className="ml-auto text-xs tabular-nums text-ink/50">
-            {results.length} {results.length === 1 ? "product" : "products"}
-          </span>
+          {/* Phones: one button holds the rest, so the bar stays two slim rows. */}
+          <button
+            type="button"
+            onClick={() => setPanel((v) => !v)}
+            aria-expanded={panel}
+            aria-controls="catalogue-filters"
+            className={cn(
+              "flex h-9 shrink-0 items-center gap-1.5 rounded-full px-3.5 text-[13px] font-medium transition sm:hidden",
+              panel || activeCount ? "bg-ink text-paper" : "bg-tile text-ink/70",
+            )}
+          >
+            <SlidersHorizontal className="size-4" />
+            Filters
+            {activeCount > 0 && (
+              <span className="grid size-5 place-items-center rounded-full bg-orchid text-[11px] font-bold text-aubergine">
+                {activeCount}
+              </span>
+            )}
+          </button>
+          <div className="hidden items-center gap-2 sm:flex">{selects}</div>
+          <span className="ml-auto hidden shrink-0 text-xs tabular-nums text-ink/50 sm:inline">{countLabel}</span>
         </div>
+        {panel && (
+          <div id="catalogue-filters" className="mt-3 grid grid-cols-2 gap-2 sm:hidden [&>label:last-child]:col-span-2 [&_select]:w-full">
+            {selects}
+          </div>
+        )}
       </div>
+      <p className="mt-5 text-xs tabular-nums text-ink/50 sm:hidden">{countLabel}</p>
 
       {results.length === 0 ? (
         <div className="mx-auto max-w-md py-28 text-center">
