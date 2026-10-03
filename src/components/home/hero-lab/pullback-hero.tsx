@@ -5,22 +5,24 @@ import { useRef } from "react";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { INTRO_DONE } from "@/components/motion/preloader";
 import { Roll } from "@/components/layout/header";
+import { BASE_PATH } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 
 /**
  * Concept — "Pull back."
  *
- * Not a poster with an effect behind it. One camera move.
+ * One camera move instead of a poster. It opens close on a single gift;
+ * the camera pulls back and the gift turns out to be one of a handful,
+ * then a shelf, then the whole cohort. The argument happens as a movement:
+ * one gift is one company is one of many.
  *
- * It opens on a single gift, close enough to touch. Then the camera pulls
- * back, and the gift turns out to be one of a handful; keep going and the
- * handful is a shelf; keep going and the shelf is the whole cohort, a wall
- * of everything a hundred and seventeen students made this year. The
- * argument of the site happens as a movement rather than a sentence: one
- * gift is one company is one of many.
- *
- * It is a single scaled plane, so the browser moves one layer however many
- * things are on it, and the words are handed over in the gaps.
+ * A note on how it is built, because the obvious way does not work.
+ * Scaling one plane that holds the whole wall asks the compositor to
+ * rasterise a layer fifteen thousand pixels across — about a gigabyte —
+ * and the frame rate collapses. So nothing is scaled. Each frame every
+ * tile is given its own position and size, and tiles outside the view are
+ * taken out of the page, so the browser only ever paints the few you can
+ * actually see, each at its true size.
  */
 
 export interface Tile {
@@ -28,142 +30,176 @@ export interface Tile {
   kind: "product" | "face";
 }
 
-const GRID = 7; // odd, so one tile sits dead centre and the camera starts there
-const FROM = 11; // how close the first frame is
+const COLS = 9;
+const ROWS = 5;
+const CENTRE = Math.floor(ROWS / 2) * COLS + Math.floor(COLS / 2);
 
 const STAGES = [
-  { at: 0.0, big: "Every gift here", small: "is someone’s first company." },
-  { at: 0.34, big: "Made by a student", small: "who started a company this year." },
-  { at: 0.62, big: "Thirty-seven of them", small: "are selling right now." },
+  { from: 0.0, big: "Every gift here", small: "is someone’s first company." },
+  { from: 0.3, big: "Made by a student", small: "who started a company this year." },
+  { from: 0.58, big: "Thirty-seven of them", small: "are selling right now." },
 ];
+
+/** Our own image route, so tiles arrive tile-sized instead of full size. */
+const sized = (src: string, w: number) => `${BASE_PATH}/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=75`;
 
 export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; founders: number; brands: number }) {
   const root = useRef<HTMLElement>(null);
+  const cells = tiles.slice(0, COLS * ROWS);
 
   useGSAP(
     () => {
       const el = root.current!;
-      const plane = el.querySelector<HTMLElement>("[data-plane]")!;
-      const cells = gsap.utils.toArray<HTMLElement>("[data-cell]", plane);
-      const centre = Math.floor((GRID * GRID) / 2);
+      const stage = el.querySelector<HTMLElement>("[data-stage-box]")!;
+      const nodes = gsap.utils.toArray<HTMLElement>("[data-cell]", stage);
+      const captions = gsap.utils.toArray<HTMLElement>("[data-stage]", el);
+      const veil = el.querySelector<HTMLElement>("[data-veil]")!;
+      const floor = el.querySelector<HTMLElement>("[data-floor]")!;
+      const end = el.querySelector<HTMLElement>("[data-end]")!;
+      const ease = gsap.parseEase("power1.inOut");
+
+      /** Lay the wall out for a camera that is `t` of the way back. */
+      const frame = (t: number) => {
+        const w = stage.clientWidth;
+        const h = stage.clientHeight;
+        // At the end the whole wall is in view; at the start one tile fills it.
+        const out = Math.max(w / COLS, h / ROWS);
+        const close = Math.max(w, h) * 1.02;
+        const size = gsap.utils.interpolate(close, out, ease(t));
+        const cCol = Math.floor(COLS / 2);
+        const cRow = Math.floor(ROWS / 2);
+
+        for (let i = 0; i < nodes.length; i++) {
+          const col = i % COLS;
+          const row = Math.floor(i / COLS);
+          const x = w / 2 + (col - cCol - 0.5) * size;
+          const y = h / 2 + (row - cRow - 0.5) * size;
+          const node = nodes[i];
+          // Out of frame is out of the page: this is what keeps it smooth.
+          if (x > w || y > h || x + size < 0 || y + size < 0) {
+            if (node.style.visibility !== "hidden") node.style.visibility = "hidden";
+            continue;
+          }
+          if (node.style.visibility === "hidden") node.style.visibility = "";
+          node.style.width = `${Math.ceil(size)}px`;
+          node.style.height = `${Math.ceil(size)}px`;
+          node.style.transform = `translate3d(${Math.round(x)}px, ${Math.round(y)}px, 0)`;
+          if (i !== CENTRE) {
+            // Neighbours come up as the camera finds them, ring by ring.
+            const ring = Math.max(Math.abs(col - cCol), Math.abs(row - cRow));
+            node.style.opacity = String(gsap.utils.clamp(0, 1, (t - (0.04 + (ring - 1) * 0.1)) / 0.16));
+          }
+        }
+      };
+
+      /** The words are handed over in the gaps between those reveals. */
+      const words = (t: number) => {
+        let live = 0;
+        STAGES.forEach((s, i) => (t >= s.from ? (live = i) : null));
+        const done = t > 0.84;
+        captions.forEach((c, i) => {
+          const on = !done && i === live;
+          c.style.opacity = on ? "1" : "0";
+          c.style.transform = `translate3d(0, ${on ? 0 : i < live ? -18 : 18}px, 0)`;
+        });
+        // The room comes up as the wall arrives, so it ends lit, not muddy.
+        veil.style.opacity = String(gsap.utils.interpolate(1, 0.26, gsap.utils.clamp(0, 1, (t - 0.5) / 0.42)));
+        const show = gsap.utils.clamp(0, 1, (t - 0.84) / 0.1);
+        floor.style.opacity = String(show);
+        end.style.opacity = String(show);
+        end.style.transform = `translate3d(0, ${(1 - show) * 24}px, 0)`;
+      };
 
       if (reducedMotion()) {
-        // No camera: show the wall, settled, with the line over it.
-        gsap.set(plane, { scale: 1 });
-        gsap.set("[data-stage]", { opacity: 0 });
-        gsap.set('[data-stage="0"]', { opacity: 1 });
-        gsap.set(["[data-end]", "[data-floor]"], { opacity: 1, y: 0 });
+        frame(1);
+        words(1);
         return;
       }
+      frame(0);
+      words(0);
 
-      gsap.set(plane, { scale: FROM });
-      gsap.set("[data-stage]", { opacity: 0, y: 18 });
-      gsap.set('[data-stage="0"]', { opacity: 1, y: 0 });
-      gsap.set(["[data-end]", "[data-floor]"], { opacity: 0, y: 24 });
-      // Everything but the first gift waits in the dark until the camera finds it.
-      gsap.set(
-        cells.filter((_, i) => i !== centre),
-        { opacity: 0 },
-      );
-
-      const play = () =>
-        gsap
-          .timeline({ defaults: { ease: "expo.out" } })
-          .from(plane, { scale: FROM * 1.18, duration: 2, ease: "power2.out" })
-          .from(el.querySelectorAll('[data-stage="0"] [data-line]'), { yPercent: 115, duration: 1.3, stagger: 0.1 }, 0.3);
+      // A slow settle into the opening frame, so it does not simply appear.
+      const open = { v: 1 };
+      const play = () => gsap.to(open, { v: 0, duration: 1.9, ease: "power2.out", onUpdate: () => frame(0.014 * open.v) });
       if (document.documentElement.classList.contains("intro")) window.addEventListener(INTRO_DONE, play, { once: true });
       else play();
 
       const tl = gsap.timeline({
-        scrollTrigger: { trigger: el, start: "top top", end: "+=340%", scrub: 0.9, pin: true, anticipatePin: 1 },
+        scrollTrigger: {
+          trigger: el,
+          start: "top top",
+          end: "+=320%",
+          scrub: 0.75,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+          onUpdate: (self) => {
+            frame(self.progress);
+            words(self.progress);
+          },
+        },
       });
 
-      // The move itself: one long pull back, eased so it never feels linear.
-      tl.to(plane, { scale: 1, ease: "power1.inOut", duration: 1 }, 0);
-
-      // The rest of the wall lights up as it comes into frame, ring by ring
-      // out from the first gift, so the reveal follows the camera.
-      cells.forEach((cell, i) => {
-        if (i === centre) return;
-        const ring = Math.max(Math.abs((i % GRID) - (centre % GRID)), Math.abs(Math.floor(i / GRID) - Math.floor(centre / GRID)));
-        tl.to(cell, { opacity: 1, duration: 0.1, ease: "none" }, Math.min(0.02 + (ring - 1) * 0.12, 0.72));
-      });
-
-      // The words are handed over in the gaps between those reveals.
-      STAGES.forEach((_, i) => {
-        if (i > 0) tl.to(`[data-stage="${i}"]`, { opacity: 1, y: 0, duration: 0.07 }, STAGES[i].at);
-        if (i < STAGES.length - 1) tl.to(`[data-stage="${i}"]`, { opacity: 0, y: -18, duration: 0.07 }, STAGES[i + 1].at - 0.07);
-      });
-      tl.to('[data-stage="2"]', { opacity: 0, y: -18, duration: 0.07 }, 0.86)
-        .to("[data-end]", { opacity: 1, y: 0, duration: 0.1 }, 0.88)
-        .to("[data-veil]", { opacity: 0.42, duration: 0.34, ease: "none" }, 0.66)
-        .to("[data-floor]", { opacity: 1, duration: 0.12 }, 0.84);
-
-      return () => void tl.scrollTrigger?.kill();
+      const onResize = () => frame(tl.scrollTrigger?.progress ?? 0);
+      window.addEventListener("resize", onResize);
+      return () => {
+        window.removeEventListener("resize", onResize);
+        tl.scrollTrigger?.kill();
+      };
     },
-    { scope: root, dependencies: [tiles.length] },
+    { scope: root, dependencies: [cells.length] },
   );
 
   return (
     <section ref={root} className="relative isolate hidden h-[calc(100svh-4rem)] overflow-hidden bg-ink md:block">
-      {/* The wall. One plane, scaled. */}
-      <div className="absolute inset-0 grid place-items-center">
-        <div
-          data-plane
-          className="grid aspect-square w-[max(100vh,100vw)] origin-center will-change-transform"
-          style={{ gridTemplateColumns: `repeat(${GRID}, 1fr)` }}
-        >
-          {tiles.slice(0, GRID * GRID).map((t, i) => (
-            <div key={`${t.src}-${i}`} data-cell className="relative overflow-hidden bg-aubergine-2">
-              {/* Plain img: these are decoration at wildly varying scale, and
-                  one fetch each beats the optimiser's many sizes here. */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={t.src}
-                alt=""
-                loading={i === Math.floor((GRID * GRID) / 2) ? "eager" : "lazy"}
-                className={cn("absolute inset-0 size-full", t.kind === "face" ? "object-cover object-top opacity-90" : "object-cover")}
-              />
-            </div>
-          ))}
-        </div>
+      <div data-stage-box className="absolute inset-0">
+        {cells.map((t, i) => (
+          <div
+            key={`${t.src}-${i}`}
+            data-cell
+            className="absolute left-0 top-0 overflow-hidden bg-aubergine-2 will-change-transform"
+            style={{ opacity: i === CENTRE ? 1 : 0 }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={sized(t.src, i === CENTRE ? 1920 : 640)}
+              alt=""
+              loading={i === CENTRE ? "eager" : "lazy"}
+              decoding="async"
+              className={cn("size-full object-cover", t.kind === "face" && "object-top")}
+            />
+          </div>
+        ))}
       </div>
 
-      {/* Lighting, not spectacle: hold the middle so type always reads. */}
+      {/* Lighting, not spectacle. */}
       <div
         data-veil
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgb(27_20_33/0.55)_0%,rgb(27_20_33/0.86)_48%,rgb(27_20_33/0.97)_100%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgb(27_20_33/0.52)_0%,rgb(27_20_33/0.86)_50%,rgb(27_20_33/0.97)_100%)]"
       />
-      {/* A floor for the closing words, so they never sit on a busy tile. */}
       <div
         data-floor
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-gradient-to-t from-ink via-ink/80 to-transparent opacity-0"
       />
 
-      {/* The words, handed over as the camera moves. */}
       <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1500px] flex-col justify-center px-8">
         {STAGES.map((s, i) => (
           <div key={s.big} data-stage={i} className="absolute inset-x-8 w-[min(50rem,64vw)]">
             <h1 className="font-display text-balance text-[clamp(2.6rem,6.2vw,6.4rem)] leading-[0.9] text-paper">
-              <span className="block overflow-hidden">
-                <span data-line className="block">
-                  {s.big}
-                </span>
-              </span>
-              <span className="block overflow-hidden">
-                <span data-line className="block italic text-orchid">
-                  {s.small}
-                </span>
-              </span>
+              {s.big}
+              <br />
+              <em className="italic text-orchid">{s.small}</em>
             </h1>
           </div>
         ))}
       </div>
 
-      {/* Where it lands. */}
-      <div data-end className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto max-w-[1500px] px-8 pb-[clamp(1.5rem,5vh,3.5rem)]">
+      <div
+        data-end
+        className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto max-w-[1500px] px-8 pb-[clamp(1.5rem,5vh,3.5rem)] opacity-0"
+      >
         <p className="font-display text-[clamp(2.6rem,6vw,6rem)] leading-[0.88] text-paper">
           {founders}&nbsp;founders. {brands}&nbsp;first companies.
           <br />

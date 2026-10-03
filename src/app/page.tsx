@@ -12,6 +12,7 @@ import { SplitHero } from "@/components/home/hero-lab/split-hero";
 import { LedgerHero } from "@/components/home/hero-lab/ledger-hero";
 import { ShelfHero } from "@/components/home/hero-lab/shelf-hero";
 import { PullbackHero } from "@/components/home/hero-lab/pullback-hero";
+import { LensHero } from "@/components/home/hero-lab/lens-hero";
 import { MobileHero } from "@/components/home/mobile-hero";
 import { Manifesto } from "@/components/home/manifesto";
 import { FounderWall } from "@/components/home/founder-wall";
@@ -34,7 +35,7 @@ export const revalidate = 600;
  * argues first (who made these, why it matters, what your budget does) and
  * sells second, and every product it shows carries the faces of its makers.
  */
-// Hero lab (local only): ?hero=pullback | ledger | shelf | mask | ripple | paper | split.
+// Hero lab (local only): ?hero=lens | pullback | ledger | shelf | mask | ripple | paper | split.
 type Search = Promise<Record<string, string | string[] | undefined>>;
 
 export default async function Home({ searchParams }: { searchParams: Search }) {
@@ -117,6 +118,15 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
   // Dead centre is the gift the camera opens on.
   tiles[24] = { src: hampers[0]?.images[0] ?? tiles[24].src, kind: "product" };
 
+  // Each square of the lens wall: a gift, and the student who made that gift.
+  const lensPairs = Array.from({ length: 45 }, (_, i) => {
+    const l = montage[i % montage.length];
+    const b = catalog.brand(l.brand)!;
+    const team = foundersOf(b.teamCode);
+    const f = team[i % Math.max(1, team.length)] ?? allFounders()[i];
+    return { product: l.images[0], face: f.photo, name: f.name, brand: b.name, slug: b.slug };
+  });
+
   // The journey's example: a real list of real hampers (150 gifts in all),
   // real faces from across the cohort, and what the order pays each team.
   // One hamper from each of four teams, so the list visibly backs four companies.
@@ -197,6 +207,8 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
         <ShelfHero items={shelf} founders={wall.length} brands={catalog.totals.brands} />
       ) : lab === "pullback" ? (
         <PullbackHero tiles={tiles} founders={wall.length} brands={catalog.totals.brands} />
+      ) : lab === "lens" ? (
+        <LensHero pairs={lensPairs} founders={wall.length} brands={catalog.totals.brands} />
       ) : (
         <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
       )}
