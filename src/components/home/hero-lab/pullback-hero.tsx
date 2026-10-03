@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "@/components/link";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ArrowDown } from "lucide-react";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { INTRO_DONE } from "@/components/motion/preloader";
@@ -45,6 +45,17 @@ const sized = (src: string, w: number) => `${BASE_PATH}/_next/image?url=${encode
 export function PullbackHero({ tiles, founders, brands, listings }: { tiles: Tile[]; founders: number; brands: number; listings: number }) {
   const root = useRef<HTMLElement>(null);
   const cells = tiles.slice(0, COUNT);
+
+  // The bar above is transparent until you scroll, and this hero is dark, so
+  // it has to be told to switch to light type while it is over us.
+  useEffect(() => {
+    document.documentElement.classList.add("hero-dark");
+    window.dispatchEvent(new Event("hero:dark"));
+    return () => {
+      document.documentElement.classList.remove("hero-dark");
+      window.dispatchEvent(new Event("hero:dark"));
+    };
+  }, []);
 
   // One gift, one student, the shelf, then everyone. Each line says
   // something the one before it could not, and names its own noun, so the
@@ -171,7 +182,14 @@ export function PullbackHero({ tiles, founders, brands, listings }: { tiles: Til
   );
 
   return (
-    <section ref={root} className="relative isolate h-[calc(100svh-4rem)] overflow-hidden bg-ink">
+    <section
+      ref={root}
+      // Full height and pulled up under the sticky bar, so the wall fills the
+      // screen from the first pixel: the bar floats on it, the pin starts at
+      // scroll zero instead of after the bar has gone, and nothing shows
+      // underneath while the camera is running.
+      className="relative isolate -mt-16 h-[100svh] overflow-hidden bg-ink"
+    >
       <div data-stage-box className="absolute inset-0">
         {cells.map((t, i) => (
           <div

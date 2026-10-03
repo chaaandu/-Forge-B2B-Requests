@@ -55,6 +55,16 @@ export function Header() {
     };
   }, []);
 
+  // A hero can be dark and run under this bar; while it is, and before the
+  // bar has taken its own background, the type has to come up light.
+  const [overDark, setOverDark] = useState(false);
+  useEffect(() => {
+    const sync = () => setOverDark(document.documentElement.classList.contains("hero-dark"));
+    sync();
+    window.addEventListener("hero:dark", sync);
+    return () => window.removeEventListener("hero:dark", sync);
+  }, []);
+
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 24);
     on();
@@ -70,6 +80,8 @@ export function Header() {
     document.body.style.overflow = menu ? "hidden" : "";
   }, [menu]);
 
+  const dark = overDark && !scrolled && !menu;
+
   return (
     <>
       <header
@@ -80,10 +92,10 @@ export function Header() {
       >
         <div className="mx-auto flex h-16 max-w-[1500px] items-center justify-between gap-4 px-5 sm:px-8">
           <Link href="/" aria-label="Forge for Business, home" onClick={() => setMenu(false)} className="relative z-50">
-            <Lockup compact tone={menu ? "dark" : "light"} />
+            <Lockup compact tone={menu || dark ? "dark" : "light"} />
           </Link>
 
-          <nav className="hidden items-center gap-1 rounded-full bg-ink/[0.05] p-1 md:flex">
+          <nav className={cn("hidden items-center gap-1 rounded-full p-1 md:flex", dark ? "bg-paper/10" : "bg-ink/[0.05]")}>
             {NAV.map((n) => (
               <Link
                 key={n.href}
@@ -91,7 +103,13 @@ export function Header() {
                 aria-current={isActive(pathname, n.href) ? "page" : undefined}
                 className={cn(
                   "rounded-full px-4 py-1.5 text-[13px] font-semibold transition-colors",
-                  isActive(pathname, n.href) ? "bg-ink text-paper" : "text-ink/65 hover:text-ink",
+                  isActive(pathname, n.href)
+                    ? dark
+                      ? "bg-paper text-ink"
+                      : "bg-ink text-paper"
+                    : dark
+                      ? "text-paper/70 hover:text-paper"
+                      : "text-ink/65 hover:text-ink",
                 )}
               >
                 <Roll>{n.label}</Roll>
@@ -108,7 +126,7 @@ export function Header() {
               className={cn(
                 // Phones have the bottom bar instead.
                 "group hidden items-center gap-2.5 whitespace-nowrap rounded-full py-2 pl-4 pr-2 text-[13px] font-semibold transition-colors duration-300 sm:flex",
-                menu ? "bg-paper text-ink" : "bg-aubergine text-paper hover:bg-violet",
+                menu || dark ? "bg-paper text-ink hover:bg-orchid" : "bg-aubergine text-paper hover:bg-violet",
                 bump && "animate-bump",
               )}
             >
@@ -132,7 +150,7 @@ export function Header() {
               onClick={() => setMenu((m) => !m)}
               className={cn(
                 "flex h-10 items-center gap-2.5 rounded-full pl-4 pr-3.5 text-[13px] font-semibold transition-colors duration-500 md:hidden",
-                menu ? "bg-paper text-aubergine" : "bg-ink/[0.06] text-ink",
+                menu ? "bg-paper text-aubergine" : dark ? "bg-paper/15 text-paper" : "bg-ink/[0.06] text-ink",
               )}
             >
               {menu ? "Close" : "Menu"}
