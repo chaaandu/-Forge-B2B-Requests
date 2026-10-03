@@ -5,6 +5,10 @@ import { allFounders, foundersOf } from "@/lib/founders";
 import { getImpact } from "@/lib/impact";
 import { getReels } from "@/lib/reels";
 import { Hero } from "@/components/home/hero";
+import { MaskHero } from "@/components/home/hero-lab/mask-hero";
+import { RippleHero } from "@/components/home/hero-lab/ripple-hero";
+import { PaperHero } from "@/components/home/hero-lab/paper-hero";
+import { SplitHero } from "@/components/home/hero-lab/split-hero";
 import { MobileHero } from "@/components/home/mobile-hero";
 import { Manifesto } from "@/components/home/manifesto";
 import { FounderWall } from "@/components/home/founder-wall";
@@ -26,7 +30,11 @@ export const revalidate = 600;
  * argues first (who made these, why it matters, what your budget does) and
  * sells second, and every product it shows carries the faces of its makers.
  */
-export default async function Home() {
+// Hero lab (local only): ?hero=mask | ripple | paper | split, else the one we ship.
+type Search = Promise<Record<string, string | string[] | undefined>>;
+
+export default async function Home({ searchParams }: { searchParams: Search }) {
+  const lab = (await searchParams).hero;
   const catalog = await getCatalog();
   const brandByCode = new Map(catalog.brands.map((b) => [b.teamCode, b]));
   const [impact, reels] = await Promise.all([getImpact(catalog.brands.map((b) => b.teamCode)), getReels()]);
@@ -49,6 +57,9 @@ export default async function Home() {
         .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug })),
     )
     .slice(0, 10);
+
+  // The cohort, spread so neighbouring faces are from different teams.
+  const collagePhotos = wall.filter((_, i) => i % 2 === 0).map((f) => f.photo);
 
   const hampers = catalog
     .listingsIn("hampers")
@@ -121,7 +132,17 @@ export default async function Home() {
 
   return (
     <>
-      <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
+      {lab === "mask" ? (
+        <MaskHero photos={collagePhotos} founders={wall.length} brands={catalog.totals.brands} />
+      ) : lab === "ripple" ? (
+        <RippleHero photos={collagePhotos} founders={wall.length} brands={catalog.totals.brands} />
+      ) : lab === "paper" ? (
+        <PaperHero founders={wall.length} brands={catalog.totals.brands} />
+      ) : lab === "split" ? (
+        <SplitHero photos={collagePhotos} founders={wall.length} brands={catalog.totals.brands} />
+      ) : (
+        <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
+      )}
       <MobileHero founders={wall.length} brands={catalog.totals.brands} />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
