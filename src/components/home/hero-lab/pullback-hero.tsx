@@ -63,7 +63,8 @@ export function PullbackHero({ tiles, founders, brands, listings }: { tiles: Til
       const captions = gsap.utils.toArray<HTMLElement>("[data-stage]", el);
       const veil = el.querySelector<HTMLElement>("[data-veil]")!;
       const floor = el.querySelector<HTMLElement>("[data-floor]")!;
-      const end = el.querySelector<HTMLElement>("[data-end]")!;
+      const endBig = el.querySelector<HTMLElement>("[data-end-big]")!;
+      const endCta = el.querySelector<HTMLElement>("[data-end-cta]")!;
       const hint = el.querySelector<HTMLElement>("[data-hint]")!;
       const ease = gsap.parseEase("power1.inOut");
 
@@ -117,8 +118,10 @@ export function PullbackHero({ tiles, founders, brands, listings }: { tiles: Til
         hint.style.opacity = String(gsap.utils.clamp(0, 1, 1 - t / 0.12));
         const show = gsap.utils.clamp(0, 1, (t - 0.84) / 0.1);
         floor.style.opacity = String(show);
-        end.style.opacity = String(show);
-        end.style.transform = `translate3d(0, ${(1 - show) * 22}px, 0)`;
+        endBig.style.opacity = String(show);
+        endBig.style.transform = `translate3d(0, ${(1 - show) * 16}px, 0)`;
+        endCta.style.opacity = String(show);
+        endCta.style.pointerEvents = show > 0.6 ? "auto" : "none";
       };
 
       if (reducedMotion()) {
@@ -128,7 +131,7 @@ export function PullbackHero({ tiles, founders, brands, listings }: { tiles: Til
         // wall and drop the closing headline that would otherwise repeat it.
         captions[0].style.opacity = "1";
         captions[0].style.transform = "none";
-        el.querySelector<HTMLElement>("[data-end-big]")!.style.display = "none";
+        endBig.style.display = "none";
         return;
       }
       frame(0);
@@ -201,56 +204,56 @@ export function PullbackHero({ tiles, founders, brands, listings }: { tiles: Til
         className="pointer-events-none absolute inset-x-0 bottom-0 h-[42%] bg-gradient-to-t from-ink via-ink/85 to-transparent opacity-0"
       />
 
-      {/* The words, handed over as the camera moves. */}
-      <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1500px] items-center px-5 sm:px-8">
-        {stages.map((s, i) => {
-          const Tag = i === 0 ? "h1" : "p";
-          return (
-            <Tag
-              key={s.lead}
-              data-stage={i}
-              className="font-display absolute inset-x-5 w-[min(50rem,78vw)] text-balance text-[clamp(2.1rem,7.4vw,6.4rem)] leading-[0.92] text-paper sm:inset-x-8 sm:text-[clamp(2.4rem,6.2vw,6.4rem)]"
-            >
-              {s.lead}
-              <br />
-              <em className="italic text-orchid">{s.tail}</em>
-            </Tag>
-          );
-        })}
+      {/* Every line lands in the same place, bottom left, so the eye never
+          has to go looking: only the words change under the camera. The
+          well is two lines deep whatever is in it, and the way in sits
+          below it from the start, so nothing shifts when it arrives. */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto max-w-[1500px] px-5 pb-[clamp(1.25rem,5vh,3.5rem)] sm:px-8">
+        <div className="relative min-h-[1.9em] w-[min(68rem,88vw)] text-[clamp(2.05rem,6.8vw,5.8rem)] sm:text-[clamp(2.3rem,5.5vw,5.8rem)]">
+          {stages.map((s, i) => {
+            const Tag = i === 0 ? "h1" : "p";
+            return (
+              <Tag
+                key={s.lead}
+                data-stage={i}
+                className="font-display absolute inset-x-0 bottom-0 text-balance text-[1em] leading-[0.92] text-paper"
+              >
+                {s.lead}
+                <br />
+                <em className="italic text-orchid">{s.tail}</em>
+              </Tag>
+            );
+          })}
+          <p data-end-big className="font-display absolute inset-x-0 bottom-0 text-[1em] leading-[0.92] text-paper opacity-0">
+            {founders}&nbsp;founders.
+            <br />
+            <em className="italic text-orchid">One store.</em>
+          </p>
+        </div>
+
+        <div data-end-cta className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 opacity-0 sm:mt-7">
+          <Link
+            href="/catalogue"
+            data-cursor="Go"
+            className="group inline-flex rounded-full bg-orchid px-6 py-3.5 text-[15px] font-semibold text-aubergine transition-colors hover:bg-paper sm:px-7 sm:py-4"
+          >
+            <Roll>Start gifting</Roll>
+          </Link>
+          <Link href="/brands" className="text-[15px] font-semibold text-paper/70 hover:text-paper">
+            <Roll>Meet the founders</Roll>
+          </Link>
+        </div>
       </div>
 
+      {/* Out of the way of the words, in the corner. */}
       <div
         data-hint
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-[clamp(1rem,3vh,2rem)] flex justify-center text-[12px] font-semibold text-paper/45"
+        className="pointer-events-none absolute bottom-[clamp(1.25rem,5vh,3.5rem)] right-5 text-[12px] font-semibold text-paper/45 sm:right-8"
       >
         <span className="inline-flex items-center gap-2">
           Scroll <ArrowDown className="size-3.5 animate-bounce" />
         </span>
-      </div>
-
-      {/* Where it lands. */}
-      <div
-        data-end
-        className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto max-w-[1500px] px-5 pb-[clamp(1.25rem,5vh,3.5rem)] opacity-0 sm:px-8"
-      >
-        <p data-end-big className="font-display text-[clamp(2rem,7vw,6rem)] leading-[0.9] text-paper">
-          {founders}&nbsp;founders.
-          <br />
-          <em className="italic text-orchid">One store.</em>
-        </p>
-        <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 sm:mt-7">
-          <Link
-            href="/catalogue"
-            data-cursor="Go"
-            className="group pointer-events-auto inline-flex rounded-full bg-orchid px-6 py-3.5 text-[15px] font-semibold text-aubergine transition-colors hover:bg-paper sm:px-7 sm:py-4"
-          >
-            <Roll>Start gifting</Roll>
-          </Link>
-          <Link href="/brands" className="pointer-events-auto text-[15px] font-semibold text-paper/70 hover:text-paper">
-            <Roll>Meet the founders</Roll>
-          </Link>
-        </div>
       </div>
     </section>
   );
