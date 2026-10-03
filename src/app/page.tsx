@@ -101,26 +101,49 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
     .filter((l) => l.images.length)
     .sort((a, b) => Number(/hamper|gift box/i.test(b.title)) - Number(/hamper|gift box/i.test(a.title)));
 
-  // The wall the camera pulls back to: the best hamper dead centre, then
-  // products and faces alternating outwards.
-  const montage = catalog.listings.filter((l) => l.images[0]);
-  const tiles: { src: string; kind: "product" | "face" }[] = [];
-  const pics = [...hampers, ...montage.filter((l) => !hampers.includes(l))];
-  const faceList = wall.map((f) => f.photo);
-  for (let i = 0; i < 49; i++) {
-    const face = i % 3 === 2 && faceList.length;
-    tiles.push(
-      face
-        ? { src: faceList[Math.floor(i / 3) % faceList.length], kind: "face" }
-        : { src: pics[i % pics.length].images[0], kind: "product" },
-    );
+  // The wall the camera pulls back to. Choco & Co opens it: their photos
+  // are the cleanest in the catalogue, which is what matters when one of
+  // them is filling the screen. Juzzle and Haulties sit this one out, and
+  // ChipMonk takes their place.
+  const SKIP = new Set(["juzzle", "haulties"]);
+  const FAVOUR = ["choco-and-co", "chipmonk"];
+  const withPhoto = (slug: string) => catalog.listingsOf(slug).filter((l) => l.images[0]);
+  const chocos = withPhoto("choco-and-co");
+  const opener = chocos.find((l) => /hamper/i.test(l.title)) ?? chocos[0];
+  const byBrand = new Map<string, typeof catalog.listings>();
+  for (const l of catalog.listings) {
+    if (!l.images[0] || SKIP.has(l.brand)) continue;
+    byBrand.set(l.brand, [...(byBrand.get(l.brand) ?? []), l]);
   }
-  // Dead centre is the gift the camera opens on.
-  tiles[24] = { src: hampers[0]?.images[0] ?? tiles[24].src, kind: "product" };
+  // Favourites first, then one from each shop in turn, so no two squares
+  // next to each other come from the same place.
+  const queues = [...FAVOUR.filter((f) => byBrand.has(f)), ...[...byBrand.keys()].filter((b) => !FAVOUR.includes(b))].map((b) =>
+    byBrand.get(b)!,
+  );
+  const shots: typeof catalog.listings = [];
+  for (let round = 0; shots.length < 60; round++) {
+    let added = false;
+    for (const q of queues) {
+      if (q[round]) {
+        shots.push(q[round]);
+        added = true;
+      }
+    }
+    if (!added) break;
+  }
+  const faceList = wall.map((f) => f.photo);
+  const tiles: { src: string; kind: "product" | "face" }[] = Array.from({ length: 45 }, (_, i) =>
+    i % 3 === 2 && faceList.length
+      ? { src: faceList[Math.floor(i / 3) % faceList.length], kind: "face" as const }
+      : { src: shots[i % shots.length].images[0], kind: "product" as const },
+  );
+  // Dead centre of a nine by five wall is tile 22, and that is the gift the
+  // camera opens on.
+  if (opener) tiles[22] = { src: opener.images[0], kind: "product" };
 
   // Each square of the lens wall: a gift, and the student who made that gift.
   const lensPairs = Array.from({ length: 45 }, (_, i) => {
-    const l = montage[i % montage.length];
+    const l = shots[i % shots.length];
     const b = catalog.brand(l.brand)!;
     const team = foundersOf(b.teamCode);
     const f = team[i % Math.max(1, team.length)] ?? allFounders()[i];
