@@ -11,6 +11,7 @@ import { PaperHero } from "@/components/home/hero-lab/paper-hero";
 import { SplitHero } from "@/components/home/hero-lab/split-hero";
 import { LedgerHero } from "@/components/home/hero-lab/ledger-hero";
 import { ShelfHero } from "@/components/home/hero-lab/shelf-hero";
+import { PullbackHero } from "@/components/home/hero-lab/pullback-hero";
 import { MobileHero } from "@/components/home/mobile-hero";
 import { Manifesto } from "@/components/home/manifesto";
 import { FounderWall } from "@/components/home/founder-wall";
@@ -33,7 +34,7 @@ export const revalidate = 600;
  * argues first (who made these, why it matters, what your budget does) and
  * sells second, and every product it shows carries the faces of its makers.
  */
-// Hero lab (local only): ?hero=ledger | shelf | mask | ripple | paper | split.
+// Hero lab (local only): ?hero=pullback | ledger | shelf | mask | ripple | paper | split.
 type Search = Promise<Record<string, string | string[] | undefined>>;
 
 export default async function Home({ searchParams }: { searchParams: Search }) {
@@ -98,6 +99,23 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
     .listingsIn("hampers")
     .filter((l) => l.images.length)
     .sort((a, b) => Number(/hamper|gift box/i.test(b.title)) - Number(/hamper|gift box/i.test(a.title)));
+
+  // The wall the camera pulls back to: the best hamper dead centre, then
+  // products and faces alternating outwards.
+  const montage = catalog.listings.filter((l) => l.images[0]);
+  const tiles: { src: string; kind: "product" | "face" }[] = [];
+  const pics = [...hampers, ...montage.filter((l) => !hampers.includes(l))];
+  const faceList = wall.map((f) => f.photo);
+  for (let i = 0; i < 49; i++) {
+    const face = i % 3 === 2 && faceList.length;
+    tiles.push(
+      face
+        ? { src: faceList[Math.floor(i / 3) % faceList.length], kind: "face" }
+        : { src: pics[i % pics.length].images[0], kind: "product" },
+    );
+  }
+  // Dead centre is the gift the camera opens on.
+  tiles[24] = { src: hampers[0]?.images[0] ?? tiles[24].src, kind: "product" };
 
   // The journey's example: a real list of real hampers (150 gifts in all),
   // real faces from across the cohort, and what the order pays each team.
@@ -177,6 +195,8 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
         <LedgerHero ventures={ventures} founders={wall.length} brands={catalog.totals.brands} earned={impact.revenue} />
       ) : lab === "shelf" ? (
         <ShelfHero items={shelf} founders={wall.length} brands={catalog.totals.brands} />
+      ) : lab === "pullback" ? (
+        <PullbackHero tiles={tiles} founders={wall.length} brands={catalog.totals.brands} />
       ) : (
         <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
       )}
