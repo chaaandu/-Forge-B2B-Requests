@@ -5,15 +5,6 @@ import { allFounders, foundersOf } from "@/lib/founders";
 import { getImpact } from "@/lib/impact";
 import { getReels } from "@/lib/reels";
 import { Hero } from "@/components/home/hero";
-import { MaskHero } from "@/components/home/hero-lab/mask-hero";
-import { RippleHero } from "@/components/home/hero-lab/ripple-hero";
-import { PaperHero } from "@/components/home/hero-lab/paper-hero";
-import { SplitHero } from "@/components/home/hero-lab/split-hero";
-import { LedgerHero } from "@/components/home/hero-lab/ledger-hero";
-import { ShelfHero } from "@/components/home/hero-lab/shelf-hero";
-import { PullbackHero } from "@/components/home/hero-lab/pullback-hero";
-import { LensHero } from "@/components/home/hero-lab/lens-hero";
-import { MobileHero } from "@/components/home/mobile-hero";
 import { Manifesto } from "@/components/home/manifesto";
 import { FounderWall } from "@/components/home/founder-wall";
 import { Journey } from "@/components/home/journey";
@@ -25,7 +16,6 @@ import { SplitReveal } from "@/components/motion/reveal";
 import { VelocityMarquee } from "@/components/motion/velocity-marquee";
 import { Roll } from "@/components/layout/header";
 import { PRICE_BANDS, inBand } from "@/lib/price-bands";
-import { formatINR } from "@/lib/money";
 
 // Must be a literal for Next to read it; matches REFRESH_SECONDS in lib/catalog.
 export const revalidate = 600;
@@ -35,11 +25,7 @@ export const revalidate = 600;
  * argues first (who made these, why it matters, what your budget does) and
  * sells second, and every product it shows carries the faces of its makers.
  */
-// Hero lab (local only): ?hero=lens | pullback | ledger | shelf | mask | ripple | paper | split.
-type Search = Promise<Record<string, string | string[] | undefined>>;
-
-export default async function Home({ searchParams }: { searchParams: Search }) {
-  const lab = (await searchParams).hero;
+export default async function Home() {
   const catalog = await getCatalog();
   const brandByCode = new Map(catalog.brands.map((b) => [b.teamCode, b]));
   const [impact, reels] = await Promise.all([getImpact(catalog.brands.map((b) => b.teamCode)), getReels()]);
@@ -54,47 +40,6 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
       const b = brandByCode.get(f.teamCode)!;
       return { name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug, teamCode: f.teamCode, sold: sold(f.teamCode) };
     });
-
-  const heroFaces = byRevenue
-    .flatMap((b) =>
-      foundersOf(b.teamCode)
-        .slice(0, 1)
-        .map((f) => ({ name: f.name, photo: f.photo, brand: b.name, brandSlug: b.slug })),
-    )
-    .slice(0, 10);
-
-  // Every venture as a row: who, what, and what it has sold.
-  const ventures = byRevenue.map((b, i) => ({
-    rank: i + 1,
-    name: b.name,
-    slug: b.slug,
-    tagline: b.tagline,
-    revenue: sold(b.teamCode),
-    image: catalog.listingsOf(b.slug).find((l) => l.images[0])?.images[0] ?? null,
-    people: foundersOf(b.teamCode).map((f) => ({ name: f.name, photo: f.photo })),
-  }));
-
-  // One good-looking thing from each of the best-selling ventures.
-  const shelf = byRevenue
-    .flatMap((b) => {
-      const l = catalog.listingsOf(b.slug).find((x) => x.images[0]);
-      if (!l) return [];
-      return [
-        {
-          slug: l.slug,
-          title: l.title,
-          brand: b.name,
-          brandSlug: b.slug,
-          price: formatINR(l.priceFromMinor),
-          image: l.images[0],
-          people: foundersOf(b.teamCode).map((f) => ({ name: f.name, photo: f.photo })),
-        },
-      ];
-    })
-    .slice(0, 16);
-
-  // The cohort, spread so neighbouring faces are from different teams.
-  const collagePhotos = wall.filter((_, i) => i % 2 === 0).map((f) => f.photo);
 
   const hampers = catalog
     .listingsIn("hampers")
@@ -140,15 +85,6 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
   // Dead centre of a nine by five wall is tile 22, and that is the gift the
   // camera opens on.
   if (opener) tiles[22] = { src: opener.images[0], kind: "product" };
-
-  // Each square of the lens wall: a gift, and the student who made that gift.
-  const lensPairs = Array.from({ length: 45 }, (_, i) => {
-    const l = shots[i % shots.length];
-    const b = catalog.brand(l.brand)!;
-    const team = foundersOf(b.teamCode);
-    const f = team[i % Math.max(1, team.length)] ?? allFounders()[i];
-    return { product: l.images[0], face: f.photo, name: f.name, brand: b.name, slug: b.slug };
-  });
 
   // The journey's example: a real list of real hampers (150 gifts in all),
   // real faces from across the cohort, and what the order pays each team.
@@ -216,26 +152,7 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
 
   return (
     <>
-      {lab === "mask" ? (
-        <MaskHero photos={collagePhotos} founders={wall.length} brands={catalog.totals.brands} />
-      ) : lab === "ripple" ? (
-        <RippleHero photos={collagePhotos} founders={wall.length} brands={catalog.totals.brands} />
-      ) : lab === "paper" ? (
-        <PaperHero founders={wall.length} brands={catalog.totals.brands} />
-      ) : lab === "split" ? (
-        <SplitHero photos={collagePhotos} founders={wall.length} brands={catalog.totals.brands} />
-      ) : lab === "ledger" ? (
-        <LedgerHero ventures={ventures} founders={wall.length} brands={catalog.totals.brands} earned={impact.revenue} />
-      ) : lab === "shelf" ? (
-        <ShelfHero items={shelf} founders={wall.length} brands={catalog.totals.brands} />
-      ) : lab === "pullback" ? (
-        <PullbackHero tiles={tiles} founders={wall.length} brands={catalog.totals.brands} listings={catalog.totals.listings} />
-      ) : lab === "lens" ? (
-        <LensHero pairs={lensPairs} founders={wall.length} brands={catalog.totals.brands} />
-      ) : (
-        <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
-      )}
-      {lab !== "pullback" && <MobileHero founders={wall.length} brands={catalog.totals.brands} />}
+      <Hero tiles={tiles} founders={wall.length} brands={catalog.totals.brands} listings={catalog.totals.listings} />
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (
