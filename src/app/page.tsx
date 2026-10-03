@@ -206,13 +206,13 @@ export default async function Home({ searchParams }: { searchParams: Search }) {
       ) : lab === "shelf" ? (
         <ShelfHero items={shelf} founders={wall.length} brands={catalog.totals.brands} />
       ) : lab === "pullback" ? (
-        <PullbackHero tiles={tiles} founders={wall.length} brands={catalog.totals.brands} />
+        <PullbackHero tiles={tiles} founders={wall.length} brands={catalog.totals.brands} listings={catalog.totals.listings} />
       ) : lab === "lens" ? (
         <LensHero pairs={lensPairs} founders={wall.length} brands={catalog.totals.brands} />
       ) : (
         <Hero faces={heroFaces} founders={wall.length} brands={catalog.totals.brands} />
       )}
-      <MobileHero founders={wall.length} brands={catalog.totals.brands} />
+      {lab !== "pullback" && <MobileHero founders={wall.length} brands={catalog.totals.brands} />}
 
       <VelocityMarquee speed={60} className="overflow-hidden border-y border-ink/10 py-6">
         {catalog.brands.map((b) => (

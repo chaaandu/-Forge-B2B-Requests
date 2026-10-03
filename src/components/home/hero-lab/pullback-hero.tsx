@@ -2,6 +2,7 @@
 
 import Link from "@/components/link";
 import { useRef } from "react";
+import { ArrowDown } from "lucide-react";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { INTRO_DONE } from "@/components/motion/preloader";
 import { Roll } from "@/components/layout/header";
@@ -9,7 +10,7 @@ import { BASE_PATH } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 
 /**
- * Concept — "Pull back."
+ * The hero — "Pull back."
  *
  * One camera move instead of a poster. It opens close on a single gift;
  * the camera pulls back and the gift turns out to be one of a handful,
@@ -20,9 +21,12 @@ import { cn } from "@/lib/cn";
  * Scaling one plane that holds the whole wall asks the compositor to
  * rasterise a layer fifteen thousand pixels across — about a gigabyte —
  * and the frame rate collapses. So nothing is scaled. Each frame every
- * tile is given its own position and size, and tiles outside the view are
- * taken out of the page, so the browser only ever paints the few you can
- * actually see, each at its true size.
+ * tile is given its own position and size, tiles outside the view are
+ * taken out of the page, and the pictures arrive tile-sized. The browser
+ * only ever paints the few squares you can actually see.
+ *
+ * The wall turns with the window: nine across on a laptop, five across on
+ * a phone held upright, so it always fills the screen without stretching.
  */
 
 export interface Tile {
@@ -30,22 +34,26 @@ export interface Tile {
   kind: "product" | "face";
 }
 
-const COLS = 9;
-const ROWS = 5;
-const CENTRE = Math.floor(ROWS / 2) * COLS + Math.floor(COLS / 2);
+/** 45 squares either way; the middle one is 22 in both arrangements. */
+const COUNT = 45;
+const LANDSCAPE = { cols: 9, rows: 5 };
+const PORTRAIT = { cols: 5, rows: 9 };
+const CENTRE = 22;
 
-const STAGES = [
-  { from: 0.0, big: "Every gift here", small: "is someone’s first company." },
-  { from: 0.3, big: "Made by a student", small: "who started a company this year." },
-  { from: 0.58, big: "Thirty-seven of them", small: "are selling right now." },
-];
-
-/** Our own image route, so tiles arrive tile-sized instead of full size. */
 const sized = (src: string, w: number) => `${BASE_PATH}/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=75`;
 
-export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; founders: number; brands: number }) {
+export function PullbackHero({ tiles, founders, brands, listings }: { tiles: Tile[]; founders: number; brands: number; listings: number }) {
   const root = useRef<HTMLElement>(null);
-  const cells = tiles.slice(0, COLS * ROWS);
+  const cells = tiles.slice(0, COUNT);
+
+  // One gift, one student, the shelf, then everyone. Each line says
+  // something the one before it could not, and names its own noun, so the
+  // counts never read as the same thing twice.
+  const stages = [
+    { from: 0.0, lead: "Every gift here", tail: "is someone’s first company." },
+    { from: 0.3, lead: "Made by a student", tail: "who started a company this year." },
+    { from: 0.58, lead: `${brands} companies.`, tail: `${listings} things to give.` },
+  ];
 
   useGSAP(
     () => {
@@ -56,27 +64,29 @@ export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; found
       const veil = el.querySelector<HTMLElement>("[data-veil]")!;
       const floor = el.querySelector<HTMLElement>("[data-floor]")!;
       const end = el.querySelector<HTMLElement>("[data-end]")!;
+      const hint = el.querySelector<HTMLElement>("[data-hint]")!;
       const ease = gsap.parseEase("power1.inOut");
 
       /** Lay the wall out for a camera that is `t` of the way back. */
       const frame = (t: number) => {
         const w = stage.clientWidth;
         const h = stage.clientHeight;
+        const { cols, rows } = w >= h ? LANDSCAPE : PORTRAIT;
         // At the end the whole wall is in view; at the start one tile fills it.
-        const out = Math.max(w / COLS, h / ROWS);
+        const out = Math.max(w / cols, h / rows);
         const close = Math.max(w, h) * 1.02;
         const size = gsap.utils.interpolate(close, out, ease(t));
-        const cCol = Math.floor(COLS / 2);
-        const cRow = Math.floor(ROWS / 2);
+        const cCol = Math.floor(cols / 2);
+        const cRow = Math.floor(rows / 2);
 
         for (let i = 0; i < nodes.length; i++) {
-          const col = i % COLS;
-          const row = Math.floor(i / COLS);
+          const col = i % cols;
+          const row = Math.floor(i / cols);
           const x = w / 2 + (col - cCol - 0.5) * size;
           const y = h / 2 + (row - cRow - 0.5) * size;
           const node = nodes[i];
           // Out of frame is out of the page: this is what keeps it smooth.
-          if (x > w || y > h || x + size < 0 || y + size < 0) {
+          if (row >= rows || x > w || y > h || x + size < 0 || y + size < 0) {
             if (node.style.visibility !== "hidden") node.style.visibility = "hidden";
             continue;
           }
@@ -87,7 +97,7 @@ export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; found
           if (i !== CENTRE) {
             // Neighbours come up as the camera finds them, ring by ring.
             const ring = Math.max(Math.abs(col - cCol), Math.abs(row - cRow));
-            node.style.opacity = String(gsap.utils.clamp(0, 1, (t - (0.04 + (ring - 1) * 0.1)) / 0.16));
+            node.style.opacity = String(gsap.utils.clamp(0, 1, (t - (0.04 + (ring - 1) * 0.09)) / 0.16));
           }
         }
       };
@@ -95,24 +105,30 @@ export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; found
       /** The words are handed over in the gaps between those reveals. */
       const words = (t: number) => {
         let live = 0;
-        STAGES.forEach((s, i) => (t >= s.from ? (live = i) : null));
+        stages.forEach((s, i) => (t >= s.from ? (live = i) : null));
         const done = t > 0.84;
         captions.forEach((c, i) => {
           const on = !done && i === live;
           c.style.opacity = on ? "1" : "0";
-          c.style.transform = `translate3d(0, ${on ? 0 : i < live ? -18 : 18}px, 0)`;
+          c.style.transform = `translate3d(0, ${on ? 0 : i < live ? -16 : 16}px, 0)`;
         });
         // The room comes up as the wall arrives, so it ends lit, not muddy.
         veil.style.opacity = String(gsap.utils.interpolate(1, 0.26, gsap.utils.clamp(0, 1, (t - 0.5) / 0.42)));
+        hint.style.opacity = String(gsap.utils.clamp(0, 1, 1 - t / 0.12));
         const show = gsap.utils.clamp(0, 1, (t - 0.84) / 0.1);
         floor.style.opacity = String(show);
         end.style.opacity = String(show);
-        end.style.transform = `translate3d(0, ${(1 - show) * 24}px, 0)`;
+        end.style.transform = `translate3d(0, ${(1 - show) * 22}px, 0)`;
       };
 
       if (reducedMotion()) {
         frame(1);
         words(1);
+        // The line still has to be on the page, so show it over the settled
+        // wall and drop the closing headline that would otherwise repeat it.
+        captions[0].style.opacity = "1";
+        captions[0].style.transform = "none";
+        el.querySelector<HTMLElement>("[data-end-big]")!.style.display = "none";
         return;
       }
       frame(0);
@@ -128,7 +144,8 @@ export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; found
         scrollTrigger: {
           trigger: el,
           start: "top top",
-          end: "+=320%",
+          // A shorter move on a phone, where scrolling costs more effort.
+          end: () => (window.innerWidth < 768 ? "+=220%" : "+=320%"),
           scrub: 0.75,
           pin: true,
           anticipatePin: 1,
@@ -151,7 +168,7 @@ export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; found
   );
 
   return (
-    <section ref={root} className="relative isolate hidden h-[calc(100svh-4rem)] overflow-hidden bg-ink md:block">
+    <section ref={root} className="relative isolate h-[calc(100svh-4rem)] overflow-hidden bg-ink">
       <div data-stage-box className="absolute inset-0">
         {cells.map((t, i) => (
           <div
@@ -162,7 +179,7 @@ export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; found
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={sized(t.src, i === CENTRE ? 1920 : 640)}
+              src={sized(t.src, i === CENTRE ? 1200 : 384)}
               alt=""
               loading={i === CENTRE ? "eager" : "lazy"}
               decoding="async"
@@ -181,35 +198,52 @@ export function PullbackHero({ tiles, founders, brands }: { tiles: Tile[]; found
       <div
         data-floor
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-gradient-to-t from-ink via-ink/80 to-transparent opacity-0"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[42%] bg-gradient-to-t from-ink via-ink/85 to-transparent opacity-0"
       />
 
-      <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1500px] flex-col justify-center px-8">
-        {STAGES.map((s, i) => (
-          <div key={s.big} data-stage={i} className="absolute inset-x-8 w-[min(50rem,64vw)]">
-            <h1 className="font-display text-balance text-[clamp(2.6rem,6.2vw,6.4rem)] leading-[0.9] text-paper">
-              {s.big}
+      {/* The words, handed over as the camera moves. */}
+      <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1500px] items-center px-5 sm:px-8">
+        {stages.map((s, i) => {
+          const Tag = i === 0 ? "h1" : "p";
+          return (
+            <Tag
+              key={s.lead}
+              data-stage={i}
+              className="font-display absolute inset-x-5 w-[min(50rem,78vw)] text-balance text-[clamp(2.1rem,7.4vw,6.4rem)] leading-[0.92] text-paper sm:inset-x-8 sm:text-[clamp(2.4rem,6.2vw,6.4rem)]"
+            >
+              {s.lead}
               <br />
-              <em className="italic text-orchid">{s.small}</em>
-            </h1>
-          </div>
-        ))}
+              <em className="italic text-orchid">{s.tail}</em>
+            </Tag>
+          );
+        })}
       </div>
 
       <div
-        data-end
-        className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto max-w-[1500px] px-8 pb-[clamp(1.5rem,5vh,3.5rem)] opacity-0"
+        data-hint
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-[clamp(1rem,3vh,2rem)] flex justify-center text-[12px] font-semibold text-paper/45"
       >
-        <p className="font-display text-[clamp(2.6rem,6vw,6rem)] leading-[0.88] text-paper">
-          {founders}&nbsp;founders. {brands}&nbsp;first companies.
+        <span className="inline-flex items-center gap-2">
+          Scroll <ArrowDown className="size-3.5 animate-bounce" />
+        </span>
+      </div>
+
+      {/* Where it lands. */}
+      <div
+        data-end
+        className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto max-w-[1500px] px-5 pb-[clamp(1.25rem,5vh,3.5rem)] opacity-0 sm:px-8"
+      >
+        <p data-end-big className="font-display text-[clamp(2rem,7vw,6rem)] leading-[0.9] text-paper">
+          {founders}&nbsp;founders.
           <br />
-          <em className="italic text-orchid">All of it, giftable.</em>
+          <em className="italic text-orchid">One store.</em>
         </p>
-        <div className="mt-7 flex items-center gap-6">
+        <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 sm:mt-7">
           <Link
             href="/catalogue"
             data-cursor="Go"
-            className="group pointer-events-auto inline-flex rounded-full bg-orchid px-7 py-4 text-[15px] font-semibold text-aubergine transition-colors hover:bg-paper"
+            className="group pointer-events-auto inline-flex rounded-full bg-orchid px-6 py-3.5 text-[15px] font-semibold text-aubergine transition-colors hover:bg-paper sm:px-7 sm:py-4"
           >
             <Roll>Start gifting</Roll>
           </Link>
