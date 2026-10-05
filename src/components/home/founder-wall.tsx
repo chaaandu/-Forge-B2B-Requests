@@ -96,7 +96,7 @@ export function FounderWall({ faces }: { faces: WallFace[] }) {
   return (
     <section id="founders" className="mx-auto max-w-[1500px] scroll-mt-16 px-5 py-24 sm:px-8">
       <SplitReveal className="font-display mb-14 text-[clamp(3rem,8vw,8rem)] leading-[0.88] text-ink">
-        Meet the <em className="text-royal">{faces.length}.</em>
+        Meet the <em className="text-royal">{faces.length} founders.</em>
       </SplitReveal>
 
       <div ref={ref} className="grid grid-cols-6 gap-1.5 sm:grid-cols-9 sm:gap-2 lg:grid-cols-13" onPointerLeave={() => setActive(null)}>

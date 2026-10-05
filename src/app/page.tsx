@@ -169,10 +169,7 @@ export default async function Home() {
         ))}
       </VelocityMarquee>
 
-      <Manifesto
-        faces={[wall[4]?.photo, wall[40]?.photo].filter(Boolean) as string[]}
-        products={hampers.slice(0, 1).map((l) => l.images[0])}
-      />
+      <Manifesto />
 
       <FounderWall faces={wall} />
 
