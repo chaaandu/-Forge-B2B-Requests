@@ -20,7 +20,9 @@ const STALLS = [
   { src: "/stalls/stall-1.webp", tilt: -2.2, lift: "sm:mt-8" },
   { src: "/stalls/stall-2.webp", tilt: 1.6, lift: "" },
   { src: "/stalls/stall-3.webp", tilt: -1.3, lift: "sm:mt-12" },
-  { src: "/stalls/stall-4.webp", tilt: 2.4, lift: "sm:mt-4" },
+  { src: "/stalls/stall-4.webp", tilt: 2.4, lift: "sm:mt-3" },
+  { src: "/stalls/stall-5.webp", tilt: -1.8, lift: "sm:mt-10" },
+  { src: "/stalls/stall-6.webp", tilt: 1.2, lift: "sm:mt-1" },
 ];
 
 export function Manifesto() {
@@ -97,8 +99,9 @@ function Stalls() {
   return (
     <div ref={row}>
       <p className="mb-5 text-sm text-ink/45">Selling it themselves, all year.</p>
-      {/* Four across from sm up; on a phone they run off the edge and you swipe. */}
-      <div className="no-scrollbar -mx-5 flex gap-3 overflow-x-auto px-5 sm:mx-0 sm:grid sm:grid-cols-4 sm:gap-5 sm:overflow-visible sm:px-0">
+      {/* A contact sheet of a year of markets: three across on a tablet, all
+          six on a laptop, and on a phone they run off the edge and you swipe. */}
+      <div className="no-scrollbar -mx-5 flex gap-3 overflow-x-auto px-5 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible sm:px-0 lg:grid-cols-6">
         {STALLS.map((s) => (
           <div
             key={s.src}
@@ -106,7 +109,13 @@ function Stalls() {
             className={`relative aspect-[3/4] w-[62vw] shrink-0 overflow-hidden rounded-[22px] bg-paper-2 shadow-[0_18px_40px_-24px_rgb(42_24_73/0.45)] sm:w-auto sm:rounded-[28px] ${s.lift}`}
             style={{ transform: `rotate(${s.tilt}deg)` }}
           >
-            <Image src={withBase(s.src)} alt="" fill sizes="(min-width: 640px) 25vw, 62vw" className="object-cover" />
+            <Image
+              src={withBase(s.src)}
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 17vw, (min-width: 640px) 33vw, 62vw"
+              className="object-cover"
+            />
           </div>
         ))}
       </div>
