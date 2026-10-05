@@ -4,7 +4,6 @@ import Link from "@/components/link";
 import { useEffect, useRef } from "react";
 import { ArrowDown } from "lucide-react";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
-import { INTRO_DONE } from "@/components/motion/preloader";
 import { Roll } from "@/components/layout/header";
 import { BASE_PATH } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
@@ -150,9 +149,7 @@ export function Hero({ tiles, founders, brands, listings }: { tiles: Tile[]; fou
 
       // A slow settle into the opening frame, so it does not simply appear.
       const open = { v: 1 };
-      const play = () => gsap.to(open, { v: 0, duration: 1.9, ease: "power2.out", onUpdate: () => frame(0.014 * open.v) });
-      if (document.documentElement.classList.contains("intro")) window.addEventListener(INTRO_DONE, play, { once: true });
-      else play();
+      gsap.to(open, { v: 0, duration: 1.9, ease: "power2.out", onUpdate: () => frame(0.014 * open.v) });
 
       const tl = gsap.timeline({
         scrollTrigger: {

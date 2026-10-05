@@ -7,7 +7,8 @@
     { "brand": "klayzy-ceramics", "match": "ashtray", "why": "Smoking accessory." },
     { "brand": "the-drunken-mugs", "match": "absolut|bailey|bombay sapphire|corona|grey ?goose|kingfisher|old monk", "why": "Liquor-brand glassware." },
     { "brand": "*", "match": "^test$", "why": "Test product." },
-    { "brand": "*", "match": "mesa discount", "why": "Internal student-discount duplicate." }
+    { "brand": "*", "match": "mesa discount", "why": "Internal student-discount duplicate." },
+    { "brand": "linore", "match": "^co-?or set$", "why": "Mesa asked for it to come down." }
   ],
   "hideSkus": [],
   "hideBrands": [],

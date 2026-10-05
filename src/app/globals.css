@@ -258,26 +258,6 @@
   transform: translateY(0);
 }
 
-/* First-visit intro: shown only when an inline script in <head> marks the
-   page (first load of the session, motion allowed). If the script that plays
-   it never runs, it gets out of the way by itself after four seconds. */
-.preloader {
-  display: none;
-}
-html.intro .preloader {
-  display: flex;
-  animation: preloader-failsafe 0.01s 4s forwards;
-}
-@keyframes preloader-failsafe {
-  to {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-html.intro body {
-  overflow: hidden;
-}
-
 /* Variable-font letters for the footer wordmark: the pointer sets the axes. */
 .kinetic > span {
   display: inline-block;

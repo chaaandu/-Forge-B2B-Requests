@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-02T08:16:00.159Z",
+ "generatedAt": "2026-10-05T06:36:22.824Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -1917,13 +1917,13 @@
      "sku": "DAY-N-NIGHT-AESTHETIC-EMBROIDERED-TO",
      "label": "Day N Night Aesthetic Embroidered Tote Bag",
      "options": [],
-     "priceMinor": 15000,
+     "priceMinor": 45000,
      "compareAtMinor": 49900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/144add84-ae49-4374-bbe3-c5be82f08c0f.jpg"
     }
    ],
-   "priceFromMinor": 15000,
-   "priceToMinor": 15000,
+   "priceFromMinor": 45000,
+   "priceToMinor": 45000,
    "featured": true
   },
   {
@@ -4383,6 +4383,78 @@
    "featured": false
   },
   {
+   "slug": "kirdaaar-kurta-k98",
+   "brand": "kirdaaar",
+   "title": "Kurta-K98",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/974810b6-ce85-4462-9ada-ae3b1bf97c29.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "KURTA-K98",
+     "label": "Kurta-K98",
+     "options": [],
+     "priceMinor": 119900,
+     "compareAtMinor": 150000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/974810b6-ce85-4462-9ada-ae3b1bf97c29.png"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-shirts-k99",
+   "brand": "kirdaaar",
+   "title": "Shirts-K99",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cdf1d906-4413-41f5-93ef-1670a738916b.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SHIRTS-K99",
+     "label": "Shirts-K99",
+     "options": [],
+     "priceMinor": 119900,
+     "compareAtMinor": 150000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cdf1d906-4413-41f5-93ef-1670a738916b.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-blue-mugs",
+   "brand": "klayzy-ceramics",
+   "title": "Blue Mugs",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4df2729a-6eb6-48cc-a3f3-c27e493e3183.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLUE-MUGS",
+     "label": "Blue Mugs",
+     "options": [],
+     "priceMinor": 44900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4df2729a-6eb6-48cc-a3f3-c27e493e3183.jpg"
+    }
+   ],
+   "priceFromMinor": 44900,
+   "priceToMinor": 44900,
+   "featured": true
+  },
+  {
    "slug": "klayzy-ceramics-bow-mug-big",
    "brand": "klayzy-ceramics",
    "title": "Bow Mug Big",
@@ -4404,7 +4476,7 @@
    ],
    "priceFromMinor": 59900,
    "priceToMinor": 59900,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "klayzy-ceramics-bow-mug-small",
@@ -4527,6 +4599,30 @@
    "featured": false
   },
   {
+   "slug": "klayzy-ceramics-diet-coke-tumbler",
+   "brand": "klayzy-ceramics",
+   "title": "Diet Coke Tumbler",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/afcab732-f750-4b54-a020-9bc60527d078.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DIET-COKE-TUMBLER-3",
+     "label": "Diet Coke Tumbler",
+     "options": [],
+     "priceMinor": 54900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/afcab732-f750-4b54-a020-9bc60527d078.jpg"
+    }
+   ],
+   "priceFromMinor": 54900,
+   "priceToMinor": 54900,
+   "featured": false
+  },
+  {
    "slug": "klayzy-ceramics-diet-coke-tumbler-with-handle",
    "brand": "klayzy-ceramics",
    "title": "Diet Coke Tumbler with Handle",
@@ -4572,6 +4668,30 @@
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-evil-eye-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Evil Eye Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/60866c34-7e9d-4e5e-b3ee-bfdb67079652.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "EVIL-EYE-MUG",
+     "label": "Evil Eye Mug",
+     "options": [],
+     "priceMinor": 44900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/60866c34-7e9d-4e5e-b3ee-bfdb67079652.jpg"
+    }
+   ],
+   "priceFromMinor": 44900,
+   "priceToMinor": 44900,
    "featured": false
   },
   {
@@ -4767,6 +4887,30 @@
    "featured": false
   },
   {
+   "slug": "klayzy-ceramics-red-bull-tumbler",
+   "brand": "klayzy-ceramics",
+   "title": "Red Bull Tumbler",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f51c431e-a437-4d6d-a5d7-e5c1f66c8f32.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "RED-BULL-TUMBLER",
+     "label": "Red Bull Tumbler",
+     "options": [],
+     "priceMinor": 54900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f51c431e-a437-4d6d-a5d7-e5c1f66c8f32.jpg"
+    }
+   ],
+   "priceFromMinor": 54900,
+   "priceToMinor": 54900,
+   "featured": false
+  },
+  {
    "slug": "klayzy-ceramics-skull-table-topper",
    "brand": "klayzy-ceramics",
    "title": "Skull Table Topper",
@@ -4839,6 +4983,30 @@
    "featured": false
   },
   {
+   "slug": "klayzy-ceramics-tea-pot",
+   "brand": "klayzy-ceramics",
+   "title": "Tea Pot",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f1b44236-12a4-4e93-9b19-de7986dca211.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TEA-POT",
+     "label": "Tea Pot",
+     "options": [],
+     "priceMinor": 69900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f1b44236-12a4-4e93-9b19-de7986dca211.jpg"
+    }
+   ],
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
+   "featured": false
+  },
+  {
    "slug": "klayzy-ceramics-teal-blue-mug",
    "brand": "klayzy-ceramics",
    "title": "Teal Blue Mug",
@@ -4884,6 +5052,54 @@
    ],
    "priceFromMinor": 59900,
    "priceToMinor": 59900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-wizard-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Wizard Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d4cd400b-3096-4e9b-9874-43c8258d123e.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WIZARD-MUG",
+     "label": "Wizard Mug",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d4cd400b-3096-4e9b-9874-43c8258d123e.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "krackle-co-almond-50g",
+   "brand": "krackle-co",
+   "title": "Almond 50g",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1cebc48a-5ace-4d48-8ffc-b20f6ccd391e.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "ALMOND-50G",
+     "label": "Almond 50g",
+     "options": [],
+     "priceMinor": 19900,
+     "compareAtMinor": 22900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1cebc48a-5ace-4d48-8ffc-b20f6ccd391e.jpg"
+    }
+   ],
+   "priceFromMinor": 19900,
+   "priceToMinor": 19900,
    "featured": false
   },
   {
@@ -5463,6 +5679,30 @@
    "featured": false
   },
   {
+   "slug": "krackle-co-nut-cracker-50g",
+   "brand": "krackle-co",
+   "title": "Nut Cracker 50g",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/11b46720-6d56-47f9-a8a2-af3f1906d2bc.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "NUT-CRACKER-50G",
+     "label": "Nut Cracker 50g",
+     "options": [],
+     "priceMinor": 14900,
+     "compareAtMinor": 17900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/11b46720-6d56-47f9-a8a2-af3f1906d2bc.jpg"
+    }
+   ],
+   "priceFromMinor": 14900,
+   "priceToMinor": 14900,
+   "featured": false
+  },
+  {
    "slug": "krackle-co-pack-of-3-brittle",
    "brand": "krackle-co",
    "title": "Pack of 3 Brittle",
@@ -5811,6 +6051,54 @@
    "featured": true
   },
   {
+   "slug": "lantern-candles-christmas-candle",
+   "brand": "lantern-candles",
+   "title": "Christmas Candle",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ddb49995-af55-40c6-bd8c-0098ddf5a672.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CHRISTMAS-CANDLE",
+     "label": "Christmas Candle",
+     "options": [],
+     "priceMinor": 59900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ddb49995-af55-40c6-bd8c-0098ddf5a672.jpg"
+    }
+   ],
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
+   "featured": true
+  },
+  {
+   "slug": "lantern-candles-diwali-flower-candle",
+   "brand": "lantern-candles",
+   "title": "Diwali Flower Candle",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bb42e5e0-43f9-4d78-8972-9079248fd50c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DIWALI-FLOWER-CANDLE",
+     "label": "Diwali Flower Candle",
+     "options": [],
+     "priceMinor": 69900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bb42e5e0-43f9-4d78-8972-9079248fd50c.jpg"
+    }
+   ],
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
+   "featured": false
+  },
+  {
    "slug": "lantern-candles-flavido-plum",
    "brand": "lantern-candles",
    "title": "Flavido Plum",
@@ -5832,7 +6120,55 @@
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
-   "featured": true
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-home-decor-candle",
+   "brand": "lantern-candles",
+   "title": "Home Decor Candle",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df0f759a-a06b-44d2-98f7-1df56b9f1a9b.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "HOME-DECOR-CANDLE",
+     "label": "Home Decor Candle",
+     "options": [],
+     "priceMinor": 39900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df0f759a-a06b-44d2-98f7-1df56b9f1a9b.jpg"
+    }
+   ],
+   "priceFromMinor": 39900,
+   "priceToMinor": 39900,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-laddo-candle",
+   "brand": "lantern-candles",
+   "title": "Laddo Candle",
+   "description": "1 pc laddo candle",
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8c78d251-fdfd-435a-b421-b496efc01f75.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LADDO-CANDLE",
+     "label": "Laddo Candle",
+     "options": [],
+     "priceMinor": 10000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8c78d251-fdfd-435a-b421-b496efc01f75.jpg"
+    }
+   ],
+   "priceFromMinor": 10000,
+   "priceToMinor": 10000,
+   "featured": false
   },
   {
    "slug": "lantern-candles-liquid-sunshine",
@@ -5979,30 +6315,6 @@
    "featured": false
   },
   {
-   "slug": "linore-co-or-set",
-   "brand": "linore",
-   "title": "Co-or Set",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/63b8b692-6170-4da0-a974-82bde4f77969.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "CO-OR-SET",
-     "label": "Co-or Set",
-     "options": [],
-     "priceMinor": 550000,
-     "compareAtMinor": 599000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/63b8b692-6170-4da0-a974-82bde4f77969.jpg"
-    }
-   ],
-   "priceFromMinor": 550000,
-   "priceToMinor": 550000,
-   "featured": true
-  },
-  {
    "slug": "linore-shirt",
    "brand": "linore",
    "title": "Shirt",
@@ -6024,7 +6336,7 @@
    ],
    "priceFromMinor": 299500,
    "priceToMinor": 299500,
-   "featured": false
+   "featured": true
   },
   {
    "slug": "linore-short-kurta",
@@ -6075,24 +6387,51 @@
    "featured": false
   },
   {
-   "slug": "lumi-bag-charms",
+   "slug": "lumi-avocado-brooch",
    "brand": "lumi",
-   "title": "Bag Charms",
+   "title": "Avocado Brooch",
    "description": null,
    "collection": "accessories",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2d0befb8-4119-4479-a5e5-f84d34354ebe.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff3cf897-2133-4c0b-b990-e7e2f377597d.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/06f067c1-ac2a-457d-9b40-81781d727c17.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0a8170de-2b95-46b7-86bc-729981a0453a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/229f4422-c674-4c8d-b9fa-2d1363e4f14f.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "AVOCADO-BROOCH",
+     "label": "Avocado Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/06f067c1-ac2a-457d-9b40-81781d727c17.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-avocado-charm",
+   "brand": "lumi",
+   "title": "Avocado Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6f7148c-850b-44db-9fb1-cf05ee2c9133.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/94dff247-e607-4b05-b1aa-3e84a7714b30.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2b9bae31-dcb3-4e73-833e-e79841ed78d1.jpg"
    ],
    "options": [],
    "variants": [
     {
      "sku": "BAG-CHARMS",
-     "label": "Bag Charms",
+     "label": "Avocado Charm",
      "options": [],
      "priceMinor": 29900,
-     "compareAtMinor": 34900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2d0befb8-4119-4479-a5e5-f84d34354ebe.jpg"
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6f7148c-850b-44db-9fb1-cf05ee2c9133.jpg"
     }
    ],
    "priceFromMinor": 29900,
@@ -6100,36 +6439,800 @@
    "featured": false
   },
   {
-   "slug": "lumi-beaded-tank-top",
+   "slug": "lumi-basketball-brooch",
    "brand": "lumi",
-   "title": "Beaded Tank Top",
+   "title": "Basketball Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/17e1024f-dd2a-4e89-b026-5c7094d808b0.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a9302318-17dd-4f82-9ac0-d92aa01eba16.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04b3e51e-73d9-4712-a7f2-66eb7a25f239.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BASKETBALL-BROOCH",
+     "label": "Basketball Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/17e1024f-dd2a-4e89-b026-5c7094d808b0.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-basketball-charm",
+   "brand": "lumi",
+   "title": "Basketball Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cd5a6daa-ebf3-4498-a62e-377e2df8e1d6.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/424914d0-893f-442e-8008-f20f364e6c55.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4b80eab9-12ad-4874-9dfe-b6011c27e6a0.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BASKET-BALL-BAG-CHARM",
+     "label": "Basketball Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cd5a6daa-ebf3-4498-a62e-377e2df8e1d6.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-black-beer-tank",
+   "brand": "lumi",
+   "title": "Black Beer Tank",
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ad2f5b89-f394-4c9e-bfac-4b25c905d53e.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eaf5b286-4dce-4dc4-b9bf-d271d765f5a9.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0be2ac2-41c4-4264-a03f-f33c2534b662.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74a5ea4e-9f01-438c-8357-1dfdc512770b.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4afb310f-93fa-421c-85ea-9c3debd22544.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e0fc946d-587c-4693-b12d-f331ac4076a6.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/650c41e4-179f-43d1-adb2-390586de0233.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d590ae5-159c-4e82-944a-5bfc959becb6.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2bd17911-6452-4b42-9b08-ee503db72ae8.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/93bddd65-597d-4e78-b1f1-bf6196cad2c6.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/34cf6d8c-b583-4a3a-a3eb-9c25125b4579.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLACK-BEER-TANK",
+     "label": "Black Beer Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2bd17911-6452-4b42-9b08-ee503db72ae8.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-black-dragonfly-tank",
+   "brand": "lumi",
+   "title": "Black Dragonfly Tank",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a6d41ed0-92c9-431c-99cb-8a2f7d7846cb.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7332c7ae-e719-4221-a437-e0cc21c933df.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4e98ee58-237f-4d9a-979b-18d163dec441.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLACK-DRAGONFLY-TANK",
+     "label": "Black Dragonfly Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a6d41ed0-92c9-431c-99cb-8a2f7d7846cb.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-black-fries-tank",
+   "brand": "lumi",
+   "title": "Black Fries Tank",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/217df53f-9d82-4c23-ad28-8ddb4124d9ae.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/26680fe9-5fb3-4bcb-b70a-956eff5401fa.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8fdc5769-cf01-4ef1-bcfb-ccd589191813.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLACK-FRIES-TANK",
+     "label": "Black Fries Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/217df53f-9d82-4c23-ad28-8ddb4124d9ae.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-blue-apple-brooch",
+   "brand": "lumi",
+   "title": "Blue Apple Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/31761ba9-b443-49cb-945c-2e36fb1a4579.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/44877f7c-ad8c-456b-b843-89302cd8d08e.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fcea162f-f3d5-4914-add2-145e6942d933.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLUE-APPLE-BROOCH",
+     "label": "Blue Apple Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/31761ba9-b443-49cb-945c-2e36fb1a4579.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-blue-apple-charm",
+   "brand": "lumi",
+   "title": "Blue Apple Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a26c5207-b7cd-42fe-a43e-b7a97827809c.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/531a0217-b7f6-40da-9c89-85807f17e0fc.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75014ed8-84c7-4e48-b9b4-3a2741660ca7.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLUE-APPLE-BAG-CHARM",
+     "label": "Blue Apple Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a26c5207-b7cd-42fe-a43e-b7a97827809c.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-bow-brooch",
+   "brand": "lumi",
+   "title": "Bow Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6ca979d-42fe-4a61-875c-03058ce34b6e.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a863879b-7e54-4067-a82d-8eaf824befc0.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/15f4c0b2-0161-48d7-80d5-4207a4f25c1d.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BOW-BROOCH",
+     "label": "Bow Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6ca979d-42fe-4a61-875c-03058ce34b6e.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-bow-charm",
+   "brand": "lumi",
+   "title": "Bow Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/be4fa116-4585-4d11-b607-d7da1d969641.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/20a267cc-f073-43f2-9c96-4808db40225a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f67dd044-f2af-40f2-a461-18bd1dfeab9e.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BOW-BAG-CHARM",
+     "label": "Bow Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/be4fa116-4585-4d11-b607-d7da1d969641.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-butterfly-brooch",
+   "brand": "lumi",
+   "title": "Butterfly Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3c455de6-d4ac-486f-a905-d9511f8db7e7.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/23bce00e-3919-4b06-98d1-132ee462703f.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0bcb3a43-0631-4e37-abf3-a0ced4076ffa.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BUTTERFLY-BROOCH",
+     "label": "Butterfly Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3c455de6-d4ac-486f-a905-d9511f8db7e7.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-butterfly-charm",
+   "brand": "lumi",
+   "title": "Butterfly Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1af55129-43b2-43c4-ac1a-4876f583f7a9.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3aaface1-90c3-44ca-bcd8-de6b2b190056.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0a026281-a257-48af-ac54-a90ec231a813.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BUTTERFLY-BAG-CHARM",
+     "label": "Butterfly Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1af55129-43b2-43c4-ac1a-4876f583f7a9.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-camera-brooch",
+   "brand": "lumi",
+   "title": "Camera Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4eff69b5-5f1d-4b2d-9f75-67c2a85f6901.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7fd6e00f-4c0c-4aaa-b635-5a370859f224.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7026d0d1-3188-4fb8-8045-0b727e8ba86d.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CAMERA-BROOCH",
+     "label": "Camera Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4eff69b5-5f1d-4b2d-9f75-67c2a85f6901.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-camera-charm",
+   "brand": "lumi",
+   "title": "Camera Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/99eef8ba-b3df-438f-8b5b-955ef6abc609.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ea834da2-7264-4f82-9897-805c15a1a690.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c157a925-d444-4e92-8da8-e5413b4e532c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CAMERA-BAG-CHARM",
+     "label": "Camera Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/99eef8ba-b3df-438f-8b5b-955ef6abc609.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-coconut-brooch",
+   "brand": "lumi",
+   "title": "Coconut Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4eccd4d4-0ec2-494f-9b6b-befd8642bb78.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/416e6a31-8ef8-4598-9a6c-bc27e665025b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1358cbd6-8cb6-44b8-8a9f-aafa01cefa91.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COCONUT-BROOCH",
+     "label": "Coconut Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4eccd4d4-0ec2-494f-9b6b-befd8642bb78.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-coconut-charm",
+   "brand": "lumi",
+   "title": "Coconut Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/39982121-3f74-490b-bcbc-4234742263fa.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b451ad0f-a54d-4525-a855-5c0108aa4f12.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3c3d2512-5e5c-454c-bfc0-d4a03cb38629.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COCONUT-BAG-CHARM",
+     "label": "Coconut Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/39982121-3f74-490b-bcbc-4234742263fa.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-cola-bottle-brooch",
+   "brand": "lumi",
+   "title": "Cola Bottle Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/35e7edb2-fe65-4ebb-b878-43a6f7fa5bb6.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/98ac0d36-fb71-4e5e-804c-c605f7ecaa02.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1a8bf5b7-ca4d-4503-8820-20118e344a24.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COLA-BOTTLE-BROOCH",
+     "label": "Cola Bottle Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/35e7edb2-fe65-4ebb-b878-43a6f7fa5bb6.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-cola-bottle-charm",
+   "brand": "lumi",
+   "title": "Cola Bottle Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7ecfab01-9489-47b1-bf5d-1a32ea9ac082.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/211c431d-a495-47b2-ab82-97c1fb5e7248.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8a31c659-29ef-481f-8638-08835b53e825.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COLA-BOTTLE-CHARM",
+     "label": "Cola Bottle Charm",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7ecfab01-9489-47b1-bf5d-1a32ea9ac082.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-dolphin-brooch",
+   "brand": "lumi",
+   "title": "Dolphin Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/38bcb75b-c721-49cd-a1fd-a806b3dfece9.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c76d63b2-4255-4494-8953-54358fb46ccd.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fe2ba444-e2e7-4c0d-8b70-04daac1d3f6a.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DOLPHIN-BROOCH",
+     "label": "Dolphin Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/38bcb75b-c721-49cd-a1fd-a806b3dfece9.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-dolphin-charm",
+   "brand": "lumi",
+   "title": "Dolphin Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/772d38b9-48ed-49f3-a9b5-24e3e5647e30.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/178b4245-b59a-4b45-a282-8bbfc2bba3a4.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d218307-a9b2-4d7e-a0ad-f7db7541302b.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DOLPHIN-BAG-CHARM",
+     "label": "Dolphin Charm",
+     "options": [],
+     "priceMinor": 26900,
+     "compareAtMinor": 32900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/772d38b9-48ed-49f3-a9b5-24e3e5647e30.jpg"
+    }
+   ],
+   "priceFromMinor": 26900,
+   "priceToMinor": 26900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-mushroom-brooch",
+   "brand": "lumi",
+   "title": "Mushroom Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/708f13c2-679d-4910-8930-6d81f7645689.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f7a7ee67-ff6b-4d70-9e9d-e209af810f19.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/82b53b44-add4-4eec-9c12-223749a6104c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MUSHROOM-BROOCH",
+     "label": "Mushroom Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/708f13c2-679d-4910-8930-6d81f7645689.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-mushroom-charm",
+   "brand": "lumi",
+   "title": "Mushroom Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/245d0020-981a-441a-9bb1-b70fbaab56ed.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a41c8ba9-45e4-4b6e-8c66-a6941faa5d97.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a7bbcc48-bc8f-4422-86b1-10f21a66800a.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MUSHROOM-BAG-CHARM-2",
+     "label": "Mushroom Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/245d0020-981a-441a-9bb1-b70fbaab56ed.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-owl-brooch",
+   "brand": "lumi",
+   "title": "Owl Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6ea74aa1-7182-4e81-bfb9-5702c311364e.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8d55d11d-d2fd-4a28-b6d7-6b79e19b551f.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/55421d3a-c6dd-4eaa-9746-ca4c4dfd91d3.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "OWL-BROOCH",
+     "label": "Owl Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6ea74aa1-7182-4e81-bfb9-5702c311364e.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-owl-charm",
+   "brand": "lumi",
+   "title": "Owl Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a5f5707c-575c-4235-aa42-2ffcc23da6c2.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0e62ed3f-563b-4596-9f6e-f23156d2e0b8.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cde4340c-0598-4b43-81db-82a8a84fac9c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "OWL-CHARM",
+     "label": "Owl Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a5f5707c-575c-4235-aa42-2ffcc23da6c2.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-palm-tree-brooch",
+   "brand": "lumi",
+   "title": "Palm Tree Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/35012255-2155-499b-835a-e4d1b1d82d28.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/79eea623-1805-4d4c-ab8a-48953076d71c.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2e6bf50-8477-4983-b2d7-c2fc47036639.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PALM-TREE-BROOCH",
+     "label": "Palm Tree Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/35012255-2155-499b-835a-e4d1b1d82d28.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-palm-tree-charm",
+   "brand": "lumi",
+   "title": "Palm Tree Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/97831adb-4b0c-4657-acf1-ee82a14cd0f6.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2cab6d2b-5513-4ada-ad00-10c62e3e3c4b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/01d00c31-dd63-47cc-a4c4-5c00e52d0775.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PALM-TREE-CHARM",
+     "label": "Palm Tree Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/97831adb-4b0c-4657-acf1-ee82a14cd0f6.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-perfume-bottle-brooch",
+   "brand": "lumi",
+   "title": "Perfume Bottle Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c048f8bd-5963-40fc-a0b7-cb547223690b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e3d14b8c-82a8-4199-ab6e-98178e81c283.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3378cad0-1f75-4d67-a89f-a14eac9058ec.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PERFUME-BOTTLE-BROOCH",
+     "label": "Perfume Bottle Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c048f8bd-5963-40fc-a0b7-cb547223690b.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-perfume-bottle-charm",
+   "brand": "lumi",
+   "title": "Perfume Bottle Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74eca934-5ff5-477d-9462-c00366e91374.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e5a172c7-1cb1-491c-bda9-0dedca7ed366.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/313bf51a-2936-49ce-8ba7-f772548180ae.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PERFUME-BOTTLE-CHARM",
+     "label": "Perfume Bottle Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74eca934-5ff5-477d-9462-c00366e91374.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-pineapple-brooch",
+   "brand": "lumi",
+   "title": "Pineapple Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5f4de62a-d18f-457f-8f3e-1ab9726917a0.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2882dfd2-5a5f-496f-bc60-5361649ea680.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/88f57780-110f-4def-94bb-cfbe7b93e7fa.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PINEAPPLE-BROOCH",
+     "label": "Pineapple Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5f4de62a-d18f-457f-8f3e-1ab9726917a0.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-pineapple-charm",
+   "brand": "lumi",
+   "title": "Pineapple Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1689dd6c-b2df-4bd6-8141-b9e862da52fc.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c94934f-beb6-41e8-9843-090a5ff74ba0.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4dcbba64-3ed6-478b-88c6-bcc84781604c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PINEAPPLE-CHARM",
+     "label": "Pineapple Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1689dd6c-b2df-4bd6-8141-b9e862da52fc.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-pink-flamingo-tank",
+   "brand": "lumi",
+   "title": "Pink Flamingo Tank",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0923c016-cb7d-41c7-89f9-ffc8c749cb57.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c708e9e3-9b92-46a6-8534-127e88a4e293.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/873f6819-6703-4dbf-bff3-e3c7e56a423b.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PINK-FLAMINGO-TANK",
+     "label": "Pink Flamingo Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0923c016-cb7d-41c7-89f9-ffc8c749cb57.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-pink-popcorn-tank",
+   "brand": "lumi",
+   "title": "Pink Popcorn Tank",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9157ff68-dbc8-47fc-b3e0-f756c5ba7668.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/763305dd-2ba6-46e0-9dc7-59b7f2864930.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a117d0e2-675e-46e1-9ed5-b0d7f27cc967.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f82c39c0-ccb8-4e36-a1ef-74c4e5958d58.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ca1d63e-1264-4c32-aea3-d9536d29ee49.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1e76d981-8f70-4e2a-8625-e984b1e12270.jpg"
    ],
    "options": [
-    {
-     "name": "Design",
-     "values": [
-      "White tank top - cards",
-      "White tank top- jelly fish",
-      "White tank top- martini glass",
-      "White tank tops (french fries)",
-      "Pink tank top with watermelon",
-      "Black tank top (french fries)",
-      "Black tank top - beer",
-      "Pink Tank tops french fries",
-      "Pink Tank tops - flamingo"
-     ]
-    },
     {
      "name": "Size",
      "values": [
@@ -6142,400 +7245,44 @@
    ],
    "variants": [
     {
-     "sku": "BEADED-TANK-TOPS-XS-3",
-     "label": "White tank top - cards / XS",
+     "sku": "PINK-POPCORN-TANK-XS",
+     "label": "XS",
      "options": [
-      "White tank top - cards",
       "XS"
      ],
      "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ad2f5b89-f394-4c9e-bfac-4b25c905d53e.jpg"
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9157ff68-dbc8-47fc-b3e0-f756c5ba7668.jpg"
     },
     {
-     "sku": "BEADED-TANK-TOPS-S-4",
-     "label": "White tank top - cards / S",
+     "sku": "PINK-POPCORN-TANK-S",
+     "label": "S",
      "options": [
-      "White tank top - cards",
       "S"
      ],
      "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ad2f5b89-f394-4c9e-bfac-4b25c905d53e.jpg"
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9157ff68-dbc8-47fc-b3e0-f756c5ba7668.jpg"
     },
     {
-     "sku": "BEADED-TANK-TOPS-M-4",
-     "label": "White tank top - cards / M",
+     "sku": "PINK-POPCORN-TANK-M",
+     "label": "M",
      "options": [
-      "White tank top - cards",
       "M"
      ],
      "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ad2f5b89-f394-4c9e-bfac-4b25c905d53e.jpg"
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9157ff68-dbc8-47fc-b3e0-f756c5ba7668.jpg"
     },
     {
-     "sku": "BEADED-TANK-TOPS-L-4",
-     "label": "White tank top - cards / L",
+     "sku": "PINK-POPCORN-TANK-L",
+     "label": "L",
      "options": [
-      "White tank top - cards",
       "L"
      ],
      "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ad2f5b89-f394-4c9e-bfac-4b25c905d53e.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-XS-2",
-     "label": "White tank top- jelly fish / XS",
-     "options": [
-      "White tank top- jelly fish",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eaf5b286-4dce-4dc4-b9bf-d271d765f5a9.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-S-3",
-     "label": "White tank top- jelly fish / S",
-     "options": [
-      "White tank top- jelly fish",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eaf5b286-4dce-4dc4-b9bf-d271d765f5a9.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-M-3",
-     "label": "White tank top- jelly fish / M",
-     "options": [
-      "White tank top- jelly fish",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eaf5b286-4dce-4dc4-b9bf-d271d765f5a9.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-L-3",
-     "label": "White tank top- jelly fish / L",
-     "options": [
-      "White tank top- jelly fish",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eaf5b286-4dce-4dc4-b9bf-d271d765f5a9.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOP-XS",
-     "label": "White tank top- martini glass / XS",
-     "options": [
-      "White tank top- martini glass",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0be2ac2-41c4-4264-a03f-f33c2534b662.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOP-S",
-     "label": "White tank top- martini glass / S",
-     "options": [
-      "White tank top- martini glass",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0be2ac2-41c4-4264-a03f-f33c2534b662.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOP-M",
-     "label": "White tank top- martini glass / M",
-     "options": [
-      "White tank top- martini glass",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0be2ac2-41c4-4264-a03f-f33c2534b662.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOP-L",
-     "label": "White tank top- martini glass / L",
-     "options": [
-      "White tank top- martini glass",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0be2ac2-41c4-4264-a03f-f33c2534b662.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-XS",
-     "label": "White tank tops (french fries) / XS",
-     "options": [
-      "White tank tops (french fries)",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74a5ea4e-9f01-438c-8357-1dfdc512770b.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-S-2",
-     "label": "White tank tops (french fries) / S",
-     "options": [
-      "White tank tops (french fries)",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74a5ea4e-9f01-438c-8357-1dfdc512770b.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-M-2",
-     "label": "White tank tops (french fries) / M",
-     "options": [
-      "White tank tops (french fries)",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74a5ea4e-9f01-438c-8357-1dfdc512770b.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-L-2",
-     "label": "White tank tops (french fries) / L",
-     "options": [
-      "White tank tops (french fries)",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74a5ea4e-9f01-438c-8357-1dfdc512770b.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-XS-8",
-     "label": "Pink tank top with watermelon / XS",
-     "options": [
-      "Pink tank top with watermelon",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4afb310f-93fa-421c-85ea-9c3debd22544.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-S-9",
-     "label": "Pink tank top with watermelon / S",
-     "options": [
-      "Pink tank top with watermelon",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4afb310f-93fa-421c-85ea-9c3debd22544.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-M-9",
-     "label": "Pink tank top with watermelon / M",
-     "options": [
-      "Pink tank top with watermelon",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4afb310f-93fa-421c-85ea-9c3debd22544.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-L-9",
-     "label": "Pink tank top with watermelon / L",
-     "options": [
-      "Pink tank top with watermelon",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4afb310f-93fa-421c-85ea-9c3debd22544.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-XS-5",
-     "label": "Black tank top (french fries) / XS",
-     "options": [
-      "Black tank top (french fries)",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e0fc946d-587c-4693-b12d-f331ac4076a6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-S-6",
-     "label": "Black tank top (french fries) / S",
-     "options": [
-      "Black tank top (french fries)",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e0fc946d-587c-4693-b12d-f331ac4076a6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-M-6",
-     "label": "Black tank top (french fries) / M",
-     "options": [
-      "Black tank top (french fries)",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e0fc946d-587c-4693-b12d-f331ac4076a6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-L-6",
-     "label": "Black tank top (french fries) / L",
-     "options": [
-      "Black tank top (french fries)",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e0fc946d-587c-4693-b12d-f331ac4076a6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-XS-4",
-     "label": "Black tank top - beer / XS",
-     "options": [
-      "Black tank top - beer",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/650c41e4-179f-43d1-adb2-390586de0233.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-S-5",
-     "label": "Black tank top - beer / S",
-     "options": [
-      "Black tank top - beer",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/650c41e4-179f-43d1-adb2-390586de0233.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-M-5",
-     "label": "Black tank top - beer / M",
-     "options": [
-      "Black tank top - beer",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/650c41e4-179f-43d1-adb2-390586de0233.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-L-5",
-     "label": "Black tank top - beer / L",
-     "options": [
-      "Black tank top - beer",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/650c41e4-179f-43d1-adb2-390586de0233.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-XS-6",
-     "label": "Pink Tank tops french fries / XS",
-     "options": [
-      "Pink Tank tops french fries",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d590ae5-159c-4e82-944a-5bfc959becb6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-S-7",
-     "label": "Pink Tank tops french fries / S",
-     "options": [
-      "Pink Tank tops french fries",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d590ae5-159c-4e82-944a-5bfc959becb6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-M-7",
-     "label": "Pink Tank tops french fries / M",
-     "options": [
-      "Pink Tank tops french fries",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d590ae5-159c-4e82-944a-5bfc959becb6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-L-7",
-     "label": "Pink Tank tops french fries / L",
-     "options": [
-      "Pink Tank tops french fries",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d590ae5-159c-4e82-944a-5bfc959becb6.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-XS-7",
-     "label": "Pink Tank tops - flamingo / XS",
-     "options": [
-      "Pink Tank tops - flamingo",
-      "XS"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ed373804-130f-4a31-88cf-aa0a351d0eb1.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-S-8",
-     "label": "Pink Tank tops - flamingo / S",
-     "options": [
-      "Pink Tank tops - flamingo",
-      "S"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ed373804-130f-4a31-88cf-aa0a351d0eb1.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-M-8",
-     "label": "Pink Tank tops - flamingo / M",
-     "options": [
-      "Pink Tank tops - flamingo",
-      "M"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ed373804-130f-4a31-88cf-aa0a351d0eb1.jpg"
-    },
-    {
-     "sku": "BEADED-TANK-TOPS-L-8",
-     "label": "Pink Tank tops - flamingo / L",
-     "options": [
-      "Pink Tank tops - flamingo",
-      "L"
-     ],
-     "priceMinor": 89900,
-     "compareAtMinor": 124900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ed373804-130f-4a31-88cf-aa0a351d0eb1.jpg"
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9157ff68-dbc8-47fc-b3e0-f756c5ba7668.jpg"
     }
    ],
    "priceFromMinor": 89900,
@@ -6543,30 +7290,315 @@
    "featured": true
   },
   {
-   "slug": "lumi-brooches",
+   "slug": "lumi-pink-seashell-tank",
    "brand": "lumi",
-   "title": "Brooches",
+   "title": "Pink Seashell Tank",
    "description": null,
-   "collection": "accessories",
+   "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/703c36b8-34a6-4d1d-a4ad-fa7a98b046e5.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4577f529-7713-4120-8433-41e3f0b3fdc5.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/555a201f-2fbd-48f4-9970-50b10480cc62.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/25bd3301-1354-4b1a-ab6c-aecc2594958a.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e361e3e2-3117-4dd6-8079-12a2f6472d9b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/141732fd-57ad-449f-9a6f-9fe75edce96a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cea722b2-10f5-48da-89b0-1fa455143c73.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "BROOCHES",
-     "label": "Brooches",
+     "sku": "PINK-SEASHELL-TANK",
+     "label": "Pink Seashell Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e361e3e2-3117-4dd6-8079-12a2f6472d9b.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-sailboat-brooch",
+   "brand": "lumi",
+   "title": "Sailboat Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4f4d3fe-832c-48ec-955f-73d4dcdb6b42.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/76dec383-0421-42ca-b9da-0e385cc66913.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/aef7af11-1966-48df-885e-cb29119aee64.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SAILBOAT-BROOCH",
+     "label": "Sailboat Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4f4d3fe-832c-48ec-955f-73d4dcdb6b42.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-sailboat-charm",
+   "brand": "lumi",
+   "title": "Sailboat Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3ace3aa-29b3-4858-9dee-fc230a42df0a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e5d8d3da-2b04-4287-9da6-b51f8036a397.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e6731469-cd1a-4588-84ae-7babcbc5bf64.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SAIL-BOAT-BAG-CHARM",
+     "label": "Sailboat Charm",
      "options": [],
      "priceMinor": 29900,
-     "compareAtMinor": 34900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/703c36b8-34a6-4d1d-a4ad-fa7a98b046e5.jpg"
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d3ace3aa-29b3-4858-9dee-fc230a42df0a.jpg"
     }
    ],
    "priceFromMinor": 29900,
    "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-strawberry-brooch",
+   "brand": "lumi",
+   "title": "Strawberry Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f0bb6fe7-6845-477d-aa34-6b132716bbda.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/301ed00d-0d73-43e7-b70a-8a7d968a0e57.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f575c5cc-6460-4ee1-9063-c747266265c1.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "STRAWBERRY-BROOCH",
+     "label": "Strawberry Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f0bb6fe7-6845-477d-aa34-6b132716bbda.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-strawberry-charm",
+   "brand": "lumi",
+   "title": "Strawberry Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/68ee7b25-d187-47e1-b712-6b3bd9f953a9.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2573ba5c-009a-46ef-918c-9f195b5304c2.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/504a66f4-c2fb-465d-b768-566d35873ac1.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "STRAWBERRY-CHARM",
+     "label": "Strawberry Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/68ee7b25-d187-47e1-b712-6b3bd9f953a9.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-teddy-bear-brooch",
+   "brand": "lumi",
+   "title": "Teddy Bear Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e8f1d190-344a-42bc-b31c-4ad634c00e7e.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/96f1dcc2-5bfa-423a-a115-827cbf0cd2b2.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0454f9b3-8189-4583-b341-30149e82d79d.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TEDDY-BEAR-BROOCH",
+     "label": "Teddy Bear Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e8f1d190-344a-42bc-b31c-4ad634c00e7e.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-teddy-bear-charm",
+   "brand": "lumi",
+   "title": "Teddy Bear Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0a200c33-aad2-44a4-b56b-9af510566ed4.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8d667c01-4670-4387-8aeb-921d3b5addb1.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9a7fe269-5586-4018-ae60-7c8a8baad351.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TEDDY-BAG-CHARM",
+     "label": "Teddy Bear Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0a200c33-aad2-44a4-b56b-9af510566ed4.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-watermelon-brooch",
+   "brand": "lumi",
+   "title": "Watermelon Brooch",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1db9abea-7aa3-414d-83ec-25aa9d90a12a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6f7a2e9d-f28f-4e79-b853-d0a79a91e7dc.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cdf5e4c8-2f6a-456e-8325-a8250bd473f3.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WATERMELON-BROOCH",
+     "label": "Watermelon Brooch",
+     "options": [],
+     "priceMinor": 28900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1db9abea-7aa3-414d-83ec-25aa9d90a12a.jpg"
+    }
+   ],
+   "priceFromMinor": 28900,
+   "priceToMinor": 28900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-watermelon-charm",
+   "brand": "lumi",
+   "title": "Watermelon Charm",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/89cdb428-b235-4920-983c-d3c070f646c9.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/333ceaf9-b1b4-49e6-83c2-485acef03b92.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3a25b9c5-5e39-478f-a7e6-d23bc9d3b722.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WATERMELON-CHARM",
+     "label": "Watermelon Charm",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": 35900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/89cdb428-b235-4920-983c-d3c070f646c9.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-white-ace-tank",
+   "brand": "lumi",
+   "title": "White Ace Tank",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c11ba33b-b971-47c6-b40e-1407561ca3b2.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c9147a9c-873d-48b2-96dc-8f50812f0ec8.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3ba4e5b4-eb95-47ab-812d-09c2fa14dc55.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WHITE-ACE-TANK",
+     "label": "White Ace Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c11ba33b-b971-47c6-b40e-1407561ca3b2.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-white-cocktail-tank",
+   "brand": "lumi",
+   "title": "White Cocktail Tank",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fcf1cb73-9811-496d-bb67-74de85945630.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/20a811a6-898c-49d9-9dbc-e345f40b7a6d.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ccb4bd18-d509-4125-a002-34087cfe51f2.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WHITE-COCKTAIL-TANK",
+     "label": "White Cocktail Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fcf1cb73-9811-496d-bb67-74de85945630.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "lumi-white-jellyfish-tank",
+   "brand": "lumi",
+   "title": "White Jellyfish Tank",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4d6ade1-dd2c-4377-b5ef-85756df24c02.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f8948849-f21a-480e-9b94-e9e64d435f92.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4369ba10-c7e5-4c75-ab1c-42795ecda0dd.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WHITE-JELLYFISH-TANK",
+     "label": "White Jellyfish Tank",
+     "options": [],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4d6ade1-dd2c-4377-b5ef-85756df24c02.jpg"
+    }
+   ],
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
    "featured": false
   },
   {
@@ -6855,14 +7887,38 @@
      "sku": "ASSORTED-BOX",
      "label": "Assorted Box",
      "options": [],
-     "priceMinor": 25000,
+     "priceMinor": 20000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/42533419-8e80-45e0-9b74-cce60966c798.png"
     }
    ],
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
+   "featured": true
+  },
+  {
+   "slug": "meltyk-caramel-crunch",
+   "brand": "meltyk",
+   "title": "Caramel Crunch",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0c586b45-3268-42e7-91f1-5245ddb819e5.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CARAMEL-CRUNCH",
+     "label": "Caramel Crunch",
+     "options": [],
+     "priceMinor": 25000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0c586b45-3268-42e7-91f1-5245ddb819e5.jpg"
+    }
+   ],
    "priceFromMinor": 25000,
    "priceToMinor": 25000,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "meltyk-crunchy-caramel",
@@ -6879,9 +7935,33 @@
      "sku": "CRUNCHY-CARAMEL",
      "label": "Crunchy Caramel",
      "options": [],
-     "priceMinor": 25000,
+     "priceMinor": 20000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bf835501-691d-46db-b43f-79d03386a2ba.png"
+    }
+   ],
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
+   "featured": false
+  },
+  {
+   "slug": "meltyk-dark-mouse",
+   "brand": "meltyk",
+   "title": "Dark Mouse",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc7f966f-98df-45a4-a120-bda40d659d20.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DARK-MOUSE",
+     "label": "Dark Mouse",
+     "options": [],
+     "priceMinor": 25000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc7f966f-98df-45a4-a120-bda40d659d20.jpg"
     }
    ],
    "priceFromMinor": 25000,
@@ -6903,13 +7983,13 @@
      "sku": "FRUIT-NUT",
      "label": "Fruit & Nut",
      "options": [],
-     "priceMinor": 25000,
+     "priceMinor": 20000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c5b60a9a-1d78-4d63-84a2-413309098fd2.png"
     }
    ],
-   "priceFromMinor": 25000,
-   "priceToMinor": 25000,
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
    "featured": false
   },
   {
@@ -6927,13 +8007,13 @@
      "sku": "DARK-CHOCOLATE",
      "label": "Meltyk Muse",
      "options": [],
-     "priceMinor": 25000,
+     "priceMinor": 20000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6978d342-8d8d-487b-a847-ebb48c7dc997.png"
     }
    ],
-   "priceFromMinor": 25000,
-   "priceToMinor": 25000,
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
    "featured": false
   },
   {
@@ -6951,13 +8031,13 @@
      "sku": "PROTEIN-CHOCOLATE",
      "label": "Protein Chocolate",
      "options": [],
-     "priceMinor": 25000,
+     "priceMinor": 20000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a17e87c-8838-468a-9311-255f669b1e50.png"
     }
    ],
-   "priceFromMinor": 25000,
-   "priceToMinor": 25000,
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
    "featured": false
   },
   {
@@ -7377,13 +8457,13 @@
      "sku": "THE-TRIO",
      "label": "The Trio",
      "options": [],
-     "priceMinor": 35700,
-     "compareAtMinor": 45000,
+     "priceMinor": 45700,
+     "compareAtMinor": 60000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/08b0acae-1926-4917-b034-c8c0f088d656.jpg"
     }
    ],
-   "priceFromMinor": 35700,
-   "priceToMinor": 35700,
+   "priceFromMinor": 45700,
+   "priceToMinor": 45700,
    "featured": false
   },
   {
@@ -7672,6 +8752,30 @@
    ],
    "priceFromMinor": 34900,
    "priceToMinor": 34900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-pocket-ace",
+   "brand": "nasha",
+   "title": "Pocket Ace",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b354a3ea-853b-4106-ac29-79231cb5f18f.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "POCKET-ACE",
+     "label": "Pocket Ace",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b354a3ea-853b-4106-ac29-79231cb5f18f.png"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
    "featured": false
   },
   {
@@ -8450,179 +9554,99 @@
    "featured": false
   },
   {
-   "slug": "savore-chatpata-raisins",
+   "slug": "savore-chatpata-raisins-150g",
    "brand": "savore",
-   "title": "Chatpata Raisins",
+   "title": "Chatpata Raisins 150g",
    "description": "Juicy raisins coated in a bold, tangy-spicy chatpata masala for that perfect burst of flavor in every bite. Naturally gluten-free and free from artificial flavors, a deliciously addictive snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09da4070-047d-43f9-b45a-e00078ad82ec.jpg"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "CHATPATA-RAISINS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Chatpata Raisins 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09da4070-047d-43f9-b45a-e00078ad82ec.jpg"
-    },
-    {
-     "sku": "CHATPATA-RAISINS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09da4070-047d-43f9-b45a-e00078ad82ec.jpg"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
-   "slug": "savore-chocolate-raisins",
+   "slug": "savore-chocolate-raisins-150g",
    "brand": "savore",
-   "title": "Chocolate Raisins",
+   "title": "Chocolate Raisins 150g",
    "description": "Juicy raisins coated in smooth, rich chocolate for that perfect sweet and chewy bite. A deliciously satisfying snack for any time of day, made with no artificial flavors.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ccfa09f-681d-4a24-9e72-b73ce1fd250f.jpg"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "CHOCOLATE-RAISINS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Chocolate Raisins 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ccfa09f-681d-4a24-9e72-b73ce1fd250f.jpg"
-    },
-    {
-     "sku": "CHOCOLATE-RAISINS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ccfa09f-681d-4a24-9e72-b73ce1fd250f.jpg"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
-   "slug": "savore-coffee-caramel-almonds",
+   "slug": "savore-coffee-caramel-almonds-150g",
    "brand": "savore",
-   "title": "Coffee Caramel Almonds",
+   "title": "Coffee Caramel Almonds 150g",
    "description": "Crunchy roasted almonds coated in a rich blend of coffee and caramel for that perfect sweet-bitter bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8eb396c2-4e84-4176-a46c-d2168ed26a47.png"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "COFFEE-CARAMEL-ALMONDS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Coffee Caramel Almonds 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8eb396c2-4e84-4176-a46c-d2168ed26a47.png"
-    },
-    {
-     "sku": "COFFEE-CARAMEL-ALMONDS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8eb396c2-4e84-4176-a46c-d2168ed26a47.png"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
-   "slug": "savore-cream-and-onion-almonds",
+   "slug": "savore-cream-and-onion-almonds-150g",
    "brand": "savore",
-   "title": "Cream & Onion Almonds",
+   "title": "Cream & Onion Almonds 150g",
    "description": "Crunchy roasted almonds coated in a rich, savory cream and onion seasoning for that irresistible tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a deliciously satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ac63cf61-d62e-4951-8254-48586bafc5ae.png"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "CREAM-ONION-ALMONDS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Cream & Onion Almonds 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ac63cf61-d62e-4951-8254-48586bafc5ae.png"
-    },
-    {
-     "sku": "CREAM-ONION-ALMONDS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ac63cf61-d62e-4951-8254-48586bafc5ae.png"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
@@ -8650,47 +9674,27 @@
    "featured": false
   },
   {
-   "slug": "savore-guava-chilli-raisins",
+   "slug": "savore-guava-chilli-raisins-150g",
    "brand": "savore",
-   "title": "Guava Chilli Raisins",
+   "title": "Guava Chilli Raisins 150g",
    "description": "Juicy raisins coated in a bold blend of guava and chilli for that perfect sweet-tangy-spicy bite. Naturally gluten-free and free from artificial flavors, a deliciously addictive snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4be4308a-db7e-489b-8a8b-097a70d9ec42.png"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "GUAVA-CHILLI-RAISINS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Guava Chilli Raisins 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4be4308a-db7e-489b-8a8b-097a70d9ec42.png"
-    },
-    {
-     "sku": "GUAVA-CHILLI-RAISINS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4be4308a-db7e-489b-8a8b-097a70d9ec42.png"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
@@ -8718,223 +9722,123 @@
    "featured": false
   },
   {
-   "slug": "savore-italian-herb-cashews",
+   "slug": "savore-italian-herb-cashews-150g",
    "brand": "savore",
-   "title": "Italian Herb Cashews",
+   "title": "Italian Herb Cashews 150g",
    "description": "Crunchy roasted cashews coated in a savory blend of Italian herbs for that perfect herby, buttery bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b843354-e5e3-4199-91d1-d660063fa937.jpg"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "ITALIAN-HERB-CASHEWS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Italian Herb Cashews 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b843354-e5e3-4199-91d1-d660063fa937.jpg"
-    },
-    {
-     "sku": "ITALIAN-HERB-CASHEWS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b843354-e5e3-4199-91d1-d660063fa937.jpg"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": true
   },
   {
-   "slug": "savore-manchurian-cashews",
+   "slug": "savore-manchurian-cashews-150g",
    "brand": "savore",
-   "title": "Manchurian Cashews",
+   "title": "Manchurian Cashews 150g",
    "description": "Crunchy roasted cashews coated in a bold, tangy-spicy Manchurian seasoning for that perfect savory kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dc71257-453b-4b6d-a643-ec1ed4b1f8c7.jpg"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "320g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "MANCHURIAN-CASHEWS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Manchurian Cashews 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dc71257-453b-4b6d-a643-ec1ed4b1f8c7.jpg"
-    },
-    {
-     "sku": "MANCHURIAN-CASHEWS-320G",
-     "label": "320g",
-     "options": [
-      "320g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dc71257-453b-4b6d-a643-ec1ed4b1f8c7.jpg"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
-   "slug": "savore-mexican-salsa-almonds",
+   "slug": "savore-mexican-salsa-almonds-150g",
    "brand": "savore",
-   "title": "Mexican Salsa Almonds",
+   "title": "Mexican Salsa Almonds 150g",
    "description": "Crunchy roasted almonds coated in a bold blend of chili, lime, and paprika for that perfect smoky-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/21f03f2c-e041-40fb-965c-8a668966a3f8.jpg"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "MEXICAN-SALSA-ALMONDS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Mexican Salsa Almonds 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/21f03f2c-e041-40fb-965c-8a668966a3f8.jpg"
-    },
-    {
-     "sku": "MEXICAN-SALSA-ALMONDS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/21f03f2c-e041-40fb-965c-8a668966a3f8.jpg"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
-   "slug": "savore-nacho-cheese-cashews",
+   "slug": "savore-nacho-cheese-cashews-150g",
    "brand": "savore",
-   "title": "Nacho Cheese Cashews",
+   "title": "Nacho Cheese Cashews 150g",
    "description": "Crunchy roasted cashews coated in a bold, cheesy nacho seasoning for that perfect tangy-savory bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc647df8-f3b4-4fea-bd70-06deb98c5f30.png"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "320g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "NACHO-CHEESE-CASHEWS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Nacho Cheese Cashews 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc647df8-f3b4-4fea-bd70-06deb98c5f30.png"
-    },
-    {
-     "sku": "NACHO-CHEESE-CASHEWS-320G",
-     "label": "320g",
-     "options": [
-      "320g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc647df8-f3b4-4fea-bd70-06deb98c5f30.png"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
-   "slug": "savore-nutella-cashews",
+   "slug": "savore-nutella-cashews-150g",
    "brand": "savore",
-   "title": "Nutella Cashews",
+   "title": "Nutella Cashews 150g",
    "description": "Crunchy roasted cashews coated in a rich, chocolatey-hazelnut Nutella flavor for that perfect sweet, nutty bite. High in protein and healthy fats, gluten-free, and free from artificial flavors, a deliciously satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/158a42be-452d-4556-94d2-e5836f302048.jpg"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "320g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "NUTELLA-CASHEWS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Nutella Cashews 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/158a42be-452d-4556-94d2-e5836f302048.jpg"
-    },
-    {
-     "sku": "NUTELLA-CASHEWS-320G",
-     "label": "320g",
-     "options": [
-      "320g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/158a42be-452d-4556-94d2-e5836f302048.jpg"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
@@ -8962,47 +9866,27 @@
    "featured": false
   },
   {
-   "slug": "savore-peri-peri-almonds",
+   "slug": "savore-peri-peri-almonds-150g",
    "brand": "savore",
-   "title": "Peri Peri Almonds",
+   "title": "Peri Peri Almonds 150g",
    "description": "Crunchy roasted almonds coated in a bold, fiery peri peri seasoning for that perfect spicy-tangy kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day.",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52e6b988-7457-45d3-ab4b-65875def94af.png"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "300g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "PERI-PERI-ALMONDS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Peri Peri Almonds 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52e6b988-7457-45d3-ab4b-65875def94af.png"
-    },
-    {
-     "sku": "PERI-PERI-ALMONDS-300G",
-     "label": "300g",
-     "options": [
-      "300g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52e6b988-7457-45d3-ab4b-65875def94af.png"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
@@ -9150,47 +10034,27 @@
    "featured": false
   },
   {
-   "slug": "savore-thai-sweet-chilli-cashews",
+   "slug": "savore-thai-sweet-chilli-cashews-150g",
    "brand": "savore",
-   "title": "Thai Sweet Chilli Cashews",
+   "title": "Thai Sweet Chilli Cashews 150g",
    "description": "Crunchy roasted cashews coated in a bold, spicy-tangy Thai chilli seasoning for that perfect fiery kick. High in protein and healthy fats, gluten-free, and free from artificial flavors, a satisfying snack for any time of day",
    "collection": "snacks",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b2630ee5-6d32-41df-9075-a42148e93905.jpg"
    ],
-   "options": [
-    {
-     "name": "Weight",
-     "values": [
-      "150g",
-      "320g"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "THAI-SWEET-CHILLI-CASHEWS-150G",
-     "label": "150g",
-     "options": [
-      "150g"
-     ],
+     "label": "Thai Sweet Chilli Cashews 150g",
+     "options": [],
      "priceMinor": 32000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b2630ee5-6d32-41df-9075-a42148e93905.jpg"
-    },
-    {
-     "sku": "THAI-SWEET-CHILLI-CASHEWS-320G",
-     "label": "320g",
-     "options": [
-      "320g"
-     ],
-     "priceMinor": 58000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b2630ee5-6d32-41df-9075-a42148e93905.jpg"
     }
    ],
    "priceFromMinor": 32000,
-   "priceToMinor": 58000,
+   "priceToMinor": 32000,
    "featured": false
   },
   {
@@ -10250,6 +11114,30 @@
    "featured": false
   },
   {
+   "slug": "zaaree-jewellery",
+   "brand": "zaaree",
+   "title": "Jewellery",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3ce0cca8-a75c-4806-8ad0-acf8e2e33876.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "JEWELLERY",
+     "label": "Jewellery",
+     "options": [],
+     "priceMinor": 80000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3ce0cca8-a75c-4806-8ad0-acf8e2e33876.jpg"
+    }
+   ],
+   "priceFromMinor": 80000,
+   "priceToMinor": 80000,
+   "featured": true
+  },
+  {
    "slug": "zaaree-the-aadhya",
    "brand": "zaaree",
    "title": "The Aadhya",
@@ -10271,7 +11159,7 @@
    ],
    "priceFromMinor": 129900,
    "priceToMinor": 129900,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "zaaree-the-aaradhya",

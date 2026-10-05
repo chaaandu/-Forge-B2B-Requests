@@ -98,7 +98,6 @@ function Stalls() {
 
   return (
     <div ref={row}>
-      <p className="mb-5 text-sm text-ink/45">Selling it themselves, all year.</p>
       {/* A contact sheet of a year of markets: three across on a tablet, all
           six on a laptop, and on a phone they run off the edge and you swipe. */}
       <div className="no-scrollbar -mx-5 flex gap-3 overflow-x-auto px-5 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible sm:px-0 lg:grid-cols-6">
