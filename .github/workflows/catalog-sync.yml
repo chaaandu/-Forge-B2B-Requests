@@ -1,0 +1,75 @@
+# Every morning, read what is on sale in the POS into data/catalog.json, and
+# commit it if anything changed. The push redeploys the site on Vercel, so
+# product pages and the sitemap are rebuilt from a catalogue at most a day old.
+#
+# The live site already reads the POS every ten minutes on its own; this keeps
+# the snapshot behind it (prerendered pages, sitemap, fallback) from drifting.
+# Only SKUs on sale are read — status ACTIVE, on the till or on Shopify. Drafts
+# and archived SKUs never are. See src/lib/catalog-build.ts.
+#
+# Run it by hand from the Actions tab ("Run workflow") whenever you like.
+
+name: Daily catalogue sync
+
+on:
+  schedule:
+    # 06:00 IST. GitHub runs schedules in UTC, and may start a few minutes late.
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never two at once: a manual run and the schedule could otherwise race to push.
+concurrency:
+  group: catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      # This repo is public, so its logs are too. GitHub already hides the
+      # secret as written; this also hides the password on its own, in case it
+      # ever turns up decoded or inside a rewritten URL. The role is read-only.
+      - name: Keep the database password out of the log
+        env:
+          POS_DATABASE_URL: ${{ secrets.POS_DATABASE_URL }}
+        run: |
+          pw=$(node -e 'const u=new URL(process.env.POS_DATABASE_URL.split(/\s/)[0]);process.stdout.write(decodeURIComponent(u.password))')
+          echo "::add-mask::$pw"
+
+      - name: Read the catalogue from the POS
+        id: sync
+        env:
+          POS_DATABASE_URL: ${{ secrets.POS_DATABASE_URL }}
+          POS_PUBLIC_BASE_URL: ${{ secrets.POS_PUBLIC_BASE_URL }}
+          POS_MEDIA_BASE_URL: ${{ secrets.POS_MEDIA_BASE_URL }}
+        run: npx tsx scripts/sync-catalog.ts
+
+      - name: Commit and push, which redeploys the site
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          LINE: ${{ steps.sync.outputs.line }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json
+          git commit -m "Catalogue sync: $LINE" -m "Read from the POS by the daily catalogue sync. Only SKUs on sale (ACTIVE, on the till or Shopify) are included."
+          # Someone may have pushed while this ran; land on top of them.
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          echo "Could not push after three tries." >&2
+          exit 1

@@ -61,6 +61,18 @@ interface Row {
   images: string[];
 }
 
+/**
+ * Only SKUs that are on sale. In Mesa a SKU has ONE status across every
+ * channel, and the POS is the system of record that pushes it to Shopify:
+ *
+ *   ACTIVE   on sale — on the till, on the team's Shopify store, or both
+ *            (salesChannel BOTH, POS_ONLY or SHOPIFY_ONLY; all three count)
+ *   DRAFT    not on sale anywhere yet          → never shown here
+ *   ARCHIVED taken off sale, till and Shopify  → never shown here
+ *
+ * So `status = 'ACTIVE'` is the whole rule, and there is deliberately no
+ * filter on salesChannel: a POS_ONLY SKU is fully on sale, just not online.
+ */
 const QUERY = `
   select p.id, t.code as "teamCode", t."logoUrl" as "teamLogo", p.sku, p.name, p.description,
          p."unitPriceMinor", p."compareAtPriceMinor",
