@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-05T06:36:22.824Z",
+ "generatedAt": "2026-10-06T16:16:18.388Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -933,30 +933,6 @@
    "priceFromMinor": 19900,
    "priceToMinor": 19900,
    "featured": true
-  },
-  {
-   "slug": "bean-and-beyond-mixed-fruit-mojito",
-   "brand": "bean-and-beyond",
-   "title": "Mixed Fruit Mojito",
-   "description": null,
-   "collection": "beverages",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c893ea15-69b0-4ec5-a8bf-7a661ab37d19.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "MIXED-FRUIT-MOJITO",
-     "label": "Mixed Fruit Mojito",
-     "options": [],
-     "priceMinor": 19900,
-     "compareAtMinor": 24900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c893ea15-69b0-4ec5-a8bf-7a661ab37d19.jpg"
-    }
-   ],
-   "priceFromMinor": 19900,
-   "priceToMinor": 19900,
-   "featured": false
   },
   {
    "slug": "chakle-bro-barbeque-edamame-seeds",
@@ -3504,23 +3480,12 @@
     {
      "name": "Size",
      "values": [
-      "M",
       "L",
       "XL"
      ]
     }
    ],
    "variants": [
-    {
-     "sku": "HAND-BLOCK-PRINTED-FULL-SLEEVE-SHORT",
-     "label": "M",
-     "options": [
-      "M"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp"
-    },
     {
      "sku": "HAND-BLOCK-PRINTED-FULL-SLEEVE-SHORT-2",
      "label": "L",
@@ -3563,7 +3528,6 @@
      "name": "Size",
      "values": [
       "M",
-      "L",
       "XL"
      ]
     }
@@ -3574,16 +3538,6 @@
      "label": "M",
      "options": [
       "M"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff0a1282-da0c-4d1b-b86f-68d27d5630fa.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-FULL-SLEEVE-SHORT-5",
-     "label": "L",
-     "options": [
-      "L"
      ],
      "priceMinor": 119900,
      "compareAtMinor": null,
@@ -3605,9 +3559,9 @@
    "featured": false
   },
   {
-   "slug": "kirdaaar-hand-block-printed-half-sleeve-shirt-k-11",
+   "slug": "kirdaaar-hand-block-printed-half-sleeve-shirt-k-12",
    "brand": "kirdaaar",
-   "title": "Hand Block Printed Half Sleeve Shirt K-11",
+   "title": "Hand Block Printed Half Sleeve Shirt K-12",
    "description": null,
    "collection": "apparel",
    "images": [
@@ -3616,32 +3570,39 @@
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9f7e3e70-c122-46ce-b1c8-687c2689d9ba.webp",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/576a7756-72bb-454a-9d1e-9ecfe14852b4.webp"
    ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "M",
-      "XL"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHIRT",
-     "label": "M",
-     "options": [
-      "M"
-     ],
+     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHIRT-4",
+     "label": "Hand Block Printed Half Sleeve Shirt K-12",
+     "options": [],
      "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c8f8df4-8386-4cbf-9516-dc4f853e6695.webp"
-    },
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-hand-block-printed-half-sleeve-shirt-k-12-xl",
+   "brand": "kirdaaar",
+   "title": "Hand Block Printed Half Sleeve Shirt K-12 XL",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c8f8df4-8386-4cbf-9516-dc4f853e6695.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b4c23b2-d25a-4171-99ab-05fa38cc73f9.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9f7e3e70-c122-46ce-b1c8-687c2689d9ba.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/576a7756-72bb-454a-9d1e-9ecfe14852b4.webp"
+   ],
+   "options": [],
+   "variants": [
     {
      "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHIRT-2",
-     "label": "XL",
-     "options": [
-      "XL"
-     ],
+     "label": "Hand Block Printed Half Sleeve Shirt K-12 XL",
+     "options": [],
      "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c8f8df4-8386-4cbf-9516-dc4f853e6695.webp"
@@ -3666,23 +3627,12 @@
     {
      "name": "Size",
      "values": [
-      "M",
       "L",
       "XL"
      ]
     }
    ],
    "variants": [
-    {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT",
-     "label": "M",
-     "options": [
-      "M"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04e4d660-a54c-4ccc-8213-00a1a205aed9.webp"
-    },
     {
      "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT-2",
      "label": "L",
@@ -4103,9 +4053,7 @@
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4fcdf05-3724-4537-8236-3a79fcddfe50.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fca17cb5-6d20-43e8-924f-5d2ea71de7ed.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f92cde40-8d68-4d73-b841-ad568a6d0a0b.webp"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b36c30c-e1f3-4db3-9c72-aac5ed34b370.jpg"
    ],
    "options": [
     {
@@ -4126,7 +4074,7 @@
      ],
      "priceMinor": 119900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4fcdf05-3724-4537-8236-3a79fcddfe50.webp"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b36c30c-e1f3-4db3-9c72-aac5ed34b370.jpg"
     },
     {
      "sku": "HAND-BLOCK-PRINTED-SHIRT-K-06-M",
@@ -4136,7 +4084,7 @@
      ],
      "priceMinor": 119900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4fcdf05-3724-4537-8236-3a79fcddfe50.webp"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b36c30c-e1f3-4db3-9c72-aac5ed34b370.jpg"
     },
     {
      "sku": "HAND-BLOCK-PRINTED-SHIRT-K-06-L",
@@ -4146,7 +4094,7 @@
      ],
      "priceMinor": 119900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f4fcdf05-3724-4537-8236-3a79fcddfe50.webp"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b36c30c-e1f3-4db3-9c72-aac5ed34b370.jpg"
     }
    ],
    "priceFromMinor": 119900,
@@ -4172,8 +4120,7 @@
       "S",
       "M",
       "L",
-      "XL",
-      "2XL"
+      "XL"
      ]
     }
    ],
@@ -4213,16 +4160,6 @@
      "label": "XL",
      "options": [
       "XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a0651500-3c12-4e0e-92f4-ecffc136f1d7.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-SHIRT-K-08-2XL",
-     "label": "2XL",
-     "options": [
-      "2XL"
      ],
      "priceMinor": 119900,
      "compareAtMinor": null,
@@ -4331,7 +4268,6 @@
      "values": [
       "S",
       "M",
-      "L",
       "XL"
      ]
     }
@@ -4358,16 +4294,6 @@
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ae1ba7a-1fd3-414e-b5e6-7df15b5016c3.webp"
     },
     {
-     "sku": "HAND-BLOCK-PRINTED-SHORT-SLEEVE-SHIR-3",
-     "label": "L",
-     "options": [
-      "L"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ae1ba7a-1fd3-414e-b5e6-7df15b5016c3.webp"
-    },
-    {
      "sku": "HAND-BLOCK-PRINTED-SHORT-SLEEVE-SHIR-4",
      "label": "XL",
      "options": [
@@ -4383,23 +4309,26 @@
    "featured": false
   },
   {
-   "slug": "kirdaaar-kurta-k98",
+   "slug": "kirdaaar-pure-cotton-full-sleeve-kurta-k-18",
    "brand": "kirdaaar",
-   "title": "Kurta-K98",
+   "title": "Pure Cotton Full Sleeve Kurta K-18",
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/974810b6-ce85-4462-9ada-ae3b1bf97c29.png"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7df6c253-0fb0-4e77-b892-20c633205b1f.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/33866f73-00b6-41df-be98-874d1120b1de.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e7602459-dc7c-4fba-8bc7-9653daa71422.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/efed05b0-a36b-492a-8f41-29f448fee3a6.webp"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "KURTA-K98",
-     "label": "Kurta-K98",
+     "sku": "PURE-COTTON-FULL-SLEEVE-KURTA-K-18-X",
+     "label": "Pure Cotton Full Sleeve Kurta K-18",
      "options": [],
      "priceMinor": 119900,
-     "compareAtMinor": 150000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/974810b6-ce85-4462-9ada-ae3b1bf97c29.png"
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7df6c253-0fb0-4e77-b892-20c633205b1f.webp"
     }
    ],
    "priceFromMinor": 119900,
@@ -4407,23 +4336,1008 @@
    "featured": false
   },
   {
-   "slug": "kirdaaar-shirts-k99",
+   "slug": "kirdaaar-pure-cotton-full-sleeve-kurta-k-26",
    "brand": "kirdaaar",
-   "title": "Shirts-K99",
+   "title": "Pure Cotton Full Sleeve Kurta K-26",
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cdf1d906-4413-41f5-93ef-1670a738916b.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/093441be-6f4a-4f2b-9233-399edee0d204.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5ae436c7-7f7c-4e4d-976b-e0b51e35daf9.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/70ccdd01-0000-43c2-bfa1-b05549ad0d08.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/15a8248b-60ff-44ec-bb59-8b4903e21bdf.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2XL",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-FULL-SLEEVE-KURTA-K-26-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/093441be-6f4a-4f2b-9233-399edee0d204.webp"
+    },
+    {
+     "sku": "PURE-COTTON-FULL-SLEEVE-KURTA-K-26-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/093441be-6f4a-4f2b-9233-399edee0d204.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-full-sleeve-kurta-k-31",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Full Sleeve Kurta K-31",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/118f3b47-3c29-4326-a650-6ff19ff93ae9.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/034f8381-2d54-4a79-8c06-117b7b173520.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/63496ca1-de17-4d72-a8df-054194b85fc8.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e1373e37-81a5-4760-8f42-8bcb1ee8407a.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XL",
+      "2XL",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-FULL-SLEEVE-KURTA-K-31-X",
+     "label": "XL",
+     "options": [
+      "XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/118f3b47-3c29-4326-a650-6ff19ff93ae9.webp"
+    },
+    {
+     "sku": "PURE-COTTON-FULL-SLEEVE-KURTA-K-31-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/118f3b47-3c29-4326-a650-6ff19ff93ae9.webp"
+    },
+    {
+     "sku": "PURE-COTTON-FULL-SLEEVE-KURTA-K-31-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/118f3b47-3c29-4326-a650-6ff19ff93ae9.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-16",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-16",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64c07d87-d7c8-4b38-b06b-a1917643a5b2.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cd3cc3b-237f-4fdb-be06-0cf4445ad35b.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/be86fbbe-7d00-43d2-83c3-233915240d33.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f8641538-785d-483f-b1e5-0d8315169cc7.webp"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "SHIRTS-K99",
-     "label": "Shirts-K99",
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-16-X",
+     "label": "Pure Cotton Half Sleeve Shirt K-16",
      "options": [],
      "priceMinor": 119900,
-     "compareAtMinor": 150000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cdf1d906-4413-41f5-93ef-1670a738916b.jpg"
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64c07d87-d7c8-4b38-b06b-a1917643a5b2.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-17",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-17",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/abc7a41c-9625-4e98-9bec-de6fe30b8148.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/133a1239-01d5-4aeb-9fbc-a5365d308e8c.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b3fa55e9-6c62-4744-96f0-97b94f18d3b4.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-17-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/abc7a41c-9625-4e98-9bec-de6fe30b8148.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-17-M",
+     "label": "M",
+     "options": [
+      "M"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/abc7a41c-9625-4e98-9bec-de6fe30b8148.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-17-X",
+     "label": "XL",
+     "options": [
+      "XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/abc7a41c-9625-4e98-9bec-de6fe30b8148.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-17-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/abc7a41c-9625-4e98-9bec-de6fe30b8148.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-19",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-19",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/57f81c97-4eb4-4069-9ac2-00b4aa6c4895.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d260af3b-04dd-4584-8032-abae93d91d8c.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f7ea65ac-86f7-4f27-bb71-9956ab4aaed7.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f9d7085c-fceb-4c7a-8646-2e1b39c96112.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-19-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/57f81c97-4eb4-4069-9ac2-00b4aa6c4895.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-19-X",
+     "label": "XL",
+     "options": [
+      "XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/57f81c97-4eb4-4069-9ac2-00b4aa6c4895.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-19-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/57f81c97-4eb4-4069-9ac2-00b4aa6c4895.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-20",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-20",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52278975-02c5-42d2-8b83-55faa13db38f.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6b257a0-02c9-438f-93b4-7c19d793b294.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9f2e9b53-bf0c-4629-9026-d0f08e03b648.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ca7e83ee-40e5-4c19-b767-daa6e594704f.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-20-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52278975-02c5-42d2-8b83-55faa13db38f.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-20-M",
+     "label": "M",
+     "options": [
+      "M"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52278975-02c5-42d2-8b83-55faa13db38f.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-20-L",
+     "label": "L",
+     "options": [
+      "L"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52278975-02c5-42d2-8b83-55faa13db38f.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-21",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-21",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/94c16fa6-7adf-41aa-bc59-39621fbdbca3.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0befabe8-dd72-4c01-9938-c8827763b0c7.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/473ecfcb-d701-4dd9-b00e-e3c6303e9c79.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/df02ab5b-2f86-4489-bea1-eec15f1b06a9.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-21-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/94c16fa6-7adf-41aa-bc59-39621fbdbca3.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-21-X",
+     "label": "XL",
+     "options": [
+      "XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/94c16fa6-7adf-41aa-bc59-39621fbdbca3.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-21-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/94c16fa6-7adf-41aa-bc59-39621fbdbca3.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-22",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-22",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/73494789-a2d8-4143-953f-446b61ef2bfb.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6f5a15a3-ab14-4eb0-bf2f-5d73b4f21a35.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ecfcd697-b1c5-4882-afb3-6f0a46245bee.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/341bd628-9c8f-401c-a51c-3c9a6fb4efba.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2XL",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-22-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/73494789-a2d8-4143-953f-446b61ef2bfb.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-22-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/73494789-a2d8-4143-953f-446b61ef2bfb.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-23",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-23",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/526e0900-1813-4a4e-be09-e17d5ae8d858.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/251927cc-24bb-4255-86ba-e6827a79cc3b.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/27f10f39-cf60-4143-b555-308767c4d483.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a884918d-6b04-4c57-9900-27447de60bfc.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-23-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/526e0900-1813-4a4e-be09-e17d5ae8d858.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-23-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/526e0900-1813-4a4e-be09-e17d5ae8d858.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-24",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-24",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ee4a617-a79d-4173-9cbc-57ab14d06aec.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/00fc52ba-cbb3-4b9a-b6a1-b55ea7a5d128.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7da48399-385d-43c2-a939-bbcc29d5e9a2.jpg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-24-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ee4a617-a79d-4173-9cbc-57ab14d06aec.jpg"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-24-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ee4a617-a79d-4173-9cbc-57ab14d06aec.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-32",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-32",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7d83f60d-f657-4655-8903-f6661303e00e.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bafcf2bd-e92a-4075-95d9-0e0e36e60041.jpg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-32-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7d83f60d-f657-4655-8903-f6661303e00e.jpg"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-32-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7d83f60d-f657-4655-8903-f6661303e00e.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-shirt-k-34",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Shirt K-34",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eb105a7e-8364-49df-ad7c-aecbd34779ee.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/82a3e002-79f2-4766-b559-edfdae4db002.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d41d735b-a756-4294-9cf0-e53b09c60c02.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-34-2",
+     "label": "Pure Cotton Half Sleeve Shirt K-34",
+     "options": [],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eb105a7e-8364-49df-ad7c-aecbd34779ee.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-half-sleeve-short-kurta-k-28",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Half Sleeve Short Kurta K-28",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ec18bd7f-8f02-4e62-8a36-cdbefbd43ed8.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "XL",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHORT-KURTA",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ec18bd7f-8f02-4e62-8a36-cdbefbd43ed8.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHORT-KURTA-2",
+     "label": "XL",
+     "options": [
+      "XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ec18bd7f-8f02-4e62-8a36-cdbefbd43ed8.webp"
+    },
+    {
+     "sku": "PURE-COTTON-HALF-SLEEVE-SHORT-KURTA-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ec18bd7f-8f02-4e62-8a36-cdbefbd43ed8.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-long-sleeve-short-kurta-k-14",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Long Sleeve Short Kurta K-14",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ca1d0f2-8c6f-411b-b760-11c40e40d1f0.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f01f226d-a7b0-4891-9323-8ec56eb6846b.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/13464373-7eca-41a1-a0d8-96785ee091c8.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-LONG-SLEEVE-SHORT-KURTA",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ca1d0f2-8c6f-411b-b760-11c40e40d1f0.webp"
+    },
+    {
+     "sku": "PURE-COTTON-LONG-SLEEVE-SHORT-KURTA-2",
+     "label": "M",
+     "options": [
+      "M"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ca1d0f2-8c6f-411b-b760-11c40e40d1f0.webp"
+    },
+    {
+     "sku": "PURE-COTTON-LONG-SLEEVE-SHORT-KURTA-3",
+     "label": "L",
+     "options": [
+      "L"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ca1d0f2-8c6f-411b-b760-11c40e40d1f0.webp"
+    },
+    {
+     "sku": "PURE-COTTON-LONG-SLEEVE-SHORT-KURTA-4",
+     "label": "XL",
+     "options": [
+      "XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9ca1d0f2-8c6f-411b-b760-11c40e40d1f0.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-short-kurta-short-sleeves-k-30",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Short Kurta Short Sleeves K-30",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dedf416c-b47d-47a8-a5b1-8bc8716ad4d0.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8ef67212-9ca1-4cfa-80e4-e8eccce11304.jpg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "2XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-SHORT-SLEEVE",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dedf416c-b47d-47a8-a5b1-8bc8716ad4d0.jpg"
+    },
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-SHORT-SLEEVE-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dedf416c-b47d-47a8-a5b1-8bc8716ad4d0.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-short-kurta-with-full-sleeves-k-27",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Short Kurta with Full Sleeves K-27",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b8e54381-9faf-47b6-844e-4877baa01606.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/69ca45e7-14b3-4dbc-bdb9-1ef288b9a94c.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2f76a8d-7fb1-4067-bc0d-c5023fb1e7e7.jpg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2XL",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-3",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b8e54381-9faf-47b6-844e-4877baa01606.jpg"
+    },
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-4",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b8e54381-9faf-47b6-844e-4877baa01606.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-short-kurta-with-full-sleeves-k-29",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Short Kurta with Full Sleeves K-29",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1634dc49-f61c-4e2b-9ccc-5fd27ba6972a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5cbdeafe-cb9f-492d-ac0a-0315fa812a47.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2343e1c0-6285-4170-bc18-fd83aefffcc9.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e48ddb6a-5363-470f-a447-9b0086457d47.jpg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2XL",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-5",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1634dc49-f61c-4e2b-9ccc-5fd27ba6972a.jpg"
+    },
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-6",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1634dc49-f61c-4e2b-9ccc-5fd27ba6972a.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-short-kurta-with-full-sleeves-k-33",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Short Kurta with Full Sleeves K-33",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/62b81a72-2c4c-47e7-9770-162f18c2335c.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/172afed0-1488-47f8-bf41-fcc64b2ec229.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-2",
+     "label": "Pure Cotton Short Kurta with Full Sleeves K-33",
+     "options": [],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/62b81a72-2c4c-47e7-9770-162f18c2335c.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-short-kurta-with-half-sleeves-k-35",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Short Kurta with Half Sleeves K-35",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/193d8268-a1e7-476d-9042-c9b707375313.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b029385d-f622-48ad-ab0c-095d879e87bb.webp"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-SHORT-KURTA-WITH-HALF-SL-2",
+     "label": "Pure Cotton Short Kurta with Half Sleeves K-35",
+     "options": [],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/193d8268-a1e7-476d-9042-c9b707375313.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-short-sleeve-shirt-k-15",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Short Sleeve Shirt K-15",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b61a7bc4-a20a-4de3-a3d6-79af71870787.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09411ddb-837d-4cbf-9b57-dfb1a4eb75d2.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cc486f54-1d8a-4efa-a904-18b5e69448e8.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8d1a32e4-ba82-4633-a887-25b936176934.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-SHORT-SLEEVE-SHIRT-K-15",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b61a7bc4-a20a-4de3-a3d6-79af71870787.webp"
+    },
+    {
+     "sku": "PURE-COTTON-SHORT-SLEEVE-SHIRT-K-15-2",
+     "label": "L",
+     "options": [
+      "L"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b61a7bc4-a20a-4de3-a3d6-79af71870787.webp"
+    },
+    {
+     "sku": "PURE-COTTON-SHORT-SLEEVE-SHIRT-K-15-3",
+     "label": "XL",
+     "options": [
+      "XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b61a7bc4-a20a-4de3-a3d6-79af71870787.webp"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-pure-cotton-short-sleeve-shirt-k-25",
+   "brand": "kirdaaar",
+   "title": "Pure Cotton Short Sleeve Shirt K-25",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/24631263-8364-4097-b8ba-d96725ad4d8d.webp"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "2XL",
+      "3XL"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "PURE-COTTON-SHORT-SLEEVE-SHIRT-K-25",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/24631263-8364-4097-b8ba-d96725ad4d8d.webp"
+    },
+    {
+     "sku": "PURE-COTTON-SHORT-SLEEVE-SHIRT-K-25-2",
+     "label": "2XL",
+     "options": [
+      "2XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/24631263-8364-4097-b8ba-d96725ad4d8d.webp"
+    },
+    {
+     "sku": "PURE-COTTON-SHORT-SLEEVE-SHIRT-K-25-3",
+     "label": "3XL",
+     "options": [
+      "3XL"
+     ],
+     "priceMinor": 119900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/24631263-8364-4097-b8ba-d96725ad4d8d.webp"
     }
    ],
    "priceFromMinor": 119900,
@@ -5775,6 +6689,30 @@
    "featured": false
   },
   {
+   "slug": "kuki-assorted-box",
+   "brand": "kuki",
+   "title": "Assorted Box",
+   "description": "All six Kuki flavours in one gift-ready box: Blueberry, Masala, Nutella Chunk, Rose Gulkand, Boost and Omam. 350g of cookies. The easiest way to try everything, and the easiest thing to gift",
+   "collection": "hampers",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7465b310-190c-4477-9590-f5f4da59ff13.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "ASSORTED-BOX",
+     "label": "Assorted Box",
+     "options": [],
+     "priceMinor": 59900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7465b310-190c-4477-9590-f5f4da59ff13.jpg"
+    }
+   ],
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
+   "featured": false
+  },
+  {
    "slug": "kuki-blueberry-cookies",
    "brand": "kuki",
    "title": "Blueberry Cookies",
@@ -6549,19 +7487,64 @@
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/217df53f-9d82-4c23-ad28-8ddb4124d9ae.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/26680fe9-5fb3-4bcb-b70a-956eff5401fa.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8fdc5769-cf01-4ef1-bcfb-ccd589191813.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/978a8df2-4992-488b-8e04-52031cfb8412.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e87ecaad-52b0-4325-a3c7-cd76487f93f8.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b834b757-a854-4c95-a17a-9613ccffce36.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0228b701-a1fc-4f6a-96e8-620420958633.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c615c22c-f353-452f-85d9-497f9309994e.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0a21e7d5-53e0-403d-a20e-40b15e614c9f.jpg"
    ],
-   "options": [],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
    "variants": [
     {
-     "sku": "BLACK-FRIES-TANK",
-     "label": "Black Fries Tank",
-     "options": [],
+     "sku": "BLACK-FRIES-TANK-XS",
+     "label": "XS",
+     "options": [
+      "XS"
+     ],
      "priceMinor": 89900,
      "compareAtMinor": 119900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/217df53f-9d82-4c23-ad28-8ddb4124d9ae.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/978a8df2-4992-488b-8e04-52031cfb8412.jpg"
+    },
+    {
+     "sku": "BLACK-FRIES-TANK-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/978a8df2-4992-488b-8e04-52031cfb8412.jpg"
+    },
+    {
+     "sku": "BLACK-FRIES-TANK-M",
+     "label": "M",
+     "options": [
+      "M"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/978a8df2-4992-488b-8e04-52031cfb8412.jpg"
+    },
+    {
+     "sku": "BLACK-FRIES-TANK-L",
+     "label": "L",
+     "options": [
+      "L"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/978a8df2-4992-488b-8e04-52031cfb8412.jpg"
     }
    ],
    "priceFromMinor": 89900,
@@ -7199,19 +8182,64 @@
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0923c016-cb7d-41c7-89f9-ffc8c749cb57.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c708e9e3-9b92-46a6-8534-127e88a4e293.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/873f6819-6703-4dbf-bff3-e3c7e56a423b.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e6b59576-5c6d-4939-bd5d-858d4c486b20.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a08eeaa9-0fec-4d27-96b1-e3c942b5330a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8402fce6-229f-4d63-92b8-f90d765867fd.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fa5b7da7-0897-4567-9407-e0e42f455d3b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bed3b896-3237-4881-99cb-c76633129c8b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2b0c649d-3a05-4fc1-880e-89e23643da16.jpg"
    ],
-   "options": [],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
    "variants": [
     {
-     "sku": "PINK-FLAMINGO-TANK",
-     "label": "Pink Flamingo Tank",
-     "options": [],
+     "sku": "PINK-FLAMINGO-TANK-XS",
+     "label": "XS",
+     "options": [
+      "XS"
+     ],
      "priceMinor": 89900,
      "compareAtMinor": 119900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0923c016-cb7d-41c7-89f9-ffc8c749cb57.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e6b59576-5c6d-4939-bd5d-858d4c486b20.jpg"
+    },
+    {
+     "sku": "PINK-FLAMINGO-TANK-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e6b59576-5c6d-4939-bd5d-858d4c486b20.jpg"
+    },
+    {
+     "sku": "PINK-FLAMINGO-TANK-M",
+     "label": "M",
+     "options": [
+      "M"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e6b59576-5c6d-4939-bd5d-858d4c486b20.jpg"
+    },
+    {
+     "sku": "PINK-FLAMINGO-TANK-L",
+     "label": "L",
+     "options": [
+      "L"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e6b59576-5c6d-4939-bd5d-858d4c486b20.jpg"
     }
    ],
    "priceFromMinor": 89900,
@@ -7229,8 +8257,8 @@
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/763305dd-2ba6-46e0-9dc7-59b7f2864930.jpg",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a117d0e2-675e-46e1-9ed5-b0d7f27cc967.jpg",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f82c39c0-ccb8-4e36-a1ef-74c4e5958d58.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0ca1d63e-1264-4c32-aea3-d9536d29ee49.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1e76d981-8f70-4e2a-8625-e984b1e12270.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1e76d981-8f70-4e2a-8625-e984b1e12270.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0bca4090-7911-45cd-ae50-96072efb278f.jpg"
    ],
    "options": [
     {
@@ -7287,7 +8315,7 @@
    ],
    "priceFromMinor": 89900,
    "priceToMinor": 89900,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "lumi-pink-seashell-tank",
@@ -7556,24 +8584,69 @@
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fcf1cb73-9811-496d-bb67-74de85945630.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/20a811a6-898c-49d9-9dbc-e345f40b7a6d.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ccb4bd18-d509-4125-a002-34087cfe51f2.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/447d7f40-d01d-4cd7-9957-8fee0299f6fc.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/349a6b58-bc4f-404a-b869-e718f50cee46.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cd771652-20dd-42d3-8f3a-fa9f5e699c11.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d41b7ad2-d4c6-4f76-be06-2f595614e2e5.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/96065f55-7275-43da-9aa7-9a5e942819a5.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cd42eaac-12f5-4324-81bb-42fe994254e9.jpg"
    ],
-   "options": [],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
    "variants": [
     {
-     "sku": "WHITE-COCKTAIL-TANK",
-     "label": "White Cocktail Tank",
-     "options": [],
+     "sku": "WHITE-COCKTAIL-TANK-XS",
+     "label": "XS",
+     "options": [
+      "XS"
+     ],
      "priceMinor": 89900,
      "compareAtMinor": 119900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fcf1cb73-9811-496d-bb67-74de85945630.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/447d7f40-d01d-4cd7-9957-8fee0299f6fc.jpg"
+    },
+    {
+     "sku": "WHITE-COCKTAIL-TANK-S",
+     "label": "S",
+     "options": [
+      "S"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/447d7f40-d01d-4cd7-9957-8fee0299f6fc.jpg"
+    },
+    {
+     "sku": "WHITE-COCKTAIL-TANK-M",
+     "label": "M",
+     "options": [
+      "M"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/447d7f40-d01d-4cd7-9957-8fee0299f6fc.jpg"
+    },
+    {
+     "sku": "WHITE-COCKTAIL-TANK-L",
+     "label": "L",
+     "options": [
+      "L"
+     ],
+     "priceMinor": 89900,
+     "compareAtMinor": 119900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/447d7f40-d01d-4cd7-9957-8fee0299f6fc.jpg"
     }
    ],
    "priceFromMinor": 89900,
    "priceToMinor": 89900,
-   "featured": false
+   "featured": true
   },
   {
    "slug": "lumi-white-jellyfish-tank",
@@ -7873,6 +8946,31 @@
    "featured": false
   },
   {
+   "slug": "mello-coffee-dragees-100g",
+   "brand": "mello",
+   "title": "Coffee Dragees 100g",
+   "description": "Meet Mello Coffee Dragees, a delicious little pick-me-up made with roasted coffee beans coated in smooth, rich chocolate. The crunch of coffee, the creaminess of chocolate, and just the right touch of sweetness come together in every bite. Perfect for a quick coffee break, an afternoon craving, or simply “I need a little something”, Mello has you covered.",
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3aeb206a-ab04-4259-b75d-f79296a3841f.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/080345d0-f797-4cfb-8187-f4b8e91b3853.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COFFEE-DRAGEES-100G",
+     "label": "Coffee Dragees 100g",
+     "options": [],
+     "priceMinor": 42900,
+     "compareAtMinor": 49900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3aeb206a-ab04-4259-b75d-f79296a3841f.png"
+    }
+   ],
+   "priceFromMinor": 42900,
+   "priceToMinor": 42900,
+   "featured": false
+  },
+  {
    "slug": "meltyk-assorted-box",
    "brand": "meltyk",
    "title": "Assorted Box",
@@ -7887,13 +8985,13 @@
      "sku": "ASSORTED-BOX",
      "label": "Assorted Box",
      "options": [],
-     "priceMinor": 20000,
+     "priceMinor": 25000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/42533419-8e80-45e0-9b74-cce60966c798.png"
     }
    ],
-   "priceFromMinor": 20000,
-   "priceToMinor": 20000,
+   "priceFromMinor": 25000,
+   "priceToMinor": 25000,
    "featured": true
   },
   {
@@ -7935,13 +9033,13 @@
      "sku": "CRUNCHY-CARAMEL",
      "label": "Crunchy Caramel",
      "options": [],
-     "priceMinor": 20000,
+     "priceMinor": 25000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bf835501-691d-46db-b43f-79d03386a2ba.png"
     }
    ],
-   "priceFromMinor": 20000,
-   "priceToMinor": 20000,
+   "priceFromMinor": 25000,
+   "priceToMinor": 25000,
    "featured": false
   },
   {
@@ -7983,13 +9081,13 @@
      "sku": "FRUIT-NUT",
      "label": "Fruit & Nut",
      "options": [],
-     "priceMinor": 20000,
+     "priceMinor": 25000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c5b60a9a-1d78-4d63-84a2-413309098fd2.png"
     }
    ],
-   "priceFromMinor": 20000,
-   "priceToMinor": 20000,
+   "priceFromMinor": 25000,
+   "priceToMinor": 25000,
    "featured": false
   },
   {
@@ -8007,13 +9105,13 @@
      "sku": "DARK-CHOCOLATE",
      "label": "Meltyk Muse",
      "options": [],
-     "priceMinor": 20000,
+     "priceMinor": 25000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6978d342-8d8d-487b-a847-ebb48c7dc997.png"
     }
    ],
-   "priceFromMinor": 20000,
-   "priceToMinor": 20000,
+   "priceFromMinor": 25000,
+   "priceToMinor": 25000,
    "featured": false
   },
   {
@@ -8031,13 +9129,13 @@
      "sku": "PROTEIN-CHOCOLATE",
      "label": "Protein Chocolate",
      "options": [],
-     "priceMinor": 20000,
+     "priceMinor": 25000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a17e87c-8838-468a-9311-255f669b1e50.png"
     }
    ],
-   "priceFromMinor": 20000,
-   "priceToMinor": 20000,
+   "priceFromMinor": 25000,
+   "priceToMinor": 25000,
    "featured": false
   },
   {
@@ -9138,13 +10236,13 @@
      "sku": "AJRAKH-SATIN",
      "label": "Ajrak Print Satin Saree",
      "options": [],
-     "priceMinor": 168000,
+     "priceMinor": 158000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
     }
    ],
-   "priceFromMinor": 168000,
-   "priceToMinor": 168000,
+   "priceFromMinor": 158000,
+   "priceToMinor": 158000,
    "featured": false
   },
   {
@@ -9203,6 +10301,30 @@
    "priceFromMinor": 148000,
    "priceToMinor": 148000,
    "featured": true
+  },
+  {
+   "slug": "pehchaan-gift-hamper",
+   "brand": "pehchaan",
+   "title": "Gift Hamper",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/69d99f38-1956-4553-8ff0-3b2f0469a73e.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "GIFT-HAMPER",
+     "label": "Gift Hamper",
+     "options": [],
+     "priceMinor": 200000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/69d99f38-1956-4553-8ff0-3b2f0469a73e.jpg"
+    }
+   ],
+   "priceFromMinor": 200000,
+   "priceToMinor": 200000,
+   "featured": false
   },
   {
    "slug": "pehchaan-kalamkari-border-pallu-mul-cotton",
@@ -9571,6 +10693,30 @@
      "priceMinor": 32000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/09da4070-047d-43f9-b45a-e00078ad82ec.jpg"
+    }
+   ],
+   "priceFromMinor": 32000,
+   "priceToMinor": 32000,
+   "featured": false
+  },
+  {
+   "slug": "savore-choco-dust-almonds1-150g",
+   "brand": "savore",
+   "title": "Choco Dust Almonds1 150g",
+   "description": "Crunchy, roasted almonds tossed in a fine dusting of rich cocoa for a light, chocolatey finish. Not too sweet, never sticky, and dangerously easy to keep reaching for. Perfect for snacking, gifting, or pairing with your evening coffee.",
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6e9b5ed-9bee-440d-a5d3-54101e6657e0.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CHOCO-DUST-ALMONDS1-150G",
+     "label": "Choco Dust Almonds1 150g",
+     "options": [],
+     "priceMinor": 32000,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6e9b5ed-9bee-440d-a5d3-54101e6657e0.png"
     }
    ],
    "priceFromMinor": 32000,
@@ -10883,6 +12029,30 @@
    ],
    "priceFromMinor": 25000,
    "priceToMinor": 39900,
+   "featured": false
+  },
+  {
+   "slug": "the-usual-iced-coffee",
+   "brand": "the-usual",
+   "title": "Iced Coffee",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d69b17a1-eff6-46e2-b0d9-2c1c9105145d.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "ICED-COFFEE",
+     "label": "Iced Coffee",
+     "options": [],
+     "priceMinor": 12000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d69b17a1-eff6-46e2-b0d9-2c1c9105145d.jpg"
+    }
+   ],
+   "priceFromMinor": 12000,
+   "priceToMinor": 12000,
    "featured": false
   },
   {
