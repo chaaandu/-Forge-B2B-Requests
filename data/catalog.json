@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-06T16:16:18.388Z",
+ "generatedAt": "2026-10-07T06:19:45.369Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -3220,63 +3220,6 @@
    "featured": false
   },
   {
-   "slug": "juzzle-assorted-collection-no-sugar-90g-pack-of-5-sachets",
-   "brand": "juzzle",
-   "title": "Assorted Collection · No Sugar · 90g · Pack of 5 Sachets",
-   "description": null,
-   "collection": "hampers",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8e15d5b1-5948-4e60-a244-234eb9b571f0.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/29bd2eeb-259e-4f05-80a5-844f50d759a1.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/63525ff3-4455-428d-9c3c-19bff3af96f5.jpg"
-   ],
-   "options": [
-    {
-     "name": "Our Range",
-     "values": [
-      "Pack of 1",
-      "Pack of 4 (20% off)",
-      "Pack of 8 (30% off)"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "JUZZLE-ASSORTED-COLLECTION-NO-SUGAR",
-     "label": "Pack of 1",
-     "options": [
-      "Pack of 1"
-     ],
-     "priceMinor": 24900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8e15d5b1-5948-4e60-a244-234eb9b571f0.jpg"
-    },
-    {
-     "sku": "JUZZLE-ASSORTED-COLLECTION-NO-SUGAR-2",
-     "label": "Pack of 4 (20% off)",
-     "options": [
-      "Pack of 4 (20% off)"
-     ],
-     "priceMinor": 79900,
-     "compareAtMinor": 99600,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8e15d5b1-5948-4e60-a244-234eb9b571f0.jpg"
-    },
-    {
-     "sku": "JUZZLE-ASSORTED-COLLECTION-NO-SUGAR-3",
-     "label": "Pack of 8 (30% off)",
-     "options": [
-      "Pack of 8 (30% off)"
-     ],
-     "priceMinor": 139900,
-     "compareAtMinor": 199200,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8e15d5b1-5948-4e60-a244-234eb9b571f0.jpg"
-    }
-   ],
-   "priceFromMinor": 24900,
-   "priceToMinor": 139900,
-   "featured": true
-  },
-  {
    "slug": "juzzle-berry-collection-no-sugar-90g-pack-of-6-sachets",
    "brand": "juzzle",
    "title": "Berry Collection · No Sugar · 90g · Pack of 6 Sachets",
@@ -3329,7 +3272,7 @@
    ],
    "priceFromMinor": 29900,
    "priceToMinor": 167400,
-   "featured": false
+   "featured": true
   },
   {
    "slug": "juzzle-citrus-collection-no-sugar-90g-pack-of-6-sachets",
@@ -3472,86 +3415,17 @@
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/856fe70b-0247-4ce2-b5f8-00591b055e53.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5e36e037-81f2-4e4d-abe3-ec98bdd9c34c.webp"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4b379ab5-1f03-4b09-89b0-1da20653a390.jpg"
    ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "L",
-      "XL"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
-    {
-     "sku": "HAND-BLOCK-PRINTED-FULL-SLEEVE-SHORT-2",
-     "label": "L",
-     "options": [
-      "L"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp"
-    },
     {
      "sku": "HAND-BLOCK-PRINTED-FULL-SLEEVE-SHORT-3",
-     "label": "XL",
-     "options": [
-      "XL"
-     ],
+     "label": "Hand Block Printed Full Sleeve Short Kurta K-04",
+     "options": [],
      "priceMinor": 119900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c4896e0c-778b-45ca-8841-0ddc003db5d6.webp"
-    }
-   ],
-   "priceFromMinor": 119900,
-   "priceToMinor": 119900,
-   "featured": false
-  },
-  {
-   "slug": "kirdaaar-hand-block-printed-full-sleeve-short-kurta-k-11",
-   "brand": "kirdaaar",
-   "title": "Hand Block Printed Full Sleeve Short Kurta K-11",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff0a1282-da0c-4d1b-b86f-68d27d5630fa.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cbc8e507-3cd8-4f67-a960-02f9aeddfbe6.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fbc87b4a-c4b9-48af-88ec-387dff45518a.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ec7c8834-d126-4401-993a-d92bae8c14b8.webp"
-   ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "M",
-      "XL"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "HAND-BLOCK-PRINTED-FULL-SLEEVE-SHORT-4",
-     "label": "M",
-     "options": [
-      "M"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff0a1282-da0c-4d1b-b86f-68d27d5630fa.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-FULL-SLEEVE-SHORT-6",
-     "label": "XL",
-     "options": [
-      "XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff0a1282-da0c-4d1b-b86f-68d27d5630fa.webp"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4b379ab5-1f03-4b09-89b0-1da20653a390.jpg"
     }
    ],
    "priceFromMinor": 119900,
@@ -3606,121 +3480,6 @@
      "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2c8f8df4-8386-4cbf-9516-dc4f853e6695.webp"
-    }
-   ],
-   "priceFromMinor": 119900,
-   "priceToMinor": 119900,
-   "featured": false
-  },
-  {
-   "slug": "kirdaaar-hand-block-printed-half-sleeve-short-kurta-k-07",
-   "brand": "kirdaaar",
-   "title": "Hand Block Printed Half Sleeve Short Kurta K-07",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04e4d660-a54c-4ccc-8213-00a1a205aed9.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f01923f1-eb71-410e-974d-619b568b1c5f.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9eb67728-bd88-424a-a974-17a15803a003.webp"
-   ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "L",
-      "XL"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT-2",
-     "label": "L",
-     "options": [
-      "L"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04e4d660-a54c-4ccc-8213-00a1a205aed9.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT-3",
-     "label": "XL",
-     "options": [
-      "XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/04e4d660-a54c-4ccc-8213-00a1a205aed9.webp"
-    }
-   ],
-   "priceFromMinor": 119900,
-   "priceToMinor": 119900,
-   "featured": false
-  },
-  {
-   "slug": "kirdaaar-hand-block-printed-half-sleeve-short-kurta-k-09",
-   "brand": "kirdaaar",
-   "title": "Hand Block Printed Half Sleeve Short Kurta K-09",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/68640be1-fa67-4874-8614-a35fe59411fd.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bd243e9c-0a28-433a-a3b6-d565a754cf3d.webp",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/97ad4fc4-cc94-4b11-8995-e215b2cf512c.webp"
-   ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "M",
-      "L",
-      "XL",
-      "3XL"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT-4",
-     "label": "M",
-     "options": [
-      "M"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT-5",
-     "label": "L",
-     "options": [
-      "L"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT-6",
-     "label": "XL",
-     "options": [
-      "XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-HALF-SLEEVE-SHORT-7",
-     "label": "3XL",
-     "options": [
-      "3XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cc7d132-6991-486b-8eb1-1d2476133e95.webp"
     }
    ],
    "priceFromMinor": 119900,
@@ -3918,8 +3677,7 @@
       "M",
       "L",
       "XL",
-      "2XL",
-      "3XL"
+      "2XL"
      ]
     }
    ],
@@ -3973,16 +3731,6 @@
      "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-SHIRT-K-03-3XL",
-     "label": "3XL",
-     "options": [
-      "3XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c2bcad4c-eac6-4d0c-99ce-c52271c41553.webp"
     }
    ],
    "priceFromMinor": 119900,
@@ -4005,7 +3753,6 @@
      "name": "Size",
      "values": [
       "M",
-      "L",
       "XL"
      ]
     }
@@ -4016,16 +3763,6 @@
      "label": "M",
      "options": [
       "M"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e2f661f-9b3f-4f10-acf9-c4d6363419d8.webp"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-SHIRT-K-05-L",
-     "label": "L",
-     "options": [
-      "L"
      ],
      "priceMinor": 119900,
      "compareAtMinor": null,
@@ -4060,8 +3797,7 @@
      "name": "Size",
      "values": [
       "S",
-      "M",
-      "L"
+      "M"
      ]
     }
    ],
@@ -4081,16 +3817,6 @@
      "label": "M",
      "options": [
       "M"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8b36c30c-e1f3-4db3-9c72-aac5ed34b370.jpg"
-    },
-    {
-     "sku": "HAND-BLOCK-PRINTED-SHIRT-K-06-L",
-     "label": "L",
-     "options": [
-      "L"
      ],
      "priceMinor": 119900,
      "compareAtMinor": null,
@@ -4609,23 +4335,12 @@
     {
      "name": "Size",
      "values": [
-      "S",
       "M",
       "L"
      ]
     }
    ],
    "variants": [
-    {
-     "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-20-S",
-     "label": "S",
-     "options": [
-      "S"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/52278975-02c5-42d2-8b83-55faa13db38f.webp"
-    },
     {
      "sku": "PURE-COTTON-HALF-SLEEVE-SHIRT-K-20-M",
      "label": "M",
@@ -5053,32 +4768,12 @@
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dedf416c-b47d-47a8-a5b1-8bc8716ad4d0.jpg",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8ef67212-9ca1-4cfa-80e4-e8eccce11304.jpg"
    ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "S",
-      "2XL"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
      "sku": "PURE-COTTON-SHORT-KURTA-SHORT-SLEEVE",
-     "label": "S",
-     "options": [
-      "S"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dedf416c-b47d-47a8-a5b1-8bc8716ad4d0.jpg"
-    },
-    {
-     "sku": "PURE-COTTON-SHORT-KURTA-SHORT-SLEEVE-2",
-     "label": "2XL",
-     "options": [
-      "2XL"
-     ],
+     "label": "Pure Cotton Short Kurta Short Sleeves K-30",
+     "options": [],
      "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dedf416c-b47d-47a8-a5b1-8bc8716ad4d0.jpg"
@@ -5099,32 +4794,12 @@
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/69ca45e7-14b3-4dbc-bdb9-1ef288b9a94c.jpg",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2f76a8d-7fb1-4067-bc0d-c5023fb1e7e7.jpg"
    ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "2XL",
-      "3XL"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
-     "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-3",
-     "label": "2XL",
-     "options": [
-      "2XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b8e54381-9faf-47b6-844e-4877baa01606.jpg"
-    },
-    {
      "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-4",
-     "label": "3XL",
-     "options": [
-      "3XL"
-     ],
+     "label": "Pure Cotton Short Kurta with Full Sleeves K-27",
+     "options": [],
      "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b8e54381-9faf-47b6-844e-4877baa01606.jpg"
@@ -5146,32 +4821,12 @@
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2343e1c0-6285-4170-bc18-fd83aefffcc9.jpg",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e48ddb6a-5363-470f-a447-9b0086457d47.jpg"
    ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "2XL",
-      "3XL"
-     ]
-    }
-   ],
+   "options": [],
    "variants": [
     {
-     "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-5",
-     "label": "2XL",
-     "options": [
-      "2XL"
-     ],
-     "priceMinor": 119900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1634dc49-f61c-4e2b-9ccc-5fd27ba6972a.jpg"
-    },
-    {
      "sku": "PURE-COTTON-SHORT-KURTA-WITH-FULL-SL-6",
-     "label": "3XL",
-     "options": [
-      "3XL"
-     ],
+     "label": "Pure Cotton Short Kurta with Full Sleeves K-29",
+     "options": [],
      "priceMinor": 119900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1634dc49-f61c-4e2b-9ccc-5fd27ba6972a.jpg"
@@ -6452,6 +6107,30 @@
    ],
    "priceFromMinor": 7900,
    "priceToMinor": 39900,
+   "featured": false
+  },
+  {
+   "slug": "krackle-co-gift-hamper-any-4-dry-fruits-50g",
+   "brand": "krackle-co",
+   "title": "Gift Hamper Any 4 Dry Fruits 50g",
+   "description": null,
+   "collection": "hampers",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fb5ea786-119e-43f0-8f59-a9cc968d1b5e.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "GIFT-HAMPER-ANY-4-DRY-FRUITS-50G",
+     "label": "Gift Hamper Any 4 Dry Fruits 50g",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fb5ea786-119e-43f0-8f59-a9cc968d1b5e.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
    "featured": false
   },
   {
@@ -10222,30 +9901,6 @@
    "featured": true
   },
   {
-   "slug": "pehchaan-ajrak-print-satin-saree",
-   "brand": "pehchaan",
-   "title": "Ajrak Print Satin Saree",
-   "description": "Ajrakh is a block-printing craft from Sindh (Pakistan) and Kutch in Gujarat, especially the village of Ajrakhpur. Carved wooden blocks and resist-dyeing are used, traditionally with natural dyes, mainly indigo. The typical colours are deep indigo and crimson, with black and white geometric patterns, star-like shapes and dots between lines. The name likely comes from the Persian word for \"brick,\" possibly a reference to its grid-like layouts. Traditionally it's printed on cotton. A satin base gives the prints a smoother, shinier finish.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "AJRAKH-SATIN",
-     "label": "Ajrak Print Satin Saree",
-     "options": [],
-     "priceMinor": 158000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0cbb5cad-97ba-4593-87c0-fc50569dabdf.png"
-    }
-   ],
-   "priceFromMinor": 158000,
-   "priceToMinor": 158000,
-   "featured": false
-  },
-  {
    "slug": "pehchaan-batik-silk",
    "brand": "pehchaan",
    "title": "Batik Silk",
@@ -10303,9 +9958,9 @@
    "featured": true
   },
   {
-   "slug": "pehchaan-gift-hamper",
+   "slug": "pehchaan-customisable-gift-hamper",
    "brand": "pehchaan",
-   "title": "Gift Hamper",
+   "title": "Customisable Gift Hamper",
    "description": null,
    "collection": "apparel",
    "images": [
@@ -10315,7 +9970,7 @@
    "variants": [
     {
      "sku": "GIFT-HAMPER",
-     "label": "Gift Hamper",
+     "label": "Customisable Gift Hamper",
      "options": [],
      "priceMinor": 200000,
      "compareAtMinor": null,
@@ -10603,31 +10258,6 @@
    "featured": false
   },
   {
-   "slug": "pehchaan-red-snatched-kurti",
-   "brand": "pehchaan",
-   "title": "Red Snatched Kurti",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/436bdfdc-9e2e-4c1c-9d01-8dcfc52412b8.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a24764e-0689-48ec-9d47-08228c5fad2c.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "RED-SNATCHED-KURTI",
-     "label": "Red Snatched Kurti",
-     "options": [],
-     "priceMinor": 60500,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/436bdfdc-9e2e-4c1c-9d01-8dcfc52412b8.jpg"
-    }
-   ],
-   "priceFromMinor": 60500,
-   "priceToMinor": 60500,
-   "featured": false
-  },
-  {
    "slug": "pehchaan-tissue-saree",
    "brand": "pehchaan",
    "title": "Tissue Saree",
@@ -10642,13 +10272,13 @@
      "sku": "TISSUE-SAREE",
      "label": "Tissue Saree",
      "options": [],
-     "priceMinor": 360000,
+     "priceMinor": 366000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
     }
    ],
-   "priceFromMinor": 360000,
-   "priceToMinor": 360000,
+   "priceFromMinor": 366000,
+   "priceToMinor": 366000,
    "featured": false
   },
   {
