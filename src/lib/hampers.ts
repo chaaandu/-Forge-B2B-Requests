@@ -73,7 +73,7 @@ export const TIERS: HamperTier[] = data.tiers.map((t) => {
     return {
       no: h.no,
       slug: `hamper-${h.no}`,
-      name: h.name,
+      name: `Hamper ${h.no}`,
       for: h.for,
       amount: t.amount,
       image: withBase(`/hampers/hamper-${h.no}.webp`),
@@ -104,6 +104,15 @@ export const rupees = (amount: number) => `₹${amount.toLocaleString("en-IN")}`
 
 /** The SKU of a build-your-own: same picks, same SKU, whatever order they were tapped in. */
 export const customSku = (amount: number, ids: number[]) => `custom-${amount}-${[...ids].sort((a, b) => a - b).join(".")}`;
+
+const plural = (noun: string) => (/(s|x|ch|sh)$/i.test(noun) ? `${noun}es` : `${noun}s`);
+
+/** What's in a hamper, counted: "1 Perfume, 1 Candle, 2 Snack Packs". The same thing from two brands counts as two. */
+export function contentsLine(lines: { what: string; qty: number }[]): string {
+  const counts = new Map<string, number>();
+  for (const l of lines) counts.set(l.what, (counts.get(l.what) ?? 0) + l.qty);
+  return [...counts].map(([what, n]) => `${n} ${n > 1 ? plural(what) : what}`).join(", ");
+}
 
 /** "Dry fruits by Savore", "Crispy Bingo by Haulties ×2". */
 export const describeLine = (l: { what: string; brandName: string; qty?: number }) =>

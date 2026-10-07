@@ -1,5 +1,5 @@
 {
-  "//": "Forge Hampers, from the 'Sheet1' tab of VBC-C1-SKUs-prices-by-team.xlsx: five budgets, three hampers each, photos in public/hampers/hamper-<no>.webp. A budget's `picks` are everything its three hampers are made from, and they are also all a buyer may choose from when building their own hamper at that budget. A budget's `label` is its size (Mini to Grand) and its `icon` a drawing of that size in components/doodles.tsx; its `title` and `blurb` head its section, and each hamper's `for` says who it's meant for. Names come from what's in the box. Never reuse or renumber a pick id or a hamper `no`: gift lists saved in browsers and shared links refer to them. `match` finds the pick's photo among the brand's products (a case-insensitive regex on the title).",
+  "//": "Forge Hampers, from the 'Sheet1' tab of VBC-C1-SKUs-prices-by-team.xlsx: five budgets, three hampers each, photos in public/hampers/hamper-<no>.webp. A budget's `picks` are everything its three hampers are made from, and they are also all a buyer may choose from when building their own hamper at that budget. A budget's `label` is its size (Mini to Grand) and its `icon` a drawing of that size in components/doodles.tsx; its `title` and `blurb` head its section, and each hamper's `for` says who it's meant for. Hampers are called Hamper <no>; `what` is the item as the sheet describes it, as a countable noun (Snack Pack, Coffee Pack) so a card can say \"1 Candle, 2 Snack Packs\". Never reuse or renumber a pick id or a hamper `no`: gift lists saved in browsers and shared links refer to them. `match` finds the pick's photo among the brand's products (a case-insensitive regex on the title).",
   "tiers": [
     {
       "amount": 500,
@@ -10,79 +10,79 @@
       "picks": [
         {
           "id": 1,
-          "what": "Dry fruits",
+          "what": "Dry Fruit Box",
           "brand": "savore",
           "match": "raisins"
         },
         {
           "id": 2,
-          "what": "Tote bag",
+          "what": "Tote Bag",
           "brand": "dad-of-bags",
           "match": "rcb"
         },
         {
           "id": 3,
-          "what": "Iced tea",
+          "what": "Flavoured Iced Tea",
           "brand": "juzzle",
           "match": "fruity"
         },
         {
           "id": 4,
-          "what": "Roasted edamame",
+          "what": "Snack Pack",
           "brand": "chakle-bro",
           "match": "cheese"
         },
         {
           "id": 5,
-          "what": "Blueberry almonds",
+          "what": "Cashew Brittle",
           "brand": "krackle-co",
           "match": "blueberry"
         },
         {
           "id": 6,
-          "what": "Chips",
+          "what": "Snack Pack",
           "brand": "chipmonk",
           "match": "piri"
         },
         {
           "id": 7,
-          "what": "Scented candle",
+          "what": "Candle",
           "brand": "ember-and-oak",
           "match": "lavender"
         },
         {
           "id": 8,
-          "what": "Chocolates",
+          "what": "Hot Chocolate",
           "brand": "meltyk",
           "match": "assorted"
         },
         {
           "id": 9,
-          "what": "Socks",
+          "what": "Pair Of Socks",
           "brand": "side-quest",
           "match": "^socks$"
         },
         {
           "id": 10,
-          "what": "Honey",
+          "what": "Flavoured Honey",
           "brand": "nekt",
           "match": "^moringa honey"
         },
         {
           "id": 11,
-          "what": "Hot chocolate",
+          "what": "Hot Chocolate",
           "brand": "mugshot",
           "match": "classic hot"
         },
         {
           "id": 12,
-          "what": "Makhana chips",
+          "what": "Snack Pack",
           "brand": "wekrave",
           "match": "cream"
         },
         {
           "id": 13,
-          "what": "Kashmiri kahwa",
+          "what": "Tea Pack",
           "brand": "tea-riffic",
           "match": "kahwa"
         }
@@ -90,7 +90,6 @@
       "hampers": [
         {
           "no": 1,
-          "name": "Snack Tote",
           "for": "For new joiners",
           "items": [
             {
@@ -109,7 +108,6 @@
         },
         {
           "no": 2,
-          "name": "Crunch & Candlelight",
           "for": "For a team that just shipped",
           "items": [
             {
@@ -128,7 +126,6 @@
         },
         {
           "no": 3,
-          "name": "Kahwa & Cosy Socks",
           "for": "For teams who work from home",
           "items": [
             {
@@ -165,19 +162,19 @@
         },
         {
           "id": 2,
-          "what": "Hot chocolate",
+          "what": "Hot Chocolate",
           "brand": "choco-and-co",
           "match": "premix"
         },
         {
           "id": 3,
-          "what": "Big scented candle",
+          "what": "Candle",
           "brand": "ember-and-oak",
           "match": "120 ml lavender"
         },
         {
           "id": 4,
-          "what": "Boost cookies",
+          "what": "Snack Pack",
           "brand": "kuki",
           "match": "boost"
         },
@@ -189,43 +186,43 @@
         },
         {
           "id": 6,
-          "what": "Cinnamon hot chocolate",
+          "what": "Hot Chocolate",
           "brand": "mugshot",
           "match": "cinnamon"
         },
         {
           "id": 7,
-          "what": "Red velvet cookies",
+          "what": "Snack Pack",
           "brand": "munchandco",
           "match": "red velvet"
         },
         {
           "id": 8,
-          "what": "Solid perfume",
+          "what": "Perfume",
           "brand": "nasha",
           "match": "chai"
         },
         {
           "id": 9,
-          "what": "Chocolate bark",
+          "what": "Hot Chocolate",
           "brand": "mello",
           "match": "bark"
         },
         {
           "id": 10,
-          "what": "Festive candle",
+          "what": "Candle",
           "brand": "lantern-candles",
           "match": "christmas"
         },
         {
           "id": 11,
-          "what": "Rose almonds",
+          "what": "Dry Fruit Box",
           "brand": "krackle-co",
           "match": "rose petal"
         },
         {
           "id": 12,
-          "what": "Veggie chips",
+          "what": "Snack Pack",
           "brand": "notty-crunch",
           "match": "mix veggies"
         }
@@ -233,7 +230,6 @@
       "hampers": [
         {
           "no": 4,
-          "name": "Cocoa & Cologne",
           "for": "For the ones who went beyond",
           "items": [
             {
@@ -252,7 +248,6 @@
         },
         {
           "no": 5,
-          "name": "Cinnamon & Red Velvet",
           "for": "For a crunch well handled",
           "items": [
             {
@@ -271,7 +266,6 @@
         },
         {
           "no": 6,
-          "name": "Chai & Chaos",
           "for": "For every festival on the calendar",
           "items": [
             {
@@ -295,8 +289,8 @@
     },
     {
       "amount": 1500,
-      "label": "Large",
-      "title": "Go Large",
+      "label": "Big",
+      "title": "Go Big",
       "icon": "hamper-large",
       "blurb": "Five or six things, coffee to cookies, in a crate filled to the top.",
       "picks": [
@@ -308,25 +302,25 @@
         },
         {
           "id": 2,
-          "what": "Instant coffee",
+          "what": "Coffee Pack",
           "brand": "the-usual",
           "match": "hazelnut"
         },
         {
           "id": 3,
-          "what": "Bow mug",
+          "what": "Ceramic Mug",
           "brand": "klayzy-ceramics",
           "match": "bow mug small"
         },
         {
           "id": 4,
-          "what": "Almond brittle",
+          "what": "Brittle Pack",
           "brand": "krackle-co",
           "match": "mango brittle"
         },
         {
           "id": 5,
-          "what": "Quinoa chips",
+          "what": "Chips Pack",
           "brand": "crunchd",
           "match": "quinoa"
         },
@@ -338,37 +332,37 @@
         },
         {
           "id": 7,
-          "what": "Diet Coke sipper",
+          "what": "Ceramic Mug",
           "brand": "the-drunken-mugs",
           "match": "diet coke"
         },
         {
           "id": 8,
-          "what": "Cookies",
+          "what": "Rose Cookie Box",
           "brand": "kuki",
           "match": "masala"
         },
         {
           "id": 9,
-          "what": "Solid perfume",
+          "what": "Perfume",
           "brand": "nasha",
           "match": "bad decisions"
         },
         {
           "id": 10,
-          "what": "Rose tea",
+          "what": "Tea Pack",
           "brand": "tea-riffic",
           "match": "rose"
         },
         {
           "id": 11,
-          "what": "Dry fruits",
+          "what": "Dry Fruit Box",
           "brand": "savore",
           "match": "raisins"
         },
         {
           "id": 12,
-          "what": "Cookies with dip",
+          "what": "Cookie Box",
           "brand": "no-biggie",
           "match": "red velvet"
         }
@@ -376,7 +370,6 @@
       "hampers": [
         {
           "no": 7,
-          "name": "Coffee Break",
           "for": "For a client you just met",
           "items": [
             {
@@ -398,7 +391,6 @@
         },
         {
           "no": 8,
-          "name": "Sips & Spice",
           "for": "For partners who said yes",
           "items": [
             {
@@ -420,7 +412,6 @@
         },
         {
           "no": 9,
-          "name": "Rose Tea & Cookie Dip",
           "for": "For clients who stayed",
           "items": [
             {
@@ -454,37 +445,37 @@
       "picks": [
         {
           "id": 1,
-          "what": "Dry fruits",
+          "what": "Dry Fruit Box",
           "brand": "savore",
           "match": "raisins"
         },
         {
           "id": 2,
-          "what": "Tote bag",
+          "what": "Tote Bag",
           "brand": "dad-of-bags",
           "match": "main character"
         },
         {
           "id": 3,
-          "what": "Iced tea",
+          "what": "Flavoured Iced Tea",
           "brand": "juzzle",
           "match": "berry"
         },
         {
           "id": 4,
-          "what": "Roasted edamame",
+          "what": "Snack Pack",
           "brand": "chakle-bro",
           "match": "peri"
         },
         {
           "id": 5,
-          "what": "Panda mug",
+          "what": "Ceramic Mug",
           "brand": "klayzy-ceramics",
           "match": "panda"
         },
         {
           "id": 6,
-          "what": "Beaded brooch",
+          "what": "Charm",
           "brand": "lumi",
           "match": "brooch"
         },
@@ -496,67 +487,67 @@
         },
         {
           "id": 8,
-          "what": "Almond brittle",
+          "what": "Cashew Brittle",
           "brand": "krackle-co",
           "match": "strawberry brittle"
         },
         {
           "id": 9,
-          "what": "Chips",
+          "what": "Chips Pack",
           "brand": "chipmonk",
           "match": "kamal"
         },
         {
           "id": 10,
-          "what": "Big scented candle",
+          "what": "Candle",
           "brand": "ember-and-oak",
           "match": "120 ml lavender"
         },
         {
           "id": 11,
-          "what": "Dark chocolate",
+          "what": "Hot Chocolate",
           "brand": "meltyk",
           "match": "dark"
         },
         {
           "id": 12,
-          "what": "Diet Coke sipper",
+          "what": "Ceramic Mug",
           "brand": "the-drunken-mugs",
           "match": "diet coke"
         },
         {
           "id": 13,
-          "what": "Block-printed shirt",
+          "what": "Kurti",
           "brand": "kirdaaar",
           "match": "shirt"
         },
         {
           "id": 14,
-          "what": "Rose almonds",
+          "what": "Dry Fruit Box",
           "brand": "krackle-co",
           "match": "rose petal"
         },
         {
           "id": 15,
-          "what": "Socks",
+          "what": "Pair Of Socks",
           "brand": "side-quest",
           "match": "^socks$"
         },
         {
           "id": 16,
-          "what": "Honey",
+          "what": "Honey Pack",
           "brand": "nekt",
           "match": "^moringa honey"
         },
         {
           "id": 17,
-          "what": "Cinnamon hot chocolate",
+          "what": "Hot Chocolate",
           "brand": "mugshot",
           "match": "cinnamon"
         },
         {
           "id": 18,
-          "what": "Makhana chips",
+          "what": "Snack Pack",
           "brand": "wekrave",
           "match": "^masala"
         }
@@ -564,7 +555,6 @@
       "hampers": [
         {
           "no": 10,
-          "name": "Main Character Energy",
           "for": "For a well-earned promotion",
           "items": [
             {
@@ -592,7 +582,6 @@
         },
         {
           "no": 11,
-          "name": "Block Prints & Dark Chocolate",
           "for": "For years well spent",
           "items": [
             {
@@ -623,7 +612,6 @@
         },
         {
           "no": 12,
-          "name": "Weekend Mode",
           "for": "For farewells and new roles",
           "items": [
             {
@@ -663,7 +651,7 @@
       "picks": [
         {
           "id": 1,
-          "what": "Linen shirt",
+          "what": "Kurti",
           "brand": "linore",
           "match": "^shirt$"
         },
@@ -675,25 +663,25 @@
         },
         {
           "id": 3,
-          "what": "Instant coffee",
+          "what": "Coffee Pack",
           "brand": "the-usual",
           "match": "vanilla"
         },
         {
           "id": 4,
-          "what": "Panda mug",
+          "what": "Ceramic Mug",
           "brand": "klayzy-ceramics",
           "match": "panda"
         },
         {
           "id": 5,
-          "what": "Chilli cashews",
+          "what": "Dry Fruit Box",
           "brand": "krackle-co",
           "match": "cashew chilli"
         },
         {
           "id": 6,
-          "what": "Crispy Bingo",
+          "what": "Snack Pack",
           "brand": "haulties",
           "match": "crispy bingo"
         },
@@ -711,31 +699,31 @@
         },
         {
           "id": 9,
-          "what": "Diet Coke sipper",
+          "what": "Ceramic Mug",
           "brand": "the-drunken-mugs",
           "match": "diet coke"
         },
         {
           "id": 10,
-          "what": "Cookies",
+          "what": "Rose Cookie Box",
           "brand": "kuki",
           "match": "gulkand"
         },
         {
           "id": 11,
-          "what": "Festive candle",
+          "what": "Festive Candle",
           "brand": "lantern-candles",
           "match": "christmas"
         },
         {
           "id": 12,
-          "what": "Honey",
+          "what": "Honey Pack",
           "brand": "nekt",
           "match": "^moringa honey"
         },
         {
           "id": 13,
-          "what": "Beaded tank top",
+          "what": "Tank Top",
           "brand": "lumi",
           "match": "fries tank"
         },
@@ -747,19 +735,19 @@
         },
         {
           "id": 15,
-          "what": "Rose tea",
+          "what": "Tea Pack",
           "brand": "tea-riffic",
           "match": "rose"
         },
         {
           "id": 16,
-          "what": "Dry fruits",
+          "what": "Dry Fruit Box",
           "brand": "savore",
           "match": "raisins"
         },
         {
           "id": 17,
-          "what": "Cookies with dip",
+          "what": "Cookie Box",
           "brand": "no-biggie",
           "match": "red velvet"
         }
@@ -767,7 +755,6 @@
       "hampers": [
         {
           "no": 13,
-          "name": "Linen & After Hours",
           "for": "For the leadership team",
           "items": [
             {
@@ -793,7 +780,6 @@
         },
         {
           "no": 14,
-          "name": "Saree & Sweet Things",
           "for": "For your top performers",
           "items": [
             {
@@ -825,7 +811,6 @@
         },
         {
           "no": 15,
-          "name": "The Full Spread",
           "for": "For the people who carried the year",
           "items": [
             {

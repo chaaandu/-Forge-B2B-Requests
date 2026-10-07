@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Check, Plus } from "lucide-react";
 import { useRequestList } from "@/lib/request-list";
-import { HAMPER_BRAND, rupees, type Hamper, type HamperTier } from "@/lib/hampers";
+import { contentsLine, HAMPER_BRAND, type Hamper, type HamperTier } from "@/lib/hampers";
 import { foundersOf } from "@/lib/founders";
 import { cn } from "@/lib/cn";
 import { FitImage } from "@/components/fit-image";
@@ -16,14 +16,14 @@ export const facesOf = (teamCodes: string[]) => [...new Set(teamCodes)].flatMap(
 
 /**
  * A ready-made hamper, laid out like a product card: the photo, the faces of
- * everyone whose product is inside, its name, the brands in it, the budget.
- * The photo and the + both open the hamper.
+ * everyone whose product is inside, its number, who it's for and what's in
+ * it, counted. No price: the section heading carries the budget. The photo
+ * and the + both open the hamper.
  */
 export function HamperCard({ hamper, onOpen, priority }: { hamper: Hamper; onOpen: () => void; priority?: boolean }) {
   const list = useRequestList();
   const inList = list.ready && list.has(HAMPER_BRAND, hamper.slug);
   const faces = facesOf(hamper.teamCodes);
-  const brands = [...new Set(hamper.items.map((i) => i.brandName))];
 
   return (
     <article id={hamper.slug} className="group flex scroll-mt-28 flex-col">
@@ -64,10 +64,7 @@ export function HamperCard({ hamper, onOpen, priority }: { hamper: Hamper; onOpe
           <h3 className="font-display-straight line-clamp-2 text-[1.15rem] leading-[1.12] text-ink sm:text-[1.35rem]">{hamper.name}</h3>
         </button>
         <p className="text-[13px] font-semibold text-violet sm:text-sm">{hamper.for}</p>
-        <p className="line-clamp-1 text-xs text-ink/55">{brands.join(" · ")}</p>
-        <p className="text-sm tabular-nums text-ink">
-          <span className="font-semibold">{rupees(hamper.amount)}</span> <span className="text-ink/55">per hamper</span>
-        </p>
+        <p className="text-xs leading-snug text-ink/55">{contentsLine(hamper.items)}</p>
       </div>
     </article>
   );
@@ -89,19 +86,7 @@ export function BuildCard({ tier, photos, onOpen }: { tier: HamperTier; photos: 
         data-cursor="Build"
         className="relative block aspect-[4/5] w-full overflow-hidden rounded-[28px] bg-aubergine text-left text-paper"
       >
-        <div
-          aria-hidden
-          className="absolute inset-[-6%] grid rotate-[-6deg] grid-cols-3 gap-2 opacity-45 transition duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-hover:opacity-60"
-        >
-          {Array.from({ length: 12 }, (_, i) => shots[i % Math.max(1, shots.length)]).map((src, i) =>
-            src ? (
-              <span key={i} className="relative aspect-square overflow-hidden rounded-xl bg-aubergine-2">
-                <Image src={src} alt="" fill sizes="120px" className="object-cover" />
-              </span>
-            ) : null,
-          )}
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-aubergine via-aubergine/70 to-aubergine/10" />
+        <BuildCollage shots={shots} />
         <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
           <p className="font-display text-[clamp(1.9rem,3.4vw,2.9rem)] leading-[0.92]">
             Build <em className="text-orchid">your own.</em>
@@ -119,16 +104,36 @@ export function BuildCard({ tier, photos, onOpen }: { tier: HamperTier; photos: 
           <span className="truncate text-xs text-ink/55">{faces.length} founders</span>
         </span>
         <button type="button" onClick={onOpen} className="block pt-0.5 text-left">
-          <h3 className="font-display-straight line-clamp-2 text-[1.15rem] leading-[1.12] text-ink sm:text-[1.35rem]">
-            Your own {rupees(tier.amount)} hamper
-          </h3>
+          <h3 className="font-display-straight line-clamp-2 text-[1.15rem] leading-[1.12] text-ink sm:text-[1.35rem]">Build Your Own</h3>
         </button>
         <p className="text-[13px] font-semibold text-violet sm:text-sm">You pick, we pack</p>
-        <p className="line-clamp-1 text-xs text-ink/55">Only what fits the budget. No maths.</p>
-        <p className="text-sm tabular-nums text-ink">
-          <span className="font-semibold">{rupees(tier.amount)}</span> <span className="text-ink/55">per hamper</span>
-        </p>
+        <p className="line-clamp-2 text-xs leading-snug text-ink/55">Pick 3 or more from {tier.picks.length} founder-made products</p>
       </div>
     </article>
+  );
+}
+
+/**
+ * The build-your-own tile's backdrop: a tilted contact sheet of products to
+ * choose from, fading into aubergine where the offer sits. Fills its
+ * positioned parent; shared with the home page's row.
+ */
+export function BuildCollage({ shots }: { shots: string[] }) {
+  return (
+    <>
+      <div
+        aria-hidden
+        className="absolute inset-[-6%] grid rotate-[-6deg] grid-cols-3 gap-2 opacity-45 transition duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-hover:opacity-60"
+      >
+        {Array.from({ length: 12 }, (_, i) => shots[i % Math.max(1, shots.length)]).map((src, i) =>
+          src ? (
+            <span key={i} className="relative aspect-square overflow-hidden rounded-xl bg-aubergine-2">
+              <Image src={src} alt="" fill sizes="120px" className="object-cover" />
+            </span>
+          ) : null,
+        )}
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-aubergine via-aubergine/70 to-aubergine/10" />
+    </>
   );
 }
