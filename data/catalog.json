@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T06:19:45.369Z",
+ "generatedAt": "2026-10-07T12:30:33.222Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -5648,27 +5648,27 @@
    "featured": false
   },
   {
-   "slug": "krackle-co-almond-50g",
+   "slug": "krackle-co-200g-jar",
    "brand": "krackle-co",
-   "title": "Almond 50g",
+   "title": "200g Jar",
    "description": null,
    "collection": "snacks",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1cebc48a-5ace-4d48-8ffc-b20f6ccd391e.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75ac06b1-b473-4e40-b8e9-99117038d705.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "ALMOND-50G",
-     "label": "Almond 50g",
+     "sku": "200G-JAR",
+     "label": "200g Jar",
      "options": [],
-     "priceMinor": 19900,
-     "compareAtMinor": 22900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1cebc48a-5ace-4d48-8ffc-b20f6ccd391e.jpg"
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75ac06b1-b473-4e40-b8e9-99117038d705.jpg"
     }
    ],
-   "priceFromMinor": 19900,
-   "priceToMinor": 19900,
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
    "featured": false
   },
   {
@@ -5915,6 +5915,63 @@
    "featured": false
   },
   {
+   "slug": "krackle-co-almonds-cashews",
+   "brand": "krackle-co",
+   "title": "Almonds Cashews",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1705f771-94bd-418d-a6c1-744a764cfca6.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/487b0bc2-281e-4ff6-8adf-ba9d038fd65e.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75571ccc-91c5-4f4f-8b53-4dd71b6f3494.jpg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "25g",
+      "75g",
+      "100g"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "ALMONDS-CASHEWS-25G",
+     "label": "25g",
+     "options": [
+      "25g"
+     ],
+     "priceMinor": 7900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/487b0bc2-281e-4ff6-8adf-ba9d038fd65e.jpg"
+    },
+    {
+     "sku": "ALMONDS-CASHEWS-75G",
+     "label": "75g",
+     "options": [
+      "75g"
+     ],
+     "priceMinor": 16900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75571ccc-91c5-4f4f-8b53-4dd71b6f3494.jpg"
+    },
+    {
+     "sku": "ALMONDS-CASHEWS-100G",
+     "label": "100g",
+     "options": [
+      "100g"
+     ],
+     "priceMinor": 19900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1705f771-94bd-418d-a6c1-744a764cfca6.jpg"
+    }
+   ],
+   "priceFromMinor": 7900,
+   "priceToMinor": 19900,
+   "featured": false
+  },
+  {
    "slug": "krackle-co-brittles-pack-of-3",
    "brand": "krackle-co",
    "title": "Brittles Pack of 3",
@@ -6110,30 +6167,6 @@
    "featured": false
   },
   {
-   "slug": "krackle-co-gift-hamper-any-4-dry-fruits-50g",
-   "brand": "krackle-co",
-   "title": "Gift Hamper Any 4 Dry Fruits 50g",
-   "description": null,
-   "collection": "hampers",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fb5ea786-119e-43f0-8f59-a9cc968d1b5e.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "GIFT-HAMPER-ANY-4-DRY-FRUITS-50G",
-     "label": "Gift Hamper Any 4 Dry Fruits 50g",
-     "options": [],
-     "priceMinor": 49900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fb5ea786-119e-43f0-8f59-a9cc968d1b5e.jpg"
-    }
-   ],
-   "priceFromMinor": 49900,
-   "priceToMinor": 49900,
-   "featured": false
-  },
-  {
    "slug": "krackle-co-kishmish-kala-khatta",
    "brand": "krackle-co",
    "title": "Kishmish Kala Khatta",
@@ -6272,30 +6305,6 @@
    "featured": false
   },
   {
-   "slug": "krackle-co-nut-cracker-50g",
-   "brand": "krackle-co",
-   "title": "Nut Cracker 50g",
-   "description": null,
-   "collection": "snacks",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/11b46720-6d56-47f9-a8a2-af3f1906d2bc.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "NUT-CRACKER-50G",
-     "label": "Nut Cracker 50g",
-     "options": [],
-     "priceMinor": 14900,
-     "compareAtMinor": 17900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/11b46720-6d56-47f9-a8a2-af3f1906d2bc.jpg"
-    }
-   ],
-   "priceFromMinor": 14900,
-   "priceToMinor": 14900,
-   "featured": false
-  },
-  {
    "slug": "krackle-co-pack-of-3-brittle",
    "brand": "krackle-co",
    "title": "Pack of 3 Brittle",
@@ -6365,6 +6374,72 @@
    ],
    "priceFromMinor": 4500,
    "priceToMinor": 4500,
+   "featured": false
+  },
+  {
+   "slug": "krackle-co-almond-50g",
+   "brand": "krackle-co",
+   "title": "Almond 50g",
+   "description": null,
+   "collection": "snacks",
+   "images": [],
+   "options": [],
+   "variants": [
+    {
+     "sku": "ALMOND-50G",
+     "label": "Almond 50g",
+     "options": [],
+     "priceMinor": 19900,
+     "compareAtMinor": 22900,
+     "image": null
+    }
+   ],
+   "priceFromMinor": 19900,
+   "priceToMinor": 19900,
+   "featured": false
+  },
+  {
+   "slug": "krackle-co-gift-hamper-any-4-dry-fruits-50g",
+   "brand": "krackle-co",
+   "title": "Gift Hamper Any 4 Dry Fruits 50g",
+   "description": null,
+   "collection": "hampers",
+   "images": [],
+   "options": [],
+   "variants": [
+    {
+     "sku": "GIFT-HAMPER-ANY-4-DRY-FRUITS-50G",
+     "label": "Gift Hamper Any 4 Dry Fruits 50g",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": null
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "krackle-co-nut-cracker-50g",
+   "brand": "krackle-co",
+   "title": "Nut Cracker 50g",
+   "description": null,
+   "collection": "snacks",
+   "images": [],
+   "options": [],
+   "variants": [
+    {
+     "sku": "NUT-CRACKER-50G",
+     "label": "Nut Cracker 50g",
+     "options": [],
+     "priceMinor": 14900,
+     "compareAtMinor": 17900,
+     "image": null
+    }
+   ],
+   "priceFromMinor": 14900,
+   "priceToMinor": 14900,
    "featured": false
   },
   {
@@ -9832,30 +9907,6 @@
    "featured": false
   },
   {
-   "slug": "notty-crunch-peri-peri-1-kg",
-   "brand": "notty-crunch",
-   "title": "Peri Peri 1 kg",
-   "description": null,
-   "collection": "snacks",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f5234e02-cca1-4084-9e0a-cd6a266b8cb8.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "PERI-PERI-1-KG",
-     "label": "Peri Peri 1 kg",
-     "options": [],
-     "priceMinor": 100000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f5234e02-cca1-4084-9e0a-cd6a266b8cb8.jpg"
-    }
-   ],
-   "priceFromMinor": 100000,
-   "priceToMinor": 100000,
-   "featured": false
-  },
-  {
    "slug": "notty-crunch-peri-peri-mix-veggies",
    "brand": "notty-crunch",
    "title": "Peri Peri Mix Veggies",
@@ -9899,6 +9950,28 @@
    "priceFromMinor": 8900,
    "priceToMinor": 14900,
    "featured": true
+  },
+  {
+   "slug": "notty-crunch-peri-peri-1-kg",
+   "brand": "notty-crunch",
+   "title": "Peri Peri 1 kg",
+   "description": null,
+   "collection": "snacks",
+   "images": [],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PERI-PERI-1-KG",
+     "label": "Peri Peri 1 kg",
+     "options": [],
+     "priceMinor": 100000,
+     "compareAtMinor": null,
+     "image": null
+    }
+   ],
+   "priceFromMinor": 100000,
+   "priceToMinor": 100000,
+   "featured": false
   },
   {
    "slug": "pehchaan-batik-silk",

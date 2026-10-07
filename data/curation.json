@@ -2,15 +2,31 @@
   "//": "Hand edits applied every time the catalogue is built from the POS (live, every 10 minutes). Matching is on brand slug + a case-insensitive regex against the product title. Edit, save, and the site picks it up on the next refresh (restart `npm run dev` locally).",
 
   "hide": [
-    { "brand": "side-quest", "match": "cocaine|idgaf|stfu|bi-?polar", "why": "Drug reference, profanity, or mocks a mental illness. Not for a workplace gift." },
+    {
+      "brand": "side-quest",
+      "match": "cocaine|idgaf|stfu|bi-?polar",
+      "why": "Drug reference, profanity, or mocks a mental illness. Not for a workplace gift."
+    },
     { "brand": "dad-of-bags", "match": "absolut|marlboro", "why": "Alcohol and tobacco branding." },
     { "brand": "klayzy-ceramics", "match": "ashtray", "why": "Smoking accessory." },
-    { "brand": "the-drunken-mugs", "match": "absolut|bailey|bombay sapphire|corona|grey ?goose|kingfisher|old monk", "why": "Liquor-brand glassware." },
+    {
+      "brand": "the-drunken-mugs",
+      "match": "absolut|bailey|bombay sapphire|corona|grey ?goose|kingfisher|old monk",
+      "why": "Liquor-brand glassware."
+    },
     { "brand": "*", "match": "^test$", "why": "Test product." },
     { "brand": "*", "match": "mesa discount", "why": "Internal student-discount duplicate." },
     { "brand": "linore", "match": "^co-?or set$", "why": "Mesa asked for it to come down." }
   ],
   "hideSkus": [],
+
+  "//blankPhotos": "Photos a team uploaded that are just an empty backdrop (a plain dark gradient, no product). Listed by the file name in the POS, and treated as no photo at all, so they never fill a tile on the site.",
+  "blankPhotos": [
+    "f5234e02-cca1-4084-9e0a-cd6a266b8cb8",
+    "1cebc48a-5ace-4d48-8ffc-b20f6ccd391e",
+    "fb5ea786-119e-43f0-8f59-a9cc968d1b5e",
+    "11b46720-6d56-47f9-a8a2-af3f1906d2bc"
+  ],
   "hideBrands": [],
 
   "collectionRules": [

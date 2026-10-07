@@ -16,7 +16,7 @@ export const facesOf = (teamCodes: string[]) => [...new Set(teamCodes)].flatMap(
 
 /**
  * A ready-made hamper, laid out like a product card: the photo, the faces of
- * everyone whose product is inside, its number, who it's for and what's in
+ * everyone whose product is inside, its number and what's in
  * it, counted. No price: the section heading carries the budget. The photo
  * and the + both open the hamper.
  */
@@ -63,7 +63,6 @@ export function HamperCard({ hamper, onOpen, priority }: { hamper: Hamper; onOpe
         <button type="button" onClick={onOpen} className="block pt-0.5 text-left">
           <h3 className="font-display-straight line-clamp-2 text-[1.15rem] leading-[1.12] text-ink sm:text-[1.35rem]">{hamper.name}</h3>
         </button>
-        <p className="text-[13px] font-semibold text-violet sm:text-sm">{hamper.for}</p>
         <p className="text-xs leading-snug text-ink/55">{contentsLine(hamper.items)}</p>
       </div>
     </article>
@@ -106,7 +105,6 @@ export function BuildCard({ tier, photos, onOpen }: { tier: HamperTier; photos: 
         <button type="button" onClick={onOpen} className="block pt-0.5 text-left">
           <h3 className="font-display-straight line-clamp-2 text-[1.15rem] leading-[1.12] text-ink sm:text-[1.35rem]">Build Your Own</h3>
         </button>
-        <p className="text-[13px] font-semibold text-violet sm:text-sm">You pick, we pack</p>
         <p className="line-clamp-2 text-xs leading-snug text-ink/55">Pick 3 or more from {tier.picks.length} founder-made products</p>
       </div>
     </article>

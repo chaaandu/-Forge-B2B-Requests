@@ -40,6 +40,7 @@ interface Curation {
   hide: { brand: string; match: string; why: string }[];
   hideSkus: string[];
   hideBrands: string[];
+  blankPhotos?: string[];
   collectionRules: { brand: string; match: string; collection: CollectionId; onlyIn?: CollectionId[] }[];
   featured: string[];
 }
@@ -140,6 +141,9 @@ export async function buildCatalog(dbUrl: string, imageBase: string, mediaBase?:
   const absolute = (path: string) =>
     path.startsWith("http") ? path : media && path.startsWith("/files/") ? `${media}/${path.slice("/files/".length)}` : `${base}${path}`;
 
+  // An uploaded "photo" that's only an empty backdrop counts as no photo.
+  const photosOf = (r: Row) => r.images.filter((p) => !curation.blankPhotos?.some((id) => p.includes(id)));
+
   // ── 1–2. rows → one draft per variant group / lone SKU ──────────────────
   const brandByCode = new Map(brandEntries.map((b) => [b.teamCode, b]));
   const logos = new Map<string, string | null>();
@@ -171,9 +175,9 @@ export async function buildCatalog(dbUrl: string, imageBase: string, mediaBase?:
         options: grouped ? m.variantOptionValues : [],
         priceMinor: m.unitPriceMinor,
         compareAtMinor: m.compareAtPriceMinor && m.compareAtPriceMinor > m.unitPriceMinor ? m.compareAtPriceMinor : null,
-        image: m.images[0] ? absolute(m.images[0]) : null,
+        image: photosOf(m)[0] ? absolute(photosOf(m)[0]) : null,
       })),
-      images: [...new Set(members.flatMap((m) => m.images.map(absolute)))],
+      images: [...new Set(members.flatMap((m) => photosOf(m).map(absolute)))],
     };
   });
 

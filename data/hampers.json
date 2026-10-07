@@ -1,5 +1,5 @@
 {
-  "//": "Forge Hampers, from the 'Sheet1' tab of VBC-C1-SKUs-prices-by-team.xlsx: five budgets, three hampers each, photos in public/hampers/hamper-<no>.webp. A budget's `picks` are everything its three hampers are made from, and they are also all a buyer may choose from when building their own hamper at that budget. A budget's `label` is its size (Mini to Grand) and its `icon` a drawing of that size in components/doodles.tsx; its `title` and `blurb` head its section, and each hamper's `for` says who it's meant for. Hampers are called Hamper <no>; `what` is the item as the sheet describes it, as a countable noun (Snack Pack, Coffee Pack) so a card can say \"1 Candle, 2 Snack Packs\". Never reuse or renumber a pick id or a hamper `no`: gift lists saved in browsers and shared links refer to them. `match` finds the pick's photo among the brand's products (a case-insensitive regex on the title).",
+  "//": "Forge Hampers, from the 'Sheet1' tab of VBC-C1-SKUs-prices-by-team.xlsx: five budgets, three hampers each, photos in public/hampers/hamper-<no>.webp. A budget's `picks` are everything its three hampers are made from, and they are also all a buyer may choose from when building their own hamper at that budget. A budget's `label` is its size (Mini to Grand) and its `icon` a drawing of that size in components/doodles.tsx; its `title` and `blurb` head its section,. Hampers are called Hamper <no>; `what` is the item as the sheet describes it, as a countable noun (Snack Pack, Coffee Pack) so a card can say \"1 Candle, 2 Snack Packs\". Never reuse or renumber a pick id or a hamper `no`: gift lists saved in browsers and shared links refer to them. `match` finds the pick's photo among the brand's products (a case-insensitive regex on the title).",
   "tiers": [
     {
       "amount": 500,
@@ -90,7 +90,6 @@
       "hampers": [
         {
           "no": 1,
-          "for": "For new joiners",
           "items": [
             {
               "pick": 1
@@ -108,7 +107,6 @@
         },
         {
           "no": 2,
-          "for": "For a team that just shipped",
           "items": [
             {
               "pick": 5
@@ -126,7 +124,6 @@
         },
         {
           "no": 3,
-          "for": "For teams who work from home",
           "items": [
             {
               "pick": 9
@@ -230,7 +227,6 @@
       "hampers": [
         {
           "no": 4,
-          "for": "For the ones who went beyond",
           "items": [
             {
               "pick": 1
@@ -248,7 +244,6 @@
         },
         {
           "no": 5,
-          "for": "For a crunch well handled",
           "items": [
             {
               "pick": 5
@@ -266,7 +261,6 @@
         },
         {
           "no": 6,
-          "for": "For every festival on the calendar",
           "items": [
             {
               "pick": 8
@@ -370,7 +364,6 @@
       "hampers": [
         {
           "no": 7,
-          "for": "For a client you just met",
           "items": [
             {
               "pick": 1
@@ -391,7 +384,6 @@
         },
         {
           "no": 8,
-          "for": "For partners who said yes",
           "items": [
             {
               "pick": 6
@@ -412,7 +404,6 @@
         },
         {
           "no": 9,
-          "for": "For clients who stayed",
           "items": [
             {
               "pick": 9
@@ -555,7 +546,6 @@
       "hampers": [
         {
           "no": 10,
-          "for": "For a well-earned promotion",
           "items": [
             {
               "pick": 1
@@ -582,7 +572,6 @@
         },
         {
           "no": 11,
-          "for": "For years well spent",
           "items": [
             {
               "pick": 8
@@ -612,7 +601,6 @@
         },
         {
           "no": 12,
-          "for": "For farewells and new roles",
           "items": [
             {
               "pick": 15
@@ -755,7 +743,6 @@
       "hampers": [
         {
           "no": 13,
-          "for": "For the leadership team",
           "items": [
             {
               "pick": 1
@@ -780,7 +767,6 @@
         },
         {
           "no": 14,
-          "for": "For your top performers",
           "items": [
             {
               "pick": 7
@@ -811,7 +797,6 @@
         },
         {
           "no": 15,
-          "for": "For the people who carried the year",
           "items": [
             {
               "pick": 13

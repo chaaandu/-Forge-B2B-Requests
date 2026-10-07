@@ -36,8 +36,6 @@ export interface Hamper {
   no: number;
   slug: string;
   name: string;
-  /** Who it's meant for: "For new joiners". */
-  for: string;
   amount: number;
   image: string;
   items: HamperLine[];
@@ -74,7 +72,6 @@ export const TIERS: HamperTier[] = data.tiers.map((t) => {
       no: h.no,
       slug: `hamper-${h.no}`,
       name: `Hamper ${h.no}`,
-      for: h.for,
       amount: t.amount,
       image: withBase(`/hampers/hamper-${h.no}.webp`),
       items,

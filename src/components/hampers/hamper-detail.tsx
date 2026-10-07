@@ -9,7 +9,7 @@ import { HamperAdd } from "./hamper-add";
 import { facesOf } from "./hamper-card";
 
 /**
- * One ready-made hamper: the photo across the top, then who it's for, who
+ * One ready-made hamper: the photo across the top, then its size, who
  * made it and everything inside (each with its own product photo), with how
  * many and add always in reach at the bottom.
  */
@@ -32,7 +32,6 @@ export function HamperDetail({ hamper, photos, onClose }: { hamper: Hamper; phot
                 {tierOf(hamper.amount)?.label} hamper · {rupees(hamper.amount)}
               </p>
               <h2 className="font-display mt-1 text-[clamp(2.2rem,6vw,3.2rem)] leading-[0.95] text-ink">{hamper.name}</h2>
-              <p className="font-display-straight mt-2 text-lg leading-snug text-ink/60">{hamper.for}.</p>
               <p className="mt-4 flex items-center gap-2 text-sm text-ink/60">
                 <FacePile photos={faces} max={5} size={26} />
                 <span>
