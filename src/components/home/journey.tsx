@@ -319,10 +319,21 @@ export function Journey({ data }: { data: JourneyData }) {
         const path = stage.querySelector<SVGPathElement>("[data-drawn]")!;
         const rider = stage.querySelector("[data-rider]")!;
         const reel = stage.querySelector("[data-reel]")!;
+        // The gift rides on the middle of the gift itself (box and bow), not the
+        // middle of its bounding box, which the sparkle ticks and the
+        // off-register fill pull up and to the right; that sat the gift a
+        // little low and left of every station.
+        const ART = 60 / 96; // the drawing's 96 grid, drawn 60 wide
+        const parts = [...rider.querySelectorAll<SVGGraphicsElement>("[data-dink] path")].slice(0, 6);
+        const boxes = parts.map((p) => p.getBBox());
+        const cx = -30 + ART * ((Math.min(...boxes.map((b) => b.x)) + Math.max(...boxes.map((b) => b.x + b.width))) / 2);
+        const cy = -78 + ART * ((Math.min(...boxes.map((b) => b.y)) + Math.max(...boxes.map((b) => b.y + b.height))) / 2);
+        const whole = (rider as SVGGraphicsElement).getBBox();
+        const origin: [number, number] = [(cx - whole.x) / whole.width, (cy - whole.y) / whole.height];
         const ride = (start: number, end: number) => ({
           path: "[data-track]",
           align: "[data-track]",
-          alignOrigin: [0.5, 0.5] as [number, number],
+          alignOrigin: origin,
           start,
           end,
         });

@@ -1,7 +1,7 @@
 import "server-only";
 import { unstable_cache } from "next/cache";
 import snapshot from "../../data/catalog.json";
-import { buildCatalog } from "./catalog-build";
+import { buildCatalog, RULES_VERSION } from "./catalog-build";
 import { urlEnv } from "./env";
 import { canonicalBrand } from "./brand-teams";
 import { COLLECTIONS, type Brand, type Catalog, type CollectionId, type Listing } from "./catalog-types";
@@ -23,7 +23,9 @@ export const REFRESH_SECONDS = 600;
 const loadLive = unstable_cache(
   async (dbUrl: string, imageBase: string, mediaBase: string | undefined): Promise<Catalog> =>
     (await buildCatalog(dbUrl, imageBase, mediaBase)).catalog,
-  ["catalog-v13"],
+  // Keyed on the hand edits and the blank-photo list too, so a change to
+  // either is read fresh rather than served from the old cache.
+  ["catalog-v13", RULES_VERSION],
   { revalidate: REFRESH_SECONDS, tags: ["catalog"] },
 );
 

@@ -30,6 +30,7 @@
 import pg from "pg";
 import brandsFile from "../../data/brands.json";
 import curationFile from "../../data/curation.json";
+import photoCheck from "../../data/photo-check.json";
 import type { Brand, Catalog, CollectionId, Listing, Variant } from "./catalog-types";
 import { ventureName } from "./venture-name";
 
@@ -40,11 +41,30 @@ interface Curation {
   hide: { brand: string; match: string; why: string }[];
   hideSkus: string[];
   hideBrands: string[];
-  blankPhotos?: string[];
   collectionRules: { brand: string; match: string; collection: CollectionId; onlyIn?: CollectionId[] }[];
   featured: string[];
 }
 const curation = curationFile as unknown as Curation;
+
+/**
+ * Changes whenever the hand edits or the list of blank photos do, so the live
+ * catalogue's cache (lib/catalog.ts) is keyed on it and a change lands on the
+ * next request instead of waiting out the old cache.
+ */
+export const RULES_VERSION = (() => {
+  const text = JSON.stringify([curationFile, photoCheck.blank]);
+  let h = 5381;
+  for (let i = 0; i < text.length; i++) h = ((h << 5) + h + text.charCodeAt(i)) | 0;
+  return (h >>> 0).toString(36);
+})();
+
+/** The photo's file name in the POS, which is how photo-check.json lists it: `.../products/<uuid>.jpg` → `<uuid>`. */
+export const photoId = (url: string) =>
+  url
+    .split("/")
+    .pop()!
+    .split("?")[0]
+    .replace(/\.[a-z0-9]+$/i, "");
 
 interface Row {
   id: string;
@@ -130,7 +150,13 @@ export interface BuildReport {
   merged: { brand: string; title: string; from: number }[];
 }
 
-export async function buildCatalog(dbUrl: string, imageBase: string, mediaBase?: string): Promise<BuildReport> {
+export async function buildCatalog(
+  dbUrl: string,
+  imageBase: string,
+  mediaBase?: string,
+  /** Blank photos to leave out; the sync passes ones it has only just found. */
+  blank: string[] = photoCheck.blank,
+): Promise<BuildReport> {
   const rows = await readRows(dbUrl);
   const base = imageBase.replace(/\/$/, "");
   const media = mediaBase?.replace(/\/$/, "");
@@ -141,8 +167,10 @@ export async function buildCatalog(dbUrl: string, imageBase: string, mediaBase?:
   const absolute = (path: string) =>
     path.startsWith("http") ? path : media && path.startsWith("/files/") ? `${media}/${path.slice("/files/".length)}` : `${base}${path}`;
 
-  // An uploaded "photo" that's only an empty backdrop counts as no photo.
-  const photosOf = (r: Row) => r.images.filter((p) => !curation.blankPhotos?.some((id) => p.includes(id)));
+  // An uploaded "photo" that's only an empty backdrop counts as no photo
+  // (data/photo-check.json, kept by the daily sync).
+  const blanks = new Set(blank);
+  const photosOf = (r: Row) => r.images.filter((p) => !blanks.has(photoId(p)));
 
   // ── 1–2. rows → one draft per variant group / lone SKU ──────────────────
   const brandByCode = new Map(brandEntries.map((b) => [b.teamCode, b]));
