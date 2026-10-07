@@ -16,7 +16,7 @@ export const facesOf = (teamCodes: string[]) => [...new Set(teamCodes)].flatMap(
 
 /**
  * A ready-made hamper, laid out like a product card: the photo, the faces of
- * everyone whose product is inside, its number and what's in
+ * everyone whose product is inside, its name and what's in
  * it, counted. No price: the section heading carries the budget. The photo
  * and the + both open the hamper.
  */

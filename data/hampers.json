@@ -1,5 +1,5 @@
 {
-  "//": "Forge Hampers, from the 'Sheet1' tab of VBC-C1-SKUs-prices-by-team.xlsx: five budgets, three hampers each, photos in public/hampers/hamper-<no>.webp, or the hamper's `photo` file when it has one (a replaced photo gets a new file name, because the image optimiser caches by name for 30 days). A budget's `picks` are everything its three hampers are made from, and they are also all a buyer may choose from when building their own hamper at that budget. A budget's `label` is its size (Mini to Grand) and its `icon` a drawing of that size in components/doodles.tsx; its `title` and `blurb` head its section,. Hampers are called Hamper <no>; `what` is the item as the sheet describes it, as a countable noun (Snack Pack, Coffee Pack) so a card can say \"1 Candle, 2 Snack Packs\". Never reuse or renumber a pick id or a hamper `no`: gift lists saved in browsers and shared links refer to them. `match` finds the pick's photo among the brand's products (a case-insensitive regex on the title).",
+  "//": "Forge Hampers, from the 'Sheet1' tab of VBC-C1-SKUs-prices-by-team.xlsx: five budgets, three hampers each, photos in public/hampers/hamper-<no>.webp, or the hamper's `photo` file when it has one (a replaced photo gets a new file name, because the image optimiser caches by name for 30 days). A budget's `picks` are everything its three hampers are made from, and they are also all a buyer may choose from when building their own hamper at that budget. A budget's `label` is its size (Mini to Grand) and its `icon` a drawing of that size in components/doodles.tsx; its `title` and `blurb` head its section,. Each hamper's `name` comes from what's in the box; `what` is the item as the sheet describes it, as a countable noun (Snack Pack, Coffee Pack) so a card can say \"1 Candle, 2 Snack Packs\". Never reuse or renumber a pick id or a hamper `no`: gift lists saved in browsers and shared links refer to them. `match` finds the pick's photo among the brand's products (a case-insensitive regex on the title).",
   "tiers": [
     {
       "amount": 500,
@@ -90,6 +90,7 @@
       "hampers": [
         {
           "no": 1,
+          "name": "Snack Tote",
           "items": [
             {
               "pick": 1
@@ -107,6 +108,7 @@
         },
         {
           "no": 2,
+          "name": "Crunch & Candlelight",
           "items": [
             {
               "pick": 5
@@ -124,6 +126,7 @@
         },
         {
           "no": 3,
+          "name": "Kahwa & Cosy Socks",
           "items": [
             {
               "pick": 9
@@ -227,6 +230,7 @@
       "hampers": [
         {
           "no": 4,
+          "name": "Cocoa & Cologne",
           "items": [
             {
               "pick": 1
@@ -244,6 +248,7 @@
         },
         {
           "no": 5,
+          "name": "Cinnamon & Red Velvet",
           "items": [
             {
               "pick": 5
@@ -262,6 +267,7 @@
         },
         {
           "no": 6,
+          "name": "Chai & Chaos",
           "items": [
             {
               "pick": 8
@@ -365,6 +371,7 @@
       "hampers": [
         {
           "no": 7,
+          "name": "Coffee Break",
           "items": [
             {
               "pick": 1
@@ -385,6 +392,7 @@
         },
         {
           "no": 8,
+          "name": "Sips & Spice",
           "items": [
             {
               "pick": 6
@@ -406,6 +414,7 @@
         },
         {
           "no": 9,
+          "name": "Rose Tea & Cookie Dip",
           "items": [
             {
               "pick": 9
@@ -548,6 +557,7 @@
       "hampers": [
         {
           "no": 10,
+          "name": "Main Character Energy",
           "items": [
             {
               "pick": 1
@@ -574,6 +584,7 @@
         },
         {
           "no": 11,
+          "name": "Block Prints & Dark Chocolate",
           "items": [
             {
               "pick": 8
@@ -603,6 +614,7 @@
         },
         {
           "no": 12,
+          "name": "Weekend Mode",
           "items": [
             {
               "pick": 15
@@ -745,6 +757,7 @@
       "hampers": [
         {
           "no": 13,
+          "name": "Linen & After Hours",
           "items": [
             {
               "pick": 1
@@ -769,6 +782,7 @@
         },
         {
           "no": 14,
+          "name": "Saree & Sweet Things",
           "items": [
             {
               "pick": 7
@@ -799,6 +813,7 @@
         },
         {
           "no": 15,
+          "name": "The Full Spread",
           "items": [
             {
               "pick": 13

@@ -71,7 +71,7 @@ export const TIERS: HamperTier[] = data.tiers.map((t) => {
     return {
       no: h.no,
       slug: `hamper-${h.no}`,
-      name: `Hamper ${h.no}`,
+      name: h.name,
       amount: t.amount,
       image: withBase(`/hampers/${(h as { photo?: string }).photo ?? `hamper-${h.no}.webp`}`),
       items,
