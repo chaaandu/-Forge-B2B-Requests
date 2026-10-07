@@ -73,7 +73,7 @@ export const TIERS: HamperTier[] = data.tiers.map((t) => {
       slug: `hamper-${h.no}`,
       name: `Hamper ${h.no}`,
       amount: t.amount,
-      image: withBase(`/hampers/hamper-${h.no}.webp`),
+      image: withBase(`/hampers/${(h as { photo?: string }).photo ?? `hamper-${h.no}.webp`}`),
       items,
       teamCodes: unique(items.map((i) => i.teamCode).filter(Boolean)),
     };
