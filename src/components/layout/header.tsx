@@ -7,7 +7,7 @@ import { ChevronRight, ShoppingBag } from "lucide-react";
 import { useRequestList } from "@/lib/request-list";
 import { cn } from "@/lib/cn";
 import { foundersOf } from "@/lib/founders";
-import { TEAM_OF } from "@/lib/brand-teams";
+import { teamsOf } from "@/lib/hampers";
 import { getLenis } from "@/components/motion/smooth-scroll";
 import { LANDED } from "@/components/motion/fly";
 import { FacePile } from "@/components/face-pile";
@@ -15,6 +15,7 @@ import { Lockup } from "./lockup";
 
 const NAV = [
   { href: "/", label: "Home" },
+  { href: "/hampers", label: "Hampers" },
   { href: "/catalogue", label: "Store" },
   { href: "/brands", label: "Founders" },
 ];
@@ -215,7 +216,7 @@ export function Header() {
 function Dock({ hidden, bump }: { hidden: boolean; bump: boolean }) {
   const list = useRequestList();
   const show = list.ready && list.count > 0 && !hidden;
-  const faces = [...new Set(list.items.map((i) => TEAM_OF[i.brand]).filter(Boolean))].flatMap((t) => foundersOf(t));
+  const faces = [...new Set(list.items.flatMap(teamsOf))].flatMap((t) => foundersOf(t));
 
   // Keeps the end of the page clear of the bar (the footer reads --dock).
   useEffect(() => {

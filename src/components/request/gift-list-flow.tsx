@@ -10,7 +10,7 @@ import { encodeList } from "@/lib/share";
 import { formatINR } from "@/lib/money";
 import { cn } from "@/lib/cn";
 import { foundersOf } from "@/lib/founders";
-import { TEAM_OF } from "@/lib/brand-teams";
+import { hrefOf, isHamper, teamsOf } from "@/lib/hampers";
 import { withBase } from "@/lib/base-path";
 import { gsap, reducedMotion, useGSAP } from "@/components/motion/gsap";
 import { getLenis } from "@/components/motion/smooth-scroll";
@@ -127,7 +127,7 @@ export function GiftListFlow({
     if (errors[k]) setErrors((e) => ({ ...e, [k]: undefined }));
   };
 
-  const teams = [...new Set(list.items.map((i) => TEAM_OF[i.brand]).filter(Boolean))];
+  const teams = [...new Set(list.items.flatMap(teamsOf))];
   const backing = teams.flatMap((t) => foundersOf(t));
   const value = list.items.reduce((n, i) => n + i.qty * i.priceMinor, 0);
   const summary = `${list.count} ${list.count === 1 ? "gift" : "gifts"} · ${list.units.toLocaleString("en-IN")} units`;
@@ -334,11 +334,11 @@ export function GiftListFlow({
               )}
               <ul className="space-y-3">
                 {list.items.map((i) => {
-                  const makers = foundersOf(TEAM_OF[i.brand] ?? "");
+                  const makers = teamsOf(i).flatMap((t) => foundersOf(t));
                   return (
                     <li key={`${i.brand}:${i.sku}`} className="flex gap-3 rounded-[22px] bg-paper-2/70 p-3">
                       <Link
-                        href={`/products/${i.listing}`}
+                        href={hrefOf(i)}
                         onClick={onClose}
                         className="relative size-20 shrink-0 overflow-hidden rounded-2xl bg-paper-3"
                       >
@@ -367,7 +367,9 @@ export function GiftListFlow({
                         </div>
                         <div className="mt-2 flex items-center justify-between gap-2">
                           <QtyStepper size="sm" value={i.qty} onChange={(n) => list.setQty(i.brand, i.sku, n)} />
-                          <span className="text-xs text-ink/50">{formatINR(i.priceMinor)} each</span>
+                          <span className="text-xs text-ink/50">
+                            {formatINR(i.priceMinor)} {isHamper(i.brand) ? "a hamper" : "each"}
+                          </span>
                         </div>
                       </div>
                     </li>

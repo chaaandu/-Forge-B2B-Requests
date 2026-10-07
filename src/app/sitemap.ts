@@ -14,6 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const updated = new Date(catalog.generatedAt);
   return [
     { url: `${base}/`, lastModified: updated, priority: 1 },
+    { url: `${base}/hampers`, lastModified: updated, priority: 0.9 },
     { url: `${base}/catalogue`, lastModified: updated, priority: 0.9 },
     { url: `${base}/brands`, lastModified: updated, priority: 0.7 },
     ...COLLECTIONS.map((c) => ({ url: `${base}/catalogue?collection=${c.id}`, lastModified: updated, priority: 0.8 })),

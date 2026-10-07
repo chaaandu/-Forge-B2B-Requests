@@ -5,6 +5,7 @@ import { PERSONAL_DOMAINS, requestSchema } from "@/lib/request-schema";
 import { deliver, type SheetRequest } from "@/lib/sheets";
 import { BASE_PATH } from "@/lib/base-path";
 import { urlEnv } from "@/lib/env";
+import { describeLine, HAMPER_BRAND_NAME, isHamper, resolveHamper } from "@/lib/hampers";
 
 // A small per-instance limiter. It won't stop a determined flood across
 // serverless instances, but it does stop a stuck button or a naive bot.
@@ -53,6 +54,22 @@ export async function POST(req: NextRequest) {
   // Names and prices come from the catalogue, never from the browser. A SKU
   // archived since it was added is still passed on, flagged, so the ask isn't lost.
   const items: SheetRequest["items"] = r.items.map((i) => {
+    // A hamper is several teams' products in one box: every team's code, so
+    // each finds it when they filter the sheet, and the contents as the variant.
+    if (isHamper(i.brand)) {
+      const h = resolveHamper(i.sku);
+      return {
+        teamCode: h ? h.teamCodes.join(", ") : "?",
+        brand: HAMPER_BRAND_NAME,
+        sku: i.sku,
+        product: h ? (h.custom ? h.title : `${h.title} (${h.label})`) : "(no longer listed)",
+        variant: h ? h.lines.map(describeLine).join(", ") : "",
+        qty: i.qty,
+        unitPrice: h?.amount ?? 0,
+        lineValue: (h?.amount ?? 0) * i.qty,
+        url: h ? `${site}${h.href}` : "",
+      };
+    }
     const hit = catalog.findVariant(i.brand, i.sku);
     if (!hit) {
       return {

@@ -13,3 +13,6 @@ next-env.d.ts
 *.jpeg
 *.jpg
 !public/**/*.jpg
+
+# The raw hamper photos; the site uses the WebP copies in public/hampers.
+/Hamper Photos - Forge/

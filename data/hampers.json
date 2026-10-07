@@ -1,0 +1,865 @@
+{
+  "//": "Forge Hampers, from the 'Sheet1' tab of VBC-C1-SKUs-prices-by-team.xlsx: five budgets, three hampers each, photos in public/hampers/hamper-<no>.webp. A budget's `picks` are everything its three hampers are made from, and they are also all a buyer may choose from when building their own hamper at that budget. A budget's `label` is its size (Mini to Grand) and its `icon` a drawing of that size in components/doodles.tsx; its `title` and `blurb` head its section, and each hamper's `for` says who it's meant for. Names come from what's in the box. Never reuse or renumber a pick id or a hamper `no`: gift lists saved in browsers and shared links refer to them. `match` finds the pick's photo among the brand's products (a case-insensitive regex on the title).",
+  "tiers": [
+    {
+      "amount": 500,
+      "label": "Mini",
+      "title": "Small But Mighty",
+      "icon": "hamper-mini",
+      "blurb": "Four or five treats in a wooden crate, tied with a bow.",
+      "picks": [
+        {
+          "id": 1,
+          "what": "Dry fruits",
+          "brand": "savore",
+          "match": "raisins"
+        },
+        {
+          "id": 2,
+          "what": "Tote bag",
+          "brand": "dad-of-bags",
+          "match": "rcb"
+        },
+        {
+          "id": 3,
+          "what": "Iced tea",
+          "brand": "juzzle",
+          "match": "fruity"
+        },
+        {
+          "id": 4,
+          "what": "Roasted edamame",
+          "brand": "chakle-bro",
+          "match": "cheese"
+        },
+        {
+          "id": 5,
+          "what": "Blueberry almonds",
+          "brand": "krackle-co",
+          "match": "blueberry"
+        },
+        {
+          "id": 6,
+          "what": "Chips",
+          "brand": "chipmonk",
+          "match": "piri"
+        },
+        {
+          "id": 7,
+          "what": "Scented candle",
+          "brand": "ember-and-oak",
+          "match": "lavender"
+        },
+        {
+          "id": 8,
+          "what": "Chocolates",
+          "brand": "meltyk",
+          "match": "assorted"
+        },
+        {
+          "id": 9,
+          "what": "Socks",
+          "brand": "side-quest",
+          "match": "^socks$"
+        },
+        {
+          "id": 10,
+          "what": "Honey",
+          "brand": "nekt",
+          "match": "^moringa honey"
+        },
+        {
+          "id": 11,
+          "what": "Hot chocolate",
+          "brand": "mugshot",
+          "match": "classic hot"
+        },
+        {
+          "id": 12,
+          "what": "Makhana chips",
+          "brand": "wekrave",
+          "match": "cream"
+        },
+        {
+          "id": 13,
+          "what": "Kashmiri kahwa",
+          "brand": "tea-riffic",
+          "match": "kahwa"
+        }
+      ],
+      "hampers": [
+        {
+          "no": 1,
+          "name": "Snack Tote",
+          "for": "For new joiners",
+          "items": [
+            {
+              "pick": 1
+            },
+            {
+              "pick": 2
+            },
+            {
+              "pick": 3
+            },
+            {
+              "pick": 4
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "name": "Crunch & Candlelight",
+          "for": "For a team that just shipped",
+          "items": [
+            {
+              "pick": 5
+            },
+            {
+              "pick": 6
+            },
+            {
+              "pick": 7
+            },
+            {
+              "pick": 8
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "name": "Kahwa & Cosy Socks",
+          "for": "For teams who work from home",
+          "items": [
+            {
+              "pick": 9
+            },
+            {
+              "pick": 10
+            },
+            {
+              "pick": 11
+            },
+            {
+              "pick": 12
+            },
+            {
+              "pick": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "amount": 1000,
+      "label": "Classic",
+      "title": "The Classics",
+      "icon": "hamper-classic",
+      "blurb": "A perfume, a candle and something sweet. Gifting’s greatest hits.",
+      "picks": [
+        {
+          "id": 1,
+          "what": "Perfume",
+          "brand": "aks-perfumes",
+          "match": "black blaze"
+        },
+        {
+          "id": 2,
+          "what": "Hot chocolate",
+          "brand": "choco-and-co",
+          "match": "premix"
+        },
+        {
+          "id": 3,
+          "what": "Big scented candle",
+          "brand": "ember-and-oak",
+          "match": "120 ml lavender"
+        },
+        {
+          "id": 4,
+          "what": "Boost cookies",
+          "brand": "kuki",
+          "match": "boost"
+        },
+        {
+          "id": 5,
+          "what": "Perfume",
+          "brand": "madhosh",
+          "match": "flora"
+        },
+        {
+          "id": 6,
+          "what": "Cinnamon hot chocolate",
+          "brand": "mugshot",
+          "match": "cinnamon"
+        },
+        {
+          "id": 7,
+          "what": "Red velvet cookies",
+          "brand": "munchandco",
+          "match": "red velvet"
+        },
+        {
+          "id": 8,
+          "what": "Solid perfume",
+          "brand": "nasha",
+          "match": "chai"
+        },
+        {
+          "id": 9,
+          "what": "Chocolate bark",
+          "brand": "mello",
+          "match": "bark"
+        },
+        {
+          "id": 10,
+          "what": "Festive candle",
+          "brand": "lantern-candles",
+          "match": "christmas"
+        },
+        {
+          "id": 11,
+          "what": "Rose almonds",
+          "brand": "krackle-co",
+          "match": "rose petal"
+        },
+        {
+          "id": 12,
+          "what": "Veggie chips",
+          "brand": "notty-crunch",
+          "match": "mix veggies"
+        }
+      ],
+      "hampers": [
+        {
+          "no": 4,
+          "name": "Cocoa & Cologne",
+          "for": "For the ones who went beyond",
+          "items": [
+            {
+              "pick": 1
+            },
+            {
+              "pick": 2
+            },
+            {
+              "pick": 3
+            },
+            {
+              "pick": 4
+            }
+          ]
+        },
+        {
+          "no": 5,
+          "name": "Cinnamon & Red Velvet",
+          "for": "For a crunch well handled",
+          "items": [
+            {
+              "pick": 5
+            },
+            {
+              "pick": 6
+            },
+            {
+              "pick": 3
+            },
+            {
+              "pick": 7
+            }
+          ]
+        },
+        {
+          "no": 6,
+          "name": "Chai & Chaos",
+          "for": "For every festival on the calendar",
+          "items": [
+            {
+              "pick": 8
+            },
+            {
+              "pick": 9
+            },
+            {
+              "pick": 10
+            },
+            {
+              "pick": 11
+            },
+            {
+              "pick": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "amount": 1500,
+      "label": "Large",
+      "title": "Go Large",
+      "icon": "hamper-large",
+      "blurb": "Five or six things, coffee to cookies, in a crate filled to the top.",
+      "picks": [
+        {
+          "id": 1,
+          "what": "Perfume",
+          "brand": "aks-perfumes",
+          "match": "lucid"
+        },
+        {
+          "id": 2,
+          "what": "Instant coffee",
+          "brand": "the-usual",
+          "match": "hazelnut"
+        },
+        {
+          "id": 3,
+          "what": "Bow mug",
+          "brand": "klayzy-ceramics",
+          "match": "bow mug small"
+        },
+        {
+          "id": 4,
+          "what": "Almond brittle",
+          "brand": "krackle-co",
+          "match": "mango brittle"
+        },
+        {
+          "id": 5,
+          "what": "Quinoa chips",
+          "brand": "crunchd",
+          "match": "quinoa"
+        },
+        {
+          "id": 6,
+          "what": "Perfume",
+          "brand": "madhosh",
+          "match": "flora"
+        },
+        {
+          "id": 7,
+          "what": "Diet Coke sipper",
+          "brand": "the-drunken-mugs",
+          "match": "diet coke"
+        },
+        {
+          "id": 8,
+          "what": "Cookies",
+          "brand": "kuki",
+          "match": "masala"
+        },
+        {
+          "id": 9,
+          "what": "Solid perfume",
+          "brand": "nasha",
+          "match": "bad decisions"
+        },
+        {
+          "id": 10,
+          "what": "Rose tea",
+          "brand": "tea-riffic",
+          "match": "rose"
+        },
+        {
+          "id": 11,
+          "what": "Dry fruits",
+          "brand": "savore",
+          "match": "raisins"
+        },
+        {
+          "id": 12,
+          "what": "Cookies with dip",
+          "brand": "no-biggie",
+          "match": "red velvet"
+        }
+      ],
+      "hampers": [
+        {
+          "no": 7,
+          "name": "Coffee Break",
+          "for": "For a client you just met",
+          "items": [
+            {
+              "pick": 1
+            },
+            {
+              "pick": 2
+            },
+            {
+              "pick": 3
+            },
+            {
+              "pick": 4
+            },
+            {
+              "pick": 5
+            }
+          ]
+        },
+        {
+          "no": 8,
+          "name": "Sips & Spice",
+          "for": "For partners who said yes",
+          "items": [
+            {
+              "pick": 6
+            },
+            {
+              "pick": 2
+            },
+            {
+              "pick": 7
+            },
+            {
+              "pick": 4
+            },
+            {
+              "pick": 8
+            }
+          ]
+        },
+        {
+          "no": 9,
+          "name": "Rose Tea & Cookie Dip",
+          "for": "For clients who stayed",
+          "items": [
+            {
+              "pick": 9
+            },
+            {
+              "pick": 10
+            },
+            {
+              "pick": 7
+            },
+            {
+              "pick": 5
+            },
+            {
+              "pick": 11
+            },
+            {
+              "pick": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "amount": 3000,
+      "label": "Premium",
+      "title": "Premium, Boxed",
+      "icon": "hamper-premium",
+      "blurb": "Seven or eight things in a maroon keepsake box, clothing included.",
+      "picks": [
+        {
+          "id": 1,
+          "what": "Dry fruits",
+          "brand": "savore",
+          "match": "raisins"
+        },
+        {
+          "id": 2,
+          "what": "Tote bag",
+          "brand": "dad-of-bags",
+          "match": "main character"
+        },
+        {
+          "id": 3,
+          "what": "Iced tea",
+          "brand": "juzzle",
+          "match": "berry"
+        },
+        {
+          "id": 4,
+          "what": "Roasted edamame",
+          "brand": "chakle-bro",
+          "match": "peri"
+        },
+        {
+          "id": 5,
+          "what": "Panda mug",
+          "brand": "klayzy-ceramics",
+          "match": "panda"
+        },
+        {
+          "id": 6,
+          "what": "Beaded brooch",
+          "brand": "lumi",
+          "match": "brooch"
+        },
+        {
+          "id": 7,
+          "what": "Saree",
+          "brand": "pehchaan",
+          "match": "mul cotton"
+        },
+        {
+          "id": 8,
+          "what": "Almond brittle",
+          "brand": "krackle-co",
+          "match": "strawberry brittle"
+        },
+        {
+          "id": 9,
+          "what": "Chips",
+          "brand": "chipmonk",
+          "match": "kamal"
+        },
+        {
+          "id": 10,
+          "what": "Big scented candle",
+          "brand": "ember-and-oak",
+          "match": "120 ml lavender"
+        },
+        {
+          "id": 11,
+          "what": "Dark chocolate",
+          "brand": "meltyk",
+          "match": "dark"
+        },
+        {
+          "id": 12,
+          "what": "Diet Coke sipper",
+          "brand": "the-drunken-mugs",
+          "match": "diet coke"
+        },
+        {
+          "id": 13,
+          "what": "Block-printed shirt",
+          "brand": "kirdaaar",
+          "match": "shirt"
+        },
+        {
+          "id": 14,
+          "what": "Rose almonds",
+          "brand": "krackle-co",
+          "match": "rose petal"
+        },
+        {
+          "id": 15,
+          "what": "Socks",
+          "brand": "side-quest",
+          "match": "^socks$"
+        },
+        {
+          "id": 16,
+          "what": "Honey",
+          "brand": "nekt",
+          "match": "^moringa honey"
+        },
+        {
+          "id": 17,
+          "what": "Cinnamon hot chocolate",
+          "brand": "mugshot",
+          "match": "cinnamon"
+        },
+        {
+          "id": 18,
+          "what": "Makhana chips",
+          "brand": "wekrave",
+          "match": "^masala"
+        }
+      ],
+      "hampers": [
+        {
+          "no": 10,
+          "name": "Main Character Energy",
+          "for": "For a well-earned promotion",
+          "items": [
+            {
+              "pick": 1
+            },
+            {
+              "pick": 2
+            },
+            {
+              "pick": 3
+            },
+            {
+              "pick": 4
+            },
+            {
+              "pick": 5
+            },
+            {
+              "pick": 6
+            },
+            {
+              "pick": 7
+            }
+          ]
+        },
+        {
+          "no": 11,
+          "name": "Block Prints & Dark Chocolate",
+          "for": "For years well spent",
+          "items": [
+            {
+              "pick": 8
+            },
+            {
+              "pick": 9
+            },
+            {
+              "pick": 10
+            },
+            {
+              "pick": 11
+            },
+            {
+              "pick": 12
+            },
+            {
+              "pick": 6
+            },
+            {
+              "pick": 13
+            },
+            {
+              "pick": 14
+            }
+          ]
+        },
+        {
+          "no": 12,
+          "name": "Weekend Mode",
+          "for": "For farewells and new roles",
+          "items": [
+            {
+              "pick": 15
+            },
+            {
+              "pick": 16
+            },
+            {
+              "pick": 17
+            },
+            {
+              "pick": 18
+            },
+            {
+              "pick": 12
+            },
+            {
+              "pick": 6
+            },
+            {
+              "pick": 13
+            },
+            {
+              "pick": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "amount": 5000,
+      "label": "Grand",
+      "title": "Grand Gestures",
+      "icon": "hamper-grand",
+      "blurb": "Our biggest boxes. Clothing, perfume and up to ten treats.",
+      "picks": [
+        {
+          "id": 1,
+          "what": "Linen shirt",
+          "brand": "linore",
+          "match": "^shirt$"
+        },
+        {
+          "id": 2,
+          "what": "Perfume",
+          "brand": "aks-perfumes",
+          "match": "after hours"
+        },
+        {
+          "id": 3,
+          "what": "Instant coffee",
+          "brand": "the-usual",
+          "match": "vanilla"
+        },
+        {
+          "id": 4,
+          "what": "Panda mug",
+          "brand": "klayzy-ceramics",
+          "match": "panda"
+        },
+        {
+          "id": 5,
+          "what": "Chilli cashews",
+          "brand": "krackle-co",
+          "match": "cashew chilli"
+        },
+        {
+          "id": 6,
+          "what": "Crispy Bingo",
+          "brand": "haulties",
+          "match": "crispy bingo"
+        },
+        {
+          "id": 7,
+          "what": "Saree",
+          "brand": "pehchaan",
+          "match": "mul cotton"
+        },
+        {
+          "id": 8,
+          "what": "Perfume",
+          "brand": "madhosh",
+          "match": "flora"
+        },
+        {
+          "id": 9,
+          "what": "Diet Coke sipper",
+          "brand": "the-drunken-mugs",
+          "match": "diet coke"
+        },
+        {
+          "id": 10,
+          "what": "Cookies",
+          "brand": "kuki",
+          "match": "gulkand"
+        },
+        {
+          "id": 11,
+          "what": "Festive candle",
+          "brand": "lantern-candles",
+          "match": "christmas"
+        },
+        {
+          "id": 12,
+          "what": "Honey",
+          "brand": "nekt",
+          "match": "^moringa honey"
+        },
+        {
+          "id": 13,
+          "what": "Beaded tank top",
+          "brand": "lumi",
+          "match": "fries tank"
+        },
+        {
+          "id": 14,
+          "what": "Perfume",
+          "brand": "nasha",
+          "match": "espresso"
+        },
+        {
+          "id": 15,
+          "what": "Rose tea",
+          "brand": "tea-riffic",
+          "match": "rose"
+        },
+        {
+          "id": 16,
+          "what": "Dry fruits",
+          "brand": "savore",
+          "match": "raisins"
+        },
+        {
+          "id": 17,
+          "what": "Cookies with dip",
+          "brand": "no-biggie",
+          "match": "red velvet"
+        }
+      ],
+      "hampers": [
+        {
+          "no": 13,
+          "name": "Linen & After Hours",
+          "for": "For the leadership team",
+          "items": [
+            {
+              "pick": 1
+            },
+            {
+              "pick": 2
+            },
+            {
+              "pick": 3
+            },
+            {
+              "pick": 4
+            },
+            {
+              "pick": 5
+            },
+            {
+              "pick": 6,
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "no": 14,
+          "name": "Saree & Sweet Things",
+          "for": "For your top performers",
+          "items": [
+            {
+              "pick": 7
+            },
+            {
+              "pick": 8
+            },
+            {
+              "pick": 3
+            },
+            {
+              "pick": 9
+            },
+            {
+              "pick": 5
+            },
+            {
+              "pick": 10,
+              "qty": 2
+            },
+            {
+              "pick": 11
+            },
+            {
+              "pick": 12
+            }
+          ]
+        },
+        {
+          "no": 15,
+          "name": "The Full Spread",
+          "for": "For the people who carried the year",
+          "items": [
+            {
+              "pick": 13
+            },
+            {
+              "pick": 14
+            },
+            {
+              "pick": 15
+            },
+            {
+              "pick": 9,
+              "qty": 2
+            },
+            {
+              "pick": 16
+            },
+            {
+              "pick": 17
+            },
+            {
+              "pick": 11
+            },
+            {
+              "pick": 12
+            },
+            {
+              "pick": 6,
+              "qty": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

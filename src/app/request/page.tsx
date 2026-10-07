@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { getCatalog } from "@/lib/catalog";
 import type { ListItem } from "@/lib/request-list";
 import { decodeList } from "@/lib/share";
+import { hamperListItem, isHamper, resolveHamper } from "@/lib/hampers";
+import { pickPhotos } from "@/lib/hamper-photos";
 import { GiftListFlow } from "@/components/request/gift-list-flow";
 
 export const metadata: Metadata = { title: "Your gift list" };
@@ -13,9 +15,15 @@ export default async function RequestPage({ searchParams }: { searchParams: Sear
 
   // A shared list arrives as ids and quantities only; names and prices are
   // looked up here, so a doctored link can't put a made-up price on screen.
+  const photos = pickPhotos(catalog);
   const shared: ListItem[] =
     typeof sp.list === "string"
       ? decodeList(sp.list).flatMap((line) => {
+          if (isHamper(line.brand)) {
+            const h = resolveHamper(line.sku);
+            if (!h) return [];
+            return [{ ...hamperListItem(h, photos[`${h.amount}:${h.lines[0].id}`] ?? null), qty: line.qty }];
+          }
           const hit = catalog.findVariant(line.brand, line.sku);
           if (!hit) return [];
           return [

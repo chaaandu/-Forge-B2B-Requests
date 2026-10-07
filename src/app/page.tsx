@@ -11,11 +11,13 @@ import { Journey } from "@/components/home/journey";
 import { ImpactCalculator } from "@/components/home/impact-calculator";
 import { CategoryIndex } from "@/components/home/category-index";
 import { Reels } from "@/components/home/reels";
-import { ListingRail } from "@/components/home/listing-rail";
+import { HamperRail } from "@/components/hampers/hamper-rail";
 import { SplitReveal } from "@/components/motion/reveal";
 import { VelocityMarquee } from "@/components/motion/velocity-marquee";
 import { Roll } from "@/components/layout/header";
 import { PRICE_BANDS, inBand } from "@/lib/price-bands";
+import { HAMPERS } from "@/lib/hampers";
+import { pickPhotos } from "@/lib/hamper-photos";
 
 // Must be a literal for Next to read it; matches REFRESH_SECONDS in lib/catalog.
 export const revalidate = 600;
@@ -181,16 +183,13 @@ export default async function Home() {
             Hampers, <em className="text-royal">sorted.</em>
           </SplitReveal>
           <div className="max-w-sm">
-            <p className="text-lg leading-snug text-ink/65">Pick a box, we’ll do the rest.</p>
-            <Link
-              href="/catalogue?collection=hampers"
-              className="group mt-3 inline-flex whitespace-nowrap text-sm font-semibold text-violet"
-            >
-              <Roll>{`See all ${hampers.length}`}</Roll>
+            <p className="text-lg leading-snug text-ink/65">Pick a box, we’ll do the rest. Or build your own.</p>
+            <Link href="/hampers" className="group mt-3 inline-flex whitespace-nowrap text-sm font-semibold text-violet">
+              <Roll>{`See all ${HAMPERS.length}`}</Roll>
             </Link>
           </div>
         </div>
-        <ListingRail listings={hampers.slice(0, 14)} brands={catalog.brands} />
+        <HamperRail photos={pickPhotos(catalog)} />
       </section>
 
       <div className="mt-28">
