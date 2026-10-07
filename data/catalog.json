@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T12:30:33.222Z",
+ "generatedAt": "2026-10-07T14:20:38.378Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -5648,30 +5648,6 @@
    "featured": false
   },
   {
-   "slug": "krackle-co-200g-jar",
-   "brand": "krackle-co",
-   "title": "200g Jar",
-   "description": null,
-   "collection": "snacks",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75ac06b1-b473-4e40-b8e9-99117038d705.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "200G-JAR",
-     "label": "200g Jar",
-     "options": [],
-     "priceMinor": 34900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75ac06b1-b473-4e40-b8e9-99117038d705.jpg"
-    }
-   ],
-   "priceFromMinor": 34900,
-   "priceToMinor": 34900,
-   "featured": false
-  },
-  {
    "slug": "krackle-co-almond-blueberry",
    "brand": "krackle-co",
    "title": "Almond Blueberry",
@@ -5912,63 +5888,6 @@
    ],
    "priceFromMinor": 7900,
    "priceToMinor": 39900,
-   "featured": false
-  },
-  {
-   "slug": "krackle-co-almonds-cashews",
-   "brand": "krackle-co",
-   "title": "Almonds Cashews",
-   "description": null,
-   "collection": "snacks",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1705f771-94bd-418d-a6c1-744a764cfca6.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/487b0bc2-281e-4ff6-8adf-ba9d038fd65e.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75571ccc-91c5-4f4f-8b53-4dd71b6f3494.jpg"
-   ],
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "25g",
-      "75g",
-      "100g"
-     ]
-    }
-   ],
-   "variants": [
-    {
-     "sku": "ALMONDS-CASHEWS-25G",
-     "label": "25g",
-     "options": [
-      "25g"
-     ],
-     "priceMinor": 7900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/487b0bc2-281e-4ff6-8adf-ba9d038fd65e.jpg"
-    },
-    {
-     "sku": "ALMONDS-CASHEWS-75G",
-     "label": "75g",
-     "options": [
-      "75g"
-     ],
-     "priceMinor": 16900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75571ccc-91c5-4f4f-8b53-4dd71b6f3494.jpg"
-    },
-    {
-     "sku": "ALMONDS-CASHEWS-100G",
-     "label": "100g",
-     "options": [
-      "100g"
-     ],
-     "priceMinor": 19900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1705f771-94bd-418d-a6c1-744a764cfca6.jpg"
-    }
-   ],
-   "priceFromMinor": 7900,
-   "priceToMinor": 19900,
    "featured": false
   },
   {
@@ -6377,6 +6296,28 @@
    "featured": false
   },
   {
+   "slug": "krackle-co-200g-jar",
+   "brand": "krackle-co",
+   "title": "200g Jar",
+   "description": null,
+   "collection": "snacks",
+   "images": [],
+   "options": [],
+   "variants": [
+    {
+     "sku": "200G-JAR",
+     "label": "200g Jar",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": null
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
+   "featured": false
+  },
+  {
    "slug": "krackle-co-almond-50g",
    "brand": "krackle-co",
    "title": "Almond 50g",
@@ -6395,6 +6336,59 @@
     }
    ],
    "priceFromMinor": 19900,
+   "priceToMinor": 19900,
+   "featured": false
+  },
+  {
+   "slug": "krackle-co-almonds-cashews",
+   "brand": "krackle-co",
+   "title": "Almonds Cashews",
+   "description": null,
+   "collection": "snacks",
+   "images": [],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "25g",
+      "75g",
+      "100g"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "ALMONDS-CASHEWS-25G",
+     "label": "25g",
+     "options": [
+      "25g"
+     ],
+     "priceMinor": 7900,
+     "compareAtMinor": null,
+     "image": null
+    },
+    {
+     "sku": "ALMONDS-CASHEWS-75G",
+     "label": "75g",
+     "options": [
+      "75g"
+     ],
+     "priceMinor": 16900,
+     "compareAtMinor": null,
+     "image": null
+    },
+    {
+     "sku": "ALMONDS-CASHEWS-100G",
+     "label": "100g",
+     "options": [
+      "100g"
+     ],
+     "priceMinor": 19900,
+     "compareAtMinor": null,
+     "image": null
+    }
+   ],
+   "priceFromMinor": 7900,
    "priceToMinor": 19900,
    "featured": false
   },
@@ -9880,7 +9874,7 @@
    ],
    "priceFromMinor": 19900,
    "priceToMinor": 19900,
-   "featured": false
+   "featured": true
   },
   {
    "slug": "notty-crunch-mexican-bites-125g",
@@ -9913,8 +9907,7 @@
    "description": null,
    "collection": "snacks",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bd3ebe99-fbad-4ced-80e0-34f31176f388.png",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/732265b9-4640-4fc7-b0c3-d8648350a18d.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bd3ebe99-fbad-4ced-80e0-34f31176f388.png"
    ],
    "options": [
     {
@@ -9944,12 +9937,12 @@
      ],
      "priceMinor": 14900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/732265b9-4640-4fc7-b0c3-d8648350a18d.jpg"
+     "image": null
     }
    ],
    "priceFromMinor": 8900,
    "priceToMinor": 14900,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "notty-crunch-peri-peri-1-kg",

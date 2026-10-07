@@ -51,9 +51,9 @@ export default async function Home() {
   // The wall the camera pulls back to. Choco & Co opens it: their photos
   // are the cleanest in the catalogue, which is what matters when one of
   // them is filling the screen. Juzzle and Haulties sit this one out, and
-  // ChipMonk takes their place.
+  // ChipMonk and Munch & Co take their place.
   const SKIP = new Set(["juzzle", "haulties"]);
-  const FAVOUR = ["choco-and-co", "chipmonk"];
+  const FAVOUR = ["choco-and-co", "chipmonk", "munchandco"];
   const withPhoto = (slug: string) => catalog.listingsOf(slug).filter((l) => l.images[0]);
   const chocos = withPhoto("choco-and-co");
   const opener = chocos.find((l) => /hamper/i.test(l.title)) ?? chocos[0];
