@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T06:30:59.750Z",
+ "generatedAt": "2026-10-09T06:32:19.274Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -941,7 +941,7 @@
    "description": null,
    "collection": "snacks",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/622f6607-3b2a-4f50-a714-a5a613f0b7fd.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74c3a5e9-cf9b-466f-ba6b-952fc8a6e484.jpg"
    ],
    "options": [
     {
@@ -961,7 +961,7 @@
      ],
      "priceMinor": 7900,
      "compareAtMinor": 9900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/622f6607-3b2a-4f50-a714-a5a613f0b7fd.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74c3a5e9-cf9b-466f-ba6b-952fc8a6e484.jpg"
     },
     {
      "sku": "BARBEQUE-EDAMAME-SEEDS-100G",
@@ -971,7 +971,7 @@
      ],
      "priceMinor": 19900,
      "compareAtMinor": 22000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/622f6607-3b2a-4f50-a714-a5a613f0b7fd.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74c3a5e9-cf9b-466f-ba6b-952fc8a6e484.jpg"
     }
    ],
    "priceFromMinor": 7900,
@@ -985,7 +985,7 @@
    "description": null,
    "collection": "snacks",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/063d77fd-a514-4a30-8e92-4cddb5fa2dab.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/48a28784-7f08-4904-923d-de2a83eb3226.jpg"
    ],
    "options": [
     {
@@ -1005,7 +1005,7 @@
      ],
      "priceMinor": 7900,
      "compareAtMinor": 9900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/063d77fd-a514-4a30-8e92-4cddb5fa2dab.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/48a28784-7f08-4904-923d-de2a83eb3226.jpg"
     },
     {
      "sku": "CHEESE-EDAMAME-SEEDS-100G",
@@ -1015,7 +1015,7 @@
      ],
      "priceMinor": 19900,
      "compareAtMinor": 22000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/063d77fd-a514-4a30-8e92-4cddb5fa2dab.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/48a28784-7f08-4904-923d-de2a83eb3226.jpg"
     }
    ],
    "priceFromMinor": 7900,
@@ -1029,7 +1029,7 @@
    "description": null,
    "collection": "snacks",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/54e4fcda-d60c-44b5-87d3-31a5fd030387.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f703c43f-6c38-4fac-910e-470f6197c373.jpg"
    ],
    "options": [
     {
@@ -1049,7 +1049,7 @@
      ],
      "priceMinor": 7900,
      "compareAtMinor": 9900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/54e4fcda-d60c-44b5-87d3-31a5fd030387.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f703c43f-6c38-4fac-910e-470f6197c373.jpg"
     },
     {
      "sku": "PERI-PERI-EDAMAME-SEEDS-100G",
@@ -1059,7 +1059,7 @@
      ],
      "priceMinor": 19900,
      "compareAtMinor": 22000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/54e4fcda-d60c-44b5-87d3-31a5fd030387.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f703c43f-6c38-4fac-910e-470f6197c373.jpg"
     }
    ],
    "priceFromMinor": 7900,
@@ -3415,7 +3415,10 @@
    "description": null,
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4b379ab5-1f03-4b09-89b0-1da20653a390.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/01895aaf-7193-45df-9052-87561ba1b0c4.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f2897210-3031-4ec7-8be5-f940722826ef.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5c00d6e8-cd14-428d-aa2d-c9eac6ed8c52.webp",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/30e24ad2-405f-40a2-941b-d78dc2fb0a5a.webp"
    ],
    "options": [],
    "variants": [
@@ -3425,7 +3428,7 @@
      "options": [],
      "priceMinor": 119900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4b379ab5-1f03-4b09-89b0-1da20653a390.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/01895aaf-7193-45df-9052-87561ba1b0c4.webp"
     }
    ],
    "priceFromMinor": 119900,
@@ -8552,8 +8555,8 @@
      "options": [
       "50g"
      ],
-     "priceMinor": 19900,
-     "compareAtMinor": 24900,
+     "priceMinor": 15000,
+     "compareAtMinor": 20900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/be8b2e23-bcf2-4faf-b399-816f634fa261.jpg"
     },
     {
@@ -8577,7 +8580,7 @@
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d7cf17d1-0e79-4b46-a570-a431d74a6acc.png"
     }
    ],
-   "priceFromMinor": 19900,
+   "priceFromMinor": 15000,
    "priceToMinor": 54900,
    "featured": true
   },
@@ -8608,8 +8611,8 @@
      "options": [
       "50g"
      ],
-     "priceMinor": 19900,
-     "compareAtMinor": 27900,
+     "priceMinor": 15000,
+     "compareAtMinor": 20900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b2ce93f0-5c73-47e6-9ffe-23839a54c327.png"
     },
     {
@@ -8633,7 +8636,7 @@
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b2ce93f0-5c73-47e6-9ffe-23839a54c327.png"
     }
    ],
-   "priceFromMinor": 19900,
+   "priceFromMinor": 15000,
    "priceToMinor": 59900,
    "featured": false
   },
@@ -8664,8 +8667,8 @@
      "options": [
       "25g"
      ],
-     "priceMinor": 19900,
-     "compareAtMinor": 21900,
+     "priceMinor": 9900,
+     "compareAtMinor": 14900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5b1398a5-a30b-4680-8b5f-1c6835ae313b.png"
     },
     {
@@ -8689,7 +8692,7 @@
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5b1398a5-a30b-4680-8b5f-1c6835ae313b.png"
     }
    ],
-   "priceFromMinor": 19900,
+   "priceFromMinor": 9900,
    "priceToMinor": 79900,
    "featured": false
   },
