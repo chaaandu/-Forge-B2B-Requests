@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-09T06:32:19.274Z",
+ "generatedAt": "2026-10-10T06:14:11.229Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -935,6 +935,30 @@
    "featured": true
   },
   {
+   "slug": "chakle-bro-barbeque",
+   "brand": "chakle-bro",
+   "title": "Barbeque",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/089805cf-790c-4ad0-a7e8-7d3fd77b4de3.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BABEQUE",
+     "label": "Barbeque",
+     "options": [],
+     "priceMinor": 24900,
+     "compareAtMinor": 29900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/089805cf-790c-4ad0-a7e8-7d3fd77b4de3.jpg"
+    }
+   ],
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
+   "featured": false
+  },
+  {
    "slug": "chakle-bro-barbeque-edamame-seeds",
    "brand": "chakle-bro",
    "title": "Barbeque Edamame Seeds",
@@ -979,6 +1003,30 @@
    "featured": false
   },
   {
+   "slug": "chakle-bro-cheese",
+   "brand": "chakle-bro",
+   "title": "Cheese",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/563ec9eb-9378-4340-8d15-de4681e0bfaa.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CHEESE",
+     "label": "Cheese",
+     "options": [],
+     "priceMinor": 24900,
+     "compareAtMinor": 29900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/563ec9eb-9378-4340-8d15-de4681e0bfaa.jpg"
+    }
+   ],
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
+   "featured": false
+  },
+  {
    "slug": "chakle-bro-cheese-edamame-seeds",
    "brand": "chakle-bro",
    "title": "Cheese Edamame Seeds",
@@ -1020,6 +1068,30 @@
    ],
    "priceFromMinor": 7900,
    "priceToMinor": 19900,
+   "featured": false
+  },
+  {
+   "slug": "chakle-bro-peri-peri",
+   "brand": "chakle-bro",
+   "title": "Peri Peri",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bf6043dd-82ba-4d99-8f7a-a6390834d831.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PERI-PERI",
+     "label": "Peri Peri",
+     "options": [],
+     "priceMinor": 24900,
+     "compareAtMinor": 29900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bf6043dd-82ba-4d99-8f7a-a6390834d831.jpg"
+    }
+   ],
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
    "featured": false
   },
   {
@@ -6740,6 +6812,31 @@
    "featured": true
   },
   {
+   "slug": "lantern-candles-cafe-latte",
+   "brand": "lantern-candles",
+   "title": "Cafe Latte",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7016d319-28e8-4ebc-8534-e9be56439d4c.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0458259c-54bd-4d27-b0db-a3eb531365fc.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CAFE-LATTE",
+     "label": "Cafe Latte",
+     "options": [],
+     "priceMinor": 59900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7016d319-28e8-4ebc-8534-e9be56439d4c.png"
+    }
+   ],
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
+   "featured": true
+  },
+  {
    "slug": "lantern-candles-christmas-candle",
    "brand": "lantern-candles",
    "title": "Christmas Candle",
@@ -6761,7 +6858,32 @@
    ],
    "priceFromMinor": 59900,
    "priceToMinor": 59900,
-   "featured": true
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-dark-pink-peony",
+   "brand": "lantern-candles",
+   "title": "Dark Pink Peony",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/810fe53c-e19d-4f2a-8da1-41dba7e3ef9d.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/90b577f0-0ae9-4d93-98f2-aa160dbcc909.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DARK-PINK-PEONY",
+     "label": "Dark Pink Peony",
+     "options": [],
+     "priceMinor": 6000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/810fe53c-e19d-4f2a-8da1-41dba7e3ef9d.png"
+    }
+   ],
+   "priceFromMinor": 6000,
+   "priceToMinor": 6000,
+   "featured": false
   },
   {
    "slug": "lantern-candles-diwali-flower-candle",
@@ -6860,6 +6982,31 @@
    "featured": false
   },
   {
+   "slug": "lantern-candles-light-pink-peony",
+   "brand": "lantern-candles",
+   "title": "Light Pink Peony",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/acdf1605-4c7c-4de7-9bc6-9aa4465b8505.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/20eddde6-82b8-4098-bf89-524fe53262fe.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LIGHT-PINK-PEONY",
+     "label": "Light Pink Peony",
+     "options": [],
+     "priceMinor": 6000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/acdf1605-4c7c-4de7-9bc6-9aa4465b8505.png"
+    }
+   ],
+   "priceFromMinor": 6000,
+   "priceToMinor": 6000,
+   "featured": false
+  },
+  {
    "slug": "lantern-candles-liquid-sunshine",
    "brand": "lantern-candles",
    "title": "Liquid Sunshine",
@@ -6881,6 +7028,31 @@
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-mattcha-latte",
+   "brand": "lantern-candles",
+   "title": "Mattcha Latte",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/047dd967-8776-457e-9b44-e14605fd678d.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3a44c13a-688c-4064-bbca-821731003487.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MATTCHA-LATTE",
+     "label": "Mattcha Latte",
+     "options": [],
+     "priceMinor": 59900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/047dd967-8776-457e-9b44-e14605fd678d.png"
+    }
+   ],
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
    "featured": false
   },
   {
@@ -6980,6 +7152,30 @@
    "featured": false
   },
   {
+   "slug": "lantern-candles-timber-bowl",
+   "brand": "lantern-candles",
+   "title": "Timber Bowl",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/727bfca2-ebf1-4fce-b83d-6b6dc62a542b.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TIMBER-BOWL",
+     "label": "Timber Bowl",
+     "options": [],
+     "priceMinor": 59900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/727bfca2-ebf1-4fce-b83d-6b6dc62a542b.jpg"
+    }
+   ],
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
+   "featured": false
+  },
+  {
    "slug": "lantern-candles-verdant",
    "brand": "lantern-candles",
    "title": "Verdant",
@@ -7001,6 +7197,31 @@
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-white-peony",
+   "brand": "lantern-candles",
+   "title": "White Peony",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d9e882a0-d3c1-43a3-a1e7-2082b75a9577.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/64fe81fc-2adf-4b2d-b39f-c7bad7ff7c21.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WHITE-PEONY",
+     "label": "White Peony",
+     "options": [],
+     "priceMinor": 6000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d9e882a0-d3c1-43a3-a1e7-2082b75a9577.png"
+    }
+   ],
+   "priceFromMinor": 6000,
+   "priceToMinor": 6000,
    "featured": false
   },
   {
@@ -9798,13 +10019,13 @@
      "sku": "MINI-CHOCOCHIP-COOKIES-WITH-DIP",
      "label": "Choco Chunk Cookies",
      "options": [],
-     "priceMinor": 24900,
+     "priceMinor": 25900,
      "compareAtMinor": 26900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4cec1fe7-2b98-453b-892b-40f7e381e136.jpg"
     }
    ],
-   "priceFromMinor": 24900,
-   "priceToMinor": 24900,
+   "priceFromMinor": 25900,
+   "priceToMinor": 25900,
    "featured": false
   },
   {
@@ -9822,13 +10043,13 @@
      "sku": "DOUBLE-CHOCO-CHIP-COOKIES",
      "label": "Double Choco Chip Cookies",
      "options": [],
-     "priceMinor": 26900,
+     "priceMinor": 27900,
      "compareAtMinor": 28900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d58951dc-8f64-4587-9209-340c8720d1af.jpg"
     }
    ],
-   "priceFromMinor": 26900,
-   "priceToMinor": 26900,
+   "priceFromMinor": 27900,
+   "priceToMinor": 27900,
    "featured": true
   },
   {
@@ -11930,17 +12151,17 @@
     {
      "name": "Weight",
      "values": [
-      "50",
-      "100"
+      "50g",
+      "100g"
      ]
     }
    ],
    "variants": [
     {
      "sku": "HAZELNUT-50",
-     "label": "50",
+     "label": "50g",
      "options": [
-      "50"
+      "50g"
      ],
      "priceMinor": 25000,
      "compareAtMinor": null,
@@ -11948,9 +12169,9 @@
     },
     {
      "sku": "HAZELNUT-100",
-     "label": "100",
+     "label": "100g",
      "options": [
-      "100"
+      "100g"
      ],
      "priceMinor": 39900,
      "compareAtMinor": null,
