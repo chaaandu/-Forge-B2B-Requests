@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-10T06:14:11.229Z",
+ "generatedAt": "2026-10-11T06:13:08.112Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -5075,33 +5075,58 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-blue-mugs",
+   "slug": "klayzy-ceramics-bee-mug",
    "brand": "klayzy-ceramics",
-   "title": "Blue Mugs",
+   "title": "Bee Mug",
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4df2729a-6eb6-48cc-a3f3-c27e493e3183.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/26f10794-3097-4599-8d5c-bd53f3cf97ba.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6f65a563-3d0b-4f55-9734-a91945290422.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "BLUE-MUGS",
-     "label": "Blue Mugs",
+     "sku": "BEE-MUG",
+     "label": "Bee Mug",
      "options": [],
      "priceMinor": 44900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4df2729a-6eb6-48cc-a3f3-c27e493e3183.jpg"
+     "compareAtMinor": 69900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/26f10794-3097-4599-8d5c-bd53f3cf97ba.jpg"
     }
    ],
    "priceFromMinor": 44900,
    "priceToMinor": 44900,
-   "featured": true
+   "featured": false
   },
   {
-   "slug": "klayzy-ceramics-bow-mug-big",
+   "slug": "klayzy-ceramics-big-blue-bow-mug",
    "brand": "klayzy-ceramics",
-   "title": "Bow Mug Big",
+   "title": "Big Blue Bow Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/39f177c1-1fee-471d-8ebb-fe1f69e98758.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BIG-BLUE-BOW-MUG",
+     "label": "Big Blue Bow Mug",
+     "options": [],
+     "priceMinor": 59900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/39f177c1-1fee-471d-8ebb-fe1f69e98758.jpg"
+    }
+   ],
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-big-bow-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Big Bow Mug",
    "description": null,
    "collection": "home",
    "images": [
@@ -5111,7 +5136,7 @@
    "variants": [
     {
      "sku": "BOW-MUG-BIG",
-     "label": "Bow Mug Big",
+     "label": "Big Bow Mug",
      "options": [],
      "priceMinor": 59900,
      "compareAtMinor": null,
@@ -5123,27 +5148,96 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-bow-mug-small",
+   "slug": "klayzy-ceramics-black-colosseum-jewellery-tray",
    "brand": "klayzy-ceramics",
-   "title": "Bow Mug Small",
+   "title": "Black Colosseum Jewellery Tray",
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f3df694a-7fa9-44ea-b0c7-8e01d34e8be3.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ef473db2-e006-4c9c-beac-21c4508a0416.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "BOW-MUG-SMALL",
-     "label": "Bow Mug Small",
+     "sku": "BLACK-COLOSSEUM-JEWELLERY-TRAY",
+     "label": "Black Colosseum Jewellery Tray",
      "options": [],
-     "priceMinor": 49900,
+     "priceMinor": 89900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f3df694a-7fa9-44ea-b0c7-8e01d34e8be3.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ef473db2-e006-4c9c-beac-21c4508a0416.jpg"
     }
    ],
-   "priceFromMinor": 49900,
-   "priceToMinor": 49900,
+   "priceFromMinor": 89900,
+   "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-blue-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Blue Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4df2729a-6eb6-48cc-a3f3-c27e493e3183.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLUE-MUGS",
+     "label": "Blue Mug",
+     "options": [],
+     "priceMinor": 44900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4df2729a-6eb6-48cc-a3f3-c27e493e3183.jpg"
+    }
+   ],
+   "priceFromMinor": 44900,
+   "priceToMinor": 44900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-bow-bowl",
+   "brand": "klayzy-ceramics",
+   "title": "Bow Bowl",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6fc50ebf-8c2f-4da2-8a9a-c529d5d4d850.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8f00b524-ae77-47ea-af0c-358da9216753.jpg"
+   ],
+   "options": [
+    {
+     "name": "Colour",
+     "values": [
+      "Pink",
+      "Blue"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "BOW-BOWL-PINK",
+     "label": "Pink",
+     "options": [
+      "Pink"
+     ],
+     "priceMinor": 54900,
+     "compareAtMinor": 79900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6fc50ebf-8c2f-4da2-8a9a-c529d5d4d850.jpg"
+    },
+    {
+     "sku": "BOW-BOWL-BLUE",
+     "label": "Blue",
+     "options": [
+      "Blue"
+     ],
+     "priceMinor": 54900,
+     "compareAtMinor": 79900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6fc50ebf-8c2f-4da2-8a9a-c529d5d4d850.jpg"
+    }
+   ],
+   "priceFromMinor": 54900,
+   "priceToMinor": 54900,
    "featured": false
   },
   {
@@ -5195,23 +5289,49 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-colosseum-table-topper",
+   "slug": "klayzy-ceramics-ceramic-jewellery-tray",
    "brand": "klayzy-ceramics",
-   "title": "Colosseum Table Topper",
+   "title": "Ceramic Jewellery Tray",
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/271d5634-f778-4123-83c0-f9e0900d21d7.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2e9a16aa-3e4a-4220-8bce-6a8262be4330.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CERAMIC-ASHTRAY",
+     "label": "Ceramic Jewellery Tray",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2e9a16aa-3e4a-4220-8bce-6a8262be4330.jpg"
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-colosseum-jewellery-tray",
+   "brand": "klayzy-ceramics",
+   "title": "Colosseum Jewellery Tray",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/825c235e-1c6c-493a-8554-51eea299fc38.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/029eed28-6f5d-4928-ba35-d1dde28073ad.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eda7c5ff-398b-4363-8c8d-85a003adc7bd.jpg"
    ],
    "options": [],
    "variants": [
     {
      "sku": "COLOSSEUM-ASHTRAY",
-     "label": "Colosseum Table Topper",
+     "label": "Colosseum Jewellery Tray",
      "options": [],
      "priceMinor": 89900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/271d5634-f778-4123-83c0-f9e0900d21d7.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/825c235e-1c6c-493a-8554-51eea299fc38.jpg"
     }
    ],
    "priceFromMinor": 89900,
@@ -5219,28 +5339,64 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-diet-coke-can-with-straw",
+   "slug": "klayzy-ceramics-cyclone-jewellery-tray",
    "brand": "klayzy-ceramics",
-   "title": "Diet Coke Can With Straw",
+   "title": "Cyclone Jewellery Tray",
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b4163411-d200-476d-aef0-b8e536ef0057.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2bdd4287-74db-4577-8560-e75d1b997377.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9efb2470-86ec-403d-a1a9-9581a30ec8b6.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6fcde4c2-97d3-42f4-91a0-a41ba79d5140.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e0689bd1-0ea1-4b53-be77-56a5c2ec052b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/00e4f49c-e831-46f4-a90d-6918482dcd3b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6ff7b0ca-75fe-430c-a019-a37411cafbdd.jpg"
    ],
-   "options": [],
-   "variants": [
+   "options": [
     {
-     "sku": "DIET-COKE-CAN-WITH-STRAW",
-     "label": "Diet Coke Can With Straw",
-     "options": [],
-     "priceMinor": 59900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b4163411-d200-476d-aef0-b8e536ef0057.jpg"
+     "name": "Colour",
+     "values": [
+      "Black",
+      "Blue",
+      "Pink"
+     ]
     }
    ],
-   "priceFromMinor": 59900,
-   "priceToMinor": 59900,
-   "featured": false
+   "variants": [
+    {
+     "sku": "CYCLONE-JEWELLERY-TRAY-BLACK",
+     "label": "Black",
+     "options": [
+      "Black"
+     ],
+     "priceMinor": 84900,
+     "compareAtMinor": 109900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2bdd4287-74db-4577-8560-e75d1b997377.jpg"
+    },
+    {
+     "sku": "CYCLONE-JEWELLERY-TRAY-BLUE",
+     "label": "Blue",
+     "options": [
+      "Blue"
+     ],
+     "priceMinor": 84900,
+     "compareAtMinor": 109900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2bdd4287-74db-4577-8560-e75d1b997377.jpg"
+    },
+    {
+     "sku": "CYCLONE-JEWELLERY-TRAY-PINK",
+     "label": "Pink",
+     "options": [
+      "Pink"
+     ],
+     "priceMinor": 84900,
+     "compareAtMinor": 109900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2bdd4287-74db-4577-8560-e75d1b997377.jpg"
+    }
+   ],
+   "priceFromMinor": 84900,
+   "priceToMinor": 84900,
+   "featured": true
   },
   {
    "slug": "klayzy-ceramics-diet-coke-tumbler",
@@ -5291,30 +5447,6 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-duck-mug-yellow",
-   "brand": "klayzy-ceramics",
-   "title": "Duck Mug Yellow",
-   "description": null,
-   "collection": "home",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b9030908-50b9-4b88-83c0-c38a5fc10ebb.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "DUCK-MUG-YELLOW",
-     "label": "Duck Mug Yellow",
-     "options": [],
-     "priceMinor": 49900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b9030908-50b9-4b88-83c0-c38a5fc10ebb.jpg"
-    }
-   ],
-   "priceFromMinor": 49900,
-   "priceToMinor": 49900,
-   "featured": false
-  },
-  {
    "slug": "klayzy-ceramics-evil-eye-mug",
    "brand": "klayzy-ceramics",
    "title": "Evil Eye Mug",
@@ -5339,23 +5471,73 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-half-face-table-topper",
+   "slug": "klayzy-ceramics-evil-eye-tumbler",
    "brand": "klayzy-ceramics",
-   "title": "Half Face Table Topper",
+   "title": "Evil Eye Tumbler",
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff4be6ea-a4cf-4bb8-b397-313eec3a4400.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a6b698ab-c228-411c-8b15-1c728da04eeb.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "EVIL-EYE-TUMBLER",
+     "label": "Evil Eye Tumbler",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": 74900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a6b698ab-c228-411c-8b15-1c728da04eeb.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-geo-jar",
+   "brand": "klayzy-ceramics",
+   "title": "Geo Jar",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fff91ae1-02b2-4c33-8ab6-ce471a027481.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3d33c8f6-14cf-428b-aa1a-64e8416b72da.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "GEO-JAR",
+     "label": "Geo Jar",
+     "options": [],
+     "priceMinor": 44900,
+     "compareAtMinor": 69900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fff91ae1-02b2-4c33-8ab6-ce471a027481.jpg"
+    }
+   ],
+   "priceFromMinor": 44900,
+   "priceToMinor": 44900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-half-face-jewellery-tray",
+   "brand": "klayzy-ceramics",
+   "title": "Half Face Jewellery Tray",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1af6b4de-2324-4d8c-a406-82e164fae74b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a29acdc-b65a-4890-a31c-8638fefe9dd6.jpg"
    ],
    "options": [],
    "variants": [
     {
      "sku": "HALF-FACE-ASHTRAY",
-     "label": "Half Face Table Topper",
+     "label": "Half Face Jewellery Tray",
      "options": [],
      "priceMinor": 79900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff4be6ea-a4cf-4bb8-b397-313eec3a4400.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1af6b4de-2324-4d8c-a406-82e164fae74b.jpg"
     }
    ],
    "priceFromMinor": 79900,
@@ -5363,27 +5545,76 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-hand-table-topper",
+   "slug": "klayzy-ceramics-hand-jewellery-tray",
    "brand": "klayzy-ceramics",
-   "title": "Hand Table Topper",
+   "title": "Hand Jewellery Tray",
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc2b76ba-158c-461e-8a43-2c04de285ef0.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/af6e5efb-9f68-43e8-87f4-56a29f3e5937.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/743bbea6-8e0d-49cc-b1f4-47bc81c2a582.jpg"
    ],
    "options": [],
    "variants": [
     {
      "sku": "HAND-ASHTRAY",
-     "label": "Hand Table Topper",
+     "label": "Hand Jewellery Tray",
      "options": [],
      "priceMinor": 89900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bc2b76ba-158c-461e-8a43-2c04de285ef0.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/af6e5efb-9f68-43e8-87f4-56a29f3e5937.jpg"
     }
    ],
    "priceFromMinor": 89900,
    "priceToMinor": 89900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-heart-pouch-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Heart Pouch Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/87ecd74b-43f0-4e18-9874-8e6cc1fbd887.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "HEART-POUCH-MUG",
+     "label": "Heart Pouch Mug",
+     "options": [],
+     "priceMinor": 44900,
+     "compareAtMinor": 69900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/87ecd74b-43f0-4e18-9874-8e6cc1fbd887.jpg"
+    }
+   ],
+   "priceFromMinor": 44900,
+   "priceToMinor": 44900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-heart-print-bowl",
+   "brand": "klayzy-ceramics",
+   "title": "Heart Print Bowl",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dafa5a6-3fc0-4153-bcdd-a13b758dbdac.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "HEART-PRINT-BOWL",
+     "label": "Heart Print Bowl",
+     "options": [],
+     "priceMinor": 59900,
+     "compareAtMinor": 89900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dafa5a6-3fc0-4153-bcdd-a13b758dbdac.jpg"
+    }
+   ],
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
    "featured": false
   },
   {
@@ -5435,6 +5666,30 @@
    "featured": false
   },
   {
+   "slug": "klayzy-ceramics-lemon-cup",
+   "brand": "klayzy-ceramics",
+   "title": "Lemon Cup",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ba4109ac-c2d9-49c4-82e1-a53671ccee84.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LEMON-CUP",
+     "label": "Lemon Cup",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": 74900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ba4109ac-c2d9-49c4-82e1-a53671ccee84.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
    "slug": "klayzy-ceramics-mini-heart-mug",
    "brand": "klayzy-ceramics",
    "title": "Mini Heart Mug",
@@ -5459,9 +5714,9 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-mushroom-salt-and-pepper",
+   "slug": "klayzy-ceramics-mushroom-salt-and-pepper-set",
    "brand": "klayzy-ceramics",
-   "title": "Mushroom Salt and Pepper",
+   "title": "Mushroom Salt & Pepper Set",
    "description": null,
    "collection": "home",
    "images": [
@@ -5471,7 +5726,7 @@
    "variants": [
     {
      "sku": "MUSHROOM-SALT-AND-PEPPER",
-     "label": "Mushroom Salt and Pepper",
+     "label": "Mushroom Salt & Pepper Set",
      "options": [],
      "priceMinor": 35000,
      "compareAtMinor": null,
@@ -5507,9 +5762,9 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-pepsi",
+   "slug": "klayzy-ceramics-pepsi-tumbler",
    "brand": "klayzy-ceramics",
-   "title": "Pepsi",
+   "title": "Pepsi Tumbler",
    "description": null,
    "collection": "home",
    "images": [
@@ -5519,7 +5774,7 @@
    "variants": [
     {
      "sku": "PEPSI",
-     "label": "Pepsi",
+     "label": "Pepsi Tumbler",
      "options": [],
      "priceMinor": 59900,
      "compareAtMinor": null,
@@ -5555,27 +5810,127 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-skull-table-topper",
+   "slug": "klayzy-ceramics-skull-jewellery-tray",
    "brand": "klayzy-ceramics",
-   "title": "Skull Table Topper",
+   "title": "Skull Jewellery Tray",
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e0fe3f2-eb83-4424-b6db-70ce3298f78f.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ed9f4ad2-2e42-4c61-aa71-a4e3bc0291ef.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b97061ae-44ac-46c5-9cb8-c4a32b7ca11f.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3f1147c8-dabe-49a2-b35e-42dc44b1b851.jpg"
    ],
    "options": [],
    "variants": [
     {
      "sku": "SKULL-ASHTRAY",
-     "label": "Skull Table Topper",
+     "label": "Skull Jewellery Tray",
      "options": [],
      "priceMinor": 49900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e0fe3f2-eb83-4424-b6db-70ce3298f78f.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ed9f4ad2-2e42-4c61-aa71-a4e3bc0291ef.jpg"
     }
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-slate-shell-plate",
+   "brand": "klayzy-ceramics",
+   "title": "Slate Shell Plate",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f620c2a2-bd74-463c-b3ac-23e157910513.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b8054ad8-20f1-4182-bd80-b8359a356009.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SLATE-SHELL-PLATE",
+     "label": "Slate Shell Plate",
+     "options": [],
+     "priceMinor": 44900,
+     "compareAtMinor": 69900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f620c2a2-bd74-463c-b3ac-23e157910513.jpg"
+    }
+   ],
+   "priceFromMinor": 44900,
+   "priceToMinor": 44900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-small-blue-bow-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Small Blue Bow Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c95eb8d1-9334-4648-ac9d-7ab6e5069c59.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SMALL-BLUE-BOW-MUG",
+     "label": "Small Blue Bow Mug",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c95eb8d1-9334-4648-ac9d-7ab6e5069c59.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-small-bow-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Small Bow Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f3df694a-7fa9-44ea-b0c7-8e01d34e8be3.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BOW-MUG-SMALL",
+     "label": "Small Bow Mug",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f3df694a-7fa9-44ea-b0c7-8e01d34e8be3.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-smoke-flower-plate",
+   "brand": "klayzy-ceramics",
+   "title": "Smoke Flower Plate",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0885e9a0-e1a6-4417-99e0-81aaeb18c3f4.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/67440e38-7a64-4c87-9b05-53190d3ce2d9.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SMOKE-FLOWER-PLATE",
+     "label": "Smoke Flower Plate",
+     "options": [],
+     "priceMinor": 99900,
+     "compareAtMinor": 149900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0885e9a0-e1a6-4417-99e0-81aaeb18c3f4.jpg"
+    }
+   ],
+   "priceFromMinor": 99900,
+   "priceToMinor": 99900,
    "featured": false
   },
   {
@@ -5603,9 +5958,9 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-step-lucky-charm-table-topper",
+   "slug": "klayzy-ceramics-step-jewellery-tray",
    "brand": "klayzy-ceramics",
-   "title": "Step Lucky Charm Table Topper",
+   "title": "Step Jewellery Tray",
    "description": null,
    "collection": "home",
    "images": [
@@ -5615,35 +5970,11 @@
    "variants": [
     {
      "sku": "STEP-ASHTRAY",
-     "label": "Step Lucky Charm Table Topper",
+     "label": "Step Jewellery Tray",
      "options": [],
      "priceMinor": 69900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d1e5055c-690e-40de-8f6b-8f89ce08ca8e.jpg"
-    }
-   ],
-   "priceFromMinor": 69900,
-   "priceToMinor": 69900,
-   "featured": false
-  },
-  {
-   "slug": "klayzy-ceramics-tea-pot",
-   "brand": "klayzy-ceramics",
-   "title": "Tea Pot",
-   "description": null,
-   "collection": "home",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f1b44236-12a4-4e93-9b19-de7986dca211.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "TEA-POT",
-     "label": "Tea Pot",
-     "options": [],
-     "priceMinor": 69900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f1b44236-12a4-4e93-9b19-de7986dca211.jpg"
     }
    ],
    "priceFromMinor": 69900,
@@ -5675,6 +6006,55 @@
    "featured": false
   },
   {
+   "slug": "klayzy-ceramics-teal-lotus-bowl",
+   "brand": "klayzy-ceramics",
+   "title": "Teal Lotus Bowl",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c244bfa9-1059-40fc-85c5-d08b4820fa9b.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/935014bf-29f0-4485-9070-6a20893ce1ef.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TEAL-LOTUS-BOWL",
+     "label": "Teal Lotus Bowl",
+     "options": [],
+     "priceMinor": 54900,
+     "compareAtMinor": 79900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c244bfa9-1059-40fc-85c5-d08b4820fa9b.jpg"
+    }
+   ],
+   "priceFromMinor": 54900,
+   "priceToMinor": 54900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-teapot",
+   "brand": "klayzy-ceramics",
+   "title": "Teapot",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f1b44236-12a4-4e93-9b19-de7986dca211.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TEA-POT",
+     "label": "Teapot",
+     "options": [],
+     "priceMinor": 69900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f1b44236-12a4-4e93-9b19-de7986dca211.jpg"
+    }
+   ],
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
+   "featured": false
+  },
+  {
    "slug": "klayzy-ceramics-tulip-mug-with-tray",
    "brand": "klayzy-ceramics",
    "title": "Tulip Mug with Tray",
@@ -5699,6 +6079,80 @@
    "featured": false
   },
   {
+   "slug": "klayzy-ceramics-tyre-jewellery-tray",
+   "brand": "klayzy-ceramics",
+   "title": "Tyre Jewellery Tray",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bb38210c-e3c6-478d-9130-26743488cce2.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c158ddd4-bb79-4f30-977b-ab4b18ca6265.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/91d0fc67-136f-4661-af2b-d012e9feda8e.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TYRE-ASHTRAY",
+     "label": "Tyre Jewellery Tray",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bb38210c-e3c6-478d-9130-26743488cce2.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-volcano-jewellery-tray",
+   "brand": "klayzy-ceramics",
+   "title": "Volcano Jewellery Tray",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5646ed9f-e86d-48ce-b2eb-c50e4c399b7b.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "VOLCANO-ASHTRAY",
+     "label": "Volcano Jewellery Tray",
+     "options": [],
+     "priceMinor": 79900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5646ed9f-e86d-48ce-b2eb-c50e4c399b7b.jpg"
+    }
+   ],
+   "priceFromMinor": 79900,
+   "priceToMinor": 79900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-watermelon-cup",
+   "brand": "klayzy-ceramics",
+   "title": "Watermelon Cup",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/73df223f-1fe7-4d59-95a7-4b990a23de49.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "WATERMELON-CUP",
+     "label": "Watermelon Cup",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": 74900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/73df223f-1fe7-4d59-95a7-4b990a23de49.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
    "slug": "klayzy-ceramics-wizard-mug",
    "brand": "klayzy-ceramics",
    "title": "Wizard Mug",
@@ -5716,6 +6170,30 @@
      "priceMinor": 49900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d4cd400b-3096-4e9b-9874-43c8258d123e.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "klayzy-ceramics-yellow-duck-mug",
+   "brand": "klayzy-ceramics",
+   "title": "Yellow Duck Mug",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b9030908-50b9-4b88-83c0-c38a5fc10ebb.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DUCK-MUG-YELLOW",
+     "label": "Yellow Duck Mug",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b9030908-50b9-4b88-83c0-c38a5fc10ebb.jpg"
     }
    ],
    "priceFromMinor": 49900,
@@ -6876,13 +7354,13 @@
      "sku": "DARK-PINK-PEONY",
      "label": "Dark Pink Peony",
      "options": [],
-     "priceMinor": 6000,
+     "priceMinor": 12000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/810fe53c-e19d-4f2a-8da1-41dba7e3ef9d.png"
     }
    ],
-   "priceFromMinor": 6000,
-   "priceToMinor": 6000,
+   "priceFromMinor": 12000,
+   "priceToMinor": 12000,
    "featured": false
   },
   {
@@ -7166,13 +7644,13 @@
      "sku": "TIMBER-BOWL",
      "label": "Timber Bowl",
      "options": [],
-     "priceMinor": 59900,
+     "priceMinor": 69900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/727bfca2-ebf1-4fce-b83d-6b6dc62a542b.jpg"
     }
    ],
-   "priceFromMinor": 59900,
-   "priceToMinor": 59900,
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
    "featured": false
   },
   {
@@ -8663,13 +9141,13 @@
      "sku": "SWEDISH-WAHA",
      "label": "Swedish Flora",
      "options": [],
-     "priceMinor": 74900,
+     "priceMinor": 69900,
      "compareAtMinor": 79900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1908437e-3241-4940-8eaf-b24fd7a1d4aa.jpg"
     }
    ],
-   "priceFromMinor": 74900,
-   "priceToMinor": 74900,
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
    "featured": false
   },
   {
@@ -8689,13 +9167,13 @@
      "sku": "SWADISH-FLORA",
      "label": "Swedish Oud",
      "options": [],
-     "priceMinor": 74900,
+     "priceMinor": 69900,
      "compareAtMinor": 79900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d9f9f6c4-fe21-4c2a-b13d-2b32bc66ea75.jpg"
     }
    ],
-   "priceFromMinor": 74900,
-   "priceToMinor": 74900,
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
    "featured": true
   },
   {
@@ -8715,13 +9193,13 @@
      "sku": "SWEDISH-OUD",
      "label": "Swedish Waha",
      "options": [],
-     "priceMinor": 74900,
+     "priceMinor": 69900,
      "compareAtMinor": 79900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6d4ced1-dcba-460c-bc10-5a4410a0a5a7.jpg"
     }
    ],
-   "priceFromMinor": 74900,
-   "priceToMinor": 74900,
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
    "featured": false
   },
   {
@@ -8739,13 +9217,13 @@
      "sku": "THE-TRIO",
      "label": "The Trio",
      "options": [],
-     "priceMinor": 179900,
-     "compareAtMinor": null,
+     "priceMinor": 149900,
+     "compareAtMinor": 179900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7fc650ef-3367-4e97-a169-25837228226a.jpg"
     }
    ],
-   "priceFromMinor": 179900,
-   "priceToMinor": 179900,
+   "priceFromMinor": 149900,
+   "priceToMinor": 149900,
    "featured": false
   },
   {
@@ -8755,8 +9233,10 @@
    "description": "Meet Mello Almond Dragees, a delicious little treat made with crunchy almonds coated in smooth, rich dark chocolate. The satisfying crunch of roasted almonds, the creaminess of chocolate, and just the right touch of sweetness come together in every bite.",
    "collection": "sweets",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d7cf17d1-0e79-4b46-a570-a431d74a6acc.png",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dd2366f8-d571-45f5-b85b-718a3e3ba0cf.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e070173d-ce53-49d2-a178-492f07963c5c.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f6eefec0-8fed-42c9-9fc7-d61ba9c446b0.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2f5f6d82-8305-4a02-9b61-57744a42943d.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/26f0ac41-e948-4b77-8f3a-2211eca3eaa0.png",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/be8b2e23-bcf2-4faf-b399-816f634fa261.jpg"
    ],
    "options": [
@@ -8788,7 +9268,7 @@
      ],
      "priceMinor": 24900,
      "compareAtMinor": 29900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d7cf17d1-0e79-4b46-a570-a431d74a6acc.png"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e070173d-ce53-49d2-a178-492f07963c5c.png"
     },
     {
      "sku": "ALMOND-DRAGEES-250G",
@@ -8798,7 +9278,7 @@
      ],
      "priceMinor": 54900,
      "compareAtMinor": 69900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d7cf17d1-0e79-4b46-a570-a431d74a6acc.png"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e070173d-ce53-49d2-a178-492f07963c5c.png"
     }
    ],
    "priceFromMinor": 15000,
@@ -9633,27 +10113,27 @@
    "featured": false
   },
   {
-   "slug": "nasha-after-hours",
+   "slug": "nasha-aqua-dreams",
    "brand": "nasha",
-   "title": "After Hours",
+   "title": "Aqua Dreams",
    "description": null,
    "collection": "fragrance",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f0184400-c10f-4658-acf5-d4362bdb3114.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7c747d2f-7780-40bc-b0c1-18df9e105fb3.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "AFTER-HOURS",
-     "label": "After Hours",
+     "sku": "AQUA-DREAMS",
+     "label": "Aqua Dreams",
      "options": [],
-     "priceMinor": 24900,
+     "priceMinor": 34900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f0184400-c10f-4658-acf5-d4362bdb3114.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7c747d2f-7780-40bc-b0c1-18df9e105fb3.jpg"
     }
    ],
-   "priceFromMinor": 24900,
-   "priceToMinor": 24900,
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
    "featured": true
   },
   {
@@ -9705,6 +10185,30 @@
    "featured": false
   },
   {
+   "slug": "nasha-casually-rich",
+   "brand": "nasha",
+   "title": "Casually Rich",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ae5bbdba-fe97-43b4-ad84-211364142c49.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CASUALLY-RICH",
+     "label": "Casually Rich",
+     "options": [],
+     "priceMinor": 24900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ae5bbdba-fe97-43b4-ad84-211364142c49.jpg"
+    }
+   ],
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
+   "featured": false
+  },
+  {
    "slug": "nasha-chai-and-chaos",
    "brand": "nasha",
    "title": "Chai And Chaos",
@@ -9729,23 +10233,47 @@
    "featured": false
   },
   {
-   "slug": "nasha-citrus-ginger-musk",
+   "slug": "nasha-delulu",
    "brand": "nasha",
-   "title": "Citrus Ginger Musk",
+   "title": "Delulu",
    "description": null,
    "collection": "fragrance",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/12969e42-9005-4ba1-857e-d16bade3993b.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cefaf81f-daa0-43d3-b80f-d940624105f8.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "CITRUS-GINGER-MUSK",
-     "label": "Citrus Ginger Musk",
+     "sku": "DELULU",
+     "label": "Delulu",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cefaf81f-daa0-43d3-b80f-d940624105f8.jpg"
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-good-taste",
+   "brand": "nasha",
+   "title": "Good Taste",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/285a4fc2-86a2-4f2c-b3c7-d5373e669c00.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "GOOD-TASTE",
+     "label": "Good Taste",
      "options": [],
      "priceMinor": 24900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/12969e42-9005-4ba1-857e-d16bade3993b.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/285a4fc2-86a2-4f2c-b3c7-d5373e669c00.jpg"
     }
    ],
    "priceFromMinor": 24900,
@@ -9753,23 +10281,71 @@
    "featured": false
   },
   {
-   "slug": "nasha-espresso-martini",
+   "slug": "nasha-high-on-nakhra",
    "brand": "nasha",
-   "title": "Espresso Martini",
+   "title": "High On Nakhra",
    "description": null,
    "collection": "fragrance",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/01256690-c653-4531-8cb7-a1195b1ce15c.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/59f81093-c2c1-4b94-95cf-ea5f84828427.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "ESPRESSO-MARTINI",
-     "label": "Espresso Martini",
+     "sku": "HIGH-ON-NAKHRA",
+     "label": "High On Nakhra",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/59f81093-c2c1-4b94-95cf-ea5f84828427.jpg"
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-lowkey-hot",
+   "brand": "nasha",
+   "title": "Lowkey Hot",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/13737def-5a93-42d1-b90e-ae053c384b03.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LOWKEY-HOT",
+     "label": "Lowkey Hot",
      "options": [],
      "priceMinor": 24900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/01256690-c653-4531-8cb7-a1195b1ce15c.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/13737def-5a93-42d1-b90e-ae053c384b03.jpg"
+    }
+   ],
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-main-character",
+   "brand": "nasha",
+   "title": "Main Character",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/61708dad-ba27-4b1e-aa34-88f67fc017ca.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MAIN-CHARACTER",
+     "label": "Main Character",
+     "options": [],
+     "priceMinor": 24900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/61708dad-ba27-4b1e-aa34-88f67fc017ca.jpg"
     }
    ],
    "priceFromMinor": 24900,
@@ -9801,30 +10377,6 @@
    "featured": false
   },
   {
-   "slug": "nasha-neela-aasman",
-   "brand": "nasha",
-   "title": "Neela Aasman",
-   "description": null,
-   "collection": "fragrance",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74bb7876-e2d2-499c-8be5-cc397a6762c1.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "NEELA-AASMAN",
-     "label": "Neela Aasman",
-     "options": [],
-     "priceMinor": 34900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74bb7876-e2d2-499c-8be5-cc397a6762c1.jpg"
-    }
-   ],
-   "priceFromMinor": 34900,
-   "priceToMinor": 34900,
-   "featured": false
-  },
-  {
    "slug": "nasha-pocket-ace",
    "brand": "nasha",
    "title": "Pocket Ace",
@@ -9849,23 +10401,47 @@
    "featured": false
   },
   {
-   "slug": "nasha-ruby-raaz",
+   "slug": "nasha-trust-issues",
    "brand": "nasha",
-   "title": "Ruby Raaz",
+   "title": "Trust Issues",
    "description": null,
    "collection": "fragrance",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/38ba7494-74c6-4964-bfed-5b6ce32e09d7.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3edb0f14-fd09-49f3-b267-e3e3eb415c74.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "RUBY-RAAZ",
-     "label": "Ruby Raaz",
+     "sku": "TRUST-ISSUES",
+     "label": "Trust Issues",
      "options": [],
      "priceMinor": 34900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/38ba7494-74c6-4964-bfed-5b6ce32e09d7.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3edb0f14-fd09-49f3-b267-e3e3eb415c74.jpg"
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-unhinged",
+   "brand": "nasha",
+   "title": "Unhinged",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dc633ff8-0021-44fe-9407-bb1411afecdd.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "UNHINGED-2",
+     "label": "Unhinged",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/dc633ff8-0021-44fe-9407-bb1411afecdd.jpg"
     }
    ],
    "priceFromMinor": 34900,
@@ -10019,13 +10595,13 @@
      "sku": "MINI-CHOCOCHIP-COOKIES-WITH-DIP",
      "label": "Choco Chunk Cookies",
      "options": [],
-     "priceMinor": 25900,
+     "priceMinor": 24900,
      "compareAtMinor": 26900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4cec1fe7-2b98-453b-892b-40f7e381e136.jpg"
     }
    ],
-   "priceFromMinor": 25900,
-   "priceToMinor": 25900,
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
    "featured": false
   },
   {
@@ -10043,13 +10619,13 @@
      "sku": "DOUBLE-CHOCO-CHIP-COOKIES",
      "label": "Double Choco Chip Cookies",
      "options": [],
-     "priceMinor": 27900,
+     "priceMinor": 26900,
      "compareAtMinor": 28900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d58951dc-8f64-4587-9209-340c8720d1af.jpg"
     }
    ],
-   "priceFromMinor": 27900,
-   "priceToMinor": 27900,
+   "priceFromMinor": 26900,
+   "priceToMinor": 26900,
    "featured": true
   },
   {
@@ -10115,13 +10691,37 @@
      "sku": "MEXICAN-BITES-80G",
      "label": "Mexican Bites 125g",
      "options": [],
-     "priceMinor": 11900,
+     "priceMinor": 13000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/65e4410d-fb75-4ff5-8284-8b4c1c1d056e.png"
     }
    ],
-   "priceFromMinor": 11900,
-   "priceToMinor": 11900,
+   "priceFromMinor": 13000,
+   "priceToMinor": 13000,
+   "featured": false
+  },
+  {
+   "slug": "notty-crunch-peri-peri-chips-250-grams",
+   "brand": "notty-crunch",
+   "title": "Peri Peri chips-250 Grams",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/455b0115-6852-492b-9b8d-a60492092c66.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PERI-PERI-CHIPS",
+     "label": "Peri Peri chips-250 Grams",
+     "options": [],
+     "priceMinor": 35000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/455b0115-6852-492b-9b8d-a60492092c66.png"
+    }
+   ],
+   "priceFromMinor": 35000,
+   "priceToMinor": 35000,
    "featured": false
   },
   {
@@ -10159,13 +10759,13 @@
      "options": [
       "100g"
      ],
-     "priceMinor": 14900,
+     "priceMinor": 16000,
      "compareAtMinor": null,
      "image": null
     }
    ],
    "priceFromMinor": 8900,
-   "priceToMinor": 14900,
+   "priceToMinor": 16000,
    "featured": false
   },
   {
@@ -10416,9 +11016,9 @@
    "description": "The name means \"pen-craft.\" It comes from Andhra Pradesh and has two protected regional (GI) styles. Srikalahasti: painted freehand with a pen, showing scenes from the Ramayana, the Mahabharata and Hindu gods. Machilipatnam: block-printed with vegetable dyes, with Persian-influenced motifs like vines, peacocks and the tree of life. The process can take up to 23 steps and uses natural dyes, with myrobalan and alum to set the colours. In the \"Border Pallu\" version, the Kalamkari work is probably only on the border and pallu, with a plainer body.",
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a17296f7-c16e-403d-8609-431fe7a7e0c9.png",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4247adfb-36db-474e-bbf4-68c0362cd9d7.png",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/707e9f6d-4135-45f1-8c70-f572aead0481.png"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/707e9f6d-4135-45f1-8c70-f572aead0481.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/96cb219f-84a0-401f-8f2c-f018ff03b6d6.png"
    ],
    "options": [
     {
@@ -10439,7 +11039,7 @@
      ],
      "priceMinor": 209000,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a17296f7-c16e-403d-8609-431fe7a7e0c9.png"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4247adfb-36db-474e-bbf4-68c0362cd9d7.png"
     },
     {
      "sku": "MUL-COTTON-KALAMKARI-WINE",
@@ -10449,7 +11049,7 @@
      ],
      "priceMinor": 209000,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a17296f7-c16e-403d-8609-431fe7a7e0c9.png"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4247adfb-36db-474e-bbf4-68c0362cd9d7.png"
     },
     {
      "sku": "MUL-COTTON-KALAMKARI-BROWN",
@@ -10459,7 +11059,7 @@
      ],
      "priceMinor": 209000,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a17296f7-c16e-403d-8609-431fe7a7e0c9.png"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4247adfb-36db-474e-bbf4-68c0362cd9d7.png"
     }
    ],
    "priceFromMinor": 209000,
@@ -10566,7 +11166,7 @@
    "description": "Mulmul is a fine, plain-weave cotton muslin with Bengal roots, especially around Dhaka. It's soft, thin, slightly see-through, very light and breathable, which makes it a good everyday summer saree.",
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/512cd284-ccf3-4d69-9a7e-0d104c6fd543.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/07b1688f-5cc8-4bfa-ba99-a58d28cc8542.png"
    ],
    "options": [],
    "variants": [
@@ -10576,7 +11176,7 @@
      "options": [],
      "priceMinor": 228000,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/512cd284-ccf3-4d69-9a7e-0d104c6fd543.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/07b1688f-5cc8-4bfa-ba99-a58d28cc8542.png"
     }
    ],
    "priceFromMinor": 228000,
