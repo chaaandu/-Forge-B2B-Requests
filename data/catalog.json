@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-11T06:13:08.112Z",
+ "generatedAt": "2026-10-12T06:21:31.088Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -5429,7 +5429,7 @@
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7bbca67b-0a42-4079-b133-f751f77cfb73.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5e672dac-d9ae-4fec-bd7e-cd1b89f5028c.jpg"
    ],
    "options": [],
    "variants": [
@@ -5439,7 +5439,7 @@
      "options": [],
      "priceMinor": 59900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7bbca67b-0a42-4079-b133-f751f77cfb73.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5e672dac-d9ae-4fec-bd7e-cd1b89f5028c.jpg"
     }
    ],
    "priceFromMinor": 59900,
@@ -5768,7 +5768,7 @@
    "description": null,
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/35e6fb67-43a6-41f9-87ba-75dae021a27d.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/513beea6-cbee-4cd5-9f2b-4b326faf3944.jpg"
    ],
    "options": [],
    "variants": [
@@ -5778,7 +5778,7 @@
      "options": [],
      "priceMinor": 59900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/35e6fb67-43a6-41f9-87ba-75dae021a27d.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/513beea6-cbee-4cd5-9f2b-4b326faf3944.jpg"
     }
    ],
    "priceFromMinor": 59900,
@@ -10791,30 +10791,6 @@
    "featured": false
   },
   {
-   "slug": "pehchaan-aaranya-mul-cotton-kalamkari-saree",
-   "brand": "pehchaan",
-   "title": "Aaranya Mul Cotton Kalamkari Saree",
-   "description": null,
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff1bde92-35a7-438a-b303-b81e7eded0f9.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "MUL-COTTON-GEOMETRIC",
-     "label": "Aaranya Mul Cotton Kalamkari Saree",
-     "options": [],
-     "priceMinor": 248000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff1bde92-35a7-438a-b303-b81e7eded0f9.png"
-    }
-   ],
-   "priceFromMinor": 248000,
-   "priceToMinor": 248000,
-   "featured": false
-  },
-  {
    "slug": "pehchaan-aarohi-batik-silk-saree",
    "brand": "pehchaan",
    "title": "Aarohi Batik Silk Saree",
@@ -11088,30 +11064,6 @@
    ],
    "priceFromMinor": 168000,
    "priceToMinor": 168000,
-   "featured": false
-  },
-  {
-   "slug": "pehchaan-madhav-madras-checks-saree",
-   "brand": "pehchaan",
-   "title": "Madhav Madras Checks Saree",
-   "description": "Madras cloth is named after Chennai. It's a light cotton with plaid-style checks, and authentic madras shows the same pattern on both sides. Short-staple cotton gives it small, uneven bumps called slubs. Colours can \"bleed,\" which is a well-known feature of the fabric. I couldn't find out what \"Gajraj\" means here. It's probably a design or colour name used by Pehchaan.",
-   "collection": "apparel",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2c7e6e3-0c13-4dd4-97f5-9940d975cf43.png"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "MADRAS-CHECKS",
-     "label": "Madhav Madras Checks Saree",
-     "options": [],
-     "priceMinor": 299000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d2c7e6e3-0c13-4dd4-97f5-9940d975cf43.png"
-    }
-   ],
-   "priceFromMinor": 299000,
-   "priceToMinor": 299000,
    "featured": false
   },
   {
