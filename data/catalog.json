@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T06:21:31.088Z",
+ "generatedAt": "2026-10-13T06:59:55.437Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -10257,6 +10257,30 @@
    "featured": false
   },
   {
+   "slug": "nasha-espresso-martini",
+   "brand": "nasha",
+   "title": "Espresso Martini",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/01256690-c653-4531-8cb7-a1195b1ce15c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "ESPRESSO-MARTINI",
+     "label": "Espresso Martini",
+     "options": [],
+     "priceMinor": 24900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/01256690-c653-4531-8cb7-a1195b1ce15c.jpg"
+    }
+   ],
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
+   "featured": false
+  },
+  {
    "slug": "nasha-good-taste",
    "brand": "nasha",
    "title": "Good Taste",
@@ -10374,6 +10398,30 @@
    ],
    "priceFromMinor": 24900,
    "priceToMinor": 24900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-neela-aasman",
+   "brand": "nasha",
+   "title": "Neela Aasman",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74bb7876-e2d2-499c-8be5-cc397a6762c1.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "NEELA-AASMAN",
+     "label": "Neela Aasman",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74bb7876-e2d2-499c-8be5-cc397a6762c1.jpg"
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
    "featured": false
   },
   {
