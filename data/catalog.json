@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-13T06:59:55.437Z",
+ "generatedAt": "2026-10-14T05:13:48.701Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -5313,32 +5313,6 @@
    "featured": false
   },
   {
-   "slug": "klayzy-ceramics-colosseum-jewellery-tray",
-   "brand": "klayzy-ceramics",
-   "title": "Colosseum Jewellery Tray",
-   "description": null,
-   "collection": "home",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/825c235e-1c6c-493a-8554-51eea299fc38.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/029eed28-6f5d-4928-ba35-d1dde28073ad.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eda7c5ff-398b-4363-8c8d-85a003adc7bd.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "COLOSSEUM-ASHTRAY",
-     "label": "Colosseum Jewellery Tray",
-     "options": [],
-     "priceMinor": 89900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/825c235e-1c6c-493a-8554-51eea299fc38.jpg"
-    }
-   ],
-   "priceFromMinor": 89900,
-   "priceToMinor": 89900,
-   "featured": false
-  },
-  {
    "slug": "klayzy-ceramics-cyclone-jewellery-tray",
    "brand": "klayzy-ceramics",
    "title": "Cyclone Jewellery Tray",
@@ -5420,30 +5394,6 @@
    ],
    "priceFromMinor": 54900,
    "priceToMinor": 54900,
-   "featured": false
-  },
-  {
-   "slug": "klayzy-ceramics-diet-coke-tumbler-with-handle",
-   "brand": "klayzy-ceramics",
-   "title": "Diet Coke Tumbler with Handle",
-   "description": null,
-   "collection": "home",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5e672dac-d9ae-4fec-bd7e-cd1b89f5028c.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "DIET-COKE-TUMBLER-WITH-HANDLE",
-     "label": "Diet Coke Tumbler with Handle",
-     "options": [],
-     "priceMinor": 59900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5e672dac-d9ae-4fec-bd7e-cd1b89f5028c.jpg"
-    }
-   ],
-   "priceFromMinor": 59900,
-   "priceToMinor": 59900,
    "featured": false
   },
   {
@@ -12712,7 +12662,7 @@
    ],
    "priceFromMinor": 25000,
    "priceToMinor": 39900,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "the-usual-filter-coffee",
@@ -12721,22 +12671,43 @@
    "description": null,
    "collection": "beverages",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/42f8292e-5c76-413a-88ef-76bf06a62d28.png"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/42f8292e-5c76-413a-88ef-76bf06a62d28.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/07818e72-d924-4d34-946f-92fe80926bf6.png"
    ],
-   "options": [],
+   "options": [
+    {
+     "name": "Pack",
+     "values": [
+      "₹30 pack",
+      "₹299 pack"
+     ]
+    }
+   ],
    "variants": [
     {
+     "sku": "FILTER-COFFEE-2",
+     "label": "₹30 pack",
+     "options": [
+      "₹30 pack"
+     ],
+     "priceMinor": 3000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/07818e72-d924-4d34-946f-92fe80926bf6.png"
+    },
+    {
      "sku": "FILTER-COFFEE",
-     "label": "Filter Coffee",
-     "options": [],
+     "label": "₹299 pack",
+     "options": [
+      "₹299 pack"
+     ],
      "priceMinor": 29900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/42f8292e-5c76-413a-88ef-76bf06a62d28.png"
     }
    ],
-   "priceFromMinor": 29900,
+   "priceFromMinor": 3000,
    "priceToMinor": 29900,
-   "featured": false
+   "featured": true
   },
   {
    "slug": "the-usual-hazelnut",
@@ -12797,13 +12768,13 @@
      "sku": "ICED-COFFEE",
      "label": "Iced Coffee",
      "options": [],
-     "priceMinor": 12000,
+     "priceMinor": 20000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d69b17a1-eff6-46e2-b0d9-2c1c9105145d.jpg"
     }
    ],
-   "priceFromMinor": 12000,
-   "priceToMinor": 12000,
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
    "featured": false
   },
   {
