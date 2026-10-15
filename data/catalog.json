@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-14T05:13:48.701Z",
+ "generatedAt": "2026-10-15T05:01:25.011Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -5376,10 +5376,13 @@
    "slug": "klayzy-ceramics-diet-coke-tumbler",
    "brand": "klayzy-ceramics",
    "title": "Diet Coke Tumbler",
-   "description": null,
+   "description": "A ceramic cup shaped like a soda can, painted by hand in red and white. Holds a full can of your favourite cold drink. Microwave and dishwasher safe. Each piece is painted by hand, so small variations in glaze and print are normal.",
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/afcab732-f750-4b54-a020-9bc60527d078.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/87e66710-dd22-49e4-a793-18ae113752e2.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4096cda5-ad45-4fe3-9464-d6268bed406d.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cd65b74c-006f-4dfe-b588-81e36ba11a9c.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4ca33e34-9f22-46b4-aa23-44e687427a9f.jpg"
    ],
    "options": [],
    "variants": [
@@ -5389,7 +5392,7 @@
      "options": [],
      "priceMinor": 54900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/afcab732-f750-4b54-a020-9bc60527d078.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/87e66710-dd22-49e4-a793-18ae113752e2.jpg"
     }
    ],
    "priceFromMinor": 54900,
@@ -5547,10 +5550,13 @@
    "slug": "klayzy-ceramics-heart-print-bowl",
    "brand": "klayzy-ceramics",
    "title": "Heart Print Bowl",
-   "description": null,
+   "description": "A pink gingham ceramic bowl with a little heart painted in the middle, so you find it when you finish. Big enough for two tubs of yoghurt. Microwave and dishwasher safe. Each piece is painted by hand, so small variations in glaze and print are normal.",
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dafa5a6-3fc0-4153-bcdd-a13b758dbdac.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/256ded9c-acd0-4a97-bb4c-97646e38faf1.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/829ac252-d9e8-466c-8d3e-3c3257821ddd.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3eb835ec-96ec-4b98-8fdc-b3aa223044e5.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9bff3824-c5f7-47c4-8aa7-5467c6f8c6b5.jpg"
    ],
    "options": [],
    "variants": [
@@ -5560,7 +5566,7 @@
      "options": [],
      "priceMinor": 59900,
      "compareAtMinor": 89900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9dafa5a6-3fc0-4153-bcdd-a13b758dbdac.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/256ded9c-acd0-4a97-bb4c-97646e38faf1.jpg"
     }
    ],
    "priceFromMinor": 59900,
@@ -5887,10 +5893,13 @@
    "slug": "klayzy-ceramics-square-bow-mug",
    "brand": "klayzy-ceramics",
    "title": "Square Bow Mug",
-   "description": null,
+   "description": "A square ceramic mug with a raised pink bow on the front and a pink-glazed inside. Holds 330 ml. Microwave and dishwasher safe. Each piece is painted by hand, so small variations in glaze and print are normal.",
    "collection": "home",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b12942e2-eba3-4ed8-9ebe-7cb51a2908fb.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/acd2c483-f490-47aa-99d4-d4ac1dee5057.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2990f479-6154-4340-b1aa-decb52402a9d.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fe81f0d8-f264-4db7-a3cd-34072e8e0f9a.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/189349a3-f7f8-49db-bec3-c99d24b5dbc0.jpg"
    ],
    "options": [],
    "variants": [
@@ -5900,7 +5909,7 @@
      "options": [],
      "priceMinor": 49900,
      "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b12942e2-eba3-4ed8-9ebe-7cb51a2908fb.jpg"
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/acd2c483-f490-47aa-99d4-d4ac1dee5057.jpg"
     }
    ],
    "priceFromMinor": 49900,
