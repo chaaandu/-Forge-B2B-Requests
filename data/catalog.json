@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-16T04:51:12.290Z",
+ "generatedAt": "2026-10-17T04:52:01.104Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -1158,7 +1158,7 @@
       "100g"
      ],
      "priceMinor": 19900,
-     "compareAtMinor": 22000,
+     "compareAtMinor": 24900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/48a28784-7f08-4904-923d-de2a83eb3226.jpg"
     }
    ],
@@ -6484,6 +6484,30 @@
    "featured": false
   },
   {
+   "slug": "krackle-co-gift-hamper",
+   "brand": "krackle-co",
+   "title": "Gift Hamper",
+   "description": null,
+   "collection": "hampers",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fd8aad72-615b-49fc-ba20-8785fef8a074.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "GIFT-HAMPER",
+     "label": "Gift Hamper",
+     "options": [],
+     "priceMinor": 520000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fd8aad72-615b-49fc-ba20-8785fef8a074.png"
+    }
+   ],
+   "priceFromMinor": 520000,
+   "priceToMinor": 520000,
+   "featured": false
+  },
+  {
    "slug": "krackle-co-kishmish-kala-khatta",
    "brand": "krackle-co",
    "title": "Kishmish Kala Khatta",
@@ -10710,6 +10734,30 @@
    "featured": false
   },
   {
+   "slug": "pehchaan-aabroo-italian-tissue-saree",
+   "brand": "pehchaan",
+   "title": "Aabroo Italian Tissue Saree",
+   "description": "Introducing Aabroo, an Italian tissue saree defined by its light-catching character and graceful presence. Its luminous appeal makes it a considered choice for celebrations, intimate gatherings and evenings that call for something special. Elegant without being overwhelming, Aabroo lets you make an impression in your own way.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/24785af1-45bc-417d-9a82-f4f22181ef53.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "AABROO-ITALIAN-TISSUE-SAREE",
+     "label": "Aabroo Italian Tissue Saree",
+     "options": [],
+     "priceMinor": 366000,
+     "compareAtMinor": 386000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/24785af1-45bc-417d-9a82-f4f22181ef53.png"
+    }
+   ],
+   "priceFromMinor": 366000,
+   "priceToMinor": 366000,
+   "featured": false
+  },
+  {
    "slug": "pehchaan-aarohi-batik-silk-saree",
    "brand": "pehchaan",
    "title": "Aarohi Batik Silk Saree",
@@ -10738,7 +10786,7 @@
       "Teal"
      ],
      "priceMinor": 148000,
-     "compareAtMinor": null,
+     "compareAtMinor": 166000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
     },
     {
@@ -10748,7 +10796,7 @@
       "Rust"
      ],
      "priceMinor": 148000,
-     "compareAtMinor": null,
+     "compareAtMinor": 166000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
     },
     {
@@ -10758,7 +10806,7 @@
       "Purple"
      ],
      "priceMinor": 148000,
-     "compareAtMinor": null,
+     "compareAtMinor": 166000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
     }
    ],
@@ -10793,7 +10841,7 @@
       "Blue"
      ],
      "priceMinor": 348000,
-     "compareAtMinor": null,
+     "compareAtMinor": 366000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75d91a75-c56a-4528-88ce-af7d947a1c06.png"
     },
     {
@@ -10803,7 +10851,7 @@
       "Wine"
      ],
      "priceMinor": 348000,
-     "compareAtMinor": null,
+     "compareAtMinor": 366000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/75d91a75-c56a-4528-88ce-af7d947a1c06.png"
     }
    ],
@@ -10838,7 +10886,7 @@
       "Pink"
      ],
      "priceMinor": 328000,
-     "compareAtMinor": null,
+     "compareAtMinor": 346000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/96df3428-81f2-4668-9ea9-c8525d1eab27.png"
     },
     {
@@ -10848,7 +10896,7 @@
       "Occur"
      ],
      "priceMinor": 328000,
-     "compareAtMinor": null,
+     "compareAtMinor": 346000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/96df3428-81f2-4668-9ea9-c8525d1eab27.png"
     }
    ],
@@ -10860,7 +10908,7 @@
    "slug": "pehchaan-kaash-cotton-silk-saree",
    "brand": "pehchaan",
    "title": "Kaash Cotton Silk Saree",
-   "description": null,
+   "description": "A beautiful balance of softness and subtle elegance. Our cotton silk saree brings together the understated charm of Indian textiles and a refined, contemporary appeal. Thoughtful in its simplicity and graceful in its presence, it is made for celebrations, intimate gatherings and everyday moments that deserve something special.",
    "collection": "apparel",
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/33805052-98f0-436b-aa69-b1396d2b6ca0.png"
@@ -10872,7 +10920,7 @@
      "label": "Kaash Cotton Silk Saree",
      "options": [],
      "priceMinor": 198000,
-     "compareAtMinor": null,
+     "compareAtMinor": 226000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/33805052-98f0-436b-aa69-b1396d2b6ca0.png"
     }
    ],
@@ -10896,7 +10944,7 @@
      "label": "Kalam Mul Cotton Kalamkari Saree",
      "options": [],
      "priceMinor": 248000,
-     "compareAtMinor": null,
+     "compareAtMinor": 276000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/82462182-cdfe-4688-98f9-b9ad8da8823f.png"
     }
    ],
@@ -10933,7 +10981,7 @@
       "Red"
      ],
      "priceMinor": 209000,
-     "compareAtMinor": null,
+     "compareAtMinor": 226000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4247adfb-36db-474e-bbf4-68c0362cd9d7.png"
     },
     {
@@ -10943,7 +10991,7 @@
       "Wine"
      ],
      "priceMinor": 209000,
-     "compareAtMinor": null,
+     "compareAtMinor": 226000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4247adfb-36db-474e-bbf4-68c0362cd9d7.png"
     },
     {
@@ -10953,13 +11001,13 @@
       "Brown"
      ],
      "priceMinor": 209000,
-     "compareAtMinor": null,
+     "compareAtMinor": 226000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4247adfb-36db-474e-bbf4-68c0362cd9d7.png"
     }
    ],
    "priceFromMinor": 209000,
    "priceToMinor": 209000,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "pehchaan-koyal-ajrakh-cotton-silk-saree",
@@ -11012,7 +11060,7 @@
       "Green"
      ],
      "priceMinor": 228000,
-     "compareAtMinor": null,
+     "compareAtMinor": 246000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6e6a8f60-fcaa-4f12-a341-7095ccaade0c.png"
     },
     {
@@ -11022,12 +11070,57 @@
       "Maroon"
      ],
      "priceMinor": 228000,
-     "compareAtMinor": null,
+     "compareAtMinor": 246000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6e6a8f60-fcaa-4f12-a341-7095ccaade0c.png"
     }
    ],
    "priceFromMinor": 228000,
    "priceToMinor": 228000,
+   "featured": false
+  },
+  {
+   "slug": "pehchaan-mira-linen-saree",
+   "brand": "pehchaan",
+   "title": "Mira Linen Saree",
+   "description": "Meet Mira, a linen saree that celebrates the beauty of understated dressing. With its natural textile character and timeless appeal, it brings a sense of ease to your everyday wardrobe. Whether styled for a day at work, a relaxed gathering or a moment of your own, Mira lets your presence speak for itself.",
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/648aab0d-5e4e-409a-9ac8-2c72625c53bf.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3008ddf5-37d9-4f61-9daf-0f5223dc7633.png"
+   ],
+   "options": [
+    {
+     "name": "Colors",
+     "values": [
+      "Baby Pink",
+      "Green"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "MIRA-LINEN-SAREE-BABY-PINK",
+     "label": "Baby Pink",
+     "options": [
+      "Baby Pink"
+     ],
+     "priceMinor": 366000,
+     "compareAtMinor": 386000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/648aab0d-5e4e-409a-9ac8-2c72625c53bf.png"
+    },
+    {
+     "sku": "MIRA-LINEN-SAREE-GREEN",
+     "label": "Green",
+     "options": [
+      "Green"
+     ],
+     "priceMinor": 366000,
+     "compareAtMinor": 386000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/648aab0d-5e4e-409a-9ac8-2c72625c53bf.png"
+    }
+   ],
+   "priceFromMinor": 366000,
+   "priceToMinor": 366000,
    "featured": false
   },
   {
@@ -11046,7 +11139,7 @@
      "label": "Mogra Printed Mul Cotton Saree",
      "options": [],
      "priceMinor": 228000,
-     "compareAtMinor": null,
+     "compareAtMinor": 246000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/07b1688f-5cc8-4bfa-ba99-a58d28cc8542.png"
     }
    ],
@@ -11070,7 +11163,6 @@
      "name": "Color",
      "values": [
       "Blue",
-      "Red",
       "Olive"
      ]
     }
@@ -11083,17 +11175,7 @@
       "Blue"
      ],
      "priceMinor": 278000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/197516c0-e395-4aef-a8d8-71965e07c164.png"
-    },
-    {
-     "sku": "RAW-SILK-RED-2",
-     "label": "Red",
-     "options": [
-      "Red"
-     ],
-     "priceMinor": 278000,
-     "compareAtMinor": null,
+     "compareAtMinor": 296000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/197516c0-e395-4aef-a8d8-71965e07c164.png"
     },
     {
@@ -11103,7 +11185,7 @@
       "Olive"
      ],
      "priceMinor": 278000,
-     "compareAtMinor": null,
+     "compareAtMinor": 296000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/197516c0-e395-4aef-a8d8-71965e07c164.png"
     }
    ],
@@ -11140,7 +11222,7 @@
       "Baby Pink"
      ],
      "priceMinor": 208000,
-     "compareAtMinor": null,
+     "compareAtMinor": 246000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/af36caa0-8a96-4a4e-8ed1-7d3393e93bda.png"
     },
     {
@@ -11150,7 +11232,7 @@
       "Yellow"
      ],
      "priceMinor": 208000,
-     "compareAtMinor": null,
+     "compareAtMinor": 246000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/af36caa0-8a96-4a4e-8ed1-7d3393e93bda.png"
     },
     {
@@ -11160,7 +11242,7 @@
       "Green"
      ],
      "priceMinor": 208000,
-     "compareAtMinor": null,
+     "compareAtMinor": 246000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/af36caa0-8a96-4a4e-8ed1-7d3393e93bda.png"
     }
    ],
@@ -11175,7 +11257,7 @@
    "description": "Light-catching and effortlessly elegant, this tissue saree brings a subtle sheen to a timeless Indian silhouette. Crafted in a delicate tissue fabric, it drapes with a soft, fluid fall while adding just the right amount of luminosity to your look. Designed for moments that call for understated elegance, it pairs traditional character with a contemporary sensibility, easy to style for festive gatherings, intimate celebrations, and evening occasions.",
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5b3b054b-c9a8-40e8-be70-2df32e69e1da.png"
    ],
    "options": [],
    "variants": [
@@ -11184,8 +11266,8 @@
      "label": "Rang Tissue Saree",
      "options": [],
      "priceMinor": 366000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3dfb566d-50e4-4111-b3c1-de754cae07fd.jpg"
+     "compareAtMinor": 386000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5b3b054b-c9a8-40e8-be70-2df32e69e1da.png"
     }
    ],
    "priceFromMinor": 366000,
@@ -11193,28 +11275,97 @@
    "featured": false
   },
   {
-   "slug": "pehchaan-resham-khadi-saree",
+   "slug": "pehchaan-sanjh-matka-cotton-saree",
    "brand": "pehchaan",
-   "title": "Resham Khadi Saree",
-   "description": "Khadi is natural-fibre cloth that's spun and woven by hand. It's usually cotton, sometimes silk or wool. Gandhi promoted it during the Swadeshi movement, and it's a symbol of self-reliance and support for artisans. The texture is slightly coarse and uneven because it's handmade. It stays cool in summer and warm in winter.",
+   "title": "Sanjh Matka Cotton Saree",
+   "description": "Rooted in the beauty of natural textures, Sanjh brings an understated elegance to everyday dressing. Its distinctive character and timeless appeal make it a thoughtful choice for women who appreciate simplicity with a sense of individuality. From slow mornings to intimate gatherings, this matka cotton saree lets you express yourself with effortless grace.",
    "collection": "apparel",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/885cec16-da7e-4972-8a94-cf4595067db6.png"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7f95719a-5a92-4e9f-9f99-a5494c3c13fb.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9612986b-c7ab-4272-9a5f-654ffe512832.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0fa19b15-3d8b-4bbd-ba2f-552c56c8522f.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/89f4be8e-af6b-4726-97d0-41a228061fe9.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5abdfb06-8047-49dd-9a08-2c27144e45b3.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/f31e5b59-5223-4fc9-99bd-45fd742bbe00.png"
    ],
-   "options": [],
-   "variants": [
+   "options": [
     {
-     "sku": "KHADI-3",
-     "label": "Resham Khadi Saree",
-     "options": [],
-     "priceMinor": 348000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/885cec16-da7e-4972-8a94-cf4595067db6.png"
+     "name": "Colors",
+     "values": [
+      "Navy Blue",
+      "Black",
+      "Purple",
+      "Olive",
+      "Sky Blue",
+      "Rust"
+     ]
     }
    ],
-   "priceFromMinor": 348000,
-   "priceToMinor": 348000,
-   "featured": false
+   "variants": [
+    {
+     "sku": "SANJH-MATKA-COTTON-SAREE-NAVY-BLUE",
+     "label": "Navy Blue",
+     "options": [
+      "Navy Blue"
+     ],
+     "priceMinor": 216000,
+     "compareAtMinor": 246000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7f95719a-5a92-4e9f-9f99-a5494c3c13fb.png"
+    },
+    {
+     "sku": "SANJH-MATKA-COTTON-SAREE-BLACK",
+     "label": "Black",
+     "options": [
+      "Black"
+     ],
+     "priceMinor": 216000,
+     "compareAtMinor": 246000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7f95719a-5a92-4e9f-9f99-a5494c3c13fb.png"
+    },
+    {
+     "sku": "SANJH-MATKA-COTTON-SAREE-PURPLE",
+     "label": "Purple",
+     "options": [
+      "Purple"
+     ],
+     "priceMinor": 216000,
+     "compareAtMinor": 246000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7f95719a-5a92-4e9f-9f99-a5494c3c13fb.png"
+    },
+    {
+     "sku": "SANJH-MATKA-COTTON-SAREE-OLIVE",
+     "label": "Olive",
+     "options": [
+      "Olive"
+     ],
+     "priceMinor": 216000,
+     "compareAtMinor": 246000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7f95719a-5a92-4e9f-9f99-a5494c3c13fb.png"
+    },
+    {
+     "sku": "SANJH-MATKA-COTTON-SAREE-SKY-BLUE",
+     "label": "Sky Blue",
+     "options": [
+      "Sky Blue"
+     ],
+     "priceMinor": 216000,
+     "compareAtMinor": 246000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7f95719a-5a92-4e9f-9f99-a5494c3c13fb.png"
+    },
+    {
+     "sku": "SANJH-MATKA-COTTON-SAREE-RUST",
+     "label": "Rust",
+     "options": [
+      "Rust"
+     ],
+     "priceMinor": 216000,
+     "compareAtMinor": 246000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7f95719a-5a92-4e9f-9f99-a5494c3c13fb.png"
+    }
+   ],
+   "priceFromMinor": 216000,
+   "priceToMinor": 216000,
+   "featured": true
   },
   {
    "slug": "pehchaan-zariya-ajrakh-modal-silk-saree",
@@ -11232,7 +11383,6 @@
      "name": "Colors",
      "values": [
       "Blue",
-      "Red",
       "Mustard"
      ]
     }
@@ -11245,17 +11395,7 @@
       "Blue"
      ],
      "priceMinor": 108000,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c1be45fd-3603-4d2f-8fa6-4f09c05900a3.png"
-    },
-    {
-     "sku": "ZARIYA-AJRAKH-MODAL-SILK-SAREE-RED",
-     "label": "Red",
-     "options": [
-      "Red"
-     ],
-     "priceMinor": 108000,
-     "compareAtMinor": null,
+     "compareAtMinor": 126000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c1be45fd-3603-4d2f-8fa6-4f09c05900a3.png"
     },
     {
@@ -11265,7 +11405,7 @@
       "Mustard"
      ],
      "priceMinor": 108000,
-     "compareAtMinor": null,
+     "compareAtMinor": 126000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c1be45fd-3603-4d2f-8fa6-4f09c05900a3.png"
     }
    ],
