@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-17T04:52:01.104Z",
+ "generatedAt": "2026-10-18T04:58:01.718Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -997,13 +997,13 @@
      "sku": "INSTANT-COFFEE-HAZELNUT",
      "label": "Instant Coffee Hazelnut",
      "options": [],
-     "priceMinor": 34900,
-     "compareAtMinor": 40000,
+     "priceMinor": 40000,
+     "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ccced037-d043-4bb7-a9a9-d8f19344c2d1.png"
     }
    ],
-   "priceFromMinor": 34900,
-   "priceToMinor": 34900,
+   "priceFromMinor": 40000,
+   "priceToMinor": 40000,
    "featured": false
   },
   {
@@ -2377,6 +2377,54 @@
    ],
    "priceFromMinor": 12000,
    "priceToMinor": 12000,
+   "featured": false
+  },
+  {
+   "slug": "ember-and-oak-starbucks-candle",
+   "brand": "ember-and-oak",
+   "title": "Starbucks Candle",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/43e7e6fd-e7d3-48d7-9d84-2c1ebab955e1.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "STARBUCKS-CANDLE",
+     "label": "Starbucks Candle",
+     "options": [],
+     "priceMinor": 19900,
+     "compareAtMinor": 36900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/43e7e6fd-e7d3-48d7-9d84-2c1ebab955e1.jpg"
+    }
+   ],
+   "priceFromMinor": 19900,
+   "priceToMinor": 19900,
+   "featured": false
+  },
+  {
+   "slug": "ember-and-oak-urli-candles",
+   "brand": "ember-and-oak",
+   "title": "Urli Candles",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5ed852b9-f71c-4f9b-aade-d5dd6b530faf.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "URLI-CANDLES",
+     "label": "Urli Candles",
+     "options": [],
+     "priceMinor": 19900,
+     "compareAtMinor": 34900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5ed852b9-f71c-4f9b-aade-d5dd6b530faf.jpg"
+    }
+   ],
+   "priceFromMinor": 19900,
+   "priceToMinor": 19900,
    "featured": false
   },
   {
@@ -7281,6 +7329,30 @@
    "featured": false
   },
   {
+   "slug": "lantern-candles-home-decor-big",
+   "brand": "lantern-candles",
+   "title": "Home Decor Big",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/143082bb-7427-4b7f-bfef-22d4539ae28d.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "HOME-DECOR-BIG",
+     "label": "Home Decor Big",
+     "options": [],
+     "priceMinor": 79900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/143082bb-7427-4b7f-bfef-22d4539ae28d.jpg"
+    }
+   ],
+   "priceFromMinor": 79900,
+   "priceToMinor": 79900,
+   "featured": false
+  },
+  {
    "slug": "lantern-candles-home-decor-candle",
    "brand": "lantern-candles",
    "title": "Home Decor Candle",
@@ -10538,13 +10610,13 @@
      "sku": "MINI-CHOCOCHIP-COOKIES-WITH-DIP",
      "label": "Choco Chunk Cookies",
      "options": [],
-     "priceMinor": 24900,
+     "priceMinor": 25900,
      "compareAtMinor": 26900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4cec1fe7-2b98-453b-892b-40f7e381e136.jpg"
     }
    ],
-   "priceFromMinor": 24900,
-   "priceToMinor": 24900,
+   "priceFromMinor": 25900,
+   "priceToMinor": 25900,
    "featured": false
   },
   {
@@ -10562,13 +10634,13 @@
      "sku": "DOUBLE-CHOCO-CHIP-COOKIES",
      "label": "Double Choco Chip Cookies",
      "options": [],
-     "priceMinor": 26900,
+     "priceMinor": 27900,
      "compareAtMinor": 28900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d58951dc-8f64-4587-9209-340c8720d1af.jpg"
     }
    ],
-   "priceFromMinor": 26900,
-   "priceToMinor": 26900,
+   "priceFromMinor": 27900,
+   "priceToMinor": 27900,
    "featured": true
   },
   {
