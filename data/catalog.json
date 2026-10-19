@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-18T04:58:01.718Z",
+ "generatedAt": "2026-10-19T05:06:24.098Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -949,13 +949,13 @@
      "sku": "INSTANT-COFFEE-CARAMEL",
      "label": "Instant Coffee Caramel",
      "options": [],
-     "priceMinor": 34900,
-     "compareAtMinor": 40000,
+     "priceMinor": 40000,
+     "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ff7895c7-fc44-4c5b-b1cd-59e30b185799.png"
     }
    ],
-   "priceFromMinor": 34900,
-   "priceToMinor": 34900,
+   "priceFromMinor": 40000,
+   "priceToMinor": 40000,
    "featured": false
   },
   {
@@ -1021,13 +1021,13 @@
      "sku": "INSTANT-COFFEE-PURE-COFFEE",
      "label": "Instant Coffee Pure Coffee",
      "options": [],
-     "priceMinor": 34900,
-     "compareAtMinor": 40000,
+     "priceMinor": 40000,
+     "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/40f2a497-acf4-4359-9802-eede5043d11c.png"
     }
    ],
-   "priceFromMinor": 34900,
-   "priceToMinor": 34900,
+   "priceFromMinor": 40000,
+   "priceToMinor": 40000,
    "featured": false
   },
   {
@@ -1607,7 +1607,7 @@
      "options": [
       "50g"
      ],
-     "priceMinor": 9000,
+     "priceMinor": 10000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a539678b-b02f-4647-a0f6-597c0145e5f7.jpg"
     },
@@ -1617,13 +1617,13 @@
      "options": [
       "100g"
      ],
-     "priceMinor": 13000,
+     "priceMinor": 15000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a539678b-b02f-4647-a0f6-597c0145e5f7.jpg"
     }
    ],
-   "priceFromMinor": 9000,
-   "priceToMinor": 13000,
+   "priceFromMinor": 10000,
+   "priceToMinor": 15000,
    "featured": false
   },
   {
@@ -1739,7 +1739,7 @@
      "options": [
       "50g"
      ],
-     "priceMinor": 9000,
+     "priceMinor": 10000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/98cfed99-9b16-45b2-b332-f9b9ff371dbb.jpg"
     },
@@ -1749,13 +1749,13 @@
      "options": [
       "100g"
      ],
-     "priceMinor": 13000,
+     "priceMinor": 15000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/98cfed99-9b16-45b2-b332-f9b9ff371dbb.jpg"
     }
    ],
-   "priceFromMinor": 9000,
-   "priceToMinor": 13000,
+   "priceFromMinor": 10000,
+   "priceToMinor": 15000,
    "featured": false
   },
   {
@@ -1851,7 +1851,7 @@
      "options": [
       "50g"
      ],
-     "priceMinor": 9000,
+     "priceMinor": 10000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d1c9190b-4e62-485c-96f1-b7807c9647ed.jpg"
     },
@@ -1861,13 +1861,13 @@
      "options": [
       "100g"
      ],
-     "priceMinor": 13000,
+     "priceMinor": 15000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d1c9190b-4e62-485c-96f1-b7807c9647ed.jpg"
     }
    ],
-   "priceFromMinor": 9000,
-   "priceToMinor": 13000,
+   "priceFromMinor": 10000,
+   "priceToMinor": 15000,
    "featured": false
   },
   {
@@ -1983,7 +1983,7 @@
      "options": [
       "50g"
      ],
-     "priceMinor": 9000,
+     "priceMinor": 10000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a8c22ae6-abdd-4384-b993-a50e54e3ac3f.jpg"
     },
@@ -1993,13 +1993,13 @@
      "options": [
       "100g"
      ],
-     "priceMinor": 13000,
+     "priceMinor": 15000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a8c22ae6-abdd-4384-b993-a50e54e3ac3f.jpg"
     }
    ],
-   "priceFromMinor": 9000,
-   "priceToMinor": 13000,
+   "priceFromMinor": 10000,
+   "priceToMinor": 15000,
    "featured": false
   },
   {
@@ -2027,7 +2027,7 @@
      "options": [
       "50g"
      ],
-     "priceMinor": 9000,
+     "priceMinor": 10000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/00e9947c-3eaa-4f85-a8ed-27b646e652b4.jpg"
     },
@@ -2037,13 +2037,13 @@
      "options": [
       "100g"
      ],
-     "priceMinor": 13000,
+     "priceMinor": 15000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/00e9947c-3eaa-4f85-a8ed-27b646e652b4.jpg"
     }
    ],
-   "priceFromMinor": 9000,
-   "priceToMinor": 13000,
+   "priceFromMinor": 10000,
+   "priceToMinor": 15000,
    "featured": false
   },
   {
@@ -10845,7 +10845,6 @@
      "name": "Colors",
      "values": [
       "Teal",
-      "Rust",
       "Purple"
      ]
     }
@@ -10856,16 +10855,6 @@
      "label": "Teal",
      "options": [
       "Teal"
-     ],
-     "priceMinor": 148000,
-     "compareAtMinor": 166000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d6c46046-c860-4338-86c0-1117260a5359.jpg"
-    },
-    {
-     "sku": "BATIK-SILK-RUST",
-     "label": "Rust",
-     "options": [
-      "Rust"
      ],
      "priceMinor": 148000,
      "compareAtMinor": 166000,
