@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-19T05:06:24.098Z",
+ "generatedAt": "2026-10-24T04:54:58.403Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -7207,6 +7207,30 @@
    "featured": true
   },
   {
+   "slug": "lantern-candles-bowl-urli-3-inches",
+   "brand": "lantern-candles",
+   "title": "Bowl Urli 3 Inches",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1b7118d4-711d-4978-b3fe-e6dbebea71ce.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BOWL-URLI-3-INCHES",
+     "label": "Bowl Urli 3 Inches",
+     "options": [],
+     "priceMinor": 20000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1b7118d4-711d-4978-b3fe-e6dbebea71ce.jpg"
+    }
+   ],
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
+   "featured": false
+  },
+  {
    "slug": "lantern-candles-cafe-latte",
    "brand": "lantern-candles",
    "title": "Cafe Latte",
@@ -7271,13 +7295,13 @@
      "sku": "DARK-PINK-PEONY",
      "label": "Dark Pink Peony",
      "options": [],
-     "priceMinor": 12000,
+     "priceMinor": 6000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/810fe53c-e19d-4f2a-8da1-41dba7e3ef9d.png"
     }
    ],
-   "priceFromMinor": 12000,
-   "priceToMinor": 12000,
+   "priceFromMinor": 6000,
+   "priceToMinor": 6000,
    "featured": false
   },
   {
@@ -7447,6 +7471,54 @@
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-lotus-urli-3-5",
+   "brand": "lantern-candles",
+   "title": "Lotus Urli 3.5",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e4fd871-449b-4433-9cfc-8ad21b568c92.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LOTUS-URLI-3-5",
+     "label": "Lotus Urli 3.5",
+     "options": [],
+     "priceMinor": 14000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3e4fd871-449b-4433-9cfc-8ad21b568c92.jpg"
+    }
+   ],
+   "priceFromMinor": 14000,
+   "priceToMinor": 14000,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-lotus-urli-4-5",
+   "brand": "lantern-candles",
+   "title": "Lotus Urli 4.5",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6f36c999-0d75-4bf6-9622-09d079eab676.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LOTUS-URLI-4-5",
+     "label": "Lotus Urli 4.5",
+     "options": [],
+     "priceMinor": 16000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6f36c999-0d75-4bf6-9622-09d079eab676.jpg"
+    }
+   ],
+   "priceFromMinor": 16000,
+   "priceToMinor": 16000,
    "featured": false
   },
   {
