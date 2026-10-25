@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T04:54:58.403Z",
+ "generatedAt": "2026-10-25T05:07:21.223Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -9823,6 +9823,30 @@
    ],
    "priceFromMinor": 9900,
    "priceToMinor": 19000,
+   "featured": false
+  },
+  {
+   "slug": "mugshot-lemonade-1-glass",
+   "brand": "mugshot",
+   "title": "Lemonade 1 Glass",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b6ded7a1-df7d-41c8-8039-70fd5e6c6c5b.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LEMONADE-1-GLASS",
+     "label": "Lemonade 1 Glass",
+     "options": [],
+     "priceMinor": 12900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b6ded7a1-df7d-41c8-8039-70fd5e6c6c5b.jpg"
+    }
+   ],
+   "priceFromMinor": 12900,
+   "priceToMinor": 12900,
    "featured": false
   },
   {
