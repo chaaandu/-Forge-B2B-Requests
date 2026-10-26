@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-25T05:07:21.223Z",
+ "generatedAt": "2026-10-26T05:10:04.983Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -887,6 +887,30 @@
    "featured": false
   },
   {
+   "slug": "atmiva-kulfi",
+   "brand": "atmiva",
+   "title": "Kulfi",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2505f703-c8b2-4b76-bb94-e6133d70f8f4.png"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "KULFI",
+     "label": "Kulfi",
+     "options": [],
+     "priceMinor": 9000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2505f703-c8b2-4b76-bb94-e6133d70f8f4.png"
+    }
+   ],
+   "priceFromMinor": 9000,
+   "priceToMinor": 9000,
+   "featured": false
+  },
+  {
    "slug": "atmiva-volcano-aroma-diffuser",
    "brand": "atmiva",
    "title": "Volcano Aroma Diffuser",
@@ -933,6 +957,30 @@
    "priceFromMinor": 19900,
    "priceToMinor": 19900,
    "featured": true
+  },
+  {
+   "slug": "bean-and-beyond-blueberry-cheesecake",
+   "brand": "bean-and-beyond",
+   "title": "Blueberry Cheesecake",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6152f7e4-34ee-4cc1-9f36-8c9e5dc2e055.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BLUEBERRY-CHEESECAKE",
+     "label": "Blueberry Cheesecake",
+     "options": [],
+     "priceMinor": 26900,
+     "compareAtMinor": 35000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6152f7e4-34ee-4cc1-9f36-8c9e5dc2e055.jpg"
+    }
+   ],
+   "priceFromMinor": 26900,
+   "priceToMinor": 26900,
+   "featured": false
   },
   {
    "slug": "bean-and-beyond-instant-coffee-caramel",
@@ -1028,6 +1076,54 @@
    ],
    "priceFromMinor": 40000,
    "priceToMinor": 40000,
+   "featured": false
+  },
+  {
+   "slug": "bean-and-beyond-nutrlla-cheesecake",
+   "brand": "bean-and-beyond",
+   "title": "Nutrlla Cheesecake",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a56a85f9-af04-43ec-8db3-744f3d7f93b7.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "NUTRLLA-CHEESECAKE",
+     "label": "Nutrlla Cheesecake",
+     "options": [],
+     "priceMinor": 24900,
+     "compareAtMinor": 35000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a56a85f9-af04-43ec-8db3-744f3d7f93b7.jpg"
+    }
+   ],
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
+   "featured": false
+  },
+  {
+   "slug": "bean-and-beyond-tiramisu",
+   "brand": "bean-and-beyond",
+   "title": "Tiramisu",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8ab68198-4b2b-4dbc-8789-361d87ddfc49.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TIRAMISU",
+     "label": "Tiramisu",
+     "options": [],
+     "priceMinor": 39900,
+     "compareAtMinor": 50000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/8ab68198-4b2b-4dbc-8789-361d87ddfc49.jpg"
+    }
+   ],
+   "priceFromMinor": 39900,
+   "priceToMinor": 39900,
    "featured": false
   },
   {
@@ -1415,6 +1511,30 @@
    ],
    "priceFromMinor": 9900,
    "priceToMinor": 24900,
+   "featured": false
+  },
+  {
+   "slug": "chipmonk-samosa",
+   "brand": "chipmonk",
+   "title": "Samosa",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3fa855b3-f659-4d51-8d5f-dda17540e8cd.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SAMOSA",
+     "label": "Samosa",
+     "options": [],
+     "priceMinor": 5000,
+     "compareAtMinor": 6000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3fa855b3-f659-4d51-8d5f-dda17540e8cd.jpg"
+    }
+   ],
+   "priceFromMinor": 5000,
+   "priceToMinor": 5000,
    "featured": false
   },
   {
@@ -2047,171 +2167,99 @@
    "featured": false
   },
   {
-   "slug": "dad-of-bags-day-n-night-aesthetic-embroidered-tote-bag",
+   "slug": "dad-of-bags-chocolate-sticks",
    "brand": "dad-of-bags",
-   "title": "Day N Night Aesthetic Embroidered Tote Bag",
+   "title": "Chocolate Sticks",
    "description": null,
    "collection": "accessories",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/144add84-ae49-4374-bbe3-c5be82f08c0f.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/353f0fea-b240-4bbe-9120-91e09c5f55b1.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "DAY-N-NIGHT-AESTHETIC-EMBROIDERED-TO",
-     "label": "Day N Night Aesthetic Embroidered Tote Bag",
+     "sku": "CHOCOLATE-STICKS",
+     "label": "Chocolate Sticks",
      "options": [],
-     "priceMinor": 45000,
-     "compareAtMinor": 49900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/144add84-ae49-4374-bbe3-c5be82f08c0f.jpg"
+     "priceMinor": 40000,
+     "compareAtMinor": 50000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/353f0fea-b240-4bbe-9120-91e09c5f55b1.jpg"
     }
    ],
-   "priceFromMinor": 45000,
-   "priceToMinor": 45000,
+   "priceFromMinor": 40000,
+   "priceToMinor": 40000,
    "featured": true
   },
   {
-   "slug": "dad-of-bags-diet-coke-printed-tote-bag",
+   "slug": "dad-of-bags-granola",
    "brand": "dad-of-bags",
-   "title": "Diet Coke Printed Tote Bag",
+   "title": "Granola",
    "description": null,
    "collection": "accessories",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7457c3ba-3af6-4450-a101-9241f2c2dcec.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5368aa19-6464-47b3-a41b-4f4f19a55ab8.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "DIET-COKE-PRINTED-TOTE-BAG",
-     "label": "Diet Coke Printed Tote Bag",
+     "sku": "GRANOLA",
+     "label": "Granola",
      "options": [],
-     "priceMinor": 15000,
-     "compareAtMinor": 49900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7457c3ba-3af6-4450-a101-9241f2c2dcec.jpg"
+     "priceMinor": 40000,
+     "compareAtMinor": 50000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5368aa19-6464-47b3-a41b-4f4f19a55ab8.jpg"
     }
    ],
-   "priceFromMinor": 15000,
-   "priceToMinor": 15000,
+   "priceFromMinor": 40000,
+   "priceToMinor": 40000,
    "featured": false
   },
   {
-   "slug": "dad-of-bags-main-character-printed-tote-bag",
+   "slug": "dad-of-bags-painting",
    "brand": "dad-of-bags",
-   "title": "Main Character Printed Tote Bag",
+   "title": "Painting",
    "description": null,
    "collection": "accessories",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e2ebddb6-6699-4345-90b7-977abb251564.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/106186ec-e476-49be-8c6a-6c3c78b0d7c7.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "MAIN-CHARACTER-PRINTED-TOTE-BAG",
-     "label": "Main Character Printed Tote Bag",
+     "sku": "PAINTING",
+     "label": "Painting",
      "options": [],
-     "priceMinor": 15000,
-     "compareAtMinor": 49900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e2ebddb6-6699-4345-90b7-977abb251564.jpg"
+     "priceMinor": 25000,
+     "compareAtMinor": 35000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/106186ec-e476-49be-8c6a-6c3c78b0d7c7.jpg"
     }
    ],
-   "priceFromMinor": 15000,
-   "priceToMinor": 15000,
+   "priceFromMinor": 25000,
+   "priceToMinor": 25000,
    "featured": false
   },
   {
-   "slug": "dad-of-bags-mustang-tote-bag",
+   "slug": "dad-of-bags-tote-bag",
    "brand": "dad-of-bags",
-   "title": "Mustang Tote Bag",
+   "title": "Tote Bag",
    "description": null,
    "collection": "accessories",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bae32dea-0496-4351-aec5-22dbb1904361.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/45118d6b-c35e-4e89-941e-f04e7ac62de5.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "MUSTANG-TOTE-BAG",
-     "label": "Mustang Tote Bag",
+     "sku": "TOTE-BAG",
+     "label": "Tote Bag",
      "options": [],
-     "priceMinor": 15000,
-     "compareAtMinor": 49900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bae32dea-0496-4351-aec5-22dbb1904361.jpg"
+     "priceMinor": 20000,
+     "compareAtMinor": 35000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/45118d6b-c35e-4e89-941e-f04e7ac62de5.jpg"
     }
    ],
-   "priceFromMinor": 15000,
-   "priceToMinor": 15000,
-   "featured": false
-  },
-  {
-   "slug": "dad-of-bags-rcb-embelm-printed-tote-bag",
-   "brand": "dad-of-bags",
-   "title": "RCB Embelm Printed Tote Bag",
-   "description": null,
-   "collection": "accessories",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4759fb82-a711-4cf6-9fa0-f16153ec04d1.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "RCB-EMBELM-PRINTED-TOTE-BAG",
-     "label": "RCB Embelm Printed Tote Bag",
-     "options": [],
-     "priceMinor": 15000,
-     "compareAtMinor": 49900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4759fb82-a711-4cf6-9fa0-f16153ec04d1.jpg"
-    }
-   ],
-   "priceFromMinor": 15000,
-   "priceToMinor": 15000,
-   "featured": false
-  },
-  {
-   "slug": "dad-of-bags-royal-enfield-printed-tote-bag",
-   "brand": "dad-of-bags",
-   "title": "Royal Enfield Printed Tote Bag",
-   "description": null,
-   "collection": "accessories",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7b9a7ac1-46ad-4df5-bfbb-9226864eb2e3.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "ROYAL-ENFIELD-PRINTED-TOTE-BAG",
-     "label": "Royal Enfield Printed Tote Bag",
-     "options": [],
-     "priceMinor": 15000,
-     "compareAtMinor": 49900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7b9a7ac1-46ad-4df5-bfbb-9226864eb2e3.jpg"
-    }
-   ],
-   "priceFromMinor": 15000,
-   "priceToMinor": 15000,
-   "featured": false
-  },
-  {
-   "slug": "dad-of-bags-spidy-web-embroidered-tote-bag",
-   "brand": "dad-of-bags",
-   "title": "Spidy Web Embroidered Tote Bag",
-   "description": null,
-   "collection": "accessories",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5452337f-d7aa-4e45-8022-facbf9f90cd3.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "SPIDY-WEB-EMBROIDERED-TOTE-BAG-2",
-     "label": "Spidy Web Embroidered Tote Bag",
-     "options": [],
-     "priceMinor": 15000,
-     "compareAtMinor": 49900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5452337f-d7aa-4e45-8022-facbf9f90cd3.jpg"
-    }
-   ],
-   "priceFromMinor": 15000,
-   "priceToMinor": 15000,
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
    "featured": false
   },
   {
@@ -2452,6 +2500,54 @@
    "featured": true
   },
   {
+   "slug": "fake-society-studio-project-001",
+   "brand": "fake-society-studio",
+   "title": "Project 001",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/02bbbc90-84a9-4dc4-a1f2-2dd01bc9bfc6.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PROJECT-001",
+     "label": "Project 001",
+     "options": [],
+     "priceMinor": 149900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/02bbbc90-84a9-4dc4-a1f2-2dd01bc9bfc6.jpg"
+    }
+   ],
+   "priceFromMinor": 149900,
+   "priceToMinor": 149900,
+   "featured": false
+  },
+  {
+   "slug": "fake-society-studio-tote-bag",
+   "brand": "fake-society-studio",
+   "title": "Tote Bag",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4484c6e7-1634-4e24-840e-6a90e1012fad.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "TOTE-BAG",
+     "label": "Tote Bag",
+     "options": [],
+     "priceMinor": 20000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4484c6e7-1634-4e24-840e-6a90e1012fad.jpg"
+    }
+   ],
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
+   "featured": false
+  },
+  {
    "slug": "haulties-beetroot-chips",
    "brand": "haulties",
    "title": "Beetroot Chips",
@@ -2689,6 +2785,30 @@
    ],
    "priceFromMinor": 14900,
    "priceToMinor": 14900,
+   "featured": false
+  },
+  {
+   "slug": "haulties-pani-puri",
+   "brand": "haulties",
+   "title": "Pani Puri",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/99dde128-e493-4870-b014-e86cf479f183.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PANI-PURI",
+     "label": "Pani Puri",
+     "options": [],
+     "priceMinor": 7000,
+     "compareAtMinor": 10000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/99dde128-e493-4870-b014-e86cf479f183.jpg"
+    }
+   ],
+   "priceFromMinor": 7000,
+   "priceToMinor": 7000,
    "featured": false
   },
   {
@@ -3625,6 +3745,30 @@
    "featured": false
   },
   {
+   "slug": "kirdaaar-aaa-shirts-or-kurta-mesa-flea",
+   "brand": "kirdaaar",
+   "title": "AAA Shirts Or Kurta (mesa flea)",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fc101ce6-bd3b-4d96-ab9d-fdaf94b40b82.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "AAA-SHIRTS-OR-KURTA-MESA-FLEA",
+     "label": "AAA Shirts Or Kurta (mesa flea)",
+     "options": [],
+     "priceMinor": 120000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/fc101ce6-bd3b-4d96-ab9d-fdaf94b40b82.jpg"
+    }
+   ],
+   "priceFromMinor": 120000,
+   "priceToMinor": 120000,
+   "featured": false
+  },
+  {
    "slug": "kirdaaar-hand-block-printed-full-sleeve-short-kurta-k-04",
    "brand": "kirdaaar",
    "title": "Hand Block Printed Full Sleeve Short Kurta K-04",
@@ -4251,6 +4395,30 @@
    ],
    "priceFromMinor": 119900,
    "priceToMinor": 119900,
+   "featured": false
+  },
+  {
+   "slug": "kirdaaar-jewelry",
+   "brand": "kirdaaar",
+   "title": "Jewelry",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cbfe7626-cc48-449c-ba1d-2eaeec662157.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "JEWELRY",
+     "label": "Jewelry",
+     "options": [],
+     "priceMinor": 80000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/cbfe7626-cc48-449c-ba1d-2eaeec662157.jpg"
+    }
+   ],
+   "priceFromMinor": 80000,
+   "priceToMinor": 80000,
    "featured": false
   },
   {
@@ -6532,6 +6700,30 @@
    "featured": false
   },
   {
+   "slug": "krackle-co-cola",
+   "brand": "krackle-co",
+   "title": "Cola",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b742777f-9140-4a4f-9fd8-4cc48228ea19.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COLA",
+     "label": "Cola",
+     "options": [],
+     "priceMinor": 18000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b742777f-9140-4a4f-9fd8-4cc48228ea19.jpg"
+    }
+   ],
+   "priceFromMinor": 18000,
+   "priceToMinor": 18000,
+   "featured": false
+  },
+  {
    "slug": "krackle-co-gift-hamper",
    "brand": "krackle-co",
    "title": "Gift Hamper",
@@ -6694,6 +6886,30 @@
    "featured": false
   },
   {
+   "slug": "krackle-co-momo",
+   "brand": "krackle-co",
+   "title": "Momo",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/005ce75f-2ce9-4ba4-95c3-c7c6da5036ec.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MOMO",
+     "label": "Momo",
+     "options": [],
+     "priceMinor": 9900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/005ce75f-2ce9-4ba4-95c3-c7c6da5036ec.jpg"
+    }
+   ],
+   "priceFromMinor": 9900,
+   "priceToMinor": 9900,
+   "featured": false
+  },
+  {
    "slug": "krackle-co-pack-of-3-brittle",
    "brand": "krackle-co",
    "title": "Pack of 3 Brittle",
@@ -6742,6 +6958,30 @@
    "featured": false
   },
   {
+   "slug": "krackle-co-paneer-momo",
+   "brand": "krackle-co",
+   "title": "Paneer Momo",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/597a3731-956f-4dff-83e0-c8d028f3ce59.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PANEER-MOMO",
+     "label": "Paneer Momo",
+     "options": [],
+     "priceMinor": 11900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/597a3731-956f-4dff-83e0-c8d028f3ce59.jpg"
+    }
+   ],
+   "priceFromMinor": 11900,
+   "priceToMinor": 11900,
+   "featured": false
+  },
+  {
    "slug": "krackle-co-strawberry-brittle",
    "brand": "krackle-co",
    "title": "Strawberry Brittle",
@@ -6763,6 +7003,30 @@
    ],
    "priceFromMinor": 4500,
    "priceToMinor": 4500,
+   "featured": false
+  },
+  {
+   "slug": "krackle-co-veh-momo",
+   "brand": "krackle-co",
+   "title": "Veh Momo",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/08018f6e-1691-44a7-b05d-480b52f5fe20.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "VEH-MOMO",
+     "label": "Veh Momo",
+     "options": [],
+     "priceMinor": 9900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/08018f6e-1691-44a7-b05d-480b52f5fe20.jpg"
+    }
+   ],
+   "priceFromMinor": 9900,
+   "priceToMinor": 9900,
    "featured": false
   },
   {
@@ -7207,6 +7471,30 @@
    "featured": true
   },
   {
+   "slug": "kuki-samosa",
+   "brand": "kuki",
+   "title": "Samosa",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5906ecdd-56dd-440b-bef9-861ea405121f.webp"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SAMOSA",
+     "label": "Samosa",
+     "options": [],
+     "priceMinor": 4000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5906ecdd-56dd-440b-bef9-861ea405121f.webp"
+    }
+   ],
+   "priceFromMinor": 4000,
+   "priceToMinor": 4000,
+   "featured": false
+  },
+  {
    "slug": "lantern-candles-bowl-urli-3-inches",
    "brand": "lantern-candles",
    "title": "Bowl Urli 3 Inches",
@@ -7246,13 +7534,13 @@
      "sku": "CAFE-LATTE",
      "label": "Cafe Latte",
      "options": [],
-     "priceMinor": 59900,
+     "priceMinor": 69900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7016d319-28e8-4ebc-8534-e9be56439d4c.png"
     }
    ],
-   "priceFromMinor": 59900,
-   "priceToMinor": 59900,
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
    "featured": true
   },
   {
@@ -7329,6 +7617,30 @@
    "featured": false
   },
   {
+   "slug": "lantern-candles-diya-box",
+   "brand": "lantern-candles",
+   "title": "Diya Box",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7c3133dc-a9ba-479b-b55f-0be64b452f66.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DIYA-BOX",
+     "label": "Diya Box",
+     "options": [],
+     "priceMinor": 50000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7c3133dc-a9ba-479b-b55f-0be64b452f66.jpg"
+    }
+   ],
+   "priceFromMinor": 50000,
+   "priceToMinor": 50000,
+   "featured": false
+  },
+  {
    "slug": "lantern-candles-flavido-plum",
    "brand": "lantern-candles",
    "title": "Flavido Plum",
@@ -7350,6 +7662,75 @@
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-flower-clip",
+   "brand": "lantern-candles",
+   "title": "Flower Clip",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c3517609-7fac-4078-967a-27164ac4e2cc.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b9bf25e2-1e2f-45f9-9590-c011f35306ca.jpg"
+   ],
+   "options": [
+    {
+     "name": "Pack",
+     "values": [
+      "₹100 pack",
+      "₹120 pack"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "sku": "FLOWER-CLIP",
+     "label": "₹100 pack",
+     "options": [
+      "₹100 pack"
+     ],
+     "priceMinor": 10000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c3517609-7fac-4078-967a-27164ac4e2cc.jpg"
+    },
+    {
+     "sku": "FLOWER-CLIP-2",
+     "label": "₹120 pack",
+     "options": [
+      "₹120 pack"
+     ],
+     "priceMinor": 12000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/b9bf25e2-1e2f-45f9-9590-c011f35306ca.jpg"
+    }
+   ],
+   "priceFromMinor": 10000,
+   "priceToMinor": 12000,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-flower-set",
+   "brand": "lantern-candles",
+   "title": "Flower Set",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4400241-df5a-467e-b68d-e4accdf285ea.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "FLOWER-SET",
+     "label": "Flower Set",
+     "options": [],
+     "priceMinor": 110000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4400241-df5a-467e-b68d-e4accdf285ea.jpg"
+    }
+   ],
+   "priceFromMinor": 110000,
+   "priceToMinor": 110000,
    "featured": false
   },
   {
@@ -7422,6 +7803,30 @@
    ],
    "priceFromMinor": 10000,
    "priceToMinor": 10000,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-lavender-latte",
+   "brand": "lantern-candles",
+   "title": "Lavender Latte",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/548ed952-d5e2-411b-bff2-1ee957c934dd.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "LAVENDER-LATTE",
+     "label": "Lavender Latte",
+     "options": [],
+     "priceMinor": 69900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/548ed952-d5e2-411b-bff2-1ee957c934dd.jpg"
+    }
+   ],
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
    "featured": false
   },
   {
@@ -7537,13 +7942,13 @@
      "sku": "MATTCHA-LATTE",
      "label": "Mattcha Latte",
      "options": [],
-     "priceMinor": 59900,
+     "priceMinor": 69900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/047dd967-8776-457e-9b44-e14605fd678d.png"
     }
    ],
-   "priceFromMinor": 59900,
-   "priceToMinor": 59900,
+   "priceFromMinor": 69900,
+   "priceToMinor": 69900,
    "featured": false
   },
   {
@@ -7568,6 +7973,30 @@
    ],
    "priceFromMinor": 49900,
    "priceToMinor": 49900,
+   "featured": false
+  },
+  {
+   "slug": "lantern-candles-scrunchie",
+   "brand": "lantern-candles",
+   "title": "Scrunchie",
+   "description": null,
+   "collection": "home",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eb3d6a28-cae9-444f-9ab9-a1a30518eeec.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SCRUNCHIE",
+     "label": "Scrunchie",
+     "options": [],
+     "priceMinor": 8000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/eb3d6a28-cae9-444f-9ab9-a1a30518eeec.jpg"
+    }
+   ],
+   "priceFromMinor": 8000,
+   "priceToMinor": 8000,
    "featured": false
   },
   {
@@ -9138,6 +9567,54 @@
    "featured": false
   },
   {
+   "slug": "madhosh-bakraroos-saqii",
+   "brand": "madhosh",
+   "title": "Bakraroos Saqii",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3744d10d-c3ff-4ed2-9515-9a9188163538.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BAKRAROOS-SAQII",
+     "label": "Bakraroos Saqii",
+     "options": [],
+     "priceMinor": 99900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3744d10d-c3ff-4ed2-9515-9a9188163538.jpg"
+    }
+   ],
+   "priceFromMinor": 99900,
+   "priceToMinor": 99900,
+   "featured": false
+  },
+  {
+   "slug": "madhosh-misc-item",
+   "brand": "madhosh",
+   "title": "Misc.Item",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a91ec642-5265-4987-b879-89ca506a0f1a.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MISC-ITEM",
+     "label": "Misc.Item",
+     "options": [],
+     "priceMinor": 9900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a91ec642-5265-4987-b879-89ca506a0f1a.jpg"
+    }
+   ],
+   "priceFromMinor": 9900,
+   "priceToMinor": 9900,
+   "featured": false
+  },
+  {
    "slug": "madhosh-swedish-flora",
    "brand": "madhosh",
    "title": "Swedish Flora",
@@ -9154,13 +9631,13 @@
      "sku": "SWEDISH-WAHA",
      "label": "Swedish Flora",
      "options": [],
-     "priceMinor": 69900,
-     "compareAtMinor": 79900,
+     "priceMinor": 79900,
+     "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1908437e-3241-4940-8eaf-b24fd7a1d4aa.jpg"
     }
    ],
-   "priceFromMinor": 69900,
-   "priceToMinor": 69900,
+   "priceFromMinor": 79900,
+   "priceToMinor": 79900,
    "featured": false
   },
   {
@@ -9180,13 +9657,13 @@
      "sku": "SWADISH-FLORA",
      "label": "Swedish Oud",
      "options": [],
-     "priceMinor": 69900,
-     "compareAtMinor": 79900,
+     "priceMinor": 79900,
+     "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d9f9f6c4-fe21-4c2a-b13d-2b32bc66ea75.jpg"
     }
    ],
-   "priceFromMinor": 69900,
-   "priceToMinor": 69900,
+   "priceFromMinor": 79900,
+   "priceToMinor": 79900,
    "featured": true
   },
   {
@@ -9206,13 +9683,13 @@
      "sku": "SWEDISH-OUD",
      "label": "Swedish Waha",
      "options": [],
-     "priceMinor": 69900,
-     "compareAtMinor": 79900,
+     "priceMinor": 79900,
+     "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6d4ced1-dcba-460c-bc10-5a4410a0a5a7.jpg"
     }
    ],
-   "priceFromMinor": 69900,
-   "priceToMinor": 69900,
+   "priceFromMinor": 79900,
+   "priceToMinor": 79900,
    "featured": false
   },
   {
@@ -9230,13 +9707,13 @@
      "sku": "THE-TRIO",
      "label": "The Trio",
      "options": [],
-     "priceMinor": 149900,
-     "compareAtMinor": 179900,
+     "priceMinor": 179900,
+     "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7fc650ef-3367-4e97-a169-25837228226a.jpg"
     }
    ],
-   "priceFromMinor": 149900,
-   "priceToMinor": 149900,
+   "priceFromMinor": 179900,
+   "priceToMinor": 179900,
    "featured": false
   },
   {
@@ -9279,7 +9756,7 @@
      "options": [
       "100g"
      ],
-     "priceMinor": 24900,
+     "priceMinor": 25000,
      "compareAtMinor": 29900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e070173d-ce53-49d2-a178-492f07963c5c.png"
     },
@@ -9435,6 +9912,30 @@
    ],
    "priceFromMinor": 42900,
    "priceToMinor": 42900,
+   "featured": false
+  },
+  {
+   "slug": "mello-seekh-kebab",
+   "brand": "mello",
+   "title": "Seekh Kebab",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/12df9455-3b38-4906-a02a-6f76a51a621c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "SEEKH-KEBAB",
+     "label": "Seekh Kebab",
+     "options": [],
+     "priceMinor": 20000,
+     "compareAtMinor": 30000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/12df9455-3b38-4906-a02a-6f76a51a621c.jpg"
+    }
+   ],
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
    "featured": false
   },
   {
@@ -10080,6 +10581,30 @@
    "featured": false
   },
   {
+   "slug": "munchandco-cake-pop",
+   "brand": "munchandco",
+   "title": "Cake Pop",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/02342ecb-fdf0-4add-8803-5873fa0f6970.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CAKE-POP",
+     "label": "Cake Pop",
+     "options": [],
+     "priceMinor": 5000,
+     "compareAtMinor": 10000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/02342ecb-fdf0-4add-8803-5873fa0f6970.jpg"
+    }
+   ],
+   "priceFromMinor": 5000,
+   "priceToMinor": 5000,
+   "featured": false
+  },
+  {
    "slug": "munchandco-choco-chip-cookies-80g",
    "brand": "munchandco",
    "title": "Choco Chip Cookies 80g",
@@ -10296,6 +10821,30 @@
    "featured": false
   },
   {
+   "slug": "nasha-custom-pack",
+   "brand": "nasha",
+   "title": "Custom Pack",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c57c76ed-7f60-404b-adf8-f07092a0280c.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CUSTOM-PACK",
+     "label": "Custom Pack",
+     "options": [],
+     "priceMinor": 500000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c57c76ed-7f60-404b-adf8-f07092a0280c.jpg"
+    }
+   ],
+   "priceFromMinor": 500000,
+   "priceToMinor": 500000,
+   "featured": false
+  },
+  {
    "slug": "nasha-delulu",
    "brand": "nasha",
    "title": "Delulu",
@@ -10317,6 +10866,30 @@
    ],
    "priceFromMinor": 34900,
    "priceToMinor": 34900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-diwali-trio",
+   "brand": "nasha",
+   "title": "Diwali Trio",
+   "description": null,
+   "collection": "hampers",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6d4f475e-a655-4b04-b2c1-baaa93874721.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "DIWALI-TRIO",
+     "label": "Diwali Trio",
+     "options": [],
+     "priceMinor": 65000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6d4f475e-a655-4b04-b2c1-baaa93874721.jpg"
+    }
+   ],
+   "priceFromMinor": 65000,
+   "priceToMinor": 65000,
    "featured": false
   },
   {
@@ -10385,6 +10958,30 @@
      "priceMinor": 34900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/59f81093-c2c1-4b94-95cf-ea5f84828427.jpg"
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-king",
+   "brand": "nasha",
+   "title": "King",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bdfaf9e7-26d5-44df-a7bb-b1aa43eb71bd.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "KING",
+     "label": "King",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bdfaf9e7-26d5-44df-a7bb-b1aa43eb71bd.jpg"
     }
    ],
    "priceFromMinor": 34900,
@@ -10488,6 +11085,30 @@
    "featured": false
   },
   {
+   "slug": "nasha-pick-2",
+   "brand": "nasha",
+   "title": "Pick 2",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/73132185-1903-4a2b-8b38-7a0cfd28b253.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "PICK-2",
+     "label": "Pick 2",
+     "options": [],
+     "priceMinor": 49900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/73132185-1903-4a2b-8b38-7a0cfd28b253.jpg"
+    }
+   ],
+   "priceFromMinor": 49900,
+   "priceToMinor": 49900,
+   "featured": false
+  },
+  {
    "slug": "nasha-pocket-ace",
    "brand": "nasha",
    "title": "Pocket Ace",
@@ -10509,6 +11130,78 @@
    ],
    "priceFromMinor": 29900,
    "priceToMinor": 29900,
+   "featured": false
+  },
+  {
+   "slug": "nasha-pop-any",
+   "brand": "nasha",
+   "title": "Pop Any",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5ea3a72a-a441-4849-880a-1aa982f5ff03.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "POP-ANY",
+     "label": "Pop Any",
+     "options": [],
+     "priceMinor": 15000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5ea3a72a-a441-4849-880a-1aa982f5ff03.jpg"
+    }
+   ],
+   "priceFromMinor": 15000,
+   "priceToMinor": 15000,
+   "featured": false
+  },
+  {
+   "slug": "nasha-popezy",
+   "brand": "nasha",
+   "title": "Popezy",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bdca32ba-00cc-40aa-8901-4b119cae33b8.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "POPEZY",
+     "label": "Popezy",
+     "options": [],
+     "priceMinor": 10000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/bdca32ba-00cc-40aa-8901-4b119cae33b8.jpg"
+    }
+   ],
+   "priceFromMinor": 10000,
+   "priceToMinor": 10000,
+   "featured": false
+  },
+  {
+   "slug": "nasha-queen",
+   "brand": "nasha",
+   "title": "Queen",
+   "description": null,
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9656af89-87a6-47b5-802d-fc94be8013fd.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "QUEEN",
+     "label": "Queen",
+     "options": [],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/9656af89-87a6-47b5-802d-fc94be8013fd.jpg"
+    }
+   ],
+   "priceFromMinor": 34900,
+   "priceToMinor": 34900,
    "featured": false
   },
   {
@@ -10692,6 +11385,54 @@
    "featured": false
   },
   {
+   "slug": "no-biggie-brownie",
+   "brand": "no-biggie",
+   "title": "Brownie",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6bb9236a-0c10-45d0-bdc9-ea6ed0a3042f.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "BROWNIE",
+     "label": "Brownie",
+     "options": [],
+     "priceMinor": 17900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6bb9236a-0c10-45d0-bdc9-ea6ed0a3042f.jpg"
+    }
+   ],
+   "priceFromMinor": 17900,
+   "priceToMinor": 17900,
+   "featured": true
+  },
+  {
+   "slug": "no-biggie-choco-chunk-big",
+   "brand": "no-biggie",
+   "title": "Choco Chunk Big",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74398e7f-837f-4add-ac07-2054072d20f7.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CHOCO-CHUNK-BIG",
+     "label": "Choco Chunk Big",
+     "options": [],
+     "priceMinor": 17900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/74398e7f-837f-4add-ac07-2054072d20f7.jpg"
+    }
+   ],
+   "priceFromMinor": 17900,
+   "priceToMinor": 17900,
+   "featured": false
+  },
+  {
    "slug": "no-biggie-choco-chunk-cookies",
    "brand": "no-biggie",
    "title": "Choco Chunk Cookies",
@@ -10716,6 +11457,30 @@
    "featured": false
   },
   {
+   "slug": "no-biggie-cookie-tin",
+   "brand": "no-biggie",
+   "title": "Cookie Tin",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/69362348-c6d8-4223-b001-cce759733aa0.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COOKIE-TIN",
+     "label": "Cookie Tin",
+     "options": [],
+     "priceMinor": 29900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/69362348-c6d8-4223-b001-cce759733aa0.jpg"
+    }
+   ],
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
+   "featured": false
+  },
+  {
    "slug": "no-biggie-double-choco-chip-cookies",
    "brand": "no-biggie",
    "title": "Double Choco Chip Cookies",
@@ -10737,30 +11502,150 @@
    ],
    "priceFromMinor": 27900,
    "priceToMinor": 27900,
-   "featured": true
+   "featured": false
   },
   {
-   "slug": "no-biggie-red-velvet-cookies",
+   "slug": "no-biggie-double-choco-chunk-big",
    "brand": "no-biggie",
-   "title": "Red Velvet Cookies",
+   "title": "Double Choco Chunk Big",
    "description": null,
    "collection": "sweets",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0b9079c0-0c46-4c7f-bf95-a719fa08dc73.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/14bdf82c-ea01-4566-a51b-d26bbd2622ca.jpg"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "RED-VELVET-COOKIES",
-     "label": "Red Velvet Cookies",
+     "sku": "DOUBLE-CHOCO-CHUNK-BIG",
+     "label": "Double Choco Chunk Big",
      "options": [],
-     "priceMinor": 26900,
-     "compareAtMinor": 27900,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0b9079c0-0c46-4c7f-bf95-a719fa08dc73.jpg"
+     "priceMinor": 24900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/14bdf82c-ea01-4566-a51b-d26bbd2622ca.jpg"
     }
    ],
-   "priceFromMinor": 26900,
-   "priceToMinor": 26900,
+   "priceFromMinor": 24900,
+   "priceToMinor": 24900,
+   "featured": false
+  },
+  {
+   "slug": "no-biggie-marshmallow-cookies",
+   "brand": "no-biggie",
+   "title": "Marshmallow Cookies",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d2e3c00-2c03-488b-8c0d-60f0d61d6987.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MARSHMALLOW-COOKIES",
+     "label": "Marshmallow Cookies",
+     "options": [],
+     "priceMinor": 17900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/0d2e3c00-2c03-488b-8c0d-60f0d61d6987.jpg"
+    }
+   ],
+   "priceFromMinor": 17900,
+   "priceToMinor": 17900,
+   "featured": false
+  },
+  {
+   "slug": "no-biggie-nutella-cookies",
+   "brand": "no-biggie",
+   "title": "Nutella Cookies",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/638b34ed-b6ac-40b9-88d0-1c4f50cd0147.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "NUTELLA-COOKIES",
+     "label": "Nutella Cookies",
+     "options": [],
+     "priceMinor": 17900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/638b34ed-b6ac-40b9-88d0-1c4f50cd0147.jpg"
+    }
+   ],
+   "priceFromMinor": 17900,
+   "priceToMinor": 17900,
+   "featured": false
+  },
+  {
+   "slug": "no-biggie-red-velvet-cupcake",
+   "brand": "no-biggie",
+   "title": "Red Velvet Cupcake",
+   "description": null,
+   "collection": "sweets",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ccc47d67-98eb-4221-9608-1ecf4f81bd58.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "RED-VELVET-CUPCAKE",
+     "label": "Red Velvet Cupcake",
+     "options": [],
+     "priceMinor": 14900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ccc47d67-98eb-4221-9608-1ecf4f81bd58.jpg"
+    }
+   ],
+   "priceFromMinor": 14900,
+   "priceToMinor": 14900,
+   "featured": false
+  },
+  {
+   "slug": "notty-crunch-chat",
+   "brand": "notty-crunch",
+   "title": "Chat",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/be19a6df-ecd6-4a47-9662-eb282cde68bc.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CHAT",
+     "label": "Chat",
+     "options": [],
+     "priceMinor": 7900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/be19a6df-ecd6-4a47-9662-eb282cde68bc.jpg"
+    }
+   ],
+   "priceFromMinor": 7900,
+   "priceToMinor": 7900,
+   "featured": true
+  },
+  {
+   "slug": "notty-crunch-craft-cola",
+   "brand": "notty-crunch",
+   "title": "Craft Cola",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e38e6a64-7de7-46c3-a395-8bfdd38041c9.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "CRAFT-COLA",
+     "label": "Craft Cola",
+     "options": [],
+     "priceMinor": 19900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e38e6a64-7de7-46c3-a395-8bfdd38041c9.jpg"
+    }
+   ],
+   "priceFromMinor": 19900,
+   "priceToMinor": 19900,
    "featured": false
   },
   {
@@ -10785,7 +11670,7 @@
    ],
    "priceFromMinor": 19900,
    "priceToMinor": 19900,
-   "featured": true
+   "featured": false
   },
   {
    "slug": "notty-crunch-mexican-bites-125g",
@@ -10812,9 +11697,9 @@
    "featured": false
   },
   {
-   "slug": "notty-crunch-peri-peri-chips-250-grams",
+   "slug": "notty-crunch-peri-peri-chips-220-grams",
    "brand": "notty-crunch",
-   "title": "Peri Peri chips-250 Grams",
+   "title": "Peri Peri chips-220 Grams",
    "description": null,
    "collection": "snacks",
    "images": [
@@ -10824,15 +11709,15 @@
    "variants": [
     {
      "sku": "PERI-PERI-CHIPS",
-     "label": "Peri Peri chips-250 Grams",
+     "label": "Peri Peri chips-220 Grams",
      "options": [],
-     "priceMinor": 35000,
+     "priceMinor": 29900,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/455b0115-6852-492b-9b8d-a60492092c66.png"
     }
    ],
-   "priceFromMinor": 35000,
-   "priceToMinor": 35000,
+   "priceFromMinor": 29900,
+   "priceToMinor": 29900,
    "featured": false
   },
   {
@@ -12209,13 +13094,13 @@
      "sku": "CACTUS-JACK-WHITE-5",
      "label": "Cactus Jack White",
      "options": [],
-     "priceMinor": 24900,
-     "compareAtMinor": null,
+     "priceMinor": 35000,
+     "compareAtMinor": 40000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ecb4404e-aaf9-4a90-868b-95b5c8727ea6.png"
     }
    ],
-   "priceFromMinor": 24900,
-   "priceToMinor": 24900,
+   "priceFromMinor": 35000,
+   "priceToMinor": 35000,
    "featured": false
   },
   {
@@ -12233,13 +13118,61 @@
      "sku": "EXTRA-SPICY-7",
      "label": "Extra Spicy",
      "options": [],
-     "priceMinor": 24900,
+     "priceMinor": 35000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7eb0a3d9-3a14-4d39-b898-3d0827a2888a.png"
     }
    ],
-   "priceFromMinor": 24900,
-   "priceToMinor": 24900,
+   "priceFromMinor": 35000,
+   "priceToMinor": 35000,
+   "featured": false
+  },
+  {
+   "slug": "side-quest-f1-jersey",
+   "brand": "side-quest",
+   "title": "F1 Jersey",
+   "description": null,
+   "collection": "accessories",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a0a3a23-4caa-4921-912a-4e32fb0c9d23.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "F1-JERSEY",
+     "label": "F1 Jersey",
+     "options": [],
+     "priceMinor": 100000,
+     "compareAtMinor": 110000,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4a0a3a23-4caa-4921-912a-4e32fb0c9d23.jpg"
+    }
+   ],
+   "priceFromMinor": 100000,
+   "priceToMinor": 100000,
+   "featured": false
+  },
+  {
+   "slug": "side-quest-f1-tshirt",
+   "brand": "side-quest",
+   "title": "F1 Tshirt",
+   "description": null,
+   "collection": "apparel",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2b2feaff-cbc7-4169-83dd-96055cc0f2f5.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "F1-TSHIRT",
+     "label": "F1 Tshirt",
+     "options": [],
+     "priceMinor": 119900,
+     "compareAtMinor": 129900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2b2feaff-cbc7-4169-83dd-96055cc0f2f5.jpg"
+    }
+   ],
+   "priceFromMinor": 119900,
+   "priceToMinor": 119900,
    "featured": false
   },
   {
@@ -12305,13 +13238,13 @@
      "sku": "MUSCLE-MOMMY-3",
      "label": "Muscle Mommy",
      "options": [],
-     "priceMinor": 24900,
+     "priceMinor": 35000,
      "compareAtMinor": null,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/debe4b50-ca19-46aa-8936-988a2e7004e9.png"
     }
    ],
-   "priceFromMinor": 24900,
-   "priceToMinor": 24900,
+   "priceFromMinor": 35000,
+   "priceToMinor": 35000,
    "featured": false
   },
   {
@@ -12419,7 +13352,8 @@
    "images": [
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/44275868-a794-46fb-ac8a-4cc45fd486fc.png",
     "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6ca95b86-94e0-4274-b86e-7dc2dfd7a533.jpg",
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ba3f48bd-0b9a-4f08-a9e4-90a789507958.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/ba3f48bd-0b9a-4f08-a9e4-90a789507958.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2ee6480d-bdf7-4ea0-8dd8-caeb3b574b21.jpg"
    ],
    "options": [
     {
@@ -12427,7 +13361,8 @@
      "values": [
       "Design 1",
       "Design 2",
-      "Design 3"
+      "Design 3",
+      "Design 4"
      ]
     }
    ],
@@ -12461,10 +13396,20 @@
      "priceMinor": 20000,
      "compareAtMinor": 25000,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/6ca95b86-94e0-4274-b86e-7dc2dfd7a533.jpg"
+    },
+    {
+     "sku": "SOCKS-4",
+     "label": "Design 4",
+     "options": [
+      "Design 4"
+     ],
+     "priceMinor": 34900,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/2ee6480d-bdf7-4ea0-8dd8-caeb3b574b21.jpg"
     }
    ],
    "priceFromMinor": 15000,
-   "priceToMinor": 20000,
+   "priceToMinor": 34900,
    "featured": true
   },
   {
@@ -12675,6 +13620,30 @@
    "priceFromMinor": 20000,
    "priceToMinor": 39900,
    "featured": true
+  },
+  {
+   "slug": "tea-riffic-kulhad",
+   "brand": "tea-riffic",
+   "title": "Kulhad",
+   "description": null,
+   "collection": "beverages",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/de9e9e82-ff62-42f9-a95a-8b10c3a20f3f.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "KULHAD",
+     "label": "Kulhad",
+     "options": [],
+     "priceMinor": 6000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/de9e9e82-ff62-42f9-a95a-8b10c3a20f3f.jpg"
+    }
+   ],
+   "priceFromMinor": 6000,
+   "priceToMinor": 6000,
+   "featured": false
   },
   {
    "slug": "tea-riffic-masala-tea",
@@ -13040,6 +14009,30 @@
    "featured": false
   },
   {
+   "slug": "wekrave-cocktail",
+   "brand": "wekrave",
+   "title": "Cocktail",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3eff8aeb-341a-4769-9131-70233505a325.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "COCKTAIL",
+     "label": "Cocktail",
+     "options": [],
+     "priceMinor": 15000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3eff8aeb-341a-4769-9131-70233505a325.jpg"
+    }
+   ],
+   "priceFromMinor": 15000,
+   "priceToMinor": 15000,
+   "featured": false
+  },
+  {
    "slug": "wekrave-creamandonion-makhana-chips",
    "brand": "wekrave",
    "title": "Cream&Onion Makhana Chips",
@@ -13175,6 +14168,30 @@
    ],
    "priceFromMinor": 14900,
    "priceToMinor": 24900,
+   "featured": false
+  },
+  {
+   "slug": "wekrave-mexican-bhell",
+   "brand": "wekrave",
+   "title": "Mexican Bhell",
+   "description": null,
+   "collection": "snacks",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4fc23a1-515f-414b-8967-5e3931f0a766.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "MEXICAN-BHELL",
+     "label": "Mexican Bhell",
+     "options": [],
+     "priceMinor": 20000,
+     "compareAtMinor": null,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/e4fc23a1-515f-414b-8967-5e3931f0a766.jpg"
+    }
+   ],
+   "priceFromMinor": 20000,
+   "priceToMinor": 20000,
    "featured": false
   },
   {
