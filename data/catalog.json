@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-26T05:10:04.983Z",
+ "generatedAt": "2026-10-27T05:24:59.674Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -9588,30 +9588,6 @@
    ],
    "priceFromMinor": 99900,
    "priceToMinor": 99900,
-   "featured": false
-  },
-  {
-   "slug": "madhosh-misc-item",
-   "brand": "madhosh",
-   "title": "Misc.Item",
-   "description": null,
-   "collection": "fragrance",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a91ec642-5265-4987-b879-89ca506a0f1a.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "MISC-ITEM",
-     "label": "Misc.Item",
-     "options": [],
-     "priceMinor": 9900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a91ec642-5265-4987-b879-89ca506a0f1a.jpg"
-    }
-   ],
-   "priceFromMinor": 9900,
-   "priceToMinor": 9900,
    "featured": false
   },
   {
