@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T05:24:59.674Z",
+ "generatedAt": "2026-10-30T06:16:31.446Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -39,16 +39,6 @@
    "collection": "snacks",
    "website": "https://chaklebro.myshopify.com",
    "instagram": null,
-   "logo": null
-  },
-  {
-   "teamCode": "C106",
-   "slug": "dad-of-bags",
-   "name": "Dad Of Bags",
-   "tagline": "Juco embroidered tote bags",
-   "collection": "accessories",
-   "website": "https://dadofbags.in",
-   "instagram": "https://www.instagram.com/dadofbags1947",
    "logo": null
   },
   {
@@ -2164,102 +2154,6 @@
    ],
    "priceFromMinor": 10000,
    "priceToMinor": 15000,
-   "featured": false
-  },
-  {
-   "slug": "dad-of-bags-chocolate-sticks",
-   "brand": "dad-of-bags",
-   "title": "Chocolate Sticks",
-   "description": null,
-   "collection": "accessories",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/353f0fea-b240-4bbe-9120-91e09c5f55b1.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "CHOCOLATE-STICKS",
-     "label": "Chocolate Sticks",
-     "options": [],
-     "priceMinor": 40000,
-     "compareAtMinor": 50000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/353f0fea-b240-4bbe-9120-91e09c5f55b1.jpg"
-    }
-   ],
-   "priceFromMinor": 40000,
-   "priceToMinor": 40000,
-   "featured": true
-  },
-  {
-   "slug": "dad-of-bags-granola",
-   "brand": "dad-of-bags",
-   "title": "Granola",
-   "description": null,
-   "collection": "accessories",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5368aa19-6464-47b3-a41b-4f4f19a55ab8.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "GRANOLA",
-     "label": "Granola",
-     "options": [],
-     "priceMinor": 40000,
-     "compareAtMinor": 50000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/5368aa19-6464-47b3-a41b-4f4f19a55ab8.jpg"
-    }
-   ],
-   "priceFromMinor": 40000,
-   "priceToMinor": 40000,
-   "featured": false
-  },
-  {
-   "slug": "dad-of-bags-painting",
-   "brand": "dad-of-bags",
-   "title": "Painting",
-   "description": null,
-   "collection": "accessories",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/106186ec-e476-49be-8c6a-6c3c78b0d7c7.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "PAINTING",
-     "label": "Painting",
-     "options": [],
-     "priceMinor": 25000,
-     "compareAtMinor": 35000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/106186ec-e476-49be-8c6a-6c3c78b0d7c7.jpg"
-    }
-   ],
-   "priceFromMinor": 25000,
-   "priceToMinor": 25000,
-   "featured": false
-  },
-  {
-   "slug": "dad-of-bags-tote-bag",
-   "brand": "dad-of-bags",
-   "title": "Tote Bag",
-   "description": null,
-   "collection": "accessories",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/45118d6b-c35e-4e89-941e-f04e7ac62de5.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "TOTE-BAG",
-     "label": "Tote Bag",
-     "options": [],
-     "priceMinor": 20000,
-     "compareAtMinor": 35000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/45118d6b-c35e-4e89-941e-f04e7ac62de5.jpg"
-    }
-   ],
-   "priceFromMinor": 20000,
-   "priceToMinor": 20000,
    "featured": false
   },
   {
