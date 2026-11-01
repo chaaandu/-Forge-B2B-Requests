@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-30T06:16:31.446Z",
+ "generatedAt": "2026-11-01T06:39:15.686Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -1501,30 +1501,6 @@
    ],
    "priceFromMinor": 9900,
    "priceToMinor": 24900,
-   "featured": false
-  },
-  {
-   "slug": "chipmonk-samosa",
-   "brand": "chipmonk",
-   "title": "Samosa",
-   "description": null,
-   "collection": "snacks",
-   "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3fa855b3-f659-4d51-8d5f-dda17540e8cd.jpg"
-   ],
-   "options": [],
-   "variants": [
-    {
-     "sku": "SAMOSA",
-     "label": "Samosa",
-     "options": [],
-     "priceMinor": 5000,
-     "compareAtMinor": 6000,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3fa855b3-f659-4d51-8d5f-dda17540e8cd.jpg"
-    }
-   ],
-   "priceFromMinor": 5000,
-   "priceToMinor": 5000,
    "featured": false
   },
   {
