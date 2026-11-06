@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-01T06:39:15.686Z",
+ "generatedAt": "2026-11-06T07:12:25.963Z",
  "brands": [
   {
    "teamCode": "C101",
@@ -9437,27 +9437,53 @@
    "featured": false
   },
   {
-   "slug": "madhosh-bakraroos-saqii",
+   "slug": "madhosh-bakaroos-saqii",
    "brand": "madhosh",
-   "title": "Bakraroos Saqii",
-   "description": null,
+   "title": "Bakaroos Saqii",
+   "description": "MADIRA BAKAROOS SAQLI 50 ML | A Celebration of Richness Step into a world of indulgence with MADIRA, Bakaroos Saqli, a captivating fragrance inspired by warmth, spices and timeless elegance. An intriguing blend of aromatic spices, rich sweetness and refreshing citrus creates a distinctive fragrance experience. Its warm and inviting character makes it perfect for those who love bold scents with a touch of sophistication. Fragrance Notes Top Notes: Citrus, Orange Heart Notes: Cinnamon, Floral Accords Base Notes: Vanilla, Warm Spices, Woody Accords",
    "collection": "fragrance",
    "images": [
-    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3744d10d-c3ff-4ed2-9515-9a9188163538.jpg"
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4b2c97ff-78b9-4c41-9af9-5a1e311639b9.png",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/a382eea1-64fe-4c2f-b29f-032ae1848972.png"
    ],
    "options": [],
    "variants": [
     {
-     "sku": "BAKRAROOS-SAQII",
-     "label": "Bakraroos Saqii",
+     "sku": "BAKAROOS-SAQII",
+     "label": "Bakaroos Saqii",
      "options": [],
-     "priceMinor": 99900,
-     "compareAtMinor": null,
-     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/3744d10d-c3ff-4ed2-9515-9a9188163538.jpg"
+     "priceMinor": 79900,
+     "compareAtMinor": 99900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/4b2c97ff-78b9-4c41-9af9-5a1e311639b9.png"
     }
    ],
-   "priceFromMinor": 99900,
-   "priceToMinor": 99900,
+   "priceFromMinor": 79900,
+   "priceToMinor": 79900,
+   "featured": false
+  },
+  {
+   "slug": "madhosh-hibiki-540",
+   "brand": "madhosh",
+   "title": "Hibiki 540",
+   "description": "HIBIKI 540 50 ML | An Expression of Elegance Inspired by timeless sophistication, Hibiki 540 is a captivating fragrance that blends warmth, sweetness and elegance. Crafted for those who appreciate luxury and want to leave a memorable impression. Fragrance Notes Top Notes: Saffron, Jasmine Heart Notes: Amberwood, Amber Base Notes: Cedarwood, Ambergris Fragrance Experience: Warm, woody, sweet and luxurious, with a rich and captivating character.",
+   "collection": "fragrance",
+   "images": [
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/794afac1-9193-48b0-9086-2d556aa58835.jpg",
+    "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/414f0807-6d72-412d-a44b-c1f632c22627.jpg"
+   ],
+   "options": [],
+   "variants": [
+    {
+     "sku": "HIBIKI-540",
+     "label": "Hibiki 540",
+     "options": [],
+     "priceMinor": 79900,
+     "compareAtMinor": 99900,
+     "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/794afac1-9193-48b0-9086-2d556aa58835.jpg"
+    }
+   ],
+   "priceFromMinor": 79900,
+   "priceToMinor": 79900,
    "featured": false
   },
   {
@@ -9477,13 +9503,13 @@
      "sku": "SWEDISH-WAHA",
      "label": "Swedish Flora",
      "options": [],
-     "priceMinor": 79900,
-     "compareAtMinor": null,
+     "priceMinor": 59900,
+     "compareAtMinor": 79900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/1908437e-3241-4940-8eaf-b24fd7a1d4aa.jpg"
     }
    ],
-   "priceFromMinor": 79900,
-   "priceToMinor": 79900,
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
    "featured": false
   },
   {
@@ -9503,13 +9529,13 @@
      "sku": "SWADISH-FLORA",
      "label": "Swedish Oud",
      "options": [],
-     "priceMinor": 79900,
-     "compareAtMinor": null,
+     "priceMinor": 59900,
+     "compareAtMinor": 79900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/d9f9f6c4-fe21-4c2a-b13d-2b32bc66ea75.jpg"
     }
    ],
-   "priceFromMinor": 79900,
-   "priceToMinor": 79900,
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
    "featured": true
   },
   {
@@ -9529,13 +9555,13 @@
      "sku": "SWEDISH-OUD",
      "label": "Swedish Waha",
      "options": [],
-     "priceMinor": 79900,
-     "compareAtMinor": null,
+     "priceMinor": 59900,
+     "compareAtMinor": 79900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/c6d4ced1-dcba-460c-bc10-5a4410a0a5a7.jpg"
     }
    ],
-   "priceFromMinor": 79900,
-   "priceToMinor": 79900,
+   "priceFromMinor": 59900,
+   "priceToMinor": 59900,
    "featured": false
   },
   {
@@ -9553,13 +9579,13 @@
      "sku": "THE-TRIO",
      "label": "The Trio",
      "options": [],
-     "priceMinor": 179900,
-     "compareAtMinor": null,
+     "priceMinor": 139900,
+     "compareAtMinor": 179900,
      "image": "https://bumrsxkpzrbjfdhquemp.supabase.co/storage/v1/object/public/mesa-public/products/7fc650ef-3367-4e97-a169-25837228226a.jpg"
     }
    ],
-   "priceFromMinor": 179900,
-   "priceToMinor": 179900,
+   "priceFromMinor": 139900,
+   "priceToMinor": 139900,
    "featured": false
   },
   {
